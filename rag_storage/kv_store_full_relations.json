@@ -1,0 +1,1062 @@
+{
+  "doc-1c5a8abd486160f0e3adc85964987879": {
+    "relation_pairs": [
+      [
+        "Insperity Contact Center",
+        "Retirement Service Center"
+      ],
+      [
+        "401(k) Account",
+        "Planning Calculators"
+      ],
+      [
+        "401(k) Plan",
+        "Internal Revenue Service (IRS)"
+      ],
+      [
+        "401(k) Plan",
+        "Rollover Contributions"
+      ],
+      [
+        "401(k) Account",
+        "Participant Fees"
+      ],
+      [
+        "401(k) Plan",
+        "Employer Contributions"
+      ],
+      [
+        "10% Early Withdrawal Penalty",
+        "401(k) Account"
+      ],
+      [
+        "401(k) Account",
+        "Morningstar® Retirement Manager"
+      ],
+      [
+        "401(k) Account",
+        "401(k) Toolbox"
+      ],
+      [
+        "401(k) Plan",
+        "Investment Options"
+      ],
+      [
+        "401(k) Account",
+        "Mandatory Income Tax Withholding"
+      ],
+      [
+        "Employee Contributions",
+        "Internal Revenue Code (IRC)"
+      ],
+      [
+        "401(k) Plan",
+        "Employee Contributions"
+      ],
+      [
+        "401(k) Plan",
+        "Loan Policy"
+      ],
+      [
+        "401(k) Plan",
+        "Withdrawals and Distributions"
+      ],
+      [
+        "401(k) Account",
+        "Prime Rate"
+      ],
+      [
+        "401(k) Plan",
+        "Insperity Contact Center"
+      ]
+    ],
+    "count": 17,
+    "create_time": 1768282380,
+    "update_time": 1768282380,
+    "_id": "doc-1c5a8abd486160f0e3adc85964987879"
+  },
+  "doc-805221c93487f7bd7cd5bd31ef6c39e6": {
+    "relation_pairs": [
+      [
+        "New York Life",
+        "Voluntary Critical Illness and Accident Insurance"
+      ],
+      [
+        "Dental Benefits",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Health Care Support Program",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Insperity",
+        "Insperity Benefits Package"
+      ],
+      [
+        "Initial Enrollment Period",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Health Insurance Carrier",
+        "Limitations and Exclusions"
+      ],
+      [
+        "Major Services",
+        "UnitedHealthcare Dental"
+      ],
+      [
+        "In-Network Providers",
+        "Insperity"
+      ],
+      [
+        "Employee Portal",
+        "Insperity"
+      ],
+      [
+        "HSA",
+        "Optum Bank HSA"
+      ],
+      [
+        "Insperity",
+        "Insperity Employee Assistance Program"
+      ],
+      [
+        "Basic Services",
+        "UnitedHealthcare Dental"
+      ],
+      [
+        "Health Care Flexible Spending Account Plan",
+        "Insperity"
+      ],
+      [
+        "Preventive Services",
+        "UnitedHealthcare Dental"
+      ],
+      [
+        "Caregiving Support Program",
+        "Insperity"
+      ],
+      [
+        "Health Savings Account",
+        "Short-Term Disability Benefits"
+      ],
+      [
+        "Laser Vision Correction",
+        "VSP Vision Service Plan"
+      ],
+      [
+        "High Deductible Health Plan (HDHP)",
+        "Insperity"
+      ],
+      [
+        "Certificate of Coverage (COC)",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Insperity",
+        "Self-Paced Wellbeing Training"
+      ],
+      [
+        "Health Care Support Program",
+        "Insperity"
+      ],
+      [
+        "Harvard Pilgrim Health Care",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Dental Vision Benefits",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Insperity",
+        "Standard HDHP Options"
+      ],
+      [
+        "Long-Term Disability Insurance",
+        "Short-Term Disability Benefits"
+      ],
+      [
+        "Health Care Support",
+        "Insperity"
+      ],
+      [
+        "Children",
+        "Coverage Amount"
+      ],
+      [
+        "Care Coach",
+        "Cariloop"
+      ],
+      [
+        "Health Care Support Program",
+        "Medicare"
+      ],
+      [
+        "BCBS of Hawaii",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "MarketPlace™",
+        "WOWPoints"
+      ],
+      [
+        "Disability Insurance",
+        "Short-Term Disability Benefits"
+      ],
+      [
+        "Adoption Assistance Program",
+        "IRS"
+      ],
+      [
+        "Caregivers",
+        "Rosalynn Carter Institute for Caregivers"
+      ],
+      [
+        "Insperity Benefits Package",
+        "Insperity Benefits for Full-Time Employees"
+      ],
+      [
+        "Insperity Benefits Package",
+        "Wellbeing On-Demand"
+      ],
+      [
+        "Care Coach",
+        "Care Portal"
+      ],
+      [
+        "HCEs",
+        "Pretax HSA Contributions"
+      ],
+      [
+        "Annual Out-of-Pocket Maximum",
+        "Vision Benefits"
+      ],
+      [
+        "Insperity",
+        "UnitedHealthcare Dental"
+      ],
+      [
+        "Annual Enrollment Period",
+        "Insperity Health Savings Account Program"
+      ],
+      [
+        "Coverage Amount",
+        "Spouse/Domestic Partner"
+      ],
+      [
+        "VSP Vision Service Plan",
+        "Vision Benefits"
+      ],
+      [
+        "Insperity",
+        "Insperity Contact Center"
+      ],
+      [
+        "Health Care Support Program",
+        "Medicaid"
+      ],
+      [
+        "Calendar-Year Deductible",
+        "Insperity"
+      ],
+      [
+        "Health Insurance Carrier",
+        "Primary Care Physician (PCP)"
+      ],
+      [
+        "Insperity Benefits Package",
+        "Wellbeing Resources"
+      ],
+      [
+        "Community Online Academy",
+        "Insperity Training and Development"
+      ],
+      [
+        "3300 Group Health Plan",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Commuter Benefits",
+        "Commuter Card"
+      ],
+      [
+        "Health Care Support",
+        "New York Life Group Benefit Solutions"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "Open Enrollment Period"
+      ],
+      [
+        "30-Day Enrollment Period",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Eligible Expenses",
+        "Health Care FSA"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "UnitedHealthcare Dental and Vision Service Plan"
+      ],
+      [
+        "Insperity",
+        "Insperity Employee Portal"
+      ],
+      [
+        "FSA Carryover",
+        "Health Care FSA"
+      ],
+      [
+        "Insperity Contact Center",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Health Care FSA",
+        "Insperity Health Savings Account Program"
+      ],
+      [
+        "Insperity Benefits Package",
+        "Insperity Benefits for All Employees"
+      ],
+      [
+        "Coverage Options",
+        "Insurance Carrier"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "Medical Coverage Options"
+      ],
+      [
+        "Accidental Death and Dismemberment Insurance",
+        "Basic Life Insurance"
+      ],
+      [
+        "Cariloop",
+        "Insperity Caregiver Support Program"
+      ],
+      [
+        "Commuter Benefits",
+        "EZ Receipts Mobile App"
+      ],
+      [
+        "Health Insurance Carrier",
+        "Out-of-Network Providers"
+      ],
+      [
+        "EAP",
+        "Insperity"
+      ],
+      [
+        "Insperity",
+        "Talkspace"
+      ],
+      [
+        "Insperity Perks at Work",
+        "MarketPlace™"
+      ],
+      [
+        "High Deductible Health Plan (HDHP)",
+        "OOPM"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "UnitedHealthcare"
+      ],
+      [
+        "HMO HDHP Options",
+        "High Deductible Health Plan (HDHP)"
+      ],
+      [
+        "Calm App",
+        "Insperity"
+      ],
+      [
+        "Insperity",
+        "Voluntary Life Insurance"
+      ],
+      [
+        "Balance Wellbeing",
+        "Insperity Benefits Package"
+      ],
+      [
+        "HSA",
+        "IRS"
+      ],
+      [
+        "Health Insurance Carrier",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "HSA",
+        "Insperity HDHP"
+      ],
+      [
+        "Health Insurance Carrier",
+        "In-Network Providers"
+      ],
+      [
+        "Health Insurance Carrier",
+        "Insperity Employee Portal"
+      ],
+      [
+        "Health Care Spending Card",
+        "Insperity"
+      ],
+      [
+        "Insperity",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Coinsurance",
+        "Copays"
+      ],
+      [
+        "Calendar-Year Deductible",
+        "OOPM"
+      ],
+      [
+        "Adoption Assistance Program",
+        "Insperity"
+      ],
+      [
+        "Insperity",
+        "Voluntary Critical Illness and Accident Insurance"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "Kaiser Permanente"
+      ]
+    ],
+    "count": 88,
+    "create_time": 1768282434,
+    "update_time": 1768282434,
+    "_id": "doc-805221c93487f7bd7cd5bd31ef6c39e6"
+  },
+  "doc-0959ac623c6863a51aad6edefa15a1ff": {
+    "relation_pairs": [
+      [
+        "Abby",
+        "Solution Architect"
+      ],
+      [
+        "Abby",
+        "Speaker 1"
+      ],
+      [
+        "AMVA",
+        "state DMVs"
+      ],
+      [
+        "Berea",
+        "Speaker 2"
+      ],
+      [
+        "Christmas Break",
+        "Speaker 1"
+      ],
+      [
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      [
+        "VTOS",
+        "West Virginia"
+      ],
+      [
+        "Speaker 1",
+        "Unique ID"
+      ],
+      [
+        "Bo",
+        "Ian"
+      ],
+      [
+        "Louisiana",
+        "Speaker 1"
+      ],
+      [
+        "Sarah",
+        "Speaker 1"
+      ],
+      [
+        "V1",
+        "West Virginia"
+      ],
+      [
+        "Speaker 2",
+        "Train Model"
+      ],
+      [
+        "Speaker 1",
+        "Speaker 1's Office"
+      ],
+      [
+        "JAD Sessions",
+        "Speaker 1"
+      ],
+      [
+        "Kentucky",
+        "Rhode Island"
+      ],
+      [
+        "ELTS",
+        "VITAS"
+      ],
+      [
+        "Abby",
+        "Ian"
+      ],
+      [
+        "Illinois",
+        "New Jersey"
+      ],
+      [
+        "Illinois",
+        "VITAS"
+      ],
+      [
+        "Speaker 2",
+        "West Park Puritas Nursery"
+      ],
+      [
+        "Enterprise Architect",
+        "Solution Architect"
+      ],
+      [
+        "Driver's ID",
+        "Louisiana"
+      ],
+      [
+        "New Jersey",
+        "Phase Two"
+      ],
+      [
+        "V1.5",
+        "V2"
+      ],
+      [
+        "Fat Heads",
+        "Speaker 2"
+      ],
+      [
+        "Rhode Island",
+        "West Virginia"
+      ],
+      [
+        "Christmas",
+        "Train Model"
+      ],
+      [
+        "Kentucky",
+        "West Virginia"
+      ],
+      [
+        "JAD Sessions",
+        "Speaker 2"
+      ],
+      [
+        "Britt",
+        "OnBase"
+      ],
+      [
+        "Electronic Liens and Titles (ELT)",
+        "banks"
+      ],
+      [
+        "Enterprise Architect",
+        "Ian"
+      ],
+      [
+        "AMVA",
+        "Louisiana"
+      ],
+      [
+        "V1",
+        "V1.5"
+      ],
+      [
+        "State Implementation Team",
+        "State Plugins"
+      ],
+      [
+        "New Jersey",
+        "West Virginia"
+      ],
+      [
+        "Speaker 2",
+        "Speaker 2's Kids"
+      ],
+      [
+        "Poinsettias",
+        "Speaker 1"
+      ]
+    ],
+    "count": 39,
+    "create_time": 1768282474,
+    "update_time": 1768282474,
+    "_id": "doc-0959ac623c6863a51aad6edefa15a1ff"
+  },
+  "doc-48b7c7d9c561fa49dab1a2f3b78a9b30": {
+    "relation_pairs": [
+      [
+        "Highland",
+        "Speaker 1"
+      ],
+      [
+        "Credentialing Product",
+        "Fees Engine"
+      ],
+      [
+        "Engineering Team",
+        "Product Design Team"
+      ],
+      [
+        "Highland Software",
+        "Speaker 2"
+      ],
+      [
+        "Customer Facing",
+        "Speaker 2"
+      ],
+      [
+        "Avon",
+        "Speaker 2"
+      ],
+      [
+        "Joint Architecture Design (JAD) Sessions",
+        "Speaker 1"
+      ],
+      [
+        "Highland",
+        "Product Architect"
+      ],
+      [
+        "Engineering Team",
+        "Speaker 1"
+      ],
+      [
+        "Remote Work",
+        "Speaker 1"
+      ],
+      [
+        "Knowledge Discovery Offering",
+        "Speaker 2"
+      ],
+      [
+        "CTO",
+        "Company"
+      ],
+      [
+        "Highland",
+        "Product Manager"
+      ],
+      [
+        "Customers",
+        "Highland"
+      ],
+      [
+        "2026",
+        "Tech Debt"
+      ],
+      [
+        "Credentialing Product",
+        "Value Added Products"
+      ],
+      [
+        "Credentialing Product",
+        "Highland"
+      ],
+      [
+        "Job Description",
+        "Speaker 1"
+      ],
+      [
+        "2026",
+        "Speaker 1"
+      ],
+      [
+        "CTO",
+        "Software Company in Ohio"
+      ],
+      [
+        "North Ridgeville",
+        "Speaker 1"
+      ],
+      [
+        "Digital Titles",
+        "Tyler"
+      ],
+      [
+        "AI Initiative",
+        "Highland"
+      ],
+      [
+        "Highland",
+        "Knowledge Discovery Offering"
+      ],
+      [
+        "Speaker 2",
+        "Tyler"
+      ],
+      [
+        "Company",
+        "Speaker 1"
+      ],
+      [
+        "Speaker 1",
+        "Speaker 2"
+      ],
+      [
+        "Speaker 1",
+        "Surgery"
+      ],
+      [
+        "Credentialing Product",
+        "Tony"
+      ],
+      [
+        "Integration Testing",
+        "State"
+      ],
+      [
+        "Silicon Valley Product Group Training",
+        "Speaker 2"
+      ],
+      [
+        "2026",
+        "AI Product"
+      ],
+      [
+        "Company",
+        "Product Talent"
+      ],
+      [
+        "AI Space",
+        "Speaker 2"
+      ],
+      [
+        "Company",
+        "Product Management"
+      ],
+      [
+        "Sarah",
+        "Speaker 1"
+      ],
+      [
+        "Data Team",
+        "Enterprise Architecture Team"
+      ],
+      [
+        "Product Management",
+        "Speaker 2"
+      ],
+      [
+        "Credentialing Product",
+        "Louisiana"
+      ],
+      [
+        "Highland",
+        "Unified Data Model"
+      ],
+      [
+        "Abby",
+        "Speaker 2"
+      ],
+      [
+        "OnBase",
+        "Speaker 2"
+      ],
+      [
+        "Kickoff",
+        "Speaker 1"
+      ],
+      [
+        "AI Product",
+        "Digital Title"
+      ],
+      [
+        "Highland",
+        "Speaker 2"
+      ],
+      [
+        "Product Architect",
+        "Speaker 1"
+      ],
+      [
+        "Speaker 1",
+        "UX"
+      ],
+      [
+        "Data Team",
+        "Engineering Team"
+      ],
+      [
+        "Global Portal",
+        "State"
+      ],
+      [
+        "AI Product",
+        "Knowledge Discovery"
+      ],
+      [
+        "Design Manager",
+        "Product Design Team"
+      ]
+    ],
+    "count": 51,
+    "create_time": 1768282832,
+    "update_time": 1768282832,
+    "_id": "doc-48b7c7d9c561fa49dab1a2f3b78a9b30"
+  },
+  "doc-866367e3b00416f160cd95280143776b": {
+    "relation_pairs": [
+      [
+        "Insperity Group Health Plan",
+        "Waiting Period"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Primary Advantage CP 5000"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Choice Plus 2500"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 1700"
+      ],
+      [
+        "Employee Group Health Plan Contributions",
+        "Printed on 11/06/2025"
+      ],
+      [
+        "Pay Frequency",
+        "SemiMonthly"
+      ],
+      [
+        "UnitedHealthcare Out-of-Area 500",
+        "UnitedHealthcare Out-of-Area HDHP 1700"
+      ],
+      [
+        "HPHC Access America",
+        "Massachusetts"
+      ],
+      [
+        "HPHC DHMO 2000 MA",
+        "HPHC HMO MA"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Choice Plus 1000"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "Kaiser HMO HDHP CA South"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 5000 Nevada"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Choice Plus HDHP 1700"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Primary Advantage CP 4500"
+      ],
+      [
+        "CHAMP Titles, Inc.",
+        "Independence Classic Choice"
+      ],
+      [
+        "Contribution Amounts",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Enrollment Period",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "CHAMP TITLES, INC.",
+        "Independence Classic Choice"
+      ],
+      [
+        "HPHC Access America HDHP 1700",
+        "HPHC Access America HDHP 3400"
+      ],
+      [
+        "HPHC Access America 500 (80%)",
+        "HPHC DHMO 1000 MA"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 1700 SC"
+      ],
+      [
+        "HMSA BlueCross BlueShield of Hawaii",
+        "Hawaii"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 1700 Nevada"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 3400 Nevada"
+      ],
+      [
+        "CHAMP TITLES, INC.",
+        "Insperity HSA Employer Contributions"
+      ],
+      [
+        "UnitedHealthcare Out-of-Area HDHP 3400",
+        "UnitedHealthcare Out-of-Area HDHP 5000"
+      ],
+      [
+        "Independence Classic Choice",
+        "Kaiser HMO Hawaii"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Primary Advantage CP 2000"
+      ],
+      [
+        "HMSA BlueCross BlueShield of Hawaii HMO",
+        "Independence Classic Choice"
+      ],
+      [
+        "UnitedHealthcare Choice Plus 1000",
+        "UnitedHealthcare Choice Plus 1500"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Choice Plus 500 (80%)"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 5000 SC"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Choice Plus 6000"
+      ],
+      [
+        "Effective Date",
+        "Paycheck Benefits Waiting Period"
+      ],
+      [
+        "Dental and Vision",
+        "UnitedHealthcare Options PPO"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Choice Plus HDHP 3400 SC"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "UnitedHealthcare Choice Plus 1500"
+      ],
+      [
+        "Independence Classic Choice",
+        "UnitedHealthcare Primary Advantage CP 5000"
+      ],
+      [
+        "0 Days",
+        "Benefits Waiting Period"
+      ],
+      [
+        "Insperity Group Health Plan",
+        "Kaiser HMO HDHP CA North"
+      ],
+      [
+        "UnitedHealthcare Primary Advantage CP 2000",
+        "UnitedHealthcare Primary Advantage CP 4500"
+      ],
+      [
+        "Insperity Contact Center",
+        "Insperity Group Health Plan"
+      ],
+      [
+        "Contribution Frequency",
+        "Per Paycheck"
+      ],
+      [
+        "Benefits Waiting Period",
+        "Effective Date 01/01/2025"
+      ],
+      [
+        "HPHC Access America 1000",
+        "HPHC Access America 1500"
+      ],
+      [
+        "CHAMP TITLES, INC.",
+        "Employee Group Health Plan Contributions"
+      ],
+      [
+        "National Out-of-Area (Indemnity)",
+        "UnitedHealthcare Out-of-Area HDHP 5000"
+      ]
+    ],
+    "count": 47,
+    "create_time": 1768283142,
+    "update_time": 1768283142,
+    "_id": "doc-866367e3b00416f160cd95280143776b"
+  },
+  "doc-cd1e146d6eb4fb0efbdb6208f93c4df6": {
+    "relation_pairs": [
+      [
+        "2025",
+        "CHAMP"
+      ],
+      [
+        "CHAMP",
+        "Shane Bigelow"
+      ],
+      [
+        "CHAMP",
+        "Cleveland, OH"
+      ],
+      [
+        "CHAMP",
+        "United Healthcare"
+      ],
+      [
+        "CHAMP",
+        "Cuyahoga County"
+      ],
+      [
+        "CHAMP",
+        "Open Positions"
+      ],
+      [
+        "CHAMP",
+        "Greater Cleveland Partnership"
+      ],
+      [
+        "Bo Shim",
+        "CHAMP"
+      ],
+      [
+        "CHAMP",
+        "Center Street, Floor 2, Cleveland, OH 44113"
+      ],
+      [
+        "CHAMP",
+        "Harvest Owl"
+      ],
+      [
+        "2018",
+        "CHAMP"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1768283165,
+    "update_time": 1768283165,
+    "_id": "doc-cd1e146d6eb4fb0efbdb6208f93c4df6"
+  }
+}

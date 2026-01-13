@@ -50,3 +50,894 @@
 2026-01-13 00:18:44,429 - uvicorn.access - INFO - 127.0.0.1:59974 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
 2026-01-13 00:18:44,429 - uvicorn.access - INFO - 127.0.0.1:59976 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
 2026-01-13 00:18:44,537 - uvicorn.access - INFO - 127.0.0.1:59979 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 00:20:47,929 - uvicorn.access - INFO - 127.0.0.1:60067 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:20:47,937 - lightrag - INFO - Successfully extracted and enqueued file: 01-05 Meeting: Offboarding, Knowledge Transfer, and SKO Prep.txt
+2026-01-13 00:20:47,939 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 00:20:47,940 - lightrag - INFO - Extracting stage 1/1: 01-05 Meeting: Offboarding, Knowledge Transfer, and SKO Prep.txt
+2026-01-13 00:20:47,940 - lightrag - INFO - Processing d-id: doc-0775d6ea31e08a12365414773fa848c8
+2026-01-13 00:20:48,276 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-13 00:20:49,764 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-13 00:20:54,822 - lightrag - INFO -  == LLM cache == saving: default:extract:2411d56a5f255d46d5ce14ae32fe4c76
+2026-01-13 00:20:57,023 - lightrag - INFO -  == LLM cache == saving: default:extract:9e1e2424c28bfaac7e5a09996b3f9af9
+2026-01-13 00:20:57,024 - lightrag - INFO - Chunk 1 of 3 extracted 4 Ent + 3 Rel chunk-8ebdee35983c176bcadaeb5c2229f8a9
+2026-01-13 00:20:57,371 - uvicorn.access - INFO - 127.0.0.1:60079 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:20:57,375 - lightrag - INFO - Successfully extracted and enqueued file: 01-06 Casual Conversation: Tyler's Departure and New Role at Champ Titles.txt
+2026-01-13 00:20:57,375 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:20:57,385 - uvicorn.access - INFO - 127.0.0.1:60082 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:20:57,389 - lightrag - INFO - Successfully extracted and enqueued file: 01-06 Farewell Conversation: Tyler and Michael Cale.txt
+2026-01-13 00:20:57,389 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:20:57,391 - uvicorn.access - INFO - 127.0.0.1:60085 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:20:57,394 - lightrag - INFO - Successfully extracted and enqueued file: 01-06 Farewell: Tyler's Departure and New Role.txt
+2026-01-13 00:20:57,394 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:20:57,399 - uvicorn.access - INFO - 127.0.0.1:60088 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:20:57,402 - lightrag - INFO - Successfully extracted and enqueued file: 01-06 Farewell: Tyler's Departure.txt
+2026-01-13 00:20:57,402 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:20:59,378 - lightrag - INFO -  == LLM cache == saving: default:extract:49a3fd17134083b3db9dd3ca694a2afb
+2026-01-13 00:21:01,632 - lightrag - INFO -  == LLM cache == saving: default:extract:1fcb2b6e894aae069af49e3e131ec3e5
+2026-01-13 00:21:03,055 - lightrag - INFO -  == LLM cache == saving: default:extract:edf6786a2229b1dc4f3af7ef689541c3
+2026-01-13 00:21:03,056 - lightrag - INFO - Chunk 2 of 3 extracted 9 Ent + 7 Rel chunk-66dddf1d010ab4c5c0646ba996ae7b78
+2026-01-13 00:21:06,756 - lightrag - INFO -  == LLM cache == saving: default:extract:38f98bbf5757dd4e4e2cde8c89847773
+2026-01-13 00:21:06,758 - lightrag - INFO - Chunk 3 of 3 extracted 13 Ent + 8 Rel chunk-ef4269bfd06fa6c2c06d39f89c9c7135
+2026-01-13 00:21:06,759 - lightrag - INFO - Merging stage 1/1: 01-05 Meeting: Offboarding, Knowledge Transfer, and SKO Prep.txt
+2026-01-13 00:21:06,759 - lightrag - INFO - Phase 1: Processing 20 entities from doc-0775d6ea31e08a12365414773fa848c8 (async: 8)
+2026-01-13 00:21:08,809 - lightrag - INFO - Phase 2: Processing 15 relations from doc-0775d6ea31e08a12365414773fa848c8 (async: 8)
+2026-01-13 00:21:12,461 - lightrag - INFO - Phase 3: Updating final 20(20+0) entities and  15 relations from doc-0775d6ea31e08a12365414773fa848c8
+2026-01-13 00:21:12,462 - lightrag - INFO - Completed merging: 20 entities, 0 extra entities, 15 relations
+2026-01-13 00:21:12,474 - lightrag - INFO - [] Writing graph with 20 nodes, 15 edges
+2026-01-13 00:21:13,090 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:21:13,090 - lightrag - INFO - Completed processing file 1/1: 01-05 Meeting: Offboarding, Knowledge Transfer, and SKO Prep.txt
+2026-01-13 00:21:13,091 - lightrag - INFO - Processing additional documents due to pending request
+2026-01-13 00:21:13,092 - lightrag - INFO - Processing 4 document(s)
+2026-01-13 00:21:13,093 - lightrag - INFO - Extracting stage 1/4: 01-06 Casual Conversation: Tyler's Departure and New Role at Champ Titles.txt
+2026-01-13 00:21:13,093 - lightrag - INFO - Processing d-id: doc-254207e4d0f45756b4cefcc086407726
+2026-01-13 00:21:13,093 - lightrag - INFO - Extracting stage 2/4: 01-06 Farewell Conversation: Tyler and Michael Cale.txt
+2026-01-13 00:21:13,093 - lightrag - INFO - Processing d-id: doc-bb9a6214c9977115d9bf6e37c74579dd
+2026-01-13 00:21:23,553 - lightrag - INFO -  == LLM cache == saving: default:extract:4a2ca0e2ede0f44abb8f16e6b446815c
+2026-01-13 00:21:23,768 - lightrag - INFO -  == LLM cache == saving: default:extract:789c146d82e0eabd5cfb50872612c228
+2026-01-13 00:21:24,275 - lightrag - INFO -  == LLM cache == saving: default:extract:4565c99631acfeeadda8da8bea0d7042
+2026-01-13 00:21:25,602 - lightrag - INFO -  == LLM cache == saving: default:extract:33d43f28983636b13576b02f0667a9eb
+2026-01-13 00:21:27,647 - lightrag - INFO -  == LLM cache == saving: default:extract:f6b6583ac6f6aa4e2c13f6f7afbb9cbd
+2026-01-13 00:21:27,648 - lightrag - INFO - Chunk 1 of 4 extracted 11 Ent + 6 Rel chunk-5ac4704bb69949711148579495f8c250
+2026-01-13 00:21:29,800 - lightrag - INFO -  == LLM cache == saving: default:extract:7c82658acfdec2507472cc9ed57191db
+2026-01-13 00:21:29,800 - lightrag - INFO -  == LLM cache == saving: default:extract:fd8b45acde049cda17af413c9dd83a9d
+2026-01-13 00:21:29,802 - lightrag - INFO - Chunk 2 of 4 extracted 9 Ent + 7 Rel chunk-155063a21aee454cd7d21e6d04915039
+2026-01-13 00:21:29,802 - lightrag - INFO - Chunk 3 of 4 extracted 8 Ent + 6 Rel chunk-c5f804ca5ab7568707de8dc7ada41c98
+2026-01-13 00:21:29,898 - lightrag - INFO -  == LLM cache == saving: default:extract:b8c624f9d286ff28e23947ff2636af3e
+2026-01-13 00:21:32,353 - lightrag - INFO -  == LLM cache == saving: default:extract:542bcef198c946dcbfd4827b623ce429
+2026-01-13 00:21:32,353 - lightrag - INFO - Chunk 4 of 4 extracted 9 Ent + 8 Rel chunk-c5295e4064c286da366d26bcd559632c
+2026-01-13 00:21:32,354 - lightrag - INFO - Merging stage 2/4: 01-06 Farewell Conversation: Tyler and Michael Cale.txt
+2026-01-13 00:21:32,354 - lightrag - INFO - Phase 1: Processing 24 entities from doc-bb9a6214c9977115d9bf6e37c74579dd (async: 8)
+2026-01-13 00:21:32,356 - lightrag - INFO - Merged: `Speaker 1` | 3+4
+2026-01-13 00:21:32,357 - lightrag - INFO - Merged: `Speaker 2` | 3+4
+2026-01-13 00:21:33,244 - lightrag - INFO -  == LLM cache == saving: default:extract:9b9b5c2fcfde2a3714950268251eb044
+2026-01-13 00:21:33,245 - lightrag - INFO - Chunk 1 of 2 extracted 6 Ent + 5 Rel chunk-c1773330f06dd93aa84fc9ae182749f1
+2026-01-13 00:21:33,432 - lightrag - INFO - Phase 2: Processing 18 relations from doc-bb9a6214c9977115d9bf6e37c74579dd (async: 8)
+2026-01-13 00:21:33,433 - lightrag - INFO - Merged: `Speaker 1`~`Speaker 2` | 3+4
+2026-01-13 00:21:35,042 - lightrag - INFO -  == LLM cache == saving: default:extract:6027277eb51a56b2784716dcf911a1c3
+2026-01-13 00:21:36,473 - lightrag - INFO - Phase 3: Updating final 24(24+0) entities and  18 relations from doc-bb9a6214c9977115d9bf6e37c74579dd
+2026-01-13 00:21:36,474 - lightrag - INFO - Completed merging: 24 entities, 0 extra entities, 18 relations
+2026-01-13 00:21:36,487 - lightrag - INFO - [] Writing graph with 42 nodes, 32 edges
+2026-01-13 00:21:36,490 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:21:36,490 - lightrag - INFO - Completed processing file 2/4: 01-06 Farewell Conversation: Tyler and Michael Cale.txt
+2026-01-13 00:21:36,491 - lightrag - INFO - Extracting stage 3/4: 01-06 Farewell: Tyler's Departure and New Role.txt
+2026-01-13 00:21:36,491 - lightrag - INFO - Processing d-id: doc-abf6e365e95946c4ae89d1fe9fdafe7e
+2026-01-13 00:21:38,897 - lightrag - INFO -  == LLM cache == saving: default:extract:5cbb645e5df93144cdace4769a662cb2
+2026-01-13 00:21:38,898 - lightrag - INFO - Chunk 2 of 2 extracted 10 Ent + 7 Rel chunk-6d7a35e53b83c9b243ba9fe6a526f74b
+2026-01-13 00:21:38,898 - lightrag - INFO - Merging stage 1/4: 01-06 Casual Conversation: Tyler's Departure and New Role at Champ Titles.txt
+2026-01-13 00:21:38,898 - lightrag - INFO - Phase 1: Processing 12 entities from doc-254207e4d0f45756b4cefcc086407726 (async: 8)
+2026-01-13 00:21:38,900 - lightrag - INFO - Merged: `Courtney` | 1+2
+2026-01-13 00:21:38,938 - lightrag - INFO - Merged: `Highland` | 3+1
+2026-01-13 00:21:42,077 - lightrag - INFO -  == LLM cache == saving: default:extract:5cd50cc044d593c944d43f1d39a47e69
+2026-01-13 00:21:43,000 - lightrag - INFO -  == LLM cache == saving: default:summary:24a2e3e411c68a3ee3419a190b1e875b
+2026-01-13 00:21:43,001 - lightrag - INFO - LLMmrg: `Speaker 1` | 7+2
+2026-01-13 00:21:43,176 - lightrag - INFO -  == LLM cache == saving: default:summary:1a9dc6586eb4916099e98360a1675ea4
+2026-01-13 00:21:43,177 - lightrag - INFO - LLMmrg: `Speaker 2` | 7+2
+2026-01-13 00:21:43,468 - lightrag - INFO - Phase 2: Processing 10 relations from doc-254207e4d0f45756b4cefcc086407726 (async: 8)
+2026-01-13 00:21:44,537 - lightrag - INFO -  == LLM cache == saving: default:extract:46c25a55a3d94eb914f579c33ffb6d05
+2026-01-13 00:21:44,539 - lightrag - INFO - Chunk 1 of 2 extracted 6 Ent + 4 Rel chunk-86b8469c12da6ff59654eff7df9ca901
+2026-01-13 00:21:49,150 - lightrag - INFO -  == LLM cache == saving: default:summary:4041328b91e3935c894eb7ef5fbfd615
+2026-01-13 00:21:49,151 - lightrag - INFO - LLMmrg: `Speaker 1`~`Speaker 2` | 7+3
+2026-01-13 00:21:49,639 - lightrag - INFO - Merged: `Highland`~`Speaker 2` | 3+1
+2026-01-13 00:21:50,681 - lightrag - INFO - Phase 3: Updating final 12(12+0) entities and  10 relations from doc-254207e4d0f45756b4cefcc086407726
+2026-01-13 00:21:50,682 - lightrag - INFO - Completed merging: 12 entities, 0 extra entities, 10 relations
+2026-01-13 00:21:50,698 - lightrag - INFO - [] Writing graph with 50 nodes, 40 edges
+2026-01-13 00:21:50,702 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:21:50,702 - lightrag - INFO - Completed processing file 1/4: 01-06 Casual Conversation: Tyler's Departure and New Role at Champ Titles.txt
+2026-01-13 00:21:50,702 - lightrag - INFO - Extracting stage 4/4: 01-06 Farewell: Tyler's Departure.txt
+2026-01-13 00:21:50,702 - lightrag - INFO - Processing d-id: doc-23606cab7fd088179e5a4011ad2c1ade
+2026-01-13 00:21:50,829 - lightrag - INFO -  == LLM cache == saving: default:extract:35cbd48c99cdc6100315228a5e9bef43
+2026-01-13 00:21:53,957 - lightrag - INFO -  == LLM cache == saving: default:extract:24b8fbbecc716880a8e2a9beeb0ddfeb
+2026-01-13 00:21:53,958 - lightrag - INFO - Chunk 2 of 2 extracted 12 Ent + 7 Rel chunk-2afa088cdf131a1f75632964f4c942bc
+2026-01-13 00:21:53,958 - lightrag - INFO - Merging stage 3/4: 01-06 Farewell: Tyler's Departure and New Role.txt
+2026-01-13 00:21:53,958 - lightrag - INFO - Phase 1: Processing 14 entities from doc-abf6e365e95946c4ae89d1fe9fdafe7e (async: 8)
+2026-01-13 00:21:53,960 - lightrag - INFO - Merged: `Speaker 1` | 1+2
+2026-01-13 00:21:53,961 - lightrag - INFO - Merged: `Speaker 2` | 1+2
+2026-01-13 00:21:54,001 - lightrag - INFO - Merged: `Highland` | 4+2
+2026-01-13 00:21:54,200 - lightrag - INFO - Merged: `Knowledge Discovery` | 1+1
+2026-01-13 00:21:54,225 - lightrag - INFO - Merged: `Matisha` | 2+1
+2026-01-13 00:21:54,253 - lightrag - INFO - Merged: `Mike` | 1+1
+2026-01-13 00:21:54,486 - lightrag - INFO - Phase 2: Processing 10 relations from doc-abf6e365e95946c4ae89d1fe9fdafe7e (async: 8)
+2026-01-13 00:21:54,488 - lightrag - INFO - Merged: `Speaker 1`~`Speaker 2` | 1+2
+2026-01-13 00:21:55,289 - lightrag - INFO - Merged: `Highland`~`Speaker 2` | 4+1
+2026-01-13 00:21:55,502 - lightrag - INFO - Merged: `Matisha`~`Speaker 2` | 2+1
+2026-01-13 00:21:55,948 - lightrag - INFO - Phase 3: Updating final 14(14+0) entities and  10 relations from doc-abf6e365e95946c4ae89d1fe9fdafe7e
+2026-01-13 00:21:55,949 - lightrag - INFO - Completed merging: 14 entities, 0 extra entities, 10 relations
+2026-01-13 00:21:55,969 - lightrag - INFO - [] Writing graph with 58 nodes, 47 edges
+2026-01-13 00:21:55,973 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:21:55,973 - lightrag - INFO - Completed processing file 3/4: 01-06 Farewell: Tyler's Departure and New Role.txt
+2026-01-13 00:21:56,721 - lightrag - INFO -  == LLM cache == saving: default:extract:c5688fe517786328a922762b6b7b3831
+2026-01-13 00:21:57,746 - lightrag - INFO -  == LLM cache == saving: default:extract:f81d2da38d4d962b9609b6e9cb4ca22e
+2026-01-13 00:22:02,187 - lightrag - INFO -  == LLM cache == saving: default:extract:374f7357bc7bd009a5d228747e6a7898
+2026-01-13 00:22:02,187 - lightrag - INFO - Chunk 1 of 3 extracted 5 Ent + 2 Rel chunk-0df973b33b78e1b4ef190ff3384eeb3d
+2026-01-13 00:22:02,239 - lightrag - INFO -  == LLM cache == saving: default:extract:36b69b82ea180fb757ccaeaa94528f4a
+2026-01-13 00:22:02,240 - lightrag - INFO - Chunk 2 of 3 extracted 7 Ent + 6 Rel chunk-0d30ca4a621f672a32024f08a44fcb80
+2026-01-13 00:22:07,986 - lightrag - INFO -  == LLM cache == saving: default:extract:93f4a880571204314adf5cfbfe4f7226
+2026-01-13 00:22:12,489 - lightrag - INFO -  == LLM cache == saving: default:extract:d1542a4d19b498c259af9c534ab49bd4
+2026-01-13 00:22:12,490 - lightrag - INFO - Chunk 3 of 3 extracted 14 Ent + 12 Rel chunk-2001d30a06e61b45ec95b0ead2607d51
+2026-01-13 00:22:12,490 - lightrag - INFO - Merging stage 4/4: 01-06 Farewell: Tyler's Departure.txt
+2026-01-13 00:22:12,490 - lightrag - INFO - Phase 1: Processing 22 entities from doc-23606cab7fd088179e5a4011ad2c1ade (async: 8)
+2026-01-13 00:22:12,492 - lightrag - INFO - Merged: `Rafal` | 2+1
+2026-01-13 00:22:12,493 - lightrag - INFO - Merged: `Erica` | 1+1
+2026-01-13 00:22:12,517 - lightrag - INFO - Merged: `SKO` | 1+1
+2026-01-13 00:22:12,523 - lightrag - INFO - Merged: `Speaker 1` | 3+3
+2026-01-13 00:22:12,525 - lightrag - INFO - Merged: `Speaker 2` | 3+3
+2026-01-13 00:22:12,530 - lightrag - INFO - Merged: `Highland` | 6+1
+2026-01-13 00:22:13,316 - lightrag - INFO - Phase 2: Processing 18 relations from doc-23606cab7fd088179e5a4011ad2c1ade (async: 8)
+2026-01-13 00:22:13,318 - lightrag - INFO - Merged: `Highland`~`Speaker 2` | 5+1
+2026-01-13 00:22:13,580 - lightrag - INFO - Merged: `SKO`~`Speaker 1` | 1+1
+2026-01-13 00:22:13,823 - lightrag - INFO - Merged: `Speaker 1`~`Speaker 2` | 3+4
+2026-01-13 00:22:16,178 - lightrag - INFO - Phase 3: Updating final 22(22+0) entities and  18 relations from doc-23606cab7fd088179e5a4011ad2c1ade
+2026-01-13 00:22:16,178 - lightrag - INFO - Completed merging: 22 entities, 0 extra entities, 18 relations
+2026-01-13 00:22:16,200 - lightrag - INFO - [] Writing graph with 74 nodes, 62 edges
+2026-01-13 00:22:16,204 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:22:16,204 - lightrag - INFO - Completed processing file 4/4: 01-06 Farewell: Tyler's Departure.txt
+2026-01-13 00:22:16,205 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 00:22:27,604 - lightrag - INFO - [] Subgraph query successful | Node count: 74 | Edge count: 62
+2026-01-13 00:22:27,608 - uvicorn.access - INFO - 127.0.0.1:60447 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:22:27,608 - uvicorn.access - INFO - 127.0.0.1:60449 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:22:27,640 - uvicorn.access - INFO - 127.0.0.1:60452 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:22:27,680 - lightrag - INFO - [] Subgraph query successful | Node count: 74 | Edge count: 62
+2026-01-13 00:22:27,687 - uvicorn.access - INFO - 127.0.0.1:60455 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:24:31,554 - lightrag - INFO -  == LLM cache == saving: global:keywords:5ddba7429d9346bed5b437c8cdf7070d
+2026-01-13 00:24:31,827 - lightrag - INFO - Query edges: Topics, Tyler (top_k:40, cosine:0.2)
+2026-01-13 00:24:32,072 - lightrag - INFO - Global query: 42 entites, 40 relations
+2026-01-13 00:24:32,072 - lightrag - INFO - Raw search results: 42 entities, 40 relations, 0 vector chunks
+2026-01-13 00:24:32,078 - lightrag - INFO - After truncation: 42 entities, 40 relations
+2026-01-13 00:24:32,083 - lightrag - INFO - Selecting 14 from 14 entity-related chunks by vector similarity
+2026-01-13 00:24:32,083 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:24:32,083 - lightrag - INFO - Round-robin merged chunks: 14 -> 14 (deduplicated 0)
+2026-01-13 00:24:32,088 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:24:32,097 - lightrag - INFO - Final context: 42 entities, 40 relations, 14 chunks
+2026-01-13 00:24:32,097 - lightrag - INFO - Final chunks S+F/O: E8/1 E7/2 E6/3 E3/4 E8/5 E5/6 E4/7 E3/8 E9/9 E6/10 E11/11 E7/12 E5/13 E4/14
+2026-01-13 00:24:33,119 - uvicorn.access - INFO - 127.0.0.1:60512 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:25:27,913 - uvicorn.access - INFO - 127.0.0.1:60581 - "GET /auth-status HTTP/1.1" 200
+2026-01-13 00:26:04,124 - uvicorn.access - INFO - 127.0.0.1:60689 - "GET /auth-status HTTP/1.1" 200
+2026-01-13 00:27:07,004 - uvicorn.error - INFO - Shutting down
+2026-01-13 00:27:07,109 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-13 00:27:07,110 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-13 00:27:07,110 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-13 00:27:07,110 - uvicorn.error - INFO - Finished server process [49240]
+2026-01-13 00:27:09,896 - lightrag - INFO - Frontend build is up-to-date
+2026-01-13 00:27:09,896 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 00:27:10,057 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 00:27:10,057 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 00:27:10,057 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 00:27:10,057 - lightrag - INFO - Reranking is disabled
+2026-01-13 00:27:10,231 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 74 nodes, 62 edges
+2026-01-13 00:27:10,279 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-13 00:27:10,293 - uvicorn.error - INFO - Started server process [51046]
+2026-01-13 00:27:10,293 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 00:27:10,293 - lightrag - INFO - [] Process 51046 KV load full_docs with 5 records
+2026-01-13 00:27:10,294 - lightrag - INFO - [] Process 51046 KV load text_chunks with 14 records
+2026-01-13 00:27:10,294 - lightrag - INFO - [] Process 51046 KV load full_entities with 5 records
+2026-01-13 00:27:10,294 - lightrag - INFO - [] Process 51046 KV load full_relations with 5 records
+2026-01-13 00:27:10,294 - lightrag - INFO - [] Process 51046 KV load entity_chunks with 74 records
+2026-01-13 00:27:10,295 - lightrag - INFO - [] Process 51046 KV load relation_chunks with 62 records
+2026-01-13 00:27:10,296 - lightrag - INFO - [] Process 51046 KV load llm_response_cache with 32 records
+2026-01-13 00:27:10,296 - lightrag - INFO - [] Process 51046 doc status load doc_status with 5 records
+2026-01-13 00:27:10,297 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 00:27:10,297 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 00:27:28,419 - uvicorn.access - INFO - 127.0.0.1:60896 - "GET /webui/assets/index-DS3Wz1EX.css HTTP/1.1" 200
+2026-01-13 00:27:28,419 - uvicorn.access - INFO - 127.0.0.1:60895 - "GET /webui/assets/index-DK5CngKH.js HTTP/1.1" 200
+2026-01-13 00:27:28,648 - uvicorn.access - INFO - 127.0.0.1:60895 - "GET /auth-status HTTP/1.1" 200
+2026-01-13 00:27:28,651 - uvicorn.access - INFO - 127.0.0.1:60896 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-01-13 00:27:28,743 - uvicorn.access - INFO - 127.0.0.1:60896 - "GET /docs HTTP/1.1" 200
+2026-01-13 00:27:28,753 - uvicorn.access - INFO - 127.0.0.1:60901 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:27:28,756 - lightrag - INFO - [] Subgraph query successful | Node count: 74 | Edge count: 62
+2026-01-13 00:27:28,761 - uvicorn.access - INFO - 127.0.0.1:60902 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:27:28,763 - uvicorn.access - INFO - 127.0.0.1:60901 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
+2026-01-13 00:27:28,763 - uvicorn.access - INFO - 127.0.0.1:60895 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
+2026-01-13 00:27:28,874 - uvicorn.access - INFO - 127.0.0.1:60901 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 00:28:15,329 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-13 00:28:15,449 - uvicorn.access - INFO - 127.0.0.1:60913 - "GET /webui/assets/index-B0ICGQ99.js HTTP/1.1" 200
+2026-01-13 00:28:16,734 - lightrag - INFO -  == LLM cache == saving: global:keywords:7bc13b1e3e6a1f3c473379556da8642e
+2026-01-13 00:28:16,735 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-13 00:28:16,957 - lightrag - INFO - Query edges: Conversational topics, Speaker 2 (top_k:40, cosine:0.2)
+2026-01-13 00:28:17,289 - lightrag - INFO - Global query: 41 entites, 40 relations
+2026-01-13 00:28:17,289 - lightrag - INFO - Raw search results: 41 entities, 40 relations, 0 vector chunks
+2026-01-13 00:28:17,295 - lightrag - INFO - After truncation: 41 entities, 40 relations
+2026-01-13 00:28:17,299 - lightrag - INFO - Selecting 14 from 14 entity-related chunks by vector similarity
+2026-01-13 00:28:17,299 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:28:17,299 - lightrag - INFO - Round-robin merged chunks: 14 -> 14 (deduplicated 0)
+2026-01-13 00:28:17,304 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:28:17,314 - lightrag - INFO - Final context: 41 entities, 40 relations, 14 chunks
+2026-01-13 00:28:17,314 - lightrag - INFO - Final chunks S+F/O: E2/1 E8/2 E3/3 E8/4 E4/5 E7/6 E7/7 E7/8 E5/9 E8/10 E4/11 E5/12 E8/13 E8/14
+2026-01-13 00:28:18,880 - uvicorn.access - INFO - 127.0.0.1:60911 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:28:55,642 - lightrag - INFO -  == LLM cache == saving: global:keywords:09d3cb1ecdda62cdeff11d1e507ce3d5
+2026-01-13 00:28:56,074 - lightrag - INFO - Query edges: Relationship, Interpersonal dynamics (top_k:40, cosine:0.2)
+2026-01-13 00:28:56,302 - lightrag - INFO - Global query: 39 entites, 40 relations
+2026-01-13 00:28:56,302 - lightrag - INFO - Raw search results: 39 entities, 40 relations, 0 vector chunks
+2026-01-13 00:28:56,307 - lightrag - INFO - After truncation: 39 entities, 40 relations
+2026-01-13 00:28:56,310 - lightrag - INFO - Selecting 14 from 14 entity-related chunks by vector similarity
+2026-01-13 00:28:56,311 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:28:56,311 - lightrag - INFO - Round-robin merged chunks: 14 -> 14 (deduplicated 0)
+2026-01-13 00:28:56,316 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:28:56,326 - lightrag - INFO - Final context: 39 entities, 40 relations, 14 chunks
+2026-01-13 00:28:56,326 - lightrag - INFO - Final chunks S+F/O: E4/1 E3/2 E10/3 E3/4 E8/5 E7/6 E7/7 E7/8 E5/9 E2/10 E6/11 E6/12 E7/13 E7/14
+2026-01-13 00:28:57,484 - uvicorn.access - INFO - 127.0.0.1:60935 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:31:11,738 - uvicorn.access - INFO - 127.0.0.1:61038 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-13 00:31:11,742 - lightrag - INFO - Deleting document 1/5: doc-23606cab7fd088179e5a4011ad2c1ade
+2026-01-13 00:31:11,742 - lightrag - INFO - Starting deletion process for document doc-23606cab7fd088179e5a4011ad2c1ade
+2026-01-13 00:31:11,743 - lightrag - INFO - Collected 6 LLM cache entries for document doc-23606cab7fd088179e5a4011ad2c1ade
+2026-01-13 00:31:11,749 - lightrag - INFO - Found 6 affected entities
+2026-01-13 00:31:11,750 - lightrag - INFO - Found 3 affected relations
+2026-01-13 00:31:11,752 - lightrag - INFO - Successfully deleted 3 chunks from storage
+2026-01-13 00:31:11,752 - lightrag - INFO - Successfully deleted 15 relations
+2026-01-13 00:31:11,755 - lightrag - INFO - Successfully deleted 16 entities
+2026-01-13 00:31:11,771 - lightrag - INFO - [] Writing graph with 58 nodes, 47 edges
+2026-01-13 00:31:11,797 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:11,797 - lightrag - INFO - Rebuilding knowledge from 11 cached chunk extractions (parallel processing)
+2026-01-13 00:31:11,798 - lightrag - INFO - Found 22 valid cache entries, 11 chunks with results
+2026-01-13 00:31:11,809 - lightrag - INFO - Starting parallel rebuild of 6 entities and 3 relationships (async: 8)
+2026-01-13 00:31:12,069 - lightrag - INFO - Rebuild `Erica` from 1 chunks
+2026-01-13 00:31:12,089 - lightrag - INFO - Rebuild `SKO` from 1 chunks
+2026-01-13 00:31:12,094 - lightrag - INFO - Rebuild `Rafal` from 2 chunks
+2026-01-13 00:31:12,198 - lightrag - INFO - Rebuild `Highland` from 6 chunks
+2026-01-13 00:31:17,362 - lightrag - INFO -  == LLM cache == saving: default:summary:064a289aa01d9e3e8537afc9c4a9e81b
+2026-01-13 00:31:17,420 - lightrag - INFO -  == LLM cache == saving: default:summary:65539bb9bdc64024d82e470b575e0e41
+2026-01-13 00:31:17,637 - lightrag - INFO - Rebuild `Speaker 2` from 11 chunks
+2026-01-13 00:31:17,637 - lightrag - INFO - Rebuild `Speaker 1` from 11 chunks
+2026-01-13 00:31:17,830 - lightrag - INFO - Rebuild `Highland`~`Speaker 2` from 5 chunks
+2026-01-13 00:31:25,080 - lightrag - INFO -  == LLM cache == saving: default:summary:f0ac193ca4a84e666444990dc756c1f9
+2026-01-13 00:31:25,390 - lightrag - INFO - Rebuild `Speaker 1`~`Speaker 2` from 11 chunks
+2026-01-13 00:31:25,964 - lightrag - INFO - Rebuild `SKO`~`Speaker 1` from 1 chunks
+2026-01-13 00:31:25,964 - lightrag - INFO - KG rebuild completed: 6 entities and 3 relationships rebuilt successfully.
+2026-01-13 00:31:25,965 - lightrag - INFO - Successfully deleted 6 LLM cache entries for document doc-23606cab7fd088179e5a4011ad2c1ade
+2026-01-13 00:31:25,983 - lightrag - INFO - [] Writing graph with 58 nodes, 47 edges
+2026-01-13 00:31:25,986 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:25,986 - lightrag - INFO - Document deleted 1/5: doc-23606cab7fd088179e5a4011ad2c1ade[01-06 Farewell: Tyler's Departure.txt]
+2026-01-13 00:31:25,987 - lightrag - INFO - Successfully deleted enqueued file: 01-06 Farewell: Tyler's Departure and New Role.txt
+2026-01-13 00:31:25,987 - lightrag - INFO - Successfully deleted enqueued file: 01-06 Farewell: Tyler's Departure.txt
+2026-01-13 00:31:25,987 - lightrag - INFO - Deleting document 2/5: doc-abf6e365e95946c4ae89d1fe9fdafe7e
+2026-01-13 00:31:25,988 - lightrag - INFO - Starting deletion process for document doc-abf6e365e95946c4ae89d1fe9fdafe7e
+2026-01-13 00:31:25,988 - lightrag - INFO - Collected 4 LLM cache entries for document doc-abf6e365e95946c4ae89d1fe9fdafe7e
+2026-01-13 00:31:25,991 - lightrag - INFO - Found 6 affected entities
+2026-01-13 00:31:25,992 - lightrag - INFO - Found 3 affected relations
+2026-01-13 00:31:25,992 - lightrag - INFO - Successfully deleted 2 chunks from storage
+2026-01-13 00:31:25,993 - lightrag - INFO - Successfully deleted 7 relations
+2026-01-13 00:31:25,993 - lightrag - INFO - Successfully deleted 8 entities
+2026-01-13 00:31:26,001 - lightrag - INFO - [] Writing graph with 50 nodes, 40 edges
+2026-01-13 00:31:26,004 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:26,004 - lightrag - INFO - Rebuilding knowledge from 9 cached chunk extractions (parallel processing)
+2026-01-13 00:31:26,004 - lightrag - INFO - Found 18 valid cache entries, 9 chunks with results
+2026-01-13 00:31:26,013 - lightrag - INFO - Starting parallel rebuild of 6 entities and 3 relationships (async: 8)
+2026-01-13 00:31:26,283 - lightrag - INFO - Rebuild `Highland` from 4 chunks
+2026-01-13 00:31:26,298 - lightrag - INFO - Rebuild `Matisha` from 2 chunks
+2026-01-13 00:31:26,308 - lightrag - INFO - Rebuild `Mike` from 1 chunks
+2026-01-13 00:31:26,349 - lightrag - INFO - Rebuild `Knowledge Discovery` from 1 chunks
+2026-01-13 00:31:32,109 - lightrag - INFO -  == LLM cache == saving: default:summary:cb594fac191292cf316a211f803bf02d
+2026-01-13 00:31:32,340 - lightrag - INFO - Rebuild `Speaker 1` from 9 chunks
+2026-01-13 00:31:32,927 - lightrag - INFO -  == LLM cache == saving: default:summary:10b31622d584c55cbb03ff67c3899108
+2026-01-13 00:31:33,218 - lightrag - INFO - Rebuild `Speaker 2` from 9 chunks
+2026-01-13 00:31:33,439 - lightrag - INFO - Rebuild `Highland`~`Speaker 2` from 4 chunks
+2026-01-13 00:31:33,851 - lightrag - INFO - Rebuild `Matisha`~`Speaker 2` from 2 chunks
+2026-01-13 00:31:35,572 - uvicorn.access - INFO - 127.0.0.1:61085 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 00:31:35,577 - lightrag - INFO - Found 0 files to index.
+2026-01-13 00:31:35,577 - lightrag - INFO - No upload file found, check if there are any documents in the queue...
+2026-01-13 00:31:35,577 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:31:39,170 - uvicorn.access - INFO - 127.0.0.1:61085 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 00:31:39,173 - lightrag - INFO - Found 0 files to index.
+2026-01-13 00:31:39,173 - lightrag - INFO - No upload file found, check if there are any documents in the queue...
+2026-01-13 00:31:39,174 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:31:39,785 - lightrag - INFO -  == LLM cache == saving: default:summary:0eaa3cce6884d55fee9b83066a9c0e74
+2026-01-13 00:31:40,038 - lightrag - INFO - Rebuild `Speaker 1`~`Speaker 2` from 9 chunks
+2026-01-13 00:31:40,039 - lightrag - INFO - KG rebuild completed: 6 entities and 3 relationships rebuilt successfully.
+2026-01-13 00:31:40,040 - lightrag - INFO - Successfully deleted 4 LLM cache entries for document doc-abf6e365e95946c4ae89d1fe9fdafe7e
+2026-01-13 00:31:40,060 - lightrag - INFO - [] Writing graph with 50 nodes, 40 edges
+2026-01-13 00:31:40,064 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:40,064 - lightrag - INFO - Document deleted 2/5: doc-abf6e365e95946c4ae89d1fe9fdafe7e[01-06 Farewell: Tyler's Departure and New Role.txt]
+2026-01-13 00:31:40,065 - lightrag - WARNING - File deletion skipped, missing or unsafe file: 01-06 Farewell: Tyler's Departure and New Role.txt
+2026-01-13 00:31:40,065 - lightrag - INFO - Deleting document 3/5: doc-254207e4d0f45756b4cefcc086407726
+2026-01-13 00:31:40,065 - lightrag - INFO - Starting deletion process for document doc-254207e4d0f45756b4cefcc086407726
+2026-01-13 00:31:40,065 - lightrag - INFO - Collected 4 LLM cache entries for document doc-254207e4d0f45756b4cefcc086407726
+2026-01-13 00:31:40,068 - lightrag - INFO - Found 4 affected entities
+2026-01-13 00:31:40,069 - lightrag - INFO - Found 2 affected relations
+2026-01-13 00:31:40,069 - lightrag - INFO - Successfully deleted 2 chunks from storage
+2026-01-13 00:31:40,070 - lightrag - INFO - Successfully deleted 8 relations
+2026-01-13 00:31:40,072 - lightrag - INFO - Successfully deleted 8 entities
+2026-01-13 00:31:40,079 - lightrag - INFO - [] Writing graph with 42 nodes, 32 edges
+2026-01-13 00:31:40,081 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:40,081 - lightrag - INFO - Rebuilding knowledge from 7 cached chunk extractions (parallel processing)
+2026-01-13 00:31:40,081 - lightrag - INFO - Found 14 valid cache entries, 7 chunks with results
+2026-01-13 00:31:40,088 - lightrag - INFO - Starting parallel rebuild of 4 entities and 2 relationships (async: 8)
+2026-01-13 00:31:40,301 - lightrag - INFO - Rebuild `Highland` from 3 chunks
+2026-01-13 00:31:40,324 - lightrag - INFO - Rebuild `Speaker 2` from 7 chunks
+2026-01-13 00:31:40,373 - lightrag - INFO - Rebuild `Speaker 1` from 7 chunks
+2026-01-13 00:31:40,404 - lightrag - INFO - Rebuild `Courtney` from 1 chunks
+2026-01-13 00:31:40,594 - lightrag - INFO - Rebuild `Highland`~`Speaker 2` from 3 chunks
+2026-01-13 00:31:40,805 - lightrag - INFO - Rebuild `Speaker 1`~`Speaker 2` from 7 chunks
+2026-01-13 00:31:40,805 - lightrag - INFO - KG rebuild completed: 4 entities and 2 relationships rebuilt successfully.
+2026-01-13 00:31:40,806 - lightrag - INFO - Successfully deleted 4 LLM cache entries for document doc-254207e4d0f45756b4cefcc086407726
+2026-01-13 00:31:40,819 - lightrag - INFO - [] Writing graph with 42 nodes, 32 edges
+2026-01-13 00:31:40,823 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:40,823 - lightrag - INFO - Document deleted 3/5: doc-254207e4d0f45756b4cefcc086407726[01-06 Casual Conversation: Tyler's Departure and New Role at Champ Titles.txt]
+2026-01-13 00:31:40,824 - lightrag - INFO - Successfully deleted enqueued file: 01-06 Casual Conversation: Tyler's Departure and New Role at Champ Titles.txt
+2026-01-13 00:31:40,824 - lightrag - INFO - Deleting document 4/5: doc-bb9a6214c9977115d9bf6e37c74579dd
+2026-01-13 00:31:40,825 - lightrag - INFO - Starting deletion process for document doc-bb9a6214c9977115d9bf6e37c74579dd
+2026-01-13 00:31:40,825 - lightrag - INFO - Collected 8 LLM cache entries for document doc-bb9a6214c9977115d9bf6e37c74579dd
+2026-01-13 00:31:40,832 - lightrag - INFO - Found 2 affected entities
+2026-01-13 00:31:40,834 - lightrag - INFO - Found 1 affected relations
+2026-01-13 00:31:40,835 - lightrag - INFO - Successfully deleted 4 chunks from storage
+2026-01-13 00:31:40,836 - lightrag - INFO - Successfully deleted 17 relations
+2026-01-13 00:31:40,839 - lightrag - INFO - Successfully deleted 22 entities
+2026-01-13 00:31:40,842 - lightrag - INFO - [] Writing graph with 20 nodes, 15 edges
+2026-01-13 00:31:40,844 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:40,844 - lightrag - INFO - Rebuilding knowledge from 3 cached chunk extractions (parallel processing)
+2026-01-13 00:31:40,844 - lightrag - INFO - Found 6 valid cache entries, 3 chunks with results
+2026-01-13 00:31:40,848 - lightrag - INFO - Starting parallel rebuild of 2 entities and 1 relationships (async: 8)
+2026-01-13 00:31:41,081 - lightrag - INFO - Rebuild `Speaker 1` from 3 chunks
+2026-01-13 00:31:41,115 - lightrag - INFO - Rebuild `Speaker 2` from 3 chunks
+2026-01-13 00:31:41,402 - lightrag - INFO - Rebuild `Speaker 1`~`Speaker 2` from 3 chunks
+2026-01-13 00:31:41,402 - lightrag - INFO - KG rebuild completed: 2 entities and 1 relationships rebuilt successfully.
+2026-01-13 00:31:41,403 - lightrag - INFO - Successfully deleted 8 LLM cache entries for document doc-bb9a6214c9977115d9bf6e37c74579dd
+2026-01-13 00:31:41,410 - lightrag - INFO - [] Writing graph with 20 nodes, 15 edges
+2026-01-13 00:31:41,413 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:41,413 - lightrag - INFO - Document deleted 4/5: doc-bb9a6214c9977115d9bf6e37c74579dd[01-06 Farewell Conversation: Tyler and Michael Cale.txt]
+2026-01-13 00:31:41,414 - lightrag - INFO - Successfully deleted enqueued file: 01-06 Farewell Conversation: Tyler and Michael Cale.txt
+2026-01-13 00:31:41,414 - lightrag - INFO - Deleting document 5/5: doc-0775d6ea31e08a12365414773fa848c8
+2026-01-13 00:31:41,414 - lightrag - INFO - Starting deletion process for document doc-0775d6ea31e08a12365414773fa848c8
+2026-01-13 00:31:41,414 - lightrag - INFO - Collected 6 LLM cache entries for document doc-0775d6ea31e08a12365414773fa848c8
+2026-01-13 00:31:41,420 - lightrag - INFO - Found 0 affected entities
+2026-01-13 00:31:41,422 - lightrag - INFO - Found 0 affected relations
+2026-01-13 00:31:41,423 - lightrag - INFO - Successfully deleted 3 chunks from storage
+2026-01-13 00:31:41,423 - lightrag - INFO - Successfully deleted 15 relations
+2026-01-13 00:31:41,426 - lightrag - INFO - Successfully deleted 20 entities
+2026-01-13 00:31:41,428 - lightrag - INFO - [] Writing graph with 0 nodes, 0 edges
+2026-01-13 00:31:41,429 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:41,430 - lightrag - INFO - Successfully deleted 6 LLM cache entries for document doc-0775d6ea31e08a12365414773fa848c8
+2026-01-13 00:31:41,432 - lightrag - INFO - [] Writing graph with 0 nodes, 0 edges
+2026-01-13 00:31:41,433 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:31:41,433 - lightrag - INFO - Document deleted 5/5: doc-0775d6ea31e08a12365414773fa848c8[01-05 Meeting: Offboarding, Knowledge Transfer, and SKO Prep.txt]
+2026-01-13 00:31:41,434 - lightrag - INFO - Successfully deleted enqueued file: 01-05 Meeting: Offboarding, Knowledge Transfer, and SKO Prep.txt
+2026-01-13 00:31:41,434 - lightrag - INFO - Processing pending document indexing requests after deletion
+2026-01-13 00:31:41,434 - lightrag - INFO - No documents to process
+2026-01-13 00:32:04,270 - uvicorn.access - INFO - 127.0.0.1:61115 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 00:32:04,275 - lightrag - INFO - Found 0 files to index.
+2026-01-13 00:32:04,275 - lightrag - INFO - No upload file found, check if there are any documents in the queue...
+2026-01-13 00:32:04,277 - lightrag - INFO - No documents to process
+2026-01-13 00:32:17,606 - uvicorn.access - INFO - 127.0.0.1:61118 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:32:17,652 - uvicorn.access - INFO - 127.0.0.1:61118 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:32:17,660 - uvicorn.access - INFO - 127.0.0.1:61118 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:32:18,946 - lightrag - INFO - Successfully extracted and enqueued file: 2026 CHAMP Holiday Schedule .docx
+2026-01-13 00:32:18,948 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 00:32:18,961 - lightrag - INFO - Extracting stage 1/1: 2026 CHAMP Holiday Schedule .docx
+2026-01-13 00:32:18,961 - lightrag - INFO - Processing d-id: doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-13 00:32:19,234 - lightrag - INFO - Successfully extracted and enqueued file: Insperity 401k Plan Essentials .pdf
+2026-01-13 00:32:19,253 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:32:19,368 - lightrag - INFO - Successfully extracted and enqueued file: 2026 Independence Classic Choice .pdf
+2026-01-13 00:32:19,369 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:32:27,506 - lightrag - INFO -  == LLM cache == saving: default:extract:4059fe5eda598f4fd0b1e0bc867e02ac
+2026-01-13 00:32:28,223 - lightrag - INFO -  == LLM cache == saving: default:extract:2ac4b1a8116c16f34a561522c326713b
+2026-01-13 00:32:28,224 - lightrag - INFO - Chunk 1 of 1 extracted 10 Ent + 0 Rel chunk-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-13 00:32:28,224 - lightrag - INFO - Merging stage 1/1: 2026 CHAMP Holiday Schedule .docx
+2026-01-13 00:32:28,224 - lightrag - INFO - Phase 1: Processing 10 entities from doc-5e9dc8a3ee3c87bfe82d7f66970a58a6 (async: 8)
+2026-01-13 00:32:28,701 - lightrag - INFO - Phase 2: Processing 0 relations from doc-5e9dc8a3ee3c87bfe82d7f66970a58a6 (async: 8)
+2026-01-13 00:32:28,702 - lightrag - INFO - Phase 3: Updating final 10(10+0) entities and  0 relations from doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-13 00:32:28,702 - lightrag - INFO - Completed merging: 10 entities, 0 extra entities, 0 relations
+2026-01-13 00:32:28,705 - lightrag - INFO - [] Writing graph with 10 nodes, 0 edges
+2026-01-13 00:32:28,706 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:32:28,706 - lightrag - INFO - Completed processing file 1/1: 2026 CHAMP Holiday Schedule .docx
+2026-01-13 00:32:28,706 - lightrag - INFO - Processing additional documents due to pending request
+2026-01-13 00:32:28,707 - lightrag - INFO - Processing 2 document(s)
+2026-01-13 00:32:28,707 - lightrag - INFO - Extracting stage 1/2: Insperity 401k Plan Essentials .pdf
+2026-01-13 00:32:28,707 - lightrag - INFO - Processing d-id: doc-1c5a8abd486160f0e3adc85964987879
+2026-01-13 00:32:28,707 - lightrag - INFO - Extracting stage 2/2: 2026 Independence Classic Choice .pdf
+2026-01-13 00:32:28,707 - lightrag - INFO - Processing d-id: doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-13 00:32:40,209 - lightrag - INFO -  == LLM cache == saving: default:extract:bcfae40fa426c51600fa3082b3f1a7fa
+2026-01-13 00:32:40,932 - lightrag - INFO -  == LLM cache == saving: default:extract:d976b860ddf53ca1e1ba0f758f6c9cf6
+2026-01-13 00:32:42,878 - lightrag - INFO -  == LLM cache == saving: default:extract:37cdfd40305425412ffe40a6e2155489
+2026-01-13 00:32:44,754 - lightrag - INFO -  == LLM cache == saving: default:extract:92527a4e27d948adf555fedd3d0244c8
+2026-01-13 00:32:49,924 - lightrag - INFO -  == LLM cache == saving: default:extract:fb46d591be5b7bc624b676f7cfc6dfb4
+2026-01-13 00:32:49,925 - lightrag - INFO - Chunk 1 of 12 extracted 10 Ent + 8 Rel chunk-b32ba6ff6d7bccc3aa0f78d3e7a7be6a
+2026-01-13 00:32:50,659 - lightrag - INFO -  == LLM cache == saving: default:extract:db3dc33654d5d3e85feaa767df292fc9
+2026-01-13 00:32:50,660 - lightrag - INFO - Chunk 1 of 2 extracted 10 Ent + 8 Rel chunk-afff6836e131f7b23170d2bf0736a5de
+2026-01-13 00:32:52,405 - lightrag - INFO -  == LLM cache == saving: default:extract:e6b7667b63d10ca90cdfd3a81be00750
+2026-01-13 00:32:53,734 - lightrag - INFO -  == LLM cache == saving: default:extract:7eef3e6436e7cd7f116ddc13fbc84dac
+2026-01-13 00:32:54,857 - lightrag - INFO -  == LLM cache == saving: default:extract:2c42443983858447c0138ea97621a236
+2026-01-13 00:32:54,858 - lightrag - INFO - Chunk 2 of 12 extracted 9 Ent + 7 Rel chunk-8c72a071d58957ed16ddf33d1782f177
+2026-01-13 00:32:55,141 - uvicorn.access - INFO - 127.0.0.1:61173 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:32:55,147 - uvicorn.access - INFO - 127.0.0.1:61173 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:32:55,155 - lightrag - INFO - Successfully extracted and enqueued file: 12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt
+2026-01-13 00:32:55,155 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:32:55,156 - lightrag - WARNING - Ignoring document ID (already exists): doc-0959ac623c6863a51aad6edefa15a1ff (12-19 Interview: Tyler - Product Architect Candidate.txt)
+2026-01-13 00:32:55,156 - lightrag - WARNING - No new unique documents were found.
+2026-01-13 00:32:55,156 - lightrag - INFO - Successfully extracted and enqueued file: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-13 00:32:55,156 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:32:55,657 - lightrag - INFO -  == LLM cache == saving: default:extract:004cac7d5a2f23a5ffb890f63c0a8891
+2026-01-13 00:32:55,658 - lightrag - INFO - Chunk 2 of 2 extracted 11 Ent + 9 Rel chunk-259fb0607b6df9552c4f071d5fc1adc3
+2026-01-13 00:32:55,659 - lightrag - INFO - Merging stage 1/2: Insperity 401k Plan Essentials .pdf
+2026-01-13 00:32:55,659 - lightrag - INFO - Phase 1: Processing 20 entities from doc-1c5a8abd486160f0e3adc85964987879 (async: 8)
+2026-01-13 00:32:56,423 - lightrag - INFO - Phase 2: Processing 17 relations from doc-1c5a8abd486160f0e3adc85964987879 (async: 8)
+2026-01-13 00:32:57,254 - lightrag - INFO -  == LLM cache == saving: default:extract:b97e226eedc77f7d3880a6067400963b
+2026-01-13 00:32:57,255 - lightrag - INFO - Chunk 3 of 12 extracted 9 Ent + 6 Rel chunk-cc0a91280ce148040521acc037ad3a4d
+2026-01-13 00:32:57,486 - lightrag - INFO -  == LLM cache == saving: default:extract:844b7e1ea0a97699f58407a3112d6899
+2026-01-13 00:32:57,486 - lightrag - INFO - Chunk 4 of 12 extracted 10 Ent + 6 Rel chunk-5a802e37e2e5b47a19fa75aed5a85951
+2026-01-13 00:33:00,075 - lightrag - INFO - Phase 3: Updating final 20(20+0) entities and  17 relations from doc-1c5a8abd486160f0e3adc85964987879
+2026-01-13 00:33:00,076 - lightrag - INFO - Completed merging: 20 entities, 0 extra entities, 17 relations
+2026-01-13 00:33:00,090 - lightrag - INFO - [] Writing graph with 30 nodes, 17 edges
+2026-01-13 00:33:00,093 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:33:00,093 - lightrag - INFO - Completed processing file 1/2: Insperity 401k Plan Essentials .pdf
+2026-01-13 00:33:05,084 - lightrag - INFO -  == LLM cache == saving: default:extract:fb0fa206070b8c5386d48db31b1d47a5
+2026-01-13 00:33:08,058 - lightrag - INFO -  == LLM cache == saving: default:extract:5d716945ba0a0993e96070c90ccb1843
+2026-01-13 00:33:09,286 - lightrag - INFO -  == LLM cache == saving: default:extract:d7a622d9b5fae173d575f48657a7f351
+2026-01-13 00:33:10,615 - lightrag - INFO -  == LLM cache == saving: default:extract:e767a9d8474cc1fa5fbd6bbbd97c7314
+2026-01-13 00:33:10,834 - lightrag - INFO -  == LLM cache == saving: default:extract:18ec9ec04f9c118bd4b43a0d32687023
+2026-01-13 00:33:10,835 - lightrag - INFO - Chunk 5 of 12 extracted 10 Ent + 7 Rel chunk-7d1b4ce137f92ff825dafd9a33216773
+2026-01-13 00:33:13,073 - lightrag - INFO -  == LLM cache == saving: default:extract:cbcf07f128ddf5a2a02887c31bc81a4a
+2026-01-13 00:33:13,075 - lightrag - INFO - Chunk 6 of 12 extracted 10 Ent + 6 Rel chunk-3938d0012b10d87cedc4971b4e3f4dd2
+2026-01-13 00:33:16,248 - lightrag - INFO -  == LLM cache == saving: default:extract:cb488bddd0507ffb645f426d6ee72ccb
+2026-01-13 00:33:16,249 - lightrag - INFO - Chunk 7 of 12 extracted 10 Ent + 8 Rel chunk-0de91d199485fd6f10d230bc2925df57
+2026-01-13 00:33:17,375 - lightrag - INFO -  == LLM cache == saving: default:extract:852725cc8509513c398fdc523636886f
+2026-01-13 00:33:17,376 - lightrag - INFO - Chunk 8 of 12 extracted 10 Ent + 8 Rel chunk-d84c986e26200f86e1a672aa01e92050
+2026-01-13 00:33:25,744 - lightrag - INFO -  == LLM cache == saving: default:extract:20989bb540ba62ef75ace0c085af5905
+2026-01-13 00:33:27,819 - lightrag - INFO -  == LLM cache == saving: default:extract:d3e6d2215307f1b8b736405e6f88dfb7
+2026-01-13 00:33:30,997 - lightrag - INFO -  == LLM cache == saving: default:extract:c835d1f1cd69dab99ebc2d0728be3074
+2026-01-13 00:33:31,094 - lightrag - INFO -  == LLM cache == saving: default:extract:3f9f58c4c306427b4e831a4a779a8d68
+2026-01-13 00:33:31,094 - lightrag - INFO - Chunk 9 of 12 extracted 12 Ent + 7 Rel chunk-078bafbe1d7c5822abb1060712e93d60
+2026-01-13 00:33:33,348 - lightrag - INFO -  == LLM cache == saving: default:extract:06708e3dce495faab51af3dc9e70b2f1
+2026-01-13 00:33:35,193 - lightrag - INFO -  == LLM cache == saving: default:extract:57a69411e701082bcee0995281067582
+2026-01-13 00:33:35,194 - lightrag - INFO - Chunk 10 of 12 extracted 9 Ent + 7 Rel chunk-95873fe8bab4965a1ac622bbb023144e
+2026-01-13 00:33:36,895 - lightrag - INFO -  == LLM cache == saving: default:extract:afc7e4436fcd0fc53c59ea2f43871bee
+2026-01-13 00:33:36,896 - lightrag - INFO - Chunk 11 of 12 extracted 11 Ent + 10 Rel chunk-30fb50160ef73c2b5704a687254b79be
+2026-01-13 00:33:41,540 - lightrag - INFO -  == LLM cache == saving: default:extract:297b5a922ffda2afeb6e8837d1b06a1d
+2026-01-13 00:33:41,542 - lightrag - INFO - Chunk 12 of 12 extracted 10 Ent + 8 Rel chunk-3780084be53b045d52e036f4980e5762
+2026-01-13 00:33:41,543 - lightrag - INFO - Merging stage 2/2: 2026 Independence Classic Choice .pdf
+2026-01-13 00:33:41,543 - lightrag - INFO - Phase 1: Processing 104 entities from doc-805221c93487f7bd7cd5bd31ef6c39e6 (async: 8)
+2026-01-13 00:33:42,657 - lightrag - INFO - Merged: `Insperity Contact Center` | 2+2
+2026-01-13 00:33:44,088 - lightrag - INFO - Merged: `Summary Plan Description (SPD)` | 1+1
+2026-01-13 00:33:45,918 - lightrag - INFO -  == LLM cache == saving: default:summary:6e1d15e3c29db931b5182eff3196c0cb
+2026-01-13 00:33:45,919 - lightrag - INFO - LLMmrg: `Insperity` | 0+8
+2026-01-13 00:33:46,166 - lightrag - INFO - Phase 2: Processing 88 relations from doc-805221c93487f7bd7cd5bd31ef6c39e6 (async: 8)
+2026-01-13 00:33:54,855 - lightrag - INFO - Phase 3: Updating final 106(104+2) entities and  88 relations from doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-13 00:33:54,858 - lightrag - INFO - Completed merging: 104 entities, 2 extra entities, 88 relations
+2026-01-13 00:33:54,886 - lightrag - INFO - [] Writing graph with 134 nodes, 105 edges
+2026-01-13 00:33:54,891 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:33:54,891 - lightrag - INFO - Completed processing file 2/2: 2026 Independence Classic Choice .pdf
+2026-01-13 00:33:54,892 - lightrag - INFO - Processing additional documents due to pending request
+2026-01-13 00:33:54,892 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 00:33:54,892 - lightrag - INFO - Extracting stage 1/1: 12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt
+2026-01-13 00:33:54,892 - lightrag - INFO - Processing d-id: doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-13 00:34:00,916 - uvicorn.access - INFO - 127.0.0.1:61454 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:34:00,920 - lightrag - WARNING - Ignoring document ID (already exists): doc-0959ac623c6863a51aad6edefa15a1ff (12-19 Interview: Tyler - Product Architect Candidate.txt)
+2026-01-13 00:34:00,920 - lightrag - WARNING - No new unique documents were found.
+2026-01-13 00:34:00,921 - lightrag - INFO - Successfully extracted and enqueued file: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-13 00:34:00,921 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:34:07,042 - lightrag - INFO -  == LLM cache == saving: default:extract:b4c6aff3546187ada8ddc79560aa4a49
+2026-01-13 00:34:10,686 - lightrag - INFO -  == LLM cache == saving: default:extract:bb37c635d6a43f7aa5332b73abf8f4e9
+2026-01-13 00:34:12,670 - lightrag - INFO -  == LLM cache == saving: default:extract:50c0a5311a605688f75eaca2d56d7f10
+2026-01-13 00:34:12,874 - lightrag - INFO -  == LLM cache == saving: default:extract:3468ef09e665dd0570d36bead39be1b7
+2026-01-13 00:34:12,876 - lightrag - INFO - Chunk 1 of 5 extracted 8 Ent + 8 Rel chunk-52354b09152fb1e9410fb73b74c76fd4
+2026-01-13 00:34:16,871 - lightrag - INFO -  == LLM cache == saving: default:extract:e00dd991dc2e52340b48297061240169
+2026-01-13 00:34:16,874 - lightrag - INFO -  == LLM cache == saving: default:extract:697e009be1e6aa4b0577d9bdf40e92a3
+2026-01-13 00:34:16,889 - lightrag - INFO - Chunk 2 of 5 extracted 13 Ent + 10 Rel chunk-e7c22537945b3f2f0ba52a16c7265dd9
+2026-01-13 00:34:17,588 - lightrag - INFO -  == LLM cache == saving: default:extract:3dca94bcebd43afd79c86ebb2b02d681
+2026-01-13 00:34:17,590 - lightrag - INFO - Chunk 3 of 5 extracted 10 Ent + 8 Rel chunk-7ceafc7f3296f6d04b7acbbabcdb29de
+2026-01-13 00:34:24,138 - lightrag - INFO -  == LLM cache == saving: default:extract:36d675fa6272484a03c4218d7c37fea6
+2026-01-13 00:34:24,246 - lightrag - INFO -  == LLM cache == saving: default:extract:2ef6e04da3575a399bb8fac3541980c4
+2026-01-13 00:34:24,248 - lightrag - INFO - Chunk 4 of 5 extracted 15 Ent + 9 Rel chunk-0a914fe875911b478ae558c9d4cd5115
+2026-01-13 00:34:29,669 - lightrag - INFO -  == LLM cache == saving: default:extract:0dc4b13bb976bfc1426b5d3d86fda147
+2026-01-13 00:34:29,671 - lightrag - INFO - Chunk 5 of 5 extracted 7 Ent + 6 Rel chunk-46e823f3e59b947708d608a4b09f9d60
+2026-01-13 00:34:29,671 - lightrag - INFO - Merging stage 1/1: 12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt
+2026-01-13 00:34:29,672 - lightrag - INFO - Phase 1: Processing 41 entities from doc-0959ac623c6863a51aad6edefa15a1ff (async: 8)
+2026-01-13 00:34:31,218 - lightrag - INFO - Phase 2: Processing 39 relations from doc-0959ac623c6863a51aad6edefa15a1ff (async: 8)
+2026-01-13 00:34:34,149 - lightrag - INFO - Phase 3: Updating final 45(41+4) entities and  39 relations from doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-13 00:34:34,150 - lightrag - INFO - Completed merging: 41 entities, 4 extra entities, 39 relations
+2026-01-13 00:34:34,185 - lightrag - INFO - [] Writing graph with 179 nodes, 144 edges
+2026-01-13 00:34:34,192 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:34:34,192 - lightrag - INFO - Completed processing file 1/1: 12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt
+2026-01-13 00:34:34,193 - lightrag - INFO - Processing additional documents due to pending request
+2026-01-13 00:34:34,193 - lightrag - INFO - All enqueued documents have been processed
+2026-01-13 00:34:34,193 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 00:34:49,957 - uvicorn.access - INFO - 127.0.0.1:61582 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:34:49,962 - uvicorn.access - INFO - 127.0.0.1:61582 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:34:49,981 - lightrag - INFO - [] Subgraph query successful | Node count: 179 | Edge count: 144
+2026-01-13 00:34:49,998 - uvicorn.access - INFO - 127.0.0.1:61582 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:35:41,376 - uvicorn.access - INFO - 127.0.0.1:61605 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:35:41,381 - lightrag - WARNING - Ignoring document ID (already exists): doc-0959ac623c6863a51aad6edefa15a1ff (12-19 Interview: Tyler - Product Architect Candidate.txt)
+2026-01-13 00:35:41,381 - lightrag - WARNING - No new unique documents were found.
+2026-01-13 00:35:41,381 - lightrag - INFO - Successfully extracted and enqueued file: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-13 00:35:41,383 - lightrag - INFO - No documents to process
+2026-01-13 00:35:54,790 - uvicorn.access - INFO - 127.0.0.1:61609 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 00:35:54,795 - lightrag - INFO - Found 0 files to index.
+2026-01-13 00:35:54,795 - lightrag - INFO - No upload file found, check if there are any documents in the queue...
+2026-01-13 00:35:54,798 - lightrag - INFO - No documents to process
+2026-01-13 00:36:33,741 - uvicorn.access - INFO - 127.0.0.1:61622 - "GET /webui/assets/index-DK5CngKH.js HTTP/1.1" 304
+2026-01-13 00:36:33,742 - uvicorn.access - INFO - 127.0.0.1:61621 - "GET /webui/assets/index-DS3Wz1EX.css HTTP/1.1" 304
+2026-01-13 00:36:33,945 - uvicorn.access - INFO - 127.0.0.1:61621 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-13 00:36:34,025 - uvicorn.access - INFO - 127.0.0.1:61621 - "GET /docs HTTP/1.1" 200
+2026-01-13 00:36:34,033 - lightrag - INFO - [] Subgraph query successful | Node count: 179 | Edge count: 144
+2026-01-13 00:36:34,045 - uvicorn.access - INFO - 127.0.0.1:61624 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:36:34,114 - uvicorn.access - INFO - 127.0.0.1:61624 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 00:37:25,982 - uvicorn.error - INFO - Shutting down
+2026-01-13 00:37:26,083 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-13 00:37:26,084 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-13 00:37:26,084 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-13 00:37:26,084 - uvicorn.error - INFO - Finished server process [51046]
+2026-01-13 00:38:09,012 - lightrag - INFO - Frontend build is up-to-date
+2026-01-13 00:38:09,012 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 00:38:09,156 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 00:38:09,156 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 00:38:09,156 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 00:38:09,156 - lightrag - INFO - Reranking is disabled
+2026-01-13 00:38:09,335 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 179 nodes, 144 edges
+2026-01-13 00:38:09,388 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-13 00:38:09,402 - uvicorn.error - INFO - Started server process [53843]
+2026-01-13 00:38:09,402 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 00:38:09,402 - lightrag - INFO - [] Process 53843 KV load full_docs with 4 records
+2026-01-13 00:38:09,403 - lightrag - INFO - [] Process 53843 KV load text_chunks with 20 records
+2026-01-13 00:38:09,403 - lightrag - INFO - [] Process 53843 KV load full_entities with 4 records
+2026-01-13 00:38:09,403 - lightrag - INFO - [] Process 53843 KV load full_relations with 3 records
+2026-01-13 00:38:09,404 - lightrag - INFO - [] Process 53843 KV load entity_chunks with 179 records
+2026-01-13 00:38:09,404 - lightrag - INFO - [] Process 53843 KV load relation_chunks with 144 records
+2026-01-13 00:38:09,406 - lightrag - INFO - [] Process 53843 KV load llm_response_cache with 53 records
+2026-01-13 00:38:09,406 - lightrag - INFO - [] Process 53843 doc status load doc_status with 4 records
+2026-01-13 00:38:09,407 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 00:38:09,407 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 00:38:15,920 - uvicorn.access - INFO - 127.0.0.1:61687 - "GET /documents/paginated HTTP/1.1" 405
+2026-01-13 00:39:46,070 - uvicorn.access - INFO - 127.0.0.1:61744 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:39:46,081 - lightrag - INFO - Successfully extracted and enqueued file: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 00:39:46,084 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 00:39:46,085 - lightrag - INFO - Extracting stage 1/1: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 00:39:46,085 - lightrag - INFO - Processing d-id: doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-13 00:39:46,116 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-13 00:39:46,707 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-13 00:39:55,470 - lightrag - INFO -  == LLM cache == saving: default:extract:3bf64859ca5f8f808742046ea7c46380
+2026-01-13 00:39:55,480 - lightrag - WARNING - chunk-f28781c765adfa158548d1de7b49d6dd: LLM output format error; found 4/5 fields on REALTION `Jackie`~`Vehicle Side`
+2026-01-13 00:39:55,917 - lightrag - INFO -  == LLM cache == saving: default:extract:35ac6e713e2d176b6baeabc0c533429f
+2026-01-13 00:39:56,835 - lightrag - INFO -  == LLM cache == saving: default:extract:253cd10e4228b709177de8ae9841502c
+2026-01-13 00:39:59,395 - lightrag - INFO -  == LLM cache == saving: default:extract:1b173ecaf0170d1364d875f3268de1a6
+2026-01-13 00:39:59,396 - lightrag - INFO - Chunk 1 of 8 extracted 9 Ent + 7 Rel chunk-9b3f3660cbe5355ea86ff7605aa1a89a
+2026-01-13 00:39:59,679 - lightrag - INFO -  == LLM cache == saving: default:extract:2f47b6540770a2c0bf239220370007ae
+2026-01-13 00:39:59,681 - lightrag - INFO - Chunk 2 of 8 extracted 10 Ent + 6 Rel chunk-f28781c765adfa158548d1de7b49d6dd
+2026-01-13 00:40:00,589 - lightrag - INFO -  == LLM cache == saving: default:extract:f50fc6093f5dd7911fa79a13c814ebf8
+2026-01-13 00:40:00,589 - lightrag - INFO - Chunk 3 of 8 extracted 9 Ent + 7 Rel chunk-59a1aa067026dfefec2b8eed021fb85d
+2026-01-13 00:40:01,141 - lightrag - INFO -  == LLM cache == saving: default:extract:5fe4ae99a69ef91cbc583e4d85cc168e
+2026-01-13 00:40:05,131 - lightrag - INFO -  == LLM cache == saving: default:extract:982dc0e5dce7ddfafdb65db4263d82e2
+2026-01-13 00:40:05,132 - lightrag - INFO - Chunk 4 of 8 extracted 14 Ent + 9 Rel chunk-8ea7735689c5b82676eba0b59da6ac8d
+2026-01-13 00:40:12,154 - lightrag - INFO -  == LLM cache == saving: default:extract:8b29374f389c296c6fa864422476bdfd
+2026-01-13 00:40:14,347 - lightrag - INFO -  == LLM cache == saving: default:extract:c315bfb6fc7bd4ec991fb5d8c2c7ed56
+2026-01-13 00:40:14,686 - lightrag - INFO -  == LLM cache == saving: default:extract:ccca09e2aeafc0ccfd64aad3151c59d1
+2026-01-13 00:40:15,882 - lightrag - INFO -  == LLM cache == saving: default:extract:ef6720cf47d0283850165a9bcd929d7c
+2026-01-13 00:40:15,883 - lightrag - INFO - Chunk 5 of 8 extracted 13 Ent + 7 Rel chunk-b91bdff61fddf8f6f5d8a68e55c4de57
+2026-01-13 00:40:15,937 - lightrag - INFO -  == LLM cache == saving: default:extract:d5eaa0eec079083c8c50707da585c721
+2026-01-13 00:40:16,907 - lightrag - INFO -  == LLM cache == saving: default:extract:26d4018da7ba07f07d88a77326f9fba2
+2026-01-13 00:40:16,908 - lightrag - INFO - Chunk 6 of 8 extracted 11 Ent + 6 Rel chunk-e8ccc385e9bec2aeccaff015e9e981ae
+2026-01-13 00:40:17,029 - lightrag - INFO -  == LLM cache == saving: default:extract:a2562dd190b9d616502e417defca1b8e
+2026-01-13 00:40:17,030 - lightrag - INFO - Chunk 7 of 8 extracted 15 Ent + 6 Rel chunk-c087437015b6ddecbb1f165da5e4acd1
+2026-01-13 00:40:19,055 - lightrag - INFO -  == LLM cache == saving: default:extract:f4c5a0d37b50b701f29f1cf51fb36b85
+2026-01-13 00:40:19,056 - lightrag - INFO - Chunk 8 of 8 extracted 8 Ent + 7 Rel chunk-dd3afcbed078462457582aee1d352d44
+2026-01-13 00:40:19,057 - lightrag - INFO - Merging stage 1/1: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 00:40:19,057 - lightrag - INFO - Phase 1: Processing 63 entities from doc-48b7c7d9c561fa49dab1a2f3b78a9b30 (async: 8)
+2026-01-13 00:40:19,588 - lightrag - INFO - Merged: `OnBase` | 1+1
+2026-01-13 00:40:19,903 - lightrag - INFO - Merged: `Sarah` | 1+1
+2026-01-13 00:40:20,252 - lightrag - INFO - Merged: `Berea` | 1+1
+2026-01-13 00:40:20,631 - lightrag - INFO - Merged: `Abby` | 3+1
+2026-01-13 00:40:20,667 - lightrag - INFO - Merged: `Louisiana` | 1+1
+2026-01-13 00:40:24,587 - lightrag - INFO -  == LLM cache == saving: default:summary:4259d414a81a507ab9d393a30dac6313
+2026-01-13 00:40:24,588 - lightrag - INFO - LLMmrg: `Speaker 1` | 3+6
+2026-01-13 00:40:25,408 - lightrag - INFO -  == LLM cache == saving: default:summary:bae0934016d8245b64922401fb98b7f8
+2026-01-13 00:40:25,408 - lightrag - INFO - LLMmrg: `Speaker 2` | 3+6
+2026-01-13 00:40:25,711 - lightrag - INFO - Phase 2: Processing 51 relations from doc-48b7c7d9c561fa49dab1a2f3b78a9b30 (async: 8)
+2026-01-13 00:40:27,357 - lightrag - INFO - Merged: `Speaker 1`~`Speaker 2` | 3+3
+2026-01-13 00:40:27,637 - lightrag - INFO - Merged: `Sarah`~`Speaker 1` | 1+1
+2026-01-13 00:40:32,167 - lightrag - INFO - Phase 3: Updating final 64(63+1) entities and  51 relations from doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-13 00:40:32,167 - lightrag - INFO - Completed merging: 63 entities, 1 extra entities, 51 relations
+2026-01-13 00:40:32,215 - lightrag - INFO - [] Writing graph with 236 nodes, 193 edges
+2026-01-13 00:40:32,242 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:40:32,242 - lightrag - INFO - Completed processing file 1/1: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 00:40:32,242 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 00:40:45,924 - uvicorn.access - INFO - 127.0.0.1:61905 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:40:45,930 - uvicorn.access - INFO - 127.0.0.1:61905 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:40:45,957 - lightrag - INFO - [] Subgraph query successful | Node count: 236 | Edge count: 193
+2026-01-13 00:40:45,971 - uvicorn.access - INFO - 127.0.0.1:61905 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:41:16,259 - lightrag - INFO - Entity Edit: `Speaker 2` will be merged into `Tyler`
+2026-01-13 00:41:16,262 - lightrag - INFO - Entity Merge: Updated target 'Tyler'
+2026-01-13 00:41:16,263 - lightrag - INFO - Entity Merge: skipping `Speaker 2`~`Tyler` to avoid self-loop
+2026-01-13 00:41:16,263 - lightrag - INFO - Entity Merge: skipping `Tyler`~`Speaker 2` to avoid self-loop
+2026-01-13 00:41:16,263 - lightrag - INFO - Entity Merge: updatign 18 relations
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Speaker 1`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`JAD Sessions`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Train Model`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Berea`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Fat Heads`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`West Park Puritas Nursery`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Speaker 2's Kids`
+2026-01-13 00:41:16,264 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`OnBase`
+2026-01-13 00:41:16,265 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Silicon Valley Product Group Training`
+2026-01-13 00:41:16,265 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Customer Facing`
+2026-01-13 00:41:16,265 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Product Management`
+2026-01-13 00:41:16,265 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`AI Space`
+2026-01-13 00:41:16,265 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Avon`
+2026-01-13 00:41:16,265 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Abby`
+2026-01-13 00:41:16,266 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Highland Software`
+2026-01-13 00:41:16,266 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Knowledge Discovery Offering`
+2026-01-13 00:41:16,266 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Highland`
+2026-01-13 00:41:16,266 - lightrag - INFO - Entity Merge: updating relation `Tyler`~`Digital Titles`
+2026-01-13 00:41:16,266 - lightrag - INFO - Entity Merge: 18 relation chunk tracking records updated
+2026-01-13 00:41:21,208 - lightrag - INFO - Entity Merge: 18 relations in vdb updated
+2026-01-13 00:41:21,468 - lightrag - INFO - Entity Merge: updating vdb `Tyler`
+2026-01-13 00:41:21,469 - lightrag - INFO - Entity Merge: find 10 chunks related to 'Tyler'
+2026-01-13 00:41:21,469 - lightrag - INFO - Entity Merge: deleting 'Speaker 2' from KG and vdb
+2026-01-13 00:41:21,504 - lightrag - INFO - [] Writing graph with 235 nodes, 192 edges
+2026-01-13 00:41:21,515 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Tyler'
+2026-01-13 00:41:21,516 - uvicorn.access - INFO - 127.0.0.1:61909 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-13 00:41:26,071 - lightrag - INFO - [] Graph truncated: found 58 nodes within max_depth 3
+2026-01-13 00:41:26,073 - lightrag - INFO - [] Subgraph query successful | Node count: 58 | Edge count: 65
+2026-01-13 00:41:26,076 - uvicorn.access - INFO - 127.0.0.1:61944 - "GET /graphs?label=Tyler&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:41:54,783 - lightrag - INFO - Entity Edit: `Speaker 1` will be merged into `Abby`
+2026-01-13 00:41:54,789 - lightrag - INFO - Entity Merge: Updated target 'Abby'
+2026-01-13 00:41:54,789 - lightrag - INFO - Entity Merge: skipping `Speaker 1`~`Abby` to avoid self-loop
+2026-01-13 00:41:54,791 - lightrag - INFO - Entity Merge: skipping `Abby`~`Speaker 1` to avoid self-loop
+2026-01-13 00:41:54,791 - lightrag - INFO - Entity Merge: updatign 22 relations
+2026-01-13 00:41:54,791 - lightrag - INFO - Entity Merge: updating relation `Abby`~`JAD Sessions`
+2026-01-13 00:41:54,792 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Louisiana`
+2026-01-13 00:41:54,792 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Unique ID`
+2026-01-13 00:41:54,792 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Sarah`
+2026-01-13 00:41:54,792 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Poinsettias`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Christmas Break`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Speaker 1's Office`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Product Architect`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Joint Architecture Design (JAD) Sessions`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Kickoff`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`2026`
+2026-01-13 00:41:54,793 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Engineering Team`
+2026-01-13 00:41:54,794 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Job Description`
+2026-01-13 00:41:54,794 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Surgery`
+2026-01-13 00:41:54,794 - lightrag - INFO - Entity Merge: updating relation `Abby`~`North Ridgeville`
+2026-01-13 00:41:54,794 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Remote Work`
+2026-01-13 00:41:54,794 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Company`
+2026-01-13 00:41:54,797 - lightrag - INFO - Entity Merge: updating relation `Abby`~`UX`
+2026-01-13 00:41:54,798 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Highland`
+2026-01-13 00:41:54,798 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Tyler`
+2026-01-13 00:41:54,798 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Ian`
+2026-01-13 00:41:54,798 - lightrag - INFO - Entity Merge: updating relation `Abby`~`Solution Architect`
+2026-01-13 00:41:54,799 - lightrag - INFO - Entity Merge: 22 relation chunk tracking records updated
+2026-01-13 00:42:00,814 - lightrag - INFO - Entity Merge: 22 relations in vdb updated
+2026-01-13 00:42:01,035 - lightrag - INFO - Entity Merge: updating vdb `Abby`
+2026-01-13 00:42:01,036 - lightrag - INFO - Entity Merge: find 11 chunks related to 'Abby'
+2026-01-13 00:42:01,036 - lightrag - INFO - Entity Merge: deleting 'Speaker 1' from KG and vdb
+2026-01-13 00:42:01,079 - lightrag - INFO - [] Writing graph with 234 nodes, 190 edges
+2026-01-13 00:42:01,089 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Abby'
+2026-01-13 00:42:01,089 - uvicorn.access - INFO - 127.0.0.1:62004 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-13 00:42:07,567 - lightrag - INFO - [] Subgraph query successful | Node count: 63 | Edge count: 69
+2026-01-13 00:42:07,571 - uvicorn.access - INFO - 127.0.0.1:62031 - "GET /graphs?label=Abby&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:43:25,607 - uvicorn.access - INFO - 127.0.0.1:62058 - "GET /webui/assets/index-B0ICGQ99.js HTTP/1.1" 304
+2026-01-13 00:43:26,959 - lightrag - INFO -  == LLM cache == saving: global:keywords:b2557722e6bca77e2a491bd687b1b4f8
+2026-01-13 00:43:27,268 - lightrag - INFO - Query edges: Deductible, Family insurance (top_k:40, cosine:0.2)
+2026-01-13 00:43:27,686 - lightrag - INFO - Global query: 49 entites, 40 relations
+2026-01-13 00:43:27,687 - lightrag - INFO - Raw search results: 49 entities, 40 relations, 0 vector chunks
+2026-01-13 00:43:27,692 - lightrag - INFO - After truncation: 49 entities, 40 relations
+2026-01-13 00:43:27,696 - lightrag - INFO - Selecting 11 from 11 entity-related chunks by vector similarity
+2026-01-13 00:43:27,697 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:43:27,697 - lightrag - INFO - Round-robin merged chunks: 11 -> 11 (deduplicated 0)
+2026-01-13 00:43:27,701 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:43:27,711 - lightrag - INFO - Final context: 49 entities, 40 relations, 11 chunks
+2026-01-13 00:43:27,711 - lightrag - INFO - Final chunks S+F/O: E9/1 E7/2 E2/3 E7/4 E8/5 E6/6 E1/7 E5/8 E7/9 E4/10 E3/11
+2026-01-13 00:43:28,614 - uvicorn.access - INFO - 127.0.0.1:62056 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:44:42,165 - uvicorn.access - INFO - 127.0.0.1:62094 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:44:42,172 - uvicorn.access - INFO - 127.0.0.1:62094 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:44:42,184 - uvicorn.access - INFO - 127.0.0.1:62094 - "POST /documents/upload HTTP/1.1" 200
+2026-01-13 00:44:42,437 - lightrag - INFO - Successfully extracted and enqueued file: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-13 00:44:42,542 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 00:44:42,542 - lightrag - INFO - Extracting stage 1/1: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-13 00:44:42,542 - lightrag - INFO - Processing d-id: doc-866367e3b00416f160cd95280143776b
+2026-01-13 00:44:43,047 - lightrag - INFO - Successfully extracted and enqueued file: FAQ for Candidates - External.docx
+2026-01-13 00:44:43,048 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-13 00:44:47,445 - lightrag - ERROR - File processing error: - ID: error-42e719528b8a5fff6e3da31bc64b5dba 2025 Insperity Benefits at Glance.pdf
+2026-01-13 00:44:47,445 - lightrag - WARNING - [File Extraction]File contains only whitespace characters: 2025 Insperity Benefits at Glance.pdf
+2026-01-13 00:44:59,739 - lightrag - INFO -  == LLM cache == saving: default:extract:f64801894f91fd49620663b4d52ede58
+2026-01-13 00:45:01,440 - lightrag - INFO -  == LLM cache == saving: default:extract:6e3297f204026d756b866e0cd03098bf
+2026-01-13 00:45:02,090 - lightrag - INFO -  == LLM cache == saving: default:extract:8058f8218b58e26e996505e2d749906c
+2026-01-13 00:45:02,090 - lightrag - INFO - Chunk 1 of 6 extracted 10 Ent + 9 Rel chunk-4a5d444107bc9b15ddb38fc3e03260a1
+2026-01-13 00:45:03,319 - lightrag - INFO -  == LLM cache == saving: default:extract:b2ed1da232ae7e424b6a676b26d449a7
+2026-01-13 00:45:06,947 - lightrag - INFO -  == LLM cache == saving: default:extract:d666f6f7e9dbd300b1b0f175776fb1d7
+2026-01-13 00:45:06,949 - lightrag - INFO - Chunk 2 of 6 extracted 19 Ent + 6 Rel chunk-0c05c8dc84c97e78c79118df433bf87c
+2026-01-13 00:45:14,478 - lightrag - INFO -  == LLM cache == saving: default:extract:da6ee4fc92a334af56bfcab2ca450c1b
+2026-01-13 00:45:18,585 - lightrag - INFO -  == LLM cache == saving: default:extract:f964fc46191127e4fe01a33627b853fd
+2026-01-13 00:45:18,587 - lightrag - INFO - Chunk 3 of 6 extracted 23 Ent + 11 Rel chunk-d0c2e9250940f583c1c456ed0d16bbce
+2026-01-13 00:45:19,447 - lightrag - INFO -  == LLM cache == saving: default:extract:e59670db3c2464d511e120ddfbf73e73
+2026-01-13 00:45:21,748 - lightrag - INFO -  == LLM cache == saving: default:extract:5b9788bdd68e8300c869def73e3bdb12
+2026-01-13 00:45:22,924 - lightrag - INFO -  == LLM cache == saving: default:extract:bec55cb4a3bb811227f729e70729572c
+2026-01-13 00:45:22,924 - lightrag - INFO - Chunk 4 of 6 extracted 8 Ent + 6 Rel chunk-59116281b0dfa265fdb2f09cda8be4b3
+2026-01-13 00:45:28,108 - lightrag - INFO - [] Subgraph query successful | Node count: 63 | Edge count: 69
+2026-01-13 00:45:28,113 - uvicorn.access - INFO - 127.0.0.1:62148 - "GET /graphs?label=Abby&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:45:28,612 - lightrag - INFO -  == LLM cache == saving: default:extract:5cc931495a1665fe4fcad92ba1602b77
+2026-01-13 00:45:28,614 - lightrag - INFO - Chunk 5 of 6 extracted 45 Ent + 6 Rel chunk-0b30c90091c643e2fcc50c1847ef91b1
+2026-01-13 00:45:32,100 - uvicorn.access - INFO - 127.0.0.1:62152 - "GET /graph/label/search?q=tyler&limit=50 HTTP/1.1" 200
+2026-01-13 00:45:32,738 - lightrag - INFO - [] Graph truncated: found 57 nodes within max_depth 3
+2026-01-13 00:45:32,739 - lightrag - INFO - [] Subgraph query successful | Node count: 57 | Edge count: 63
+2026-01-13 00:45:32,743 - uvicorn.access - INFO - 127.0.0.1:62152 - "GET /graphs?label=Tyler&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:45:33,248 - lightrag - INFO -  == LLM cache == saving: default:extract:1daf35b6ec90f540cc404c9e27a57bde
+2026-01-13 00:45:33,251 - lightrag - INFO - Chunk 6 of 6 extracted 25 Ent + 10 Rel chunk-704be16311620581aa95b506d98efa34
+2026-01-13 00:45:33,252 - lightrag - INFO - Merging stage 1/1: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-13 00:45:33,252 - lightrag - INFO - Phase 1: Processing 88 entities from doc-866367e3b00416f160cd95280143776b (async: 8)
+2026-01-13 00:45:34,815 - lightrag - INFO - Merged: `Insperity Group Health Plan` | 3+1
+2026-01-13 00:45:34,826 - lightrag - INFO - Merged: `Insperity Contact Center` | 4+1
+2026-01-13 00:45:36,415 - lightrag - INFO - Phase 2: Processing 47 relations from doc-866367e3b00416f160cd95280143776b (async: 8)
+2026-01-13 00:45:39,512 - lightrag - INFO - Merged: `Insperity Contact Center`~`Insperity Group Health Plan` | 1+1
+2026-01-13 00:45:42,139 - lightrag - INFO - Phase 3: Updating final 88(88+0) entities and  47 relations from doc-866367e3b00416f160cd95280143776b
+2026-01-13 00:45:42,139 - lightrag - INFO - Completed merging: 88 entities, 0 extra entities, 47 relations
+2026-01-13 00:45:42,208 - lightrag - INFO - [] Writing graph with 320 nodes, 236 edges
+2026-01-13 00:45:42,220 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:45:42,220 - lightrag - INFO - Completed processing file 1/1: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-13 00:45:42,220 - lightrag - INFO - Processing additional documents due to pending request
+2026-01-13 00:45:42,221 - lightrag - INFO - Preserving 1 failed document entries for manual review
+2026-01-13 00:45:42,221 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 00:45:42,221 - lightrag - INFO - Extracting stage 1/1: FAQ for Candidates - External.docx
+2026-01-13 00:45:42,221 - lightrag - INFO - Processing d-id: doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-13 00:45:54,412 - lightrag - INFO - [] Graph truncated: found 57 nodes within max_depth 3
+2026-01-13 00:45:54,416 - lightrag - INFO - [] Subgraph query successful | Node count: 57 | Edge count: 63
+2026-01-13 00:45:54,438 - uvicorn.access - INFO - 127.0.0.1:62308 - "GET /graphs?label=Tyler&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:45:56,772 - lightrag - INFO -  == LLM cache == saving: default:extract:891a448a3010f83d26c9d5f21168a66e
+2026-01-13 00:46:01,288 - lightrag - INFO -  == LLM cache == saving: default:extract:4c488bfb117b06704a3cca9d1981d4ab
+2026-01-13 00:46:01,290 - lightrag - INFO - Chunk 1 of 1 extracted 12 Ent + 11 Rel chunk-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-13 00:46:01,291 - lightrag - INFO - Merging stage 1/1: FAQ for Candidates - External.docx
+2026-01-13 00:46:01,291 - lightrag - INFO - Phase 1: Processing 12 entities from doc-cd1e146d6eb4fb0efbdb6208f93c4df6 (async: 8)
+2026-01-13 00:46:02,204 - lightrag - INFO - Phase 2: Processing 11 relations from doc-cd1e146d6eb4fb0efbdb6208f93c4df6 (async: 8)
+2026-01-13 00:46:05,374 - lightrag - INFO - Phase 3: Updating final 12(12+0) entities and  11 relations from doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-13 00:46:05,376 - lightrag - INFO - Completed merging: 12 entities, 0 extra entities, 11 relations
+2026-01-13 00:46:05,433 - lightrag - INFO - [] Writing graph with 332 nodes, 247 edges
+2026-01-13 00:46:05,444 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:46:05,444 - lightrag - INFO - Completed processing file 1/1: FAQ for Candidates - External.docx
+2026-01-13 00:46:05,444 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 00:46:10,361 - uvicorn.access - INFO - 127.0.0.1:62341 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-13 00:46:10,362 - lightrag - INFO - Deleting document 1/1: error-42e719528b8a5fff6e3da31bc64b5dba
+2026-01-13 00:46:10,363 - lightrag - INFO - Starting deletion process for document error-42e719528b8a5fff6e3da31bc64b5dba
+2026-01-13 00:46:10,363 - lightrag - INFO - Deleting error-42e719528b8a5fff6e3da31bc64b5dba 2025 Insperity Benefits at Glance.pdf(previous status: FAILED)
+2026-01-13 00:46:10,363 - lightrag - WARNING - No chunks found for document error-42e719528b8a5fff6e3da31bc64b5dba
+2026-01-13 00:46:10,363 - lightrag - INFO - Document deleted without associated chunks: error-42e719528b8a5fff6e3da31bc64b5dba
+2026-01-13 00:46:10,412 - lightrag - INFO - [] Writing graph with 332 nodes, 247 edges
+2026-01-13 00:46:10,424 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 00:46:10,424 - lightrag - INFO - Document deleted 1/1: error-42e719528b8a5fff6e3da31bc64b5dba[2025 Insperity Benefits at Glance.pdf]
+2026-01-13 00:46:10,425 - lightrag - INFO - Successfully deleted input_dir file: 2025 Insperity Benefits at Glance.pdf
+2026-01-13 00:46:16,434 - uvicorn.access - INFO - 127.0.0.1:62357 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:46:16,450 - lightrag - INFO - [] Graph truncated: found 57 nodes within max_depth 3
+2026-01-13 00:46:16,463 - lightrag - INFO - [] Subgraph query successful | Node count: 57 | Edge count: 63
+2026-01-13 00:46:16,467 - uvicorn.access - INFO - 127.0.0.1:62357 - "GET /graphs?label=Tyler&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:46:29,435 - lightrag - INFO - Entity Edit: renaming `Highland` to `Hyland`
+2026-01-13 00:46:31,927 - lightrag - INFO - Entity Edit: find 1 chunks related to `Hyland`
+2026-01-13 00:46:31,929 - lightrag - INFO - Entity Edit: migrate 9 relations after rename
+2026-01-13 00:46:31,970 - lightrag - INFO - [] Writing graph with 332 nodes, 247 edges
+2026-01-13 00:46:31,980 - lightrag - INFO - Entity Edit: `Hyland` successfully updated
+2026-01-13 00:46:31,981 - uvicorn.access - INFO - 127.0.0.1:62359 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-13 00:47:16,530 - lightrag - INFO - Entity Edit: renaming `Highland Software` to `Hyland Software`
+2026-01-13 00:47:17,001 - lightrag - INFO - Entity Edit: find 1 chunks related to `Hyland Software`
+2026-01-13 00:47:17,002 - lightrag - INFO - Entity Edit: migrate 1 relations after rename
+2026-01-13 00:47:17,043 - lightrag - INFO - [] Writing graph with 332 nodes, 247 edges
+2026-01-13 00:47:17,059 - lightrag - INFO - Entity Edit: `Hyland Software` successfully updated
+2026-01-13 00:47:17,059 - uvicorn.access - INFO - 127.0.0.1:62379 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-13 00:47:50,325 - lightrag - INFO - Entity Edit: `Company` will be merged into `CHAMP`
+2026-01-13 00:47:50,330 - lightrag - INFO - Entity Merge: Updated target 'CHAMP'
+2026-01-13 00:47:50,332 - lightrag - INFO - Entity Merge: updatign 15 relations
+2026-01-13 00:47:50,332 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Product Management`
+2026-01-13 00:47:50,332 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`CTO`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Product Talent`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Abby`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Shane Bigelow`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Bo Shim`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Cleveland, OH`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Cuyahoga County`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Greater Cleveland Partnership`
+2026-01-13 00:47:50,333 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-13 00:47:50,334 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`2018`
+2026-01-13 00:47:50,334 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`2025`
+2026-01-13 00:47:50,334 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`United Healthcare`
+2026-01-13 00:47:50,334 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Open Positions`
+2026-01-13 00:47:50,334 - lightrag - INFO - Entity Merge: updating relation `CHAMP`~`Harvest Owl`
+2026-01-13 00:47:50,334 - lightrag - INFO - Entity Merge: 15 relation chunk tracking records updated
+2026-01-13 00:47:54,460 - lightrag - INFO - Entity Merge: 15 relations in vdb updated
+2026-01-13 00:47:54,942 - lightrag - INFO - Entity Merge: updating vdb `CHAMP`
+2026-01-13 00:47:54,943 - lightrag - INFO - Entity Merge: find 2 chunks related to 'CHAMP'
+2026-01-13 00:47:54,943 - lightrag - INFO - Entity Merge: deleting 'Company' from KG and vdb
+2026-01-13 00:47:54,985 - lightrag - INFO - [] Writing graph with 331 nodes, 247 edges
+2026-01-13 00:47:54,995 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'CHAMP'
+2026-01-13 00:47:54,996 - uvicorn.access - INFO - 127.0.0.1:62392 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-13 00:47:56,522 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 00:47:56,523 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 00:47:56,528 - uvicorn.access - INFO - 127.0.0.1:62410 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:48:36,211 - lightrag - INFO -  == LLM cache == saving: global:keywords:8f9e5e9a62aac6d8b88e9169d65ea6e1
+2026-01-13 00:48:36,422 - lightrag - INFO - Query edges: Benefits, CHAMP (top_k:40, cosine:0.2)
+2026-01-13 00:48:36,758 - lightrag - INFO - Global query: 45 entites, 40 relations
+2026-01-13 00:48:36,759 - lightrag - INFO - Raw search results: 45 entities, 40 relations, 0 vector chunks
+2026-01-13 00:48:36,764 - lightrag - INFO - After truncation: 45 entities, 40 relations
+2026-01-13 00:48:36,768 - lightrag - INFO - Selecting 12 from 12 entity-related chunks by vector similarity
+2026-01-13 00:48:36,768 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:48:36,768 - lightrag - INFO - Round-robin merged chunks: 12 -> 12 (deduplicated 0)
+2026-01-13 00:48:36,772 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:48:36,781 - lightrag - INFO - Final context: 45 entities, 40 relations, 12 chunks
+2026-01-13 00:48:36,781 - lightrag - INFO - Final chunks S+F/O: E12/1 E10/2 E10/3 E3/4 E7/5 E11/6 E2/7 E2/8 E4/9 E4/10 E1/11 E1/12
+2026-01-13 00:48:37,857 - uvicorn.access - INFO - 127.0.0.1:62429 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:48:41,841 - uvicorn.access - INFO - 127.0.0.1:62435 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200
+2026-01-13 00:48:41,842 - uvicorn.access - INFO - 127.0.0.1:62437 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200
+2026-01-13 00:49:02,116 - lightrag - INFO -  == LLM cache == saving: global:keywords:bf9cd21aa6131133959477354b743076
+2026-01-13 00:49:02,627 - lightrag - INFO - Query edges: Choice plans, Differences (top_k:40, cosine:0.2)
+2026-01-13 00:49:03,017 - lightrag - INFO - Global query: 51 entites, 40 relations
+2026-01-13 00:49:03,017 - lightrag - INFO - Raw search results: 51 entities, 40 relations, 0 vector chunks
+2026-01-13 00:49:03,023 - lightrag - INFO - After truncation: 51 entities, 40 relations
+2026-01-13 00:49:03,027 - lightrag - INFO - Selecting 16 from 16 entity-related chunks by vector similarity
+2026-01-13 00:49:03,028 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:49:03,028 - lightrag - INFO - Round-robin merged chunks: 16 -> 16 (deduplicated 0)
+2026-01-13 00:49:03,033 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:49:03,044 - lightrag - INFO - Final context: 51 entities, 40 relations, 16 chunks
+2026-01-13 00:49:03,045 - lightrag - INFO - Final chunks S+F/O: E16/1 E1/2 E14/3 E9/4 E3/5 E11/6 E7/7 E15/8 E7/9 E1/10 E3/11 E1/12 E1/13 E1/14 E1/15 E1/16
+2026-01-13 00:49:04,583 - uvicorn.access - INFO - 127.0.0.1:62441 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:49:52,087 - lightrag - INFO -  == LLM cache == saving: global:keywords:2009ff04e06882ec3be0c3a88777656a
+2026-01-13 00:49:52,497 - lightrag - INFO - Query edges: Commuter benefits, Parking expenses (top_k:40, cosine:0.2)
+2026-01-13 00:49:52,915 - lightrag - INFO - Global query: 57 entites, 40 relations
+2026-01-13 00:49:52,916 - lightrag - INFO - Raw search results: 57 entities, 40 relations, 0 vector chunks
+2026-01-13 00:49:52,931 - lightrag - INFO - After truncation: 57 entities, 40 relations
+2026-01-13 00:49:52,935 - lightrag - INFO - Selecting 22 from 22 entity-related chunks by vector similarity
+2026-01-13 00:49:52,936 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:49:52,936 - lightrag - INFO - Round-robin merged chunks: 22 -> 22 (deduplicated 0)
+2026-01-13 00:49:52,940 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:49:52,952 - lightrag - INFO - Final context: 57 entities, 40 relations, 20 chunks
+2026-01-13 00:49:52,952 - lightrag - INFO - Final chunks S+F/O: E2/1 E6/2 E1/3 E10/4 E1/5 E10/6 E2/7 E3/8 E4/9 E5/10 E2/11 E3/12 E5/13 E4/14 E2/15 E4/16 E1/17 E3/18 E5/19 E6/20
+2026-01-13 00:49:54,450 - uvicorn.access - INFO - 127.0.0.1:62453 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:50:56,438 - lightrag - INFO -  == LLM cache == saving: global:keywords:7eeae062893373dbee1e0f71fa4061ab
+2026-01-13 00:50:57,011 - lightrag - INFO - Query edges: Reimbursement, Coverage inquiry (top_k:40, cosine:0.2)
+2026-01-13 00:50:57,291 - lightrag - INFO - Global query: 59 entites, 40 relations
+2026-01-13 00:50:57,291 - lightrag - INFO - Raw search results: 59 entities, 40 relations, 0 vector chunks
+2026-01-13 00:50:57,297 - lightrag - INFO - After truncation: 59 entities, 40 relations
+2026-01-13 00:50:57,301 - lightrag - INFO - Selecting 19 from 19 entity-related chunks by vector similarity
+2026-01-13 00:50:57,302 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:50:57,302 - lightrag - INFO - Round-robin merged chunks: 19 -> 19 (deduplicated 0)
+2026-01-13 00:50:57,307 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:50:57,322 - lightrag - INFO - Final context: 59 entities, 40 relations, 19 chunks
+2026-01-13 00:50:57,322 - lightrag - INFO - Final chunks S+F/O: E10/1 E4/2 E4/3 E9/4 E6/5 E2/6 E9/7 E5/8 E6/9 E8/10 E5/11 E6/12 E1/13 E5/14 E4/15 E5/16 E1/17 E1/18 E1/19
+2026-01-13 00:50:58,454 - uvicorn.access - INFO - 127.0.0.1:62480 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:51:22,302 - lightrag - INFO -  == LLM cache == saving: global:keywords:bdef2af69d549702fd495f469235e051
+2026-01-13 00:51:22,713 - lightrag - INFO - Query edges: Reimbursement, Commuter benefits (top_k:40, cosine:0.2)
+2026-01-13 00:51:22,920 - lightrag - INFO - Global query: 56 entites, 40 relations
+2026-01-13 00:51:22,920 - lightrag - INFO - Raw search results: 56 entities, 40 relations, 0 vector chunks
+2026-01-13 00:51:22,926 - lightrag - INFO - After truncation: 56 entities, 40 relations
+2026-01-13 00:51:22,931 - lightrag - INFO - Selecting 21 from 21 entity-related chunks by vector similarity
+2026-01-13 00:51:22,931 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:51:22,931 - lightrag - INFO - Round-robin merged chunks: 21 -> 21 (deduplicated 0)
+2026-01-13 00:51:22,936 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:51:22,950 - lightrag - INFO - Final context: 56 entities, 40 relations, 20 chunks
+2026-01-13 00:51:22,950 - lightrag - INFO - Final chunks S+F/O: E8/1 E2/2 E2/3 E10/4 E10/5 E4/6 E5/7 E1/8 E8/9 E5/10 E4/11 E2/12 E1/13 E3/14 E3/15 E3/16 E7/17 E3/18 E1/19 E3/20
+2026-01-13 00:51:25,078 - uvicorn.access - INFO - 127.0.0.1:62490 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:52:26,612 - lightrag - INFO -  == LLM cache == saving: global:keywords:c91822e1139f5331e68662c0da5a2d53
+2026-01-13 00:52:26,862 - lightrag - INFO - Query edges: States, Implementation status, Government programs (top_k:40, cosine:0.2)
+2026-01-13 00:52:27,152 - lightrag - INFO - Global query: 57 entites, 40 relations
+2026-01-13 00:52:27,152 - lightrag - INFO - Raw search results: 57 entities, 40 relations, 0 vector chunks
+2026-01-13 00:52:27,158 - lightrag - INFO - After truncation: 57 entities, 40 relations
+2026-01-13 00:52:27,165 - lightrag - INFO - Selecting 28 from 28 entity-related chunks by vector similarity
+2026-01-13 00:52:27,166 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:52:27,166 - lightrag - INFO - Round-robin merged chunks: 28 -> 28 (deduplicated 0)
+2026-01-13 00:52:27,170 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:52:27,184 - lightrag - INFO - Final context: 57 entities, 40 relations, 20 chunks
+2026-01-13 00:52:27,184 - lightrag - INFO - Final chunks S+F/O: E9/1 E7/2 E7/3 E1/4 E8/5 E8/6 E5/7 E3/8 E2/9 E3/10 E5/11 E3/12 E4/13 E1/14 E4/15 E4/16 E2/17 E1/18 E1/19 E1/20
+2026-01-13 00:52:29,182 - uvicorn.access - INFO - 127.0.0.1:62522 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 00:54:38,605 - lightrag - INFO -  == LLM cache == saving: global:keywords:7bb3a5d1057fc164d55f7113a56fd6d7
+2026-01-13 00:54:38,829 - lightrag - INFO - Query edges: JAD session, Event location (top_k:40, cosine:0.2)
+2026-01-13 00:54:39,078 - lightrag - INFO - Global query: 49 entites, 40 relations
+2026-01-13 00:54:39,078 - lightrag - INFO - Raw search results: 49 entities, 40 relations, 0 vector chunks
+2026-01-13 00:54:39,084 - lightrag - INFO - After truncation: 49 entities, 40 relations
+2026-01-13 00:54:39,092 - lightrag - INFO - Selecting 24 from 24 entity-related chunks by vector similarity
+2026-01-13 00:54:39,093 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 00:54:39,093 - lightrag - INFO - Round-robin merged chunks: 24 -> 24 (deduplicated 0)
+2026-01-13 00:54:39,097 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 00:54:39,110 - lightrag - INFO - Final context: 49 entities, 40 relations, 20 chunks
+2026-01-13 00:54:39,110 - lightrag - INFO - Final chunks S+F/O: E5/1 E10/2 E3/3 E4/4 E6/5 E8/6 E5/7 E4/8 E8/9 E5/10 E5/11 E4/12 E2/13 E3/14 E4/15 E2/16 E2/17 E3/18 E1/19 E1/20
+2026-01-13 00:54:40,768 - uvicorn.access - INFO - 127.0.0.1:62572 - "POST /query/stream HTTP/1.1" 200
