@@ -1,0 +1,52 @@
+2026-01-13 00:17:46,706 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 00:17:47,025 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 00:17:47,025 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 00:17:47,025 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 00:17:47,025 - lightrag - INFO - Reranking is disabled
+2026-01-13 00:17:48,385 - lightrag - INFO - [] Created new empty graph file: /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml
+2026-01-13 00:17:48,416 - lightrag - INFO - WebUI assets not available, /webui route not mounted
+2026-01-13 00:17:48,430 - uvicorn.error - INFO - Started server process [48634]
+2026-01-13 00:17:48,430 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 00:17:48,430 - lightrag - INFO - [] Process 48634 KV load full_docs with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 KV load text_chunks with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 KV load full_entities with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 KV load full_relations with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 KV load entity_chunks with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 KV load relation_chunks with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 KV load llm_response_cache with 0 records
+2026-01-13 00:17:48,431 - lightrag - INFO - [] Process 48634 doc status load doc_status with 0 records
+2026-01-13 00:17:48,431 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 00:17:48,431 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 00:18:04,400 - uvicorn.error - INFO - Shutting down
+2026-01-13 00:18:04,502 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-13 00:18:04,502 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-13 00:18:04,502 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-13 00:18:04,502 - uvicorn.error - INFO - Finished server process [48634]
+2026-01-13 00:18:15,872 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 00:18:16,012 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 00:18:16,012 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 00:18:16,012 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 00:18:16,012 - lightrag - INFO - Reranking is disabled
+2026-01-13 00:18:16,173 - lightrag - INFO - [] Created new empty graph file: /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml
+2026-01-13 00:18:16,217 - lightrag - INFO - WebUI assets not available, /webui route not mounted
+2026-01-13 00:18:16,230 - uvicorn.error - INFO - Started server process [49240]
+2026-01-13 00:18:16,230 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load full_docs with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load text_chunks with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load full_entities with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load full_relations with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load entity_chunks with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load relation_chunks with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 KV load llm_response_cache with 0 records
+2026-01-13 00:18:16,231 - lightrag - INFO - [] Process 49240 doc status load doc_status with 0 records
+2026-01-13 00:18:16,231 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 00:18:16,232 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 00:18:43,695 - uvicorn.access - INFO - 127.0.0.1:59950 - "GET /auth-status HTTP/1.1" 200
+2026-01-13 00:18:44,359 - uvicorn.access - INFO - 127.0.0.1:59953 - "GET /docs HTTP/1.1" 200
+2026-01-13 00:18:44,386 - uvicorn.access - INFO - 127.0.0.1:59962 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:18:44,387 - lightrag - INFO - [] Subgraph query successful | Node count: 0 | Edge count: 0
+2026-01-13 00:18:44,388 - uvicorn.access - INFO - 127.0.0.1:59964 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 00:18:44,391 - uvicorn.access - INFO - 127.0.0.1:59970 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 00:18:44,429 - uvicorn.access - INFO - 127.0.0.1:59974 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
+2026-01-13 00:18:44,429 - uvicorn.access - INFO - 127.0.0.1:59976 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
+2026-01-13 00:18:44,537 - uvicorn.access - INFO - 127.0.0.1:59979 - "GET /openapi.json HTTP/1.1" 200
