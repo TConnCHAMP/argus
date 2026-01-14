@@ -1815,3 +1815,509 @@
 2026-01-13 22:38:40,135 - lightrag - INFO - Final context: 41 entities, 40 relations, 7 chunks
 2026-01-13 22:38:40,135 - lightrag - INFO - Final chunks S+F/O: E11/1 E10/2 E17/3 E34/4 E1/5 E2/6 E1/7
 2026-01-13 22:38:41,199 - uvicorn.access - INFO - 127.0.0.1:51235 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 00:17:14,739 - lightrag - INFO - Frontend build is up-to-date
+2026-01-14 00:17:14,739 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-14 00:17:14,885 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-14 00:17:14,885 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-14 00:17:14,885 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-14 00:17:14,885 - lightrag - INFO - Reranking is disabled
+2026-01-14 00:17:15,082 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 384 nodes, 332 edges
+2026-01-14 00:17:15,135 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-14 00:17:15,148 - uvicorn.error - INFO - Started server process [74857]
+2026-01-14 00:17:15,148 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-14 00:17:15,149 - lightrag - INFO - [] Process 74857 KV load full_docs with 10 records
+2026-01-14 00:17:15,150 - lightrag - INFO - [] Process 74857 KV load text_chunks with 45 records
+2026-01-14 00:17:15,150 - lightrag - INFO - [] Process 74857 KV load full_entities with 10 records
+2026-01-14 00:17:15,150 - lightrag - INFO - [] Process 74857 KV load full_relations with 9 records
+2026-01-14 00:17:15,151 - lightrag - INFO - [] Process 74857 KV load entity_chunks with 384 records
+2026-01-14 00:17:15,151 - lightrag - INFO - [] Process 74857 KV load relation_chunks with 332 records
+2026-01-14 00:17:15,155 - lightrag - INFO - [] Process 74857 KV load llm_response_cache with 136 records
+2026-01-14 00:17:15,155 - lightrag - INFO - [] Process 74857 doc status load doc_status with 10 records
+2026-01-14 00:17:15,155 - uvicorn.error - INFO - Application startup complete.
+2026-01-14 00:17:15,156 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-14 00:17:21,647 - uvicorn.access - INFO - 127.0.0.1:55996 - "GET /docs HTTP/1.1" 200
+2026-01-14 00:17:21,655 - lightrag - INFO - [] Graph truncated: found 128 nodes within max_depth 3
+2026-01-14 00:17:21,661 - lightrag - INFO - [] Subgraph query successful | Node count: 128 | Edge count: 166
+2026-01-14 00:17:21,670 - uvicorn.access - INFO - 127.0.0.1:55997 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:17:21,790 - uvicorn.access - INFO - 127.0.0.1:55997 - "GET /openapi.json HTTP/1.1" 200
+2026-01-14 00:17:23,950 - uvicorn.access - INFO - 127.0.0.1:55997 - "GET /docs HTTP/1.1" 200
+2026-01-14 00:17:23,956 - lightrag - INFO - [] Graph truncated: found 128 nodes within max_depth 3
+2026-01-14 00:17:23,958 - lightrag - INFO - [] Subgraph query successful | Node count: 128 | Edge count: 166
+2026-01-14 00:17:23,966 - uvicorn.access - INFO - 127.0.0.1:55996 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:17:24,024 - uvicorn.access - INFO - 127.0.0.1:55996 - "GET /openapi.json HTTP/1.1" 200
+2026-01-14 00:17:33,810 - uvicorn.access - INFO - 127.0.0.1:56013 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-14 00:17:33,810 - lightrag - INFO - Deleting document 1/1: doc-7f9ff56363017b11489b61362ec6490b
+2026-01-14 00:17:33,811 - lightrag - INFO - Starting deletion process for document doc-7f9ff56363017b11489b61362ec6490b
+2026-01-14 00:17:33,811 - lightrag - INFO - Collected 16 LLM cache entries for document doc-7f9ff56363017b11489b61362ec6490b
+2026-01-14 00:17:33,828 - lightrag - INFO - Found 31 affected entities
+2026-01-14 00:17:33,834 - lightrag - INFO - Found 4 affected relations
+2026-01-14 00:17:33,835 - lightrag - INFO - Successfully deleted 8 chunks from storage
+2026-01-14 00:17:33,836 - lightrag - INFO - Successfully deleted 74 relations
+2026-01-14 00:17:33,840 - lightrag - INFO - Successfully deleted 41 entities
+2026-01-14 00:17:33,877 - lightrag - INFO - [] Writing graph with 343 nodes, 258 edges
+2026-01-14 00:17:33,898 - lightrag - INFO - In memory DB persist to disk
+2026-01-14 00:17:33,898 - lightrag - INFO - Rebuilding knowledge from 14 cached chunk extractions (parallel processing)
+2026-01-14 00:17:33,898 - lightrag - INFO - Found 28 valid cache entries, 14 chunks with results
+2026-01-14 00:17:33,905 - lightrag - WARNING - chunk-f28781c765adfa158548d1de7b49d6dd: LLM output format error; found 4/5 fields on REALTION `Jackie`~`Vehicle Side`
+2026-01-14 00:17:33,911 - lightrag - INFO - Starting parallel rebuild of 31 entities and 4 relationships (async: 8)
+2026-01-14 00:17:33,918 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-14 00:17:34,298 - lightrag - INFO - Rebuild `V1` from 1 chunks
+2026-01-14 00:17:34,299 - lightrag - INFO - Rebuild `West Park Puritas Nursery` from 1 chunks
+2026-01-14 00:17:34,299 - lightrag - INFO - Rebuild `Kentucky` from 2 chunks
+2026-01-14 00:17:34,325 - lightrag - INFO - Rebuild `West Virginia` from 3 chunks
+2026-01-14 00:17:34,326 - lightrag - INFO - Rebuild `Illinois` from 2 chunks
+2026-01-14 00:17:34,356 - lightrag - INFO - Rebuild `AMVA` from 1 chunks
+2026-01-14 00:17:34,465 - lightrag - INFO - Rebuild `Christmas` from 1 chunks
+2026-01-14 00:17:34,519 - lightrag - INFO - Rebuild `V1.5` from 1 chunks
+2026-01-14 00:17:34,548 - lightrag - INFO - Rebuild `VITAS` from 1 chunks
+2026-01-14 00:17:34,559 - lightrag - INFO - Rebuild `Solution Architect` from 2 chunks
+2026-01-14 00:17:34,572 - lightrag - INFO - Rebuild `JAD Sessions` from 1 chunks
+2026-01-14 00:17:34,580 - lightrag - INFO - Rebuild `Sarah` from 2 chunks
+2026-01-14 00:17:34,639 - lightrag - INFO - Rebuild `State Implementation Team` from 1 chunks
+2026-01-14 00:17:34,735 - lightrag - INFO - Rebuild `Abby` from 11 chunks
+2026-01-14 00:17:34,746 - lightrag - INFO - Rebuild `ELTS` from 1 chunks
+2026-01-14 00:17:34,763 - lightrag - INFO - Rebuild `Electronic Liens and Titles (ELT)` from 1 chunks
+2026-01-14 00:17:34,787 - lightrag - INFO - Rebuild `New Jersey` from 1 chunks
+2026-01-14 00:17:34,831 - lightrag - INFO - Rebuild `SAP Model` from 1 chunks
+2026-01-14 00:17:34,851 - lightrag - INFO - Rebuild `Ian` from 2 chunks
+2026-01-14 00:17:34,963 - lightrag - INFO - Rebuild `ELT` from 1 chunks
+2026-01-14 00:17:34,983 - lightrag - INFO - Rebuild `Rhode Island` from 1 chunks
+2026-01-14 00:17:34,983 - lightrag - INFO - Rebuild `Bo` from 1 chunks
+2026-01-14 00:17:35,046 - lightrag - INFO - Rebuild `Christmas Break` from 1 chunks
+2026-01-14 00:17:35,046 - lightrag - INFO - Rebuild `OnBase` from 2 chunks
+2026-01-14 00:17:35,085 - lightrag - INFO - Rebuild `State Plugins` from 1 chunks
+2026-01-14 00:17:35,132 - lightrag - INFO - Rebuild `VTOS` from 1 chunks
+2026-01-14 00:17:35,224 - lightrag - INFO - Rebuild `Britt` from 1 chunks
+2026-01-14 00:17:35,224 - lightrag - WARNING - No relation data found for `Abby-JAD Sessions`
+2026-01-14 00:17:35,226 - lightrag - INFO - Rebuild `Louisiana` from 2 chunks
+2026-01-14 00:17:35,252 - lightrag - INFO - Rebuild `Data Team` from 2 chunks
+2026-01-14 00:17:35,259 - lightrag - INFO - Rebuild `Model Train Display` from 2 chunks
+2026-01-14 00:17:35,289 - lightrag - INFO - Rebuild `V1`~`V1.5` from 1 chunks
+2026-01-14 00:17:35,575 - lightrag - INFO - Rebuild `State Implementation Team`~`State Plugins` from 1 chunks
+2026-01-14 00:17:36,839 - lightrag - INFO - Rebuild `V2` from 1 chunks
+2026-01-14 00:17:37,418 - lightrag - INFO - Rebuild `V1.5`~`V2` from 1 chunks
+2026-01-14 00:17:37,418 - lightrag - INFO - KG rebuild completed: 31 entities and 4 relationships rebuilt successfully.
+2026-01-14 00:17:37,420 - lightrag - INFO - Successfully deleted 16 LLM cache entries for document doc-7f9ff56363017b11489b61362ec6490b
+2026-01-14 00:17:37,482 - lightrag - INFO - [] Writing graph with 343 nodes, 258 edges
+2026-01-14 00:17:37,491 - lightrag - INFO - In memory DB persist to disk
+2026-01-14 00:17:37,492 - lightrag - INFO - Document deleted 1/1: doc-7f9ff56363017b11489b61362ec6490b[2025-12-19T12:13:19Z.txt]
+2026-01-14 00:17:37,493 - lightrag - INFO - Successfully deleted enqueued file: 2025-12-19T12:13:19Z.txt
+2026-01-14 00:17:37,493 - lightrag - INFO - Successfully deleted enqueued file: 2025-12-19T12:13:19Z_001.txt
+2026-01-14 00:18:29,272 - uvicorn.access - INFO - 127.0.0.1:56056 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-14 00:18:29,288 - lightrag - INFO - [] Graph truncated: found 97 nodes within max_depth 3
+2026-01-14 00:18:29,294 - lightrag - INFO - [] Subgraph query successful | Node count: 97 | Edge count: 109
+2026-01-14 00:18:29,311 - uvicorn.access - INFO - 127.0.0.1:56056 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:18:33,562 - uvicorn.access - INFO - 127.0.0.1:56056 - "GET /graph/label/search?q=f&limit=50 HTTP/1.1" 200
+2026-01-14 00:18:36,407 - uvicorn.access - INFO - 127.0.0.1:56056 - "GET /graph/label/search?q=tem&limit=50 HTTP/1.1" 200
+2026-01-14 00:18:37,358 - uvicorn.access - INFO - 127.0.0.1:56056 - "GET /graph/label/search?q=temp&limit=50 HTTP/1.1" 200
+2026-01-14 00:18:38,467 - uvicorn.access - INFO - 127.0.0.1:56056 - "GET /graph/label/search?q=temporal&limit=50 HTTP/1.1" 200
+2026-01-14 00:18:44,006 - uvicorn.access - INFO - 127.0.0.1:56056 - "POST /documents/upload HTTP/1.1" 200
+2026-01-14 00:18:44,017 - lightrag - INFO - Successfully extracted and enqueued file: 2025-12-19T12:13:19Z_001.txt
+2026-01-14 00:18:44,020 - lightrag - INFO - Processing 1 document(s)
+2026-01-14 00:18:44,020 - lightrag - INFO - Extracting stage 1/1: 2025-12-19T12:13:19Z_001.txt
+2026-01-14 00:18:44,021 - lightrag - INFO - Processing d-id: doc-7f9ff56363017b11489b61362ec6490b
+2026-01-14 00:18:44,643 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-14 00:18:52,573 - lightrag - INFO -  == LLM cache == saving: default:extract:ed5e0745949b290991c7439c84d796da
+2026-01-14 00:18:54,627 - lightrag - INFO -  == LLM cache == saving: default:extract:87eead7f0a7c93e43238348f942bf599
+2026-01-14 00:18:55,755 - lightrag - INFO -  == LLM cache == saving: default:extract:3a9d32ccede5b65bcc9088af868054b4
+2026-01-14 00:18:57,699 - lightrag - INFO -  == LLM cache == saving: default:extract:f619a55942d5236e84ba3dced76c31ab
+2026-01-14 00:18:57,701 - lightrag - INFO - Chunk 1 of 8 extracted 10 Ent + 8 Rel chunk-f10b700d5d8fd6f629ce3e0a04576ff9
+2026-01-14 00:18:57,930 - lightrag - INFO -  == LLM cache == saving: default:extract:a50d55460dee728a25cd5e7ca9e33e5b
+2026-01-14 00:18:59,133 - lightrag - INFO -  == LLM cache == saving: default:extract:a0a7aa05ed8117a65f24948a5dab75d6
+2026-01-14 00:18:59,134 - lightrag - INFO - Chunk 2 of 8 extracted 13 Ent + 7 Rel chunk-09ccb621c260d6c80d830784e225b8ff
+2026-01-14 00:19:00,873 - lightrag - INFO -  == LLM cache == saving: default:extract:4f767d489e7182c71718d47e754c88ec
+2026-01-14 00:19:00,874 - lightrag - INFO - Chunk 3 of 8 extracted 12 Ent + 10 Rel chunk-921c9901215f3b966045e90210529032
+2026-01-14 00:19:01,386 - lightrag - INFO -  == LLM cache == saving: default:extract:b8d05a1f270527e1a915696470e432f2
+2026-01-14 00:19:01,387 - lightrag - INFO - Chunk 4 of 8 extracted 12 Ent + 8 Rel chunk-f546136c8d9626ae120f4874fe2e29a5
+2026-01-14 00:19:13,312 - lightrag - INFO -  == LLM cache == saving: default:extract:eb7339182f6982f63d5a1ddccee90b57
+2026-01-14 00:19:15,516 - lightrag - INFO -  == LLM cache == saving: default:extract:cf62ef47171e5aa8d8c7e623180c9252
+2026-01-14 00:19:17,339 - lightrag - INFO -  == LLM cache == saving: default:extract:211032b7e32d6ff3c7a3ac93b3db7b7e
+2026-01-14 00:19:17,340 - lightrag - INFO - Chunk 5 of 8 extracted 14 Ent + 8 Rel chunk-390c14892c6484a487491fe612955287
+2026-01-14 00:19:18,589 - lightrag - INFO -  == LLM cache == saving: default:extract:19167b9afe3597712f513d2a979489e7
+2026-01-14 00:19:18,590 - lightrag - INFO - Chunk 6 of 8 extracted 15 Ent + 6 Rel chunk-a2975dfa67ba2be65d33242c7d191537
+2026-01-14 00:19:19,109 - lightrag - INFO -  == LLM cache == saving: default:extract:6cb4a100b2e7d6a877145d9421311daf
+2026-01-14 00:19:19,803 - lightrag - INFO -  == LLM cache == saving: default:extract:307b79677d5f4ece9803f7ea3b57eaa9
+2026-01-14 00:19:23,197 - lightrag - INFO -  == LLM cache == saving: default:extract:9a35f39b185535d475000007f182eb99
+2026-01-14 00:19:23,198 - lightrag - INFO - Chunk 7 of 8 extracted 15 Ent + 12 Rel chunk-67b36263a79d4344bb11394df8e275f2
+2026-01-14 00:19:25,835 - lightrag - INFO -  == LLM cache == saving: default:extract:162114dbbe79d411e80a0e4ceabc9eac
+2026-01-14 00:19:25,837 - lightrag - INFO - Chunk 8 of 8 extracted 16 Ent + 11 Rel chunk-536153e68e092f79249846b5a6153dbf
+2026-01-14 00:19:25,838 - lightrag - INFO - Merging stage 1/1: 2025-12-19T12:13:19Z_001.txt
+2026-01-14 00:19:25,838 - lightrag - INFO - Phase 1: Processing 69 entities from doc-7f9ff56363017b11489b61362ec6490b (async: 8)
+2026-01-14 00:19:25,865 - lightrag - INFO - Merged: `JAD Sessions` | 1+1
+2026-01-14 00:19:25,866 - lightrag - INFO - Merged: `Louisiana` | 2+1
+2026-01-14 00:19:25,867 - lightrag - INFO - Merged: `Kentucky` | 2+3
+2026-01-14 00:19:25,872 - lightrag - INFO - Merged: `AMVA` | 1+1
+2026-01-14 00:19:25,874 - lightrag - INFO - Merged: `Driver's ID` | 1+1
+2026-01-14 00:19:26,109 - lightrag - INFO - Merged: `Electronic Liens and Titles (ELT)` | 1+1
+2026-01-14 00:19:26,127 - lightrag - INFO - Merged: `West Virginia` | 3+2
+2026-01-14 00:19:26,219 - lightrag - INFO - Merged: `Fat Heads` | 1+1
+2026-01-14 00:19:26,234 - lightrag - INFO - Merged: `Berea` | 2+1
+2026-01-14 00:19:26,517 - lightrag - INFO - Merged: `Engineering Team` | 3+1
+2026-01-14 00:19:26,525 - lightrag - INFO - Merged: `Christmas Break` | 1+1
+2026-01-14 00:19:26,596 - lightrag - INFO - Merged: `Britt` | 1+4
+2026-01-14 00:19:26,596 - lightrag - INFO - Merged: `Ian` | 2+5
+2026-01-14 00:19:26,707 - lightrag - INFO - Merged: `OnBase` | 2+2
+2026-01-14 00:19:26,756 - lightrag - INFO - Merged: `SAP Model` | 1+1
+2026-01-14 00:19:26,756 - lightrag - INFO - Merged: `State Implementation Team` | 1+2
+2026-01-14 00:19:26,782 - lightrag - INFO - Merged: `State Plugins` | 1+1
+2026-01-14 00:19:26,868 - lightrag - INFO - Merged: `VITAS` | 1+1
+2026-01-14 00:19:26,934 - lightrag - INFO - Merged: `VTOS` | 1+1
+2026-01-14 00:19:26,961 - lightrag - INFO - Merged: `ELT` | 1+2
+2026-01-14 00:19:27,098 - lightrag - INFO - Merged: `West Park Puritas Nursery` | 1+1
+2026-01-14 00:19:27,324 - lightrag - INFO - Merged: `Sarah` | 2+2
+2026-01-14 00:19:27,366 - lightrag - INFO - Merged: `Bo` | 1+4
+2026-01-14 00:19:27,699 - lightrag - INFO - Merged: `New Jersey` | 1+3
+2026-01-14 00:19:27,713 - lightrag - INFO - Merged: `Rhode Island` | 1+2
+2026-01-14 00:19:27,856 - lightrag - INFO - Merged: `Solution Architect` | 2+2
+2026-01-14 00:19:27,857 - lightrag - INFO - Merged: `Data Team` | 2+2
+2026-01-14 00:19:28,145 - lightrag - INFO - Merged: `Illinois` | 2+3
+2026-01-14 00:19:30,572 - lightrag - INFO -  == LLM cache == saving: default:summary:acd0d6906c9da78c243d0a9c47f4de9c
+2026-01-14 00:19:30,573 - lightrag - INFO - LLMmrg: `Abby` | 4+6
+2026-01-14 00:19:30,802 - lightrag - INFO - Phase 2: Processing 66 relations from doc-7f9ff56363017b11489b61362ec6490b (async: 8)
+2026-01-14 00:19:30,804 - lightrag - INFO - Merged: `Driver's ID`~`Louisiana` | 1+1
+2026-01-14 00:19:31,103 - lightrag - INFO - Merged: `AMVA`~`Louisiana` | 1+1
+2026-01-14 00:19:33,216 - lightrag - INFO - Chunks appended from relation: `ELT`
+2026-01-14 00:19:33,279 - lightrag - INFO - Merged: `Abby`~`Ian` | 1+1
+2026-01-14 00:19:33,909 - lightrag - INFO - Merged: `Britt`~`OnBase` | 1+1
+2026-01-14 00:19:34,168 - lightrag - INFO - Merged: `New Jersey`~`West Virginia` | 1+1
+2026-01-14 00:19:34,971 - lightrag - INFO - Merged: `Bo`~`Ian` | 1+1
+2026-01-14 00:19:35,848 - lightrag - INFO - Chunks appended from relation: `JAD Sessions`
+2026-01-14 00:19:36,780 - lightrag - INFO - Chunks appended from relation: `Unified Data Model`
+2026-01-14 00:19:37,659 - lightrag - INFO - Phase 3: Updating final 80(69+11) entities and  66 relations from doc-7f9ff56363017b11489b61362ec6490b
+2026-01-14 00:19:37,660 - lightrag - INFO - Completed merging: 69 entities, 11 extra entities, 66 relations
+2026-01-14 00:19:37,725 - lightrag - INFO - [] Writing graph with 394 nodes, 318 edges
+2026-01-14 00:19:37,735 - lightrag - INFO - In memory DB persist to disk
+2026-01-14 00:19:37,735 - lightrag - INFO - Completed processing file 1/1: 2025-12-19T12:13:19Z_001.txt
+2026-01-14 00:19:37,735 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-14 00:19:47,469 - uvicorn.access - INFO - 127.0.0.1:56264 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-14 00:19:47,485 - lightrag - INFO - [] Graph truncated: found 124 nodes within max_depth 3
+2026-01-14 00:19:47,512 - lightrag - INFO - [] Subgraph query successful | Node count: 124 | Edge count: 161
+2026-01-14 00:19:47,519 - uvicorn.access - INFO - 127.0.0.1:56264 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:20:42,449 - lightrag - INFO - Entity Edit: `Speaker 2` will be merged into `Tyler Conn`
+2026-01-14 00:20:42,452 - lightrag - INFO - Entity Merge: Updated target 'Tyler Conn'
+2026-01-14 00:20:42,455 - lightrag - INFO - Entity Merge: updatign 24 relations
+2026-01-14 00:20:42,455 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Abby`
+2026-01-14 00:20:42,455 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Fat Heads`
+2026-01-14 00:20:42,455 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Speaker 1`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Berea`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Model Train`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Engineering Team`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Christmas Break`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`JAD Sessions`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Train Model`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`OnBase`
+2026-01-14 00:20:42,456 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`West Park Puritas Nursery`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Speaker 2's Kids`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Silicon Valley Product Group Training`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Customer Facing`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`AI Space`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Product Management`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Avon`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Knowledge Discovery Offering`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Digital Titles`
+2026-01-14 00:20:42,457 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Hyland`
+2026-01-14 00:20:42,458 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Hyland Software`
+2026-01-14 00:20:42,458 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Bella Nieves`
+2026-01-14 00:20:42,458 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`New Employee Information Form`
+2026-01-14 00:20:42,458 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Champ Titles Inc.`
+2026-01-14 00:20:42,458 - lightrag - INFO - Entity Merge: 24 relation chunk tracking records updated
+2026-01-14 00:20:49,823 - lightrag - INFO - Entity Merge: 24 relations in vdb updated
+2026-01-14 00:20:50,035 - lightrag - INFO - Entity Merge: updating vdb `Tyler Conn`
+2026-01-14 00:20:50,036 - lightrag - INFO - Entity Merge: find 13 chunks related to 'Tyler Conn'
+2026-01-14 00:20:50,036 - lightrag - INFO - Entity Merge: deleting 'Speaker 2' from KG and vdb
+2026-01-14 00:20:50,089 - lightrag - INFO - [] Writing graph with 393 nodes, 315 edges
+2026-01-14 00:20:50,100 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Tyler Conn'
+2026-01-14 00:20:50,100 - uvicorn.access - INFO - 127.0.0.1:56297 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:20:52,440 - lightrag - INFO - [] Graph truncated: found 126 nodes within max_depth 3
+2026-01-14 00:20:52,451 - lightrag - INFO - [] Subgraph query successful | Node count: 126 | Edge count: 161
+2026-01-14 00:20:52,460 - uvicorn.access - INFO - 127.0.0.1:56297 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:21:03,660 - lightrag - INFO - Entity Edit: `Tyler` will be merged into `Tyler Conn`
+2026-01-14 00:21:03,666 - lightrag - INFO - Entity Merge: Updated target 'Tyler Conn'
+2026-01-14 00:21:03,669 - lightrag - INFO - Entity Merge: updatign 27 relations
+2026-01-14 00:21:03,669 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Kevin`
+2026-01-14 00:21:03,669 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Abby`
+2026-01-14 00:21:03,669 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`JAD Sessions`
+2026-01-14 00:21:03,669 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Sarah`
+2026-01-14 00:21:03,669 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Organization Growth`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Train Model`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`OnBase`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Berea`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Fat Heads`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`West Park Puritas Nursery`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Speaker 2's Kids`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Silicon Valley Product Group Training`
+2026-01-14 00:21:03,670 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Customer Facing`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`AI Space`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Product Management`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Avon`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Knowledge Discovery Offering`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Digital Titles`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Hyland`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Hyland Software`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Bella Nieves`
+2026-01-14 00:21:03,671 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`New Employee Information Form`
+2026-01-14 00:21:03,672 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Champ Titles Inc.`
+2026-01-14 00:21:03,672 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Speaker 1`
+2026-01-14 00:21:03,672 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Model Train`
+2026-01-14 00:21:03,672 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Engineering Team`
+2026-01-14 00:21:03,672 - lightrag - INFO - Entity Merge: updating relation `Tyler Conn`~`Christmas Break`
+2026-01-14 00:21:03,672 - lightrag - INFO - Entity Merge: 27 relation chunk tracking records updated
+2026-01-14 00:21:14,916 - lightrag - INFO - Entity Merge: 27 relations in vdb updated
+2026-01-14 00:21:15,168 - lightrag - INFO - Entity Merge: updating vdb `Tyler Conn`
+2026-01-14 00:21:15,169 - lightrag - INFO - Entity Merge: find 17 chunks related to 'Tyler Conn'
+2026-01-14 00:21:15,169 - lightrag - INFO - Entity Merge: deleting 'Tyler' from KG and vdb
+2026-01-14 00:21:15,215 - lightrag - INFO - [] Writing graph with 392 nodes, 313 edges
+2026-01-14 00:21:15,231 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Tyler Conn'
+2026-01-14 00:21:15,232 - uvicorn.access - INFO - 127.0.0.1:56326 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:21:16,576 - lightrag - INFO - [] Graph truncated: found 126 nodes within max_depth 3
+2026-01-14 00:21:16,578 - lightrag - INFO - [] Subgraph query successful | Node count: 126 | Edge count: 160
+2026-01-14 00:21:16,589 - uvicorn.access - INFO - 127.0.0.1:56326 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:21:30,750 - lightrag - INFO - Entity Edit: `Speaker 1` will be merged into `Kevin`
+2026-01-14 00:21:30,757 - lightrag - INFO - Entity Merge: Updated target 'Kevin'
+2026-01-14 00:21:30,759 - lightrag - INFO - Entity Merge: updatign 16 relations
+2026-01-14 00:21:30,759 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`JAD Sessions`
+2026-01-14 00:21:30,759 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Vehicle Titling Registration`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`ELT`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Puritas Nursery`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`The Office`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Tyler Conn`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Sarah`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Abby`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Solution Architect`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Data Team`
+2026-01-14 00:21:30,760 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`OnBase`
+2026-01-14 00:21:30,761 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`API V2`
+2026-01-14 00:21:30,761 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`VTAS`
+2026-01-14 00:21:30,761 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Britt`
+2026-01-14 00:21:30,761 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Client Experience Center`
+2026-01-14 00:21:30,761 - lightrag - INFO - Entity Merge: updating relation `Kevin`~`Meeting Feedback`
+2026-01-14 00:21:30,761 - lightrag - INFO - Entity Merge: 16 relation chunk tracking records updated
+2026-01-14 00:21:35,569 - lightrag - INFO - Entity Merge: 16 relations in vdb updated
+2026-01-14 00:21:35,799 - lightrag - INFO - Entity Merge: updating vdb `Kevin`
+2026-01-14 00:21:35,800 - lightrag - INFO - Entity Merge: find 6 chunks related to 'Kevin'
+2026-01-14 00:21:35,800 - lightrag - INFO - Entity Merge: deleting 'Speaker 1' from KG and vdb
+2026-01-14 00:21:35,848 - lightrag - INFO - [] Writing graph with 391 nodes, 311 edges
+2026-01-14 00:21:35,859 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Kevin'
+2026-01-14 00:21:35,859 - uvicorn.access - INFO - 127.0.0.1:56358 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:21:37,215 - lightrag - INFO - [] Graph truncated: found 100 nodes within max_depth 3
+2026-01-14 00:21:37,218 - lightrag - INFO - [] Subgraph query successful | Node count: 100 | Edge count: 131
+2026-01-14 00:21:37,239 - uvicorn.access - INFO - 127.0.0.1:56358 - "GET /graphs?label=Kevin&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:22:22,371 - lightrag - INFO - [] Graph truncated: found 111 nodes within max_depth 3
+2026-01-14 00:22:22,373 - lightrag - INFO - [] Subgraph query successful | Node count: 111 | Edge count: 138
+2026-01-14 00:22:22,381 - uvicorn.access - INFO - 127.0.0.1:56409 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:22:30,180 - lightrag - INFO - [] Graph truncated: found 21 nodes within max_depth 3
+2026-01-14 00:22:30,181 - lightrag - INFO - [] Subgraph query successful | Node count: 21 | Edge count: 23
+2026-01-14 00:22:30,183 - uvicorn.access - INFO - 127.0.0.1:56411 - "GET /graphs?label=Champ%20Titles%2C%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:22:48,601 - lightrag - INFO - Entity Edit: `Champ Titles, Inc.` will be merged into `Champ Titles Inc.`
+2026-01-14 00:22:48,607 - lightrag - INFO - Entity Merge: Updated target 'Champ Titles Inc.'
+2026-01-14 00:22:48,609 - lightrag - INFO - Entity Merge: updatign 26 relations
+2026-01-14 00:22:48,609 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Primary Advantage CP 5000`
+2026-01-14 00:22:48,609 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Choice Plus HDHP 1700`
+2026-01-14 00:22:48,609 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Choice Plus 1000`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Choice Plus 1500`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Choice Plus 2500`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Choice Plus 500 (80%)`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Choice Plus 6000`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Primary Advantage CP 2000`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`UnitedHealthcare Primary Advantage CP 4500`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Abby`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Product Management`
+2026-01-14 00:22:48,610 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`CTO`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Product Talent`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Shane Bigelow`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Bo Shim`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Cleveland, OH`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Cuyahoga County`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Greater Cleveland Partnership`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-14 00:22:48,611 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`2018`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`2025`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`United Healthcare`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Open Positions`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Harvest Owl`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Tyler Conn`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: updating relation `Champ Titles Inc.`~`Bella Nieves`
+2026-01-14 00:22:48,612 - lightrag - INFO - Entity Merge: 26 relation chunk tracking records updated
+2026-01-14 00:22:55,741 - lightrag - INFO - Entity Merge: 26 relations in vdb updated
+2026-01-14 00:22:55,943 - lightrag - INFO - Entity Merge: updating vdb `Champ Titles Inc.`
+2026-01-14 00:22:55,943 - lightrag - INFO - Entity Merge: find 4 chunks related to 'Champ Titles Inc.'
+2026-01-14 00:22:55,943 - lightrag - INFO - Entity Merge: deleting 'Champ Titles, Inc.' from KG and vdb
+2026-01-14 00:22:55,996 - lightrag - INFO - [] Writing graph with 390 nodes, 311 edges
+2026-01-14 00:22:56,007 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Champ Titles Inc.'
+2026-01-14 00:22:56,007 - uvicorn.access - INFO - 127.0.0.1:56415 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:22:57,313 - lightrag - INFO - [] Graph truncated: found 131 nodes within max_depth 3
+2026-01-14 00:22:57,330 - lightrag - INFO - [] Subgraph query successful | Node count: 131 | Edge count: 161
+2026-01-14 00:22:57,336 - uvicorn.access - INFO - 127.0.0.1:56446 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:23:16,767 - lightrag - INFO - Entity Edit: renaming `CHAMP Titles, Inc.` to `CHAMP Titles Inc.`
+2026-01-14 00:23:17,306 - lightrag - INFO - Entity Edit: find 1 chunks related to `CHAMP Titles Inc.`
+2026-01-14 00:23:17,307 - lightrag - INFO - Entity Edit: migrate 1 relations after rename
+2026-01-14 00:23:17,356 - lightrag - INFO - [] Writing graph with 390 nodes, 311 edges
+2026-01-14 00:23:17,366 - lightrag - INFO - Entity Edit: `CHAMP Titles Inc.` successfully updated
+2026-01-14 00:23:17,367 - uvicorn.access - INFO - 127.0.0.1:56450 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:23:33,894 - uvicorn.access - INFO - 127.0.0.1:56454 - "GET /graph/label/search?q=champ&limit=50 HTTP/1.1" 200
+2026-01-14 00:23:39,544 - lightrag - INFO - [] Graph truncated: found 16 nodes within max_depth 3
+2026-01-14 00:23:39,544 - lightrag - INFO - [] Subgraph query successful | Node count: 16 | Edge count: 16
+2026-01-14 00:23:39,546 - uvicorn.access - INFO - 127.0.0.1:56463 - "GET /graphs?label=CHAMP%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:24:04,244 - lightrag - INFO - [] Graph truncated: found 131 nodes within max_depth 3
+2026-01-14 00:24:04,251 - lightrag - INFO - [] Subgraph query successful | Node count: 131 | Edge count: 161
+2026-01-14 00:24:04,267 - uvicorn.access - INFO - 127.0.0.1:56489 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:24:17,222 - lightrag - INFO - Entity Edit: `Champ Titles Inc.` will be merged into `CHAMP TITLES, INC.`
+2026-01-14 00:24:17,227 - lightrag - INFO - Entity Merge: Updated target 'CHAMP TITLES, INC.'
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updatign 29 relations
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Abby`
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Management`
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CTO`
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Talent`
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Shane Bigelow`
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bo Shim`
+2026-01-14 00:24:17,230 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland, OH`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cuyahoga County`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Greater Cleveland Partnership`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2018`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2025`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`United Healthcare`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Open Positions`
+2026-01-14 00:24:17,231 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Harvest Owl`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Tyler Conn`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bella Nieves`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 5000`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus HDHP 1700`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1000`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1500`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 2500`
+2026-01-14 00:24:17,232 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 500 (80%)`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 6000`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 2000`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 4500`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Independence Classic Choice`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity HSA Employer Contributions`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Group Health Plan Contributions`
+2026-01-14 00:24:17,233 - lightrag - INFO - Entity Merge: 29 relation chunk tracking records updated
+2026-01-14 00:24:25,393 - lightrag - INFO - Entity Merge: 29 relations in vdb updated
+2026-01-14 00:24:25,630 - lightrag - INFO - Entity Merge: updating vdb `CHAMP TITLES, INC.`
+2026-01-14 00:24:25,631 - lightrag - INFO - Entity Merge: find 7 chunks related to 'CHAMP TITLES, INC.'
+2026-01-14 00:24:25,631 - lightrag - INFO - Entity Merge: deleting 'Champ Titles Inc.' from KG and vdb
+2026-01-14 00:24:25,683 - lightrag - INFO - [] Writing graph with 389 nodes, 311 edges
+2026-01-14 00:24:25,693 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'CHAMP TITLES, INC.'
+2026-01-14 00:24:25,694 - uvicorn.access - INFO - 127.0.0.1:56492 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:24:26,869 - lightrag - INFO - [] Graph truncated: found 133 nodes within max_depth 3
+2026-01-14 00:24:26,872 - lightrag - INFO - [] Subgraph query successful | Node count: 133 | Edge count: 164
+2026-01-14 00:24:26,882 - uvicorn.access - INFO - 127.0.0.1:56492 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:24:34,254 - uvicorn.access - INFO - 127.0.0.1:56530 - "GET /graph/label/search?q=champ&limit=50 HTTP/1.1" 200
+2026-01-14 00:24:35,932 - lightrag - INFO - [] Graph truncated: found 39 nodes within max_depth 3
+2026-01-14 00:24:35,933 - lightrag - INFO - [] Subgraph query successful | Node count: 39 | Edge count: 45
+2026-01-14 00:24:35,936 - uvicorn.access - INFO - 127.0.0.1:56530 - "GET /graphs?label=CHAMP%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:24:46,777 - uvicorn.access - INFO - 127.0.0.1:56532 - "GET /graph/label/search?q=champ&limit=50 HTTP/1.1" 200
+2026-01-14 00:24:49,668 - lightrag - INFO - [] Subgraph query successful | Node count: 389 | Edge count: 311
+2026-01-14 00:24:49,685 - uvicorn.access - INFO - 127.0.0.1:56532 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:24:55,299 - uvicorn.access - INFO - 127.0.0.1:56534 - "GET /graph/label/search?q=cha&limit=50 HTTP/1.1" 200
+2026-01-14 00:24:56,096 - uvicorn.access - INFO - 127.0.0.1:56534 - "GET /graph/label/search?q=champ&limit=50 HTTP/1.1" 200
+2026-01-14 00:24:56,619 - lightrag - INFO - [] Subgraph query successful | Node count: 3 | Edge count: 2
+2026-01-14 00:24:56,619 - uvicorn.access - INFO - 127.0.0.1:56534 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:25:06,310 - lightrag - INFO - Entity Edit: `CHAMP` will be merged into `CHAMP TITLES, INC.`
+2026-01-14 00:25:06,316 - lightrag - INFO - Entity Merge: Updated target 'CHAMP TITLES, INC.'
+2026-01-14 00:25:06,319 - lightrag - INFO - Entity Merge: updatign 31 relations
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland`
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Visa Sponsorship`
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Independence Classic Choice`
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity HSA Employer Contributions`
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Group Health Plan Contributions`
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Abby`
+2026-01-14 00:25:06,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Management`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CTO`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Talent`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Shane Bigelow`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bo Shim`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland, OH`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cuyahoga County`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Greater Cleveland Partnership`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-14 00:25:06,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2018`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2025`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`United Healthcare`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Open Positions`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Harvest Owl`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Tyler Conn`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bella Nieves`
+2026-01-14 00:25:06,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 5000`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus HDHP 1700`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1000`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1500`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 2500`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 500 (80%)`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 6000`
+2026-01-14 00:25:06,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 2000`
+2026-01-14 00:25:06,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 4500`
+2026-01-14 00:25:06,324 - lightrag - INFO - Entity Merge: 31 relation chunk tracking records updated
+2026-01-14 00:25:14,351 - lightrag - INFO - Entity Merge: 31 relations in vdb updated
+2026-01-14 00:25:14,735 - lightrag - INFO - Entity Merge: updating vdb `CHAMP TITLES, INC.`
+2026-01-14 00:25:14,735 - lightrag - INFO - Entity Merge: find 8 chunks related to 'CHAMP TITLES, INC.'
+2026-01-14 00:25:14,735 - lightrag - INFO - Entity Merge: deleting 'CHAMP' from KG and vdb
+2026-01-14 00:25:14,788 - lightrag - INFO - [] Writing graph with 388 nodes, 311 edges
+2026-01-14 00:25:14,798 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'CHAMP TITLES, INC.'
+2026-01-14 00:25:14,798 - uvicorn.access - INFO - 127.0.0.1:56536 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:25:16,177 - lightrag - INFO - [] Graph truncated: found 135 nodes within max_depth 3
+2026-01-14 00:25:16,180 - lightrag - INFO - [] Subgraph query successful | Node count: 135 | Edge count: 166
+2026-01-14 00:25:16,191 - uvicorn.access - INFO - 127.0.0.1:56536 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:25:21,918 - lightrag - INFO - [] Graph truncated: found 41 nodes within max_depth 3
+2026-01-14 00:25:21,919 - lightrag - INFO - [] Subgraph query successful | Node count: 41 | Edge count: 47
+2026-01-14 00:25:21,923 - uvicorn.access - INFO - 127.0.0.1:56536 - "GET /graphs?label=CHAMP%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:25:33,032 - lightrag - INFO - Entity Edit: `CHAMP Titles Inc.` will be merged into `CHAMP TITLES, INC.`
+2026-01-14 00:25:33,035 - lightrag - INFO - Entity Merge: Updated target 'CHAMP TITLES, INC.'
+2026-01-14 00:25:33,038 - lightrag - INFO - Entity Merge: updatign 31 relations
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Independence Classic Choice`
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity HSA Employer Contributions`
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Group Health Plan Contributions`
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Abby`
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Management`
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CTO`
+2026-01-14 00:25:33,039 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Talent`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Shane Bigelow`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bo Shim`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland, OH`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cuyahoga County`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Greater Cleveland Partnership`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2018`
+2026-01-14 00:25:33,040 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2025`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`United Healthcare`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Open Positions`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Harvest Owl`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Tyler Conn`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bella Nieves`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 5000`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus HDHP 1700`
+2026-01-14 00:25:33,041 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1000`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1500`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 2500`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 500 (80%)`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 6000`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 2000`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 4500`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland`
+2026-01-14 00:25:33,042 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Visa Sponsorship`
+2026-01-14 00:25:33,043 - lightrag - INFO - Entity Merge: 31 relation chunk tracking records updated
+2026-01-14 00:25:43,092 - lightrag - INFO - Entity Merge: 31 relations in vdb updated
+2026-01-14 00:25:43,323 - lightrag - INFO - Entity Merge: updating vdb `CHAMP TITLES, INC.`
+2026-01-14 00:25:43,324 - lightrag - INFO - Entity Merge: find 9 chunks related to 'CHAMP TITLES, INC.'
+2026-01-14 00:25:43,324 - lightrag - INFO - Entity Merge: deleting 'CHAMP Titles Inc.' from KG and vdb
+2026-01-14 00:25:43,370 - lightrag - INFO - [] Writing graph with 387 nodes, 310 edges
+2026-01-14 00:25:43,381 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'CHAMP TITLES, INC.'
+2026-01-14 00:25:43,381 - uvicorn.access - INFO - 127.0.0.1:56597 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:25:44,762 - lightrag - INFO - [] Graph truncated: found 134 nodes within max_depth 3
+2026-01-14 00:25:44,768 - lightrag - INFO - [] Subgraph query successful | Node count: 134 | Edge count: 165
+2026-01-14 00:25:44,785 - uvicorn.access - INFO - 127.0.0.1:56597 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:25:49,257 - lightrag - INFO - [] Graph truncated: found 148 nodes within max_depth 3
+2026-01-14 00:25:49,260 - lightrag - INFO - [] Subgraph query successful | Node count: 148 | Edge count: 185
+2026-01-14 00:25:49,270 - uvicorn.access - INFO - 127.0.0.1:56597 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:26:15,455 - uvicorn.access - INFO - 127.0.0.1:56635 - "GET /graph/label/search?q=sarah&limit=50 HTTP/1.1" 200
+2026-01-14 00:26:16,615 - lightrag - INFO - [] Graph truncated: found 105 nodes within max_depth 3
+2026-01-14 00:26:16,617 - lightrag - INFO - [] Subgraph query successful | Node count: 105 | Edge count: 135
+2026-01-14 00:26:16,625 - uvicorn.access - INFO - 127.0.0.1:56635 - "GET /graphs?label=Sarah&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 00:27:29,637 - lightrag - INFO - [] Writing graph with 387 nodes, 310 edges
+2026-01-14 00:27:29,650 - lightrag - INFO - Entity Edit: `Unified Data Model` successfully updated
+2026-01-14 00:27:29,651 - uvicorn.access - INFO - 127.0.0.1:56658 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 00:27:56,101 - lightrag - INFO - [] Graph truncated: found 105 nodes within max_depth 3
+2026-01-14 00:27:56,104 - lightrag - INFO - [] Subgraph query successful | Node count: 105 | Edge count: 135
+2026-01-14 00:27:56,114 - uvicorn.access - INFO - 127.0.0.1:56677 - "GET /graphs?label=Sarah&max_depth=3&max_nodes=1000 HTTP/1.1" 200

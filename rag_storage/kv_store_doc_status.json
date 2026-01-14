@@ -180,40 +180,28 @@
       "processing_end_time": 1768360989
     }
   },
-  "doc-0071f33f5941888606293ff29e1871b5": {
+  "doc-7f9ff56363017b11489b61362ec6490b": {
     "status": "processed",
-    "chunks_count": 2,
+    "chunks_count": 8,
     "chunks_list": [
-      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
-      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+      "chunk-f546136c8d9626ae120f4874fe2e29a5",
+      "chunk-921c9901215f3b966045e90210529032",
+      "chunk-09ccb621c260d6c80d830784e225b8ff",
+      "chunk-f10b700d5d8fd6f629ce3e0a04576ff9",
+      "chunk-a2975dfa67ba2be65d33242c7d191537",
+      "chunk-67b36263a79d4344bb11394df8e275f2",
+      "chunk-536153e68e092f79249846b5a6153dbf",
+      "chunk-390c14892c6484a487491fe612955287"
     ],
-    "content_summary": "Let us know if there\n ’\ns ever anything we can help you with:  \n \nsupport@harvestowl.com  \n216\n -\n672\n -\n0655  \nMenu for the week of  \nJanuary 19, 2026  \n\nRittman Orchard Apple  \nBOOMCHICKAPOP Sea Salt Popcorn  \nFresh Veggies & Avocado  \nHippeas [Veg...",
-    "content_length": 7182,
-    "created_at": "2026-01-14T03:29:24.056529+00:00",
-    "updated_at": "2026-01-14T03:30:29.514175+00:00",
-    "file_path": "HarvestOwl+Menu+January+19th+2026+NP.pdf",
-    "track_id": "scan_20260113_222923_7f9d1b44",
+    "content_summary": "Transcript from2025-12-19T12:13:19Z\nSpeaker 1 00:00:00\nIt's basically bringing everybody together and getting all the stakeholders in one room.\nSpeaker 2 00:00:06\nYes, okay, very similar to what we do, how I refer to it as a product discovery almost,...",
+    "content_length": 37752,
+    "created_at": "2026-01-14T05:18:44.012873+00:00",
+    "updated_at": "2026-01-14T05:19:37.660885+00:00",
+    "file_path": "2025-12-19T12:13:19Z_001.txt",
+    "track_id": "upload_20260114_001844_6c7408c4",
     "metadata": {
-      "processing_start_time": 1768361364,
-      "processing_end_time": 1768361429
-    }
-  },
-  "doc-1f96463cc2f4da744af2dfb74f66a15f": {
-    "status": "processed",
-    "chunks_count": 2,
-    "chunks_list": [
-      "chunk-237a227de72e3aa30e392046b0d7ef97",
-      "chunk-919790de0c041024bfcfd7beb80bcfe2"
-    ],
-    "content_summary": "Let us know if there\n ’\ns ever anything we can help you with:  \n \nsupport@harvestowl.com  \n216\n -\n672\n -\n0655  \nMenu for the week of  \nJanuary 12, 2026  \n\nRittman Orchard Apple  \nBOOMCHICKAPOP Sea Salt Popcorn  \nFresh Veggies & Avocado  \nHippeas [Veg...",
-    "content_length": 7146,
-    "created_at": "2026-01-14T03:37:18.483449+00:00",
-    "updated_at": "2026-01-14T03:37:54.289259+00:00",
-    "file_path": "HarvestOwl+Menu+January+12th+2026+NP.pdf",
-    "track_id": "scan_20260113_223718_b6913cec",
-    "metadata": {
-      "processing_start_time": 1768361838,
-      "processing_end_time": 1768361874
+      "processing_start_time": 1768367924,
+      "processing_end_time": 1768367977
     }
   }
 }
