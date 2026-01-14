@@ -1,0 +1,152 @@
+Speaker 1 00:00:00
+It's basically bringing everybody together and getting all the stakeholders in one room.
+Speaker 2 00:00:06
+Yes, okay, very similar to what we do, how I refer to it as a product discovery almost, yeah.
+Speaker 1 00:00:11
+Yeah, we do, so one of the things we do, because it really isn't, it probably isn't technically JED, because it is more, we start to get into that. Usually the way, when we go into a new state, depending if it's a new product versus if it's one of our existing products that we're just doing an implementation with, but like on the existing ones, we'll go in and we kind of know the general structure of how our stuff's going to be. So it's about, okay, how do we plug your, you know, where are we plugging here?
+Speaker 1 00:00:44
+What, you know, what limitations do you guys have? And usually it's things like, well, we don't have a unique ID for. a title sure or you know you know it's like okay well well we really need a unique idea how can we do this you know what can we come up with and that was kind of like because we had a one of the states where they're like well it changes it just it changes based on it's like well how can that title the title itself isn't changing it seems very immutable not immutable yeah what's the opposite of immutable mutable yeah and um you know and we'd have developers again yeah you know like.
+Speaker 1 00:01:22
+like your guy you dealt with you know he's been there for well this is how we've always done it we can't possibly have and it's like okay well let's stop and think about this maybe we can come on there's a will there's a way yeah somebody else well we could do that we could do that here and keep it mapped here to the old one yeah um but it's getting there and it turned into more you know two hours of them talking amongst themselves.
+Speaker 2 00:01:47
+That's sometimes, I prefer that sometimes because then I can be a fly on the wall per se.
+Speaker 1 00:01:53
+Yeah, because they've never even thought along these lines. So that's a lot of what this job involves is getting those conversations going and then capturing it all and bringing it back. So that then the architects can say, okay, here's how we can solve this technically.
+Speaker 2 00:02:13
+Absolutely, yeah. Yeah, now you guys, these sessions, these JAD sessions, when I was talking with Abby, it was mostly, I think her example was like Kentucky or Louisiana. I forget which one exactly.
+Speaker 1 00:02:29
+Louisiana's the big one she's doing now.
+Speaker 2 00:02:31
+Okay, do you find those are mostly at the state level or are you performing those also with like the individual dealerships or maybe smaller entities. 
+Speaker 1 00:02:43
+so it just depends um probably not usually with the smaller entities okay we those will might get involved later so we've got different products so our like the louisiana is our id driver's ids you know so potentially um that's almost all state now we have to integrate with a million other people and so we've got like a team there's a group called amva which is an association of motor vehicle administrators they basically represent all the.
+Speaker 1 00:03:16
+state dmvs and they've got a number of systems that like okay if you know somebody you revoke someone's license in louisiana you got to let all the other states know this you know so they've got services you have to call so we've got a whole team that's just working on those updates you, know and then we've got another team that's just working on all the state, in-state integrations like well the court system the court sends you this person you know had a dui you have to you know that has to get applied to their license um so we've got teams working with.
+Speaker 1 00:03:48
+that um but then we have we have another product so we've got a bunch of products like that like the driver's id vehicle titling registration that are all kind of geared our main customer is the state dmv then we have another some other products we've got one called um elt which is electronic liens and titles which is for the banks so the bank wants their you pay off your loan they want the lien removed from your title they they can electronically send it to us we'll route it to the.
+Speaker 1 00:04:23
+thing so our main customer there's really the the lenders and they have their service providers that kind of do this work for the lenders you know and so we will have sessions with them, mostly those service providers saying here's how you call our apis and stuff like that okay and.
+Speaker 2 00:04:43
+then abby was mentioning and i absolutely have the took the same approach with my recent product um the apis you guys are looking to uh v2 the apis make them more robust is that accurate is that.
+Speaker 1 00:04:58
+yeah it's really it's more than the apis it's like on some of these we've got um like our initial product that we did back four years ago is when i first started um we redid the vehicle titling, registration license plates for west virginia okay they were kind of our they were our first one that's all from scratch you know did all that it was not written in a way that we can easily take that to another state sure we tried we had ideas but you know once we got to the second state.
+Speaker 1 00:05:33
+we're like yeah this this is not going to work anywhere else, So that is one that we're going to, we've started doing a Gen 2 version of that that we've deployed in, we're going to deploy it in Rhode Island and Kentucky, and then eventually go back and try to make, go find all the stuff that we, because those are much smaller, much smaller set of features in those two states than they are in West Virginia.
+Speaker 1 00:06:05
+So then we have to figure out, okay, how do we get, go back, retrofit this to West Virginia, plus add all this other stuff we've got.
+Speaker 2 00:06:11
+Hence the unified data model she mentioned, is that, okay.
+Speaker 1 00:06:16
+So.
+Speaker 3 00:06:17
+Great.
+Speaker 1 00:06:18
+Yeah, so there's just so much work. Yeah. There's so many things going on, we've got so many states that we're trying to do, and they all.
+Speaker 2 00:06:28
+Sounds like a good kind of busy though, right. 
+Speaker 1 00:06:30
+Yeah, I mean it's fun, because they, we're doing well, I mean everybody seems to like us, and we. You know, New Jersey was, they were our first ELT customer, well, other than West Virginia. And they want to do a phase two where they bring and basically do all the vehicle, the titling and that. And that's going to involve the dealers. Now, this will be one that will involve dealers because they want to be able to have dealers submit the transfer agreements electronically.
+Speaker 1 00:07:00
+Got it.
+Speaker 2 00:07:00
+Really slim up and speed up that process then, I assume.
+Speaker 1 00:07:03
+Yeah, yeah. Great. Yeah, I'm trying to think what else. Yeah, so, I mean, we've got, they want to, like I said, they want to do a phase two. We do ELT in Illinois. They want to do dealer submissions in Illinois. There's just, yeah, so much.
+Speaker 2 00:07:24
+Yeah. Now, are you, I don't believe this role is actively filled, correct? When it comes to an on-site or a JAD, is that something you typically are attending? Is that an Abby thing. 
+Speaker 1 00:07:36
+So it's, I mean, Abby's been attending them. So in the way I'm trying to, when I heard about this role, this product architect role, I was trying to figure out a way, one, for me to understand it, and two, for everybody else, for me to tell everybody else how it works. And so what I've been kind of in my mind thinking is that if you, on a spectrum of business to technical, you've got like Abby as a business person, and then you, and then on my side,
+Speaker 1 00:08:08
+we're going to hire a solution architect, which is kind of like going to be right in the middle, and then the enterprise architects, and then the engineering.
+Speaker 2 00:08:16
+Awesome. Yep.
+Speaker 1 00:08:18
+That makes sense. That actually helps out that spectrum helps out quite a bit. So are you actively hiring for that solution architect perspective? Is that okay? Yeah. So I've got two, I've got me and I'm still doing enterprise architect work. I'm trying to get myself out of that just because there's so much going on and I can't stay on top of what I need to do. Sure. But I've got two other enterprise architects that work for me. And then right now I've got a data, I've got the data team under me, although that may be changing. I'll keep a data architect.
+Speaker 2 00:08:49
+Probably move the data engineers out from underneath me. Sure. Yeah, it was it was interesting talking with Abby about how, how new this role is, or this concept, you know, so it was, it seemed like a good fit. It seems like I have a lot to bring to the offering here. So it Yeah, it definitely does. I mean, it's something we've every thing we've gone into, basically, it's been.
+Speaker 1 00:09:17
+Me or Bo, who's our CTO, or there's another guy, Ian, who he runs, like, he's the VP in charge of, like, state implementations.
+Speaker 3 00:09:28
+Yeah.
+Speaker 1 00:09:29
+So versus, like, we now have a VP over product, over, like, I'm sorry, Abby's filling that VP of product. There's, like, a VP of engineering, which is really the product engineering. And then there's Ian, who's over the VP of, you know, the implementations of our products in the states. Almost like a services.
+Speaker 2 00:09:50
+We refer to those as services almost for the implementations.
+Speaker 1 00:09:53
+Yeah, I mean, the one difference that we've tried to do compared to, like, understanding on, well, I mean, did you know Britt. 
+Speaker 2 00:10:03
+Oh, yeah. I work very closely with Britt, yeah.
+Speaker 1 00:10:06
+Yeah, so, I mean, she's our new VP of engineering. Okay, great. So she and I were talking this week. She just started this. She just started this week. And. It sounded like with OnBase that it was much more customizable per state. It was super customizable. We actually are actively trying to avoid doing that. We're trying to go more the SAP model. Look, our process, not just our software, but our process is better than what you've got.
+Speaker 1 00:10:39
+So just use what we've got. We'll integrate with everything you have. We'll do everything that we have to do statutorily. But we don't want this thing to look that much different in New Jersey than it does in West Virginia. It should be pretty much the same product. So that's what the state implementation team's job is to do. We have what we call state plugins. Basically, that's where we abstract out whatever, like either specific logic or the way we display something that has to happen in that state.
+Speaker 1 00:11:14
+That's what we use. And that's really where the state implementation lives. that or at least all of this take all of this with a grain of salt because they're so busy this is very informative for me so yeah but the plan is that state implementation team basically owns the state plugins and then the engineering team owns the product so state plugin team might say oh hey we just did this for new jersey it'd be really helpful in all of the states to have this.
+Speaker 1 00:11:46
+go back to the engineering team they build it into the product sure then you know yeah i i like.
+Speaker 2 00:11:53
+I really like your concept of being a little bit more opinionated with the workflow step.
+Speaker 1 00:11:59
+Yeah.
+Speaker 2 00:11:60
+Because, I mean, that is a downfall of, I wouldn't say downfall, but it is a complex point of the on-base schema is the fact that you can, there's a lot of checks and balances and sometimes they are failing because it is so customizable.
+Speaker 1 00:12:16
+Yeah. So, I mean, and again, there's different ways to do it. This is just the way we chose to do it. Sure.
+Speaker 2 00:12:25
+Oh, yeah. Now, how much of this V2 or Vnext is in place today. 
+Speaker 1 00:12:36
+So, like I said, it depends which product we're talking about. The VTOS, which is our titling. registration module yeah that's the one that needs that's the one we originally wrote for west virginia and needs to get redone you're right we've created a second version of it but it's really slimmed out because one of the things we we moving towards so like elts which is our like i said the one that talks to lenders yep it it needs to know about titles so that it can remove.
+Speaker 1 00:13:09
+a lien from the title sure well we had kind of a bastardized way of doing it and we didn't like it so what we've said is well we'll put a vtas everywhere we put elts we'll put a headless, there's no ui for it okay its job basically is to manage the titles and then the other thing it does it knows whether or not we're the system of record or the state's the system of record, so like in illinois we are not the system of record right so but we're gonna have a vtas there.
+Speaker 1 00:13:40
+that kind of just, ELT knows how to talk to VITAS. VITAS says, oh, this is not, I don't know this. I need to go talk to the state and get it from their mainframe. Got it. Okay. To pull it back. So we've gotten that version of, which is the next version of VITAS there. What we need to do is basically build the, when we are the system of record, we need to build all that into it. Okay. Okay. So.
+Speaker 2 00:14:03
+you had that V1 with West Virginia. V1.5 is deployed in a couple other states, alongside one. And now you're looking V2 isn't necessarily built yet, but you're looking to do that in a scalable manner. Yeah. Okay. Okay. Yeah. That helps out a lot.
+Speaker 1 00:14:29
+Um, anything else I can answer for you or, I mean, I've, I've, I think you're a really good fit for this, by the way, so.
+Speaker 2 00:14:37
+Oh, good, yeah. No, I, I appreciate the, I, I appreciate the context, because I, I thought I had a great conversation with Abby, that was, uh, felt like a good fit there, um, so I did, you know, the opportunity here, I think, is, is tremendous and something I'm very excited about, so.
+Speaker 1 00:14:53
+Yeah, no, I think it's good. Um, yeah, I've, I just have more context because I've been here longer than she has, and so.
+Speaker 2 00:14:59
+Yeah, it seems like everyone's kind of coming in, coming in pretty, pretty hot off the presses, so.
+Speaker 1 00:15:05
+Oh, yeah, it's been nuts, I mean, there are literally, this week, there were days I'm like, who is that person? I have no idea who they are. Yeah. I think they're walking around the office, I don't know if they're supposed to be here.
+Speaker 2 00:15:16
+Yeah, I was in, uh, when did I join? I joined in a couple, couple weeks ago, um, met with the, the other larger group of product, the managers of product management, um. and it didn't seem like there was a lot of space i was like should i come in do i come in do i have.
+Speaker 1 00:15:32
+a desk i don't know yeah we still have some space now but i mean we just opened up the second half of that building like so we've got the did you did you come into the office yeah he got a little tour around yep yeah did you see where like beau's office was i don't know if you remember down in.
+Speaker 2 00:15:49
+the pit yes kind of by the lunch room was that like the lunchroom area that's the other side.
+Speaker 1 00:15:54
+okay it's the other end of the building so it stopped right there that was like where we stopped and we just opened up that whole other half with the um it's where all the engineering team sits and then we're like the um secret door is up on the station i didn't get to see the secret door no, they actually built a the door is the, is the book cabinet and there's a book on it you you pull the book and oh that's awesome yeah and the idea is it's in a conference room and then on the other side of that right now it's pretty much.
+Speaker 1 00:16:28
+just storage but the long-term goal is that's going to be like the client experience center and you know we'll bring customers in start the meeting in there yeah and then they open up the bookcases and they'll be you know their name up on the tvs oh that's cool yeah i did not see that i missed that yeah yeah so um but so they just opened up that whole half of it basically the other so we were on the one side you know when you when you walk into the office i'm guessing that you walked over that little bridge part that walked to the front door yep so we were only on.
+Speaker 1 00:16:59
+that side of the floor but we've taken over the whole other side of the floor oh cool okay, two but we're already talking about filling it up yeah we're looking to move up to another.
+Speaker 2 00:17:09
+floor sarah pointed out another floor that you guys were kind of eyeballing there so yeah.
+Speaker 1 00:17:15
+so it's we are growing like crazy i mean we literally opened this up we moved i moved in october okay i think and we're and we're already you know yeah if we're gonna be out of space.
+Speaker 2 00:17:27
+ready to shift around again yeah yeah do you are do you go in uh what all four days a week all five.
+Speaker 1 00:17:32
+days a week yeah okay i go four days a week okay i go monday through thursday usually and but we're also plenty of weeks around there four days a week sure yeah that's the policy it's four days a week but yeah generally if you got something you know he's got a doctor's appointment or, that's good to know yeah for me in the winter it's like yeah it looks like traffic's gonna.
+Speaker 2 00:17:55
+be really bad today i'm working yeah i i'm in berea myself and it was like it was gross this morning okay yeah now we were just out at uh that fat heads right off 71 there we went there because i'm on i am officially done for the year so i'm uh on my christmas break, okay so i took the kids the way if we went out and to celebrate so oh cool yeah i'm at the end.
+Speaker 1 00:18:20
+of today's i'm on break for the rest of the year there you go yeah so i'm in fact i'm going sunday and one of the guys at work told me about a place over in west park puritas nursery on puritas road okay that's got a big train model train display i think i've heard of that is it christmas themed is that yeah i think so yeah i'm gonna go and head over there this weekend and see that just.
+Speaker 2 00:18:47
+because i'm a big model train guy okay yeah we have ours going downstairs on the uh around the.
+Speaker 1 00:18:52
+christmas tree so yeah so take your kids there yeah buy some plants and buy some poinsettias yep good stuff okay well i don't have anything else to talk about it's a very good conversation.
+Speaker 2 00:19:06
+though yeah oh i appreciate your time and uh yeah enjoy your holidays merry christmas, yeah you too all right um and then should i expect to hear from sarah should i reach out to sarah or.
+Speaker 1 00:19:17
+i'll just wait to hear from her um i would guess you would hear from sarah i'll let her know that we talked and you know give her my feedback okay but yeah i would expect you should hear from her i don't know i don't know what her schedule is over the holiday either so yeah no worries.
+Speaker 2 00:19:31
+all right sir thanks a lot yep have a great one bye.
+Speaker 4 00:26:05
+Oh yeah.
+Speaker 4 00:54:33
+Oh
