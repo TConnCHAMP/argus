@@ -163,6 +163,7 @@ export type DocActionResponse = {
   status: 'success' | 'partial_success' | 'failure' | 'duplicated'
   message: string
   track_id?: string
+  conflict_doc_id?: string
 }
 
 export type ScanResponse = {
@@ -823,6 +824,33 @@ export const batchUploadDocuments = async (
       })
     })
   )
+}
+
+export const replaceDocument = async (
+  file: File,
+  conflictDocId: string,
+  onUploadProgress?: (percentCompleted: number) => void
+): Promise<DocActionResponse> => {
+  const formData = new FormData()
+  formData.append('file', file)
+
+  const response = await axiosInstance.post(
+    `/documents/upload?conflict_doc_id=${encodeURIComponent(conflictDocId)}&action=replace`,
+    formData,
+    {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      },
+      onUploadProgress:
+        onUploadProgress !== undefined
+          ? (progressEvent) => {
+            const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total!)
+            onUploadProgress(percentCompleted)
+          }
+          : undefined
+    }
+  )
+  return response.data
 }
 
 export const clearDocuments = async (): Promise<DocActionResponse> => {

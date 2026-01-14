@@ -1094,5 +1094,37 @@
     "create_time": 1768358172,
     "update_time": 1768358172,
     "_id": "doc-a18a018ea63263a65246bd4beb196541"
+  },
+  "doc-601fbed9d6e90700da21adab1219fe98": {
+    "relation_pairs": [
+      [
+        "Product Architect",
+        "Product Management"
+      ],
+      [
+        "CHAMP",
+        "Cleveland"
+      ],
+      [
+        "Product Architect",
+        "Unified Data Model"
+      ],
+      [
+        "CHAMP",
+        "Visa Sponsorship"
+      ],
+      [
+        "Head of Product",
+        "Product Architect"
+      ],
+      [
+        "Product Architect",
+        "Salary Range"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1768360989,
+    "update_time": 1768360989,
+    "_id": "doc-601fbed9d6e90700da21adab1219fe98"
   }
 }

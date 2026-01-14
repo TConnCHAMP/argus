@@ -10,6 +10,7 @@ import {
   DialogTrigger
 } from '@/components/ui/Dialog'
 import FileUploader from '@/components/ui/FileUploader'
+import DocumentConflictDialog from '@/components/documents/DocumentConflictDialog'
 import { toast } from 'sonner'
 import { errorMessage } from '@/lib/utils'
 import { uploadDocument } from '@/api/lightrag'
@@ -21,12 +22,18 @@ interface UploadDocumentsDialogProps {
   onDocumentsUploaded?: () => Promise<void>
 }
 
+interface PendingConflict {
+  file: File
+  conflictDocId: string
+}
+
 export default function UploadDocumentsDialog({ onDocumentsUploaded }: UploadDocumentsDialogProps) {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   const [isUploading, setIsUploading] = useState(false)
   const [progresses, setProgresses] = useState<Record<string, number>>({})
   const [fileErrors, setFileErrors] = useState<Record<string, string>>({})
+  const [pendingConflict, setPendingConflict] = useState<PendingConflict | null>(null)
 
   const handleRejectedFiles = useCallback(
     (rejectedFiles: FileRejection[]) => {
@@ -104,6 +111,12 @@ export default function UploadDocumentsDialog({ onDocumentsUploaded }: UploadDoc
             })
 
             if (result.status === 'duplicated') {
+              // Show conflict dialog for user to decide
+              if (result.conflict_doc_id) {
+                setPendingConflict({ file, conflictDocId: result.conflict_doc_id })
+                setIsUploading(false)
+                return
+              }
               uploadErrors[file.name] = t('documentPanel.uploadDocuments.fileUploader.duplicateFile')
               setFileErrors(prev => ({
                 ...prev,
@@ -178,6 +191,43 @@ export default function UploadDocumentsDialog({ onDocumentsUploaded }: UploadDoc
     [setIsUploading, setProgresses, setFileErrors, t, onDocumentsUploaded]
   )
 
+  const handleConflictReplace = useCallback(async () => {
+    if (!pendingConflict) return
+    
+    try {
+      const { replaceDocument } = await import('@/api/lightrag')
+      const result = await replaceDocument(
+        pendingConflict.file,
+        pendingConflict.conflictDocId,
+        (percentCompleted: number) => {
+          setProgresses((pre) => ({
+            ...pre,
+            [pendingConflict.file.name]: percentCompleted
+          }))
+        }
+      )
+
+      if (result.status === 'success') {
+        toast.success(t('documentPanel.conflict.replacementSuccess', 'Document replaced successfully'))
+        if (onDocumentsUploaded) {
+          await onDocumentsUploaded()
+        }
+      } else {
+        toast.error(result.message)
+      }
+    } catch (err) {
+      console.error('Replacement failed:', err)
+      toast.error(t('documentPanel.conflict.replacementError', 'Failed to replace document'))
+    } finally {
+      setPendingConflict(null)
+      setIsUploading(false)
+    }
+  }, [pendingConflict, t, onDocumentsUploaded])
+
+  const handleConflictCancel = useCallback(() => {
+    setPendingConflict(null)
+  }, [])
+
   return (
     <Dialog
       open={open}
@@ -215,6 +265,13 @@ export default function UploadDocumentsDialog({ onDocumentsUploaded }: UploadDoc
           disabled={isUploading}
         />
       </DialogContent>
+      <DocumentConflictDialog
+        open={pendingConflict !== null}
+        fileName={pendingConflict?.file.name || ''}
+        conflictDocId={pendingConflict?.conflictDocId || ''}
+        onReplace={handleConflictReplace}
+        onCancel={handleConflictCancel}
+      />
     </Dialog>
   )
 }

@@ -1388,3 +1388,141 @@
 2026-01-13 21:47:21,653 - lightrag - INFO - In memory DB persist to disk
 2026-01-13 21:47:21,653 - lightrag - INFO - Document deleted 1/1: doc-5981f51abedb287f77fc4e4b2cce4a95[2025-12-09T10:04:05Z.txt]
 2026-01-13 21:47:21,654 - lightrag - INFO - Successfully deleted enqueued file: 2025-12-09T10:04:05Z.txt
+2026-01-13 21:51:27,259 - uvicorn.access - INFO - 127.0.0.1:49372 - "GET /webui/assets/index-Dra-6x-X.css HTTP/1.1" 304
+2026-01-13 21:51:27,260 - uvicorn.access - INFO - 127.0.0.1:49374 - "GET /webui/assets/index-CmsOxpAM.js HTTP/1.1" 304
+2026-01-13 21:51:27,431 - uvicorn.access - INFO - 127.0.0.1:49374 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-13 21:51:27,551 - uvicorn.access - INFO - 127.0.0.1:49374 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:51:27,562 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 21:51:27,565 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 21:51:27,572 - uvicorn.access - INFO - 127.0.0.1:49372 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:51:27,573 - uvicorn.access - INFO - 127.0.0.1:49376 - "GET /webui/assets/index-Cp8k7DFv.js HTTP/1.1" 304
+2026-01-13 21:51:27,613 - uvicorn.access - INFO - 127.0.0.1:49376 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:10:10,962 - uvicorn.access - INFO - 127.0.0.1:49841 - "GET /webui/assets/index-BO2s-Yhu.js HTTP/1.1" 200
+2026-01-13 22:10:10,963 - uvicorn.access - INFO - 127.0.0.1:49842 - "GET /webui/assets/index-BVYv_w3q.css HTTP/1.1" 200
+2026-01-13 22:10:11,180 - uvicorn.access - INFO - 127.0.0.1:49841 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-01-13 22:10:11,296 - uvicorn.access - INFO - 127.0.0.1:49841 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:10:11,303 - uvicorn.access - INFO - 127.0.0.1:49841 - "GET /webui/assets/index-C0qGmg7E.js HTTP/1.1" 200
+2026-01-13 22:10:11,306 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 22:10:11,309 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 22:10:11,315 - uvicorn.access - INFO - 127.0.0.1:49842 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:10:11,382 - uvicorn.access - INFO - 127.0.0.1:49842 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:10:13,403 - uvicorn.access - INFO - 127.0.0.1:49842 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:10:13,408 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 22:10:13,410 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 22:10:13,416 - uvicorn.access - INFO - 127.0.0.1:49841 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:10:13,444 - uvicorn.access - INFO - 127.0.0.1:49842 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:10:43,167 - uvicorn.error - INFO - Shutting down
+2026-01-13 22:10:43,269 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-13 22:10:43,269 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-13 22:10:43,270 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-13 22:10:43,270 - uvicorn.error - INFO - Finished server process [59233]
+2026-01-13 22:11:47,322 - lightrag - INFO - Frontend build is up-to-date
+2026-01-13 22:11:47,323 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 22:11:47,486 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 22:11:47,486 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 22:11:47,486 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 22:11:47,486 - lightrag - INFO - Reranking is disabled
+2026-01-13 22:11:47,690 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 336 nodes, 252 edges
+2026-01-13 22:11:47,741 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-13 22:11:47,755 - uvicorn.error - INFO - Started server process [63576]
+2026-01-13 22:11:47,755 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 22:11:47,756 - lightrag - INFO - [] Process 63576 KV load full_docs with 8 records
+2026-01-13 22:11:47,757 - lightrag - INFO - [] Process 63576 KV load text_chunks with 36 records
+2026-01-13 22:11:47,757 - lightrag - INFO - [] Process 63576 KV load full_entities with 8 records
+2026-01-13 22:11:47,757 - lightrag - INFO - [] Process 63576 KV load full_relations with 7 records
+2026-01-13 22:11:47,758 - lightrag - INFO - [] Process 63576 KV load entity_chunks with 336 records
+2026-01-13 22:11:47,758 - lightrag - INFO - [] Process 63576 KV load relation_chunks with 252 records
+2026-01-13 22:11:47,761 - lightrag - INFO - [] Process 63576 KV load llm_response_cache with 109 records
+2026-01-13 22:11:47,762 - lightrag - INFO - [] Process 63576 doc status load doc_status with 8 records
+2026-01-13 22:11:47,762 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 22:11:47,762 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 22:11:52,005 - uvicorn.access - INFO - 127.0.0.1:49907 - "GET /api/health HTTP/1.1" 404
+2026-01-13 22:11:57,657 - uvicorn.access - INFO - 127.0.0.1:49911 - "GET /api/lightrag/health HTTP/1.1" 404
+2026-01-13 22:12:06,084 - uvicorn.access - INFO - 127.0.0.1:49920 - "GET / HTTP/1.1" 307
+2026-01-13 22:12:08,378 - uvicorn.access - INFO - 127.0.0.1:49923 - "GET /?id=f352ea2c-c9f8-4dc4-8b96-2dcc8c4ed7c6&vscodeBrowserReqId=1768360328375 HTTP/1.1" 307
+2026-01-13 22:12:08,378 - uvicorn.access - INFO - 127.0.0.1:49923 - "GET /webui HTTP/1.1" 307
+2026-01-13 22:12:08,408 - uvicorn.access - INFO - 127.0.0.1:49923 - "GET /webui/assets/index-BO2s-Yhu.js HTTP/1.1" 200
+2026-01-13 22:12:08,409 - uvicorn.access - INFO - 127.0.0.1:49925 - "GET /webui/assets/index-BVYv_w3q.css HTTP/1.1" 200
+2026-01-13 22:12:08,657 - uvicorn.access - INFO - 127.0.0.1:49923 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:12:08,667 - lightrag - INFO - [] Subgraph query successful | Node count: 336 | Edge count: 252
+2026-01-13 22:12:08,675 - uvicorn.access - INFO - 127.0.0.1:49923 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:12:08,768 - uvicorn.access - INFO - 127.0.0.1:49923 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:12:42,765 - uvicorn.access - INFO - 127.0.0.1:49941 - "GET /webui/assets/index-BO2s-Yhu.js HTTP/1.1" 304
+2026-01-13 22:12:42,765 - uvicorn.access - INFO - 127.0.0.1:49938 - "GET /webui/assets/index-BVYv_w3q.css HTTP/1.1" 304
+2026-01-13 22:12:42,928 - uvicorn.access - INFO - 127.0.0.1:49938 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-13 22:12:43,021 - uvicorn.access - INFO - 127.0.0.1:49938 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:12:43,028 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 22:12:43,030 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 22:12:43,036 - uvicorn.access - INFO - 127.0.0.1:49941 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:12:43,076 - uvicorn.access - INFO - 127.0.0.1:49938 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:13:02,822 - uvicorn.access - INFO - 127.0.0.1:49946 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:13:02,828 - lightrag - INFO - Found 2 files to index.
+2026-01-13 22:13:02,836 - lightrag - WARNING - Ignoring document ID (already exists): doc-48b7c7d9c561fa49dab1a2f3b78a9b30 (2025-12-16T10:03:14Z.txt)
+2026-01-13 22:13:02,836 - lightrag - WARNING - No new unique documents were found.
+2026-01-13 22:13:02,836 - lightrag - INFO - Successfully extracted and enqueued file: 2025-12-16T10:03:14Z.txt
+2026-01-13 22:13:02,839 - lightrag - WARNING - Ignoring document ID (already exists): doc-0959ac623c6863a51aad6edefa15a1ff (2025-12-19T12:13:19Z.txt)
+2026-01-13 22:13:02,839 - lightrag - WARNING - No new unique documents were found.
+2026-01-13 22:13:02,839 - lightrag - INFO - Successfully extracted and enqueued file: 2025-12-19T12:13:19Z.txt
+2026-01-13 22:13:02,840 - lightrag - INFO - No documents to process
+2026-01-13 22:13:02,840 - lightrag - INFO - Scanning process completed: 2 files Processed.
+2026-01-13 22:15:01,219 - uvicorn.access - INFO - 127.0.0.1:49979 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:15:01,223 - lightrag - INFO - Found 1 files to index.
+2026-01-13 22:15:01,224 - lightrag - WARNING - Skipping already processed file: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 22:15:01,224 - lightrag - INFO - No files to process after filtering already processed files.
+2026-01-13 22:15:07,151 - uvicorn.access - INFO - 127.0.0.1:49982 - "GET /webui/assets/index-BO2s-Yhu.js HTTP/1.1" 304
+2026-01-13 22:15:07,151 - uvicorn.access - INFO - 127.0.0.1:49979 - "GET /webui/assets/index-BVYv_w3q.css HTTP/1.1" 304
+2026-01-13 22:15:07,269 - uvicorn.access - INFO - 127.0.0.1:49979 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-13 22:15:07,353 - uvicorn.access - INFO - 127.0.0.1:49979 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:15:07,360 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 22:15:07,362 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 22:15:07,368 - uvicorn.access - INFO - 127.0.0.1:49982 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:15:07,382 - uvicorn.access - INFO - 127.0.0.1:49982 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:15:08,806 - uvicorn.access - INFO - 127.0.0.1:49982 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:15:08,807 - lightrag - INFO - Found 1 files to index.
+2026-01-13 22:15:08,808 - lightrag - WARNING - Skipping already processed file: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 22:15:08,808 - lightrag - INFO - No files to process after filtering already processed files.
+2026-01-13 22:15:26,720 - uvicorn.access - INFO - 127.0.0.1:49987 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:15:26,725 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 22:15:26,727 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 22:15:26,733 - uvicorn.access - INFO - 127.0.0.1:49989 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:15:26,745 - uvicorn.access - INFO - 127.0.0.1:49989 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:15:31,302 - uvicorn.access - INFO - 127.0.0.1:49989 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:15:31,305 - lightrag - INFO - Found 1 files to index.
+2026-01-13 22:15:31,305 - lightrag - WARNING - Skipping already processed file: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-13 22:15:31,306 - lightrag - INFO - No files to process after filtering already processed files.
+2026-01-13 22:16:51,225 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 22:16:51,229 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 22:16:51,236 - uvicorn.access - INFO - 127.0.0.1:50023 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:17:04,029 - uvicorn.access - INFO - 127.0.0.1:50025 - "GET /graph/label/search?q=tyler&limit=50 HTTP/1.1" 200
+2026-01-13 22:17:05,058 - lightrag - INFO - [] Graph truncated: found 95 nodes within max_depth 3
+2026-01-13 22:17:05,060 - lightrag - INFO - [] Subgraph query successful | Node count: 95 | Edge count: 105
+2026-01-13 22:17:05,067 - uvicorn.access - INFO - 127.0.0.1:50025 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:22:55,255 - uvicorn.access - INFO - 127.0.0.1:50349 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:22:55,260 - lightrag - INFO - Found 1 files to index.
+2026-01-13 22:22:55,269 - lightrag - INFO - Successfully extracted and enqueued file: Product Arch Job Description.txt
+2026-01-13 22:22:55,270 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 22:22:55,270 - lightrag - INFO - Extracting stage 1/1: Product Arch Job Description.txt
+2026-01-13 22:22:55,270 - lightrag - INFO - Processing d-id: doc-601fbed9d6e90700da21adab1219fe98
+2026-01-13 22:22:55,305 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-13 22:22:55,891 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-13 22:23:02,665 - lightrag - INFO -  == LLM cache == saving: default:extract:8149e7a8bf208e352c0db66b8d73145e
+2026-01-13 22:23:06,705 - lightrag - INFO -  == LLM cache == saving: default:extract:940ec78e7c7002e89707f1b779590290
+2026-01-13 22:23:06,707 - lightrag - INFO - Chunk 1 of 1 extracted 11 Ent + 6 Rel chunk-601fbed9d6e90700da21adab1219fe98
+2026-01-13 22:23:06,707 - lightrag - INFO - Merging stage 1/1: Product Arch Job Description.txt
+2026-01-13 22:23:06,708 - lightrag - INFO - Phase 1: Processing 11 entities from doc-601fbed9d6e90700da21adab1219fe98 (async: 8)
+2026-01-13 22:23:06,717 - lightrag - INFO - Merged: `Product Architect` | 2+1
+2026-01-13 22:23:06,733 - lightrag - INFO - Merged: `Unified Data Model` | 1+1
+2026-01-13 22:23:06,745 - lightrag - INFO - Merged: `Product Management` | 2+1
+2026-01-13 22:23:07,116 - lightrag - INFO - Merged: `Solution Architect` | 1+1
+2026-01-13 22:23:07,653 - lightrag - INFO - Phase 2: Processing 6 relations from doc-601fbed9d6e90700da21adab1219fe98 (async: 8)
+2026-01-13 22:23:09,784 - lightrag - INFO - Phase 3: Updating final 11(11+0) entities and  6 relations from doc-601fbed9d6e90700da21adab1219fe98
+2026-01-13 22:23:09,785 - lightrag - INFO - Completed merging: 11 entities, 0 extra entities, 6 relations
+2026-01-13 22:23:09,829 - lightrag - INFO - [] Writing graph with 343 nodes, 258 edges
+2026-01-13 22:23:09,850 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 22:23:09,850 - lightrag - INFO - Completed processing file 1/1: Product Arch Job Description.txt
+2026-01-13 22:23:09,850 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 22:23:09,850 - lightrag - INFO - Scanning process completed: 1 files Processed.
+2026-01-13 22:24:07,449 - uvicorn.access - INFO - 127.0.0.1:50402 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 22:24:07,464 - lightrag - INFO - [] Graph truncated: found 97 nodes within max_depth 3
+2026-01-13 22:24:07,466 - lightrag - INFO - [] Subgraph query successful | Node count: 97 | Edge count: 109
+2026-01-13 22:24:07,472 - uvicorn.access - INFO - 127.0.0.1:50402 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200

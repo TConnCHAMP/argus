@@ -1546,11 +1546,11 @@
   },
   "Solution Architect": {
     "chunk_ids": [
-      "chunk-e7c22537945b3f2f0ba52a16c7265dd9"
+      "chunk-e7c22537945b3f2f0ba52a16c7265dd9",
+      "chunk-601fbed9d6e90700da21adab1219fe98"
     ],
-    "count": 1,
-    "create_time": 1768282470,
-    "update_time": 1768282470,
+    "count": 2,
+    "update_time": 1768360987,
     "_id": "Solution Architect"
   },
   "Enterprise Architect": {
@@ -1748,11 +1748,11 @@
   "Product Architect": {
     "chunk_ids": [
       "chunk-59a1aa067026dfefec2b8eed021fb85d",
-      "chunk-8ea7735689c5b82676eba0b59da6ac8d"
+      "chunk-8ea7735689c5b82676eba0b59da6ac8d",
+      "chunk-601fbed9d6e90700da21adab1219fe98"
     ],
-    "count": 2,
-    "create_time": 1768282819,
-    "update_time": 1768282819,
+    "count": 3,
+    "update_time": 1768360986,
     "_id": "Product Architect"
   },
   "Silicon Valley Product Group Training": {
@@ -1804,11 +1804,11 @@
   "Product Management": {
     "chunk_ids": [
       "chunk-e8ccc385e9bec2aeccaff015e9e981ae",
-      "chunk-9b3f3660cbe5355ea86ff7605aa1a89a"
+      "chunk-9b3f3660cbe5355ea86ff7605aa1a89a",
+      "chunk-601fbed9d6e90700da21adab1219fe98"
     ],
-    "count": 2,
-    "create_time": 1768282820,
-    "update_time": 1768282820,
+    "count": 3,
+    "update_time": 1768360986,
     "_id": "Product Management"
   },
   "Product Architect Job Description": {
@@ -2099,11 +2099,11 @@
   },
   "Unified Data Model": {
     "chunk_ids": [
-      "chunk-8ea7735689c5b82676eba0b59da6ac8d"
+      "chunk-8ea7735689c5b82676eba0b59da6ac8d",
+      "chunk-601fbed9d6e90700da21adab1219fe98"
     ],
-    "count": 1,
-    "create_time": 1768282822,
-    "update_time": 1768282822,
+    "count": 2,
+    "update_time": 1768360986,
     "_id": "Unified Data Model"
   },
   "Digital Titles": {
@@ -3120,5 +3120,68 @@
     "count": 3,
     "update_time": 1768358389,
     "_id": "Champ Titles Inc."
+  },
+  "CHAMP": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360986,
+    "update_time": 1768360986,
+    "_id": "CHAMP"
+  },
+  "Cleveland": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360986,
+    "update_time": 1768360986,
+    "_id": "Cleveland"
+  },
+  "Head of Product": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360986,
+    "update_time": 1768360986,
+    "_id": "Head of Product"
+  },
+  "Visa Sponsorship": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360986,
+    "update_time": 1768360986,
+    "_id": "Visa Sponsorship"
+  },
+  "Salary Range": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360986,
+    "update_time": 1768360986,
+    "_id": "Salary Range"
+  },
+  "Software Engineer": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360987,
+    "update_time": 1768360987,
+    "_id": "Software Engineer"
+  },
+  "Data Engineer": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360987,
+    "update_time": 1768360987,
+    "_id": "Data Engineer"
   }
 }

@@ -2274,5 +2274,59 @@
     "create_time": 1768358384,
     "update_time": 1768358384,
     "_id": "Bella Nieves<SEP>Champ Titles Inc."
+  },
+  "CHAMP<SEP>Cleveland": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360987,
+    "update_time": 1768360987,
+    "_id": "CHAMP<SEP>Cleveland"
+  },
+  "Head of Product<SEP>Product Architect": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360987,
+    "update_time": 1768360987,
+    "_id": "Head of Product<SEP>Product Architect"
+  },
+  "Product Architect<SEP>Unified Data Model": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360988,
+    "update_time": 1768360988,
+    "_id": "Product Architect<SEP>Unified Data Model"
+  },
+  "CHAMP<SEP>Visa Sponsorship": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360988,
+    "update_time": 1768360988,
+    "_id": "CHAMP<SEP>Visa Sponsorship"
+  },
+  "Product Architect<SEP>Salary Range": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360988,
+    "update_time": 1768360988,
+    "_id": "Product Architect<SEP>Salary Range"
+  },
+  "Product Architect<SEP>Product Management": {
+    "chunk_ids": [
+      "chunk-601fbed9d6e90700da21adab1219fe98"
+    ],
+    "count": 1,
+    "create_time": 1768360989,
+    "update_time": 1768360989,
+    "_id": "Product Architect<SEP>Product Management"
   }
 }

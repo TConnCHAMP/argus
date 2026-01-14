@@ -1536,11 +1536,11 @@ Moreover, Speaker 1 reflects on the significance of job descriptions and technic
 </node>
 <node id="Solution Architect">
   <data key="d0">Solution Architect</data>
-  <data key="d1">concept</data>
-  <data key="d2">The Solution Architect role is a new position aimed at bridging business and technical perspectives in product development.</data>
-  <data key="d3">chunk-e7c22537945b3f2f0ba52a16c7265dd9</data>
-  <data key="d4">12-19 Interview: Solution Architect Role &amp; DMV Software Modernization Strategy.txt</data>
-  <data key="d5">1768282470</data>
+  <data key="d1">role</data>
+  <data key="d2">The Solution Architect role is a new position aimed at bridging business and technical perspectives in product development.&lt;SEP&gt;A Solution Architect is mentioned as a related role that may have similar responsibilities to that of a Product Architect.</data>
+  <data key="d3">chunk-e7c22537945b3f2f0ba52a16c7265dd9&lt;SEP&gt;chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">12-19 Interview: Solution Architect Role &amp; DMV Software Modernization Strategy.txt&lt;SEP&gt;Product Arch Job Description.txt</data>
+  <data key="d5">1768360987</data>
   <data key="d6"></data>
 </node>
 <node id="Enterprise Architect">
@@ -1735,11 +1735,11 @@ Moreover, Speaker 1 reflects on the significance of job descriptions and technic
 </node>
 <node id="Product Architect">
   <data key="d0">Product Architect</data>
-  <data key="d1">concept</data>
-  <data key="d2">The Product Architect role is described as one that allows for creativity and flexibility in product management, emphasizing the ability to carve a unique path.&lt;SEP&gt;The Product Architect is a unique role being developed to bridge technical architecture and business needs within the organization.</data>
-  <data key="d3">chunk-59a1aa067026dfefec2b8eed021fb85d&lt;SEP&gt;chunk-8ea7735689c5b82676eba0b59da6ac8d</data>
-  <data key="d4">12-16 Interview: Tyler - Product Manager.txt</data>
-  <data key="d5">1768282819</data>
+  <data key="d1">role</data>
+  <data key="d2">The Product Architect role is described as one that allows for creativity and flexibility in product management, emphasizing the ability to carve a unique path.&lt;SEP&gt;The Product Architect is a unique role being developed to bridge technical architecture and business needs within the organization.&lt;SEP&gt;The Product Architect is responsible for bridging product, data, and architecture, ensuring scalable and maintainable systems.</data>
+  <data key="d3">chunk-59a1aa067026dfefec2b8eed021fb85d&lt;SEP&gt;chunk-8ea7735689c5b82676eba0b59da6ac8d&lt;SEP&gt;chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">12-16 Interview: Tyler - Product Manager.txt&lt;SEP&gt;Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
   <data key="d6"></data>
 </node>
 <node id="Silicon Valley Product Group Training">
@@ -1789,11 +1789,11 @@ Moreover, Speaker 1 reflects on the significance of job descriptions and technic
 </node>
 <node id="Product Management">
   <data key="d0">Product Management</data>
-  <data key="d1">concept</data>
-  <data key="d2">Product Management is the focus of the discussions with an emphasis on transition from CTO-led to product-led approaches.&lt;SEP&gt;Product management is a field discussed by Speaker 2, highlighting their career aspiration and the skills required for the role.</data>
-  <data key="d3">chunk-e8ccc385e9bec2aeccaff015e9e981ae&lt;SEP&gt;chunk-9b3f3660cbe5355ea86ff7605aa1a89a</data>
-  <data key="d4">12-16 Interview: Tyler - Product Manager.txt</data>
-  <data key="d5">1768282820</data>
+  <data key="d1">department</data>
+  <data key="d2">Product Management is the focus of the discussions with an emphasis on transition from CTO-led to product-led approaches.&lt;SEP&gt;Product management is a field discussed by Speaker 2, highlighting their career aspiration and the skills required for the role.&lt;SEP&gt;Product Management is the department in which the Product Architect position is classified.</data>
+  <data key="d3">chunk-e8ccc385e9bec2aeccaff015e9e981ae&lt;SEP&gt;chunk-9b3f3660cbe5355ea86ff7605aa1a89a&lt;SEP&gt;chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">12-16 Interview: Tyler - Product Manager.txt&lt;SEP&gt;Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
   <data key="d6"></data>
 </node>
 <node id="Product Architect Job Description">
@@ -2078,10 +2078,10 @@ Moreover, Speaker 1 reflects on the significance of job descriptions and technic
 <node id="Unified Data Model">
   <data key="d0">Unified Data Model</data>
   <data key="d1">concept</data>
-  <data key="d2">The Unified Data Model is a structured framework being developed to ensure all products within Highland utilize a cohesive data management system.</data>
-  <data key="d3">chunk-8ea7735689c5b82676eba0b59da6ac8d</data>
-  <data key="d4">12-16 Interview: Tyler - Product Manager.txt</data>
-  <data key="d5">1768282822</data>
+  <data key="d2">The Unified Data Model is a structured framework being developed to ensure all products within Highland utilize a cohesive data management system.&lt;SEP&gt;The Unified Data Model serves as a framework for integrating business goals and user requirements into a cohesive data system.</data>
+  <data key="d3">chunk-8ea7735689c5b82676eba0b59da6ac8d&lt;SEP&gt;chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">12-16 Interview: Tyler - Product Manager.txt&lt;SEP&gt;Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
   <data key="d6"></data>
 </node>
 <node id="Digital Titles">
@@ -3051,6 +3051,69 @@ Overall, Speaker 2's contributions encapsulate both professional insights and pe
   <data key="d3">chunk-cd1e146d6eb4fb0efbdb6208f93c4df6&lt;SEP&gt;chunk-9b3f3660cbe5355ea86ff7605aa1a89a&lt;SEP&gt;chunk-a18a018ea63263a65246bd4beb196541</data>
   <data key="d4">FAQ for Candidates - External.docx&lt;SEP&gt;welcome email.pdf&lt;SEP&gt;12-16 Interview: Tyler - Product Manager.txt</data>
   <data key="d5">1768358168</data>
+  <data key="d6"></data>
+</node>
+<node id="CHAMP">
+  <data key="d0">CHAMP</data>
+  <data key="d1">organization</data>
+  <data key="d2">CHAMP is a company redefining technology used by Motor Vehicle Agencies through innovative, cloud-based software.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
+  <data key="d6"></data>
+</node>
+<node id="Cleveland">
+  <data key="d0">Cleveland</data>
+  <data key="d1">location</data>
+  <data key="d2">Cleveland is the city where the onsite position for Product Architect is located.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
+  <data key="d6"></data>
+</node>
+<node id="Head of Product">
+  <data key="d0">Head of Product</data>
+  <data key="d1">position</data>
+  <data key="d2">The Head of Product is the individual to whom the Product Architect reports.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
+  <data key="d6"></data>
+</node>
+<node id="Visa Sponsorship">
+  <data key="d0">Visa Sponsorship</data>
+  <data key="d1">concept</data>
+  <data key="d2">Visa Sponsorship refers to the eligibility for employer assistance in obtaining a visa, noted as unavailable for this position.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
+  <data key="d6"></data>
+</node>
+<node id="Salary Range">
+  <data key="d0">Salary Range</data>
+  <data key="d1">data</data>
+  <data key="d2">The expected salary range for the Product Architect position is between $140,000 to $175,000 annually.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360986</data>
+  <data key="d6"></data>
+</node>
+<node id="Software Engineer">
+  <data key="d0">Software Engineer</data>
+  <data key="d1">role</data>
+  <data key="d2">A Software Engineer is mentioned as a related role that may have similar responsibilities to that of a Product Architect.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360987</data>
+  <data key="d6"></data>
+</node>
+<node id="Data Engineer">
+  <data key="d0">Data Engineer</data>
+  <data key="d1">role</data>
+  <data key="d2">A Data Engineer is mentioned as a related role that may have similar responsibilities to that of a Product Architect.</data>
+  <data key="d3">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d4">Product Arch Job Description.txt</data>
+  <data key="d5">1768360987</data>
   <data key="d6"></data>
 </node>
 <edge source="Prime Rate" target="401(k) Account">
@@ -4610,6 +4673,42 @@ Overall, Speaker 2's contributions encapsulate both professional insights and pe
   <data key="d13">1768282830</data>
   <data key="d14"></data>
 </edge>
+<edge source="Product Architect" target="Head of Product">
+  <data key="d8">1.0</data>
+  <data key="d9">The Product Architect reports to the Head of Product, establishing a formal organizational hierarchy.</data>
+  <data key="d10">reporting structure,role hierarchy</data>
+  <data key="d11">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d12">Product Arch Job Description.txt</data>
+  <data key="d13">1768360987</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Product Architect" target="Unified Data Model">
+  <data key="d8">1.0</data>
+  <data key="d9">The Product Architect ensures that the Unified Data Model supports the integration of user requirements and scalable system design.</data>
+  <data key="d10">data integration,system design</data>
+  <data key="d11">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d12">Product Arch Job Description.txt</data>
+  <data key="d13">1768360988</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Product Architect" target="Salary Range">
+  <data key="d8">1.0</data>
+  <data key="d9">The salary range for the Product Architect position indicates the compensation expected for the role.</data>
+  <data key="d10">compensation,job requirements</data>
+  <data key="d11">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d12">Product Arch Job Description.txt</data>
+  <data key="d13">1768360988</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Product Architect" target="Product Management">
+  <data key="d8">1.0</data>
+  <data key="d9">The Product Architect role is classified under the Product Management department.</data>
+  <data key="d10">department structure,job classification</data>
+  <data key="d11">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d12">Product Arch Job Description.txt</data>
+  <data key="d13">1768360989</data>
+  <data key="d14"></data>
+</edge>
 <edge source="Silicon Valley Product Group Training" target="Tyler Conn">
   <data key="d8">1.0</data>
   <data key="d9">Speaker 2 reflects on the value gained from the Silicon Valley Product Group Training and its impact on thought processes.</data>
@@ -5319,6 +5418,24 @@ Overall, Speaker 2's contributions encapsulate both professional insights and pe
   <data key="d11">chunk-a18a018ea63263a65246bd4beb196541</data>
   <data key="d12">welcome email.pdf</data>
   <data key="d13">1768358171</data>
+  <data key="d14"></data>
+</edge>
+<edge source="CHAMP" target="Cleveland">
+  <data key="d8">1.0</data>
+  <data key="d9">CHAMP is located in Cleveland where the Product Architect position is offered.</data>
+  <data key="d10">organization location</data>
+  <data key="d11">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d12">Product Arch Job Description.txt</data>
+  <data key="d13">1768360987</data>
+  <data key="d14"></data>
+</edge>
+<edge source="CHAMP" target="Visa Sponsorship">
+  <data key="d8">1.0</data>
+  <data key="d9">CHAMP's hiring policy specifies that the Product Architect position is not eligible for Visa Sponsorship.</data>
+  <data key="d10">employment policy,hiring criteria</data>
+  <data key="d11">chunk-601fbed9d6e90700da21adab1219fe98</data>
+  <data key="d12">Product Arch Job Description.txt</data>
+  <data key="d13">1768360988</data>
   <data key="d14"></data>
 </edge>
 </graph></graphml>

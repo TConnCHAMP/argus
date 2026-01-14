@@ -416,5 +416,24 @@
     "create_time": 1768358172,
     "update_time": 1768358172,
     "_id": "doc-a18a018ea63263a65246bd4beb196541"
+  },
+  "doc-601fbed9d6e90700da21adab1219fe98": {
+    "entity_names": [
+      "Software Engineer",
+      "Cleveland",
+      "Product Architect",
+      "Data Engineer",
+      "Unified Data Model",
+      "Product Management",
+      "Head of Product",
+      "CHAMP",
+      "Solution Architect",
+      "Visa Sponsorship",
+      "Salary Range"
+    ],
+    "count": 11,
+    "create_time": 1768360989,
+    "update_time": 1768360989,
+    "_id": "doc-601fbed9d6e90700da21adab1219fe98"
   }
 }

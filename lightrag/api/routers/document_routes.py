@@ -287,6 +287,7 @@ class InsertResponse(BaseModel):
         status: Status of the operation (success, duplicated, partial_success, failure)
         message: Detailed message describing the operation result
         track_id: Tracking ID for monitoring processing status
+        conflict_doc_id: ID of the conflicting document (only set when status is 'duplicated')
     """
 
     status: Literal["success", "duplicated", "partial_success", "failure"] = Field(
@@ -294,6 +295,10 @@ class InsertResponse(BaseModel):
     )
     message: str = Field(description="Message describing the operation result")
     track_id: str = Field(description="Tracking ID for monitoring processing status")
+    conflict_doc_id: Optional[str] = Field(
+        default=None,
+        description="ID of the conflicting document (only set when status is 'duplicated')"
+    )
 
     class Config:
         json_schema_extra = {
@@ -301,6 +306,7 @@ class InsertResponse(BaseModel):
                 "status": "success",
                 "message": "File 'document.pdf' uploaded successfully. Processing will continue in background.",
                 "track_id": "upload_20250729_170612_abc123",
+                "conflict_doc_id": None,
             }
         }
 
@@ -2177,10 +2183,12 @@ def create_document_routes(
                     status = existing_doc_data.get("status", "unknown")
                     # Use `or ""` to handle both missing key and None value (e.g., legacy rows without track_id)
                     existing_track_id = existing_doc_data.get("track_id") or ""
+                    conflict_doc_id = existing_doc_data.get("id")
                     return InsertResponse(
                         status="duplicated",
-                        message=f"File source '{request.file_source}' already exists in document storage (Status: {status}).",
+                        message=f"File source '{request.file_source}' already exists in document storage (Status: {status}). You can choose to replace it with the new version.",
                         track_id=existing_track_id,
+                        conflict_doc_id=conflict_doc_id,
                     )
 
             # Check if content already exists by computing content hash (doc_id)
@@ -2191,10 +2199,12 @@ def create_document_routes(
                 # Content already exists, return duplicated with existing track_id
                 status = existing_doc.get("status", "unknown")
                 existing_track_id = existing_doc.get("track_id") or ""
+                conflict_doc_id = existing_doc.get("id")
                 return InsertResponse(
                     status="duplicated",
-                    message=f"Identical content already exists in document storage (doc_id: {content_doc_id}, Status: {status}).",
+                    message=f"Identical content already exists in document storage (Status: {status}). You can choose to replace it with the new version.",
                     track_id=existing_track_id,
+                    conflict_doc_id=conflict_doc_id,
                 )
 
             # Generate track_id for text insertion
@@ -2215,6 +2225,63 @@ def create_document_routes(
             )
         except Exception as e:
             logger.error(f"Error /documents/text: {str(e)}")
+            logger.error(traceback.format_exc())
+            raise HTTPException(status_code=500, detail=str(e))
+
+    @router.post(
+        "/replace",
+        response_model=InsertResponse,
+        dependencies=[Depends(combined_auth)],
+    )
+    async def replace_document(
+        conflict_doc_id: str,
+        request: InsertTextRequest,
+        background_tasks: BackgroundTasks,
+    ):
+        """
+        Replace an existing document with a new version.
+
+        This endpoint deletes the old document and all its associated data,
+        then inserts the new document.
+
+        Args:
+            conflict_doc_id: ID of the document to replace
+            request: The new document content
+
+        Returns:
+            InsertResponse: A response object containing the status of the operation.
+        """
+        try:
+            # Delete the old document
+            deletion_result = await rag.delete_documents([conflict_doc_id])
+            if not deletion_result:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Failed to delete conflicting document {conflict_doc_id}"
+                )
+
+            # Insert the new document
+            sanitized_text = sanitize_text_for_encoding(request.text)
+            content_doc_id = compute_mdhash_id(sanitized_text, prefix="doc-")
+            
+            # Generate track_id for text insertion
+            track_id = generate_track_id("replace")
+
+            background_tasks.add_task(
+                pipeline_index_texts,
+                rag,
+                [request.text],
+                file_sources=[request.file_source],
+                track_id=track_id,
+            )
+
+            return InsertResponse(
+                status="success",
+                message=f"Document replaced successfully. Old document (ID: {conflict_doc_id}) deleted and new content is being processed.",
+                track_id=track_id,
+            )
+        except Exception as e:
+            logger.error(f"Error /documents/replace: {str(e)}")
             logger.error(traceback.format_exc())
             raise HTTPException(status_code=500, detail=str(e))
 
