@@ -941,3 +941,297 @@
 2026-01-13 00:54:39,110 - lightrag - INFO - Final context: 49 entities, 40 relations, 20 chunks
 2026-01-13 00:54:39,110 - lightrag - INFO - Final chunks S+F/O: E5/1 E10/2 E3/3 E4/4 E6/5 E8/6 E5/7 E4/8 E8/9 E5/10 E5/11 E4/12 E2/13 E3/14 E4/15 E2/16 E2/17 E3/18 E1/19 E1/20
 2026-01-13 00:54:40,768 - uvicorn.access - INFO - 127.0.0.1:62572 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 01:00:40,529 - uvicorn.error - INFO - Shutting down
+2026-01-13 01:00:40,631 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-13 01:00:40,632 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-13 01:00:40,632 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-13 01:00:40,632 - uvicorn.error - INFO - Finished server process [53843]
+2026-01-13 21:12:21,945 - lightrag - INFO - Frontend build is up-to-date
+2026-01-13 21:12:21,945 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 21:12:22,110 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 21:12:22,110 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 21:12:22,110 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 21:12:22,110 - lightrag - INFO - Reranking is disabled
+2026-01-13 21:12:22,316 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 331 nodes, 247 edges
+2026-01-13 21:12:22,366 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-13 21:12:22,373 - uvicorn.error - INFO - Started server process [58230]
+2026-01-13 21:12:22,373 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 21:12:22,374 - lightrag - INFO - [] Process 58230 KV load full_docs with 7 records
+2026-01-13 21:12:22,375 - lightrag - INFO - [] Process 58230 KV load text_chunks with 35 records
+2026-01-13 21:12:22,375 - lightrag - INFO - [] Process 58230 KV load full_entities with 7 records
+2026-01-13 21:12:22,375 - lightrag - INFO - [] Process 58230 KV load full_relations with 6 records
+2026-01-13 21:12:22,376 - lightrag - INFO - [] Process 58230 KV load entity_chunks with 331 records
+2026-01-13 21:12:22,376 - lightrag - INFO - [] Process 58230 KV load relation_chunks with 247 records
+2026-01-13 21:12:22,379 - lightrag - INFO - [] Process 58230 KV load llm_response_cache with 93 records
+2026-01-13 21:12:22,379 - lightrag - INFO - [] Process 58230 doc status load doc_status with 7 records
+2026-01-13 21:12:22,380 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 21:12:22,380 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 21:13:50,046 - lightrag - INFO - Frontend build is up-to-date
+2026-01-13 21:13:50,046 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 21:13:50,140 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 21:13:50,140 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 21:13:50,140 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 21:13:50,140 - lightrag - INFO - Reranking is disabled
+2026-01-13 21:13:50,289 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 331 nodes, 247 edges
+2026-01-13 21:13:50,333 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-13 21:13:50,341 - uvicorn.error - INFO - Started server process [59233]
+2026-01-13 21:13:50,341 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 21:13:50,342 - lightrag - INFO - [] Process 59233 KV load full_docs with 7 records
+2026-01-13 21:13:50,342 - lightrag - INFO - [] Process 59233 KV load text_chunks with 35 records
+2026-01-13 21:13:50,343 - lightrag - INFO - [] Process 59233 KV load full_entities with 7 records
+2026-01-13 21:13:50,343 - lightrag - INFO - [] Process 59233 KV load full_relations with 6 records
+2026-01-13 21:13:50,344 - lightrag - INFO - [] Process 59233 KV load entity_chunks with 331 records
+2026-01-13 21:13:50,344 - lightrag - INFO - [] Process 59233 KV load relation_chunks with 247 records
+2026-01-13 21:13:50,347 - lightrag - INFO - [] Process 59233 KV load llm_response_cache with 93 records
+2026-01-13 21:13:50,347 - lightrag - INFO - [] Process 59233 doc status load doc_status with 7 records
+2026-01-13 21:13:50,348 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 21:13:50,348 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 21:14:05,040 - uvicorn.access - INFO - 127.0.0.1:64363 - "GET /?id=f54e0d6d-b058-48fb-8c16-15bcf495c6cb&vscodeBrowserReqId=1768356845038 HTTP/1.1" 307
+2026-01-13 21:14:05,041 - uvicorn.access - INFO - 127.0.0.1:64363 - "GET /webui HTTP/1.1" 307
+2026-01-13 21:14:05,092 - uvicorn.access - INFO - 127.0.0.1:64363 - "GET /webui/assets/index-B89vbgaD.js HTTP/1.1" 200
+2026-01-13 21:14:05,092 - uvicorn.access - INFO - 127.0.0.1:64365 - "GET /webui/assets/index-Bis4odp7.css HTTP/1.1" 200
+2026-01-13 21:14:05,258 - uvicorn.access - INFO - 127.0.0.1:64363 - "GET /auth-status HTTP/1.1" 200
+2026-01-13 21:14:05,703 - uvicorn.access - INFO - 127.0.0.1:64363 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:14:05,712 - uvicorn.access - INFO - 127.0.0.1:64368 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 21:14:05,716 - lightrag - INFO - [] Subgraph query successful | Node count: 331 | Edge count: 247
+2026-01-13 21:14:05,729 - uvicorn.access - INFO - 127.0.0.1:64369 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:14:05,730 - uvicorn.access - INFO - 127.0.0.1:64368 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
+2026-01-13 21:14:05,731 - uvicorn.access - INFO - 127.0.0.1:64365 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
+2026-01-13 21:14:05,839 - uvicorn.access - INFO - 127.0.0.1:64368 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:14:30,245 - uvicorn.access - INFO - 127.0.0.1:64386 - "GET / HTTP/1.1" 307
+2026-01-13 21:14:30,258 - uvicorn.access - INFO - 127.0.0.1:64386 - "GET /webui HTTP/1.1" 307
+2026-01-13 21:14:30,317 - uvicorn.access - INFO - 127.0.0.1:64386 - "GET /webui/assets/index-B89vbgaD.js HTTP/1.1" 200
+2026-01-13 21:14:30,317 - uvicorn.access - INFO - 127.0.0.1:64387 - "GET /webui/assets/index-Bis4odp7.css HTTP/1.1" 200
+2026-01-13 21:14:30,550 - uvicorn.access - INFO - 127.0.0.1:64387 - "GET /auth-status HTTP/1.1" 200
+2026-01-13 21:14:30,712 - uvicorn.access - INFO - 127.0.0.1:64387 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:14:30,719 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:14:30,720 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:14:30,724 - uvicorn.access - INFO - 127.0.0.1:64390 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:14:30,726 - uvicorn.access - INFO - 127.0.0.1:64387 - "GET /webui/assets/index-Bk9yWixU.js HTTP/1.1" 200
+2026-01-13 21:14:30,794 - uvicorn.access - INFO - 127.0.0.1:64387 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:14:41,880 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:14:41,883 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:14:41,888 - uvicorn.access - INFO - 127.0.0.1:64396 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:15:07,249 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-13 21:15:09,195 - lightrag - INFO -  == LLM cache == saving: global:keywords:fd8d6f74450b2ddeb465e2fcc2f514c0
+2026-01-13 21:15:09,196 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-13 21:15:10,315 - lightrag - INFO - Query edges: Employment, CHAMP (top_k:40, cosine:0.2)
+2026-01-13 21:15:11,248 - lightrag - INFO - Global query: 49 entites, 40 relations
+2026-01-13 21:15:11,249 - lightrag - INFO - Raw search results: 49 entities, 40 relations, 0 vector chunks
+2026-01-13 21:15:11,256 - lightrag - INFO - After truncation: 49 entities, 40 relations
+2026-01-13 21:15:11,264 - lightrag - INFO - Selecting 31 from 31 entity-related chunks by vector similarity
+2026-01-13 21:15:11,264 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:15:11,264 - lightrag - INFO - Round-robin merged chunks: 31 -> 31 (deduplicated 0)
+2026-01-13 21:15:11,269 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:15:11,281 - lightrag - INFO - Final context: 49 entities, 40 relations, 20 chunks
+2026-01-13 21:15:11,281 - lightrag - INFO - Final chunks S+F/O: E12/1 E10/2 E10/3 E2/4 E2/5 E4/6 E1/7 E1/8 E2/9 E4/10 E3/11 E1/12 E7/13 E2/14 E2/15 E1/16 E2/17 E2/18 E2/19 E3/20
+2026-01-13 21:15:13,706 - uvicorn.access - INFO - 127.0.0.1:64409 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:15:30,691 - lightrag - INFO -  == LLM cache == saving: global:keywords:c457ef48580197927c9218bb747228d8
+2026-01-13 21:15:31,715 - lightrag - INFO - Query edges: Abby, Information request (top_k:40, cosine:0.2)
+2026-01-13 21:15:31,985 - lightrag - INFO - Global query: 43 entites, 40 relations
+2026-01-13 21:15:31,985 - lightrag - INFO - Raw search results: 43 entities, 40 relations, 0 vector chunks
+2026-01-13 21:15:31,990 - lightrag - INFO - After truncation: 43 entities, 40 relations
+2026-01-13 21:15:31,996 - lightrag - INFO - Selecting 26 from 26 entity-related chunks by vector similarity
+2026-01-13 21:15:31,997 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:15:31,997 - lightrag - INFO - Round-robin merged chunks: 26 -> 26 (deduplicated 0)
+2026-01-13 21:15:32,001 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:15:32,017 - lightrag - INFO - Final context: 43 entities, 40 relations, 20 chunks
+2026-01-13 21:15:32,017 - lightrag - INFO - Final chunks S+F/O: E6/1 E6/2 E4/3 E7/4 E4/5 E7/6 E5/7 E1/8 E4/9 E4/10 E4/11 E4/12 E3/13 E7/14 E2/15 E3/16 E2/17 E1/18 E2/19 E1/20
+2026-01-13 21:15:34,179 - uvicorn.access - INFO - 127.0.0.1:64417 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:15:56,395 - lightrag - INFO -  == LLM cache == saving: global:keywords:abbffa1ea4c1081766492e7d3d878476
+2026-01-13 21:15:57,421 - lightrag - INFO - Query edges: Multifaceted (top_k:40, cosine:0.2)
+2026-01-13 21:15:57,655 - lightrag - INFO - Global query: 51 entites, 40 relations
+2026-01-13 21:15:57,655 - lightrag - INFO - Raw search results: 51 entities, 40 relations, 0 vector chunks
+2026-01-13 21:15:57,661 - lightrag - INFO - After truncation: 51 entities, 40 relations
+2026-01-13 21:15:57,667 - lightrag - INFO - Selecting 26 from 26 entity-related chunks by vector similarity
+2026-01-13 21:15:57,668 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:15:57,668 - lightrag - INFO - Round-robin merged chunks: 26 -> 26 (deduplicated 0)
+2026-01-13 21:15:57,672 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:15:57,687 - lightrag - INFO - Final context: 51 entities, 40 relations, 19 chunks
+2026-01-13 21:15:57,687 - lightrag - INFO - Final chunks S+F/O: E6/1 E10/2 E3/3 E5/4 E5/5 E6/6 E7/7 E6/8 E6/9 E3/10 E1/11 E4/12 E2/13 E2/14 E2/15 E4/16 E4/17 E2/18 E2/19
+2026-01-13 21:15:59,383 - uvicorn.access - INFO - 127.0.0.1:64436 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:18:37,323 - uvicorn.access - INFO - 127.0.0.1:64519 - "GET /?id=59e973af-c9ce-4cde-82cd-c066d942c332&vscodeBrowserReqId=1768357117321 HTTP/1.1" 307
+2026-01-13 21:18:37,324 - uvicorn.access - INFO - 127.0.0.1:64519 - "GET /webui HTTP/1.1" 307
+2026-01-13 21:18:37,354 - uvicorn.access - INFO - 127.0.0.1:64519 - "GET /webui/assets/index-DgFSj0rm.js HTTP/1.1" 200
+2026-01-13 21:18:37,355 - uvicorn.access - INFO - 127.0.0.1:64521 - "GET /webui/assets/index-Bis4odp7.css HTTP/1.1" 200
+2026-01-13 21:18:37,575 - uvicorn.access - INFO - 127.0.0.1:64519 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:18:37,589 - lightrag - INFO - [] Subgraph query successful | Node count: 331 | Edge count: 247
+2026-01-13 21:18:37,600 - uvicorn.access - INFO - 127.0.0.1:64521 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:18:37,641 - uvicorn.access - INFO - 127.0.0.1:64521 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:18:57,518 - uvicorn.access - INFO - 127.0.0.1:64532 - "GET /webui/assets/index-DgFSj0rm.js HTTP/1.1" 200
+2026-01-13 21:18:57,520 - uvicorn.access - INFO - 127.0.0.1:64533 - "GET /webui/assets/index-Bis4odp7.css HTTP/1.1" 200
+2026-01-13 21:18:57,809 - uvicorn.access - INFO - 127.0.0.1:64532 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:18:57,818 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:18:57,819 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:18:57,823 - uvicorn.access - INFO - 127.0.0.1:64532 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:18:57,825 - uvicorn.access - INFO - 127.0.0.1:64533 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-01-13 21:18:57,867 - uvicorn.access - INFO - 127.0.0.1:64533 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:19:07,004 - uvicorn.access - INFO - 127.0.0.1:64539 - "GET /webui/assets/index-C13YxZpI.js HTTP/1.1" 200
+2026-01-13 21:19:08,292 - lightrag - INFO -  == LLM cache == saving: global:keywords:30cb7ac9227741ad0d674c77adb136a8
+2026-01-13 21:19:08,562 - lightrag - INFO - Query edges: Healthcare provider, CHAMP (top_k:40, cosine:0.2)
+2026-01-13 21:19:08,913 - lightrag - INFO - Global query: 53 entites, 40 relations
+2026-01-13 21:19:08,914 - lightrag - INFO - Raw search results: 53 entities, 40 relations, 0 vector chunks
+2026-01-13 21:19:08,920 - lightrag - INFO - After truncation: 53 entities, 40 relations
+2026-01-13 21:19:08,925 - lightrag - INFO - Selecting 19 from 19 entity-related chunks by vector similarity
+2026-01-13 21:19:08,926 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:19:08,926 - lightrag - INFO - Round-robin merged chunks: 19 -> 19 (deduplicated 0)
+2026-01-13 21:19:08,931 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:19:08,944 - lightrag - INFO - Final context: 53 entities, 40 relations, 19 chunks
+2026-01-13 21:19:08,944 - lightrag - INFO - Final chunks S+F/O: E12/1 E10/2 E10/3 E8/4 E4/5 E12/6 E1/7 E4/8 E2/9 E3/10 E1/11 E1/12 E4/13 E3/14 E3/15 E1/16 E2/17 E1/18 E2/19
+2026-01-13 21:19:11,269 - uvicorn.access - INFO - 127.0.0.1:64537 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:19:24,368 - lightrag - INFO -  == LLM cache == saving: global:keywords:832e03eabdd6619a5aeb02ac78656c01
+2026-01-13 21:19:25,494 - lightrag - INFO - Query edges: Key aspects, United Healthcare (top_k:40, cosine:0.2)
+2026-01-13 21:19:26,015 - lightrag - INFO - Global query: 51 entites, 40 relations
+2026-01-13 21:19:26,015 - lightrag - INFO - Raw search results: 51 entities, 40 relations, 0 vector chunks
+2026-01-13 21:19:26,021 - lightrag - INFO - After truncation: 51 entities, 40 relations
+2026-01-13 21:19:26,026 - lightrag - INFO - Selecting 19 from 19 entity-related chunks by vector similarity
+2026-01-13 21:19:26,026 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:19:26,026 - lightrag - INFO - Round-robin merged chunks: 19 -> 19 (deduplicated 0)
+2026-01-13 21:19:26,031 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:19:26,044 - lightrag - INFO - Final context: 51 entities, 40 relations, 19 chunks
+2026-01-13 21:19:26,044 - lightrag - INFO - Final chunks S+F/O: E16/1 E14/2 E11/3 E10/4 E19/5 E2/6 E3/7 E1/8 E1/9 E5/10 E1/11 E1/12 E3/13 E1/14 E1/15 E1/16 E1/17 E2/18 E1/19
+2026-01-13 21:19:28,494 - uvicorn.access - INFO - 127.0.0.1:64549 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:19:44,131 - lightrag - INFO -  == LLM cache == saving: global:keywords:38755e8f228a69ccee37be8b44b0ee77
+2026-01-13 21:19:45,154 - lightrag - INFO - Query edges: Difference, United, Here (top_k:40, cosine:0.2)
+2026-01-13 21:19:45,409 - lightrag - INFO - Global query: 47 entites, 40 relations
+2026-01-13 21:19:45,409 - lightrag - INFO - Raw search results: 47 entities, 40 relations, 0 vector chunks
+2026-01-13 21:19:45,415 - lightrag - INFO - After truncation: 47 entities, 40 relations
+2026-01-13 21:19:45,421 - lightrag - INFO - Selecting 27 from 27 entity-related chunks by vector similarity
+2026-01-13 21:19:45,422 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:19:45,422 - lightrag - INFO - Round-robin merged chunks: 27 -> 27 (deduplicated 0)
+2026-01-13 21:19:45,427 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:19:45,440 - lightrag - INFO - Final context: 47 entities, 40 relations, 19 chunks
+2026-01-13 21:19:45,440 - lightrag - INFO - Final chunks S+F/O: E14/1 E7/2 E3/3 E11/4 E10/5 E5/6 E7/7 E1/8 E4/9 E3/10 E1/11 E2/12 E3/13 E1/14 E4/15 E2/16 E3/17 E5/18 E1/19
+2026-01-13 21:19:47,211 - uvicorn.access - INFO - 127.0.0.1:64558 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:20:14,955 - lightrag - INFO -  == LLM cache == saving: global:keywords:7884744a0af282667639a548a1fa0e00
+2026-01-13 21:20:15,186 - lightrag - INFO - Query edges: Health Savings Account, HSA (top_k:40, cosine:0.2)
+2026-01-13 21:20:15,441 - lightrag - INFO - Global query: 58 entites, 40 relations
+2026-01-13 21:20:15,441 - lightrag - INFO - Raw search results: 58 entities, 40 relations, 0 vector chunks
+2026-01-13 21:20:15,447 - lightrag - INFO - After truncation: 58 entities, 40 relations
+2026-01-13 21:20:15,452 - lightrag - INFO - Selecting 19 from 19 entity-related chunks by vector similarity
+2026-01-13 21:20:15,453 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:20:15,453 - lightrag - INFO - Round-robin merged chunks: 19 -> 19 (deduplicated 0)
+2026-01-13 21:20:15,458 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:20:15,471 - lightrag - INFO - Final context: 58 entities, 40 relations, 19 chunks
+2026-01-13 21:20:15,471 - lightrag - INFO - Final chunks S+F/O: E9/1 E4/2 E12/3 E17/4 E5/5 E8/6 E6/7 E1/8 E6/9 E3/10 E4/11 E4/12 E4/13 E2/14 E1/15 E1/16 E1/17 E2/18 E1/19
+2026-01-13 21:20:17,114 - uvicorn.access - INFO - 127.0.0.1:64570 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:20:19,618 - uvicorn.access - INFO - 127.0.0.1:64577 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200
+2026-01-13 21:20:19,619 - uvicorn.access - INFO - 127.0.0.1:64578 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200
+2026-01-13 21:22:42,963 - uvicorn.access - INFO - 127.0.0.1:64684 - "GET /?id=a5281e3d-5cc9-415e-b5fc-2af6fdc0da3e&vscodeBrowserReqId=1768357362961 HTTP/1.1" 307
+2026-01-13 21:22:42,965 - uvicorn.access - INFO - 127.0.0.1:64684 - "GET /webui HTTP/1.1" 307
+2026-01-13 21:22:42,995 - uvicorn.access - INFO - 127.0.0.1:64684 - "GET /webui/assets/index-VEJsR_wC.js HTTP/1.1" 200
+2026-01-13 21:22:42,996 - uvicorn.access - INFO - 127.0.0.1:64686 - "GET /webui/assets/index-Bis4odp7.css HTTP/1.1" 200
+2026-01-13 21:22:43,213 - uvicorn.access - INFO - 127.0.0.1:64684 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:22:43,227 - lightrag - INFO - [] Subgraph query successful | Node count: 331 | Edge count: 247
+2026-01-13 21:22:43,239 - uvicorn.access - INFO - 127.0.0.1:64686 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:22:43,281 - uvicorn.access - INFO - 127.0.0.1:64686 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:23:37,705 - lightrag - INFO -  == LLM cache == saving: global:keywords:64a77dae227623f2bc22d6fdf3dc2938
+2026-01-13 21:23:37,925 - lightrag - INFO - Query edges: HSA types, Health Savings Account, Champ (top_k:40, cosine:0.2)
+2026-01-13 21:23:38,168 - lightrag - INFO - Global query: 53 entites, 40 relations
+2026-01-13 21:23:38,169 - lightrag - INFO - Raw search results: 53 entities, 40 relations, 0 vector chunks
+2026-01-13 21:23:38,175 - lightrag - INFO - After truncation: 53 entities, 40 relations
+2026-01-13 21:23:38,179 - lightrag - INFO - Selecting 16 from 16 entity-related chunks by vector similarity
+2026-01-13 21:23:38,180 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:23:38,180 - lightrag - INFO - Round-robin merged chunks: 16 -> 16 (deduplicated 0)
+2026-01-13 21:23:38,185 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:23:38,196 - lightrag - INFO - Final context: 53 entities, 40 relations, 16 chunks
+2026-01-13 21:23:38,196 - lightrag - INFO - Final chunks S+F/O: E9/1 E3/2 E13/3 E10/4 E13/5 E14/6 E8/7 E4/8 E5/9 E4/10 E1/11 E1/12 E1/13 E1/14 E1/15 E1/16
+2026-01-13 21:23:39,714 - uvicorn.access - INFO - 127.0.0.1:64711 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:23:55,529 - lightrag - INFO -  == LLM cache == saving: global:keywords:e818961251f1c812d613ade6b03c392c
+2026-01-13 21:23:55,785 - lightrag - INFO - Query edges: Implications (top_k:40, cosine:0.2)
+2026-01-13 21:23:56,004 - lightrag - INFO - Global query: 53 entites, 40 relations
+2026-01-13 21:23:56,005 - lightrag - INFO - Raw search results: 53 entities, 40 relations, 0 vector chunks
+2026-01-13 21:23:56,010 - lightrag - INFO - After truncation: 53 entities, 40 relations
+2026-01-13 21:23:56,017 - lightrag - INFO - Selecting 27 from 27 entity-related chunks by vector similarity
+2026-01-13 21:23:56,018 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:23:56,018 - lightrag - INFO - Round-robin merged chunks: 27 -> 27 (deduplicated 0)
+2026-01-13 21:23:56,023 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:23:56,036 - lightrag - INFO - Final context: 53 entities, 40 relations, 20 chunks
+2026-01-13 21:23:56,036 - lightrag - INFO - Final chunks S+F/O: E7/1 E4/2 E8/3 E5/4 E6/5 E4/6 E3/7 E3/8 E5/9 E1/10 E5/11 E4/12 E1/13 E2/14 E2/15 E3/16 E5/17 E3/18 E1/19 E3/20
+2026-01-13 21:23:57,668 - uvicorn.access - INFO - 127.0.0.1:64729 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:25:50,456 - uvicorn.access - INFO - 127.0.0.1:64802 - "GET /?id=14ecfa04-154b-4558-8b5f-d9b731c16d8e&vscodeBrowserReqId=1768357550453 HTTP/1.1" 307
+2026-01-13 21:25:50,457 - uvicorn.access - INFO - 127.0.0.1:64802 - "GET /webui HTTP/1.1" 307
+2026-01-13 21:25:50,486 - uvicorn.access - INFO - 127.0.0.1:64802 - "GET /webui/assets/index-CmsOxpAM.js HTTP/1.1" 200
+2026-01-13 21:25:50,486 - uvicorn.access - INFO - 127.0.0.1:64804 - "GET /webui/assets/index-Dra-6x-X.css HTTP/1.1" 200
+2026-01-13 21:25:50,723 - uvicorn.access - INFO - 127.0.0.1:64802 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:25:50,741 - lightrag - INFO - [] Subgraph query successful | Node count: 331 | Edge count: 247
+2026-01-13 21:25:50,752 - uvicorn.access - INFO - 127.0.0.1:64802 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:25:50,793 - uvicorn.access - INFO - 127.0.0.1:64802 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:26:43,805 - lightrag - INFO -  == LLM cache == saving: global:keywords:30c17a08ce80b7fd9607404e6c2248e9
+2026-01-13 21:26:44,285 - lightrag - INFO - Query edges: Recommended health plan, Health insurance (top_k:40, cosine:0.2)
+2026-01-13 21:26:44,617 - lightrag - INFO - Global query: 48 entites, 40 relations
+2026-01-13 21:26:44,617 - lightrag - INFO - Raw search results: 48 entities, 40 relations, 0 vector chunks
+2026-01-13 21:26:44,623 - lightrag - INFO - After truncation: 48 entities, 40 relations
+2026-01-13 21:26:44,627 - lightrag - INFO - Selecting 17 from 17 entity-related chunks by vector similarity
+2026-01-13 21:26:44,627 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:26:44,627 - lightrag - INFO - Round-robin merged chunks: 17 -> 17 (deduplicated 0)
+2026-01-13 21:26:44,634 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:26:44,648 - lightrag - INFO - Final context: 48 entities, 40 relations, 17 chunks
+2026-01-13 21:26:44,648 - lightrag - INFO - Final chunks S+F/O: E2/1 E14/2 E14/3 E1/4 E8/5 E8/6 E11/7 E4/8 E3/9 E2/10 E3/11 E1/12 E13/13 E2/14 E1/15 E1/16 E1/17
+2026-01-13 21:26:46,140 - uvicorn.access - INFO - 127.0.0.1:64821 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:26:56,549 - uvicorn.access - INFO - 127.0.0.1:64832 - "GET /webui/assets/index-Dra-6x-X.css HTTP/1.1" 200
+2026-01-13 21:26:56,550 - uvicorn.access - INFO - 127.0.0.1:64821 - "GET /webui/assets/index-CmsOxpAM.js HTTP/1.1" 200
+2026-01-13 21:26:56,734 - uvicorn.access - INFO - 127.0.0.1:64821 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-01-13 21:26:56,854 - uvicorn.access - INFO - 127.0.0.1:64821 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:26:56,861 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:26:56,862 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:26:56,866 - uvicorn.access - INFO - 127.0.0.1:64832 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:26:56,866 - uvicorn.access - INFO - 127.0.0.1:64821 - "GET /webui/assets/index-Cp8k7DFv.js HTTP/1.1" 200
+2026-01-13 21:26:56,917 - uvicorn.access - INFO - 127.0.0.1:64821 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:27:09,270 - lightrag - INFO -  == LLM cache == saving: global:keywords:99218fb53b1585bfdfed49c582833d4a
+2026-01-13 21:27:10,601 - lightrag - INFO - Query edges: Choice Plus 1500, Insurance plan, Health coverage (top_k:40, cosine:0.2)
+2026-01-13 21:27:10,865 - lightrag - INFO - Global query: 48 entites, 40 relations
+2026-01-13 21:27:10,865 - lightrag - INFO - Raw search results: 48 entities, 40 relations, 0 vector chunks
+2026-01-13 21:27:10,871 - lightrag - INFO - After truncation: 48 entities, 40 relations
+2026-01-13 21:27:10,875 - lightrag - INFO - Selecting 17 from 17 entity-related chunks by vector similarity
+2026-01-13 21:27:10,876 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:27:10,876 - lightrag - INFO - Round-robin merged chunks: 17 -> 17 (deduplicated 0)
+2026-01-13 21:27:10,880 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:27:10,892 - lightrag - INFO - Final context: 48 entities, 40 relations, 17 chunks
+2026-01-13 21:27:10,893 - lightrag - INFO - Final chunks S+F/O: E10/1 E16/2 E14/3 E14/4 E10/5 E1/6 E2/7 E2/8 E1/9 E9/10 E2/11 E1/12 E3/13 E1/14 E2/15 E1/16 E1/17
+2026-01-13 21:27:12,660 - uvicorn.access - INFO - 127.0.0.1:64838 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:27:40,196 - lightrag - INFO -  == LLM cache == saving: global:keywords:b3835f2020cbdaaf58ad5e3ad7f68054
+2026-01-13 21:27:40,605 - lightrag - INFO - Query edges: Family structure, Household size (top_k:40, cosine:0.2)
+2026-01-13 21:27:40,841 - lightrag - INFO - Global query: 27 entites, 18 relations
+2026-01-13 21:27:40,842 - lightrag - INFO - Raw search results: 27 entities, 18 relations, 0 vector chunks
+2026-01-13 21:27:40,845 - lightrag - INFO - After truncation: 27 entities, 18 relations
+2026-01-13 21:27:40,850 - lightrag - INFO - Selecting 23 from 23 entity-related chunks by vector similarity
+2026-01-13 21:27:40,851 - lightrag - INFO - Find no additional relations-related chunks from 18 relations
+2026-01-13 21:27:40,851 - lightrag - INFO - Round-robin merged chunks: 23 -> 23 (deduplicated 0)
+2026-01-13 21:27:40,855 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:27:40,871 - lightrag - INFO - Final context: 27 entities, 18 relations, 20 chunks
+2026-01-13 21:27:40,871 - lightrag - INFO - Final chunks S+F/O: E7/1 E2/2 E1/3 E3/4 E5/5 E2/6 E2/7 E3/8 E2/9 E6/10 E6/11 E2/12 E1/13 E3/14 E2/15 E2/16 E4/17 E1/18 E1/19 E3/20
+2026-01-13 21:27:42,559 - uvicorn.access - INFO - 127.0.0.1:64855 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:28:38,874 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:28:38,877 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:28:38,881 - uvicorn.access - INFO - 127.0.0.1:64870 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:28:39,930 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:28:39,930 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:28:39,932 - uvicorn.access - INFO - 127.0.0.1:64870 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:28:40,781 - lightrag - INFO - [] Graph truncated: found 64 nodes within max_depth 3
+2026-01-13 21:28:40,783 - lightrag - INFO - [] Subgraph query successful | Node count: 64 | Edge count: 70
+2026-01-13 21:28:40,787 - uvicorn.access - INFO - 127.0.0.1:64870 - "GET /graphs?label=CHAMP&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:31:11,544 - lightrag - INFO -  == LLM cache == saving: global:keywords:de6d3157e7801854372eb61ba98864c6
+2026-01-13 21:31:11,800 - lightrag - INFO - Query edges: Product architect, Role description, Job responsibilities (top_k:40, cosine:0.2)
+2026-01-13 21:31:12,075 - lightrag - INFO - Global query: 41 entites, 40 relations
+2026-01-13 21:31:12,076 - lightrag - INFO - Raw search results: 41 entities, 40 relations, 0 vector chunks
+2026-01-13 21:31:12,080 - lightrag - INFO - After truncation: 41 entities, 40 relations
+2026-01-13 21:31:12,084 - lightrag - INFO - Selecting 15 from 15 entity-related chunks by vector similarity
+2026-01-13 21:31:12,085 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:31:12,086 - lightrag - INFO - Round-robin merged chunks: 15 -> 15 (deduplicated 0)
+2026-01-13 21:31:12,090 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:31:12,102 - lightrag - INFO - Final context: 41 entities, 40 relations, 15 chunks
+2026-01-13 21:31:12,102 - lightrag - INFO - Final chunks S+F/O: E9/1 E7/2 E8/3 E4/4 E9/5 E6/6 E7/7 E4/8 E5/9 E6/10 E2/11 E2/12 E2/13 E2/14 E2/15
+2026-01-13 21:31:13,404 - uvicorn.access - INFO - 127.0.0.1:64916 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 21:31:38,479 - lightrag - INFO -  == LLM cache == saving: global:keywords:d4c472834181a6c2ccd3cb39ab58ad0d
+2026-01-13 21:31:38,889 - lightrag - INFO - Query edges: Vice President, Product management, Corporate leadership (top_k:40, cosine:0.2)
+2026-01-13 21:31:39,408 - lightrag - INFO - Global query: 43 entites, 40 relations
+2026-01-13 21:31:39,408 - lightrag - INFO - Raw search results: 43 entities, 40 relations, 0 vector chunks
+2026-01-13 21:31:39,413 - lightrag - INFO - After truncation: 43 entities, 40 relations
+2026-01-13 21:31:39,417 - lightrag - INFO - Selecting 14 from 14 entity-related chunks by vector similarity
+2026-01-13 21:31:39,417 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 21:31:39,417 - lightrag - INFO - Round-robin merged chunks: 14 -> 14 (deduplicated 0)
+2026-01-13 21:31:39,422 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 21:31:39,432 - lightrag - INFO - Final context: 43 entities, 40 relations, 14 chunks
+2026-01-13 21:31:39,432 - lightrag - INFO - Final chunks S+F/O: E5/1 E8/2 E8/3 E8/4 E7/5 E8/6 E6/7 E7/8 E5/9 E4/10 E4/11 E2/12 E2/13 E2/14
+2026-01-13 21:31:40,741 - uvicorn.access - INFO - 127.0.0.1:64928 - "POST /query/stream HTTP/1.1" 200

@@ -142,7 +142,6 @@ export const ChatMessage = ({
   const thinkingMarkdownComponents = useMemo(() => ({
     code: (props: any) => (<CodeHighlight {...props} renderAsDiagram={message.mermaidRendered ?? false} messageRole={message.role} />)
   }), [message.mermaidRendered, message.role]);
-
   return (
     <div
       className={`${
@@ -259,12 +258,21 @@ export const ChatMessage = ({
           </ReactMarkdown>
         </div>
       )}
-      {/* Loading indicator - only show in active tab */}
+      {/* Typing indicator - only show in active tab */}
       {isTabActive && (() => {
         // More comprehensive loading state check
         const hasVisibleContent = finalDisplayContent && finalDisplayContent.trim() !== '';
         const isLoadingState = !hasVisibleContent && !isThinking && !thinkingTime;
-        return isLoadingState && <LoaderIcon className="animate-spin duration-2000" />
+        return isLoadingState && (
+          <div className="flex items-center gap-1">
+            <span className="text-sm text-muted-foreground">{t('retrievePanel.chatMessage.typing', 'Generating response')}</span>
+            <div className="flex gap-0.5">
+              <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
+              <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
+              <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
+            </div>
+          </div>
+        )
       })()}
     </div>
   )

@@ -1038,5 +1038,285 @@
     "create_time": 1768283678,
     "update_time": 1768283678,
     "_id": "global:keywords:7bb3a5d1057fc164d55f7113a56fd6d7"
+  },
+  "global:keywords:fd8d6f74450b2ddeb465e2fcc2f514c0": {
+    "return": "{\"high_level_keywords\": [\"Employment\", \"CHAMP\"], \"low_level_keywords\": [\"Employees\", \"Staff\", \"Job roles\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "who works at CHAMP?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768356909,
+    "update_time": 1768356909,
+    "_id": "global:keywords:fd8d6f74450b2ddeb465e2fcc2f514c0"
+  },
+  "global:keywords:c457ef48580197927c9218bb747228d8": {
+    "return": "{\"high_level_keywords\": [\"Abby\", \"Information request\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "tell me more about abby",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768356930,
+    "update_time": 1768356930,
+    "_id": "global:keywords:c457ef48580197927c9218bb747228d8"
+  },
+  "global:keywords:abbffa1ea4c1081766492e7d3d878476": {
+    "return": "{\"high_level_keywords\": [\"Multifaceted\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Tell me more about multifaceted",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768356956,
+    "update_time": 1768356956,
+    "_id": "global:keywords:abbffa1ea4c1081766492e7d3d878476"
+  },
+  "global:keywords:30cb7ac9227741ad0d674c77adb136a8": {
+    "return": "{\"high_level_keywords\": [\"Healthcare provider\", \"CHAMP\"], \"low_level_keywords\": [\"Provider name\", \"Services\", \"Patient care\", \"Insurance\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "who is the healthcare provider at CHAMP?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357148,
+    "update_time": 1768357148,
+    "_id": "global:keywords:30cb7ac9227741ad0d674c77adb136a8"
+  },
+  "global:keywords:832e03eabdd6619a5aeb02ac78656c01": {
+    "return": "{\"high_level_keywords\": [\"Key aspects\", \"United Healthcare\"], \"low_level_keywords\": [\"Health insurance\", \"Medicare\", \"Medicaid\", \"Services offered\", \"Insurance plans\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What are the key aspects of United Healthcare?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357164,
+    "update_time": 1768357164,
+    "_id": "global:keywords:832e03eabdd6619a5aeb02ac78656c01"
+  },
+  "global:keywords:38755e8f228a69ccee37be8b44b0ee77": {
+    "return": "{\"high_level_keywords\": [\"Difference\", \"United\", \"Here\"], \"low_level_keywords\": [\"United Airlines\", \"Here Technologies\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How do United and Here differ?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357184,
+    "update_time": 1768357184,
+    "_id": "global:keywords:38755e8f228a69ccee37be8b44b0ee77"
+  },
+  "global:keywords:7884744a0af282667639a548a1fa0e00": {
+    "return": "{\"high_level_keywords\": [\"Health Savings Account\", \"HSA\"], \"low_level_keywords\": [\"Tax advantages\", \"Qualified medical expenses\", \"Contribution limits\", \"Retirement savings\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "tell me more abou tthe HSA",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357214,
+    "update_time": 1768357214,
+    "_id": "global:keywords:7884744a0af282667639a548a1fa0e00"
+  },
+  "global:keywords:64a77dae227623f2bc22d6fdf3dc2938": {
+    "return": "{\"high_level_keywords\": [\"HSA types\", \"Health Savings Account\", \"Champ\"], \"low_level_keywords\": [\"Champ\", \"Individual HSA\", \"Family HSA\", \"Qualified medical expenses\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "what type of HSA is available at champ",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357417,
+    "update_time": 1768357417,
+    "_id": "global:keywords:64a77dae227623f2bc22d6fdf3dc2938"
+  },
+  "global:keywords:e818961251f1c812d613ade6b03c392c": {
+    "return": "{\"high_level_keywords\": [\"Implications\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Can you elaborate on the implications?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357435,
+    "update_time": 1768357435,
+    "_id": "global:keywords:e818961251f1c812d613ade6b03c392c"
+  },
+  "global:keywords:30c17a08ce80b7fd9607404e6c2248e9": {
+    "return": "{\"high_level_keywords\": [\"Recommended health plan\", \"Health insurance\"], \"low_level_keywords\": [\"Coverage options\", \"Premiums\", \"Deductibles\", \"Benefits\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "is there a recommended health plan ?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357603,
+    "update_time": 1768357603,
+    "_id": "global:keywords:30c17a08ce80b7fd9607404e6c2248e9"
+  },
+  "global:keywords:99218fb53b1585bfdfed49c582833d4a": {
+    "return": "{\"high_level_keywords\": [\"Choice Plus 1500\", \"Insurance plan\", \"Health coverage\"], \"low_level_keywords\": [\"Choice Plus\", \"Insurance options\", \"Cost\", \"Benefits\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "im thinking the choice plus 1500 is the move? thoughts?",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357629,
+    "update_time": 1768357629,
+    "_id": "global:keywords:99218fb53b1585bfdfed49c582833d4a"
+  },
+  "global:keywords:b3835f2020cbdaaf58ad5e3ad7f68054": {
+    "return": "{\"high_level_keywords\": [\"Family structure\", \"Household size\"], \"low_level_keywords\": [\"Family of 4\", \"Including me\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "yeah i have a family of 4 (including me)",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357660,
+    "update_time": 1768357660,
+    "_id": "global:keywords:b3835f2020cbdaaf58ad5e3ad7f68054"
+  },
+  "global:keywords:de6d3157e7801854372eb61ba98864c6": {
+    "return": "{\"high_level_keywords\": [\"Product architect\", \"Role description\", \"Job responsibilities\"], \"low_level_keywords\": [\"Product development\", \"Software architecture\", \"Technical skills\", \"Team collaboration\", \"Design principles\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "tell me more about the product architect role",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357871,
+    "update_time": 1768357871,
+    "_id": "global:keywords:de6d3157e7801854372eb61ba98864c6"
+  },
+  "global:keywords:d4c472834181a6c2ccd3cb39ab58ad0d": {
+    "return": "{\"high_level_keywords\": [\"Vice President\", \"Product management\", \"Corporate leadership\"], \"low_level_keywords\": [\"VP\", \"Product\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "who is the VP of the product",
+    "queryparam": {
+      "mode": "global",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1768357898,
+    "update_time": 1768357898,
+    "_id": "global:keywords:d4c472834181a6c2ccd3cb39ab58ad0d"
   }
 }
