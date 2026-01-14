@@ -1526,3 +1526,292 @@
 2026-01-13 22:24:07,464 - lightrag - INFO - [] Graph truncated: found 97 nodes within max_depth 3
 2026-01-13 22:24:07,466 - lightrag - INFO - [] Subgraph query successful | Node count: 97 | Edge count: 109
 2026-01-13 22:24:07,472 - uvicorn.access - INFO - 127.0.0.1:50402 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:25:47,717 - uvicorn.access - INFO - 127.0.0.1:50457 - "GET /webui/assets/index-C0qGmg7E.js HTTP/1.1" 304
+2026-01-13 22:25:48,591 - lightrag - INFO -  == LLM cache == saving: global:keywords:9edf43e71cb90170152a6e871c36f350
+2026-01-13 22:25:48,819 - lightrag - INFO - Query edges: Champ, Location (top_k:40, cosine:0.2)
+2026-01-13 22:25:49,340 - lightrag - INFO - Global query: 46 entites, 40 relations
+2026-01-13 22:25:49,340 - lightrag - INFO - Raw search results: 46 entities, 40 relations, 0 vector chunks
+2026-01-13 22:25:49,346 - lightrag - INFO - After truncation: 46 entities, 40 relations
+2026-01-13 22:25:49,353 - lightrag - INFO - Selecting 20 from 20 entity-related chunks by vector similarity
+2026-01-13 22:25:49,353 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 22:25:49,353 - lightrag - INFO - Round-robin merged chunks: 20 -> 20 (deduplicated 0)
+2026-01-13 22:25:49,357 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:25:49,368 - lightrag - INFO - Final context: 46 entities, 40 relations, 20 chunks
+2026-01-13 22:25:49,368 - lightrag - INFO - Final chunks S+F/O: E12/1 E4/2 E4/3 E10/4 E10/5 E4/6 E2/7 E2/8 E3/9 E3/10 E4/11 E3/12 E3/13 E6/14 E5/15 E5/16 E3/17 E3/18 E2/19 E3/20
+2026-01-13 22:25:51,164 - uvicorn.access - INFO - 127.0.0.1:50455 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 22:26:05,166 - lightrag - INFO -  == LLM cache == saving: global:keywords:155057de377d7f5db9b5a6d9dccf6f7f
+2026-01-13 22:26:05,690 - lightrag - INFO - Query edges: Product architect role, Office expectations (top_k:40, cosine:0.2)
+2026-01-13 22:26:05,934 - lightrag - INFO - Global query: 39 entites, 40 relations
+2026-01-13 22:26:05,934 - lightrag - INFO - Raw search results: 39 entities, 40 relations, 0 vector chunks
+2026-01-13 22:26:05,939 - lightrag - INFO - After truncation: 39 entities, 40 relations
+2026-01-13 22:26:05,943 - lightrag - INFO - Selecting 16 from 16 entity-related chunks by vector similarity
+2026-01-13 22:26:05,944 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 22:26:05,944 - lightrag - INFO - Round-robin merged chunks: 16 -> 16 (deduplicated 0)
+2026-01-13 22:26:05,949 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:26:05,960 - lightrag - INFO - Final context: 39 entities, 40 relations, 16 chunks
+2026-01-13 22:26:05,960 - lightrag - INFO - Final chunks S+F/O: E9/1 E9/2 E8/3 E4/4 E3/5 E8/6 E6/7 E6/8 E7/9 E4/10 E5/11 E2/12 E3/13 E1/14 E2/15 E2/16
+2026-01-13 22:26:07,329 - uvicorn.access - INFO - 127.0.0.1:50467 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 22:26:31,770 - lightrag - INFO -  == LLM cache == saving: global:keywords:c86f85ad35833eab53b93e233715dee5
+2026-01-13 22:26:32,302 - lightrag - INFO - Query edges: Perks, Onsite work, Employee benefits (top_k:40, cosine:0.2)
+2026-01-13 22:26:32,722 - lightrag - INFO - Global query: 48 entites, 40 relations
+2026-01-13 22:26:32,723 - lightrag - INFO - Raw search results: 48 entities, 40 relations, 0 vector chunks
+2026-01-13 22:26:32,728 - lightrag - INFO - After truncation: 48 entities, 40 relations
+2026-01-13 22:26:32,733 - lightrag - INFO - Selecting 21 from 21 entity-related chunks by vector similarity
+2026-01-13 22:26:32,733 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 22:26:32,733 - lightrag - INFO - Round-robin merged chunks: 21 -> 21 (deduplicated 0)
+2026-01-13 22:26:32,737 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:26:32,752 - lightrag - INFO - Final context: 48 entities, 40 relations, 20 chunks
+2026-01-13 22:26:32,752 - lightrag - INFO - Final chunks S+F/O: E2/1 E8/2 E2/3 E3/4 E7/5 E5/6 E3/7 E4/8 E6/9 E2/10 E2/11 E5/12 E3/13 E2/14 E3/15 E4/16 E1/17 E2/18 E3/19 E1/20
+2026-01-13 22:26:34,564 - uvicorn.access - INFO - 127.0.0.1:50480 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 22:26:37,977 - uvicorn.access - INFO - 127.0.0.1:50493 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200
+2026-01-13 22:26:37,978 - uvicorn.access - INFO - 127.0.0.1:50494 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200
+2026-01-13 22:27:46,952 - lightrag - INFO -  == LLM cache == saving: global:keywords:7a350ef268b3fb1e82cc3b4a3dcd022e
+2026-01-13 22:27:47,363 - lightrag - INFO - Query edges: Harvest owl options, Bird species, Owl types (top_k:40, cosine:0.2)
+2026-01-13 22:27:47,776 - lightrag - INFO - Global query: 32 entites, 17 relations
+2026-01-13 22:27:47,776 - lightrag - INFO - Raw search results: 32 entities, 17 relations, 0 vector chunks
+2026-01-13 22:27:47,780 - lightrag - INFO - After truncation: 32 entities, 17 relations
+2026-01-13 22:27:47,783 - lightrag - INFO - Selecting 16 from 16 entity-related chunks by vector similarity
+2026-01-13 22:27:47,783 - lightrag - INFO - Find no additional relations-related chunks from 17 relations
+2026-01-13 22:27:47,783 - lightrag - INFO - Round-robin merged chunks: 16 -> 16 (deduplicated 0)
+2026-01-13 22:27:47,786 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:27:47,800 - lightrag - INFO - Final context: 32 entities, 17 relations, 16 chunks
+2026-01-13 22:27:47,801 - lightrag - INFO - Final chunks S+F/O: E1/1 E2/2 E2/3 E2/4 E2/5 E2/6 E10/7 E8/8 E14/9 E1/10 E3/11 E1/12 E2/13 E3/14 E1/15 E1/16
+2026-01-13 22:27:49,218 - uvicorn.access - INFO - 127.0.0.1:50521 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 22:29:23,939 - uvicorn.access - INFO - 127.0.0.1:50653 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:29:23,947 - lightrag - INFO - Found 1 files to index.
+2026-01-13 22:29:24,057 - lightrag - INFO - Successfully extracted and enqueued file: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-13 22:29:24,058 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 22:29:24,058 - lightrag - INFO - Extracting stage 1/1: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-13 22:29:24,058 - lightrag - INFO - Processing d-id: doc-0071f33f5941888606293ff29e1871b5
+2026-01-13 22:29:50,858 - lightrag - INFO -  == LLM cache == saving: default:extract:d21f987559a2e541c4afc0c7b3d1f8c2
+2026-01-13 22:29:59,356 - lightrag - INFO -  == LLM cache == saving: default:extract:a876459ae244a80a240104f5f935a373
+2026-01-13 22:29:59,359 - lightrag - INFO - Chunk 1 of 2 extracted 32 Ent + 21 Rel chunk-b4d24bd2888d155419fb8a8c7bcdb064
+2026-01-13 22:30:01,400 - lightrag - INFO -  == LLM cache == saving: default:extract:3851e0381836e4ef099e43e24e1dfce9
+2026-01-13 22:30:10,415 - lightrag - INFO -  == LLM cache == saving: default:extract:a49410b7a6402a013a836b3fa0c314ff
+2026-01-13 22:30:10,417 - lightrag - INFO - Chunk 2 of 2 extracted 35 Ent + 34 Rel chunk-6c8857d5952cbdb8d26f26220d96bf8b
+2026-01-13 22:30:10,418 - lightrag - INFO - Merging stage 1/1: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-13 22:30:10,418 - lightrag - INFO - Phase 1: Processing 63 entities from doc-0071f33f5941888606293ff29e1871b5 (async: 8)
+2026-01-13 22:30:11,694 - lightrag - INFO - Merged: `Harvest Owl` | 1+1
+2026-01-13 22:30:13,587 - lightrag - INFO - Phase 2: Processing 55 relations from doc-0071f33f5941888606293ff29e1871b5 (async: 8)
+2026-01-13 22:30:29,512 - lightrag - INFO - Phase 3: Updating final 63(63+0) entities and  55 relations from doc-0071f33f5941888606293ff29e1871b5
+2026-01-13 22:30:29,513 - lightrag - INFO - Completed merging: 63 entities, 0 extra entities, 55 relations
+2026-01-13 22:30:29,582 - lightrag - INFO - [] Writing graph with 405 nodes, 313 edges
+2026-01-13 22:30:29,592 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 22:30:29,592 - lightrag - INFO - Completed processing file 1/1: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-13 22:30:29,592 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 22:30:29,592 - lightrag - INFO - Scanning process completed: 1 files Processed.
+2026-01-13 22:31:44,007 - uvicorn.access - INFO - 127.0.0.1:50878 - "GET /graph/label/search?q=hard&limit=50 HTTP/1.1" 200
+2026-01-13 22:31:44,613 - uvicorn.access - INFO - 127.0.0.1:50878 - "GET /graph/label/search?q=harv&limit=50 HTTP/1.1" 200
+2026-01-13 22:31:45,963 - uvicorn.access - INFO - 127.0.0.1:50878 - "GET /graph/label/search?q=harvest&limit=50 HTTP/1.1" 200
+2026-01-13 22:31:47,753 - lightrag - INFO - [] Subgraph query successful | Node count: 7 | Edge count: 6
+2026-01-13 22:31:47,754 - uvicorn.access - INFO - 127.0.0.1:50884 - "GET /graphs?label=HarvestOwl&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:31:59,398 - lightrag - INFO - Entity Edit: `HarvestOwl` will be merged into `Harvest Owl`
+2026-01-13 22:31:59,403 - lightrag - INFO - Entity Merge: Updated target 'Harvest Owl'
+2026-01-13 22:31:59,406 - lightrag - INFO - Entity Merge: updatign 40 relations
+2026-01-13 22:31:59,406 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Holistic Acres`
+2026-01-13 22:31:59,406 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Philomena Bake Shop`
+2026-01-13 22:31:59,406 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Rittman Orchards`
+2026-01-13 22:31:59,406 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Cleveland Kraut`
+2026-01-13 22:31:59,406 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Fresh 'n Crisp Farms`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Garden of Flavor`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Champ Titles Inc.`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Rittman Orchard Apple`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`BOOMCHICKAPOP Sea Salt Popcorn`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Hippeas Vegan White Cheddar`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Siete Grain Free Tortilla Chips Lime`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Sea Salt Potato Chips`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Jackson's Sweet Potato Chips`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Oven Roasted Turkey Sandwich`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`The Ultimate Veggie Sandwich`
+2026-01-13 22:31:59,407 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Chicken Noodle Bone Broth Bowl`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Greek Chicken Meatball Bowl`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Super Simple Keto Bowl with Cauliflower Rice`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Grapefruit & Broccoli Chopped Kale Bowl`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Breakfast Tacos`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Grilled Steak Honey Mustard Salad`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Red Grape & Walnut Chicken Salad`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`The Doctor's Everyday Salad`
+2026-01-13 22:31:59,408 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Luna Bakery Dark Chocolate Sea Salt Cookie`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Cider Poached Pears`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Ruani Functional Brownie`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Tcho Dark Chocolate Bar`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`San Pellegrino Sparkling Soda`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Sanzo Sparkling Water`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Spindrift`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Vita Coco Pure Coconut Water`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Just Iced Tea`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Mountain Valley Spring Water`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Olipop`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Local Apple Cider`
+2026-01-13 22:31:59,409 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Niman Ranch Snack Pack`
+2026-01-13 22:31:59,410 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`GF`
+2026-01-13 22:31:59,410 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Vegan`
+2026-01-13 22:31:59,410 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Keto`
+2026-01-13 22:31:59,410 - lightrag - INFO - Entity Merge: updating relation `Harvest Owl`~`Whole 30`
+2026-01-13 22:31:59,410 - lightrag - INFO - Entity Merge: 40 relation chunk tracking records updated
+2026-01-13 22:32:14,677 - lightrag - INFO - Entity Merge: 40 relations in vdb updated
+2026-01-13 22:32:15,032 - lightrag - INFO - Entity Merge: updating vdb `Harvest Owl`
+2026-01-13 22:32:15,032 - lightrag - INFO - Entity Merge: find 3 chunks related to 'Harvest Owl'
+2026-01-13 22:32:15,032 - lightrag - INFO - Entity Merge: deleting 'HarvestOwl' from KG and vdb
+2026-01-13 22:32:15,073 - lightrag - INFO - [] Writing graph with 404 nodes, 313 edges
+2026-01-13 22:32:15,085 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Harvest Owl'
+2026-01-13 22:32:15,085 - uvicorn.access - INFO - 127.0.0.1:50893 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-13 22:32:19,632 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-13 22:32:19,707 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 114
+2026-01-13 22:32:19,710 - uvicorn.access - INFO - 127.0.0.1:50952 - "GET /graphs?label=Harvest%20Owl&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:32:22,097 - uvicorn.access - INFO - 127.0.0.1:50952 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-13 22:32:22,113 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-13 22:32:22,115 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 114
+2026-01-13 22:32:22,121 - uvicorn.access - INFO - 127.0.0.1:50952 - "GET /graphs?label=Harvest%20Owl&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:32:25,033 - lightrag - INFO - [] Subgraph query successful | Node count: 404 | Edge count: 313
+2026-01-13 22:32:25,045 - uvicorn.access - INFO - 127.0.0.1:50958 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:32:28,543 - lightrag - INFO - [] Graph truncated: found 140 nodes within max_depth 3
+2026-01-13 22:32:28,544 - lightrag - INFO - [] Subgraph query successful | Node count: 140 | Edge count: 153
+2026-01-13 22:32:28,563 - uvicorn.access - INFO - 127.0.0.1:50963 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:32:45,908 - lightrag - INFO -  == LLM cache == saving: global:keywords:e15ad48db6f0ebac8ca39a6b8465fda0
+2026-01-13 22:32:46,151 - lightrag - INFO - Query edges: Harvest options, Owl (top_k:40, cosine:0.2)
+2026-01-13 22:32:46,786 - lightrag - INFO - Global query: 41 entites, 40 relations
+2026-01-13 22:32:46,787 - lightrag - INFO - Raw search results: 41 entities, 40 relations, 0 vector chunks
+2026-01-13 22:32:46,792 - lightrag - INFO - After truncation: 41 entities, 40 relations
+2026-01-13 22:32:46,794 - lightrag - INFO - Selecting 5 from 5 entity-related chunks by vector similarity
+2026-01-13 22:32:46,794 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 22:32:46,794 - lightrag - INFO - Round-robin merged chunks: 5 -> 5 (deduplicated 0)
+2026-01-13 22:32:46,798 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:32:46,803 - lightrag - INFO - Final context: 41 entities, 40 relations, 5 chunks
+2026-01-13 22:32:46,803 - lightrag - INFO - Final chunks S+F/O: E11/1 E34/2 E1/3 E2/4 E1/5
+2026-01-13 22:32:47,713 - uvicorn.access - INFO - 127.0.0.1:50976 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 22:33:14,259 - lightrag - INFO -  == LLM cache == saving: global:keywords:a7f61c1a093e80b4701d1f0b62ac814c
+2026-01-13 22:33:14,553 - lightrag - INFO - Query edges: Pricing, Items (top_k:40, cosine:0.2)
+2026-01-13 22:33:15,255 - lightrag - INFO - Global query: 48 entites, 40 relations
+2026-01-13 22:33:15,256 - lightrag - INFO - Raw search results: 48 entities, 40 relations, 0 vector chunks
+2026-01-13 22:33:15,260 - lightrag - INFO - After truncation: 48 entities, 40 relations
+2026-01-13 22:33:15,265 - lightrag - INFO - Selecting 18 from 18 entity-related chunks by vector similarity
+2026-01-13 22:33:15,266 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 22:33:15,266 - lightrag - INFO - Round-robin merged chunks: 18 -> 18 (deduplicated 0)
+2026-01-13 22:33:15,270 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:33:15,283 - lightrag - INFO - Final context: 48 entities, 40 relations, 18 chunks
+2026-01-13 22:33:15,283 - lightrag - INFO - Final chunks S+F/O: E3/1 E3/2 E4/3 E4/4 E2/5 E2/6 E2/7 E1/8 E2/9 E2/10 E1/11 E29/12 E1/13 E3/14 E1/15 E4/16 E1/17 E1/18
+2026-01-13 22:33:16,773 - uvicorn.access - INFO - 127.0.0.1:50999 - "POST /query/stream HTTP/1.1" 200
+2026-01-13 22:33:46,082 - uvicorn.error - INFO - Shutting down
+2026-01-13 22:33:46,188 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-13 22:33:46,188 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-13 22:33:46,188 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-13 22:33:46,188 - uvicorn.error - INFO - Finished server process [63576]
+2026-01-13 22:33:48,455 - lightrag - INFO - Frontend build is up-to-date
+2026-01-13 22:33:48,455 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-13 22:33:48,602 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-13 22:33:48,602 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-13 22:33:48,602 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-13 22:33:48,602 - lightrag - INFO - Reranking is disabled
+2026-01-13 22:33:48,795 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 404 nodes, 313 edges
+2026-01-13 22:33:48,849 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-13 22:33:48,862 - uvicorn.error - INFO - Started server process [65360]
+2026-01-13 22:33:48,862 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-13 22:33:48,863 - lightrag - INFO - [] Process 65360 KV load full_docs with 10 records
+2026-01-13 22:33:48,863 - lightrag - INFO - [] Process 65360 KV load text_chunks with 39 records
+2026-01-13 22:33:48,864 - lightrag - INFO - [] Process 65360 KV load full_entities with 10 records
+2026-01-13 22:33:48,864 - lightrag - INFO - [] Process 65360 KV load full_relations with 9 records
+2026-01-13 22:33:48,864 - lightrag - INFO - [] Process 65360 KV load entity_chunks with 404 records
+2026-01-13 22:33:48,865 - lightrag - INFO - [] Process 65360 KV load relation_chunks with 313 records
+2026-01-13 22:33:48,868 - lightrag - INFO - [] Process 65360 KV load llm_response_cache with 121 records
+2026-01-13 22:33:48,868 - lightrag - INFO - [] Process 65360 doc status load doc_status with 10 records
+2026-01-13 22:33:48,869 - uvicorn.error - INFO - Application startup complete.
+2026-01-13 22:33:48,869 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-13 22:35:03,900 - uvicorn.access - INFO - 127.0.0.1:51059 - "GET / HTTP/1.1" 307
+2026-01-13 22:35:06,515 - uvicorn.access - INFO - 127.0.0.1:51063 - "GET /?id=bee998a6-5b34-4deb-a35a-1a093e37f0d3&vscodeBrowserReqId=1768361706512 HTTP/1.1" 307
+2026-01-13 22:35:06,515 - uvicorn.access - INFO - 127.0.0.1:51063 - "GET /webui HTTP/1.1" 307
+2026-01-13 22:35:06,545 - uvicorn.access - INFO - 127.0.0.1:51063 - "GET /webui/assets/index-CTrjqxpw.js HTTP/1.1" 200
+2026-01-13 22:35:06,545 - uvicorn.access - INFO - 127.0.0.1:51066 - "GET /webui/assets/index-CILdtbjz.css HTTP/1.1" 200
+2026-01-13 22:35:06,788 - uvicorn.access - INFO - 127.0.0.1:51063 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:35:06,799 - lightrag - INFO - [] Subgraph query successful | Node count: 404 | Edge count: 313
+2026-01-13 22:35:06,812 - uvicorn.access - INFO - 127.0.0.1:51063 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:35:06,901 - uvicorn.access - INFO - 127.0.0.1:51063 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:35:16,777 - uvicorn.access - INFO - 127.0.0.1:51073 - "GET /webui/assets/index-CTrjqxpw.js HTTP/1.1" 200
+2026-01-13 22:35:16,777 - uvicorn.access - INFO - 127.0.0.1:51075 - "GET /webui/assets/index-CILdtbjz.css HTTP/1.1" 200
+2026-01-13 22:35:17,143 - uvicorn.access - INFO - 127.0.0.1:51073 - "GET /docs HTTP/1.1" 200
+2026-01-13 22:35:17,152 - lightrag - INFO - [] Graph truncated: found 140 nodes within max_depth 3
+2026-01-13 22:35:17,154 - lightrag - INFO - [] Subgraph query successful | Node count: 140 | Edge count: 153
+2026-01-13 22:35:17,162 - uvicorn.access - INFO - 127.0.0.1:51075 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 22:35:17,163 - uvicorn.access - INFO - 127.0.0.1:51073 - "GET /webui/assets/index-BZqQWGoj.js HTTP/1.1" 200
+2026-01-13 22:35:17,224 - uvicorn.access - INFO - 127.0.0.1:51073 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 22:35:17,256 - uvicorn.access - INFO - 127.0.0.1:51073 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200
+2026-01-13 22:35:17,256 - uvicorn.access - INFO - 127.0.0.1:51075 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200
+2026-01-13 22:37:18,371 - uvicorn.access - INFO - 127.0.0.1:51122 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 22:37:18,380 - lightrag - INFO - Found 1 files to index.
+2026-01-13 22:37:18,484 - lightrag - INFO - Successfully extracted and enqueued file: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-13 22:37:18,485 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 22:37:18,485 - lightrag - INFO - Extracting stage 1/1: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-13 22:37:18,485 - lightrag - INFO - Processing d-id: doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-13 22:37:18,496 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-13 22:37:19,279 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-13 22:37:39,611 - lightrag - INFO -  == LLM cache == saving: default:extract:b6cd3297989eeab77657aeb26cdb88ca
+2026-01-13 22:37:40,710 - lightrag - INFO -  == LLM cache == saving: default:extract:c5f7b56c20a836b0de621cde0e688f19
+2026-01-13 22:37:40,711 - lightrag - INFO - Chunk 1 of 2 extracted 24 Ent + 2 Rel chunk-237a227de72e3aa30e392046b0d7ef97
+2026-01-13 22:37:45,169 - lightrag - INFO -  == LLM cache == saving: default:extract:175852146d6db08e9a971f66a486493b
+2026-01-13 22:37:50,396 - lightrag - INFO -  == LLM cache == saving: default:extract:86e40411e020ec55e3f2bad4e9092c93
+2026-01-13 22:37:50,397 - lightrag - INFO - Chunk 2 of 2 extracted 35 Ent + 8 Rel chunk-919790de0c041024bfcfd7beb80bcfe2
+2026-01-13 22:37:50,398 - lightrag - INFO - Merging stage 1/1: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-13 22:37:50,398 - lightrag - INFO - Phase 1: Processing 58 entities from doc-1f96463cc2f4da744af2dfb74f66a15f (async: 8)
+2026-01-13 22:37:50,403 - lightrag - INFO - Merged: `Rittman Orchard Apple` | 1+1
+2026-01-13 22:37:50,404 - lightrag - INFO - Merged: `BOOMCHICKAPOP Sea Salt Popcorn` | 1+1
+2026-01-13 22:37:50,425 - lightrag - INFO - Merged: `Hippeas Vegan White Cheddar` | 1+1
+2026-01-13 22:37:50,426 - lightrag - INFO - Merged: `Siete Grain Free Tortilla Chips Lime` | 1+1
+2026-01-13 22:37:50,427 - lightrag - INFO - Merged: `Oven Roasted Turkey Sandwich` | 1+1
+2026-01-13 22:37:50,433 - lightrag - INFO - Merged: `Grapefruit & Broccoli Chopped Kale Bowl` | 1+1
+2026-01-13 22:37:50,660 - lightrag - INFO - Merged: `Breakfast Tacos` | 1+1
+2026-01-13 22:37:50,672 - lightrag - INFO - Merged: `Super Simple Keto Bowl with Cauliflower Rice` | 1+1
+2026-01-13 22:37:50,704 - lightrag - INFO - Merged: `Red Grape & Walnut Chicken Salad` | 1+1
+2026-01-13 22:37:50,819 - lightrag - INFO - Merged: `The Doctor's Everyday Salad` | 1+1
+2026-01-13 22:37:50,908 - lightrag - INFO - Merged: `Cider Poached Pears` | 1+1
+2026-01-13 22:37:50,921 - lightrag - INFO - Merged: `Ruani Functional Brownie` | 1+1
+2026-01-13 22:37:50,921 - lightrag - INFO - Merged: `Tcho Dark Chocolate Bar` | 1+1
+2026-01-13 22:37:50,939 - lightrag - INFO - Merged: `San Pellegrino Sparkling Soda` | 1+1
+2026-01-13 22:37:50,952 - lightrag - INFO - Merged: `Sanzo Sparkling Water` | 1+1
+2026-01-13 22:37:51,055 - lightrag - INFO - Merged: `Vita Coco Pure Coconut Water` | 1+1
+2026-01-13 22:37:51,113 - lightrag - INFO - Merged: `Niman Ranch Snack Pack` | 2+2
+2026-01-13 22:37:51,229 - lightrag - INFO - Merged: `Mountain Valley Spring Water` | 1+1
+2026-01-13 22:37:51,241 - lightrag - INFO - Merged: `Olipop` | 2+1
+2026-01-13 22:37:51,251 - lightrag - INFO - Merged: `Local Apple Cider` | 2+1
+2026-01-13 22:37:51,344 - lightrag - INFO - Merged: `Think Jerky` | 1+1
+2026-01-13 22:37:51,422 - lightrag - INFO - Merged: `Karma Cashews` | 1+1
+2026-01-13 22:37:51,449 - lightrag - INFO - Merged: `Quinn Peanut Butter Filled Pretzel Nuggets` | 1+1
+2026-01-13 22:37:51,472 - lightrag - INFO - Merged: `Foods Alive Sprouted Crisps` | 1+1
+2026-01-13 22:37:51,541 - lightrag - INFO - Merged: `Crunchy Roasted Edamame Beans` | 1+1
+2026-01-13 22:37:51,566 - lightrag - INFO - Merged: `Witzis Raw Granola` | 2+1
+2026-01-13 22:37:51,573 - lightrag - INFO - Merged: `Elemental Superfood Seedbar` | 1+1
+2026-01-13 22:37:51,650 - lightrag - INFO - Merged: `Love, Corn` | 1+1
+2026-01-13 22:37:51,658 - lightrag - INFO - Merged: `Pasture-raised Hard Boiled Egg` | 1+1
+2026-01-13 22:37:51,678 - lightrag - INFO - Merged: `Poshi Chili & Garlic Kalamata Olives` | 1+1
+2026-01-13 22:37:51,846 - lightrag - INFO - Merged: `Guardian Cold Brew Coffee` | 1+1
+2026-01-13 22:37:51,876 - lightrag - INFO - Merged: `Hoplark Sparkling HopTea` | 1+1
+2026-01-13 22:37:51,910 - lightrag - INFO - Merged: `Garden of Flavor Cold Pressed Juice` | 1+1
+2026-01-13 22:37:51,975 - lightrag - INFO - Merged: `Brew Dr. Kombucha` | 1+1
+2026-01-13 22:37:52,087 - lightrag - INFO - Merged: `Rittman Orchards` | 1+1
+2026-01-13 22:37:52,088 - lightrag - INFO - Merged: `Philomena Bake Shop` | 1+1
+2026-01-13 22:37:52,107 - lightrag - INFO - Merged: `Luna Bakery` | 1+1
+2026-01-13 22:37:52,144 - lightrag - INFO - Merged: `Cleveland Kraut` | 1+1
+2026-01-13 22:37:52,186 - lightrag - INFO - Merged: `Fresh 'n Crisp Farms` | 1+1
+2026-01-13 22:37:52,296 - lightrag - INFO - Merged: `Holistic Acres` | 1+1
+2026-01-13 22:37:52,373 - lightrag - INFO - Merged: `Guardian` | 1+1
+2026-01-13 22:37:52,383 - lightrag - INFO - Merged: `Shagbark Tortilla Chips` | 1+1
+2026-01-13 22:37:52,406 - lightrag - INFO - Merged: `Garden of Flavor` | 1+1
+2026-01-13 22:37:53,348 - lightrag - INFO - Phase 2: Processing 10 relations from doc-1f96463cc2f4da744af2dfb74f66a15f (async: 8)
+2026-01-13 22:37:54,288 - lightrag - INFO - Phase 3: Updating final 58(58+0) entities and  10 relations from doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-13 22:37:54,288 - lightrag - INFO - Completed merging: 58 entities, 0 extra entities, 10 relations
+2026-01-13 22:37:54,356 - lightrag - INFO - [] Writing graph with 419 nodes, 323 edges
+2026-01-13 22:37:54,390 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 22:37:54,390 - lightrag - INFO - Completed processing file 1/1: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-13 22:37:54,391 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 22:37:54,391 - lightrag - INFO - Scanning process completed: 1 files Processed.
+2026-01-13 22:38:39,291 - lightrag - INFO -  == LLM cache == saving: global:keywords:921bc665943a30c97629066fe9ea6cd8
+2026-01-13 22:38:39,844 - lightrag - INFO - Query edges: Harvest owl options, Weekly recommendations (top_k:40, cosine:0.2)
+2026-01-13 22:38:40,117 - lightrag - INFO - Global query: 41 entites, 40 relations
+2026-01-13 22:38:40,117 - lightrag - INFO - Raw search results: 41 entities, 40 relations, 0 vector chunks
+2026-01-13 22:38:40,122 - lightrag - INFO - After truncation: 41 entities, 40 relations
+2026-01-13 22:38:40,124 - lightrag - INFO - Selecting 7 from 7 entity-related chunks by vector similarity
+2026-01-13 22:38:40,124 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-13 22:38:40,125 - lightrag - INFO - Round-robin merged chunks: 7 -> 7 (deduplicated 0)
+2026-01-13 22:38:40,129 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-13 22:38:40,135 - lightrag - INFO - Final context: 41 entities, 40 relations, 7 chunks
+2026-01-13 22:38:40,135 - lightrag - INFO - Final chunks S+F/O: E11/1 E10/2 E17/3 E34/4 E1/5 E2/6 E1/7
+2026-01-13 22:38:41,199 - uvicorn.access - INFO - 127.0.0.1:51235 - "POST /query/stream HTTP/1.1" 200

@@ -1126,5 +1126,281 @@
     "create_time": 1768360989,
     "update_time": 1768360989,
     "_id": "doc-601fbed9d6e90700da21adab1219fe98"
+  },
+  "doc-0071f33f5941888606293ff29e1871b5": {
+    "relation_pairs": [
+      [
+        "Harvest Owl",
+        "Local Apple Cider"
+      ],
+      [
+        "Guardian Cold Brew Coffee",
+        "Wise Snacks Chicken Noodle Soup"
+      ],
+      [
+        "BOOMCHICKAPOP Sea Salt Popcorn",
+        "Harvest Owl"
+      ],
+      [
+        "Harvest Owl",
+        "Sanzo Sparkling Water"
+      ],
+      [
+        "Housemade Cashew Peanut Butter & Apple Slices",
+        "Witzis Raw Granola"
+      ],
+      [
+        "Harvest Owl",
+        "Rittman Orchard Apple"
+      ],
+      [
+        "Harvest Owl",
+        "Vegan"
+      ],
+      [
+        "Quinn Peanut Butter Filled Pretzel Nuggets",
+        "Vegan"
+      ],
+      [
+        "Breakfast Tacos",
+        "Harvest Owl"
+      ],
+      [
+        "HarvestOwl",
+        "Philomena Bake Shop"
+      ],
+      [
+        "Harvest Owl",
+        "Niman Ranch Snack Pack"
+      ],
+      [
+        "Gluten-Free",
+        "Karma Cashews"
+      ],
+      [
+        "Harvest Owl",
+        "The Ultimate Veggie Sandwich"
+      ],
+      [
+        "Black Mountain Valley Spring Water",
+        "Local Apple Cider"
+      ],
+      [
+        "Harvest Owl",
+        "Mountain Valley Spring Water"
+      ],
+      [
+        "Gluten-Free",
+        "Quinn Peanut Butter Filled Pretzel Nuggets"
+      ],
+      [
+        "Harvest Owl",
+        "Luna Bakery Dark Chocolate Sea Salt Cookie"
+      ],
+      [
+        "Cleveland Kraut",
+        "HarvestOwl"
+      ],
+      [
+        "Gluten-Free",
+        "Wise Snacks Chicken Noodle Soup"
+      ],
+      [
+        "Harvest Owl",
+        "Jackson's Sweet Potato Chips"
+      ],
+      [
+        "Harvest Owl",
+        "Hippeas Vegan White Cheddar"
+      ],
+      [
+        "Harvest Owl",
+        "Tcho Dark Chocolate Bar"
+      ],
+      [
+        "Niman Ranch Snack Pack",
+        "Think Jerky"
+      ],
+      [
+        "Harvest Owl",
+        "Olipop"
+      ],
+      [
+        "Greek Chicken Meatball Bowl",
+        "Harvest Owl"
+      ],
+      [
+        "Harvest Owl",
+        "Siete Grain Free Tortilla Chips Lime"
+      ],
+      [
+        "Harvest Owl",
+        "Just Iced Tea"
+      ],
+      [
+        "Harvest Owl",
+        "San Pellegrino Sparkling Soda"
+      ],
+      [
+        "Harvest Owl",
+        "Vita Coco Pure Coconut Water"
+      ],
+      [
+        "Breakfast Tacos",
+        "Pasture-raised Scrambled Eggs"
+      ],
+      [
+        "Fresh 'n Crisp Farms",
+        "HarvestOwl"
+      ],
+      [
+        "Harvest Owl",
+        "Oven Roasted Turkey Sandwich"
+      ],
+      [
+        "Karma Cashews",
+        "Quinn Peanut Butter Filled Pretzel Nuggets"
+      ],
+      [
+        "Harvest Owl",
+        "Spindrift"
+      ],
+      [
+        "Karma Cashews",
+        "Vegan"
+      ],
+      [
+        "Harvest Owl",
+        "Ruani Functional Brownie"
+      ],
+      [
+        "HarvestOwl",
+        "Holistic Acres"
+      ],
+      [
+        "Chicken Noodle Bone Broth Bowl",
+        "Harvest Owl"
+      ],
+      [
+        "Crunchy Roasted Edamame Beans",
+        "Foods Alive Sprouted Crisps"
+      ],
+      [
+        "Elemental Superfood Seedbar",
+        "Love, Corn"
+      ],
+      [
+        "Garden of Flavor",
+        "HarvestOwl"
+      ],
+      [
+        "GF",
+        "Harvest Owl"
+      ],
+      [
+        "Harvest Owl",
+        "Super Simple Keto Bowl with Cauliflower Rice"
+      ],
+      [
+        "Harvest Owl",
+        "Sea Salt Potato Chips"
+      ],
+      [
+        "Harvest Owl",
+        "Red Grape & Walnut Chicken Salad"
+      ],
+      [
+        "Foods Alive Sprouted Crisps",
+        "Gluten-Free"
+      ],
+      [
+        "Foods Alive Sprouted Crisps",
+        "Vegan"
+      ],
+      [
+        "Harvest Owl",
+        "The Doctor's Everyday Salad"
+      ],
+      [
+        "Harvest Owl",
+        "Whole 30"
+      ],
+      [
+        "Grilled Steak Honey Mustard Salad",
+        "Harvest Owl"
+      ],
+      [
+        "HarvestOwl",
+        "Rittman Orchards"
+      ],
+      [
+        "Harvest Owl",
+        "Keto"
+      ],
+      [
+        "Grapefruit & Broccoli Chopped Kale Bowl",
+        "Harvest Owl"
+      ],
+      [
+        "Vegan",
+        "Wise Snacks Chicken Noodle Soup"
+      ],
+      [
+        "Cider Poached Pears",
+        "Harvest Owl"
+      ]
+    ],
+    "count": 55,
+    "create_time": 1768361429,
+    "update_time": 1768361429,
+    "_id": "doc-0071f33f5941888606293ff29e1871b5"
+  },
+  "doc-1f96463cc2f4da744af2dfb74f66a15f": {
+    "relation_pairs": [
+      [
+        "Fresh 'n Crisp Farms",
+        "Rittman Orchards"
+      ],
+      [
+        "Breakfast Tacos",
+        "Niman Ranch Snack Pack"
+      ],
+      [
+        "Fresh Veggies & Avocado",
+        "Oven Roasted Turkey Sandwich"
+      ],
+      [
+        "Beef",
+        "Cooking Oils"
+      ],
+      [
+        "Chicken and Turkey",
+        "Cooking Oils"
+      ],
+      [
+        "Local Apple Cider",
+        "Witzis Raw Granola"
+      ],
+      [
+        "Mountain Valley Spring Water",
+        "Olipop"
+      ],
+      [
+        "Luna Bakery",
+        "Philomena Bake Shop"
+      ],
+      [
+        "Guardian",
+        "Guardian Cold Brew Coffee"
+      ],
+      [
+        "Cooking Oils",
+        "Salmon"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1768361874,
+    "update_time": 1768361874,
+    "_id": "doc-1f96463cc2f4da744af2dfb74f66a15f"
   }
 }

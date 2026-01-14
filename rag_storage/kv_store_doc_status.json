@@ -179,5 +179,41 @@
       "processing_start_time": 1768360975,
       "processing_end_time": 1768360989
     }
+  },
+  "doc-0071f33f5941888606293ff29e1871b5": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "content_summary": "Let us know if there\n ’\ns ever anything we can help you with:  \n \nsupport@harvestowl.com  \n216\n -\n672\n -\n0655  \nMenu for the week of  \nJanuary 19, 2026  \n\nRittman Orchard Apple  \nBOOMCHICKAPOP Sea Salt Popcorn  \nFresh Veggies & Avocado  \nHippeas [Veg...",
+    "content_length": 7182,
+    "created_at": "2026-01-14T03:29:24.056529+00:00",
+    "updated_at": "2026-01-14T03:30:29.514175+00:00",
+    "file_path": "HarvestOwl+Menu+January+19th+2026+NP.pdf",
+    "track_id": "scan_20260113_222923_7f9d1b44",
+    "metadata": {
+      "processing_start_time": 1768361364,
+      "processing_end_time": 1768361429
+    }
+  },
+  "doc-1f96463cc2f4da744af2dfb74f66a15f": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97",
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "content_summary": "Let us know if there\n ’\ns ever anything we can help you with:  \n \nsupport@harvestowl.com  \n216\n -\n672\n -\n0655  \nMenu for the week of  \nJanuary 12, 2026  \n\nRittman Orchard Apple  \nBOOMCHICKAPOP Sea Salt Popcorn  \nFresh Veggies & Avocado  \nHippeas [Veg...",
+    "content_length": 7146,
+    "created_at": "2026-01-14T03:37:18.483449+00:00",
+    "updated_at": "2026-01-14T03:37:54.289259+00:00",
+    "file_path": "HarvestOwl+Menu+January+12th+2026+NP.pdf",
+    "track_id": "scan_20260113_223718_b6913cec",
+    "metadata": {
+      "processing_start_time": 1768361838,
+      "processing_end_time": 1768361874
+    }
   }
 }
