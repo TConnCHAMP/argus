@@ -1332,3 +1332,59 @@
 2026-01-13 21:40:51,957 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
 2026-01-13 21:40:51,959 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
 2026-01-13 21:40:51,966 - uvicorn.access - INFO - 127.0.0.1:65243 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:46:38,902 - uvicorn.access - INFO - 127.0.0.1:65454 - "GET /webui/assets/index-CmsOxpAM.js HTTP/1.1" 304
+2026-01-13 21:46:38,903 - uvicorn.access - INFO - 127.0.0.1:65457 - "GET /webui/assets/index-Dra-6x-X.css HTTP/1.1" 304
+2026-01-13 21:46:39,119 - uvicorn.access - INFO - 127.0.0.1:65457 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-13 21:46:39,216 - uvicorn.access - INFO - 127.0.0.1:65457 - "GET /docs HTTP/1.1" 200
+2026-01-13 21:46:39,223 - uvicorn.access - INFO - 127.0.0.1:65457 - "GET /webui/assets/index-Cp8k7DFv.js HTTP/1.1" 304
+2026-01-13 21:46:39,227 - lightrag - INFO - [] Graph truncated: found 92 nodes within max_depth 3
+2026-01-13 21:46:39,230 - lightrag - INFO - [] Subgraph query successful | Node count: 92 | Edge count: 102
+2026-01-13 21:46:39,236 - uvicorn.access - INFO - 127.0.0.1:65457 - "GET /graphs?label=Champ%20Titles%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-13 21:46:39,273 - uvicorn.access - INFO - 127.0.0.1:65454 - "GET /openapi.json HTTP/1.1" 200
+2026-01-13 21:46:42,128 - uvicorn.access - INFO - 127.0.0.1:65454 - "POST /documents/scan HTTP/1.1" 200
+2026-01-13 21:46:42,132 - lightrag - INFO - Found 1 files to index.
+2026-01-13 21:46:42,147 - lightrag - INFO - Successfully extracted and enqueued file: 2025-12-09T10:04:05Z.txt
+2026-01-13 21:46:42,151 - lightrag - INFO - Processing 1 document(s)
+2026-01-13 21:46:42,151 - lightrag - INFO - Extracting stage 1/1: 2025-12-09T10:04:05Z.txt
+2026-01-13 21:46:42,151 - lightrag - INFO - Processing d-id: doc-5981f51abedb287f77fc4e4b2cce4a95
+2026-01-13 21:46:53,504 - lightrag - INFO -  == LLM cache == saving: default:extract:ba6c5635dd397e50de9862b5b86dcc60
+2026-01-13 21:46:54,244 - lightrag - INFO -  == LLM cache == saving: default:extract:43e4ae889ae9368d47ba231458b9aa15
+2026-01-13 21:46:55,790 - lightrag - INFO -  == LLM cache == saving: default:extract:2e215501a2ec26fb37949b98868c8455
+2026-01-13 21:46:55,811 - lightrag - INFO -  == LLM cache == saving: default:extract:09f8ba0c3d9bb9c0cce58f2f69feb746
+2026-01-13 21:46:55,812 - lightrag - INFO - Chunk 1 of 3 extracted 9 Ent + 6 Rel chunk-a076cff732eee95510e26e930e70101b
+2026-01-13 21:46:58,953 - lightrag - INFO -  == LLM cache == saving: default:extract:aaa7f390ab99de3b34d2de6e873f1e46
+2026-01-13 21:46:58,955 - lightrag - INFO - Chunk 2 of 3 extracted 9 Ent + 9 Rel chunk-d82e3124048aac33a2b179171cacd66e
+2026-01-13 21:46:59,670 - lightrag - INFO -  == LLM cache == saving: default:extract:8164aba357ce71570b189312e65eeeb3
+2026-01-13 21:46:59,671 - lightrag - INFO - Chunk 3 of 3 extracted 13 Ent + 7 Rel chunk-122c8bab8a1844de1c743dc874f13c26
+2026-01-13 21:46:59,672 - lightrag - INFO - Merging stage 1/1: 2025-12-09T10:04:05Z.txt
+2026-01-13 21:46:59,672 - lightrag - INFO - Phase 1: Processing 28 entities from doc-5981f51abedb287f77fc4e4b2cce4a95 (async: 8)
+2026-01-13 21:46:59,703 - lightrag - INFO - Merged: `Content Lake` | 1+1
+2026-01-13 21:47:00,950 - lightrag - INFO - Phase 2: Processing 22 relations from doc-5981f51abedb287f77fc4e4b2cce4a95 (async: 8)
+2026-01-13 21:47:03,281 - lightrag - INFO - Phase 3: Updating final 30(28+2) entities and  22 relations from doc-5981f51abedb287f77fc4e4b2cce4a95
+2026-01-13 21:47:03,285 - lightrag - INFO - Completed merging: 28 entities, 2 extra entities, 22 relations
+2026-01-13 21:47:03,347 - lightrag - INFO - [] Writing graph with 365 nodes, 274 edges
+2026-01-13 21:47:03,364 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 21:47:03,364 - lightrag - INFO - Completed processing file 1/1: 2025-12-09T10:04:05Z.txt
+2026-01-13 21:47:03,364 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-13 21:47:03,364 - lightrag - INFO - Scanning process completed: 1 files Processed.
+2026-01-13 21:47:21,307 - uvicorn.access - INFO - 127.0.0.1:65525 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-13 21:47:21,308 - lightrag - INFO - Deleting document 1/1: doc-5981f51abedb287f77fc4e4b2cce4a95
+2026-01-13 21:47:21,308 - lightrag - INFO - Starting deletion process for document doc-5981f51abedb287f77fc4e4b2cce4a95
+2026-01-13 21:47:21,309 - lightrag - INFO - Collected 6 LLM cache entries for document doc-5981f51abedb287f77fc4e4b2cce4a95
+2026-01-13 21:47:21,315 - lightrag - INFO - Found 1 affected entities
+2026-01-13 21:47:21,317 - lightrag - INFO - Found 0 affected relations
+2026-01-13 21:47:21,318 - lightrag - INFO - Successfully deleted 3 chunks from storage
+2026-01-13 21:47:21,319 - lightrag - INFO - Successfully deleted 22 relations
+2026-01-13 21:47:21,322 - lightrag - INFO - Successfully deleted 29 entities
+2026-01-13 21:47:21,370 - lightrag - INFO - [] Writing graph with 336 nodes, 252 edges
+2026-01-13 21:47:21,378 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 21:47:21,378 - lightrag - INFO - Rebuilding knowledge from 1 cached chunk extractions (parallel processing)
+2026-01-13 21:47:21,378 - lightrag - INFO - Found 2 valid cache entries, 1 chunks with results
+2026-01-13 21:47:21,380 - lightrag - INFO - Starting parallel rebuild of 1 entities and 0 relationships (async: 8)
+2026-01-13 21:47:21,582 - lightrag - INFO - Rebuild `Content Lake` from 1 chunks
+2026-01-13 21:47:21,583 - lightrag - INFO - KG rebuild completed: 1 entities and 0 relationships rebuilt successfully.
+2026-01-13 21:47:21,583 - lightrag - INFO - Successfully deleted 6 LLM cache entries for document doc-5981f51abedb287f77fc4e4b2cce4a95
+2026-01-13 21:47:21,643 - lightrag - INFO - [] Writing graph with 336 nodes, 252 edges
+2026-01-13 21:47:21,653 - lightrag - INFO - In memory DB persist to disk
+2026-01-13 21:47:21,653 - lightrag - INFO - Document deleted 1/1: doc-5981f51abedb287f77fc4e4b2cce4a95[2025-12-09T10:04:05Z.txt]
+2026-01-13 21:47:21,654 - lightrag - INFO - Successfully deleted enqueued file: 2025-12-09T10:04:05Z.txt
