@@ -1398,5 +1398,1613 @@
     "create_time": 1768367977,
     "update_time": 1768367977,
     "_id": "doc-7f9ff56363017b11489b61362ec6490b"
+  },
+  "doc-c6de8b92b7490b506515adcbe8d1c2cb": {
+    "relation_pairs": [
+      [
+        "PFL Program",
+        "Paid Time Off (PTO)"
+      ],
+      [
+        "Employee's Supervisor",
+        "Voting Leave"
+      ],
+      [
+        "Assigned Inventions",
+        "Champ Titles"
+      ],
+      [
+        "Employee",
+        "Family & Medical Leave Act"
+      ],
+      [
+        "FMLA",
+        "MPPLA"
+      ],
+      [
+        "Company",
+        "Employee"
+      ],
+      [
+        "Employees of the Company",
+        "Insperity"
+      ],
+      [
+        "Employees",
+        "The Company"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Workplace Violence Policy"
+      ],
+      [
+        "Employee",
+        "Health Care Provider"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Drug and Alcohol-Free Workplace Policy"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Disciplinary Process"
+      ],
+      [
+        "Bone Marrow Donation Leave",
+        "Champ Titles, Inc."
+      ],
+      [
+        "Employee",
+        "Healthcare Provider"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Retaliation Prohibited"
+      ],
+      [
+        "Eligible Employee",
+        "NJFLA"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Paid Family Leave (PFL)"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "FMLA"
+      ],
+      [
+        "Employee Handbook",
+        "South Carolina"
+      ],
+      [
+        "Blood Donation Leave",
+        "Company"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Work Environment"
+      ],
+      [
+        "PFL Benefits",
+        "Supplemental Compensation"
+      ],
+      [
+        "Assigned Inventions",
+        "Employee Handbook"
+      ],
+      [
+        "Employee",
+        "FMLA"
+      ],
+      [
+        "Employee",
+        "Step-, Foster, Adoptive, and Half-Relations"
+      ],
+      [
+        "Base Hours",
+        "Employee"
+      ],
+      [
+        "Medical Procedure",
+        "Organ Donation Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "School Conference and Activities Leave"
+      ],
+      [
+        "Company",
+        "Second Opinion"
+      ],
+      [
+        "Employees",
+        "Return to Work/Fitness for Duty Certifications"
+      ],
+      [
+        "Illinois Department of Human Rights",
+        "Springfield Office"
+      ],
+      [
+        "Champ Titles",
+        "Champ Titles Policies"
+      ],
+      [
+        "Employees",
+        "Meal Period"
+      ],
+      [
+        "California",
+        "Champ Titles, Inc."
+      ],
+      [
+        "Operational Policies",
+        "Publicity/Statements to the Media"
+      ],
+      [
+        "Domestic Abuse or Harassment Leave",
+        "Employees"
+      ],
+      [
+        "Company",
+        "New Jersey SAFE Act"
+      ],
+      [
+        "Company",
+        "FMLA Leave"
+      ],
+      [
+        "Employees",
+        "Medical Certifications"
+      ],
+      [
+        "Health Benefits",
+        "Organ Donation Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Earned Sick and Safe Time (ESST)"
+      ],
+      [
+        "Employee",
+        "Time Away from Work"
+      ],
+      [
+        "Employee Handbook",
+        "Inventions"
+      ],
+      [
+        "Employee",
+        "Retaliation"
+      ],
+      [
+        "Employment Development Department (EDD)",
+        "Paid Family Leave (PFL)"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Sexual Assault"
+      ],
+      [
+        "Employee",
+        "Harassment Complaint"
+      ],
+      [
+        "Covered Veteran",
+        "Employee"
+      ],
+      [
+        "Employee",
+        "Sick and Safe Leave"
+      ],
+      [
+        "Employees",
+        "Sick Days Policy"
+      ],
+      [
+        "EEOC",
+        "New York State Division of Human Rights"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Third Parties"
+      ],
+      [
+        "Employee",
+        "Nursing Mothers, Lactating Employees, and Pregnancy Accommodations Law"
+      ],
+      [
+        "Employee",
+        "Sexual Assault"
+      ],
+      [
+        "Employees",
+        "Voting Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Minnesota Statutes"
+      ],
+      [
+        "Employee",
+        "Health Care Provider Certification"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Jury Duty Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "DHR"
+      ],
+      [
+        "Employees",
+        "Work Duties"
+      ],
+      [
+        "Employee",
+        "Temporary Restraining Order"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Vice President of HR"
+      ],
+      [
+        "Employees",
+        "San Francisco Family Friendly Workplace Ordinance"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Illinois Human Rights Act"
+      ],
+      [
+        "Employees",
+        "Family Member"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "City of St. Paul"
+      ],
+      [
+        "FMLA Leave",
+        "Qualifying Exigency Leave"
+      ],
+      [
+        "Employee",
+        "Judicial Proceeding"
+      ],
+      [
+        "California Addendum",
+        "Equal Employment Opportunity"
+      ],
+      [
+        "Employee",
+        "NJ SAFE Act"
+      ],
+      [
+        "Employees",
+        "MPPLA"
+      ],
+      [
+        "Company",
+        "Family and Medical Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Employee Handbook"
+      ],
+      [
+        "30 Days Notice",
+        "Employees"
+      ],
+      [
+        "Employees",
+        "Michigan Earned Sick Time Act"
+      ],
+      [
+        "Company",
+        "Initial Medical Certifications"
+      ],
+      [
+        "Discrimination",
+        "Sexual Harassment"
+      ],
+      [
+        "Employees",
+        "FMLA/CFRA Leave"
+      ],
+      [
+        "Employees",
+        "Subpoena"
+      ],
+      [
+        "ESST",
+        "Employee"
+      ],
+      [
+        "Champ Titles Standards of Conduct and Ethics Code",
+        "Champ Titles, Inc."
+      ],
+      [
+        "FMLA",
+        "Leave"
+      ],
+      [
+        "Employees",
+        "Flexible Working Arrangement"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Company Premises"
+      ],
+      [
+        "Confidential Information",
+        "employees"
+      ],
+      [
+        "Deduction Authorization Form",
+        "Employee"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Company"
+      ],
+      [
+        "Disciplinary Action",
+        "Employees"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Family and Medical Leave Act"
+      ],
+      [
+        "Disciplinary Action",
+        "Insperity"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Overtime"
+      ],
+      [
+        "Military Member",
+        "Qualified Exigencies"
+      ],
+      [
+        "Leaves of Absence",
+        "Parental Leave"
+      ],
+      [
+        "Employees",
+        "Harassment"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "San Francisco Paid Parental Leave Ordinance"
+      ],
+      [
+        "CFRA",
+        "Employee"
+      ],
+      [
+        "Employee",
+        "Paid Family Leave"
+      ],
+      [
+        "Employees",
+        "Jury Duty"
+      ],
+      [
+        "Bone Marrow Donation Leave",
+        "Health Benefits"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Employees"
+      ],
+      [
+        "Employees",
+        "FMLA Leave"
+      ],
+      [
+        "Employee",
+        "Organ Donation"
+      ],
+      [
+        "EEOC",
+        "Insperity"
+      ],
+      [
+        "Family and Medical Leave Act",
+        "New York State Paid Family Leave"
+      ],
+      [
+        "Employee",
+        "New Jersey"
+      ],
+      [
+        "Employee",
+        "Handbook"
+      ],
+      [
+        "Employee",
+        "Serious Health Condition"
+      ],
+      [
+        "Illinois Department of Human Rights",
+        "Illinois Human Rights Act"
+      ],
+      [
+        "FMLA Leave",
+        "Serious Health Condition"
+      ],
+      [
+        "Employees",
+        "Group Health Insurance Benefits"
+      ],
+      [
+        "Insperity",
+        "Paid Family Leave Benefits"
+      ],
+      [
+        "Champ Titles",
+        "Part-Time Employees"
+      ],
+      [
+        "Employee",
+        "Physical or Mental Disability"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Human Rights Act"
+      ],
+      [
+        "EEOC",
+        "Employee"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Weapons Policy"
+      ],
+      [
+        "Harassment",
+        "Protected Categories"
+      ],
+      [
+        "Covered Servicemember",
+        "FMLA"
+      ],
+      [
+        "Open-Door Policy",
+        "Vice President of HR"
+      ],
+      [
+        "Employees",
+        "FMLA"
+      ],
+      [
+        "Employee",
+        "State of California Paid Family Leave"
+      ],
+      [
+        "Discrimination",
+        "Protected Characteristics"
+      ],
+      [
+        "Employees",
+        "Local Police Department"
+      ],
+      [
+        "Employee",
+        "Legal Assistance"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Victim-Services Organization"
+      ],
+      [
+        "Eligible Employee",
+        "FMLA"
+      ],
+      [
+        "California Addendum",
+        "Champ Titles, Inc."
+      ],
+      [
+        "CFRA",
+        "Champ Titles, Inc."
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Supervisor"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Short-Term Disability Leave"
+      ],
+      [
+        "Employees",
+        "Initial Medical Certifications"
+      ],
+      [
+        "Employee Handbook",
+        "at-will employment"
+      ],
+      [
+        "Company",
+        "Volunteer Emergency Workers"
+      ],
+      [
+        "Family and Medical Leave Act",
+        "Pregnancy Disability Leave"
+      ],
+      [
+        "Employee's Supervisor",
+        "Illinois Department of Human Rights"
+      ],
+      [
+        "Champ Titles",
+        "Parental Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Sexual Harassment"
+      ],
+      [
+        "Leave",
+        "NJFLA"
+      ],
+      [
+        "FMLA",
+        "Serious Injury or Illness"
+      ],
+      [
+        "Employees",
+        "Rest Break"
+      ],
+      [
+        "Employee",
+        "Supervisor"
+      ],
+      [
+        "Employees",
+        "Predictable Working Arrangement"
+      ],
+      [
+        "Champ Titles",
+        "Temporary Employees"
+      ],
+      [
+        "Minnesota Department of Labor and Industry",
+        "The Company"
+      ],
+      [
+        "Employees",
+        "Medical Certification"
+      ],
+      [
+        "Artificial Intelligence",
+        "Operational Policies"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Solicitation and Distribution Policy"
+      ],
+      [
+        "Emergency Situation",
+        "Volunteer Emergency Workers"
+      ],
+      [
+        "Employee",
+        "Social Security Number"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Confidential Information"
+      ],
+      [
+        "Insperity",
+        "Reproductive Loss Leave"
+      ],
+      [
+        "Emergency Contact",
+        "Employees"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Emergency Rescue Personnel"
+      ],
+      [
+        "Company",
+        "Military Family Leave"
+      ],
+      [
+        "DHR",
+        "Insperity"
+      ],
+      [
+        "Supervisor",
+        "employees"
+      ],
+      [
+        "Champ Titles",
+        "Proprietary Rights"
+      ],
+      [
+        "Company",
+        "Notice of Eligibility"
+      ],
+      [
+        "Discrimination",
+        "Insperity"
+      ],
+      [
+        "Military Spouse Leave",
+        "United States Armed Forces"
+      ],
+      [
+        "Employee",
+        "Restraining Order"
+      ],
+      [
+        "Employees",
+        "Military Member"
+      ],
+      [
+        "Adverse Employment Action",
+        "Champ Titles, Inc."
+      ],
+      [
+        "Company",
+        "Health Care Provider"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Lactation Accommodation"
+      ],
+      [
+        "FMLA",
+        "Supervisor"
+      ],
+      [
+        "Company President",
+        "Employee"
+      ],
+      [
+        "Employees",
+        "New York State Paid Family Leave"
+      ],
+      [
+        "Complaint Procedure",
+        "Employees"
+      ],
+      [
+        "Anti-Harassment - IL",
+        "Illinois Addendum"
+      ],
+      [
+        "Anti-Harassment Hotline",
+        "Managers and Supervisors"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "The Company"
+      ],
+      [
+        "Armed Forces of the United States",
+        "Employees"
+      ],
+      [
+        "Employee",
+        "Labor Commissioner"
+      ],
+      [
+        "Assigned Inventions",
+        "Proprietary Rights"
+      ],
+      [
+        "Insperity",
+        "New York State Division of Human Rights"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Federal Family and Medical Leave Act"
+      ],
+      [
+        "Family and Medical Leave Act",
+        "United States Armed Forces"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "NJFLA"
+      ],
+      [
+        "Company",
+        "FMLA"
+      ],
+      [
+        "MPPLA Eligible Employees",
+        "United States Armed Forces"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "National Labor Relations Act"
+      ],
+      [
+        "Employee",
+        "Harassment Complaints"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "San Francisco Lactation in the Workplace Ordinance"
+      ],
+      [
+        "Employees",
+        "Healthcare Professional"
+      ],
+      [
+        "Employee",
+        "Leave of Absence"
+      ],
+      [
+        "Employee",
+        "Servicemember"
+      ],
+      [
+        "District Attorney",
+        "Employees"
+      ],
+      [
+        "Employee",
+        "Federal Family and Medical Leave Act"
+      ],
+      [
+        "Company",
+        "Supporting Documentation"
+      ],
+      [
+        "Employee",
+        "NJFLA"
+      ],
+      [
+        "Qualified Member",
+        "United States Armed Forces"
+      ],
+      [
+        "Accommodation Request",
+        "Employee"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Military Leave"
+      ],
+      [
+        "Medical Certification",
+        "Pregnancy"
+      ],
+      [
+        "Employee's Supervisor",
+        "Expert Witness"
+      ],
+      [
+        "Eligibility",
+        "Organ Donation Leave"
+      ],
+      [
+        "Discrimination",
+        "Harassment"
+      ],
+      [
+        "Health Care Provider",
+        "Medical Certifications"
+      ],
+      [
+        "Champ Titles",
+        "FMLA Leave"
+      ],
+      [
+        "Assigned Inventions",
+        "Employee"
+      ],
+      [
+        "Pregnancy Disability Leave",
+        "Reproductive Loss Leave"
+      ],
+      [
+        "Employee",
+        "Legal Guardians"
+      ],
+      [
+        "Employee",
+        "Qualifying Exigency"
+      ],
+      [
+        "Employees",
+        "New York State"
+      ],
+      [
+        "Domestic Violence",
+        "Employee"
+      ],
+      [
+        "Americans with Disabilities Act",
+        "Champ Titles, Inc."
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Michigan"
+      ],
+      [
+        "Employee",
+        "Return to Work/Fitness for Duty Certifications"
+      ],
+      [
+        "30 Days' Notice",
+        "Employees"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "New York PFL"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Head of Human Resources"
+      ],
+      [
+        "California Family Rights Act",
+        "Champ Titles, Inc."
+      ],
+      [
+        "FMLA",
+        "Lactation Accommodation"
+      ],
+      [
+        "Employees",
+        "Paid Time Off"
+      ],
+      [
+        "Employees",
+        "PFL Discrimination Complaint (Form PFL-DC-120)"
+      ],
+      [
+        "Paid Prenatal Personal Leave",
+        "Supervisor"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Substance-Free Workplace Policy"
+      ],
+      [
+        "Employee",
+        "Third Certification"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Equal Employment Opportunity"
+      ],
+      [
+        "Armed Forces",
+        "Covered Veteran"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Workers Compensation Board"
+      ],
+      [
+        "Employees",
+        "Victim Services Organization"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Massachusetts"
+      ],
+      [
+        "Employee",
+        "Head of Human Resources"
+      ],
+      [
+        "Employees",
+        "IT Department"
+      ],
+      [
+        "California Paid Family Leave (PFL)",
+        "Employee's Supervisor"
+      ],
+      [
+        "Company",
+        "Victim's Services Organization"
+      ],
+      [
+        "Employment Verifications",
+        "Insperity"
+      ],
+      [
+        "Employee",
+        "Equal Employment Opportunity"
+      ],
+      [
+        "FMLA",
+        "NJFLA"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Proprietary Rights"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Insperity"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Witness Leave"
+      ],
+      [
+        "Bonding Certification",
+        "Employee"
+      ],
+      [
+        "Employee",
+        "Paid Family Leave Request"
+      ],
+      [
+        "Employees",
+        "Public Health Emergency"
+      ],
+      [
+        "Domestic Abuse or Harassment Leave",
+        "FMLA"
+      ],
+      [
+        "Governor",
+        "NJFLA Leave"
+      ],
+      [
+        "Covered Veterans",
+        "FMLA"
+      ],
+      [
+        "Court Order",
+        "Employee"
+      ],
+      [
+        "Company",
+        "Documentation"
+      ],
+      [
+        "Employee",
+        "Insperity"
+      ],
+      [
+        "Employees",
+        "Health Care Provider"
+      ],
+      [
+        "Employees",
+        "Supervisor"
+      ],
+      [
+        "Active Duty Orders",
+        "Covered Servicemember"
+      ],
+      [
+        "Company",
+        "Employee Handbook"
+      ],
+      [
+        "Employee",
+        "Workers' Compensation"
+      ],
+      [
+        "Employee",
+        "San Francisco Family Friendly Workplace Ordinance"
+      ],
+      [
+        "Childbirth",
+        "Pregnancy"
+      ],
+      [
+        "FMLA",
+        "Paid Prenatal Leave"
+      ],
+      [
+        "Employees",
+        "Insperity Premier"
+      ],
+      [
+        "Employee",
+        "Family Member"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Virginia Human Rights Act"
+      ],
+      [
+        "Employees of the Company",
+        "Insperity's Anonymous Reporting Hotline"
+      ],
+      [
+        "Champ Titles",
+        "Supervisors"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Employee"
+      ],
+      [
+        "Bereavement Leave",
+        "Company"
+      ],
+      [
+        "Anti-Harassment Hotline",
+        "Insperity"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Illinois"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Earned Sick Time"
+      ],
+      [
+        "Employee",
+        "Stalking"
+      ],
+      [
+        "Employee",
+        "Military Qualifying Event Certification"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Time Off for Crime Victims"
+      ],
+      [
+        "Company",
+        "Paid Family Leave"
+      ],
+      [
+        "At-Will Employment",
+        "Employee Handbook"
+      ],
+      [
+        "California Employment Development Department",
+        "Champ Titles, Inc."
+      ],
+      [
+        "Employee",
+        "Illinois Sexual Harassment and Discrimination Helpline"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Family Military Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Virginia Law"
+      ],
+      [
+        "Employees",
+        "Personnel File"
+      ],
+      [
+        "Anti-Harassment Hotline",
+        "Employee"
+      ],
+      [
+        "New York State Division of Human Rights",
+        "New York State Human Rights Law"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Controlled Substances"
+      ],
+      [
+        "Employees",
+        "Portable Communication Device Use While Driving"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Jury Duty"
+      ],
+      [
+        "Commissioner of Health",
+        "NJFLA Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Personal Communication Devices"
+      ],
+      [
+        "Company",
+        "Employees"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Domestic Violence"
+      ],
+      [
+        "Employees",
+        "Managers and Supervisors"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Reserve Peace Officers"
+      ],
+      [
+        "AI Tools",
+        "Company"
+      ],
+      [
+        "Employee",
+        "Harassment"
+      ],
+      [
+        "Company",
+        "Handbook"
+      ],
+      [
+        "Eligible Employees",
+        "Supervisors"
+      ],
+      [
+        "CFRA",
+        "FMLA"
+      ],
+      [
+        "Doctor's Note",
+        "Employees"
+      ],
+      [
+        "Employee",
+        "Second Opinion"
+      ],
+      [
+        "FMLA",
+        "Serious Health Condition"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "San Francisco"
+      ],
+      [
+        "Serious Injury or Illness",
+        "Servicemember"
+      ],
+      [
+        "California Family Rights Act",
+        "Eligible Employee"
+      ],
+      [
+        "Employees",
+        "Rest Breaks"
+      ],
+      [
+        "Employee",
+        "FMLA Leave"
+      ],
+      [
+        "Title VII of the 1964 Civil Rights Act",
+        "U.S. Equal Opportunity Commission"
+      ],
+      [
+        "Employee's Supervisor",
+        "Employees"
+      ],
+      [
+        "Americans with Disabilities Act",
+        "Insperity"
+      ],
+      [
+        "Chicago Office",
+        "Illinois Department of Human Rights"
+      ],
+      [
+        "FMLA",
+        "Serious Health Condition Definitions"
+      ],
+      [
+        "Employee",
+        "Onsite Supervisor"
+      ],
+      [
+        "Bystander Intervention Methods",
+        "Employee"
+      ],
+      [
+        "Paid Family Leave (PFL)",
+        "State of California"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Payroll Stubs"
+      ],
+      [
+        "Covered Servicemember",
+        "NJFLA"
+      ],
+      [
+        "Employees",
+        "Minnesota Statutes"
+      ],
+      [
+        "Employees",
+        "Judicial Proceeding"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Disciplinary Action"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Pregnancy Accommodations"
+      ],
+      [
+        "Human Rights Act",
+        "Illinois Department of Human Rights"
+      ],
+      [
+        "Disability",
+        "PDL"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Punctuality and Attendance Policy"
+      ],
+      [
+        "Company",
+        "Supervisor"
+      ],
+      [
+        "FMLA",
+        "Family Military Leave"
+      ],
+      [
+        "Domestic Violence Leave",
+        "Leaves of Absence"
+      ],
+      [
+        "The Company",
+        "Victims of Violent Crime"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "U.S. Citizens"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Complaint Procedure"
+      ],
+      [
+        "New York State Division of Human Rights",
+        "U.S. Equal Opportunity Commission"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Discrimination"
+      ],
+      [
+        "Employee",
+        "Personal and Company-Proved Portable Communication Devices"
+      ],
+      [
+        "Insperity",
+        "Internal Complaint Procedure"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Paid Prenatal Personal Leave"
+      ],
+      [
+        "FMLA",
+        "Military Family Leave Entitlement"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Insperity Contact Center"
+      ],
+      [
+        "Champ Titles",
+        "Paid Time Off"
+      ],
+      [
+        "Communicable Disease",
+        "Employee"
+      ],
+      [
+        "Employee Supervisor",
+        "Employees"
+      ],
+      [
+        "Division of Temporary Disability Insurance",
+        "Employee"
+      ],
+      [
+        "COBRA",
+        "Company"
+      ],
+      [
+        "Eligible Employees",
+        "Family and Medical Leave Act"
+      ],
+      [
+        "Civil Rights Department",
+        "Employees"
+      ],
+      [
+        "Employees",
+        "Workers' Compensation Insurance Policy"
+      ],
+      [
+        "Employee",
+        "New York City Commission on Human Rights"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Employee Assistance Program (EAP)"
+      ],
+      [
+        "Bone Marrow Donation",
+        "Employee"
+      ],
+      [
+        "Eligible Employee",
+        "Family and Medical Leave Act"
+      ],
+      [
+        "Harassment",
+        "Insperity"
+      ],
+      [
+        "EST",
+        "Employees"
+      ],
+      [
+        "Employee",
+        "NJFLA Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Human Resources Department"
+      ],
+      [
+        "Employees",
+        "Management"
+      ],
+      [
+        "Employees",
+        "Insperity"
+      ],
+      [
+        "Company",
+        "ESST"
+      ],
+      [
+        "Company",
+        "Key Employees"
+      ],
+      [
+        "FMLA",
+        "Key Employees"
+      ],
+      [
+        "Employees",
+        "U.S. Equal Employment Opportunity Commission"
+      ],
+      [
+        "Covered Servicemember",
+        "Spouse"
+      ],
+      [
+        "Covered Servicemember",
+        "Injured Servicemember Leave"
+      ],
+      [
+        "Employee",
+        "Human Trafficking"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "General Standards of Conduct"
+      ],
+      [
+        "Employee",
+        "Military Member"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Sick Days Policy"
+      ],
+      [
+        "Reproductive Loss Event",
+        "Reproductive Loss Leave"
+      ],
+      [
+        "FMLA Leave",
+        "Military Member"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "New York Law"
+      ],
+      [
+        "Armed Forces",
+        "Covered Servicemember"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Company Policy"
+      ],
+      [
+        "Company",
+        "NJFLA"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Employee's Supervisor"
+      ],
+      [
+        "Employment Agreement",
+        "Insperity"
+      ],
+      [
+        "Earned Sick and Safe Time (ESST)",
+        "Public Emergency"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Volunteer Firefighters"
+      ],
+      [
+        "Company",
+        "Illinois Victims' Economic Security and Safety Act"
+      ],
+      [
+        "FMLA Eligible Employees",
+        "Family and Medical Leave Act"
+      ],
+      [
+        "Employee",
+        "Illinois Department of Human Rights"
+      ],
+      [
+        "Employees of the Company",
+        "Leave of Absence"
+      ],
+      [
+        "Company",
+        "FMLA/NJFLA"
+      ],
+      [
+        "California Addendum",
+        "San Francisco Lactation Breaks"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Reproductive Health Decision-Making"
+      ],
+      [
+        "Employee",
+        "Public Health Authority"
+      ],
+      [
+        "Employee",
+        "Employee Activities"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "employees"
+      ],
+      [
+        "Employee Handbook",
+        "President"
+      ],
+      [
+        "Equal Employment Opportunity",
+        "Insperity"
+      ],
+      [
+        "Bone Marrow Donation Leave",
+        "Paid Time Off"
+      ],
+      [
+        "Employees",
+        "Group Health Plan Coverage"
+      ],
+      [
+        "Covered Servicemember",
+        "FMLA Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "City and County of San Francisco"
+      ],
+      [
+        "Employee",
+        "MPPLA"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "New York State"
+      ],
+      [
+        "Insperity",
+        "Insperity Anti-Harassment Hotline"
+      ],
+      [
+        "Employee",
+        "Military Events"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Pregnancy Disability Leave"
+      ],
+      [
+        "Company",
+        "Head of Human Resources"
+      ],
+      [
+        "Bereavement Leave",
+        "Employees"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Lactation Accommodations"
+      ],
+      [
+        "Employees",
+        "Medical Recertifications"
+      ],
+      [
+        "Employee",
+        "PFL Program"
+      ],
+      [
+        "FMLA",
+        "United States Department of Labor"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Civil Air Patrol"
+      ],
+      [
+        "Employees",
+        "U.S. Department of Labor"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Philadelphia"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Domestic Abuse or Harassment Leave"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "Social Security Number Privacy Act"
+      ],
+      [
+        "Employees",
+        "Return to Work Release"
+      ],
+      [
+        "Company",
+        "Insperity"
+      ],
+      [
+        "Champ Titles, Inc.",
+        "South Carolina Lactation Support Act"
+      ],
+      [
+        "Crime Victims Leave",
+        "Leaves of Absence"
+      ],
+      [
+        "Employee",
+        "Sick Leave Policy"
+      ]
+    ],
+    "count": 400,
+    "create_time": 1768447399,
+    "update_time": 1768447399,
+    "_id": "doc-c6de8b92b7490b506515adcbe8d1c2cb"
   }
 }

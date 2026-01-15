@@ -2321,3 +2321,906 @@
 2026-01-14 00:27:56,101 - lightrag - INFO - [] Graph truncated: found 105 nodes within max_depth 3
 2026-01-14 00:27:56,104 - lightrag - INFO - [] Subgraph query successful | Node count: 105 | Edge count: 135
 2026-01-14 00:27:56,114 - uvicorn.access - INFO - 127.0.0.1:56677 - "GET /graphs?label=Sarah&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 19:08:26,567 - uvicorn.access - INFO - 127.0.0.1:60048 - "GET /webui/assets/index-CTrjqxpw.js HTTP/1.1" 304
+2026-01-14 19:08:26,568 - uvicorn.access - INFO - 127.0.0.1:60049 - "GET /webui/assets/index-CILdtbjz.css HTTP/1.1" 304
+2026-01-14 19:08:26,784 - uvicorn.access - INFO - 127.0.0.1:60049 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-14 19:08:26,892 - uvicorn.access - INFO - 127.0.0.1:60049 - "GET /docs HTTP/1.1" 200
+2026-01-14 19:08:26,898 - lightrag - INFO - Token auto-renewed for user guest (role: guest, remaining: 15613s)
+2026-01-14 19:08:26,902 - lightrag - INFO - [] Graph truncated: found 105 nodes within max_depth 3
+2026-01-14 19:08:26,909 - lightrag - INFO - [] Subgraph query successful | Node count: 105 | Edge count: 135
+2026-01-14 19:08:26,920 - uvicorn.access - INFO - 127.0.0.1:60049 - "GET /graphs?label=Sarah&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 19:08:26,922 - uvicorn.access - INFO - 127.0.0.1:60048 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 304
+2026-01-14 19:08:26,922 - uvicorn.access - INFO - 127.0.0.1:60051 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 304
+2026-01-14 19:08:26,980 - uvicorn.access - INFO - 127.0.0.1:60051 - "GET /openapi.json HTTP/1.1" 200
+2026-01-14 21:51:02,886 - lightrag - INFO - Entity Edit: `Hyland Software` will be merged into `Hyland`
+2026-01-14 21:51:02,890 - lightrag - INFO - Entity Merge: Updated target 'Hyland'
+2026-01-14 21:51:02,891 - lightrag - INFO - Entity Merge: updatign 9 relations
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Tyler Conn`
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Abby`
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Product Architect`
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Credentialing Product`
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Knowledge Discovery Offering`
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Customers`
+2026-01-14 21:51:02,892 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`AI Initiative`
+2026-01-14 21:51:02,893 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Product Manager`
+2026-01-14 21:51:02,893 - lightrag - INFO - Entity Merge: updating relation `Hyland`~`Unified Data Model`
+2026-01-14 21:51:02,893 - lightrag - INFO - Entity Merge: 9 relation chunk tracking records updated
+2026-01-14 21:51:10,878 - lightrag - INFO - Entity Merge: 9 relations in vdb updated
+2026-01-14 21:51:11,134 - lightrag - INFO - Entity Merge: updating vdb `Hyland`
+2026-01-14 21:51:11,135 - lightrag - INFO - Entity Merge: find 2 chunks related to 'Hyland'
+2026-01-14 21:51:11,135 - lightrag - INFO - Entity Merge: deleting 'Hyland Software' from KG and vdb
+2026-01-14 21:51:11,189 - lightrag - INFO - [] Writing graph with 386 nodes, 309 edges
+2026-01-14 21:51:11,205 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Hyland'
+2026-01-14 21:51:11,205 - uvicorn.access - INFO - 127.0.0.1:60710 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 21:51:13,475 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-14 21:51:13,488 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 132
+2026-01-14 21:51:13,495 - uvicorn.access - INFO - 127.0.0.1:60710 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 21:51:36,047 - uvicorn.access - INFO - 127.0.0.1:60743 - "GET /webui/assets/index-BZqQWGoj.js HTTP/1.1" 304
+2026-01-14 21:51:37,447 - lightrag - INFO -  == LLM cache == saving: global:keywords:90bb3cd36dbd85ca307267ca6306535f
+2026-01-14 21:51:37,705 - lightrag - INFO - Query edges: Salary range, Product architect (top_k:40, cosine:0.2)
+2026-01-14 21:51:37,944 - lightrag - INFO - Global query: 41 entites, 40 relations
+2026-01-14 21:51:37,945 - lightrag - INFO - Raw search results: 41 entities, 40 relations, 0 vector chunks
+2026-01-14 21:51:37,952 - lightrag - INFO - After truncation: 41 entities, 40 relations
+2026-01-14 21:51:37,961 - lightrag - INFO - Selecting 29 from 29 entity-related chunks by vector similarity
+2026-01-14 21:51:37,962 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 21:51:37,962 - lightrag - INFO - Round-robin merged chunks: 29 -> 29 (deduplicated 0)
+2026-01-14 21:51:37,966 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 21:51:37,979 - lightrag - INFO - Final context: 41 entities, 40 relations, 20 chunks
+2026-01-14 21:51:37,979 - lightrag - INFO - Final chunks S+F/O: E9/1 E8/2 E6/3 E8/4 E6/5 E8/6 E4/7 E6/8 E8/9 E4/10 E4/11 E1/12 E1/13 E6/14 E4/15 E3/16 E4/17 E2/18 E1/19 E1/20
+2026-01-14 21:51:39,558 - uvicorn.access - INFO - 127.0.0.1:60741 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 21:51:39,744 - uvicorn.access - INFO - 127.0.0.1:60750 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 304
+2026-01-14 21:51:39,745 - uvicorn.access - INFO - 127.0.0.1:60751 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 304
+2026-01-14 22:15:21,389 - uvicorn.access - INFO - 127.0.0.1:61794 - "POST /documents/upload HTTP/1.1" 200
+2026-01-14 22:15:21,473 - lightrag - ERROR - File processing error: - ID: error-badb84ee9b1ba9434b10cb95ee1571fc 43250-testpeo_All.pdf
+2026-01-14 22:15:21,473 - lightrag - ERROR - [File Extraction]Error processing PDF 43250-testpeo_All.pdf: PDF is encrypted but no password provided
+2026-01-14 22:16:22,402 - uvicorn.access - INFO - 127.0.0.1:61818 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-14 22:16:22,403 - lightrag - INFO - Deleting document 1/1: error-badb84ee9b1ba9434b10cb95ee1571fc
+2026-01-14 22:16:22,404 - lightrag - INFO - Starting deletion process for document error-badb84ee9b1ba9434b10cb95ee1571fc
+2026-01-14 22:16:22,404 - lightrag - INFO - Deleting error-badb84ee9b1ba9434b10cb95ee1571fc 43250-testpeo_All.pdf(previous status: FAILED)
+2026-01-14 22:16:22,404 - lightrag - WARNING - No chunks found for document error-badb84ee9b1ba9434b10cb95ee1571fc
+2026-01-14 22:16:22,404 - lightrag - INFO - Document deleted without associated chunks: error-badb84ee9b1ba9434b10cb95ee1571fc
+2026-01-14 22:16:22,457 - lightrag - INFO - [] Writing graph with 386 nodes, 309 edges
+2026-01-14 22:16:22,469 - lightrag - INFO - In memory DB persist to disk
+2026-01-14 22:16:22,469 - lightrag - INFO - Document deleted 1/1: error-badb84ee9b1ba9434b10cb95ee1571fc[43250-testpeo_All.pdf]
+2026-01-14 22:16:22,469 - lightrag - INFO - Successfully deleted input_dir file: 43250-testpeo_All.pdf
+2026-01-14 22:16:50,099 - uvicorn.access - INFO - 127.0.0.1:61824 - "POST /documents/scan HTTP/1.1" 200
+2026-01-14 22:16:50,104 - lightrag - INFO - Found 1 files to index.
+2026-01-14 22:16:50,715 - lightrag - INFO - Successfully extracted and enqueued file: handbook.pdf
+2026-01-14 22:16:50,716 - lightrag - INFO - Processing 1 document(s)
+2026-01-14 22:16:50,716 - lightrag - INFO - Extracting stage 1/1: handbook.pdf
+2026-01-14 22:16:50,716 - lightrag - INFO - Processing d-id: doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-14 22:17:01,600 - lightrag - INFO -  == LLM cache == saving: default:extract:a3ddce6008d62875154fcb592a420c36
+2026-01-14 22:17:03,172 - lightrag - INFO -  == LLM cache == saving: default:extract:fd8a8e22c45b5849f73ba69f30f3eb6e
+2026-01-14 22:17:05,164 - lightrag - INFO -  == LLM cache == saving: default:extract:bdc0fcb8acee6403af65065ee5dfeb60
+2026-01-14 22:17:06,840 - lightrag - INFO -  == LLM cache == saving: default:extract:e10aef99afef97ea62a03d64bf63181d
+2026-01-14 22:17:06,841 - lightrag - INFO - Chunk 1 of 68 extracted 7 Ent + 5 Rel chunk-d30f53e3f00aa5f692211114e3336f26
+2026-01-14 22:17:11,447 - lightrag - INFO -  == LLM cache == saving: default:extract:e51c2d6bc6c87899bb39c729b3be4c10
+2026-01-14 22:17:11,448 - lightrag - INFO - Chunk 2 of 68 extracted 10 Ent + 8 Rel chunk-00ce9af4372211a438b173430b8d138b
+2026-01-14 22:17:14,089 - lightrag - INFO -  == LLM cache == saving: default:extract:497861f6ecd2cd4d421713ec54e7f837
+2026-01-14 22:17:14,091 - lightrag - INFO - Chunk 3 of 68 extracted 10 Ent + 8 Rel chunk-b2e167d48632d6812960476458695585
+2026-01-14 22:17:18,810 - lightrag - INFO -  == LLM cache == saving: default:extract:c8cc62c4e948953f693dbcd42dce6580
+2026-01-14 22:17:19,759 - lightrag - INFO -  == LLM cache == saving: default:extract:e2e1684c8685ba57c31de2d7497990f5
+2026-01-14 22:17:22,430 - lightrag - INFO -  == LLM cache == saving: default:extract:0422508abb72979d7d13617a05fd135c
+2026-01-14 22:17:23,952 - lightrag - INFO -  == LLM cache == saving: default:extract:b0fb61f1310466a95fc8704e705867bb
+2026-01-14 22:17:23,953 - lightrag - INFO - Chunk 4 of 68 extracted 7 Ent + 6 Rel chunk-cc91be44254f665f20a152c62ea0ea46
+2026-01-14 22:17:24,479 - lightrag - INFO -  == LLM cache == saving: default:extract:c1a8e78549e2cabee4fd1ad70be8c83e
+2026-01-14 22:17:24,480 - lightrag - INFO - Chunk 5 of 68 extracted 10 Ent + 8 Rel chunk-7f83efce647a34bf89a720dd97b651a0
+2026-01-14 22:17:24,552 - lightrag - INFO -  == LLM cache == saving: default:extract:f79ba4bf9629f41ff551bfbc66269c34
+2026-01-14 22:17:28,476 - lightrag - INFO -  == LLM cache == saving: default:extract:948e68a38c135179a5e399fe9c8b86db
+2026-01-14 22:17:28,477 - lightrag - INFO - Chunk 6 of 68 extracted 7 Ent + 7 Rel chunk-13d0dff12cbd3a693c04233dc4ae6b98
+2026-01-14 22:17:28,581 - lightrag - INFO -  == LLM cache == saving: default:extract:f22cbe756a275e4b5b1f272d451aee1e
+2026-01-14 22:17:28,582 - lightrag - INFO - Chunk 7 of 68 extracted 34 Ent + 8 Rel chunk-4620d2a61b287ff40579cfc76bb78659
+2026-01-14 22:17:32,344 - lightrag - INFO -  == LLM cache == saving: default:extract:572dff45394f651474e4d6a88b5ab101
+2026-01-14 22:17:33,687 - lightrag - INFO -  == LLM cache == saving: default:extract:16aa89d0ab9a447fcaccabe0a0765cd0
+2026-01-14 22:17:36,684 - lightrag - INFO -  == LLM cache == saving: default:extract:75b12363e54281b1066a3d05b60a43a2
+2026-01-14 22:17:36,685 - lightrag - INFO - Chunk 8 of 68 extracted 7 Ent + 6 Rel chunk-2ac382de31d6768a58041b92c0a65721
+2026-01-14 22:17:37,458 - lightrag - INFO -  == LLM cache == saving: default:extract:b607a34571a9856d147b6e87e4a3056d
+2026-01-14 22:17:37,459 - lightrag - INFO - Chunk 9 of 68 extracted 7 Ent + 6 Rel chunk-009478b38c0b6c52ca70be6eb0cb52b0
+2026-01-14 22:17:41,245 - lightrag - INFO -  == LLM cache == saving: default:extract:7d4b9087cea32c5b8cc8cc7f6dfe7e9b
+2026-01-14 22:17:41,438 - lightrag - INFO -  == LLM cache == saving: default:extract:445e5c454a0b78a6eb4887bc33a0adfe
+2026-01-14 22:17:44,115 - lightrag - INFO -  == LLM cache == saving: default:extract:2f053247c79f9ef74447e57b204b1d8e
+2026-01-14 22:17:44,116 - lightrag - INFO - Chunk 10 of 68 extracted 7 Ent + 6 Rel chunk-9093f520cbec4206785cd17284b8b873
+2026-01-14 22:17:45,344 - lightrag - INFO -  == LLM cache == saving: default:extract:9abc4f0c2be6376a61ac765a458b212f
+2026-01-14 22:17:45,345 - lightrag - INFO - Chunk 11 of 68 extracted 8 Ent + 7 Rel chunk-b51b34e2f00ce5ff0f8e8f5d737e7e90
+2026-01-14 22:17:51,452 - lightrag - INFO -  == LLM cache == saving: default:extract:888ab16363caae49fca7327195c21fcb
+2026-01-14 22:17:52,416 - lightrag - INFO -  == LLM cache == saving: default:extract:90e91a5e2dbe51ba05d3cad3ccedd79a
+2026-01-14 22:17:53,069 - lightrag - INFO -  == LLM cache == saving: default:extract:10983f81e6fb4548ed9be58aaf47c59b
+2026-01-14 22:17:54,259 - lightrag - INFO -  == LLM cache == saving: default:extract:1c877439cc96c5067d8632830d7d5637
+2026-01-14 22:17:55,087 - lightrag - INFO -  == LLM cache == saving: default:extract:e861442697b03540fb65e1eda4b4912e
+2026-01-14 22:17:55,088 - lightrag - INFO - Chunk 12 of 68 extracted 12 Ent + 10 Rel chunk-344458a7e182ee245cea1be08afcfb00
+2026-01-14 22:17:59,066 - lightrag - INFO -  == LLM cache == saving: default:extract:cfd8043ddeb41df788e1e6400b690ae2
+2026-01-14 22:17:59,067 - lightrag - INFO - Chunk 13 of 68 extracted 11 Ent + 7 Rel chunk-8971980922630e041a987f12f6cb8b0a
+2026-01-14 22:17:59,255 - lightrag - INFO -  == LLM cache == saving: default:extract:65b4a866185ac3627d4c2f638bc2acff
+2026-01-14 22:17:59,256 - lightrag - INFO - Chunk 14 of 68 extracted 8 Ent + 7 Rel chunk-193e0b5d60f4a15390b65d81d3aa9b03
+2026-01-14 22:18:00,192 - lightrag - INFO -  == LLM cache == saving: default:extract:96817eb928bb439c847e6d28fa469662
+2026-01-14 22:18:00,193 - lightrag - INFO - Chunk 15 of 68 extracted 14 Ent + 13 Rel chunk-76137b5ec616e665a3678676cb9d6758
+2026-01-14 22:18:05,313 - lightrag - INFO -  == LLM cache == saving: default:extract:3a893eb01e2fd2ffb2505769285d1bdf
+2026-01-14 22:18:09,613 - lightrag - INFO -  == LLM cache == saving: default:extract:08ddbc8496dc0a6754cc68eba5b2384f
+2026-01-14 22:18:10,374 - lightrag - INFO -  == LLM cache == saving: default:extract:6cc24353fa888f03235965821fc0dcda
+2026-01-14 22:18:10,398 - lightrag - INFO -  == LLM cache == saving: default:extract:7ff0968601011407fe2c6cc512ca5f6b
+2026-01-14 22:18:13,913 - lightrag - INFO -  == LLM cache == saving: default:extract:b70aaf1dce8e72ba2c0b88715f3c20c0
+2026-01-14 22:18:13,915 - lightrag - INFO - Chunk 16 of 68 extracted 11 Ent + 9 Rel chunk-375fe3d27a7cab69420e30cb24c387bf
+2026-01-14 22:18:15,690 - lightrag - INFO -  == LLM cache == saving: default:extract:63e6a0badc33f5726bf3e139d3fb5f48
+2026-01-14 22:18:15,691 - lightrag - INFO - Chunk 17 of 68 extracted 11 Ent + 7 Rel chunk-eeec577dfdc0cdd905ed5978bf979b36
+2026-01-14 22:18:16,472 - lightrag - INFO -  == LLM cache == saving: default:extract:701760a3b60a2cca75a2dada508f60c9
+2026-01-14 22:18:16,474 - lightrag - INFO - Chunk 18 of 68 extracted 10 Ent + 8 Rel chunk-7b736e7925101066fbe53d94775beda0
+2026-01-14 22:18:16,602 - lightrag - INFO -  == LLM cache == saving: default:extract:9eb144deff1536c3f7c14b259c7b9997
+2026-01-14 22:18:16,604 - lightrag - INFO - Chunk 19 of 68 extracted 10 Ent + 8 Rel chunk-8bcd25270d011130b3be01fa28646f5d
+2026-01-14 22:18:25,994 - lightrag - INFO -  == LLM cache == saving: default:extract:5a0b4acea3f4d56f2b679d475ac6101a
+2026-01-14 22:18:27,903 - lightrag - INFO -  == LLM cache == saving: default:extract:a4324467fe5ff9b82c05ee897afea345
+2026-01-14 22:18:29,109 - lightrag - INFO -  == LLM cache == saving: default:extract:bb3de25a06fc7f74995266461142df62
+2026-01-14 22:18:29,110 - lightrag - INFO -  == LLM cache == saving: default:extract:a6a77e118b5287feaa8c48e64562779b
+2026-01-14 22:18:32,623 - lightrag - INFO -  == LLM cache == saving: default:extract:f57ae51b1d76d4a920dc4287800cc086
+2026-01-14 22:18:32,625 - lightrag - INFO - Chunk 20 of 68 extracted 9 Ent + 8 Rel chunk-6221515fb078572b4a20e35a419d85ca
+2026-01-14 22:18:32,990 - lightrag - INFO -  == LLM cache == saving: default:extract:c434dcc65c24648faf092856f757cd52
+2026-01-14 22:18:32,991 - lightrag - INFO - Chunk 21 of 68 extracted 9 Ent + 7 Rel chunk-2ff652f98a4945762d29e50664d26649
+2026-01-14 22:18:34,208 - lightrag - INFO -  == LLM cache == saving: default:extract:fc675c7963db8f7fe53e3259f8041234
+2026-01-14 22:18:34,210 - lightrag - INFO - Chunk 22 of 68 extracted 10 Ent + 9 Rel chunk-99802b3dfe0a4eeaa033a2e5eeacb881
+2026-01-14 22:18:37,568 - lightrag - INFO -  == LLM cache == saving: default:extract:a34742c026c89d4529c876570179ce43
+2026-01-14 22:18:37,569 - lightrag - INFO - Chunk 23 of 68 extracted 11 Ent + 10 Rel chunk-6951764c45b952aabed8556330638a02
+2026-01-14 22:18:41,767 - lightrag - INFO -  == LLM cache == saving: default:extract:e6a6c29d37a749e272469271c21a527f
+2026-01-14 22:18:43,609 - lightrag - INFO -  == LLM cache == saving: default:extract:e43ad99b7cb7228ad707e342c7f72077
+2026-01-14 22:18:46,840 - lightrag - INFO -  == LLM cache == saving: default:extract:2bd5fcd0a8612a37d1f85b93004c0d7e
+2026-01-14 22:18:47,007 - lightrag - INFO -  == LLM cache == saving: default:extract:8fed2142c55210af2e82e6534c3d2f57
+2026-01-14 22:18:47,009 - lightrag - INFO - Chunk 24 of 68 extracted 6 Ent + 6 Rel chunk-38a5d56b2874186cef9eeacc63f84c23
+2026-01-14 22:18:47,137 - lightrag - INFO -  == LLM cache == saving: default:extract:f6753f9fa9b10e296c4bfc90db1a4f20
+2026-01-14 22:18:47,139 - lightrag - INFO - Chunk 25 of 68 extracted 9 Ent + 6 Rel chunk-e65ad401474f0f4b8c8c14ff6bdf3c3e
+2026-01-14 22:18:49,855 - lightrag - INFO -  == LLM cache == saving: default:extract:25e86e5607d4995684e9d2fb68bfe0b1
+2026-01-14 22:18:52,517 - lightrag - INFO -  == LLM cache == saving: default:extract:d020bf1c9e1aa77839018370b75f50bb
+2026-01-14 22:18:52,519 - lightrag - INFO - Chunk 26 of 68 extracted 10 Ent + 8 Rel chunk-a1b7af350b94e45d9720d66e397c9cb3
+2026-01-14 22:18:54,827 - lightrag - INFO -  == LLM cache == saving: default:extract:c40010cbf6dacc9d5db764e85ce5f767
+2026-01-14 22:18:54,829 - lightrag - INFO - Chunk 27 of 68 extracted 11 Ent + 7 Rel chunk-15b10353444ba911d624f18daaa920ab
+2026-01-14 22:18:57,431 - lightrag - INFO -  == LLM cache == saving: default:extract:818550fa530ceb40aaf7c48099d77c4f
+2026-01-14 22:19:00,879 - lightrag - INFO -  == LLM cache == saving: default:extract:0272fc08b2a0108cf61de5c9ac0eb9b3
+2026-01-14 22:19:01,630 - lightrag - INFO -  == LLM cache == saving: default:extract:1f88fec146a4ac84c6d981578ddf2238
+2026-01-14 22:19:03,579 - lightrag - INFO -  == LLM cache == saving: default:extract:82b1f13bfbeb924b7ee4b5a4b9dd0329
+2026-01-14 22:19:03,580 - lightrag - INFO - Chunk 28 of 68 extracted 10 Ent + 8 Rel chunk-180bda5a319ac38863d7482736998fce
+2026-01-14 22:19:04,825 - lightrag - INFO -  == LLM cache == saving: default:extract:5d5d4465e4cb8679b9eed2b19ea3a671
+2026-01-14 22:19:06,344 - lightrag - INFO -  == LLM cache == saving: default:extract:42769879e450722159e1cc43b1ea74a8
+2026-01-14 22:19:06,346 - lightrag - INFO - Chunk 29 of 68 extracted 10 Ent + 9 Rel chunk-ce6e9f9b85bce5790702e9868e331245
+2026-01-14 22:19:08,362 - lightrag - INFO -  == LLM cache == saving: default:extract:c0fc53448940bc14d586ac0e163b1487
+2026-01-14 22:19:08,363 - lightrag - INFO - Chunk 30 of 68 extracted 6 Ent + 7 Rel chunk-3b54c7ade94d99acfa4d3881d085b364
+2026-01-14 22:19:09,308 - lightrag - INFO -  == LLM cache == saving: default:extract:8bf68ae6a8cea04187366a5136790e25
+2026-01-14 22:19:09,309 - lightrag - INFO - Chunk 31 of 68 extracted 9 Ent + 7 Rel chunk-c5773df7648b6cd4b6126bb1b7b1bb7b
+2026-01-14 22:19:16,991 - lightrag - INFO -  == LLM cache == saving: default:extract:87057c9b9b6266aa9bd39cd1254cbb4a
+2026-01-14 22:19:18,775 - lightrag - INFO -  == LLM cache == saving: default:extract:77bb66317e477d1ee78bd9863b82423b
+2026-01-14 22:19:20,985 - lightrag - INFO -  == LLM cache == saving: default:extract:179edf6d4f418134e9719ece6695edcd
+2026-01-14 22:19:21,393 - lightrag - INFO -  == LLM cache == saving: default:extract:b78b5e5b9fc48c41d7cc55680f0d2ecb
+2026-01-14 22:19:21,394 - lightrag - INFO - Chunk 32 of 68 extracted 9 Ent + 5 Rel chunk-48d3df91ddbd77098bb52a9fb3188709
+2026-01-14 22:19:22,418 - lightrag - INFO -  == LLM cache == saving: default:extract:35bf6df53c20273f5c0e987b15c0f03b
+2026-01-14 22:19:22,419 - lightrag - INFO - Chunk 33 of 68 extracted 9 Ent + 4 Rel chunk-4dd132cd43d36fe8635d4874b626e468
+2026-01-14 22:19:25,696 - lightrag - INFO -  == LLM cache == saving: default:extract:553b6d94ae29fa4a652e4011226dc374
+2026-01-14 22:19:26,121 - lightrag - INFO -  == LLM cache == saving: default:extract:92db6dc98078024c8c2cb4d966571096
+2026-01-14 22:19:26,122 - lightrag - INFO - Chunk 34 of 68 extracted 10 Ent + 7 Rel chunk-da6fd331c02b85ae4e8520eb9ce26af0
+2026-01-14 22:19:33,414 - lightrag - INFO -  == LLM cache == saving: default:extract:cd2e3f7e30c97dfa7c44397ec36ab08e
+2026-01-14 22:19:33,415 - lightrag - INFO - Chunk 35 of 68 extracted 13 Ent + 11 Rel chunk-2360a68e6ea55b2fc7721964dbf1ba59
+2026-01-14 22:19:33,835 - lightrag - INFO -  == LLM cache == saving: default:extract:23366b78895ddaa0e256a05b6e30b27e
+2026-01-14 22:19:36,050 - lightrag - INFO -  == LLM cache == saving: default:extract:f4320b88943df2444e417afe27d786b3
+2026-01-14 22:19:36,551 - lightrag - INFO -  == LLM cache == saving: default:extract:0ec4807dd1d31062910e9ed3c79abc97
+2026-01-14 22:19:36,552 - lightrag - INFO - Chunk 36 of 68 extracted 8 Ent + 6 Rel chunk-a9ab2a3160acf77ee245bea355db4e0e
+2026-01-14 22:19:40,038 - lightrag - INFO -  == LLM cache == saving: default:extract:214f933284bf6f02e2c007b957cd4d5b
+2026-01-14 22:19:41,361 - lightrag - INFO -  == LLM cache == saving: default:extract:704f835b81ec90945f63a413e4a9f2cd
+2026-01-14 22:19:41,362 - lightrag - INFO - Chunk 37 of 68 extracted 8 Ent + 8 Rel chunk-912918e089aa9692f4cd02f9ee38e318
+2026-01-14 22:19:42,030 - lightrag - INFO -  == LLM cache == saving: default:extract:d38ad659db9eb749088773b8e443ec5e
+2026-01-14 22:19:42,695 - lightrag - INFO -  == LLM cache == saving: default:extract:93ffa948ae679195d793781446caa3f0
+2026-01-14 22:19:42,696 - lightrag - INFO - Chunk 38 of 68 extracted 11 Ent + 8 Rel chunk-a77eebd4fb8327f0d09234c02cdb6986
+2026-01-14 22:19:48,327 - lightrag - INFO -  == LLM cache == saving: default:extract:b4f51b6d28dc545371c53992a394517d
+2026-01-14 22:19:51,091 - lightrag - INFO -  == LLM cache == saving: default:extract:a6fad127b548eb7d442f5541ea7cdc08
+2026-01-14 22:19:51,093 - lightrag - INFO - Chunk 39 of 68 extracted 10 Ent + 8 Rel chunk-c041fc97e2b536e2b6a405c13efb7224
+2026-01-14 22:19:53,638 - lightrag - INFO -  == LLM cache == saving: default:extract:1f62279a14b32259c3dc40a344df8c2b
+2026-01-14 22:19:54,468 - lightrag - INFO -  == LLM cache == saving: default:extract:48b17978dbeb3e2c59c979c6206fa725
+2026-01-14 22:19:54,469 - lightrag - INFO - Chunk 40 of 68 extracted 11 Ent + 8 Rel chunk-f6c6e04bb081d1a674e6467f22922cba
+2026-01-14 22:19:56,361 - lightrag - INFO -  == LLM cache == saving: default:extract:74e6eadc739a9dcb143a624af9af93e0
+2026-01-14 22:19:58,975 - lightrag - INFO -  == LLM cache == saving: default:extract:da48c5b3983b5d122f5922f6f9939b4b
+2026-01-14 22:19:58,976 - lightrag - INFO - Chunk 41 of 68 extracted 7 Ent + 8 Rel chunk-8ef7b183eba0f03dee6bcd66efd559be
+2026-01-14 22:20:02,661 - lightrag - INFO -  == LLM cache == saving: default:extract:44c30335f7159f3adcdd33e78482b406
+2026-01-14 22:20:02,663 - lightrag - INFO - Chunk 42 of 68 extracted 11 Ent + 9 Rel chunk-7fee48c41b851dc2d356bae805907e93
+2026-01-14 22:20:05,335 - lightrag - INFO -  == LLM cache == saving: default:extract:b3c556cf0376f29b2789e150672f622e
+2026-01-14 22:20:06,449 - lightrag - INFO -  == LLM cache == saving: default:extract:174d03c239e540446868c845b0c573ef
+2026-01-14 22:20:09,727 - lightrag - INFO -  == LLM cache == saving: default:extract:b33755be83f7498cc7962bafff34a8a7
+2026-01-14 22:20:09,729 - lightrag - INFO - Chunk 43 of 68 extracted 9 Ent + 7 Rel chunk-c704e3000453641fb03aae81be9607a1
+2026-01-14 22:20:11,673 - lightrag - INFO -  == LLM cache == saving: default:extract:f5715bcd51fa07ae57cbccfc2b86a004
+2026-01-14 22:20:11,674 - lightrag - INFO - Chunk 44 of 68 extracted 8 Ent + 7 Rel chunk-1f2412485a7ad85f870d04538fd79009
+2026-01-14 22:20:15,995 - lightrag - INFO -  == LLM cache == saving: default:extract:303f591d5695ea990b2f489004a7ec77
+2026-01-14 22:20:19,978 - lightrag - INFO -  == LLM cache == saving: default:extract:b04c05c9f5ba389dba236646a6eb404e
+2026-01-14 22:20:19,980 - lightrag - INFO - Chunk 45 of 68 extracted 9 Ent + 7 Rel chunk-f2e4135a13501192ef1fcb217d6312da
+2026-01-14 22:20:21,388 - lightrag - INFO -  == LLM cache == saving: default:extract:643f76b9aefa26aebe6861dbe558873c
+2026-01-14 22:20:22,213 - lightrag - INFO -  == LLM cache == saving: default:extract:d75c2a45b8e5e8b47b5dc932261497c1
+2026-01-14 22:20:22,398 - lightrag - INFO -  == LLM cache == saving: default:extract:37f658b9b50344a343ed193ae62f6bd1
+2026-01-14 22:20:25,832 - lightrag - INFO -  == LLM cache == saving: default:extract:3564092ff9723f529aeb7cb430ed7e6b
+2026-01-14 22:20:25,833 - lightrag - INFO - Chunk 46 of 68 extracted 8 Ent + 6 Rel chunk-4db020eeb5c4c5df020aeb0715c543bb
+2026-01-14 22:20:26,533 - lightrag - INFO -  == LLM cache == saving: default:extract:adf7e4f930dd7fbba39954dc7843d31a
+2026-01-14 22:20:26,535 - lightrag - INFO - Chunk 47 of 68 extracted 10 Ent + 7 Rel chunk-79330fc7fee2a2134ed15724dc792a47
+2026-01-14 22:20:27,032 - lightrag - INFO -  == LLM cache == saving: default:extract:5ef7a2fe7e5252255bdcfb3c78abf0ca
+2026-01-14 22:20:29,387 - lightrag - INFO -  == LLM cache == saving: default:extract:0a2bff58476a59e2b721014b13f98827
+2026-01-14 22:20:29,388 - lightrag - INFO - Chunk 48 of 68 extracted 12 Ent + 8 Rel chunk-91804308711e655de4bfb45f5ec3cc83
+2026-01-14 22:20:33,381 - lightrag - INFO -  == LLM cache == saving: default:extract:cfe241d5d642008f17b9a77af2d13ebb
+2026-01-14 22:20:33,382 - lightrag - INFO - Chunk 49 of 68 extracted 7 Ent + 7 Rel chunk-07b54556cb67580745213faf3b294197
+2026-01-14 22:20:37,687 - lightrag - INFO -  == LLM cache == saving: default:extract:467cb445a6b428b2cde11c8d0ae00070
+2026-01-14 22:20:39,629 - lightrag - INFO -  == LLM cache == saving: default:extract:414c138352b5a8f9b09c4f24f6e5fa0c
+2026-01-14 22:20:42,189 - lightrag - INFO -  == LLM cache == saving: default:extract:3a3edc04e6b3ba87072e86997e7d327a
+2026-01-14 22:20:42,190 - lightrag - INFO - Chunk 50 of 68 extracted 10 Ent + 6 Rel chunk-93e777246018e937b565d119207fea04
+2026-01-14 22:20:42,620 - lightrag - INFO -  == LLM cache == saving: default:extract:15bcbb1b22f2e5dc930a50385d3699a3
+2026-01-14 22:20:43,111 - lightrag - INFO -  == LLM cache == saving: default:extract:f8f56dca5ba2eb93b841d7587fa12301
+2026-01-14 22:20:43,113 - lightrag - INFO - Chunk 51 of 68 extracted 11 Ent + 7 Rel chunk-b0cc2ddf7c9a3b455972ace846c966cd
+2026-01-14 22:20:44,869 - lightrag - INFO -  == LLM cache == saving: default:extract:8de4c97f67bbc86f6d2162ab753b5211
+2026-01-14 22:20:44,870 - lightrag - INFO - Chunk 52 of 68 extracted 9 Ent + 6 Rel chunk-ab876d3239f6acee44c3359e6004545c
+2026-01-14 22:20:48,947 - lightrag - INFO -  == LLM cache == saving: default:extract:039022d27f12f3d99c5033041823d125
+2026-01-14 22:20:51,916 - lightrag - INFO -  == LLM cache == saving: default:extract:897810d32064f25561a2fb095b87089e
+2026-01-14 22:20:51,917 - lightrag - INFO - Chunk 53 of 68 extracted 11 Ent + 7 Rel chunk-85996ed8980a811c608464599f5af5e0
+2026-01-14 22:20:54,476 - lightrag - INFO -  == LLM cache == saving: default:extract:5d373aef72e36054b9cc529418bc86a4
+2026-01-14 22:20:55,091 - lightrag - INFO -  == LLM cache == saving: default:extract:972ae8835cdc82930cc393ed2a4505e5
+2026-01-14 22:20:57,241 - lightrag - INFO -  == LLM cache == saving: default:extract:4e2276bfb65fcb9ba2317dafb72d6762
+2026-01-14 22:20:59,289 - lightrag - INFO -  == LLM cache == saving: default:extract:564aa7898429c62b1b6376bf707f936d
+2026-01-14 22:20:59,290 - lightrag - INFO - Chunk 54 of 68 extracted 8 Ent + 7 Rel chunk-877843c9939ab2e479a78e7e82931e60
+2026-01-14 22:21:00,414 - lightrag - INFO -  == LLM cache == saving: default:extract:713b1724f604c6c7ffc4cc03447b0234
+2026-01-14 22:21:02,567 - lightrag - INFO -  == LLM cache == saving: default:extract:664f59970cb9b03017f548c57049715f
+2026-01-14 22:21:02,569 - lightrag - INFO - Chunk 55 of 68 extracted 11 Ent + 9 Rel chunk-1b3b7e5fe4d5967c5851c385cf3f34ac
+2026-01-14 22:21:03,384 - lightrag - INFO -  == LLM cache == saving: default:extract:f8e899e06ae0676c7bd26fdfd5bd15ba
+2026-01-14 22:21:03,385 - lightrag - INFO - Chunk 56 of 68 extracted 9 Ent + 7 Rel chunk-acf9fedace0c6356d6595f7f337182be
+2026-01-14 22:21:07,480 - lightrag - INFO -  == LLM cache == saving: default:extract:6116708ea47b93b9e110e2ac3394ca69
+2026-01-14 22:21:07,485 - lightrag - INFO - Chunk 57 of 68 extracted 9 Ent + 8 Rel chunk-2d62594479b2eb2f0c4fab281c4c54be
+2026-01-14 22:21:14,021 - lightrag - INFO -  == LLM cache == saving: default:extract:b62ffb4ed7c472a4ce528c6525eaa964
+2026-01-14 22:21:16,000 - lightrag - INFO -  == LLM cache == saving: default:extract:af516a7dc4f908b28ad157ff9de341c8
+2026-01-14 22:21:17,514 - lightrag - INFO -  == LLM cache == saving: default:extract:e8ed3dd57614e484c4619c25e05cfc9f
+2026-01-14 22:21:17,517 - lightrag - INFO - Chunk 58 of 68 extracted 9 Ent + 9 Rel chunk-63f21dc26331ab36d25503e3c9b73c75
+2026-01-14 22:21:20,691 - lightrag - INFO -  == LLM cache == saving: default:extract:f08d6803ae4530eebc931b02ae0fc058
+2026-01-14 22:21:21,612 - lightrag - INFO -  == LLM cache == saving: default:extract:1475e7209038f6684ba87189a8f5986f
+2026-01-14 22:21:23,249 - lightrag - INFO -  == LLM cache == saving: default:extract:6df1e58e65ec0001aecd7d7e6a7cf090
+2026-01-14 22:21:23,250 - lightrag - INFO - Chunk 59 of 68 extracted 10 Ent + 8 Rel chunk-d421fc21ff7502c646ade1c575ad95c2
+2026-01-14 22:21:24,081 - lightrag - INFO -  == LLM cache == saving: default:extract:980a5658de44bbc0aeff08cd43751524
+2026-01-14 22:21:24,082 - lightrag - INFO - Chunk 60 of 68 extracted 10 Ent + 9 Rel chunk-aeae9c7626845133f67a1f48cfa6935a
+2026-01-14 22:21:24,788 - lightrag - INFO -  == LLM cache == saving: default:extract:0300ed4aa1ec6ba5f0b894fad0bf3096
+2026-01-14 22:21:24,789 - lightrag - INFO - Chunk 61 of 68 extracted 8 Ent + 6 Rel chunk-72075aac7aa69aaef2767f737d63b014
+2026-01-14 22:21:33,325 - lightrag - INFO -  == LLM cache == saving: default:extract:f706e4994238aeabe144da3fefe2f5f9
+2026-01-14 22:21:36,154 - lightrag - INFO -  == LLM cache == saving: default:extract:49fc5ef885b7dfe1c5601bc9196c4e6b
+2026-01-14 22:21:36,662 - lightrag - INFO -  == LLM cache == saving: default:extract:c5dc98e5d161ce6fd3ee1da9def2fcfc
+2026-01-14 22:21:37,896 - lightrag - INFO -  == LLM cache == saving: default:extract:68318e419792a4ea02555326a6fe63a4
+2026-01-14 22:21:40,640 - lightrag - INFO -  == LLM cache == saving: default:extract:d2a40cd349650b707e0cf8b950045120
+2026-01-14 22:21:40,642 - lightrag - INFO - Chunk 62 of 68 extracted 11 Ent + 10 Rel chunk-fa9389aa44dd781160d6a7cfb6282103
+2026-01-14 22:21:42,055 - lightrag - INFO -  == LLM cache == saving: default:extract:752a0e332fbd0f79f5168764a4669c7b
+2026-01-14 22:21:42,057 - lightrag - INFO - Chunk 63 of 68 extracted 9 Ent + 8 Rel chunk-52732767c52bf6087683389405034c5e
+2026-01-14 22:21:44,679 - lightrag - INFO -  == LLM cache == saving: default:extract:291cd0d532b40485b305b1d555f967ab
+2026-01-14 22:21:44,681 - lightrag - INFO - Chunk 64 of 68 extracted 10 Ent + 9 Rel chunk-92eb660122097d867447c27ffe766527
+2026-01-14 22:21:44,993 - lightrag - INFO -  == LLM cache == saving: default:extract:605b0ebf19c694bcec3cc24542570e17
+2026-01-14 22:21:44,995 - lightrag - INFO - Chunk 65 of 68 extracted 10 Ent + 9 Rel chunk-3eec85ebf6e7c5666f9e8425ddb233e4
+2026-01-14 22:21:51,624 - lightrag - INFO -  == LLM cache == saving: default:extract:3c160a6b0952e27cec1f418a07375b20
+2026-01-14 22:21:53,003 - lightrag - INFO -  == LLM cache == saving: default:extract:e5fc86b7e93ac9939ffade7e0a9cc358
+2026-01-14 22:21:53,672 - lightrag - INFO -  == LLM cache == saving: default:extract:44641f38fdae927542dbbae840c52c77
+2026-01-14 22:21:53,839 - lightrag - INFO -  == LLM cache == saving: default:extract:8e61b393a71277fb6f91cec0c4e6148b
+2026-01-14 22:21:53,840 - lightrag - INFO - Chunk 66 of 68 extracted 6 Ent + 6 Rel chunk-bdd8a528efb53e97f38d569761730101
+2026-01-14 22:21:56,144 - lightrag - INFO -  == LLM cache == saving: default:extract:2406d6a951c2b96ee9fbdbfaf778d279
+2026-01-14 22:21:56,145 - lightrag - INFO - Chunk 67 of 68 extracted 7 Ent + 5 Rel chunk-90cd73babdb4ba295cdf4035ad30fd49
+2026-01-14 22:21:57,901 - lightrag - INFO -  == LLM cache == saving: default:extract:52cbd988eadf0f2a0945395e010fc849
+2026-01-14 22:21:57,903 - lightrag - INFO - Chunk 68 of 68 extracted 11 Ent + 7 Rel chunk-6347536c67dc2a1813ed652353d15d30
+2026-01-14 22:21:57,904 - lightrag - INFO - Merging stage 1/1: handbook.pdf
+2026-01-14 22:21:57,905 - lightrag - INFO - Phase 1: Processing 351 entities from doc-c6de8b92b7490b506515adcbe8d1c2cb (async: 8)
+2026-01-14 22:21:58,251 - lightrag - INFO - Merged: `New Jersey` | 4+2
+2026-01-14 22:22:02,361 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-14 22:22:02,363 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 132
+2026-01-14 22:22:02,377 - uvicorn.access - INFO - 127.0.0.1:62310 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:22:02,488 - lightrag - INFO -  == LLM cache == saving: default:summary:f30988a5da4ef288bc789cdbf43d19db
+2026-01-14 22:22:02,489 - lightrag - INFO - LLMmrg: `Employees` | 0+17
+2026-01-14 22:22:02,837 - lightrag - INFO -  == LLM cache == saving: default:summary:bac80f8ade469e0c52fbfd1334ed6c59
+2026-01-14 22:22:02,838 - lightrag - INFO - LLMmrg: `Employee` | 0+22
+2026-01-14 22:22:03,717 - lightrag - INFO -  == LLM cache == saving: default:summary:dbc46d03d09751ea7f89467e32d97211
+2026-01-14 22:22:03,717 - lightrag - INFO - LLMmrg: `Insperity` | 2+24
+2026-01-14 22:22:04,613 - lightrag - INFO -  == LLM cache == saving: default:summary:f089b86a1ddf2c92a1061cc8e0b5683a
+2026-01-14 22:22:04,614 - lightrag - INFO - LLMmrg: `Champ Titles, Inc.` | 0+45
+2026-01-14 22:22:06,544 - lightrag - INFO -  == LLM cache == saving: default:summary:1c797ae3c16cb82a133fa67209187519
+2026-01-14 22:22:06,545 - lightrag - INFO - LLMmrg: `FMLA` | 0+17
+2026-01-14 22:22:06,747 - lightrag - INFO - Merged: `Massachusetts` | 1+1
+2026-01-14 22:22:06,803 - lightrag - INFO - Merged: `Illinois` | 5+1
+2026-01-14 22:22:07,569 - lightrag - INFO -  == LLM cache == saving: default:summary:f34441a900be9022bb6e5283f8449adb
+2026-01-14 22:22:07,570 - lightrag - INFO - LLMmrg: `Health Care Provider` | 0+8
+2026-01-14 22:22:08,657 - lightrag - INFO -  == LLM cache == saving: default:summary:0b89e73f1c562165fac71f32ff2c950e
+2026-01-14 22:22:08,658 - lightrag - INFO - LLMmrg: `Company` | 0+26
+2026-01-14 22:22:09,448 - lightrag - INFO -  == LLM cache == saving: default:summary:e482346f8341368a40d521c2d8d19a9a
+2026-01-14 22:22:09,448 - lightrag - INFO - LLMmrg: `Supervisor` | 0+10
+2026-01-14 22:22:16,743 - lightrag - INFO - Merged: `Insperity Contact Center` | 5+2
+2026-01-14 22:22:19,374 - lightrag - INFO - Phase 2: Processing 400 relations from doc-c6de8b92b7490b506515adcbe8d1c2cb (async: 8)
+2026-01-14 22:22:19,658 - lightrag - INFO - Chunks appended from relation: `Employees`
+2026-01-14 22:22:20,278 - lightrag - INFO - Chunks appended from relation: `Employees`
+2026-01-14 22:22:21,757 - lightrag - INFO - Chunks appended from relation: `Employees`
+2026-01-14 22:22:23,642 - lightrag - INFO - Chunks appended from relation: `Employees`
+2026-01-14 22:22:25,747 - lightrag - INFO -  == LLM cache == saving: default:summary:9b7b1ec906ca33c0c63235398c7e7a29
+2026-01-14 22:22:25,748 - lightrag - INFO - LLMmrg: `Champ Titles, Inc.`~`Employee` | 0+9
+2026-01-14 22:22:26,263 - lightrag - INFO - Chunks appended from relation: `Employee`
+2026-01-14 22:22:30,531 - lightrag - INFO -  == LLM cache == saving: default:summary:c7463a45187977945c938445778f6dbc
+2026-01-14 22:22:30,535 - lightrag - INFO - LLMmrg: `Champ Titles, Inc.`~`Insperity` | 0+16
+2026-01-14 22:22:49,845 - lightrag - INFO - Chunks appended from relation: `Supervisor`
+2026-01-14 22:22:55,962 - lightrag - INFO - Chunks appended from relation: `Employee`
+2026-01-14 22:23:01,489 - lightrag - INFO - Chunks appended from relation: `Employee's Supervisor`
+2026-01-14 22:23:03,255 - lightrag - INFO - Chunks appended from relation: `Employees`
+2026-01-14 22:23:11,974 - lightrag - INFO - Chunks appended from relation: `Employee`
+2026-01-14 22:23:18,853 - lightrag - INFO - Chunks appended from relation: `Employees`
+2026-01-14 22:23:19,097 - lightrag - INFO - Phase 3: Updating final 359(351+8) entities and  400 relations from doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-14 22:23:19,097 - lightrag - INFO - Completed merging: 351 entities, 8 extra entities, 400 relations
+2026-01-14 22:23:19,203 - lightrag - INFO - [] Writing graph with 740 nodes, 709 edges
+2026-01-14 22:23:19,220 - lightrag - INFO - In memory DB persist to disk
+2026-01-14 22:23:19,220 - lightrag - INFO - Completed processing file 1/1: handbook.pdf
+2026-01-14 22:23:19,220 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-14 22:23:19,220 - lightrag - INFO - Scanning process completed: 1 files Processed.
+2026-01-14 22:29:10,493 - lightrag - INFO -  == LLM cache == saving: global:keywords:dd5545e9718a97071399acf12eac1777
+2026-01-14 22:29:10,710 - lightrag - INFO - Query edges: Texting and driving policy, Road safety (top_k:40, cosine:0.2)
+2026-01-14 22:29:10,938 - lightrag - INFO - Global query: 48 entites, 40 relations
+2026-01-14 22:29:10,938 - lightrag - INFO - Raw search results: 48 entities, 40 relations, 0 vector chunks
+2026-01-14 22:29:10,945 - lightrag - INFO - After truncation: 48 entities, 40 relations
+2026-01-14 22:29:10,961 - lightrag - INFO - Selecting 74 from 74 entity-related chunks by vector similarity
+2026-01-14 22:29:10,961 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:29:10,962 - lightrag - INFO - Round-robin merged chunks: 74 -> 74 (deduplicated 0)
+2026-01-14 22:29:10,965 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:29:10,977 - lightrag - INFO - Final context: 48 entities, 40 relations, 18 chunks
+2026-01-14 22:29:10,977 - lightrag - INFO - Final chunks S+F/O: E5/1 E5/2 E5/3 E4/4 E4/5 E4/6 E4/7 E3/8 E2/9 E2/10 E2/11 E6/12 E3/13 E3/14 E4/15 E2/16 E4/17 E4/18
+2026-01-14 22:29:12,383 - uvicorn.access - INFO - 127.0.0.1:63215 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:29:26,128 - lightrag - INFO -  == LLM cache == saving: global:keywords:2fbacc0bf1395400f51e21745b695580
+2026-01-14 22:29:26,377 - lightrag - INFO - Query edges: PTO, Paid time off, Employee benefits (top_k:40, cosine:0.2)
+2026-01-14 22:29:26,806 - lightrag - INFO - Global query: 46 entites, 40 relations
+2026-01-14 22:29:26,807 - lightrag - INFO - Raw search results: 46 entities, 40 relations, 0 vector chunks
+2026-01-14 22:29:26,813 - lightrag - INFO - After truncation: 46 entities, 40 relations
+2026-01-14 22:29:26,828 - lightrag - INFO - Selecting 77 from 77 entity-related chunks by vector similarity
+2026-01-14 22:29:26,829 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:29:26,829 - lightrag - INFO - Round-robin merged chunks: 77 -> 77 (deduplicated 0)
+2026-01-14 22:29:26,834 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:29:26,846 - lightrag - INFO - Final context: 46 entities, 40 relations, 18 chunks
+2026-01-14 22:29:26,846 - lightrag - INFO - Final chunks S+F/O: E1/1 E3/2 E5/3 E4/4 E4/5 E7/6 E5/7 E4/8 E5/9 E3/10 E4/11 E4/12 E3/13 E2/14 E4/15 E2/16 E2/17 E4/18
+2026-01-14 22:29:28,260 - uvicorn.access - INFO - 127.0.0.1:63215 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:30:03,595 - lightrag - INFO -  == LLM cache == saving: global:keywords:e87b6fe877a2c4e18a15665efc67d8d6
+2026-01-14 22:30:03,872 - lightrag - INFO - Query edges: Policies, Handbook, Guidelines (top_k:40, cosine:0.2)
+2026-01-14 22:30:04,197 - lightrag - INFO - Global query: 44 entites, 40 relations
+2026-01-14 22:30:04,198 - lightrag - INFO - Raw search results: 44 entities, 40 relations, 0 vector chunks
+2026-01-14 22:30:04,201 - lightrag - INFO - After truncation: 44 entities, 40 relations
+2026-01-14 22:30:04,211 - lightrag - INFO - Selecting 68 from 68 entity-related chunks by vector similarity
+2026-01-14 22:30:04,211 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:30:04,211 - lightrag - INFO - Round-robin merged chunks: 68 -> 68 (deduplicated 0)
+2026-01-14 22:30:04,214 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:30:04,225 - lightrag - INFO - Final context: 44 entities, 40 relations, 19 chunks
+2026-01-14 22:30:04,225 - lightrag - INFO - Final chunks S+F/O: E5/1 E2/2 E4/3 E4/4 E3/5 E4/6 E5/7 E3/8 E5/9 E4/10 E4/11 E3/12 E6/13 E4/14 E5/15 E5/16 E4/17 E2/18 E4/19
+2026-01-14 22:30:05,740 - uvicorn.access - INFO - 127.0.0.1:63250 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:33:51,667 - uvicorn.access - INFO - 127.0.0.1:63482 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-14 22:33:51,678 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-14 22:33:51,682 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 132
+2026-01-14 22:33:51,707 - uvicorn.access - INFO - 127.0.0.1:63482 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:34:57,347 - lightrag - INFO -  == LLM cache == saving: global:keywords:887b2ebe64739745b115a07c68995f78
+2026-01-14 22:34:57,865 - lightrag - INFO - Query edges: Food service (top_k:40, cosine:0.2)
+2026-01-14 22:34:58,285 - lightrag - INFO - Global query: 50 entites, 40 relations
+2026-01-14 22:34:58,286 - lightrag - INFO - Raw search results: 50 entities, 40 relations, 0 vector chunks
+2026-01-14 22:34:58,294 - lightrag - INFO - After truncation: 50 entities, 40 relations
+2026-01-14 22:34:58,301 - lightrag - WARNING - Vector similarity chunk selection: found 108 but expecting 110
+2026-01-14 22:34:58,302 - lightrag - WARNING - No entity-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-14 22:34:58,302 - lightrag - INFO - Selecting 110 from 110 entity-related chunks by weighted polling
+2026-01-14 22:34:58,303 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:34:58,304 - lightrag - INFO - Round-robin merged chunks: 108 -> 108 (deduplicated 0)
+2026-01-14 22:34:58,308 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:34:58,321 - lightrag - INFO - Final context: 50 entities, 40 relations, 17 chunks
+2026-01-14 22:34:58,321 - lightrag - INFO - Final chunks S+F/O: E3/1 E2/2 E2/3 E1/4 E1/5 E7/8 E6/9 E5/10 E5/11 E4/12 E5/13 E5/14 E4/15 E4/16 E4/17 E6/18 E4/19
+2026-01-14 22:35:00,047 - uvicorn.access - INFO - 127.0.0.1:63511 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:38:36,241 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-14 22:38:36,244 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 132
+2026-01-14 22:38:36,278 - uvicorn.access - INFO - 127.0.0.1:63704 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:38:37,055 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-14 22:38:37,057 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 132
+2026-01-14 22:38:37,065 - uvicorn.access - INFO - 127.0.0.1:63704 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:38:38,171 - lightrag - INFO - [] Graph truncated: found 103 nodes within max_depth 3
+2026-01-14 22:38:38,173 - lightrag - INFO - [] Subgraph query successful | Node count: 103 | Edge count: 132
+2026-01-14 22:38:38,237 - uvicorn.access - INFO - 127.0.0.1:63704 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:38:45,852 - lightrag - INFO - [] Graph truncated: found 374 nodes within max_depth 3
+2026-01-14 22:38:45,893 - lightrag - INFO - [] Subgraph query successful | Node count: 374 | Edge count: 482
+2026-01-14 22:38:45,947 - uvicorn.access - INFO - 127.0.0.1:63706 - "GET /graphs?label=Champ%20Titles%2C%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:38:58,954 - lightrag - INFO - [] Graph truncated: found 153 nodes within max_depth 3
+2026-01-14 22:38:58,960 - lightrag - INFO - [] Subgraph query successful | Node count: 153 | Edge count: 203
+2026-01-14 22:38:58,976 - uvicorn.access - INFO - 127.0.0.1:63710 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:39:12,754 - lightrag - INFO - [] Graph truncated: found 374 nodes within max_depth 3
+2026-01-14 22:39:12,765 - lightrag - INFO - [] Subgraph query successful | Node count: 374 | Edge count: 482
+2026-01-14 22:39:12,785 - uvicorn.access - INFO - 127.0.0.1:63714 - "GET /graphs?label=Champ%20Titles%2C%20Inc.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:39:24,558 - lightrag - INFO - Entity Edit: `Champ Titles, Inc.` will be merged into `CHAMP TITLES, INC.`
+2026-01-14 22:39:24,569 - lightrag - INFO - Entity Merge: Updated target 'CHAMP TITLES, INC.'
+2026-01-14 22:39:24,580 - lightrag - INFO - Entity Merge: updatign 131 relations
+2026-01-14 22:39:24,580 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employees`
+2026-01-14 22:39:24,580 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Lactation Accommodations`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Work Environment`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Pregnancy Disability Leave`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Civil Air Patrol`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California Employment Development Department`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California Family Rights Act`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Family and Medical Leave Act`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Emergency Rescue Personnel`
+2026-01-14 22:39:24,581 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Volunteer Firefighters`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Reserve Peace Officers`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Paid Prenatal Personal Leave`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Family Military Leave`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Jury Duty Leave`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Lactation Accommodation`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Witness Leave`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Retaliation Prohibited`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Disciplinary Action`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California`
+2026-01-14 22:39:24,582 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`San Francisco`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`New York State`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Massachusetts`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Illinois`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Philadelphia`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Vice President of HR`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Workplace Violence Policy`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Punctuality and Attendance Policy`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Solicitation and Distribution Policy`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Disciplinary Process`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Champ Titles Standards of Conduct and Ethics Code`
+2026-01-14 22:39:24,583 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Minnesota Statutes`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Earned Sick and Safe Time (ESST)`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Adverse Employment Action`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`National Labor Relations Act`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Sick Days Policy`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`City of St. Paul`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Victim-Services Organization`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Illinois Human Rights Act`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Pregnancy Accommodations`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Weapons Policy`
+2026-01-14 22:39:24,584 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Substance-Free Workplace Policy`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Head of Human Resources`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Assistance Program (EAP)`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Company Policy`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Company Premises`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Controlled Substances`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Handbook`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Americans with Disabilities Act`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Personal Communication Devices`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Time Off for Crime Victims`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Confidential Information`
+2026-01-14 22:39:24,585 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Human Rights Act`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Paid Family Leave (PFL)`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`San Francisco Paid Parental Leave Ordinance`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`City and County of San Francisco`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Human Resources Department`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`The Company`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Proprietary Rights`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`New York PFL`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Workers Compensation Board`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`South Carolina Lactation Support Act`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Virginia Law`
+2026-01-14 22:39:24,586 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Federal Family and Medical Leave Act`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`U.S. Citizens`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Complaint Procedure`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Drug and Alcohol-Free Workplace Policy`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`General Standards of Conduct`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Virginia Human Rights Act`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee's Supervisor`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`San Francisco Lactation in the Workplace Ordinance`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`FMLA`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CFRA`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bone Marrow Donation Leave`
+2026-01-14 22:39:24,587 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Short-Term Disability Leave`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Discrimination`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`NJFLA`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Supervisor`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`New York Law`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Reproductive Health Decision-Making`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Company`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Payroll Stubs`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Overtime`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Sexual Harassment`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Third Parties`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Michigan`
+2026-01-14 22:39:24,588 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Earned Sick Time`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Social Security Number Privacy Act`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Equal Employment Opportunity`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Domestic Abuse or Harassment Leave`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`School Conference and Activities Leave`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity Contact Center`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Military Leave`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Jury Duty`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California Addendum`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`employees`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Domestic Violence`
+2026-01-14 22:39:24,589 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Sexual Assault`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`DHR`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Independence Classic Choice`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity HSA Employer Contributions`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Group Health Plan Contributions`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Abby`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Management`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CTO`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Talent`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Shane Bigelow`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bo Shim`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland, OH`
+2026-01-14 22:39:24,590 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cuyahoga County`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Greater Cleveland Partnership`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2018`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2025`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`United Healthcare`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Open Positions`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Harvest Owl`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Tyler Conn`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bella Nieves`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 5000`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus HDHP 1700`
+2026-01-14 22:39:24,591 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1000`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1500`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 2500`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 500 (80%)`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 6000`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 2000`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 4500`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Visa Sponsorship`
+2026-01-14 22:39:24,592 - lightrag - INFO - Entity Merge: 131 relation chunk tracking records updated
+2026-01-14 22:40:09,226 - lightrag - INFO - Entity Merge: 131 relations in vdb updated
+2026-01-14 22:40:09,428 - lightrag - INFO - Entity Merge: updating vdb `CHAMP TITLES, INC.`
+2026-01-14 22:40:09,429 - lightrag - INFO - Entity Merge: find 54 chunks related to 'CHAMP TITLES, INC.'
+2026-01-14 22:40:09,429 - lightrag - INFO - Entity Merge: deleting 'Champ Titles, Inc.' from KG and vdb
+2026-01-14 22:40:09,512 - lightrag - INFO - [] Writing graph with 739 nodes, 709 edges
+2026-01-14 22:40:09,529 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'CHAMP TITLES, INC.'
+2026-01-14 22:40:09,529 - uvicorn.access - INFO - 127.0.0.1:63716 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 22:40:24,669 - lightrag - INFO - [] Graph truncated: found 473 nodes within max_depth 3
+2026-01-14 22:40:24,701 - lightrag - INFO - [] Subgraph query successful | Node count: 473 | Edge count: 613
+2026-01-14 22:40:24,719 - uvicorn.access - INFO - 127.0.0.1:63873 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:40:45,095 - lightrag - INFO - [] Graph truncated: found 281 nodes within max_depth 3
+2026-01-14 22:40:45,107 - lightrag - INFO - [] Subgraph query successful | Node count: 281 | Edge count: 380
+2026-01-14 22:40:45,121 - uvicorn.access - INFO - 127.0.0.1:63891 - "GET /graphs?label=Champ%20Titles&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:41:02,291 - lightrag - INFO - Entity Edit: `Champ Titles` will be merged into `CHAMP TITLES, INC.`
+2026-01-14 22:41:02,304 - lightrag - INFO - Entity Merge: Updated target 'CHAMP TITLES, INC.'
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updatign 139 relations
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Assigned Inventions`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Proprietary Rights`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Champ Titles Policies`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Paid Time Off`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Parental Leave`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Supervisors`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`FMLA Leave`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Temporary Employees`
+2026-01-14 22:41:02,314 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Part-Time Employees`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Independence Classic Choice`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity HSA Employer Contributions`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Group Health Plan Contributions`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Abby`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Management`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CTO`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Product Talent`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Shane Bigelow`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bo Shim`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland, OH`
+2026-01-14 22:41:02,315 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cuyahoga County`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Greater Cleveland Partnership`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Center Street, Floor 2, Cleveland, OH 44113`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2018`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`2025`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`United Healthcare`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Open Positions`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Harvest Owl`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Tyler Conn`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bella Nieves`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 5000`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus HDHP 1700`
+2026-01-14 22:41:02,316 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1000`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 1500`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 2500`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 500 (80%)`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Choice Plus 6000`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 2000`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`UnitedHealthcare Primary Advantage CP 4500`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Cleveland`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Visa Sponsorship`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employees`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Lactation Accommodations`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity`
+2026-01-14 22:41:02,317 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Work Environment`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Pregnancy Disability Leave`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Civil Air Patrol`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California Employment Development Department`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California Family Rights Act`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Family and Medical Leave Act`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Emergency Rescue Personnel`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Volunteer Firefighters`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Reserve Peace Officers`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Paid Prenatal Personal Leave`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Family Military Leave`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Jury Duty Leave`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Lactation Accommodation`
+2026-01-14 22:41:02,318 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Witness Leave`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Retaliation Prohibited`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Disciplinary Action`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`San Francisco`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`New York State`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Massachusetts`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Illinois`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Philadelphia`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Vice President of HR`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Workplace Violence Policy`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Punctuality and Attendance Policy`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Solicitation and Distribution Policy`
+2026-01-14 22:41:02,319 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Disciplinary Process`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Champ Titles Standards of Conduct and Ethics Code`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Minnesota Statutes`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Earned Sick and Safe Time (ESST)`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Adverse Employment Action`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`National Labor Relations Act`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Sick Days Policy`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`City of St. Paul`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Victim-Services Organization`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Illinois Human Rights Act`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Pregnancy Accommodations`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Weapons Policy`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Substance-Free Workplace Policy`
+2026-01-14 22:41:02,320 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Head of Human Resources`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Assistance Program (EAP)`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Company Policy`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Company Premises`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Controlled Substances`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee Handbook`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Americans with Disabilities Act`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Personal Communication Devices`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Time Off for Crime Victims`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Confidential Information`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Human Rights Act`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Paid Family Leave (PFL)`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`San Francisco Paid Parental Leave Ordinance`
+2026-01-14 22:41:02,321 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`City and County of San Francisco`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Human Resources Department`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`The Company`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`New York PFL`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Workers Compensation Board`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`South Carolina Lactation Support Act`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Virginia Law`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Federal Family and Medical Leave Act`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`U.S. Citizens`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Complaint Procedure`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Drug and Alcohol-Free Workplace Policy`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`General Standards of Conduct`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Virginia Human Rights Act`
+2026-01-14 22:41:02,322 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Employee's Supervisor`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`San Francisco Lactation in the Workplace Ordinance`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`FMLA`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`CFRA`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Bone Marrow Donation Leave`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Short-Term Disability Leave`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Discrimination`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`NJFLA`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Supervisor`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`New York Law`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Reproductive Health Decision-Making`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Company`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Payroll Stubs`
+2026-01-14 22:41:02,323 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Overtime`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Sexual Harassment`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Third Parties`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Michigan`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Earned Sick Time`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Social Security Number Privacy Act`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Equal Employment Opportunity`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Domestic Abuse or Harassment Leave`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`School Conference and Activities Leave`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Insperity Contact Center`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Military Leave`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Jury Duty`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`California Addendum`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`employees`
+2026-01-14 22:41:02,324 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Domestic Violence`
+2026-01-14 22:41:02,325 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`Sexual Assault`
+2026-01-14 22:41:02,325 - lightrag - INFO - Entity Merge: updating relation `CHAMP TITLES, INC.`~`DHR`
+2026-01-14 22:41:02,325 - lightrag - INFO - Entity Merge: 139 relation chunk tracking records updated
+2026-01-14 22:41:46,178 - lightrag - INFO - Entity Merge: 139 relations in vdb updated
+2026-01-14 22:41:46,460 - lightrag - INFO - Entity Merge: updating vdb `CHAMP TITLES, INC.`
+2026-01-14 22:41:46,461 - lightrag - INFO - Entity Merge: find 55 chunks related to 'CHAMP TITLES, INC.'
+2026-01-14 22:41:46,461 - lightrag - INFO - Entity Merge: deleting 'Champ Titles' from KG and vdb
+2026-01-14 22:41:46,544 - lightrag - INFO - [] Writing graph with 738 nodes, 708 edges
+2026-01-14 22:41:46,564 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'CHAMP TITLES, INC.'
+2026-01-14 22:41:46,564 - uvicorn.access - INFO - 127.0.0.1:63907 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 22:42:05,550 - lightrag - INFO - [] Graph truncated: found 475 nodes within max_depth 3
+2026-01-14 22:42:05,566 - lightrag - INFO - [] Subgraph query successful | Node count: 475 | Edge count: 615
+2026-01-14 22:42:05,599 - uvicorn.access - INFO - 127.0.0.1:64097 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:42:09,652 - lightrag - INFO - [] Graph truncated: found 416 nodes within max_depth 3
+2026-01-14 22:42:09,660 - lightrag - INFO - [] Subgraph query successful | Node count: 416 | Edge count: 554
+2026-01-14 22:42:09,682 - uvicorn.access - INFO - 127.0.0.1:64097 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:42:24,834 - lightrag - INFO - [] Graph truncated: found 416 nodes within max_depth 3
+2026-01-14 22:42:24,847 - lightrag - INFO - [] Subgraph query successful | Node count: 416 | Edge count: 554
+2026-01-14 22:42:24,871 - uvicorn.access - INFO - 127.0.0.1:64111 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:42:25,758 - lightrag - INFO - [] Graph truncated: found 416 nodes within max_depth 3
+2026-01-14 22:42:25,769 - lightrag - INFO - [] Subgraph query successful | Node count: 416 | Edge count: 554
+2026-01-14 22:42:25,793 - uvicorn.access - INFO - 127.0.0.1:64111 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:42:26,717 - lightrag - INFO - [] Graph truncated: found 416 nodes within max_depth 3
+2026-01-14 22:42:26,726 - lightrag - INFO - [] Subgraph query successful | Node count: 416 | Edge count: 554
+2026-01-14 22:42:26,749 - uvicorn.access - INFO - 127.0.0.1:64111 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:42:46,461 - lightrag - INFO - Entity Edit: `Employee` will be merged into `Employees`
+2026-01-14 22:42:46,476 - lightrag - INFO - Entity Merge: Updated target 'Employees'
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updatign 133 relations
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Company`
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Division of Temporary Disability Insurance`
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`New Jersey`
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`FMLA`
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`NJFLA`
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`NJ SAFE Act`
+2026-01-14 22:42:46,488 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Anti-Harassment Hotline`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Employee Activities`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Physical or Mental Disability`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Head of Human Resources`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Public Health Authority`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Military Member`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Base Hours`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Qualifying Exigency`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Healthcare Provider`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Family Member`
+2026-01-14 22:42:46,489 - lightrag - INFO - Entity Merge: updating relation `Employees`~`ESST`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Nursing Mothers, Lactating Employees, and Pregnancy Accommodations Law`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Sick Leave Policy`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Legal Guardians`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Step-, Foster, Adoptive, and Half-Relations`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Supervisor`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Domestic Violence`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Sexual Assault`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Human Trafficking`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Stalking`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Bone Marrow Donation`
+2026-01-14 22:42:46,490 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Organ Donation`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Court Order`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Sick and Safe Leave`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Temporary Restraining Order`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Restraining Order`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Judicial Proceeding`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Insperity`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Paid Family Leave`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Family & Medical Leave Act`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Paid Family Leave Request`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Bonding Certification`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Health Care Provider Certification`
+2026-01-14 22:42:46,491 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Military Qualifying Event Certification`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`PFL Program`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`FMLA Leave`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`NJFLA Leave`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Communicable Disease`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Assigned Inventions`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Personal and Company-Proved Portable Communication Devices`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Illinois Department of Human Rights`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Illinois Sexual Harassment and Discrimination Helpline`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Harassment Complaints`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`CFRA`
+2026-01-14 22:42:46,492 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Serious Health Condition`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Servicemember`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Covered Veteran`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Military Events`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Leave of Absence`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Workers' Compensation`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`State of California Paid Family Leave`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`MPPLA`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`San Francisco Family Friendly Workplace Ordinance`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Federal Family and Medical Leave Act`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Company President`
+2026-01-14 22:42:46,493 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Labor Commissioner`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Health Care Provider`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Handbook`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Onsite Supervisor`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Deduction Authorization Form`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Harassment`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Accommodation Request`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Equal Employment Opportunity`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Retaliation`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Harassment Complaint`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Return to Work/Fitness for Duty Certifications`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Second Opinion`
+2026-01-14 22:42:46,494 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Third Certification`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Legal Assistance`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Social Security Number`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Time Away from Work`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`EEOC`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`New York City Commission on Human Rights`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Bystander Intervention Methods`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`CHAMP TITLES, INC.`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Paid Time Off`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Insperity Premier`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Doctor's Note`
+2026-01-14 22:42:46,495 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Medical Certification`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Michigan Earned Sick Time Act`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Minnesota Statutes`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Workers' Compensation Insurance Policy`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`IT Department`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Portable Communication Device Use While Driving`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`New York State Paid Family Leave`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Armed Forces of the United States`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`New York State`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`District Attorney`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`The Company`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`PFL Discrimination Complaint (Form PFL-DC-120)`
+2026-01-14 22:42:46,496 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Employee's Supervisor`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Medical Certifications`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`30 Days Notice`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Initial Medical Certifications`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Medical Recertifications`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Victim Services Organization`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Meal Period`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Flexible Working Arrangement`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Predictable Working Arrangement`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Rest Breaks`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Work Duties`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Disciplinary Action`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`FMLA/CFRA Leave`
+2026-01-14 22:42:46,497 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Return to Work Release`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Group Health Insurance Benefits`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Management`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Jury Duty`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Bereavement Leave`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Voting Leave`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Subpoena`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Group Health Plan Coverage`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Emergency Contact`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Personnel File`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Employee Supervisor`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`U.S. Department of Labor`
+2026-01-14 22:42:46,498 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Domestic Abuse or Harassment Leave`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`30 Days' Notice`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`EST`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Public Health Emergency`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Healthcare Professional`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Sick Days Policy`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Managers and Supervisors`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Civil Rights Department`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`U.S. Equal Employment Opportunity Commission`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Rest Break`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Complaint Procedure`
+2026-01-14 22:42:46,499 - lightrag - INFO - Entity Merge: updating relation `Employees`~`Local Police Department`
+2026-01-14 22:42:46,500 - lightrag - INFO - Entity Merge: 133 relation chunk tracking records updated
+2026-01-14 22:43:29,404 - lightrag - INFO - Entity Merge: 133 relations in vdb updated
+2026-01-14 22:43:29,685 - lightrag - INFO - Entity Merge: updating vdb `Employees`
+2026-01-14 22:43:29,685 - lightrag - INFO - Entity Merge: find 47 chunks related to 'Employees'
+2026-01-14 22:43:29,686 - lightrag - INFO - Entity Merge: deleting 'Employee' from KG and vdb
+2026-01-14 22:43:29,769 - lightrag - INFO - [] Writing graph with 737 nodes, 694 edges
+2026-01-14 22:43:29,786 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'Employees'
+2026-01-14 22:43:29,787 - uvicorn.access - INFO - 127.0.0.1:64116 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-14 22:45:37,619 - lightrag - INFO - [] Graph truncated: found 439 nodes within max_depth 3
+2026-01-14 22:45:37,682 - lightrag - INFO - [] Subgraph query successful | Node count: 439 | Edge count: 561
+2026-01-14 22:45:37,701 - uvicorn.access - INFO - 127.0.0.1:64465 - "GET /graphs?label=Employees&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-14 22:46:18,310 - lightrag - INFO -  == LLM cache == saving: global:keywords:d31e5e9721cdc76f9a67d182ba301b8e
+2026-01-14 22:46:18,701 - lightrag - INFO - Query edges: JAD location, Future events (top_k:40, cosine:0.2)
+2026-01-14 22:46:18,984 - lightrag - INFO - Global query: 54 entites, 40 relations
+2026-01-14 22:46:18,984 - lightrag - INFO - Raw search results: 54 entities, 40 relations, 0 vector chunks
+2026-01-14 22:46:18,993 - lightrag - INFO - After truncation: 54 entities, 40 relations
+2026-01-14 22:46:19,014 - lightrag - INFO - Selecting 96 from 96 entity-related chunks by vector similarity
+2026-01-14 22:46:19,014 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:46:19,014 - lightrag - INFO - Round-robin merged chunks: 96 -> 96 (deduplicated 0)
+2026-01-14 22:46:19,019 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:46:19,028 - lightrag - INFO - Final context: 54 entities, 40 relations, 18 chunks
+2026-01-14 22:46:19,028 - lightrag - INFO - Final chunks S+F/O: E6/1 E14/2 E11/3 E6/4 E9/5 E5/6 E8/7 E6/8 E8/9 E4/10 E2/11 E3/12 E4/13 E6/14 E8/15 E4/16 E1/17 E5/18
+2026-01-14 22:46:20,602 - uvicorn.access - INFO - 127.0.0.1:64513 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:46:35,206 - lightrag - INFO -  == LLM cache == saving: global:keywords:fc8440ac47b187a8b960752654dc53cb
+2026-01-14 22:46:35,436 - lightrag - INFO - Query edges: JAD (top_k:40, cosine:0.2)
+2026-01-14 22:46:35,691 - lightrag - INFO - Global query: 53 entites, 40 relations
+2026-01-14 22:46:35,691 - lightrag - INFO - Raw search results: 53 entities, 40 relations, 0 vector chunks
+2026-01-14 22:46:35,699 - lightrag - INFO - After truncation: 53 entities, 40 relations
+2026-01-14 22:46:35,706 - lightrag - WARNING - Vector similarity chunk selection: found 104 but expecting 106
+2026-01-14 22:46:35,707 - lightrag - WARNING - No entity-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-14 22:46:35,708 - lightrag - INFO - Selecting 106 from 106 entity-related chunks by weighted polling
+2026-01-14 22:46:35,708 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:46:35,708 - lightrag - INFO - Round-robin merged chunks: 104 -> 104 (deduplicated 0)
+2026-01-14 22:46:35,714 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:46:35,726 - lightrag - INFO - Final context: 53 entities, 40 relations, 18 chunks
+2026-01-14 22:46:35,726 - lightrag - INFO - Final chunks S+F/O: E11/1 E7/2 E7/3 E6/4 E6/5 E14/6 E6/7 E3/8 E3/9 E5/10 E4/11 E4/12 E4/13 E4/14 E2/15 E3/16 E2/17 E2/18
+2026-01-14 22:46:37,230 - uvicorn.access - INFO - 127.0.0.1:64533 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:47:04,901 - lightrag - WARNING - high_level_keywords is empty
+2026-01-14 22:47:04,904 - lightrag - WARNING - Forced low_level_keywords to origin query: how often do they occur?
+2026-01-14 22:47:05,208 - lightrag - INFO - Query nodes: how often do they occur? (top_k:40, cosine:0.2)
+2026-01-14 22:47:05,446 - lightrag - INFO - Local query: 16 entites, 13 relations
+2026-01-14 22:47:05,446 - lightrag - INFO - Raw search results: 16 entities, 13 relations, 0 vector chunks
+2026-01-14 22:47:05,448 - lightrag - INFO - After truncation: 16 entities, 13 relations
+2026-01-14 22:47:05,452 - lightrag - INFO - Selecting 17 from 17 entity-related chunks by vector similarity
+2026-01-14 22:47:05,453 - lightrag - INFO - Find no additional relations-related chunks from 13 relations
+2026-01-14 22:47:05,453 - lightrag - INFO - Round-robin merged chunks: 17 -> 17 (deduplicated 0)
+2026-01-14 22:47:05,455 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:47:05,471 - lightrag - INFO - Final context: 16 entities, 13 relations, 17 chunks
+2026-01-14 22:47:05,471 - lightrag - INFO - Final chunks S+F/O: E1/1 E2/2 E1/3 E1/4 E1/5 E1/6 E1/7 E1/8 E1/9 E1/10 E1/11 E1/12 E3/13 E1/14 E1/15 E1/16 E1/17
+2026-01-14 22:47:06,682 - uvicorn.access - INFO - 127.0.0.1:64545 - "POST /query/stream HTTP/1.1" 200
+2026-01-14 22:47:17,580 - lightrag - INFO -  == LLM cache == saving: global:keywords:6ceff2682b8f04c3604c4d4b6216b733
+2026-01-14 22:47:18,212 - lightrag - INFO - Query edges: JAD occurrence, Frequency (top_k:40, cosine:0.2)
+2026-01-14 22:47:18,467 - lightrag - INFO - Global query: 57 entites, 40 relations
+2026-01-14 22:47:18,467 - lightrag - INFO - Raw search results: 57 entities, 40 relations, 0 vector chunks
+2026-01-14 22:47:18,475 - lightrag - INFO - After truncation: 57 entities, 40 relations
+2026-01-14 22:47:18,495 - lightrag - INFO - Selecting 102 from 102 entity-related chunks by vector similarity
+2026-01-14 22:47:18,496 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-14 22:47:18,496 - lightrag - INFO - Round-robin merged chunks: 102 -> 102 (deduplicated 0)
+2026-01-14 22:47:18,501 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-14 22:47:18,512 - lightrag - INFO - Final context: 57 entities, 40 relations, 17 chunks
+2026-01-14 22:47:18,512 - lightrag - INFO - Final chunks S+F/O: E5/1 E9/2 E7/3 E2/4 E4/5 E3/6 E4/7 E1/8 E5/9 E2/10 E1/11 E1/12 E4/13 E6/14 E4/15 E2/16 E3/17
+2026-01-14 22:47:19,914 - uvicorn.access - INFO - 127.0.0.1:64566 - "POST /query/stream HTTP/1.1" 200
