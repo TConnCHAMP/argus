@@ -5631,3 +5631,49 @@ AttributeError: 'LightRAG' object has no attribute 'doc_storage'. Did you mean: 
 2026-01-15 23:50:44,006 - uvicorn.access - INFO - 127.0.0.1:56890 - "POST /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3/messages HTTP/1.1" 200
 2026-01-15 23:50:44,012 - uvicorn.access - INFO - 127.0.0.1:56890 - "POST /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3/messages HTTP/1.1" 200
 2026-01-15 23:50:44,013 - uvicorn.access - INFO - 127.0.0.1:56890 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-15 23:54:25,045 - uvicorn.access - INFO - 127.0.0.1:57213 - "GET /threads/425af19b-93b8-4317-a8ff-d75e4cb1b562 HTTP/1.1" 200
+2026-01-15 23:54:25,064 - uvicorn.access - INFO - 127.0.0.1:57213 - "GET /threads/425af19b-93b8-4317-a8ff-d75e4cb1b562 HTTP/1.1" 200
+2026-01-15 23:54:26,311 - uvicorn.access - INFO - 127.0.0.1:57213 - "GET /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-15 23:54:26,316 - uvicorn.access - INFO - 127.0.0.1:57213 - "GET /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-15 23:54:26,927 - uvicorn.access - INFO - 127.0.0.1:57213 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-15 23:54:26,934 - uvicorn.access - INFO - 127.0.0.1:57213 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-15 23:54:35,479 - lightrag - INFO - [] Graph truncated: found 440 nodes within max_depth 3
+2026-01-15 23:54:35,534 - lightrag - INFO - [] Subgraph query successful | Node count: 440 | Edge count: 559
+2026-01-15 23:54:35,547 - uvicorn.access - INFO - 127.0.0.1:57255 - "GET /graphs?label=Insperity&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 23:54:37,704 - lightrag - INFO - [] Graph truncated: found 47 nodes within max_depth 3
+2026-01-15 23:54:37,705 - lightrag - INFO - [] Subgraph query successful | Node count: 47 | Edge count: 51
+2026-01-15 23:54:37,707 - uvicorn.access - INFO - 127.0.0.1:57270 - "GET /graphs?label=Harvest%20Owl&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 23:54:41,064 - uvicorn.access - INFO - 127.0.0.1:57270 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 23:54:43,749 - lightrag - INFO - Entity Edit: `Harvest Owl` will be merged into `HarvestOwl`
+2026-01-15 23:54:43,750 - lightrag - INFO - Entity Merge: Updated target 'HarvestOwl'
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updatign 18 relations
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Rittman Orchard Apple`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`BOOMCHICKAPOP Sea Salt Popcorn`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Hippeas Vegan White Cheddar`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Oven Roasted Turkey Sandwich`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`The Ultimate Veggie Sandwich`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Super Simple Keto Bowl`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Breakfast Tacos`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Luna Bakery Dark Chocolate Sea Salt Cookie`
+2026-01-15 23:54:43,752 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Super Simple Bowl with Brown Rice`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Grilled Steak Honey Mustard Salad`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Red Grape & Walnut Chicken Salad`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`The Doctor's Everyday Salad`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Siete Grain Free Tortilla Chips (Lime)`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Niman Ranch Snack Pack`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Crunchy Pretzel Shells`
+2026-01-15 23:54:43,753 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Slow Braised Brisket Bowl`
+2026-01-15 23:54:43,755 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`Greek Chicken Salad`
+2026-01-15 23:54:43,756 - lightrag - INFO - Entity Merge: updating relation `HarvestOwl`~`CHAMP TITLES, INC.`
+2026-01-15 23:54:43,757 - lightrag - INFO - Entity Merge: 18 relation chunk tracking records updated
+2026-01-15 23:54:49,197 - lightrag - INFO - Entity Merge: 18 relations in vdb updated
+2026-01-15 23:54:49,486 - lightrag - INFO - Entity Merge: updating vdb `HarvestOwl`
+2026-01-15 23:54:49,486 - lightrag - INFO - Entity Merge: find 4 chunks related to 'HarvestOwl'
+2026-01-15 23:54:49,486 - lightrag - INFO - Entity Merge: deleting 'Harvest Owl' from KG and vdb
+2026-01-15 23:54:49,563 - lightrag - INFO - [] Writing graph with 868 nodes, 793 edges
+2026-01-15 23:54:49,565 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-15 23:54:49,565 - lightrag - INFO - Entity Merge: successfully merged 1 entities into 'HarvestOwl'
+2026-01-15 23:54:49,566 - uvicorn.access - INFO - 127.0.0.1:57293 - "POST /graph/entity/edit HTTP/1.1" 200
+2026-01-15 23:56:18,177 - lightrag - INFO - [] Graph truncated: found 493 nodes within max_depth 3
+2026-01-15 23:56:18,196 - lightrag - INFO - [] Subgraph query successful | Node count: 493 | Edge count: 621
+2026-01-15 23:56:18,210 - uvicorn.access - INFO - 127.0.0.1:57535 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
