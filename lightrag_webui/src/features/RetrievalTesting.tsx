@@ -3,12 +3,13 @@ import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { throttle } from '@/lib/utils'
-import { queryText, queryTextStream } from '@/api/lightrag'
+import { queryText, queryTextStream, getThread, addMessageToThread, createThread, updateThread } from '@/api/lightrag'
 import { errorMessage } from '@/lib/utils'
 import { useSettingsStore } from '@/stores/settings'
 import { useDebounce } from '@/hooks/useDebounce'
 import QuerySettings from '@/components/retrieval/QuerySettings'
 import { ChatMessage, MessageWithError } from '@/components/retrieval/ChatMessage'
+import { ThreadSidebar } from '@/components/retrieval/ThreadSidebar'
 import { EraserIcon, SendIcon, CopyIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
@@ -107,6 +108,9 @@ export default function RetrievalTesting() {
   const currentTab = useSettingsStore.use.currentTab()
   const isRetrievalTabActive = currentTab === 'retrieval'
 
+  const currentThreadId = useSettingsStore.use.currentThreadId()
+  const setCurrentThreadId = useSettingsStore.use.setCurrentThreadId()
+
   const [messages, setMessages] = useState<MessageWithError[]>(() => {
     try {
       const history = useSettingsStore.getState().retrievalHistory || []
@@ -141,6 +145,81 @@ export default function RetrievalTesting() {
   const [isLoading, setIsLoading] = useState(false)
   const [inputError, setInputError] = useState('') // Error message for input
   const inputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null)
+
+  // Thread handling functions
+  const handleThreadSelect = useCallback(async (threadId: string | null) => {
+    if (!threadId) {
+      setMessages([])
+      useSettingsStore.getState().setRetrievalHistory([])
+      return
+    }
+
+    try {
+      const thread = await getThread(threadId)
+      // Convert thread messages to MessageWithError format
+      const convertedMessages: MessageWithError[] = thread.messages.map((msg, index) => ({
+        id: `thread-${threadId}-${index}`,
+        role: msg.role as 'user' | 'assistant' | 'system',
+        content: msg.content,
+        mermaidRendered: true,
+        latexRendered: true
+      }))
+      setMessages(convertedMessages)
+      useSettingsStore.getState().setRetrievalHistory(convertedMessages)
+    } catch (error) {
+      console.error('Error loading thread:', error)
+      toast.error('Failed to load thread')
+    }
+  }, [])
+
+  const handleNewThread = useCallback(async () => {
+    setMessages([])
+    useSettingsStore.getState().setRetrievalHistory([])
+  }, [])
+
+  const saveMessagesToThread = useCallback(async (userMsg: MessageWithError, assistantMsg: MessageWithError) => {
+    if (!currentThreadId) return
+
+    try {
+      // Save user message
+      await addMessageToThread(currentThreadId, {
+        role: userMsg.role,
+        content: userMsg.content
+      })
+
+      // Save assistant message
+      await addMessageToThread(currentThreadId, {
+        role: assistantMsg.role,
+        content: assistantMsg.displayContent || assistantMsg.content
+      })
+
+      // Update thread title if this is the first message
+      const thread = await getThread(currentThreadId)
+      if (thread.messages.length === 2) {
+        // Generate a title from the first user message (first 50 chars)
+        const title = userMsg.content.slice(0, 50) + (userMsg.content.length > 50 ? '...' : '')
+        await updateThread(currentThreadId, { title })
+      }
+    } catch (error) {
+      console.error('Error saving messages to thread:', error)
+      // Don't show error to user, just log it
+    }
+  }, [currentThreadId])
+
+  // Initialize thread on component mount
+  useEffect(() => {
+    const initializeThread = async () => {
+      if (!currentThreadId) {
+        try {
+          const newThread = await createThread({ title: 'New Conversation' })
+          setCurrentThreadId(newThread.id)
+        } catch (error) {
+          console.error('Error creating initial thread:', error)
+        }
+      }
+    }
+    initializeThread()
+  }, []) // Only run once on mount
 
   // Smart switching logic: use Input for single line, Textarea for multi-line
   const hasMultipleLines = inputValue.includes('\n')
@@ -425,12 +504,15 @@ export default function RetrievalTesting() {
           useSettingsStore
             .getState()
             .setRetrievalHistory([...prevMessages, userMessage, assistantMessage])
+
+          // Save to current thread if one is selected
+          await saveMessagesToThread(userMessage, assistantMessage)
         } catch (error) {
           console.error('Error saving retrieval history:', error)
         }
       }
     },
-    [inputValue, isLoading, messages, setMessages, t, scrollToBottom]
+    [inputValue, isLoading, messages, setMessages, t, scrollToBottom, saveMessagesToThread]
   )
 
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -617,10 +699,21 @@ export default function RetrievalTesting() {
   }, [debouncedMessages, scrollToBottom])
 
 
-  const clearMessages = useCallback(() => {
-    setMessages([])
-    useSettingsStore.getState().setRetrievalHistory([])
-  }, [setMessages])
+  const clearMessages = useCallback(async () => {
+    try {
+      // Create a new thread
+      const newThread = await createThread({ title: 'New Conversation' })
+      setCurrentThreadId(newThread.id)
+      setMessages([])
+      useSettingsStore.getState().setRetrievalHistory([])
+      toast.success('New thread created')
+    } catch (error) {
+      console.error('Error creating new thread:', error)
+      // Fallback to just clearing messages
+      setMessages([])
+      useSettingsStore.getState().setRetrievalHistory([])
+    }
+  }, [setCurrentThreadId])
 
   // Handle copying message content with robust clipboard support
   const handleCopyMessage = useCallback(async (message: MessageWithError) => {
@@ -686,6 +779,15 @@ export default function RetrievalTesting() {
 
   return (
     <div className="flex size-full gap-2 px-2 pb-12 overflow-hidden">
+      {/* Thread Sidebar */}
+      <div className="w-64 shrink-0 h-full">
+        <ThreadSidebar
+          onThreadSelect={handleThreadSelect}
+          onNewThread={handleNewThread}
+        />
+      </div>
+
+      {/* Main Chat Area */}
       <div className="flex grow flex-col gap-4">
         <div className="relative grow">
           <div

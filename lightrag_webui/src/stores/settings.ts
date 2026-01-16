@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import { createSelectors } from '@/lib/utils'
 import { defaultQueryLabel } from '@/lib/constants'
-import { Message, QueryRequest } from '@/api/lightrag'
+import { Message, QueryRequest, ThreadListItem } from '@/api/lightrag'
 
 type Theme = 'dark' | 'light' | 'system'
 type Language = 'en' | 'zh' | 'fr' | 'ar' | 'zh_TW' | 'ru' | 'ja' | 'de' | 'uk'
@@ -61,6 +61,13 @@ interface SettingsState {
 
   querySettings: Omit<QueryRequest, 'query'>
   updateQuerySettings: (settings: Partial<QueryRequest>) => void
+
+  // Thread management
+  currentThreadId: string | null
+  setCurrentThreadId: (threadId: string | null) => void
+
+  threadsList: ThreadListItem[]
+  setThreadsList: (threads: ThreadListItem[]) => void
 
   // Auth settings
   apiKey: string | null
@@ -131,10 +138,13 @@ const useSettingsStoreBase = create<SettingsState>()(
         only_need_context: false,
         only_need_prompt: false,
         stream: true,
-        history_turns: 0,
+        history_turns: 10,
         user_prompt: '',
         enable_rerank: true
       },
+
+      currentThreadId: null,
+      threadsList: [],
 
       setTheme: (theme: Theme) => set({ theme }),
 
@@ -189,11 +199,8 @@ const useSettingsStoreBase = create<SettingsState>()(
       setRetrievalHistory: (history: Message[]) => set({ retrievalHistory: history }),
 
       updateQuerySettings: (settings: Partial<QueryRequest>) => {
-        // Filter out history_turns to prevent changes, always keep it as 0
-        const filteredSettings = { ...settings }
-        delete filteredSettings.history_turns
         set((state) => ({
-          querySettings: { ...state.querySettings, ...filteredSettings, history_turns: 0 }
+          querySettings: { ...state.querySettings, ...settings }
         }))
       },
 
@@ -228,6 +235,10 @@ const useSettingsStoreBase = create<SettingsState>()(
 
       setUserPromptHistory: (history: string[]) => set({ userPromptHistory: history }),
 
+      // Thread management methods
+      setCurrentThreadId: (threadId: string | null) => set({ currentThreadId: threadId }),
+      setThreadsList: (threads: ThreadListItem[]) => set({ threadsList: threads }),
+
       // Search label dropdown refresh trigger (not persisted)
       searchLabelDropdownRefreshTrigger: 0,
       triggerSearchLabelDropdownRefresh: () =>
@@ -238,7 +249,7 @@ const useSettingsStoreBase = create<SettingsState>()(
     {
       name: 'settings-storage',
       storage: createJSONStorage(() => localStorage),
-      version: 19,
+      version: 21,
       migrate: (state: any, version: number) => {
         if (version < 2) {
           state.showEdgeLabel = false
@@ -340,6 +351,17 @@ const useSettingsStoreBase = create<SettingsState>()(
           if (state.querySettings) {
             delete state.querySettings.response_type
           }
+        }
+        if (version < 20) {
+          // Enable conversation history by default (10 turns)
+          if (state.querySettings) {
+            state.querySettings.history_turns = 10
+          }
+        }
+        if (version < 21) {
+          // Add thread management fields
+          state.currentThreadId = null
+          state.threadsList = []
         }
         return state
       }

@@ -3944,3 +3944,121 @@ ValueError: [TypeError("'numpy.float32' object is not iterable"), TypeError('var
 2026-01-15 20:26:09,770 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
 2026-01-15 20:26:09,777 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
 2026-01-15 20:26:09,790 - uvicorn.access - INFO - 127.0.0.1:56488 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 21:37:47,292 - uvicorn.access - INFO - 127.0.0.1:58176 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 304
+2026-01-15 21:37:47,293 - uvicorn.access - INFO - 127.0.0.1:58179 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 304
+2026-01-15 21:37:47,501 - uvicorn.access - INFO - 127.0.0.1:58179 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-15 21:37:47,619 - uvicorn.access - INFO - 127.0.0.1:58179 - "GET /docs HTTP/1.1" 200
+2026-01-15 21:37:47,630 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
+2026-01-15 21:37:47,636 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
+2026-01-15 21:37:47,649 - uvicorn.access - INFO - 127.0.0.1:58176 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 21:37:47,651 - uvicorn.access - INFO - 127.0.0.1:58181 - "GET /webui/assets/index-DXYtLM_l.js HTTP/1.1" 304
+2026-01-15 21:37:47,691 - uvicorn.access - INFO - 127.0.0.1:58181 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 21:37:47,724 - uvicorn.access - INFO - 127.0.0.1:58181 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 304
+2026-01-15 21:37:47,724 - uvicorn.access - INFO - 127.0.0.1:58179 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 304
+2026-01-15 21:37:54,459 - uvicorn.access - INFO - 127.0.0.1:58183 - "GET /docs HTTP/1.1" 200
+2026-01-15 21:37:54,465 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
+2026-01-15 21:37:54,469 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
+2026-01-15 21:37:54,483 - uvicorn.access - INFO - 127.0.0.1:58183 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 21:37:54,506 - uvicorn.access - INFO - 127.0.0.1:58183 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 21:41:57,406 - uvicorn.error - INFO - Shutting down
+2026-01-15 21:41:57,510 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-15 21:41:57,510 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-15 21:41:57,510 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-15 21:41:57,510 - uvicorn.error - INFO - Finished server process [88881]
+2026-01-15 21:42:04,623 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 21:42:04,775 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 21:42:04,775 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 21:42:04,775 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 21:42:04,775 - lightrag - INFO - Reranking is disabled
+2026-01-15 21:42:04,982 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 21:42:05,064 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 21:42:05,077 - uvicorn.error - INFO - Started server process [92034]
+2026-01-15 21:42:05,077 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 21:42:05,078 - lightrag - INFO - [] Process 92034 KV load full_docs with 11 records
+2026-01-15 21:42:05,079 - lightrag - INFO - [] Process 92034 KV load text_chunks with 113 records
+2026-01-15 21:42:05,080 - lightrag - INFO - [] Process 92034 KV load full_entities with 11 records
+2026-01-15 21:42:05,080 - lightrag - INFO - [] Process 92034 KV load full_relations with 10 records
+2026-01-15 21:42:05,081 - lightrag - INFO - [] Process 92034 KV load entity_chunks with 737 records
+2026-01-15 21:42:05,082 - lightrag - INFO - [] Process 92034 KV load relation_chunks with 694 records
+2026-01-15 21:42:05,091 - lightrag - INFO - [] Process 92034 KV load llm_response_cache with 291 records
+2026-01-15 21:42:05,091 - lightrag - INFO - [] Process 92034 doc status load doc_status with 11 records
+2026-01-15 21:42:05,092 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 21:42:05,092 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 21:42:11,735 - uvicorn.access - INFO - 127.0.0.1:58874 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:42:14,501 - uvicorn.access - INFO - 127.0.0.1:58897 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:42:14,596 - uvicorn.access - INFO - 127.0.0.1:58897 - "GET /favicon.ico HTTP/1.1" 404
+2026-01-15 21:42:20,446 - uvicorn.access - INFO - 127.0.0.1:58897 - "GET /docs HTTP/1.1" 200
+2026-01-15 21:42:20,455 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
+2026-01-15 21:42:20,460 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
+2026-01-15 21:42:20,471 - uvicorn.access - INFO - 127.0.0.1:58899 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 21:42:20,552 - uvicorn.access - INFO - 127.0.0.1:58899 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 21:42:32,814 - uvicorn.access - INFO - 127.0.0.1:58927 - "GET /webui HTTP/1.1" 307
+2026-01-15 21:42:33,068 - uvicorn.access - INFO - 127.0.0.1:58928 - "GET /auth-status HTTP/1.1" 200
+2026-01-15 21:42:33,184 - uvicorn.access - INFO - 127.0.0.1:58928 - "GET /docs HTTP/1.1" 200
+2026-01-15 21:42:33,192 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
+2026-01-15 21:42:33,196 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
+2026-01-15 21:42:33,210 - uvicorn.access - INFO - 127.0.0.1:58928 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 21:42:33,248 - uvicorn.access - INFO - 127.0.0.1:58928 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 21:44:47,423 - uvicorn.access - INFO - 127.0.0.1:59190 - "GET /webui/assets/index-fv-DJl6Z.js HTTP/1.1" 200
+2026-01-15 21:44:47,423 - uvicorn.access - INFO - 127.0.0.1:59191 - "GET /webui/assets/index-BAczl7y6.css HTTP/1.1" 200
+2026-01-15 21:44:47,670 - uvicorn.access - INFO - 127.0.0.1:59190 - "GET /docs HTTP/1.1" 200
+2026-01-15 21:44:47,679 - uvicorn.access - INFO - 127.0.0.1:59190 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:44:47,680 - uvicorn.access - INFO - 127.0.0.1:59191 - "POST /threads HTTP/1.1" 200
+2026-01-15 21:44:47,682 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
+2026-01-15 21:44:47,687 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
+2026-01-15 21:44:47,698 - uvicorn.access - INFO - 127.0.0.1:59193 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 21:44:47,704 - uvicorn.access - INFO - 127.0.0.1:59193 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 21:45:02,667 - uvicorn.access - INFO - 127.0.0.1:59195 - "POST /threads HTTP/1.1" 200
+2026-01-15 21:45:02,676 - uvicorn.access - INFO - 127.0.0.1:59195 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:45:05,132 - uvicorn.access - INFO - 127.0.0.1:59195 - "GET /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-15 21:45:05,135 - uvicorn.access - INFO - 127.0.0.1:59195 - "GET /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-15 21:45:05,527 - uvicorn.access - INFO - 127.0.0.1:59195 - "GET /threads/16b5b388-0272-4208-b882-406961c180fa HTTP/1.1" 200
+2026-01-15 21:45:05,535 - uvicorn.access - INFO - 127.0.0.1:59195 - "GET /threads/16b5b388-0272-4208-b882-406961c180fa HTTP/1.1" 200
+2026-01-15 21:45:08,539 - uvicorn.access - INFO - 127.0.0.1:59195 - "DELETE /threads/16b5b388-0272-4208-b882-406961c180fa HTTP/1.1" 200
+2026-01-15 21:45:08,551 - uvicorn.access - INFO - 127.0.0.1:59195 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:45:19,200 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-15 21:45:19,325 - uvicorn.access - INFO - 127.0.0.1:59200 - "GET /webui/assets/index-TVmzuOBF.js HTTP/1.1" 200
+2026-01-15 21:45:21,151 - lightrag - INFO -  == LLM cache == saving: global:keywords:ec0530bbc1667a89e419ed17f2448848
+2026-01-15 21:45:21,152 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-15 21:45:21,885 - lightrag - INFO - Query edges: Employee benefits, Perks (top_k:40, cosine:0.2)
+2026-01-15 21:45:22,923 - lightrag - INFO - Global query: 49 entites, 40 relations
+2026-01-15 21:45:22,923 - lightrag - INFO - Raw search results: 49 entities, 40 relations, 0 vector chunks
+2026-01-15 21:45:22,930 - lightrag - INFO - After truncation: 49 entities, 40 relations
+2026-01-15 21:45:22,937 - lightrag - WARNING - Vector similarity chunk selection: found 90 but expecting 92
+2026-01-15 21:45:22,938 - lightrag - WARNING - No entity-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-15 21:45:22,938 - lightrag - INFO - Selecting 92 from 92 entity-related chunks by weighted polling
+2026-01-15 21:45:22,939 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-15 21:45:22,940 - lightrag - INFO - Round-robin merged chunks: 90 -> 90 (deduplicated 0)
+2026-01-15 21:45:22,945 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-15 21:45:22,958 - lightrag - INFO - Final context: 49 entities, 40 relations, 19 chunks
+2026-01-15 21:45:22,958 - lightrag - INFO - Final chunks S+F/O: E2/1 E4/2 E8/3 E6/4 E5/5 E5/6 E4/7 E3/8 E2/9 E1/10 E3/11 E3/12 E3/13 E3/14 E3/15 E2/16 E2/17 E3/18 E1/19
+2026-01-15 21:45:24,477 - uvicorn.access - INFO - 127.0.0.1:59198 - "POST /query/stream HTTP/1.1" 200
+2026-01-15 21:45:29,254 - uvicorn.access - INFO - 127.0.0.1:59206 - "PATCH /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-15 21:45:29,259 - uvicorn.access - INFO - 127.0.0.1:59206 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:45:36,859 - uvicorn.access - INFO - 127.0.0.1:59198 - "PATCH /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-15 21:45:36,862 - uvicorn.access - INFO - 127.0.0.1:59198 - "GET /threads HTTP/1.1" 200
+2026-01-15 21:46:06,122 - lightrag - INFO -  == LLM cache == saving: global:keywords:bdb68011301f0376257a250950716335
+2026-01-15 21:46:06,960 - lightrag - INFO - Query edges: PTO, Paid time off, Policy clarification (top_k:40, cosine:0.2)
+2026-01-15 21:46:07,766 - lightrag - INFO - Global query: 42 entites, 40 relations
+2026-01-15 21:46:07,767 - lightrag - INFO - Raw search results: 42 entities, 40 relations, 0 vector chunks
+2026-01-15 21:46:07,773 - lightrag - INFO - After truncation: 42 entities, 40 relations
+2026-01-15 21:46:07,791 - lightrag - INFO - Selecting 77 from 77 entity-related chunks by vector similarity
+2026-01-15 21:46:07,795 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-01-15 21:46:07,795 - lightrag - INFO - Round-robin merged chunks: 77 -> 77 (deduplicated 0)
+2026-01-15 21:46:07,799 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-15 21:46:07,810 - lightrag - INFO - Final context: 42 entities, 40 relations, 17 chunks
+2026-01-15 21:46:07,810 - lightrag - INFO - Final chunks S+F/O: E3/1 E4/2 E6/3 E1/4 E2/5 E4/6 E1/7 E3/8 E3/9 E1/10 E6/11 E4/12 E2/13 E1/14 E3/15 E3/16 E4/17
+2026-01-15 21:46:09,840 - uvicorn.access - INFO - 127.0.0.1:59222 - "POST /query/stream HTTP/1.1" 200
+2026-01-15 21:48:00,095 - lightrag - WARNING - high_level_keywords is empty
+2026-01-15 21:48:00,095 - lightrag - WARNING - Forced low_level_keywords to origin query: can you summarize that a bit more?
+2026-01-15 21:48:00,896 - lightrag - INFO - Query nodes: can you summarize that a bit more? (top_k:40, cosine:0.2)
+2026-01-15 21:48:01,801 - lightrag - INFO - Local query: 15 entites, 55 relations
+2026-01-15 21:48:01,801 - lightrag - INFO - Raw search results: 15 entities, 55 relations, 0 vector chunks
+2026-01-15 21:48:01,806 - lightrag - INFO - After truncation: 15 entities, 55 relations
+2026-01-15 21:48:01,812 - lightrag - INFO - Selecting 27 from 27 entity-related chunks by vector similarity
+2026-01-15 21:48:01,812 - lightrag - INFO - Find no additional relations-related chunks from 55 relations
+2026-01-15 21:48:01,812 - lightrag - INFO - Round-robin merged chunks: 27 -> 27 (deduplicated 0)
+2026-01-15 21:48:01,816 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-15 21:48:01,831 - lightrag - INFO - Final context: 15 entities, 55 relations, 20 chunks
+2026-01-15 21:48:01,831 - lightrag - INFO - Final chunks S+F/O: E2/1 E2/2 E3/3 E1/4 E2/5 E1/6 E1/7 E2/8 E1/9 E1/10 E1/11 E2/12 E2/13 E2/14 E7/15 E2/16 E4/17 E4/18 E2/19 E1/20
+2026-01-15 21:48:03,264 - uvicorn.access - INFO - 127.0.0.1:59289 - "POST /query/stream HTTP/1.1" 200

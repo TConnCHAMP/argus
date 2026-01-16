@@ -105,6 +105,43 @@ export type Message = {
   thinkingTime?: number | null
 }
 
+export type ThreadMessage = {
+  role: string
+  content: string
+  timestamp: string
+}
+
+export type Thread = {
+  id: string
+  title: string
+  created_at: string
+  updated_at: string
+  messages: ThreadMessage[]
+}
+
+export type ThreadListItem = {
+  id: string
+  title: string
+  created_at: string
+  updated_at: string
+  message_count: number
+  preview: string | null
+}
+
+export type CreateThreadRequest = {
+  title?: string
+  initial_message?: string
+}
+
+export type UpdateThreadRequest = {
+  title?: string
+}
+
+export type AddMessageRequest = {
+  role: string
+  content: string
+}
+
 export type QueryRequest = {
   query: string
   /** Specifies the retrieval mode. */
@@ -1082,5 +1119,68 @@ export const getDocumentsPaginated = async (request: DocumentsRequest): Promise<
  */
 export const getDocumentStatusCounts = async (): Promise<StatusCountsResponse> => {
   const response = await axiosInstance.get('/documents/status_counts')
+  return response.data
+}
+
+// ===== Thread Management API =====
+
+/**
+ * Create a new conversation thread
+ * @param request Thread creation parameters
+ * @returns Promise with the created thread
+ */
+export const createThread = async (request: CreateThreadRequest = {}): Promise<Thread> => {
+  const response = await axiosInstance.post('/threads', request)
+  return response.data
+}
+
+/**
+ * List all conversation threads
+ * @returns Promise with array of thread list items
+ */
+export const listThreads = async (): Promise<ThreadListItem[]> => {
+  const response = await axiosInstance.get('/threads')
+  return response.data
+}
+
+/**
+ * Get a specific thread with all messages
+ * @param threadId The thread identifier
+ * @returns Promise with the complete thread data
+ */
+export const getThread = async (threadId: string): Promise<Thread> => {
+  const response = await axiosInstance.get(`/threads/${threadId}`)
+  return response.data
+}
+
+/**
+ * Update thread metadata (e.g., title)
+ * @param threadId The thread identifier
+ * @param request Update parameters
+ * @returns Promise with the updated thread
+ */
+export const updateThread = async (threadId: string, request: UpdateThreadRequest): Promise<Thread> => {
+  const response = await axiosInstance.patch(`/threads/${threadId}`, request)
+  return response.data
+}
+
+/**
+ * Delete a thread
+ * @param threadId The thread identifier
+ * @returns Promise with success confirmation
+ */
+export const deleteThread = async (threadId: string): Promise<{ status: string; message: string }> => {
+  const response = await axiosInstance.delete(`/threads/${threadId}`)
+  return response.data
+}
+
+/**
+ * Add a message to a thread
+ * @param threadId The thread identifier
+ * @param request Message data
+ * @returns Promise with the updated thread
+ */
+export const addMessageToThread = async (threadId: string, request: AddMessageRequest): Promise<Thread> => {
+  const response = await axiosInstance.post(`/threads/${threadId}/messages`, request)
   return response.data
 }
