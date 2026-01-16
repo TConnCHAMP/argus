@@ -9,7 +9,8 @@
       "Bash(ls:*)",
       "Bash(python3:*)",
       "Bash(kill:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

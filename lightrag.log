@@ -5677,3 +5677,1258 @@ AttributeError: 'LightRAG' object has no attribute 'doc_storage'. Did you mean: 
 2026-01-15 23:56:18,177 - lightrag - INFO - [] Graph truncated: found 493 nodes within max_depth 3
 2026-01-15 23:56:18,196 - lightrag - INFO - [] Subgraph query successful | Node count: 493 | Edge count: 621
 2026-01-15 23:56:18,210 - uvicorn.access - INFO - 127.0.0.1:57535 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-16 00:01:27,227 - uvicorn.access - INFO - 127.0.0.1:58201 - "GET /webui/assets/index-xY8fZQCg.css HTTP/1.1" 304
+2026-01-16 00:01:27,228 - uvicorn.access - INFO - 127.0.0.1:58205 - "GET /webui/assets/index-B17fzG_C.js HTTP/1.1" 304
+2026-01-16 00:01:27,389 - uvicorn.access - INFO - 127.0.0.1:58201 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-16 00:01:27,528 - uvicorn.access - INFO - 127.0.0.1:58201 - "GET /docs HTTP/1.1" 200
+2026-01-16 00:01:27,534 - uvicorn.access - INFO - 127.0.0.1:58205 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:01:27,543 - lightrag - INFO - [] Graph truncated: found 493 nodes within max_depth 3
+2026-01-16 00:01:27,550 - lightrag - INFO - [] Subgraph query successful | Node count: 493 | Edge count: 621
+2026-01-16 00:01:27,566 - uvicorn.access - INFO - 127.0.0.1:58207 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-16 00:01:27,567 - uvicorn.access - INFO - 127.0.0.1:58209 - "GET /webui/assets/index-Dbt5VdRj.js HTTP/1.1" 304
+2026-01-16 00:01:27,611 - uvicorn.access - INFO - 127.0.0.1:58207 - "GET /openapi.json HTTP/1.1" 200
+2026-01-16 00:01:35,235 - uvicorn.access - INFO - 127.0.0.1:58275 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-16 00:01:35,238 - lightrag - INFO - Deleting document 1/10: doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-16 00:01:35,238 - lightrag - INFO - Starting deletion process for document doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-16 00:01:35,238 - lightrag - INFO - Collected 4 LLM cache entries for document doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-16 00:01:35,249 - lightrag - INFO - Found 47 affected entities
+2026-01-16 00:01:35,253 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:35,254 - lightrag - INFO - Successfully deleted 2 chunks from storage
+2026-01-16 00:01:35,257 - lightrag - INFO - Successfully deleted 29 relations
+2026-01-16 00:01:35,258 - lightrag - WARNING - Edge still exists: Slow Braised Brisket Bowl --> HarvestOwl
+2026-01-16 00:01:35,258 - lightrag - WARNING - Edge still exists: Siete Grain Free Tortilla Chips (Lime) --> HarvestOwl
+2026-01-16 00:01:35,258 - lightrag - WARNING - Edge still exists: Greek Chicken Salad --> HarvestOwl
+2026-01-16 00:01:35,258 - lightrag - WARNING - ⚠️ 3 entities still has edges before deletion
+2026-01-16 00:01:35,258 - lightrag - INFO - Cleaned 3 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:35,262 - lightrag - INFO - Successfully deleted 20 entities
+2026-01-16 00:01:35,353 - lightrag - INFO - [] Writing graph with 848 nodes, 761 edges
+2026-01-16 00:01:35,355 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:35,356 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:35,356 - lightrag - INFO - Rebuilding knowledge from 2 cached chunk extractions (parallel processing)
+2026-01-16 00:01:35,356 - lightrag - INFO - Found 4 valid cache entries, 2 chunks with results
+2026-01-16 00:01:35,360 - lightrag - INFO - Starting parallel rebuild of 47 entities and 0 relationships (async: 8)
+2026-01-16 00:01:35,613 - lightrag - INFO - Rebuild `Red Grape & Walnut Chicken Salad` from 1 chunks
+2026-01-16 00:01:35,614 - lightrag - INFO - Rebuild `Rittman Orchards` from 1 chunks
+2026-01-16 00:01:35,672 - lightrag - INFO - Rebuild `Jackson's Sweet Potato Chips` from 1 chunks
+2026-01-16 00:01:35,700 - lightrag - INFO - Rebuild `Crunchy Roasted Edamame Beans` from 1 chunks
+2026-01-16 00:01:35,794 - lightrag - INFO - Rebuild `Poshi Chili & Garlic Kalamata Olives` from 1 chunks
+2026-01-16 00:01:35,842 - lightrag - INFO - Rebuild `Garden of Flavor Cold Pressed Juice` from 1 chunks
+2026-01-16 00:01:35,909 - lightrag - INFO - Rebuild `Sanzo Sparkling Water` from 1 chunks
+2026-01-16 00:01:35,932 - lightrag - INFO - Rebuild `Cleveland Kraut` from 1 chunks
+2026-01-16 00:01:35,932 - lightrag - INFO - Rebuild `Love, Corn` from 1 chunks
+2026-01-16 00:01:35,982 - lightrag - INFO - Rebuild `Olipop` from 2 chunks
+2026-01-16 00:01:36,000 - lightrag - INFO - Rebuild `Think Jerky` from 1 chunks
+2026-01-16 00:01:36,040 - lightrag - INFO - Rebuild `Quinn Peanut Butter Filled Pretzel Nuggets` from 1 chunks
+2026-01-16 00:01:36,115 - lightrag - INFO - Rebuild `Crunchy Pretzel Shells` from 1 chunks
+2026-01-16 00:01:36,147 - lightrag - INFO - Rebuild `Just Iced Tea` from 1 chunks
+2026-01-16 00:01:36,162 - lightrag - INFO - Rebuild `Spindrift` from 1 chunks
+2026-01-16 00:01:36,194 - lightrag - INFO - Rebuild `Luna Bakery` from 1 chunks
+2026-01-16 00:01:36,212 - lightrag - INFO - Rebuild `BOOMCHICKAPOP Sea Salt Popcorn` from 1 chunks
+2026-01-16 00:01:36,217 - lightrag - INFO - Rebuild `Elemental Superfood Seedbar` from 1 chunks
+2026-01-16 00:01:36,273 - lightrag - INFO - Rebuild `Oven Roasted Turkey Sandwich` from 1 chunks
+2026-01-16 00:01:36,313 - lightrag - INFO - Rebuild `Housemade Cashew Peanut Butter & Apple Slices` from 1 chunks
+2026-01-16 00:01:36,341 - lightrag - INFO - Rebuild `Pasture-raised Hard Boiled Egg` from 1 chunks
+2026-01-16 00:01:36,399 - lightrag - INFO - Rebuild `The Doctor's Everyday Salad` from 1 chunks
+2026-01-16 00:01:36,414 - lightrag - INFO - Rebuild `GF` from 1 chunks
+2026-01-16 00:01:36,430 - lightrag - INFO - Rebuild `Sea Salt Potato Chips` from 1 chunks
+2026-01-16 00:01:36,451 - lightrag - INFO - Rebuild `Ruani Functional Brownie` from 1 chunks
+2026-01-16 00:01:36,578 - lightrag - INFO - Rebuild `Karma Cashews` from 1 chunks
+2026-01-16 00:01:36,624 - lightrag - INFO - Rebuild `Fresh 'n Crisp Farms` from 1 chunks
+2026-01-16 00:01:36,673 - lightrag - INFO - Rebuild `Brew Dr. Kombucha` from 1 chunks
+2026-01-16 00:01:36,692 - lightrag - INFO - Rebuild `Witzis Raw Granola` from 1 chunks
+2026-01-16 00:01:36,768 - lightrag - INFO - Rebuild `Super Simple Bowl with Brown Rice` from 1 chunks
+2026-01-16 00:01:36,793 - lightrag - INFO - Rebuild `Holistic Acres` from 1 chunks
+2026-01-16 00:01:36,826 - lightrag - INFO - Rebuild `Guardian Cold Brew Coffee` from 1 chunks
+2026-01-16 00:01:36,879 - lightrag - INFO - Rebuild `Philomena Bake Shop` from 1 chunks
+2026-01-16 00:01:36,898 - lightrag - INFO - Rebuild `Vita Coco Pure Coconut Water` from 1 chunks
+2026-01-16 00:01:36,908 - lightrag - INFO - Rebuild `Local Apple Cider` from 2 chunks
+2026-01-16 00:01:36,924 - lightrag - INFO - Rebuild `Breakfast Tacos` from 1 chunks
+2026-01-16 00:01:36,966 - lightrag - INFO - Rebuild `Tcho Dark Chocolate Bar` from 1 chunks
+2026-01-16 00:01:37,010 - lightrag - INFO - Rebuild `Grapefruit & Broccoli Chopped Kale Bowl` from 1 chunks
+2026-01-16 00:01:37,046 - lightrag - INFO - Rebuild `Shagbark Tortilla Chips` from 1 chunks
+2026-01-16 00:01:37,098 - lightrag - INFO - Rebuild `Niman Ranch Snack Pack` from 2 chunks
+2026-01-16 00:01:37,105 - lightrag - INFO - Rebuild `Garden of Flavor` from 1 chunks
+2026-01-16 00:01:37,121 - lightrag - INFO - Rebuild `Hoplark Sparkling HopTea` from 1 chunks
+2026-01-16 00:01:37,141 - lightrag - INFO - Rebuild `Mountain Valley Spring Water` from 1 chunks
+2026-01-16 00:01:37,165 - lightrag - INFO - Rebuild `Foods Alive Sprouted Crisps` from 1 chunks
+2026-01-16 00:01:37,259 - lightrag - INFO - Rebuild `San Pellegrino Sparkling Soda` from 1 chunks
+2026-01-16 00:01:37,259 - lightrag - INFO - Rebuild `Cider Poached Pears` from 1 chunks
+2026-01-16 00:01:37,323 - lightrag - INFO - Rebuild `Rittman Orchard Apple` from 1 chunks
+2026-01-16 00:01:37,323 - lightrag - INFO - KG rebuild completed: 47 entities and 0 relationships rebuilt successfully.
+2026-01-16 00:01:37,324 - lightrag - INFO - Successfully deleted 4 LLM cache entries for document doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-16 00:01:37,391 - lightrag - INFO - [] Writing graph with 848 nodes, 761 edges
+2026-01-16 00:01:37,393 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,393 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,393 - lightrag - INFO - Document deleted 1/10: doc-1f96463cc2f4da744af2dfb74f66a15f[HarvestOwl+Menu+January+12th+2026+NP.pdf]
+2026-01-16 00:01:37,394 - lightrag - INFO - Successfully deleted enqueued file: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-16 00:01:37,394 - lightrag - INFO - Deleting document 2/10: doc-0071f33f5941888606293ff29e1871b5
+2026-01-16 00:01:37,394 - lightrag - INFO - Starting deletion process for document doc-0071f33f5941888606293ff29e1871b5
+2026-01-16 00:01:37,394 - lightrag - INFO - Collected 4 LLM cache entries for document doc-0071f33f5941888606293ff29e1871b5
+2026-01-16 00:01:37,402 - lightrag - INFO - Found 1 affected entities
+2026-01-16 00:01:37,403 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:37,403 - lightrag - INFO - Successfully deleted 2 chunks from storage
+2026-01-16 00:01:37,404 - lightrag - INFO - Successfully deleted 12 relations
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Red Grape & Walnut Chicken Salad --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Crunchy Pretzel Shells --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: BOOMCHICKAPOP Sea Salt Popcorn --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Grilled Steak Honey Mustard Salad --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Oven Roasted Turkey Sandwich --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Super Simple Keto Bowl --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: The Doctor's Everyday Salad --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Hippeas Vegan White Cheddar --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: The Ultimate Veggie Sandwich --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Super Simple Bowl with Brown Rice --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Breakfast Tacos --> HarvestOwl
+2026-01-16 00:01:37,407 - lightrag - WARNING - Edge still exists: Luna Bakery Dark Chocolate Sea Salt Cookie --> HarvestOwl
+2026-01-16 00:01:37,408 - lightrag - WARNING - Edge still exists: Niman Ranch Snack Pack --> HarvestOwl
+2026-01-16 00:01:37,408 - lightrag - WARNING - Edge still exists: Rittman Orchard Apple --> HarvestOwl
+2026-01-16 00:01:37,408 - lightrag - WARNING - ⚠️ 14 entities still has edges before deletion
+2026-01-16 00:01:37,408 - lightrag - INFO - Cleaned 14 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:37,409 - lightrag - INFO - Successfully deleted 66 entities
+2026-01-16 00:01:37,468 - lightrag - INFO - [] Writing graph with 782 nodes, 735 edges
+2026-01-16 00:01:37,469 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,469 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,470 - lightrag - INFO - Rebuilding knowledge from 2 cached chunk extractions (parallel processing)
+2026-01-16 00:01:37,470 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,470 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:37,470 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:37,470 - lightrag - INFO - Successfully deleted 4 LLM cache entries for document doc-0071f33f5941888606293ff29e1871b5
+2026-01-16 00:01:37,526 - lightrag - INFO - [] Writing graph with 782 nodes, 735 edges
+2026-01-16 00:01:37,527 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,528 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,528 - lightrag - INFO - Document deleted 2/10: doc-0071f33f5941888606293ff29e1871b5[HarvestOwl+Menu+January+19th+2026+NP.pdf]
+2026-01-16 00:01:37,528 - lightrag - INFO - Successfully deleted enqueued file: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-16 00:01:37,528 - lightrag - INFO - Deleting document 3/10: doc-c2a036f39d348072d71c282f144f0d28
+2026-01-16 00:01:37,528 - lightrag - INFO - Starting deletion process for document doc-c2a036f39d348072d71c282f144f0d28
+2026-01-16 00:01:37,528 - lightrag - INFO - Collected 12 LLM cache entries for document doc-c2a036f39d348072d71c282f144f0d28
+2026-01-16 00:01:37,535 - lightrag - INFO - Found 0 affected entities
+2026-01-16 00:01:37,537 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:37,537 - lightrag - INFO - Successfully deleted 6 chunks from storage
+2026-01-16 00:01:37,538 - lightrag - INFO - Successfully deleted 41 relations
+2026-01-16 00:01:37,540 - lightrag - INFO - Successfully deleted 45 entities
+2026-01-16 00:01:37,594 - lightrag - INFO - [] Writing graph with 737 nodes, 694 edges
+2026-01-16 00:01:37,596 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,596 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,596 - lightrag - INFO - Successfully deleted 12 LLM cache entries for document doc-c2a036f39d348072d71c282f144f0d28
+2026-01-16 00:01:37,647 - lightrag - INFO - [] Writing graph with 737 nodes, 694 edges
+2026-01-16 00:01:37,648 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,648 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,648 - lightrag - INFO - Document deleted 3/10: doc-c2a036f39d348072d71c282f144f0d28[2026-01-14T15:07:45Z.txt]
+2026-01-16 00:01:37,648 - lightrag - INFO - Successfully deleted enqueued file: 2026-01-14T15:07:45Z.txt
+2026-01-16 00:01:37,649 - lightrag - INFO - Deleting document 4/10: doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-16 00:01:37,649 - lightrag - INFO - Starting deletion process for document doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-16 00:01:37,649 - lightrag - INFO - Collected 136 LLM cache entries for document doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-16 00:01:37,705 - lightrag - INFO - Found 5 affected entities
+2026-01-16 00:01:37,718 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:37,718 - lightrag - INFO - Successfully deleted 68 chunks from storage
+2026-01-16 00:01:37,719 - lightrag - INFO - Successfully deleted 211 relations
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Virginia Law --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Physical or Mental Disability <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: U.S. Citizens --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Second Opinion <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: New York Law --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Volunteer Firefighters --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Disciplinary Process --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Sexual Assault --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Sexual Assault <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: New York City Commission on Human Rights <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: PFL Program <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Military Events <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: California Employment Development Department --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Public Health Authority <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Punctuality and Attendance Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Jury Duty --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Workers Compensation Board --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Leave of Absence <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Weapons Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Restraining Order <-> Employees
+2026-01-16 00:01:37,736 - lightrag - WARNING - Edge still exists: Paid Family Leave Request <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Harassment Complaint <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: School Conference and Activities Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Reproductive Health Decision-Making --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Federal Family and Medical Leave Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Federal Family and Medical Leave Act <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Workplace Violence Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Witness Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Company President <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Vice President of HR --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Lactation Accommodation --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: CFRA --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: CFRA <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Accommodation Request <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Part-Time Employees --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Complaint Procedure --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Human Rights Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: San Francisco Lactation in the Workplace Ordinance --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Human Resources Department --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Court Order <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: New York State --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Temporary Restraining Order <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Personal and Company-Proved Portable Communication Devices <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Work Environment --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Virginia Human Rights Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Michigan --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Illinois Sexual Harassment and Discrimination Helpline <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Philadelphia --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Lactation Accommodations --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: General Standards of Conduct --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Equal Employment Opportunity --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Equal Employment Opportunity <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Minnesota Statutes --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Sick and Safe Leave <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Victim-Services Organization --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Military Qualifying Event Certification <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Company Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Discrimination --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Family & Medical Leave Act <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Bonding Certification <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: FMLA Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Paid Family Leave (PFL) --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Personal Communication Devices --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: California Family Rights Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: National Labor Relations Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Jury Duty Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Temporary Employees --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Healthcare Provider <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Solicitation and Distribution Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Servicemember <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Organ Donation <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Sick Leave Policy <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Emergency Rescue Personnel --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Communicable Disease <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Disciplinary Action --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: City and County of San Francisco --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Champ Titles Policies --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: NJFLA --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: NJFLA <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Adverse Employment Action --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: California Addendum --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: City of St. Paul --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: DHR --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Social Security Number Privacy Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: EEOC <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Stalking <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Americans with Disabilities Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: The Company --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Company --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Deduction Authorization Form <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Division of Temporary Disability Insurance <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Human Trafficking <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Sick Days Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Health Care Provider Certification <-> Employees
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Military Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: Pregnancy Accommodations --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,737 - lightrag - WARNING - Edge still exists: New York PFL --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Social Security Number <-> Employees
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees --> New Jersey
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Division of Temporary Disability Insurance
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> NJFLA
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> NJ SAFE Act
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Anti-Harassment Hotline
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Employee Activities
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Physical or Mental Disability
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Head of Human Resources
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Public Health Authority
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Base Hours
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Qualifying Exigency
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Healthcare Provider
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> ESST
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Nursing Mothers, Lactating Employees, and Pregnancy Accommodations Law
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Sick Leave Policy
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Legal Guardians
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Step-, Foster, Adoptive, and Half-Relations
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Domestic Violence
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Sexual Assault
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Human Trafficking
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Stalking
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Bone Marrow Donation
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Organ Donation
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Court Order
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Sick and Safe Leave
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Temporary Restraining Order
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Restraining Order
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Paid Family Leave
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Family & Medical Leave Act
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Paid Family Leave Request
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Bonding Certification
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Health Care Provider Certification
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Military Qualifying Event Certification
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> PFL Program
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> NJFLA Leave
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Communicable Disease
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Assigned Inventions
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Personal and Company-Proved Portable Communication Devices
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Illinois Department of Human Rights
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Illinois Sexual Harassment and Discrimination Helpline
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Harassment Complaints
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> CFRA
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Serious Health Condition
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Servicemember
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Covered Veteran
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Military Events
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Leave of Absence
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Workers' Compensation
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> State of California Paid Family Leave
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Federal Family and Medical Leave Act
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Company President
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Labor Commissioner
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Handbook
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Onsite Supervisor
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Deduction Authorization Form
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Accommodation Request
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Equal Employment Opportunity
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Retaliation
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Harassment Complaint
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Second Opinion
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Third Certification
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Legal Assistance
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Social Security Number
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Time Away from Work
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> EEOC
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> New York City Commission on Human Rights
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Employees <-> Bystander Intervention Methods
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Paid Time Off --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Payroll Stubs --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Proprietary Rights --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Covered Veteran <-> Employees
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Assigned Inventions --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Assigned Inventions <-> Employees
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Time Off for Crime Victims --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Step-, Foster, Adoptive, and Half-Relations <-> Employees
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: FMLA --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,738 - lightrag - WARNING - Edge still exists: Labor Commissioner <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Earned Sick Time --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Bystander Intervention Methods <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Bone Marrow Donation <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Base Hours <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: San Francisco --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Paid Prenatal Personal Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Harassment Complaints <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: NJ SAFE Act <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Earned Sick and Safe Time (ESST) --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Anti-Harassment Hotline <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Short-Term Disability Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Illinois Department of Human Rights <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Nursing Mothers, Lactating Employees, and Pregnancy Accommodations Law <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Bone Marrow Donation Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: State of California Paid Family Leave <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: South Carolina Lactation Support Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Time Away from Work <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Substance-Free Workplace Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Qualifying Exigency <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Domestic Abuse or Harassment Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Legal Assistance <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: San Francisco Paid Parental Leave Ordinance --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Workers' Compensation <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Third Parties --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Champ Titles Standards of Conduct and Ethics Code --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Reserve Peace Officers --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Domestic Violence --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Domestic Violence <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Legal Guardians <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Parental Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Retaliation <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Handbook <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Civil Air Patrol --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: employees --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Employee Activities <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Employee Assistance Program (EAP) --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Controlled Substances --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Third Certification <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Employee's Supervisor --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: ESST <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Pregnancy Disability Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Drug and Alcohol-Free Workplace Policy --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Confidential Information --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Illinois Human Rights Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Company Premises --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Family Military Leave --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Supervisors --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Overtime --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Supervisor --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Sexual Harassment --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: California --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Head of Human Resources --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Head of Human Resources <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: NJFLA Leave <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Retaliation Prohibited --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Serious Health Condition <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Onsite Supervisor <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Family and Medical Leave Act --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Paid Family Leave <-> Employees
+2026-01-16 00:01:37,739 - lightrag - WARNING - Edge still exists: Employee Handbook --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,739 - lightrag - WARNING - ⚠️ 161 entities still has edges before deletion
+2026-01-16 00:01:37,740 - lightrag - INFO - Cleaned 170 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:37,741 - lightrag - INFO - Successfully deleted 351 entities
+2026-01-16 00:01:37,768 - lightrag - INFO - [] Writing graph with 386 nodes, 313 edges
+2026-01-16 00:01:37,769 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,769 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,769 - lightrag - INFO - Rebuilding knowledge from 20 cached chunk extractions (parallel processing)
+2026-01-16 00:01:37,769 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:37,769 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:37,769 - lightrag - INFO - Successfully deleted 136 LLM cache entries for document doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-16 00:01:37,796 - lightrag - INFO - [] Writing graph with 386 nodes, 313 edges
+2026-01-16 00:01:37,796 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,797 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,797 - lightrag - INFO - Document deleted 4/10: doc-c6de8b92b7490b506515adcbe8d1c2cb[handbook.pdf]
+2026-01-16 00:01:37,797 - lightrag - INFO - Successfully deleted enqueued file: handbook.pdf
+2026-01-16 00:01:37,797 - lightrag - INFO - Deleting document 5/10: doc-7f9ff56363017b11489b61362ec6490b
+2026-01-16 00:01:37,797 - lightrag - INFO - Starting deletion process for document doc-7f9ff56363017b11489b61362ec6490b
+2026-01-16 00:01:37,798 - lightrag - INFO - Collected 16 LLM cache entries for document doc-7f9ff56363017b11489b61362ec6490b
+2026-01-16 00:01:37,808 - lightrag - INFO - Found 29 affected entities
+2026-01-16 00:01:37,811 - lightrag - INFO - Found 6 affected relations
+2026-01-16 00:01:37,811 - lightrag - INFO - Successfully deleted 8 chunks from storage
+2026-01-16 00:01:37,812 - lightrag - INFO - Successfully deleted 43 relations
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Vehicle Titling Registration <-> Kevin
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Kevin --> ELT
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Kevin --> Tyler Conn
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Kevin <-> Vehicle Titling Registration
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Kevin <-> Puritas Nursery
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Kevin <-> The Office
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Organization Growth --> Tyler Conn
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Puritas Nursery <-> Kevin
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: Model Train --> Tyler Conn
+2026-01-16 00:01:37,814 - lightrag - WARNING - Edge still exists: The Office <-> Kevin
+2026-01-16 00:01:37,814 - lightrag - WARNING - ⚠️ 6 entities still has edges before deletion
+2026-01-16 00:01:37,814 - lightrag - INFO - Cleaned 7 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:37,815 - lightrag - INFO - Successfully deleted 48 entities
+2026-01-16 00:01:37,838 - lightrag - INFO - [] Writing graph with 338 nodes, 263 edges
+2026-01-16 00:01:37,839 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,839 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,839 - lightrag - INFO - Rebuilding knowledge from 14 cached chunk extractions (parallel processing)
+2026-01-16 00:01:37,839 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:37,839 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:37,840 - lightrag - INFO - Successfully deleted 16 LLM cache entries for document doc-7f9ff56363017b11489b61362ec6490b
+2026-01-16 00:01:37,861 - lightrag - INFO - [] Writing graph with 338 nodes, 263 edges
+2026-01-16 00:01:37,862 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,862 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,862 - lightrag - INFO - Document deleted 5/10: doc-7f9ff56363017b11489b61362ec6490b[2025-12-19T12:13:19Z_001.txt]
+2026-01-16 00:01:37,862 - lightrag - INFO - Successfully deleted enqueued file: 2025-12-19T12:13:19Z_001.txt
+2026-01-16 00:01:37,862 - lightrag - INFO - Deleting document 6/10: doc-601fbed9d6e90700da21adab1219fe98
+2026-01-16 00:01:37,863 - lightrag - INFO - Starting deletion process for document doc-601fbed9d6e90700da21adab1219fe98
+2026-01-16 00:01:37,863 - lightrag - INFO - Collected 2 LLM cache entries for document doc-601fbed9d6e90700da21adab1219fe98
+2026-01-16 00:01:37,864 - lightrag - INFO - Found 4 affected entities
+2026-01-16 00:01:37,865 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:37,865 - lightrag - INFO - Successfully deleted 1 chunks from storage
+2026-01-16 00:01:37,865 - lightrag - INFO - Successfully deleted 4 relations
+2026-01-16 00:01:37,866 - lightrag - WARNING - Edge still exists: Visa Sponsorship --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,866 - lightrag - WARNING - Edge still exists: Cleveland --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,866 - lightrag - WARNING - ⚠️ 2 entities still has edges before deletion
+2026-01-16 00:01:37,866 - lightrag - INFO - Cleaned 2 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:37,866 - lightrag - INFO - Successfully deleted 6 entities
+2026-01-16 00:01:37,888 - lightrag - INFO - [] Writing graph with 332 nodes, 257 edges
+2026-01-16 00:01:37,889 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,889 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,889 - lightrag - INFO - Rebuilding knowledge from 6 cached chunk extractions (parallel processing)
+2026-01-16 00:01:37,889 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,889 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:37,889 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:37,890 - lightrag - INFO - Successfully deleted 2 LLM cache entries for document doc-601fbed9d6e90700da21adab1219fe98
+2026-01-16 00:01:37,910 - lightrag - INFO - [] Writing graph with 332 nodes, 257 edges
+2026-01-16 00:01:37,911 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,911 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,911 - lightrag - INFO - Document deleted 6/10: doc-601fbed9d6e90700da21adab1219fe98[Product Arch Job Description.txt]
+2026-01-16 00:01:37,912 - lightrag - INFO - Successfully deleted enqueued file: Product Arch Job Description.txt
+2026-01-16 00:01:37,912 - lightrag - INFO - Deleting document 7/10: doc-a18a018ea63263a65246bd4beb196541
+2026-01-16 00:01:37,912 - lightrag - INFO - Starting deletion process for document doc-a18a018ea63263a65246bd4beb196541
+2026-01-16 00:01:37,912 - lightrag - INFO - Collected 2 LLM cache entries for document doc-a18a018ea63263a65246bd4beb196541
+2026-01-16 00:01:37,913 - lightrag - INFO - Found 2 affected entities
+2026-01-16 00:01:37,913 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:37,913 - lightrag - INFO - Successfully deleted 1 chunks from storage
+2026-01-16 00:01:37,914 - lightrag - INFO - Successfully deleted 3 relations
+2026-01-16 00:01:37,914 - lightrag - WARNING - Edge still exists: Bella Nieves --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,914 - lightrag - WARNING - ⚠️ 1 entities still has edges before deletion
+2026-01-16 00:01:37,914 - lightrag - INFO - Cleaned 1 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:37,915 - lightrag - INFO - Successfully deleted 5 entities
+2026-01-16 00:01:37,937 - lightrag - INFO - [] Writing graph with 327 nodes, 253 edges
+2026-01-16 00:01:37,938 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,938 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,938 - lightrag - INFO - Rebuilding knowledge from 24 cached chunk extractions (parallel processing)
+2026-01-16 00:01:37,938 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,938 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,938 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,938 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,938 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,938 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:37,938 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:37,938 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:37,939 - lightrag - INFO - Successfully deleted 2 LLM cache entries for document doc-a18a018ea63263a65246bd4beb196541
+2026-01-16 00:01:37,959 - lightrag - INFO - [] Writing graph with 327 nodes, 253 edges
+2026-01-16 00:01:37,960 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,960 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,960 - lightrag - INFO - Document deleted 7/10: doc-a18a018ea63263a65246bd4beb196541[welcome email.pdf]
+2026-01-16 00:01:37,961 - lightrag - INFO - Successfully deleted enqueued file: welcome email.pdf
+2026-01-16 00:01:37,961 - lightrag - INFO - Deleting document 8/10: doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:01:37,961 - lightrag - INFO - Starting deletion process for document doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:01:37,961 - lightrag - INFO - Collected 2 LLM cache entries for document doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:01:37,963 - lightrag - INFO - Found 0 affected entities
+2026-01-16 00:01:37,963 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:37,963 - lightrag - INFO - Successfully deleted 1 chunks from storage
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Bo Shim --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: 2025 --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Greater Cleveland Partnership --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: 2018 --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Shane Bigelow --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Cleveland, OH --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Center Street, Floor 2, Cleveland, OH 44113 --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: United Healthcare --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Open Positions --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - Edge still exists: Cuyahoga County --> CHAMP TITLES, INC.
+2026-01-16 00:01:37,964 - lightrag - WARNING - ⚠️ 10 entities still has edges before deletion
+2026-01-16 00:01:37,964 - lightrag - INFO - Cleaned 10 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:37,964 - lightrag - INFO - Successfully deleted 10 entities
+2026-01-16 00:01:37,988 - lightrag - INFO - [] Writing graph with 317 nodes, 243 edges
+2026-01-16 00:01:37,989 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:37,989 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:37,989 - lightrag - INFO - Successfully deleted 2 LLM cache entries for document doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:01:38,009 - lightrag - INFO - [] Writing graph with 317 nodes, 243 edges
+2026-01-16 00:01:38,010 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:38,010 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:38,010 - lightrag - INFO - Document deleted 8/10: doc-cd1e146d6eb4fb0efbdb6208f93c4df6[FAQ for Candidates - External.docx]
+2026-01-16 00:01:38,010 - lightrag - INFO - Successfully deleted enqueued file: FAQ for Candidates - External.docx
+2026-01-16 00:01:38,010 - lightrag - INFO - Deleting document 9/10: doc-866367e3b00416f160cd95280143776b
+2026-01-16 00:01:38,011 - lightrag - INFO - Starting deletion process for document doc-866367e3b00416f160cd95280143776b
+2026-01-16 00:01:38,011 - lightrag - INFO - Collected 12 LLM cache entries for document doc-866367e3b00416f160cd95280143776b
+2026-01-16 00:01:38,022 - lightrag - INFO - Found 3 affected entities
+2026-01-16 00:01:38,024 - lightrag - INFO - Found 1 affected relations
+2026-01-16 00:01:38,024 - lightrag - INFO - Successfully deleted 6 chunks from storage
+2026-01-16 00:01:38,024 - lightrag - INFO - Successfully deleted 36 relations
+2026-01-16 00:01:38,028 - lightrag - WARNING - Edge still exists: UnitedHealthcare Primary Advantage CP 4500 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Choice Plus 500 (80%) --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Choice Plus 1000 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Primary Advantage CP 2000 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Choice Plus 2500 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Choice Plus HDHP 1700 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Choice Plus 6000 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Primary Advantage CP 5000 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: Massachusetts --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - Edge still exists: UnitedHealthcare Choice Plus 1500 --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,029 - lightrag - WARNING - ⚠️ 10 entities still has edges before deletion
+2026-01-16 00:01:38,029 - lightrag - INFO - Cleaned 10 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:38,029 - lightrag - INFO - Successfully deleted 83 entities
+2026-01-16 00:01:38,047 - lightrag - INFO - [] Writing graph with 234 nodes, 197 edges
+2026-01-16 00:01:38,048 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:38,048 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:38,048 - lightrag - INFO - Rebuilding knowledge from 56 cached chunk extractions (parallel processing)
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,048 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,049 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:38,049 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:38,049 - lightrag - INFO - Successfully deleted 12 LLM cache entries for document doc-866367e3b00416f160cd95280143776b
+2026-01-16 00:01:38,065 - lightrag - INFO - [] Writing graph with 234 nodes, 197 edges
+2026-01-16 00:01:38,065 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:38,065 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:38,066 - lightrag - INFO - Document deleted 9/10: doc-866367e3b00416f160cd95280143776b[CHAMP employee contributions per paycheck 2025.pdf]
+2026-01-16 00:01:38,066 - lightrag - INFO - Successfully deleted enqueued file: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-16 00:01:38,066 - lightrag - INFO - Deleting document 10/10: doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-16 00:01:38,066 - lightrag - INFO - Starting deletion process for document doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-16 00:01:38,066 - lightrag - INFO - Collected 16 LLM cache entries for document doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-16 00:01:38,075 - lightrag - INFO - Found 6 affected entities
+2026-01-16 00:01:38,075 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:01:38,076 - lightrag - INFO - Successfully deleted 8 chunks from storage
+2026-01-16 00:01:38,076 - lightrag - INFO - Successfully deleted 15 relations
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Kickoff --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Product Architect --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Product Architect --> Hyland
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Credentialing Product --> Hyland
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Knowledge Discovery Offering --> Hyland
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Knowledge Discovery Offering --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Digital Titles --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: North Ridgeville --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Job Description --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Surgery --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: CTO --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Joint Architecture Design (JAD) Sessions --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Silicon Valley Product Group Training --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: UX --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Customer Facing --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: 2026 --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Product Manager --> Hyland
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Product Management --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Product Management --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Remote Work --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Avon --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: AI Initiative --> Hyland
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Product Talent --> CHAMP TITLES, INC.
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: AI Space --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Engineering Team --> Abby
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Engineering Team --> Tyler Conn
+2026-01-16 00:01:38,079 - lightrag - WARNING - Edge still exists: Customers --> Hyland
+2026-01-16 00:01:38,079 - lightrag - WARNING - ⚠️ 23 entities still has edges before deletion
+2026-01-16 00:01:38,079 - lightrag - INFO - Cleaned 27 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:01:38,079 - lightrag - INFO - Successfully deleted 52 entities
+2026-01-16 00:01:38,093 - lightrag - INFO - [] Writing graph with 182 nodes, 155 edges
+2026-01-16 00:01:38,093 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:38,094 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:38,094 - lightrag - INFO - Rebuilding knowledge from 6 cached chunk extractions (parallel processing)
+2026-01-16 00:01:38,094 - lightrag - WARNING - Chunk data is invalid or None: None
+2026-01-16 00:01:38,094 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:01:38,094 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:01:38,094 - lightrag - INFO - Successfully deleted 16 LLM cache entries for document doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-16 00:01:38,107 - lightrag - INFO - [] Writing graph with 182 nodes, 155 edges
+2026-01-16 00:01:38,107 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:01:38,107 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:01:38,108 - lightrag - INFO - Document deleted 10/10: doc-48b7c7d9c561fa49dab1a2f3b78a9b30[12-16 Interview: Tyler - Product Manager.txt]
+2026-01-16 00:01:38,108 - lightrag - INFO - Successfully deleted enqueued file: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-16 00:02:37,290 - uvicorn.access - INFO - 127.0.0.1:58864 - "GET /docs HTTP/1.1" 200
+2026-01-16 00:02:37,301 - uvicorn.access - INFO - 127.0.0.1:58866 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:02:37,309 - lightrag - INFO - [] Graph truncated: found 95 nodes within max_depth 3
+2026-01-16 00:02:37,311 - lightrag - INFO - [] Subgraph query successful | Node count: 95 | Edge count: 106
+2026-01-16 00:02:37,331 - uvicorn.access - INFO - 127.0.0.1:58868 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-16 00:02:37,342 - uvicorn.access - INFO - 127.0.0.1:58864 - "GET /openapi.json HTTP/1.1" 200
+2026-01-16 00:02:44,824 - uvicorn.access - INFO - 127.0.0.1:58895 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-01-16 00:02:44,826 - lightrag - INFO - Deleting document 1/4: doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-16 00:02:44,826 - lightrag - INFO - Starting deletion process for document doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-16 00:02:44,826 - lightrag - INFO - Collected 10 LLM cache entries for document doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-16 00:02:44,835 - lightrag - INFO - Found 0 affected entities
+2026-01-16 00:02:44,836 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:02:44,837 - lightrag - INFO - Successfully deleted 5 chunks from storage
+2026-01-16 00:02:44,838 - lightrag - INFO - Successfully deleted 24 relations
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: West Park Puritas Nursery --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Train Model --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Speaker 1's Office <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Poinsettias <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> JAD Sessions
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> Louisiana
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> Unique ID
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> Sarah
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> Poinsettias
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> Christmas Break
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby <-> Speaker 1's Office
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby --> Hyland
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Abby --> CHAMP TITLES, INC.
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Fat Heads --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Speaker 2's Kids --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: JAD Sessions <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: JAD Sessions --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: OnBase --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Berea --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Unique ID <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Sarah <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Sarah --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Illinois --> CHAMP TITLES, INC.
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Louisiana <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Christmas Break <-> Abby
+2026-01-16 00:02:44,840 - lightrag - WARNING - Edge still exists: Christmas Break --> Tyler Conn
+2026-01-16 00:02:44,840 - lightrag - WARNING - ⚠️ 15 entities still has edges before deletion
+2026-01-16 00:02:44,841 - lightrag - INFO - Cleaned 20 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:02:44,841 - lightrag - INFO - Successfully deleted 43 entities
+2026-01-16 00:02:44,854 - lightrag - INFO - [] Writing graph with 139 nodes, 111 edges
+2026-01-16 00:02:44,855 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,855 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,856 - lightrag - INFO - Successfully deleted 10 LLM cache entries for document doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-16 00:02:44,866 - lightrag - INFO - [] Writing graph with 139 nodes, 111 edges
+2026-01-16 00:02:44,866 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,866 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,866 - lightrag - INFO - Document deleted 1/4: doc-0959ac623c6863a51aad6edefa15a1ff[12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt]
+2026-01-16 00:02:44,867 - lightrag - INFO - Successfully deleted enqueued file: 12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt
+2026-01-16 00:02:44,867 - lightrag - INFO - Deleting document 2/4: doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-16 00:02:44,867 - lightrag - INFO - Starting deletion process for document doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-16 00:02:44,868 - lightrag - INFO - Collected 24 LLM cache entries for document doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-16 00:02:44,882 - lightrag - INFO - Found 2 affected entities
+2026-01-16 00:02:44,886 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:02:44,886 - lightrag - INFO - Successfully deleted 12 chunks from storage
+2026-01-16 00:02:44,887 - lightrag - INFO - Successfully deleted 88 relations
+2026-01-16 00:02:44,892 - lightrag - WARNING - Edge still exists: Insperity --> CHAMP TITLES, INC.
+2026-01-16 00:02:44,892 - lightrag - WARNING - ⚠️ 1 entities still has edges before deletion
+2026-01-16 00:02:44,892 - lightrag - INFO - Cleaned 1 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:02:44,892 - lightrag - INFO - Successfully deleted 104 entities
+2026-01-16 00:02:44,895 - lightrag - INFO - [] Writing graph with 35 nodes, 22 edges
+2026-01-16 00:02:44,895 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,895 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,896 - lightrag - INFO - Rebuilding knowledge from 2 cached chunk extractions (parallel processing)
+2026-01-16 00:02:44,896 - lightrag - INFO - Found 0 valid cache entries, 0 chunks with results
+2026-01-16 00:02:44,896 - lightrag - WARNING - No cached extraction results found, cannot rebuild
+2026-01-16 00:02:44,896 - lightrag - INFO - Successfully deleted 24 LLM cache entries for document doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-16 00:02:44,899 - lightrag - INFO - [] Writing graph with 35 nodes, 22 edges
+2026-01-16 00:02:44,899 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,899 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,899 - lightrag - INFO - Document deleted 2/4: doc-805221c93487f7bd7cd5bd31ef6c39e6[2026 Independence Classic Choice .pdf]
+2026-01-16 00:02:44,899 - lightrag - INFO - Successfully deleted enqueued file: 2026 Independence Classic Choice .pdf
+2026-01-16 00:02:44,899 - lightrag - INFO - Deleting document 3/4: doc-1c5a8abd486160f0e3adc85964987879
+2026-01-16 00:02:44,900 - lightrag - INFO - Starting deletion process for document doc-1c5a8abd486160f0e3adc85964987879
+2026-01-16 00:02:44,900 - lightrag - INFO - Collected 4 LLM cache entries for document doc-1c5a8abd486160f0e3adc85964987879
+2026-01-16 00:02:44,903 - lightrag - INFO - Found 0 affected entities
+2026-01-16 00:02:44,904 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:02:44,904 - lightrag - INFO - Successfully deleted 2 chunks from storage
+2026-01-16 00:02:44,904 - lightrag - INFO - Successfully deleted 17 relations
+2026-01-16 00:02:44,906 - lightrag - WARNING - Edge still exists: Insperity Contact Center --> CHAMP TITLES, INC.
+2026-01-16 00:02:44,906 - lightrag - WARNING - ⚠️ 1 entities still has edges before deletion
+2026-01-16 00:02:44,906 - lightrag - INFO - Cleaned 1 residual edges from VDB and chunk-tracking storage
+2026-01-16 00:02:44,906 - lightrag - INFO - Successfully deleted 20 entities
+2026-01-16 00:02:44,908 - lightrag - INFO - [] Writing graph with 15 nodes, 4 edges
+2026-01-16 00:02:44,908 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,908 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,908 - lightrag - INFO - Successfully deleted 4 LLM cache entries for document doc-1c5a8abd486160f0e3adc85964987879
+2026-01-16 00:02:44,909 - lightrag - INFO - [] Writing graph with 15 nodes, 4 edges
+2026-01-16 00:02:44,909 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,910 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,910 - lightrag - INFO - Document deleted 3/4: doc-1c5a8abd486160f0e3adc85964987879[Insperity 401k Plan Essentials .pdf]
+2026-01-16 00:02:44,910 - lightrag - INFO - Successfully deleted enqueued file: Insperity 401k Plan Essentials .pdf
+2026-01-16 00:02:44,910 - lightrag - INFO - Deleting document 4/4: doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:02:44,910 - lightrag - INFO - Starting deletion process for document doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:02:44,910 - lightrag - INFO - Collected 2 LLM cache entries for document doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:02:44,912 - lightrag - INFO - Found 0 affected entities
+2026-01-16 00:02:44,912 - lightrag - INFO - Found 0 affected relations
+2026-01-16 00:02:44,912 - lightrag - INFO - Successfully deleted 1 chunks from storage
+2026-01-16 00:02:44,913 - lightrag - INFO - Successfully deleted 10 entities
+2026-01-16 00:02:44,914 - lightrag - INFO - [] Writing graph with 5 nodes, 4 edges
+2026-01-16 00:02:44,914 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,914 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,914 - lightrag - INFO - Successfully deleted 2 LLM cache entries for document doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:02:44,915 - lightrag - INFO - [] Writing graph with 5 nodes, 4 edges
+2026-01-16 00:02:44,915 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:02:44,915 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:02:44,915 - lightrag - INFO - Document deleted 4/4: doc-5e9dc8a3ee3c87bfe82d7f66970a58a6[2026 CHAMP Holiday Schedule .docx]
+2026-01-16 00:02:44,916 - lightrag - INFO - Successfully deleted enqueued file: 2026 CHAMP Holiday Schedule .docx
+2026-01-16 00:03:38,427 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,437 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,447 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,452 - lightrag - INFO - Successfully extracted and enqueued file: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-16 00:03:38,454 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,468 - lightrag - INFO - Successfully extracted and enqueued file: 12-19 Interview: Solution Architect Role & DMV Software Modernization Strategy.txt
+2026-01-16 00:03:38,469 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:38,470 - lightrag - INFO - Successfully extracted and enqueued file: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-16 00:03:38,470 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:38,470 - lightrag - INFO - Processing 1 document(s)
+2026-01-16 00:03:38,471 - lightrag - INFO - Extracting stage 1/1: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-16 00:03:38,471 - lightrag - INFO - Processing d-id: doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-16 00:03:38,520 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,533 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,616 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,751 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:38,965 - lightrag - INFO - Successfully extracted and enqueued file: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-16 00:03:39,004 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,412 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:39,581 - lightrag - INFO - Successfully extracted and enqueued file: 2026 Independence Classic Choice .pdf
+2026-01-16 00:03:39,600 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,754 - lightrag - INFO - Successfully extracted and enqueued file: 2026 CHAMP Holiday Schedule .docx
+2026-01-16 00:03:39,756 - lightrag - INFO - Successfully extracted and enqueued file: FAQ for Candidates - External.docx
+2026-01-16 00:03:39,764 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,769 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,777 - lightrag - INFO - Successfully extracted and enqueued file: handbook.pdf
+2026-01-16 00:03:39,777 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,781 - lightrag - INFO - Successfully extracted and enqueued file: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-16 00:03:39,782 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,783 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:39,848 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:39,856 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:39,902 - lightrag - INFO - Successfully extracted and enqueued file: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-16 00:03:39,902 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,904 - uvicorn.access - INFO - 127.0.0.1:59122 - "POST /documents/upload HTTP/1.1" 200
+2026-01-16 00:03:39,931 - lightrag - INFO - Successfully extracted and enqueued file: Insperity 401k Plan Essentials .pdf
+2026-01-16 00:03:39,931 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,932 - lightrag - INFO - Successfully extracted and enqueued file: Product Arch Job Description.txt
+2026-01-16 00:03:39,932 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:39,935 - lightrag - INFO - Successfully extracted and enqueued file: welcome email.pdf
+2026-01-16 00:03:39,935 - lightrag - INFO - Another process is already processing the document queue. Request queued.
+2026-01-16 00:03:51,514 - lightrag - INFO -  == LLM cache == saving: default:extract:253cd10e4228b709177de8ae9841502c
+2026-01-16 00:03:52,855 - lightrag - INFO -  == LLM cache == saving: default:extract:5fe4ae99a69ef91cbc583e4d85cc168e
+2026-01-16 00:03:53,842 - lightrag - INFO -  == LLM cache == saving: default:extract:35ac6e713e2d176b6baeabc0c533429f
+2026-01-16 00:03:54,699 - lightrag - INFO -  == LLM cache == saving: default:extract:a61660446f51bac2c2c812e39747d0b1
+2026-01-16 00:03:54,700 - lightrag - INFO - Chunk 1 of 8 extracted 8 Ent + 6 Rel chunk-59a1aa067026dfefec2b8eed021fb85d
+2026-01-16 00:04:01,476 - lightrag - INFO -  == LLM cache == saving: default:extract:15a0de88670461b38d5b8f4fbbb67bec
+2026-01-16 00:04:01,479 - lightrag - INFO - Chunk 2 of 8 extracted 10 Ent + 8 Rel chunk-8ea7735689c5b82676eba0b59da6ac8d
+2026-01-16 00:04:02,171 - lightrag - INFO -  == LLM cache == saving: default:extract:46e8fa559f68221e91b0166a6f11fbc3
+2026-01-16 00:04:02,172 - lightrag - INFO - Chunk 3 of 8 extracted 9 Ent + 7 Rel chunk-9b3f3660cbe5355ea86ff7605aa1a89a
+2026-01-16 00:04:02,307 - lightrag - INFO -  == LLM cache == saving: default:extract:3bf64859ca5f8f808742046ea7c46380
+2026-01-16 00:04:07,706 - lightrag - INFO -  == LLM cache == saving: default:extract:8b29374f389c296c6fa864422476bdfd
+2026-01-16 00:04:09,237 - lightrag - INFO -  == LLM cache == saving: default:extract:49b932c3cda4201e7b27e99110ae892e
+2026-01-16 00:04:09,237 - lightrag - INFO - Chunk 4 of 8 extracted 17 Ent + 10 Rel chunk-f28781c765adfa158548d1de7b49d6dd
+2026-01-16 00:04:14,766 - lightrag - INFO -  == LLM cache == saving: default:extract:2074cdc7ae155bdfcb01b398529b14b4
+2026-01-16 00:04:14,767 - lightrag - INFO - Chunk 5 of 8 extracted 10 Ent + 7 Rel chunk-b91bdff61fddf8f6f5d8a68e55c4de57
+2026-01-16 00:04:20,810 - lightrag - INFO -  == LLM cache == saving: default:extract:d5eaa0eec079083c8c50707da585c721
+2026-01-16 00:04:21,121 - lightrag - INFO -  == LLM cache == saving: default:extract:ccca09e2aeafc0ccfd64aad3151c59d1
+2026-01-16 00:04:21,269 - lightrag - INFO -  == LLM cache == saving: default:extract:de8d05a35419c75c123336905338fa09
+2026-01-16 00:04:21,270 - lightrag - INFO - Chunk 6 of 8 extracted 5 Ent + 5 Rel chunk-dd3afcbed078462457582aee1d352d44
+2026-01-16 00:04:25,609 - lightrag - INFO -  == LLM cache == saving: default:extract:605303047b71ffd6919b1dba8d8d2e02
+2026-01-16 00:04:25,610 - lightrag - INFO - Chunk 7 of 8 extracted 11 Ent + 7 Rel chunk-e8ccc385e9bec2aeccaff015e9e981ae
+2026-01-16 00:04:28,285 - lightrag - INFO -  == LLM cache == saving: default:extract:c315bfb6fc7bd4ec991fb5d8c2c7ed56
+2026-01-16 00:04:31,857 - lightrag - INFO -  == LLM cache == saving: default:extract:01d09b74f887ebadb7aebb0aac6b4ace
+2026-01-16 00:04:31,858 - lightrag - INFO - Chunk 8 of 8 extracted 15 Ent + 8 Rel chunk-c087437015b6ddecbb1f165da5e4acd1
+2026-01-16 00:04:31,859 - lightrag - INFO - Merging stage 1/1: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-16 00:04:31,859 - lightrag - INFO - Phase 1: Processing 60 entities from doc-48b7c7d9c561fa49dab1a2f3b78a9b30 (async: 8)
+2026-01-16 00:04:32,134 - lightrag - INFO - Merged: `Unified Data Model` | 2+1
+2026-01-16 00:04:34,489 - lightrag - INFO - Phase 2: Processing 50 relations from doc-48b7c7d9c561fa49dab1a2f3b78a9b30 (async: 8)
+2026-01-16 00:04:38,035 - lightrag - INFO - Chunks appended from relation: `Speaker 2`
+2026-01-16 00:04:38,744 - lightrag - INFO - Chunks appended from relation: `Speaker 1`
+2026-01-16 00:04:41,494 - lightrag - INFO - Phase 3: Updating final 65(60+5) entities and  50 relations from doc-48b7c7d9c561fa49dab1a2f3b78a9b30
+2026-01-16 00:04:41,495 - lightrag - INFO - Completed merging: 60 entities, 5 extra entities, 50 relations
+2026-01-16 00:04:41,507 - lightrag - INFO - [] Writing graph with 69 nodes, 54 edges
+2026-01-16 00:04:41,507 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:04:41,508 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:04:41,508 - lightrag - INFO - Completed processing file 1/1: 12-16 Interview: Tyler - Product Manager.txt
+2026-01-16 00:04:41,508 - lightrag - INFO - Processing additional documents due to pending request
+2026-01-16 00:04:41,509 - lightrag - INFO - Processing 11 document(s)
+2026-01-16 00:04:41,509 - lightrag - INFO - Extracting stage 1/11: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-16 00:04:41,510 - lightrag - INFO - Processing d-id: doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-16 00:04:41,510 - lightrag - INFO - Extracting stage 2/11: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-16 00:04:41,510 - lightrag - INFO - Processing d-id: doc-866367e3b00416f160cd95280143776b
+2026-01-16 00:04:52,047 - lightrag - INFO -  == LLM cache == saving: default:extract:b4c6aff3546187ada8ddc79560aa4a49
+2026-01-16 00:04:55,221 - lightrag - INFO -  == LLM cache == saving: default:extract:50c0a5311a605688f75eaca2d56d7f10
+2026-01-16 00:04:56,251 - lightrag - INFO -  == LLM cache == saving: default:extract:697e009be1e6aa4b0577d9bdf40e92a3
+2026-01-16 00:05:01,260 - lightrag - INFO -  == LLM cache == saving: default:extract:bb37c635d6a43f7aa5332b73abf8f4e9
+2026-01-16 00:05:10,181 - lightrag - INFO -  == LLM cache == saving: default:extract:f64801894f91fd49620663b4d52ede58
+2026-01-16 00:05:13,958 - lightrag - INFO -  == LLM cache == saving: default:extract:4cd2894006471aa769038491dd04717c
+2026-01-16 00:05:13,959 - lightrag - INFO - Chunk 1 of 5 extracted 8 Ent + 6 Rel chunk-52354b09152fb1e9410fb73b74c76fd4
+2026-01-16 00:05:17,850 - lightrag - INFO -  == LLM cache == saving: default:extract:5a8183befe6f684fc9b3b93f2135466d
+2026-01-16 00:05:17,850 - lightrag - INFO - Chunk 2 of 5 extracted 10 Ent + 8 Rel chunk-7ceafc7f3296f6d04b7acbbabcdb29de
+2026-01-16 00:05:20,921 - lightrag - INFO -  == LLM cache == saving: default:extract:b2ed1da232ae7e424b6a676b26d449a7
+2026-01-16 00:05:21,640 - lightrag - INFO -  == LLM cache == saving: default:extract:3702e41a2db83a22d48b5bc9932a53ef
+2026-01-16 00:05:21,640 - lightrag - INFO - Chunk 3 of 5 extracted 12 Ent + 8 Rel chunk-0a914fe875911b478ae558c9d4cd5115
+2026-01-16 00:05:22,969 - lightrag - INFO -  == LLM cache == saving: default:extract:7ea2219ff785a4c4f01c462238377c17
+2026-01-16 00:05:22,969 - lightrag - INFO - Chunk 4 of 5 extracted 13 Ent + 8 Rel chunk-e7c22537945b3f2f0ba52a16c7265dd9
+2026-01-16 00:05:24,446 - lightrag - INFO -  == LLM cache == saving: default:extract:5b9788bdd68e8300c869def73e3bdb12
+2026-01-16 00:05:26,040 - lightrag - INFO -  == LLM cache == saving: default:extract:883a4cdea70c4ba0ddcf5a3dfe0239ad
+2026-01-16 00:05:26,041 - lightrag - INFO - Chunk 1 of 6 extracted 11 Ent + 9 Rel chunk-4a5d444107bc9b15ddb38fc3e03260a1
+2026-01-16 00:05:30,554 - lightrag - INFO -  == LLM cache == saving: default:extract:5a1737705cf03305d5d7345d7c7f79d1
+2026-01-16 00:05:30,555 - lightrag - INFO - Chunk 2 of 6 extracted 36 Ent + 0 Rel chunk-0b30c90091c643e2fcc50c1847ef91b1
+2026-01-16 00:05:34,132 - lightrag - INFO -  == LLM cache == saving: default:extract:36d675fa6272484a03c4218d7c37fea6
+2026-01-16 00:05:43,756 - lightrag - INFO -  == LLM cache == saving: default:extract:da6ee4fc92a334af56bfcab2ca450c1b
+2026-01-16 00:05:44,273 - lightrag - INFO -  == LLM cache == saving: default:extract:e59670db3c2464d511e120ddfbf73e73
+2026-01-16 00:05:45,296 - lightrag - INFO -  == LLM cache == saving: default:extract:7283ec5b7c1db3ed90c4ab627b919f81
+2026-01-16 00:05:45,297 - lightrag - INFO - Chunk 3 of 6 extracted 40 Ent + 5 Rel chunk-0c05c8dc84c97e78c79118df433bf87c
+2026-01-16 00:05:47,444 - lightrag - INFO -  == LLM cache == saving: default:extract:cff586da006e95c4ac9da8bc3ca09d4b
+2026-01-16 00:05:47,445 - lightrag - INFO - Chunk 5 of 5 extracted 7 Ent + 7 Rel chunk-46e823f3e59b947708d608a4b09f9d60
+2026-01-16 00:05:47,445 - lightrag - INFO - Merging stage 1/11: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-16 00:05:47,445 - lightrag - INFO - Phase 1: Processing 40 entities from doc-0959ac623c6863a51aad6edefa15a1ff (async: 8)
+2026-01-16 00:05:47,447 - lightrag - INFO - Merged: `Abby` | 1+4
+2026-01-16 00:05:47,458 - lightrag - INFO - Merged: `OnBase` | 1+1
+2026-01-16 00:05:47,572 - lightrag - INFO -  == LLM cache == saving: default:extract:9ec2dcf1ded89af8b2db8bff730df929
+2026-01-16 00:05:47,572 - lightrag - INFO - Chunk 4 of 6 extracted 8 Ent + 5 Rel chunk-59116281b0dfa265fdb2f09cda8be4b3
+2026-01-16 00:05:47,898 - lightrag - INFO - Merged: `Sarah` | 2+1
+2026-01-16 00:05:48,146 - lightrag - INFO - Merged: `Data Team` | 1+1
+2026-01-16 00:05:48,156 - lightrag - INFO - Merged: `Bo` | 1+1
+2026-01-16 00:05:48,208 - lightrag - INFO - Merged: `Product Architect` | 3+1
+2026-01-16 00:05:48,271 - lightrag - INFO - Merged: `Berea` | 1+1
+2026-01-16 00:05:48,397 - lightrag - INFO - Merged: `Engineering Team` | 1+1
+2026-01-16 00:05:48,412 - lightrag - INFO - Merged: `Louisiana` | 1+1
+2026-01-16 00:05:49,533 - lightrag - INFO -  == LLM cache == saving: default:extract:6e3297f204026d756b866e0cd03098bf
+2026-01-16 00:05:52,866 - lightrag - INFO -  == LLM cache == saving: default:summary:7f433c159a29501770e5182fe1764041
+2026-01-16 00:05:52,866 - lightrag - INFO - LLMmrg: `Speaker 2` | 6+2
+2026-01-16 00:05:52,944 - lightrag - INFO -  == LLM cache == saving: default:extract:e633626942303adf868230e72457146e
+2026-01-16 00:05:52,945 - lightrag - INFO - Chunk 5 of 6 extracted 22 Ent + 22 Rel chunk-d0c2e9250940f583c1c456ed0d16bbce
+2026-01-16 00:06:00,351 - lightrag - INFO -  == LLM cache == saving: default:summary:5e2fd74680f260e5fd58f8dc08e14c61
+2026-01-16 00:06:00,352 - lightrag - INFO - LLMmrg: `Speaker 1` | 6+2
+2026-01-16 00:06:00,539 - lightrag - INFO - Phase 2: Processing 35 relations from doc-0959ac623c6863a51aad6edefa15a1ff (async: 8)
+2026-01-16 00:06:00,793 - lightrag - INFO - Chunks appended from relation: `West Virginia`
+2026-01-16 00:06:05,769 - lightrag - INFO -  == LLM cache == saving: default:extract:41238c19147ae5961d01684db697af72
+2026-01-16 00:06:05,770 - lightrag - INFO - Chunk 6 of 6 extracted 19 Ent + 15 Rel chunk-704be16311620581aa95b506d98efa34
+2026-01-16 00:06:05,771 - lightrag - INFO - Merging stage 2/11: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-16 00:06:05,771 - lightrag - INFO - Phase 1: Processing 95 entities from doc-866367e3b00416f160cd95280143776b (async: 8)
+2026-01-16 00:06:05,842 - lightrag - INFO -  == LLM cache == saving: default:summary:056d1c1f40ae81834b763266da1b899f
+2026-01-16 00:06:05,842 - lightrag - INFO - LLMmrg: `Speaker 1`~`Speaker 2` | 5+3
+2026-01-16 00:06:06,233 - lightrag - INFO - Merged: `Berea`~`Speaker 2` | 1+1
+2026-01-16 00:06:06,233 - lightrag - INFO - Merged: `Sarah`~`Speaker 1` | 2+1
+2026-01-16 00:06:07,010 - lightrag - INFO - Merged: `Abby`~`Speaker 2` | 1+1
+2026-01-16 00:06:07,020 - lightrag - INFO - Merged: `Engineering Team`~`Speaker 1` | 1+1
+2026-01-16 00:06:07,937 - lightrag - INFO - Phase 3: Updating final 44(40+4) entities and  35 relations from doc-0959ac623c6863a51aad6edefa15a1ff
+2026-01-16 00:06:07,938 - lightrag - INFO - Completed merging: 40 entities, 4 extra entities, 35 relations
+2026-01-16 00:06:07,963 - lightrag - INFO - [] Writing graph with 154 nodes, 84 edges
+2026-01-16 00:06:07,964 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:06:07,964 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:06:07,964 - lightrag - INFO - Completed processing file 1/11: 12-19 Interview: Tyler - Product Architect Candidate.txt
+2026-01-16 00:06:07,965 - lightrag - INFO - Extracting stage 3/11: 2026 Independence Classic Choice .pdf
+2026-01-16 00:06:07,965 - lightrag - INFO - Processing d-id: doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-16 00:06:09,214 - uvicorn.access - INFO - 127.0.0.1:59581 - "GET /docs HTTP/1.1" 200
+2026-01-16 00:06:09,225 - uvicorn.access - INFO - 127.0.0.1:59590 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:06:09,226 - lightrag - INFO - [] Graph truncated: found 5 nodes within max_depth 3
+2026-01-16 00:06:09,227 - lightrag - INFO - [] Subgraph query successful | Node count: 5 | Edge count: 4
+2026-01-16 00:06:09,227 - uvicorn.access - INFO - 127.0.0.1:59591 - "GET /graphs?label=CHAMP%20TITLES%2C%20INC.&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-16 00:06:09,293 - uvicorn.access - INFO - 127.0.0.1:59582 - "GET /openapi.json HTTP/1.1" 200
+2026-01-16 00:06:15,826 - lightrag - INFO -  == LLM cache == saving: default:summary:8247d03e6e0e3d6d1502e4949e0c4527
+2026-01-16 00:06:15,829 - lightrag - INFO - LLMmrg: `CHAMP TITLES, INC.` | 13+3
+2026-01-16 00:06:16,054 - lightrag - INFO - Phase 2: Processing 55 relations from doc-866367e3b00416f160cd95280143776b (async: 8)
+2026-01-16 00:06:20,833 - lightrag - INFO - Chunks appended from relation: `UnitedHealthcare Primary Advantage CP 5000 Texas`
+2026-01-16 00:06:21,014 - lightrag - INFO -  == LLM cache == saving: default:extract:7eef3e6436e7cd7f116ddc13fbc84dac
+2026-01-16 00:06:22,562 - lightrag - INFO -  == LLM cache == saving: default:extract:37cdfd40305425412ffe40a6e2155489
+2026-01-16 00:06:23,195 - lightrag - INFO -  == LLM cache == saving: default:extract:71503d08511dddc798a4fd7e8320e0ce
+2026-01-16 00:06:23,195 - lightrag - INFO - Chunk 1 of 12 extracted 9 Ent + 6 Rel chunk-5a802e37e2e5b47a19fa75aed5a85951
+2026-01-16 00:06:25,134 - lightrag - INFO - Phase 3: Updating final 96(95+1) entities and  55 relations from doc-866367e3b00416f160cd95280143776b
+2026-01-16 00:06:25,134 - lightrag - INFO - Completed merging: 95 entities, 1 extra entities, 55 relations
+2026-01-16 00:06:25,156 - lightrag - INFO - [] Writing graph with 197 nodes, 139 edges
+2026-01-16 00:06:25,156 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:06:25,156 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:06:25,156 - lightrag - INFO - Completed processing file 2/11: CHAMP employee contributions per paycheck 2025.pdf
+2026-01-16 00:06:25,157 - lightrag - INFO - Extracting stage 4/11: 2026 CHAMP Holiday Schedule .docx
+2026-01-16 00:06:25,157 - lightrag - INFO - Processing d-id: doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:06:25,561 - lightrag - INFO -  == LLM cache == saving: default:extract:e6b7667b63d10ca90cdfd3a81be00750
+2026-01-16 00:06:29,019 - lightrag - INFO -  == LLM cache == saving: default:extract:ed02fb810e5c53d442169b94b22af066
+2026-01-16 00:06:29,020 - lightrag - INFO - Chunk 2 of 12 extracted 12 Ent + 9 Rel chunk-8c72a071d58957ed16ddf33d1782f177
+2026-01-16 00:06:33,217 - lightrag - INFO -  == LLM cache == saving: default:extract:4059fe5eda598f4fd0b1e0bc867e02ac
+2026-01-16 00:06:34,137 - lightrag - INFO -  == LLM cache == saving: default:extract:87695093428300791768b47a4fe0ca93
+2026-01-16 00:06:34,137 - lightrag - INFO - Chunk 3 of 12 extracted 8 Ent + 8 Rel chunk-cc0a91280ce148040521acc037ad3a4d
+2026-01-16 00:06:34,649 - lightrag - INFO -  == LLM cache == saving: default:extract:d2432b40de1e9b6aac7b4f7a06e98a8d
+2026-01-16 00:06:34,649 - lightrag - INFO - Chunk 1 of 1 extracted 10 Ent + 0 Rel chunk-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:06:34,650 - lightrag - INFO - Merging stage 4/11: 2026 CHAMP Holiday Schedule .docx
+2026-01-16 00:06:34,650 - lightrag - INFO - Phase 1: Processing 10 entities from doc-5e9dc8a3ee3c87bfe82d7f66970a58a6 (async: 8)
+2026-01-16 00:06:35,230 - lightrag - INFO - Phase 2: Processing 0 relations from doc-5e9dc8a3ee3c87bfe82d7f66970a58a6 (async: 8)
+2026-01-16 00:06:35,230 - lightrag - INFO - Phase 3: Updating final 10(10+0) entities and  0 relations from doc-5e9dc8a3ee3c87bfe82d7f66970a58a6
+2026-01-16 00:06:35,230 - lightrag - INFO - Completed merging: 10 entities, 0 extra entities, 0 relations
+2026-01-16 00:06:35,248 - lightrag - INFO - [] Writing graph with 207 nodes, 139 edges
+2026-01-16 00:06:35,248 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:06:35,249 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:06:35,249 - lightrag - INFO - Completed processing file 4/11: 2026 CHAMP Holiday Schedule .docx
+2026-01-16 00:06:35,249 - lightrag - INFO - Extracting stage 5/11: FAQ for Candidates - External.docx
+2026-01-16 00:06:35,249 - lightrag - INFO - Processing d-id: doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:06:36,133 - lightrag - INFO -  == LLM cache == saving: default:extract:fb0fa206070b8c5386d48db31b1d47a5
+2026-01-16 00:06:49,118 - lightrag - INFO -  == LLM cache == saving: default:extract:d7a622d9b5fae173d575f48657a7f351
+2026-01-16 00:06:50,111 - lightrag - INFO -  == LLM cache == saving: default:extract:5d716945ba0a0993e96070c90ccb1843
+2026-01-16 00:06:50,519 - lightrag - INFO -  == LLM cache == saving: default:extract:891a448a3010f83d26c9d5f21168a66e
+2026-01-16 00:06:54,514 - lightrag - INFO -  == LLM cache == saving: default:extract:c51ea6dab82842e268b0cafac0d3e778
+2026-01-16 00:06:54,515 - lightrag - INFO - Chunk 4 of 12 extracted 10 Ent + 7 Rel chunk-7d1b4ce137f92ff825dafd9a33216773
+2026-01-16 00:06:56,357 - lightrag - INFO -  == LLM cache == saving: default:extract:1edc41e7f747023083307c0eee5fa803
+2026-01-16 00:06:56,358 - lightrag - INFO - Chunk 5 of 12 extracted 11 Ent + 10 Rel chunk-3938d0012b10d87cedc4971b4e3f4dd2
+2026-01-16 00:06:58,508 - lightrag - INFO -  == LLM cache == saving: default:extract:4cff7d68c89e5c8251675461cb183a3c
+2026-01-16 00:06:58,508 - lightrag - INFO - Chunk 1 of 1 extracted 12 Ent + 8 Rel chunk-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:06:58,509 - lightrag - INFO - Merging stage 5/11: FAQ for Candidates - External.docx
+2026-01-16 00:06:58,509 - lightrag - INFO - Phase 1: Processing 12 entities from doc-cd1e146d6eb4fb0efbdb6208f93c4df6 (async: 8)
+2026-01-16 00:06:58,966 - lightrag - INFO - Phase 2: Processing 8 relations from doc-cd1e146d6eb4fb0efbdb6208f93c4df6 (async: 8)
+2026-01-16 00:07:00,342 - lightrag - INFO -  == LLM cache == saving: default:extract:eb59ce4c36a777eb3db95f3c730bcb9a
+2026-01-16 00:07:00,343 - lightrag - INFO - Chunk 6 of 12 extracted 14 Ent + 11 Rel chunk-0de91d199485fd6f10d230bc2925df57
+2026-01-16 00:07:00,374 - lightrag - INFO -  == LLM cache == saving: default:extract:bcfae40fa426c51600fa3082b3f1a7fa
+2026-01-16 00:07:01,255 - lightrag - INFO - Phase 3: Updating final 12(12+0) entities and  8 relations from doc-cd1e146d6eb4fb0efbdb6208f93c4df6
+2026-01-16 00:07:01,255 - lightrag - INFO - Completed merging: 12 entities, 0 extra entities, 8 relations
+2026-01-16 00:07:01,279 - lightrag - INFO - [] Writing graph with 219 nodes, 147 edges
+2026-01-16 00:07:01,280 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:07:01,280 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:07:01,280 - lightrag - INFO - Completed processing file 5/11: FAQ for Candidates - External.docx
+2026-01-16 00:07:01,280 - lightrag - INFO - Extracting stage 6/11: handbook.pdf
+2026-01-16 00:07:01,280 - lightrag - INFO - Processing d-id: doc-c6de8b92b7490b506515adcbe8d1c2cb
+2026-01-16 00:07:03,837 - uvicorn.access - INFO - 127.0.0.1:59742 - "GET /threads/425af19b-93b8-4317-a8ff-d75e4cb1b562 HTTP/1.1" 200
+2026-01-16 00:07:03,852 - uvicorn.access - INFO - 127.0.0.1:59742 - "GET /threads/425af19b-93b8-4317-a8ff-d75e4cb1b562 HTTP/1.1" 200
+2026-01-16 00:07:07,037 - uvicorn.access - INFO - 127.0.0.1:59742 - "DELETE /threads/425af19b-93b8-4317-a8ff-d75e4cb1b562 HTTP/1.1" 200
+2026-01-16 00:07:07,043 - uvicorn.access - INFO - 127.0.0.1:59742 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:07:07,885 - uvicorn.access - INFO - 127.0.0.1:59745 - "GET /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-16 00:07:07,894 - uvicorn.access - INFO - 127.0.0.1:59745 - "GET /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-16 00:07:08,140 - lightrag - INFO -  == LLM cache == saving: default:extract:dc4c83aff899320a2f8a86e3ad2b95de
+2026-01-16 00:07:08,141 - lightrag - INFO - Chunk 7 of 12 extracted 11 Ent + 8 Rel chunk-b32ba6ff6d7bccc3aa0f78d3e7a7be6a
+2026-01-16 00:07:08,519 - lightrag - INFO -  == LLM cache == saving: default:extract:e767a9d8474cc1fa5fbd6bbbd97c7314
+2026-01-16 00:07:09,553 - uvicorn.access - INFO - 127.0.0.1:59745 - "DELETE /threads/8bfd5710-2215-430a-ab4c-f50d76e9ef43 HTTP/1.1" 200
+2026-01-16 00:07:09,559 - uvicorn.access - INFO - 127.0.0.1:59749 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:07:10,457 - uvicorn.access - INFO - 127.0.0.1:59749 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-16 00:07:10,466 - uvicorn.access - INFO - 127.0.0.1:59749 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-16 00:07:12,424 - uvicorn.access - INFO - 127.0.0.1:59749 - "POST /threads HTTP/1.1" 200
+2026-01-16 00:07:12,441 - uvicorn.access - INFO - 127.0.0.1:59749 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:07:13,953 - lightrag - INFO -  == LLM cache == saving: default:extract:d3e6d2215307f1b8b736405e6f88dfb7
+2026-01-16 00:07:14,026 - lightrag - INFO -  == LLM cache == saving: default:extract:20989bb540ba62ef75ace0c085af5905
+2026-01-16 00:07:17,042 - lightrag - INFO -  == LLM cache == saving: default:extract:a3ddce6008d62875154fcb592a420c36
+2026-01-16 00:07:26,982 - lightrag - INFO -  == LLM cache == saving: default:extract:bdc0fcb8acee6403af65065ee5dfeb60
+2026-01-16 00:07:27,244 - lightrag - INFO -  == LLM cache == saving: default:extract:fd8a8e22c45b5849f73ba69f30f3eb6e
+2026-01-16 00:07:28,308 - lightrag - INFO -  == LLM cache == saving: default:extract:06708e3dce495faab51af3dc9e70b2f1
+2026-01-16 00:07:29,521 - lightrag - INFO -  == LLM cache == saving: default:extract:0422508abb72979d7d13617a05fd135c
+2026-01-16 00:07:30,765 - lightrag - INFO -  == LLM cache == saving: global:keywords:4e9c40ec63c1a1073cc8ba41701c13b5
+2026-01-16 00:07:31,012 - lightrag - INFO - Query edges: Product architect role, Job description, Career (top_k:40, cosine:0.2)
+2026-01-16 00:07:31,269 - lightrag - INFO - Global query: 49 entites, 40 relations
+2026-01-16 00:07:31,269 - lightrag - INFO - Raw search results: 49 entities, 40 relations, 0 vector chunks
+2026-01-16 00:07:31,273 - lightrag - INFO - After truncation: 49 entities, 40 relations
+2026-01-16 00:07:31,277 - lightrag - WARNING - Vector similarity chunk selection: found 63 but expecting 71
+2026-01-16 00:07:31,277 - lightrag - WARNING - No entity-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-16 00:07:31,278 - lightrag - INFO - Selecting 71 from 71 entity-related chunks by weighted polling
+2026-01-16 00:07:31,278 - lightrag - INFO - Find 1 additional chunks in 1 relations (deduplicated 13)
+2026-01-16 00:07:31,278 - lightrag - WARNING - Vector similarity chunk selection: no vectors retrieved from chunks_vdb
+2026-01-16 00:07:31,278 - lightrag - WARNING - No relation-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-16 00:07:31,278 - lightrag - INFO - Selecting 1 from 1 relation-related chunks by weighted polling
+2026-01-16 00:07:31,278 - lightrag - INFO - Round-robin merged chunks: 63 -> 63 (deduplicated 0)
+2026-01-16 00:07:31,282 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-16 00:07:31,293 - lightrag - INFO - Final context: 49 entities, 40 relations, 20 chunks
+2026-01-16 00:07:31,293 - lightrag - INFO - Final chunks S+F/O: E11/1 E9/2 E6/3 E6/4 E12/5 E12/6 E10/7 E5/8 E5/9 E7/10 E4/11 E6/12 E3/13 E1/15 E3/19 E1/20 E1/21 E1/22 E1/23 E1/24
+2026-01-16 00:07:33,565 - lightrag - INFO -  == LLM cache == saving: default:extract:8fc134f4685ff2e2e766ca01f562081f
+2026-01-16 00:07:33,566 - lightrag - INFO - Chunk 8 of 12 extracted 9 Ent + 8 Rel chunk-d84c986e26200f86e1a672aa01e92050
+2026-01-16 00:07:34,180 - lightrag - INFO - [] Subgraph query successful | Node count: 219 | Edge count: 147
+2026-01-16 00:07:34,188 - uvicorn.access - INFO - 127.0.0.1:59780 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-16 00:07:34,553 - lightrag - INFO -  == LLM cache == saving: default:extract:6ef580d72adb9c5ef305fd4ce2c35e51
+2026-01-16 00:07:34,554 - lightrag - INFO - Chunk 1 of 68 extracted 7 Ent + 6 Rel chunk-d30f53e3f00aa5f692211114e3336f26
+2026-01-16 00:07:34,583 - lightrag - INFO -  == LLM cache == saving: default:extract:ca37ffd24172c38e1cd51e9e0a3b5d10
+2026-01-16 00:07:34,584 - lightrag - INFO - Chunk 9 of 12 extracted 11 Ent + 9 Rel chunk-078bafbe1d7c5822abb1060712e93d60
+2026-01-16 00:07:35,277 - uvicorn.access - INFO - 127.0.0.1:59759 - "POST /query/stream HTTP/1.1" 200
+2026-01-16 00:07:37,303 - lightrag - INFO -  == LLM cache == saving: default:extract:a1298bab1efdefbae092d988fc1572df
+2026-01-16 00:07:37,304 - lightrag - INFO - Chunk 10 of 12 extracted 17 Ent + 7 Rel chunk-30fb50160ef73c2b5704a687254b79be
+2026-01-16 00:07:40,829 - lightrag - INFO -  == LLM cache == saving: default:extract:deb75d49e11e2b185e4f181466d7f808
+2026-01-16 00:07:40,835 - lightrag - INFO - Chunk 11 of 12 extracted 9 Ent + 7 Rel chunk-3780084be53b045d52e036f4980e5762
+2026-01-16 00:07:42,118 - lightrag - INFO -  == LLM cache == saving: default:extract:4b2cfcaec6773b5b106688abda3babb2
+2026-01-16 00:07:42,118 - lightrag - INFO - Chunk 2 of 68 extracted 10 Ent + 9 Rel chunk-b2e167d48632d6812960476458695585
+2026-01-16 00:07:42,188 - uvicorn.access - INFO - 127.0.0.1:59759 - "POST /threads/3b2513ec-ea76-47d9-848b-8311a808c092/messages HTTP/1.1" 200
+2026-01-16 00:07:42,192 - uvicorn.access - INFO - 127.0.0.1:59759 - "POST /threads/3b2513ec-ea76-47d9-848b-8311a808c092/messages HTTP/1.1" 200
+2026-01-16 00:07:42,194 - uvicorn.access - INFO - 127.0.0.1:59759 - "GET /threads/3b2513ec-ea76-47d9-848b-8311a808c092 HTTP/1.1" 200
+2026-01-16 00:07:42,195 - uvicorn.access - INFO - 127.0.0.1:59759 - "PATCH /threads/3b2513ec-ea76-47d9-848b-8311a808c092 HTTP/1.1" 200
+2026-01-16 00:07:43,666 - lightrag - INFO -  == LLM cache == saving: default:extract:f422fbf4fc877f694a7a44e85943167d
+2026-01-16 00:07:43,667 - lightrag - INFO - Chunk 3 of 68 extracted 12 Ent + 12 Rel chunk-00ce9af4372211a438b173430b8d138b
+2026-01-16 00:07:46,307 - lightrag - INFO -  == LLM cache == saving: default:extract:78fa24a1ec5d98db57d4a2f01174cd08
+2026-01-16 00:07:46,308 - lightrag - INFO - Chunk 4 of 68 extracted 25 Ent + 8 Rel chunk-4620d2a61b287ff40579cfc76bb78659
+2026-01-16 00:07:51,960 - lightrag - INFO -  == LLM cache == saving: default:extract:c8cc62c4e948953f693dbcd42dce6580
+2026-01-16 00:07:52,281 - lightrag - INFO -  == LLM cache == saving: default:extract:e2e1684c8685ba57c31de2d7497990f5
+2026-01-16 00:07:54,422 - lightrag - INFO -  == LLM cache == saving: default:extract:c835d1f1cd69dab99ebc2d0728be3074
+2026-01-16 00:07:54,752 - lightrag - INFO -  == LLM cache == saving: default:extract:f79ba4bf9629f41ff551bfbc66269c34
+2026-01-16 00:07:56,266 - lightrag - INFO -  == LLM cache == saving: default:extract:55aff168a8729ff91acef1ea22d54daf
+2026-01-16 00:07:56,267 - lightrag - INFO - Chunk 5 of 68 extracted 8 Ent + 7 Rel chunk-7f83efce647a34bf89a720dd97b651a0
+2026-01-16 00:07:58,002 - lightrag - INFO -  == LLM cache == saving: default:extract:4b230511bc9eb6a8b9546b05b4426e66
+2026-01-16 00:07:58,002 - lightrag - INFO - Chunk 6 of 68 extracted 7 Ent + 5 Rel chunk-cc91be44254f665f20a152c62ea0ea46
+2026-01-16 00:08:00,464 - lightrag - INFO -  == LLM cache == saving: default:extract:d2881b221c796a1f698a6fb7ffe5b8f3
+2026-01-16 00:08:00,465 - lightrag - INFO - Chunk 7 of 68 extracted 6 Ent + 7 Rel chunk-13d0dff12cbd3a693c04233dc4ae6b98
+2026-01-16 00:08:01,484 - lightrag - INFO -  == LLM cache == saving: default:extract:572dff45394f651474e4d6a88b5ab101
+2026-01-16 00:08:03,737 - lightrag - INFO -  == LLM cache == saving: default:extract:2d0def74a69a30e26e944fb3ab8ab6f6
+2026-01-16 00:08:03,738 - lightrag - INFO - Chunk 12 of 12 extracted 13 Ent + 10 Rel chunk-95873fe8bab4965a1ac622bbb023144e
+2026-01-16 00:08:03,739 - lightrag - INFO - Merging stage 3/11: 2026 Independence Classic Choice .pdf
+2026-01-16 00:08:03,739 - lightrag - INFO - Phase 1: Processing 116 entities from doc-805221c93487f7bd7cd5bd31ef6c39e6 (async: 8)
+2026-01-16 00:08:03,741 - lightrag - INFO - Merged: `Insperity Contact Center` | 1+2
+2026-01-16 00:08:03,970 - lightrag - INFO - Merged: `Insperity Group Health Plan` | 1+4
+2026-01-16 00:08:06,239 - lightrag - INFO - Merged: `UnitedHealthcare` | 1+1
+2026-01-16 00:08:09,690 - lightrag - INFO -  == LLM cache == saving: default:extract:16aa89d0ab9a447fcaccabe0a0765cd0
+2026-01-16 00:08:11,010 - lightrag - INFO -  == LLM cache == saving: default:extract:e145c0bc57aa4b7227a182c827180218
+2026-01-16 00:08:11,014 - lightrag - INFO - Chunk 8 of 68 extracted 8 Ent + 7 Rel chunk-2ac382de31d6768a58041b92c0a65721
+2026-01-16 00:08:12,030 - lightrag - INFO -  == LLM cache == saving: default:extract:7d4b9087cea32c5b8cc8cc7f6dfe7e9b
+2026-01-16 00:08:14,590 - lightrag - INFO -  == LLM cache == saving: default:summary:54c377074bcd085394ab3311ff039cc4
+2026-01-16 00:08:14,591 - lightrag - INFO - LLMmrg: `Insperity` | 0+8
+2026-01-16 00:08:15,012 - lightrag - INFO -  == LLM cache == saving: default:extract:445e5c454a0b78a6eb4887bc33a0adfe
+2026-01-16 00:08:15,715 - lightrag - INFO - Phase 2: Processing 98 relations from doc-805221c93487f7bd7cd5bd31ef6c39e6 (async: 8)
+2026-01-16 00:08:18,207 - lightrag - INFO -  == LLM cache == saving: default:extract:8e857a83228095dfd46ef9d7b0a55cb6
+2026-01-16 00:08:18,207 - lightrag - INFO - Chunk 9 of 68 extracted 7 Ent + 6 Rel chunk-b51b34e2f00ce5ff0f8e8f5d737e7e90
+2026-01-16 00:08:18,444 - lightrag - INFO -  == LLM cache == saving: default:extract:42e2184ab7028e868f59bb7603e3e355
+2026-01-16 00:08:18,445 - lightrag - INFO - Chunk 10 of 68 extracted 9 Ent + 8 Rel chunk-009478b38c0b6c52ca70be6eb0cb52b0
+2026-01-16 00:08:19,520 - lightrag - INFO -  == LLM cache == saving: default:extract:7d7ee04979cbaf13cde7151d6c9e928a
+2026-01-16 00:08:19,521 - lightrag - INFO - Chunk 11 of 68 extracted 10 Ent + 7 Rel chunk-9093f520cbec4206785cd17284b8b873
+2026-01-16 00:08:21,155 - uvicorn.access - INFO - 127.0.0.1:60008 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-16 00:08:21,165 - uvicorn.access - INFO - 127.0.0.1:60008 - "GET /threads/10a600c8-ab4b-45a1-8c46-6ba51493b1c3 HTTP/1.1" 200
+2026-01-16 00:08:21,218 - lightrag - INFO - Merged: `Insperity Contact Center`~`Insperity Group Health Plan` | 1+1
+2026-01-16 00:08:21,914 - uvicorn.access - INFO - 127.0.0.1:60008 - "GET /threads/3b2513ec-ea76-47d9-848b-8311a808c092 HTTP/1.1" 200
+2026-01-16 00:08:21,929 - uvicorn.access - INFO - 127.0.0.1:60008 - "GET /threads/3b2513ec-ea76-47d9-848b-8311a808c092 HTTP/1.1" 200
+2026-01-16 00:08:24,120 - uvicorn.access - INFO - 127.0.0.1:60043 - "GET /docs HTTP/1.1" 200
+2026-01-16 00:08:24,132 - uvicorn.access - INFO - 127.0.0.1:60045 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:08:24,141 - lightrag - INFO - [] Subgraph query successful | Node count: 334 | Edge count: 233
+2026-01-16 00:08:24,150 - uvicorn.access - INFO - 127.0.0.1:60052 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-16 00:08:24,192 - uvicorn.access - INFO - 127.0.0.1:60052 - "GET /openapi.json HTTP/1.1" 200
+2026-01-16 00:08:25,278 - lightrag - INFO - Phase 3: Updating final 118(116+2) entities and  98 relations from doc-805221c93487f7bd7cd5bd31ef6c39e6
+2026-01-16 00:08:25,278 - lightrag - INFO - Completed merging: 116 entities, 2 extra entities, 98 relations
+2026-01-16 00:08:25,326 - lightrag - INFO - [] Writing graph with 334 nodes, 244 edges
+2026-01-16 00:08:25,326 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:08:25,327 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:08:25,327 - lightrag - INFO - Completed processing file 3/11: 2026 Independence Classic Choice .pdf
+2026-01-16 00:08:25,327 - lightrag - INFO - Extracting stage 7/11: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-16 00:08:25,327 - lightrag - INFO - Processing d-id: doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-16 00:08:25,991 - lightrag - INFO -  == LLM cache == saving: default:extract:888ab16363caae49fca7327195c21fcb
+2026-01-16 00:08:27,287 - lightrag - INFO -  == LLM cache == saving: default:extract:1c877439cc96c5067d8632830d7d5637
+2026-01-16 00:08:30,260 - lightrag - INFO -  == LLM cache == saving: default:extract:90e91a5e2dbe51ba05d3cad3ccedd79a
+2026-01-16 00:08:30,478 - lightrag - INFO -  == LLM cache == saving: default:extract:10983f81e6fb4548ed9be58aaf47c59b
+2026-01-16 00:08:34,960 - uvicorn.access - INFO - 127.0.0.1:60070 - "POST /threads HTTP/1.1" 200
+2026-01-16 00:08:34,974 - uvicorn.access - INFO - 127.0.0.1:60070 - "GET /threads HTTP/1.1" 200
+2026-01-16 00:08:36,410 - lightrag - INFO -  == LLM cache == saving: default:extract:2f289c92a47ac1747b2a25a9f0f896bc
+2026-01-16 00:08:36,410 - lightrag - INFO - Chunk 12 of 68 extracted 13 Ent + 11 Rel chunk-344458a7e182ee245cea1be08afcfb00
+2026-01-16 00:08:37,323 - lightrag - INFO -  == LLM cache == saving: default:extract:e494e105911560c9c298033f14fcc0fa
+2026-01-16 00:08:37,323 - lightrag - INFO - Chunk 13 of 68 extracted 10 Ent + 7 Rel chunk-8971980922630e041a987f12f6cb8b0a
+2026-01-16 00:08:43,365 - lightrag - INFO -  == LLM cache == saving: default:extract:87696d202eaa03d8acb639bc1b14cdb6
+2026-01-16 00:08:43,370 - lightrag - INFO - Chunk 14 of 68 extracted 10 Ent + 8 Rel chunk-193e0b5d60f4a15390b65d81d3aa9b03
+2026-01-16 00:08:50,026 - lightrag - INFO -  == LLM cache == saving: default:extract:52d0c3e579456cc12f82724371d454a9
+2026-01-16 00:08:50,028 - lightrag - INFO - Chunk 15 of 68 extracted 15 Ent + 14 Rel chunk-76137b5ec616e665a3678676cb9d6758
+2026-01-16 00:08:50,860 - lightrag - INFO -  == LLM cache == saving: global:keywords:d4d4f080154dfc36a3557a9077ba1268
+2026-01-16 00:08:51,065 - lightrag - INFO - Query edges: Start date (top_k:40, cosine:0.2)
+2026-01-16 00:08:51,274 - lightrag - INFO - Global query: 23 entites, 14 relations
+2026-01-16 00:08:51,274 - lightrag - INFO - Raw search results: 23 entities, 14 relations, 0 vector chunks
+2026-01-16 00:08:51,276 - lightrag - INFO - After truncation: 23 entities, 14 relations
+2026-01-16 00:08:51,284 - lightrag - WARNING - Vector similarity chunk selection: found 70 but expecting 78
+2026-01-16 00:08:51,284 - lightrag - WARNING - No entity-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-16 00:08:51,284 - lightrag - INFO - Selecting 69 from 78 entity-related chunks by weighted polling
+2026-01-16 00:08:51,285 - lightrag - INFO - Find 1 additional chunks in 1 relations (deduplicated 10)
+2026-01-16 00:08:51,285 - lightrag - WARNING - Vector similarity chunk selection: no vectors retrieved from chunks_vdb
+2026-01-16 00:08:51,285 - lightrag - WARNING - No relation-related chunks selected by vector similarity, falling back to WEIGHT method
+2026-01-16 00:08:51,285 - lightrag - INFO - Selecting 1 from 1 relation-related chunks by weighted polling
+2026-01-16 00:08:51,285 - lightrag - INFO - Round-robin merged chunks: 67 -> 67 (deduplicated 0)
+2026-01-16 00:08:51,287 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-16 00:08:51,301 - lightrag - INFO - Final context: 23 entities, 14 relations, 20 chunks
+2026-01-16 00:08:51,301 - lightrag - INFO - Final chunks S+F/O: E2/1 E2/2 E4/3 E3/4 E1/5 E1/6 E1/7 E4/8 E1/10 E1/11 E5/12 E4/13 E4/14 E4/15 E5/16 E2/17 E2/18 E1/19 E1/20 E1/21
+2026-01-16 00:08:57,087 - lightrag - INFO -  == LLM cache == saving: default:extract:3a893eb01e2fd2ffb2505769285d1bdf
+2026-01-16 00:08:58,661 - lightrag - INFO -  == LLM cache == saving: default:extract:b6cd3297989eeab77657aeb26cdb88ca
+2026-01-16 00:08:58,770 - uvicorn.access - INFO - 127.0.0.1:60089 - "POST /query/stream HTTP/1.1" 200
+2026-01-16 00:09:00,219 - uvicorn.access - INFO - 127.0.0.1:60089 - "POST /threads/0bba6bda-f8a8-4a81-90f5-39162a6f48b6/messages HTTP/1.1" 200
+2026-01-16 00:09:00,222 - uvicorn.access - INFO - 127.0.0.1:60089 - "POST /threads/0bba6bda-f8a8-4a81-90f5-39162a6f48b6/messages HTTP/1.1" 200
+2026-01-16 00:09:00,223 - uvicorn.access - INFO - 127.0.0.1:60089 - "GET /threads/0bba6bda-f8a8-4a81-90f5-39162a6f48b6 HTTP/1.1" 200
+2026-01-16 00:09:00,226 - uvicorn.access - INFO - 127.0.0.1:60089 - "PATCH /threads/0bba6bda-f8a8-4a81-90f5-39162a6f48b6 HTTP/1.1" 200
+2026-01-16 00:09:01,389 - lightrag - INFO -  == LLM cache == saving: default:extract:7ff0968601011407fe2c6cc512ca5f6b
+2026-01-16 00:09:07,123 - lightrag - INFO -  == LLM cache == saving: default:extract:8770b403ea1553703ee34ed15176e50b
+2026-01-16 00:09:07,123 - lightrag - INFO - Chunk 16 of 68 extracted 11 Ent + 8 Rel chunk-375fe3d27a7cab69420e30cb24c387bf
+2026-01-16 00:09:09,171 - lightrag - INFO -  == LLM cache == saving: default:extract:08ddbc8496dc0a6754cc68eba5b2384f
+2026-01-16 00:09:09,989 - lightrag - INFO -  == LLM cache == saving: default:extract:6cc24353fa888f03235965821fc0dcda
+2026-01-16 00:09:13,273 - lightrag - INFO -  == LLM cache == saving: default:extract:29ca898c0736eb0ef83984213489611d
+2026-01-16 00:09:13,274 - lightrag - INFO - Chunk 1 of 2 extracted 34 Ent + 10 Rel chunk-237a227de72e3aa30e392046b0d7ef97
+2026-01-16 00:09:14,494 - lightrag - INFO -  == LLM cache == saving: default:extract:9c484434e147b790364e844db932ead7
+2026-01-16 00:09:14,494 - lightrag - INFO - Chunk 17 of 68 extracted 8 Ent + 7 Rel chunk-eeec577dfdc0cdd905ed5978bf979b36
+2026-01-16 00:09:15,416 - lightrag - INFO -  == LLM cache == saving: default:extract:175852146d6db08e9a971f66a486493b
+2026-01-16 00:09:20,536 - lightrag - INFO -  == LLM cache == saving: default:extract:9b6bda67418fadf4829fbdae78ec02c6
+2026-01-16 00:09:20,537 - lightrag - INFO -  == LLM cache == saving: default:extract:f2eccf54c18574fbec2e4bc3786a14b1
+2026-01-16 00:09:20,537 - lightrag - INFO - Chunk 18 of 68 extracted 11 Ent + 8 Rel chunk-8bcd25270d011130b3be01fa28646f5d
+2026-01-16 00:09:20,538 - lightrag - INFO - Chunk 19 of 68 extracted 10 Ent + 7 Rel chunk-7b736e7925101066fbe53d94775beda0
+2026-01-16 00:09:25,657 - lightrag - INFO -  == LLM cache == saving: default:extract:a6a77e118b5287feaa8c48e64562779b
+2026-01-16 00:09:26,065 - lightrag - INFO -  == LLM cache == saving: default:extract:8d28488651ed79b26db9b1cb5f2ff37b
+2026-01-16 00:09:26,065 - lightrag - INFO - Chunk 2 of 2 extracted 41 Ent + 15 Rel chunk-919790de0c041024bfcfd7beb80bcfe2
+2026-01-16 00:09:26,066 - lightrag - INFO - Merging stage 7/11: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-16 00:09:26,066 - lightrag - INFO - Phase 1: Processing 71 entities from doc-1f96463cc2f4da744af2dfb74f66a15f (async: 8)
+2026-01-16 00:09:27,721 - lightrag - INFO - Merged: `HarvestOwl` | 4+1
+2026-01-16 00:09:29,054 - lightrag - INFO - Phase 2: Processing 25 relations from doc-1f96463cc2f4da744af2dfb74f66a15f (async: 8)
+2026-01-16 00:09:29,562 - lightrag - INFO -  == LLM cache == saving: default:extract:5a0b4acea3f4d56f2b679d475ac6101a
+2026-01-16 00:09:30,011 - lightrag - INFO -  == LLM cache == saving: default:extract:bb3de25a06fc7f74995266461142df62
+2026-01-16 00:09:31,385 - lightrag - INFO -  == LLM cache == saving: default:extract:5df84ee786bd4cc2aeacdeb3de7228f7
+2026-01-16 00:09:31,385 - lightrag - INFO - Chunk 20 of 68 extracted 9 Ent + 6 Rel chunk-99802b3dfe0a4eeaa033a2e5eeacb881
+2026-01-16 00:09:32,307 - lightrag - INFO - Phase 3: Updating final 72(71+1) entities and  25 relations from doc-1f96463cc2f4da744af2dfb74f66a15f
+2026-01-16 00:09:32,308 - lightrag - INFO - Completed merging: 71 entities, 1 extra entities, 25 relations
+2026-01-16 00:09:32,361 - lightrag - INFO - [] Writing graph with 405 nodes, 269 edges
+2026-01-16 00:09:32,361 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:09:32,362 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:09:32,362 - lightrag - INFO - Completed processing file 7/11: HarvestOwl+Menu+January+12th+2026+NP.pdf
+2026-01-16 00:09:32,362 - lightrag - INFO - Extracting stage 8/11: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-16 00:09:32,362 - lightrag - INFO - Processing d-id: doc-0071f33f5941888606293ff29e1871b5
+2026-01-16 00:09:34,359 - lightrag - INFO -  == LLM cache == saving: default:extract:43cc42fc4ca383b847a70c4fde50f1bb
+2026-01-16 00:09:34,360 - lightrag - INFO - Chunk 21 of 68 extracted 9 Ent + 7 Rel chunk-6221515fb078572b4a20e35a419d85ca
+2026-01-16 00:09:35,796 - lightrag - INFO -  == LLM cache == saving: default:extract:a59f531d6ebb927651c9015280cb1bab
+2026-01-16 00:09:35,796 - lightrag - INFO - Chunk 22 of 68 extracted 8 Ent + 7 Rel chunk-6951764c45b952aabed8556330638a02
+2026-01-16 00:09:40,045 - lightrag - INFO -  == LLM cache == saving: default:extract:e6a6c29d37a749e272469271c21a527f
+2026-01-16 00:09:40,150 - lightrag - INFO -  == LLM cache == saving: default:extract:a4324467fe5ff9b82c05ee897afea345
+2026-01-16 00:09:50,344 - lightrag - INFO -  == LLM cache == saving: default:extract:e43ad99b7cb7228ad707e342c7f72077
+2026-01-16 00:09:50,846 - lightrag - INFO -  == LLM cache == saving: default:extract:2bd5fcd0a8612a37d1f85b93004c0d7e
+2026-01-16 00:09:55,250 - lightrag - INFO -  == LLM cache == saving: default:extract:23933dc37f864294adad4d09666cacef
+2026-01-16 00:09:55,251 - lightrag - INFO - Chunk 23 of 68 extracted 10 Ent + 9 Rel chunk-2ff652f98a4945762d29e50664d26649
+2026-01-16 00:09:57,194 - lightrag - INFO -  == LLM cache == saving: default:extract:da6e1e042463cd32801816971f63804e
+2026-01-16 00:09:57,194 - lightrag - INFO - Chunk 24 of 68 extracted 9 Ent + 8 Rel chunk-38a5d56b2874186cef9eeacc63f84c23
+2026-01-16 00:09:59,549 - lightrag - INFO -  == LLM cache == saving: default:extract:0eef2587f666c95b456d5b87c20b3868
+2026-01-16 00:09:59,550 - lightrag - INFO - Chunk 25 of 68 extracted 9 Ent + 7 Rel chunk-e65ad401474f0f4b8c8c14ff6bdf3c3e
+2026-01-16 00:10:02,627 - lightrag - INFO -  == LLM cache == saving: default:extract:c2c2f8d9fb1eb3b646aad2b0330c04bf
+2026-01-16 00:10:02,628 - lightrag - INFO - Chunk 26 of 68 extracted 9 Ent + 8 Rel chunk-a1b7af350b94e45d9720d66e397c9cb3
+2026-01-16 00:10:07,641 - lightrag - INFO -  == LLM cache == saving: default:extract:3851e0381836e4ef099e43e24e1dfce9
+2026-01-16 00:10:11,223 - lightrag - INFO -  == LLM cache == saving: default:extract:d21f987559a2e541c4afc0c7b3d1f8c2
+2026-01-16 00:10:11,225 - lightrag - WARNING - chunk-b4d24bd2888d155419fb8a8c7bcdb064: LLM output format error; found 7/4 feilds on ENTITY `HarvestOwl` @ `Reasonable Relationships<br>entity`
+2026-01-16 00:10:12,454 - lightrag - INFO -  == LLM cache == saving: default:extract:25e86e5607d4995684e9d2fb68bfe0b1
+2026-01-16 00:10:14,029 - lightrag - INFO -  == LLM cache == saving: default:extract:818550fa530ceb40aaf7c48099d77c4f
+2026-01-16 00:10:19,573 - lightrag - INFO -  == LLM cache == saving: default:extract:0272fc08b2a0108cf61de5c9ac0eb9b3
+2026-01-16 00:10:19,974 - lightrag - INFO -  == LLM cache == saving: default:extract:20e73809c6b180627024c93724a163dd
+2026-01-16 00:10:19,980 - lightrag - INFO - Chunk 1 of 2 extracted 37 Ent + 10 Rel chunk-6c8857d5952cbdb8d26f26220d96bf8b
+2026-01-16 00:10:21,233 - lightrag - INFO -  == LLM cache == saving: default:extract:ef3a25dfb036b559b18850227498a11d
+2026-01-16 00:10:21,234 - lightrag - INFO - Chunk 2 of 2 extracted 42 Ent + 8 Rel chunk-b4d24bd2888d155419fb8a8c7bcdb064
+2026-01-16 00:10:21,234 - lightrag - INFO - Merging stage 8/11: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-16 00:10:21,234 - lightrag - INFO - Phase 1: Processing 76 entities from doc-0071f33f5941888606293ff29e1871b5 (async: 8)
+2026-01-16 00:10:21,236 - lightrag - INFO - Merged: `Olipop` | 2+2
+2026-01-16 00:10:21,240 - lightrag - INFO - Merged: `Local Apple Cider` | 2+2
+2026-01-16 00:10:21,246 - lightrag - INFO - Merged: `Niman Ranch Snack Pack` | 2+2
+2026-01-16 00:10:21,249 - lightrag - INFO - Merged: `Think Jerky` | 1+1
+2026-01-16 00:10:21,249 - lightrag - INFO - Merged: `Karma Cashews` | 1+1
+2026-01-16 00:10:21,252 - lightrag - INFO - Merged: `Quinn Peanut Butter Filled Pretzel Nuggets` | 1+1
+2026-01-16 00:10:21,253 - lightrag - INFO - Merged: `Foods Alive Sprouted Crisps` | 1+1
+2026-01-16 00:10:21,480 - lightrag - INFO - Merged: `Crunchy Roasted Edamame Beans` | 1+1
+2026-01-16 00:10:21,485 - lightrag - INFO - Merged: `Housemade Cashew Peanut Butter & Apple Slices` | 1+1
+2026-01-16 00:10:21,504 - lightrag - INFO - Merged: `Elemental Superfood Seedbar` | 1+1
+2026-01-16 00:10:21,521 - lightrag - INFO - Merged: `Love, Corn` | 1+1
+2026-01-16 00:10:21,575 - lightrag - INFO - Merged: `Poshi Chili & Garlic Kalamata Olives` | 1+1
+2026-01-16 00:10:21,766 - lightrag - INFO - Merged: `Guardian Cold Brew Coffee` | 1+1
+2026-01-16 00:10:21,786 - lightrag - INFO - Merged: `Hoplark Sparkling HopTea` | 1+1
+2026-01-16 00:10:21,786 - lightrag - INFO - Merged: `Garden of Flavor Cold Pressed Juice` | 1+1
+2026-01-16 00:10:21,793 - lightrag - INFO - Merged: `Brew Dr. Kombucha` | 1+1
+2026-01-16 00:10:21,798 - lightrag - INFO - Merged: `HarvestOwl` | 5+1
+2026-01-16 00:10:21,811 - lightrag - INFO - Merged: `Chicken and Turkey` | 1+1
+2026-01-16 00:10:21,987 - lightrag - INFO - Merged: `Beef` | 1+1
+2026-01-16 00:10:21,992 - lightrag - INFO - Merged: `Salmon` | 1+1
+2026-01-16 00:10:22,021 - lightrag - INFO - Merged: `Cooking Oils` | 1+1
+2026-01-16 00:10:22,026 - lightrag - INFO - Merged: `Eggs` | 1+1
+2026-01-16 00:10:22,076 - lightrag - INFO - Merged: `Tofu` | 1+1
+2026-01-16 00:10:22,114 - lightrag - INFO - Merged: `Bacon` | 1+1
+2026-01-16 00:10:22,203 - lightrag - INFO - Merged: `Kale` | 1+1
+2026-01-16 00:10:22,268 - lightrag - INFO - Merged: `Apples` | 1+1
+2026-01-16 00:10:22,272 - lightrag - INFO - Merged: `Philomena Bake Shop` | 1+1
+2026-01-16 00:10:22,284 - lightrag - INFO - Merged: `Luna Bakery` | 1+1
+2026-01-16 00:10:22,334 - lightrag - INFO - Merged: `Cleveland Kraut` | 1+1
+2026-01-16 00:10:22,415 - lightrag - INFO - Merged: `Fresh 'n Crisp Farms` | 1+1
+2026-01-16 00:10:22,420 - lightrag - INFO - Merged: `Holistic Acres` | 1+1
+2026-01-16 00:10:22,496 - lightrag - INFO - Merged: `Rittman Orchards` | 1+1
+2026-01-16 00:10:22,547 - lightrag - INFO - Merged: `Shagbark Tortilla Chips` | 1+1
+2026-01-16 00:10:22,553 - lightrag - INFO - Merged: `Garden of Flavor` | 1+1
+2026-01-16 00:10:22,761 - lightrag - INFO - Merged: `Rittman Orchard Apple` | 1+1
+2026-01-16 00:10:22,786 - lightrag - INFO - Merged: `BOOMCHICKAPOP Sea Salt Popcorn` | 1+1
+2026-01-16 00:10:22,899 - lightrag - INFO - Merged: `Sea Salt Potato Chips` | 1+1
+2026-01-16 00:10:22,904 - lightrag - INFO -  == LLM cache == saving: default:extract:5d5d4465e4cb8679b9eed2b19ea3a671
+2026-01-16 00:10:23,287 - lightrag - INFO - Merged: `Super Simple Keto Bowl with Cauliflower Rice` | 1+1
+2026-01-16 00:10:23,298 - lightrag - INFO - Merged: `Grapefruit & Broccoli Chopped Kale Bowl` | 1+1
+2026-01-16 00:10:23,317 - lightrag - INFO - Merged: `Breakfast Tacos` | 1+1
+2026-01-16 00:10:23,327 - lightrag - INFO - Merged: `Super Simple Bowl with Brown Rice` | 1+1
+2026-01-16 00:10:23,428 - lightrag - INFO - Merged: `Red Grape & Walnut Chicken Salad` | 1+1
+2026-01-16 00:10:23,484 - lightrag - INFO - Merged: `The Doctor's Everyday Salad` | 1+1
+2026-01-16 00:10:23,540 - lightrag - INFO - Merged: `Cider Poached Pears` | 1+1
+2026-01-16 00:10:23,547 - lightrag - INFO - Merged: `Ruani Functional Brownie` | 1+1
+2026-01-16 00:10:23,563 - lightrag - INFO - Merged: `Tcho Dark Chocolate Bar` | 1+1
+2026-01-16 00:10:23,646 - lightrag - INFO - Merged: `San Pellegrino Sparkling Soda` | 1+1
+2026-01-16 00:10:23,691 - lightrag - INFO - Merged: `Sanzo Sparkling Water` | 1+1
+2026-01-16 00:10:23,758 - lightrag - INFO - Merged: `Spindrift` | 1+1
+2026-01-16 00:10:23,772 - lightrag - INFO - Merged: `Vita Coco Pure Coconut Water` | 1+1
+2026-01-16 00:10:23,788 - lightrag - INFO - Merged: `Just Iced Tea` | 1+1
+2026-01-16 00:10:23,855 - lightrag - INFO - Merged: `Mountain Valley Spring Water` | 2+1
+2026-01-16 00:10:23,925 - lightrag - INFO - Merged: `GF` | 1+1
+2026-01-16 00:10:24,539 - lightrag - INFO -  == LLM cache == saving: default:extract:681774bf64c930714e13f4bc4d20230c
+2026-01-16 00:10:24,539 - lightrag - INFO - Chunk 27 of 68 extracted 8 Ent + 7 Rel chunk-180bda5a319ac38863d7482736998fce
+2026-01-16 00:10:24,668 - lightrag - INFO - Phase 2: Processing 18 relations from doc-0071f33f5941888606293ff29e1871b5 (async: 8)
+2026-01-16 00:10:26,289 - lightrag - INFO - Chunks appended from relation: `Niman Ranch`
+2026-01-16 00:10:26,619 - lightrag - INFO - Phase 3: Updating final 76(76+0) entities and  18 relations from doc-0071f33f5941888606293ff29e1871b5
+2026-01-16 00:10:26,620 - lightrag - INFO - Completed merging: 76 entities, 0 extra entities, 18 relations
+2026-01-16 00:10:26,671 - lightrag - INFO - [] Writing graph with 428 nodes, 287 edges
+2026-01-16 00:10:26,672 - lightrag - ERROR - [] Error saving graph: GraphML does not support type <class 'list'> as data values.
+2026-01-16 00:10:26,672 - lightrag - INFO - In memory DB persist to disk
+2026-01-16 00:10:26,672 - lightrag - INFO - Completed processing file 8/11: HarvestOwl+Menu+January+19th+2026+NP.pdf
+2026-01-16 00:10:26,672 - lightrag - INFO - Extracting stage 9/11: Insperity 401k Plan Essentials .pdf
+2026-01-16 00:10:26,672 - lightrag - INFO - Processing d-id: doc-1c5a8abd486160f0e3adc85964987879
+2026-01-16 00:10:27,091 - lightrag - INFO -  == LLM cache == saving: default:extract:8273c50d3732f28db18286046e9b1d97
+2026-01-16 00:10:27,092 - lightrag - INFO - Chunk 28 of 68 extracted 8 Ent + 8 Rel chunk-ce6e9f9b85bce5790702e9868e331245
+2026-01-16 00:10:30,069 - lightrag - INFO -  == LLM cache == saving: default:extract:6718f341231bf710b60fd315ba6867e3
+2026-01-16 00:10:30,070 - lightrag - INFO - Chunk 29 of 68 extracted 11 Ent + 9 Rel chunk-c5773df7648b6cd4b6126bb1b7b1bb7b
+2026-01-16 00:10:32,870 - lightrag - INFO -  == LLM cache == saving: default:extract:1f88fec146a4ac84c6d981578ddf2238
+2026-01-16 00:10:38,564 - lightrag - INFO -  == LLM cache == saving: default:extract:77bb66317e477d1ee78bd9863b82423b
+2026-01-16 00:10:40,919 - lightrag - INFO -  == LLM cache == saving: default:extract:92527a4e27d948adf555fedd3d0244c8
+2026-01-16 00:10:44,945 - lightrag - INFO -  == LLM cache == saving: default:extract:d976b860ddf53ca1e1ba0f758f6c9cf6
+2026-01-16 00:10:47,166 - lightrag - INFO -  == LLM cache == saving: default:extract:ba307f04818fd525a7c0a0b70f6cfc9b
+2026-01-16 00:10:47,166 - lightrag - INFO - Chunk 30 of 68 extracted 8 Ent + 8 Rel chunk-3b54c7ade94d99acfa4d3881d085b364
+2026-01-16 00:10:47,574 - lightrag - INFO -  == LLM cache == saving: default:extract:3fb8dc17ac3a7ee579f37b23ccdf1eba
+2026-01-16 00:10:47,574 - lightrag - INFO - Chunk 31 of 68 extracted 9 Ent + 8 Rel chunk-48d3df91ddbd77098bb52a9fb3188709
+2026-01-16 00:10:50,032 - lightrag - INFO -  == LLM cache == saving: default:extract:179edf6d4f418134e9719ece6695edcd

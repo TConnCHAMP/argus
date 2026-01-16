@@ -206,7 +206,7 @@ export default function RetrievalTesting() {
     }
   }, [currentThreadId])
 
-  // Initialize thread on component mount
+  // Initialize thread on component mount or load existing thread messages
   useEffect(() => {
     const initializeThread = async () => {
       if (!currentThreadId) {
@@ -215,6 +215,22 @@ export default function RetrievalTesting() {
           setCurrentThreadId(newThread.id)
         } catch (error) {
           console.error('Error creating initial thread:', error)
+        }
+      } else {
+        // Load existing thread messages on mount
+        try {
+          const thread = await getThread(currentThreadId)
+          const convertedMessages: MessageWithError[] = thread.messages.map((msg, index) => ({
+            id: `thread-${currentThreadId}-${index}`,
+            role: msg.role as 'user' | 'assistant' | 'system',
+            content: msg.content,
+            mermaidRendered: true,
+            latexRendered: true
+          }))
+          setMessages(convertedMessages)
+          useSettingsStore.getState().setRetrievalHistory(convertedMessages)
+        } catch (error) {
+          console.error('Error loading thread messages:', error)
         }
       }
     }
