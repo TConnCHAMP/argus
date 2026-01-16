@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Literal, Optional
 from fastapi import APIRouter, Depends, HTTPException
 from lightrag.base import QueryParam
 from lightrag.api.utils_api import get_combined_auth_dependency
-from lightrag.utils import logger
+from lightrag.utils import logger, parse_natural_language_date
 from pydantic import BaseModel, Field, field_validator
 
 router = APIRouter(tags=["query"])
@@ -108,6 +108,16 @@ class QueryRequest(BaseModel):
     stream: Optional[bool] = Field(
         default=True,
         description="If True, enables streaming output for real-time responses. Only affects /query/stream endpoint.",
+    )
+
+    start_date: Optional[str] = Field(
+        default=None,
+        description="Start date for filtering results (ISO format YYYY-MM-DD). Only chunks with relevant_dates in range will be included.",
+    )
+
+    end_date: Optional[str] = Field(
+        default=None,
+        description="End date for filtering results (ISO format YYYY-MM-DD). Only chunks with relevant_dates in range will be included.",
     )
 
     @field_validator("query", mode="after")
@@ -402,6 +412,14 @@ def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
                 - 500: Internal processing error (e.g., LLM service unavailable)
         """
         try:
+            # Parse natural language date expressions if no explicit dates provided
+            if request.start_date is None and request.end_date is None:
+                parsed_start, parsed_end = parse_natural_language_date(request.query)
+                if parsed_start or parsed_end:
+                    request.start_date = parsed_start
+                    request.end_date = parsed_end
+                    logger.info(f"Parsed natural language date from query: {parsed_start} to {parsed_end}")
+
             param = request.to_query_params(
                 False
             )  # Ensure stream=False for non-streaming endpoint
@@ -660,6 +678,14 @@ def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
             Use streaming mode for real-time interfaces and non-streaming for batch processing.
         """
         try:
+            # Parse natural language date expressions if no explicit dates provided
+            if request.start_date is None and request.end_date is None:
+                parsed_start, parsed_end = parse_natural_language_date(request.query)
+                if parsed_start or parsed_end:
+                    request.start_date = parsed_start
+                    request.end_date = parsed_end
+                    logger.info(f"Parsed natural language date from query: {parsed_start} to {parsed_end}")
+
             # Use the stream parameter from the request, defaulting to True if not specified
             stream_mode = request.stream if request.stream is not None else True
             param = request.to_query_params(stream_mode)
@@ -1139,6 +1165,14 @@ def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
             as structured data analysis typically requires source attribution.
         """
         try:
+            # Parse natural language date expressions if no explicit dates provided
+            if request.start_date is None and request.end_date is None:
+                parsed_start, parsed_end = parse_natural_language_date(request.query)
+                if parsed_start or parsed_end:
+                    request.start_date = parsed_start
+                    request.end_date = parsed_end
+                    logger.info(f"Parsed natural language date from query: {parsed_start} to {parsed_end}")
+
             param = request.to_query_params(False)  # No streaming for data endpoint
             response = await rag.aquery_data(request.query, param=param)
 

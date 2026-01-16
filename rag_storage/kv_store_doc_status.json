@@ -287,5 +287,63 @@
       "processing_start_time": 1768447010,
       "processing_end_time": 1768447399
     }
+  },
+  "doc-c2a036f39d348072d71c282f144f0d28": {
+    "status": "processed",
+    "chunks_count": 6,
+    "chunks_list": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e",
+      "chunk-512c23fe1f4925d32240e847b8878398",
+      "chunk-95a6aae4dd1814728667795f28dbc733",
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc",
+      "chunk-d82b6a68c661809704fe31178646b7e1",
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "content_summary": "Transcript from2026-01-14T15:07:45Z\nSpeaker 1 00:01:55\nHello, everyone. We are going to get started. Welcome to our 2026 CEI report launch briefing call. My name is Marcos Garcia. You see him pronouns. I'm the deputy director for the workplace qualit...",
+    "content_length": 28832,
+    "created_at": "2026-01-16T03:03:31.534093+00:00",
+    "updated_at": "2026-01-16T03:04:21.560167+00:00",
+    "file_path": "2026-01-14T15:07:45Z.txt",
+    "track_id": "scan_20260115_220331_67c11e16",
+    "metadata": {
+      "processing_start_time": 1768532611,
+      "processing_end_time": 1768532661
+    }
+  },
+  "doc-1f96463cc2f4da744af2dfb74f66a15f": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97",
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "content_summary": "Let us know if there\n ’\ns ever anything we can help you with:  \n \nsupport@harvestowl.com  \n216\n -\n672\n -\n0655  \nMenu for the week of  \nJanuary 12, 2026  \n\nRittman Orchard Apple  \nBOOMCHICKAPOP Sea Salt Popcorn  \nFresh Veggies & Avocado  \nHippeas [Veg...",
+    "content_length": 7146,
+    "created_at": "2026-01-16T04:47:58.585939+00:00",
+    "updated_at": "2026-01-16T04:49:10.346394+00:00",
+    "file_path": "HarvestOwl+Menu+January+12th+2026+NP.pdf",
+    "track_id": "upload_20260115_234758_5ee2088e",
+    "metadata": {
+      "processing_start_time": 1768538878,
+      "processing_end_time": 1768538950
+    }
+  },
+  "doc-0071f33f5941888606293ff29e1871b5": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "content_summary": "Let us know if there\n ’\ns ever anything we can help you with:  \n \nsupport@harvestowl.com  \n216\n -\n672\n -\n0655  \nMenu for the week of  \nJanuary 19, 2026  \n\nRittman Orchard Apple  \nBOOMCHICKAPOP Sea Salt Popcorn  \nFresh Veggies & Avocado  \nHippeas [Veg...",
+    "content_length": 7182,
+    "created_at": "2026-01-16T04:47:58.586567+00:00",
+    "updated_at": "2026-01-16T04:48:49.165256+00:00",
+    "file_path": "HarvestOwl+Menu+January+19th+2026+NP.pdf",
+    "track_id": "upload_20260115_234758_875b5255",
+    "metadata": {
+      "processing_start_time": 1768538878,
+      "processing_end_time": 1768538929
+    }
   }
 }

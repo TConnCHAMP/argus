@@ -78,7 +78,25 @@
       "failed": "Delete Documents Failed:\n{{message}}",
       "error": "Delete Documents Failed:\n{{error}}",
       "busy": "Pipeline is busy, please try again later",
-      "notAllowed": "No permission to perform this operation"
+      "notAllowed": "No permission to perform this operation",
+      "deleting": "Deleting..."
+    },
+    "reindexDocuments": {
+      "button": "Re-index",
+      "tooltip": "Re-index selected documents to update metadata and embeddings",
+      "title": "Re-index Documents",
+      "description": "This will reprocess the selected documents to extract updated metadata (like dates) and regenerate embeddings",
+      "whatHappens": "What will happen:",
+      "benefit1": "Date metadata will be extracted from filenames and content",
+      "benefit2": "Embeddings will be regenerated with the current model",
+      "benefit3": "Chunks and knowledge graph will be updated",
+      "note": "Note: Original document content and files will not be modified. The documents will be re-processed with the current extraction logic.",
+      "confirmButton": "Re-index Documents",
+      "success": "Re-indexing of {{count}} document(s) has been started",
+      "failed": "Re-index Failed:\n{{message}}",
+      "error": "Re-index Failed:\n{{error}}",
+      "busy": "Pipeline is busy, please try again later",
+      "reindexing": "Re-indexing..."
     },
     "selectDocuments": {
       "selectCurrentPage": "Select Current Page ({{count}})",

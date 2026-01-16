@@ -54,7 +54,7 @@ from lightrag.constants import (
     DEFAULT_MAX_FILE_PATHS,
     DEFAULT_FILE_PATH_MORE_PLACEHOLDER,
 )
-from lightrag.utils import get_env_value
+from lightrag.utils import get_env_value, extract_all_dates
 
 from lightrag.kg import (
     STORAGES,
@@ -1829,15 +1829,23 @@ class LightRAG:
                                 )
 
                             # Build chunks dictionary
-                            chunks: dict[str, Any] = {
-                                compute_mdhash_id(dp["content"], prefix="chunk-"): {
+                            chunks: dict[str, Any] = {}
+                            # Use current date as fallback for documents without extractable dates
+                            current_date = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+                            for dp in chunking_result:
+                                # Extract dates from filename and chunk content with fallback
+                                date_info = extract_all_dates(file_path, dp["content"], fallback_date=current_date)
+
+                                chunk_id = compute_mdhash_id(dp["content"], prefix="chunk-")
+                                chunks[chunk_id] = {
                                     **dp,
                                     "full_doc_id": doc_id,
                                     "file_path": file_path,  # Add file path to each chunk
                                     "llm_cache_list": [],  # Initialize empty LLM cache list for each chunk
+                                    "relevant_dates": date_info["relevant_dates"],  # Add extracted dates
+                                    "primary_date": date_info["primary_date"],  # Add primary date
                                 }
-                                for dp in chunking_result
-                            }
 
                             if not chunks:
                                 logger.warning("No document chunks to process")

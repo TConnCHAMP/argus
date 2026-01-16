@@ -5,7 +5,10 @@
       "Bash(python -m lightrag.api.lightrag_server:*)",
       "Bash(curl:*)",
       "Bash(python -m json.tool:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(kill:*)"
     ]
   }
 }

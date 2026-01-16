@@ -39,6 +39,7 @@ from lightrag.utils import (
     apply_source_ids_limit,
     merge_source_ids,
     make_relation_chunk_key,
+    chunk_matches_date_range,
 )
 from lightrag.base import (
     BaseGraphStorage,
@@ -1049,7 +1050,7 @@ async def _rebuild_from_extraction_result(
         Tuple of (entities_dict, relationships_dict)
     """
 
-    # Get chunk data for file_path from storage
+    # Get chunk data for file_path and dates from storage
     chunk_data = await text_chunks_storage.get_by_id(chunk_id)
     file_path = (
         chunk_data.get("file_path", "unknown_source")
@@ -1057,8 +1058,12 @@ async def _rebuild_from_extraction_result(
         else "unknown_source"
     )
 
+    # Extract date metadata from chunk
+    primary_date = chunk_data.get("primary_date") if chunk_data else None
+    relevant_dates = chunk_data.get("relevant_dates", []) if chunk_data else []
+
     # Call the shared processing function
-    return await _process_extraction_result(
+    entities, relationships = await _process_extraction_result(
         extraction_result,
         chunk_id,
         timestamp,
@@ -1066,6 +1071,19 @@ async def _rebuild_from_extraction_result(
         tuple_delimiter=PROMPTS["DEFAULT_TUPLE_DELIMITER"],
         completion_delimiter=PROMPTS["DEFAULT_COMPLETION_DELIMITER"],
     )
+
+    # Add date metadata to all entities and relationships
+    for entity_list in entities.values():
+        for entity in entity_list:
+            entity["primary_date"] = primary_date
+            entity["relevant_dates"] = relevant_dates
+
+    for rel_list in relationships.values():
+        for rel in rel_list:
+            rel["primary_date"] = primary_date
+            rel["relevant_dates"] = relevant_dates
+
+    return entities, relationships
 
 
 async def _rebuild_single_entity(
@@ -1122,6 +1140,8 @@ async def _rebuild_single_entity(
                     "description": final_description,
                     "entity_type": entity_type,
                     "file_path": updated_entity_data["file_path"],
+                    "primary_date": current_entity.get("primary_date"),
+                    "relevant_dates": current_entity.get("relevant_dates", []),
                 }
             }
 
@@ -1382,6 +1402,8 @@ async def _rebuild_single_relationship(
     weights = []
     file_paths_list = []
     seen_paths = set()
+    all_relevant_dates = []
+    primary_date = None
 
     for rel_data in all_relationship_data:
         if rel_data.get("description"):
@@ -1395,6 +1417,16 @@ async def _rebuild_single_relationship(
             if file_path and file_path not in seen_paths:
                 file_paths_list.append(file_path)
                 seen_paths.add(file_path)
+        # Extract date metadata
+        if rel_data.get("primary_date"):
+            if not primary_date or rel_data["primary_date"] < primary_date:
+                primary_date = rel_data["primary_date"]
+        if rel_data.get("relevant_dates"):
+            all_relevant_dates.extend(rel_data["relevant_dates"])
+
+    # Deduplicate and sort relevant_dates
+    if all_relevant_dates:
+        all_relevant_dates = sorted(list(set(all_relevant_dates)))
 
     # Apply count limit
     max_file_paths = global_config.get("max_file_paths")
@@ -1465,6 +1497,8 @@ async def _rebuild_single_relationship(
         if file_paths_list
         else current_relationship.get("file_path", "unknown_source"),
         "truncate": truncation_info,
+        "primary_date": primary_date,
+        "relevant_dates": all_relevant_dates,
     }
 
     # Ensure both endpoint nodes exist before writing the edge back
@@ -1488,6 +1522,8 @@ async def _rebuild_single_relationship(
                 "file_path": node_file_path,
                 "created_at": node_created_at,
                 "truncate": "",
+                "primary_date": primary_date,
+                "relevant_dates": all_relevant_dates,
             }
             await knowledge_graph_inst.upsert_node(node_id, node_data=node_data)
 
@@ -1513,6 +1549,8 @@ async def _rebuild_single_relationship(
                         "source_id": node_source_id,
                         "entity_type": "UNKNOWN",
                         "file_path": node_file_path,
+                        "primary_date": primary_date,
+                        "relevant_dates": all_relevant_dates,
                     }
                 }
                 await safe_vdb_operation_with_exception(
@@ -1553,6 +1591,8 @@ async def _rebuild_single_relationship(
                 "description": final_description,
                 "weight": weight,
                 "file_path": updated_relationship_data["file_path"],
+                "primary_date": updated_relationship_data.get("primary_date"),
+                "relevant_dates": updated_relationship_data.get("relevant_dates", []),
             }
         }
 
@@ -1831,7 +1871,24 @@ async def _merge_nodes_then_upsert(
     else:
         logger.debug(status_message)
 
-    # 11. Update both graph and vector db
+    # 11. Extract date metadata from source chunks
+    primary_date = None
+    relevant_dates = []
+
+    # Get dates from all source chunks
+    for node in nodes_data:
+        if 'primary_date' in node and node['primary_date']:
+            if not primary_date or node['primary_date'] < primary_date:
+                # Use earliest primary date
+                primary_date = node['primary_date']
+        if 'relevant_dates' in node and node['relevant_dates']:
+            relevant_dates.extend(node['relevant_dates'])
+
+    # Deduplicate relevant_dates and sort
+    if relevant_dates:
+        relevant_dates = sorted(list(set(relevant_dates)))
+
+    # 12. Update both graph and vector db
     node_data = dict(
         entity_id=entity_name,
         entity_type=entity_type,
@@ -1840,6 +1897,8 @@ async def _merge_nodes_then_upsert(
         file_path=file_path,
         created_at=int(time.time()),
         truncate=truncation_info,
+        primary_date=primary_date,  # Add date metadata
+        relevant_dates=relevant_dates,  # Add date metadata
     )
     await knowledge_graph_inst.upsert_node(
         entity_name,
@@ -1856,6 +1915,8 @@ async def _merge_nodes_then_upsert(
                 "content": entity_content,
                 "source_id": source_id,
                 "file_path": file_path,
+                "primary_date": primary_date,
+                "relevant_dates": relevant_dates,
             }
         }
         await safe_vdb_operation_with_exception(
@@ -2164,6 +2225,18 @@ async def _merge_edges_then_upsert(
     else:
         logger.debug(status_message)
 
+    # Extract date metadata from source edges (needed for both entity and edge creation)
+    edge_primary_date = None
+    edge_relevant_dates = []
+    for edge in edges_data:
+        if 'primary_date' in edge and edge['primary_date']:
+            if not edge_primary_date or edge['primary_date'] < edge_primary_date:
+                edge_primary_date = edge['primary_date']
+        if 'relevant_dates' in edge and edge['relevant_dates']:
+            edge_relevant_dates.extend(edge['relevant_dates'])
+    if edge_relevant_dates:
+        edge_relevant_dates = sorted(list(set(edge_relevant_dates)))
+
     # 11. Update both graph and vector db
     for need_insert_id in [src_id, tgt_id]:
         # Optimization: Use get_node instead of has_node + get_node
@@ -2180,6 +2253,8 @@ async def _merge_edges_then_upsert(
                 "file_path": file_path,
                 "created_at": node_created_at,
                 "truncate": "",
+                "primary_date": edge_primary_date,
+                "relevant_dates": edge_relevant_dates,
             }
             await knowledge_graph_inst.upsert_node(need_insert_id, node_data=node_data)
 
@@ -2206,6 +2281,8 @@ async def _merge_edges_then_upsert(
                         "source_id": source_id,
                         "entity_type": "UNKNOWN",
                         "file_path": file_path,
+                        "primary_date": edge_primary_date,
+                        "relevant_dates": edge_relevant_dates,
                     }
                 }
                 await safe_vdb_operation_with_exception(
@@ -2343,6 +2420,8 @@ async def _merge_edges_then_upsert(
             file_path=file_path,
             created_at=edge_created_at,
             truncate=truncation_info,
+            primary_date=edge_primary_date,
+            relevant_dates=edge_relevant_dates,
         ),
     )
 
@@ -2356,6 +2435,8 @@ async def _merge_edges_then_upsert(
         created_at=edge_created_at,
         truncate=truncation_info,
         weight=weight,
+        primary_date=edge_primary_date,
+        relevant_dates=edge_relevant_dates,
     )
 
     # Sort src_id and tgt_id to ensure consistent ordering (smaller string first)
@@ -2382,6 +2463,8 @@ async def _merge_edges_then_upsert(
                 "description": description,
                 "weight": weight,
                 "file_path": file_path,
+                "primary_date": edge_primary_date,
+                "relevant_dates": edge_relevant_dates,
             }
         }
         await safe_vdb_operation_with_exception(
@@ -2941,6 +3024,20 @@ async def extract_entities(
                 pipeline_status["latest_message"] = log_message
                 pipeline_status["history_messages"].append(log_message)
 
+        # Attach date metadata from chunk to all extracted entities and relationships
+        chunk_primary_date = chunk_dp.get("primary_date")
+        chunk_relevant_dates = chunk_dp.get("relevant_dates", [])
+
+        for entity_list in maybe_nodes.values():
+            for entity in entity_list:
+                entity["primary_date"] = chunk_primary_date
+                entity["relevant_dates"] = chunk_relevant_dates
+
+        for edge_list in maybe_edges.values():
+            for edge in edge_list:
+                edge["primary_date"] = chunk_primary_date
+                edge["relevant_dates"] = chunk_relevant_dates
+
         # Return the extracted nodes and edges for centralized processing
         return maybe_nodes, maybe_edges
 
@@ -3399,15 +3496,26 @@ async def _get_vector_context(
             )
             return []
 
+        # Apply date filtering if specified
+        start_date = getattr(query_param, "start_date", None)
+        end_date = getattr(query_param, "end_date", None)
+
         valid_chunks = []
         for result in results:
             if "content" in result:
+                # Apply date range filtering if dates are specified
+                if start_date or end_date:
+                    if not chunk_matches_date_range(result, start_date, end_date):
+                        continue  # Skip this chunk if it doesn't match date range
+
                 chunk_with_metadata = {
                     "content": result["content"],
                     "created_at": result.get("created_at", None),
                     "file_path": result.get("file_path", "unknown_source"),
                     "source_type": "vector",  # Mark the source type
                     "chunk_id": result.get("id"),  # Add chunk_id for deduplication
+                    "relevant_dates": result.get("relevant_dates", []),  # Preserve date metadata
+                    "primary_date": result.get("primary_date"),  # Preserve primary date
                 }
                 valid_chunks.append(chunk_with_metadata)
 
@@ -4419,10 +4527,18 @@ async def _find_related_text_unit_from_entities(
     )  # Remove duplicates while preserving order
     chunk_data_list = await text_chunks_db.get_by_ids(unique_chunk_ids)
 
-    # Step 6: Build result chunks with valid data and update chunk tracking
+    # Step 6: Build result chunks with valid data, date filtering, and update chunk tracking
+    start_date = getattr(query_param, "start_date", None)
+    end_date = getattr(query_param, "end_date", None)
+
     result_chunks = []
     for i, (chunk_id, chunk_data) in enumerate(zip(unique_chunk_ids, chunk_data_list)):
         if chunk_data is not None and "content" in chunk_data:
+            # Apply date range filtering if dates are specified
+            if start_date or end_date:
+                if not chunk_matches_date_range(chunk_data, start_date, end_date):
+                    continue  # Skip this chunk if it doesn't match date range
+
             chunk_data_copy = chunk_data.copy()
             chunk_data_copy["source_type"] = "entity"
             chunk_data_copy["chunk_id"] = chunk_id  # Add chunk_id for deduplication
@@ -4711,10 +4827,18 @@ async def _find_related_text_unit_from_relations(
     )  # Remove duplicates while preserving order
     chunk_data_list = await text_chunks_db.get_by_ids(unique_chunk_ids)
 
-    # Step 6: Build result chunks with valid data and update chunk tracking
+    # Step 6: Build result chunks with valid data, date filtering, and update chunk tracking
+    start_date = getattr(query_param, "start_date", None)
+    end_date = getattr(query_param, "end_date", None)
+
     result_chunks = []
     for i, (chunk_id, chunk_data) in enumerate(zip(unique_chunk_ids, chunk_data_list)):
         if chunk_data is not None and "content" in chunk_data:
+            # Apply date range filtering if dates are specified
+            if start_date or end_date:
+                if not chunk_matches_date_range(chunk_data, start_date, end_date):
+                    continue  # Skip this chunk if it doesn't match date range
+
             chunk_data_copy = chunk_data.copy()
             chunk_data_copy["source_type"] = "relationship"
             chunk_data_copy["chunk_id"] = chunk_id  # Add chunk_id for deduplication

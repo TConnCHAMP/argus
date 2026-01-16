@@ -931,6 +931,19 @@ export const deleteDocuments = async (
   return response.data
 }
 
+export interface ReindexDocumentsResponse {
+  status: 'reindexing_started' | 'busy'
+  message: string
+  track_id?: string
+}
+
+export const reindexDocuments = async (docIds: string[]): Promise<ReindexDocumentsResponse> => {
+  const response = await axiosInstance.post('/documents/reindex_documents', {
+    doc_ids: docIds
+  })
+  return response.data
+}
+
 export const getAuthStatus = async (): Promise<AuthStatusResponse> => {
   try {
     // Add a timeout to the request to prevent hanging

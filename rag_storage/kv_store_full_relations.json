@@ -3006,5 +3006,449 @@
     "create_time": 1768447399,
     "update_time": 1768447399,
     "_id": "doc-c6de8b92b7490b506515adcbe8d1c2cb"
+  },
+  "doc-c2a036f39d348072d71c282f144f0d28": {
+    "relation_pairs": [
+      [
+        "CEI Findings",
+        "HRC"
+      ],
+      [
+        "2026 CEI Report",
+        "LGBTQ+ Community"
+      ],
+      [
+        "CEI",
+        "Community Survey Climate Data"
+      ],
+      [
+        "CEI",
+        "HRC"
+      ],
+      [
+        "2026 CEI Report",
+        "Marcos Garcia"
+      ],
+      [
+        "HRC",
+        "Social Media Platforms"
+      ],
+      [
+        "Eric Bloom",
+        "HRC"
+      ],
+      [
+        "HRC",
+        "LGBTQ Plus Workers"
+      ],
+      [
+        "CEI",
+        "Eric"
+      ],
+      [
+        "Business Leaders",
+        "CEI"
+      ],
+      [
+        "Company Senior Leaders",
+        "HRC"
+      ],
+      [
+        "2026 CEI Report",
+        "Eric Bloom"
+      ],
+      [
+        "HRC",
+        "Kelly Robinson"
+      ],
+      [
+        "Courtney",
+        "HRC"
+      ],
+      [
+        "Corporate Equality Index",
+        "HRC"
+      ],
+      [
+        "Diversity, Equity, and Inclusion (DEI)",
+        "Marcos Garcia"
+      ],
+      [
+        "HRC",
+        "LGBTQ+ Workers"
+      ],
+      [
+        "Human Rights Campaign (HRC)",
+        "Kelly Robinson"
+      ],
+      [
+        "Corporate Equality Index Report",
+        "February 4th"
+      ],
+      [
+        "Employer Search Tool",
+        "HRC"
+      ],
+      [
+        "HRC",
+        "Marcos Garcia"
+      ],
+      [
+        "CEI Participation",
+        "Executive Toolkit"
+      ],
+      [
+        "2026 CEI Report",
+        "February 4th, 2026"
+      ],
+      [
+        "Corporate Equality Index (CEI)",
+        "Marcos Garcia"
+      ],
+      [
+        "CEI Participation",
+        "Toolkit"
+      ],
+      [
+        "Employer Search Tool",
+        "LGBTQ+ Community"
+      ],
+      [
+        "Eric Bloom",
+        "Whistlestop Capital"
+      ],
+      [
+        "CEI Leaders",
+        "Top Quartile CEI Companies"
+      ],
+      [
+        "Human Rights Campaign (HRC)",
+        "Marcos Garcia"
+      ],
+      [
+        "HRC",
+        "Press Release"
+      ],
+      [
+        "Corporate Equality Index (CEI)",
+        "Eric Bloom"
+      ],
+      [
+        "2020 Report",
+        "2026 CEI Report"
+      ],
+      [
+        "Marcos Garcia",
+        "Q&A Function"
+      ],
+      [
+        "2026 CEI Report",
+        "HRC"
+      ],
+      [
+        "HRC",
+        "Marcos"
+      ],
+      [
+        "2026 CEI Report",
+        "HRC Press Team"
+      ],
+      [
+        "HRC",
+        "Release Toolkit"
+      ],
+      [
+        "Company Comms Teams",
+        "HRC"
+      ],
+      [
+        "Corporate Equality Index (CEI)",
+        "Human Rights Campaign (HRC)"
+      ],
+      [
+        "2026 CEI Report",
+        "Courtney"
+      ],
+      [
+        "Financial Performance Data",
+        "Transparency"
+      ]
+    ],
+    "count": 41,
+    "create_time": 1768532661,
+    "update_time": 1768532661,
+    "_id": "doc-c2a036f39d348072d71c282f144f0d28"
+  },
+  "doc-0071f33f5941888606293ff29e1871b5": {
+    "relation_pairs": [
+      [
+        "Cleveland Kraut",
+        "Fresh 'n Crisp Farms"
+      ],
+      [
+        "Guardian Cold Brew Coffee",
+        "Wise Snacks Chicken Noodle Soup"
+      ],
+      [
+        "Breakfast Tacos",
+        "Harvest Owl"
+      ],
+      [
+        "Black Mountain Valley Spring Water",
+        "Olipop"
+      ],
+      [
+        "Brew Dr. Kombucha",
+        "Garden of Flavor Cold Pressed Juice"
+      ],
+      [
+        "Harvest Owl",
+        "Super Simple Bowl with Brown Rice"
+      ],
+      [
+        "BOOMCHICKAPOP Sea Salt Popcorn",
+        "Harvest Owl"
+      ],
+      [
+        "Harvest Owl",
+        "The Ultimate Veggie Sandwich"
+      ],
+      [
+        "Harvest Owl",
+        "The Doctor's Everyday Salad"
+      ],
+      [
+        "Luna Bakery",
+        "Philomena Bake Shop"
+      ],
+      [
+        "Drinks",
+        "Snacks"
+      ],
+      [
+        "Holistic Acres",
+        "Rittman Orchards"
+      ],
+      [
+        "Karma Cashews",
+        "Quinn Peanut Butter Filled Pretzel Nuggets"
+      ],
+      [
+        "Harvest Owl",
+        "Rittman Orchard Apple"
+      ],
+      [
+        "Harvest Owl",
+        "Super Simple Keto Bowl"
+      ],
+      [
+        "Harvest Owl",
+        "Luna Bakery Dark Chocolate Sea Salt Cookie"
+      ],
+      [
+        "Foods",
+        "Snacks"
+      ],
+      [
+        "Elemental Superfood Seedbar",
+        "Witzis Raw Granola"
+      ],
+      [
+        "Love, Corn",
+        "Poshi Chili & Garlic Kalamata Olives"
+      ],
+      [
+        "Grilled Steak Honey Mustard Salad",
+        "Harvest Owl"
+      ],
+      [
+        "Harvest Owl",
+        "Red Grape & Walnut Chicken Salad"
+      ],
+      [
+        "Harvest Owl",
+        "Hippeas Vegan White Cheddar"
+      ],
+      [
+        "Harvest Owl",
+        "Oven Roasted Turkey Sandwich"
+      ],
+      [
+        "Local Apple Cider",
+        "Niman Ranch Snack Pack"
+      ]
+    ],
+    "count": 24,
+    "create_time": 1768538929,
+    "update_time": 1768538929,
+    "_id": "doc-0071f33f5941888606293ff29e1871b5"
+  },
+  "doc-1f96463cc2f4da744af2dfb74f66a15f": {
+    "relation_pairs": [
+      [
+        "Beef",
+        "GF"
+      ],
+      [
+        "GF",
+        "Niman Ranch Snack Pack"
+      ],
+      [
+        "Breakfast Tacos",
+        "Harvest Owl"
+      ],
+      [
+        "Brew Dr. Kombucha",
+        "GF"
+      ],
+      [
+        "GF",
+        "Pasture-raised Hard Boiled Egg"
+      ],
+      [
+        "GF",
+        "Local Apple Cider"
+      ],
+      [
+        "Harvest Owl",
+        "Super Simple Bowl with Brown Rice"
+      ],
+      [
+        "GF",
+        "Wise Snacks Butternut Squash Soup"
+      ],
+      [
+        "BOOMCHICKAPOP Sea Salt Popcorn",
+        "Harvest Owl"
+      ],
+      [
+        "Harvest Owl",
+        "Oven Roasted Turkey Sandwich"
+      ],
+      [
+        "GF",
+        "Garden of Flavor Cold Pressed Juice"
+      ],
+      [
+        "Foods Alive Sprouted Crisps",
+        "GF"
+      ],
+      [
+        "Apples",
+        "GF"
+      ],
+      [
+        "Harvest Owl",
+        "The Doctor's Everyday Salad"
+      ],
+      [
+        "Greek Chicken Salad",
+        "Harvest Owl"
+      ],
+      [
+        "GF",
+        "Witzis Raw Granola"
+      ],
+      [
+        "GF",
+        "Hoplark Sparkling HopTea"
+      ],
+      [
+        "Eggs",
+        "GF"
+      ],
+      [
+        "Cooking Oils",
+        "GF"
+      ],
+      [
+        "GF",
+        "Housemade Cashew Peanut Butter & Apple Slices"
+      ],
+      [
+        "Elemental Superfood Seedbar",
+        "GF"
+      ],
+      [
+        "Harvest Owl",
+        "Rittman Orchard Apple"
+      ],
+      [
+        "Bacon",
+        "GF"
+      ],
+      [
+        "GF",
+        "Think Jerky"
+      ],
+      [
+        "GF",
+        "Kale"
+      ],
+      [
+        "Harvest Owl",
+        "Niman Ranch Snack Pack"
+      ],
+      [
+        "Crunchy Roasted Edamame Beans",
+        "GF"
+      ],
+      [
+        "GF",
+        "Salmon"
+      ],
+      [
+        "GF",
+        "Quinn Peanut Butter Filled Pretzel Nuggets"
+      ],
+      [
+        "GF",
+        "Poshi Chili & Garlic Kalamata Olives"
+      ],
+      [
+        "Chicken and Turkey",
+        "GF"
+      ],
+      [
+        "Crunchy Pretzel Shells",
+        "Harvest Owl"
+      ],
+      [
+        "GF",
+        "Karma Cashews"
+      ],
+      [
+        "Harvest Owl",
+        "Slow Braised Brisket Bowl"
+      ],
+      [
+        "GF",
+        "Tofu"
+      ],
+      [
+        "Harvest Owl",
+        "Siete Grain Free Tortilla Chips (Lime)"
+      ],
+      [
+        "GF",
+        "Love, Corn"
+      ],
+      [
+        "GF",
+        "Olipop"
+      ],
+      [
+        "GF",
+        "Mountain Valley Spring Water"
+      ],
+      [
+        "GF",
+        "Guardian Cold Brew Coffee"
+      ]
+    ],
+    "count": 40,
+    "create_time": 1768538950,
+    "update_time": 1768538950,
+    "_id": "doc-1f96463cc2f4da744af2dfb74f66a15f"
   }
 }

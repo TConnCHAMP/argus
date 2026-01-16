@@ -4088,15 +4088,6 @@
     "update_time": 1768448462,
     "_id": "CHAMP TITLES, INC.<SEP>Open Positions"
   },
-  "CHAMP TITLES, INC.<SEP>Harvest Owl": {
-    "chunk_ids": [
-      "chunk-cd1e146d6eb4fb0efbdb6208f93c4df6"
-    ],
-    "count": 1,
-    "create_time": 1768448462,
-    "update_time": 1768448462,
-    "_id": "CHAMP TITLES, INC.<SEP>Harvest Owl"
-  },
   "CHAMP TITLES, INC.<SEP>Tyler Conn": {
     "chunk_ids": [
       "chunk-a18a018ea63263a65246bd4beb196541"
@@ -6381,5 +6372,907 @@
     "create_time": 1768448566,
     "update_time": 1768448566,
     "_id": "Employees<SEP>Local Police Department"
+  },
+  "Corporate Equality Index (CEI)<SEP>Marcos Garcia": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532655,
+    "update_time": 1768532655,
+    "_id": "Corporate Equality Index (CEI)<SEP>Marcos Garcia"
+  },
+  "2026 CEI Report<SEP>LGBTQ+ Community": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532655,
+    "update_time": 1768532655,
+    "_id": "2026 CEI Report<SEP>LGBTQ+ Community"
+  },
+  "CEI<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-95a6aae4dd1814728667795f28dbc733",
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc"
+    ],
+    "count": 2,
+    "create_time": 1768532655,
+    "update_time": 1768532655,
+    "_id": "CEI<SEP>HRC"
+  },
+  "Human Rights Campaign (HRC)<SEP>Marcos Garcia": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Human Rights Campaign (HRC)<SEP>Marcos Garcia"
+  },
+  "Corporate Equality Index (CEI)<SEP>Eric Bloom": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Corporate Equality Index (CEI)<SEP>Eric Bloom"
+  },
+  "Corporate Equality Index Report<SEP>February 4th": {
+    "chunk_ids": [
+      "chunk-95a6aae4dd1814728667795f28dbc733"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Corporate Equality Index Report<SEP>February 4th"
+  },
+  "Employer Search Tool<SEP>LGBTQ+ Community": {
+    "chunk_ids": [
+      "chunk-95a6aae4dd1814728667795f28dbc733"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Employer Search Tool<SEP>LGBTQ+ Community"
+  },
+  "2020 Report<SEP>2026 CEI Report": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "2020 Report<SEP>2026 CEI Report"
+  },
+  "CEI Participation<SEP>Toolkit": {
+    "chunk_ids": [
+      "chunk-95a6aae4dd1814728667795f28dbc733"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "CEI Participation<SEP>Toolkit"
+  },
+  "Human Rights Campaign (HRC)<SEP>Kelly Robinson": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Human Rights Campaign (HRC)<SEP>Kelly Robinson"
+  },
+  "Eric Bloom<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Eric Bloom<SEP>HRC"
+  },
+  "HRC<SEP>Marcos Garcia": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "HRC<SEP>Marcos Garcia"
+  },
+  "Corporate Equality Index (CEI)<SEP>Human Rights Campaign (HRC)": {
+    "chunk_ids": [
+      "chunk-02ed52f57d3b840cb71aa25247b0eb4e"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Corporate Equality Index (CEI)<SEP>Human Rights Campaign (HRC)"
+  },
+  "Eric Bloom<SEP>Whistlestop Capital": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Eric Bloom<SEP>Whistlestop Capital"
+  },
+  "CEI Findings<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "CEI Findings<SEP>HRC"
+  },
+  "Marcos Garcia<SEP>Q&A Function": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "Marcos Garcia<SEP>Q&A Function"
+  },
+  "CEI Participation<SEP>Executive Toolkit": {
+    "chunk_ids": [
+      "chunk-95a6aae4dd1814728667795f28dbc733"
+    ],
+    "count": 1,
+    "create_time": 1768532656,
+    "update_time": 1768532656,
+    "_id": "CEI Participation<SEP>Executive Toolkit"
+  },
+  "HRC<SEP>LGBTQ+ Workers": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532657,
+    "update_time": 1768532657,
+    "_id": "HRC<SEP>LGBTQ+ Workers"
+  },
+  "Diversity, Equity, and Inclusion (DEI)<SEP>Marcos Garcia": {
+    "chunk_ids": [
+      "chunk-984f31551853026efff7edf62682cc4d"
+    ],
+    "count": 1,
+    "create_time": 1768532657,
+    "update_time": 1768532657,
+    "_id": "Diversity, Equity, and Inclusion (DEI)<SEP>Marcos Garcia"
+  },
+  "Financial Performance Data<SEP>Transparency": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532657,
+    "update_time": 1768532657,
+    "_id": "Financial Performance Data<SEP>Transparency"
+  },
+  "Corporate Equality Index<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532657,
+    "update_time": 1768532657,
+    "_id": "Corporate Equality Index<SEP>HRC"
+  },
+  "HRC<SEP>LGBTQ Plus Workers": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "HRC<SEP>LGBTQ Plus Workers"
+  },
+  "2026 CEI Report<SEP>February 4th, 2026": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "2026 CEI Report<SEP>February 4th, 2026"
+  },
+  "2026 CEI Report<SEP>Marcos Garcia": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "2026 CEI Report<SEP>Marcos Garcia"
+  },
+  "HRC<SEP>Marcos": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "HRC<SEP>Marcos"
+  },
+  "HRC<SEP>Kelly Robinson": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "HRC<SEP>Kelly Robinson"
+  },
+  "2026 CEI Report<SEP>Eric Bloom": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "2026 CEI Report<SEP>Eric Bloom"
+  },
+  "HRC<SEP>Release Toolkit": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532658,
+    "update_time": 1768532658,
+    "_id": "HRC<SEP>Release Toolkit"
+  },
+  "HRC<SEP>Press Release": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532659,
+    "update_time": 1768532659,
+    "_id": "HRC<SEP>Press Release"
+  },
+  "HRC<SEP>Social Media Platforms": {
+    "chunk_ids": [
+      "chunk-512c23fe1f4925d32240e847b8878398"
+    ],
+    "count": 1,
+    "create_time": 1768532659,
+    "update_time": 1768532659,
+    "_id": "HRC<SEP>Social Media Platforms"
+  },
+  "Employer Search Tool<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-95a6aae4dd1814728667795f28dbc733",
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 2,
+    "create_time": 1768532659,
+    "update_time": 1768532659,
+    "_id": "Employer Search Tool<SEP>HRC"
+  },
+  "CEI<SEP>Eric": {
+    "chunk_ids": [
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc"
+    ],
+    "count": 1,
+    "create_time": 1768532659,
+    "update_time": 1768532659,
+    "_id": "CEI<SEP>Eric"
+  },
+  "Business Leaders<SEP>CEI": {
+    "chunk_ids": [
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc"
+    ],
+    "count": 1,
+    "create_time": 1768532659,
+    "update_time": 1768532659,
+    "_id": "Business Leaders<SEP>CEI"
+  },
+  "2026 CEI Report<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532659,
+    "update_time": 1768532659,
+    "_id": "2026 CEI Report<SEP>HRC"
+  },
+  "Company Comms Teams<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532660,
+    "update_time": 1768532660,
+    "_id": "Company Comms Teams<SEP>HRC"
+  },
+  "CEI Leaders<SEP>Top Quartile CEI Companies": {
+    "chunk_ids": [
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc"
+    ],
+    "count": 1,
+    "create_time": 1768532660,
+    "update_time": 1768532660,
+    "_id": "CEI Leaders<SEP>Top Quartile CEI Companies"
+  },
+  "CEI<SEP>Community Survey Climate Data": {
+    "chunk_ids": [
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc"
+    ],
+    "count": 1,
+    "create_time": 1768532660,
+    "update_time": 1768532660,
+    "_id": "CEI<SEP>Community Survey Climate Data"
+  },
+  "Company Senior Leaders<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532660,
+    "update_time": 1768532660,
+    "_id": "Company Senior Leaders<SEP>HRC"
+  },
+  "Courtney<SEP>HRC": {
+    "chunk_ids": [
+      "chunk-38d8cccb052931e2d06046f8ce5ac1dc"
+    ],
+    "count": 1,
+    "create_time": 1768532660,
+    "update_time": 1768532660,
+    "_id": "Courtney<SEP>HRC"
+  },
+  "2026 CEI Report<SEP>Courtney": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532660,
+    "update_time": 1768532660,
+    "_id": "2026 CEI Report<SEP>Courtney"
+  },
+  "2026 CEI Report<SEP>HRC Press Team": {
+    "chunk_ids": [
+      "chunk-d82b6a68c661809704fe31178646b7e1"
+    ],
+    "count": 1,
+    "create_time": 1768532661,
+    "update_time": 1768532661,
+    "_id": "2026 CEI Report<SEP>HRC Press Team"
+  },
+  "CHAMP TITLES, INC.<SEP>HarvestOwl": {
+    "chunk_ids": [
+      "chunk-cd1e146d6eb4fb0efbdb6208f93c4df6"
+    ],
+    "count": 1,
+    "create_time": 1768538617,
+    "update_time": 1768538617,
+    "_id": "CHAMP TITLES, INC.<SEP>HarvestOwl"
+  },
+  "Black Mountain Valley Spring Water<SEP>Olipop": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Black Mountain Valley Spring Water<SEP>Olipop"
+  },
+  "Local Apple Cider<SEP>Niman Ranch Snack Pack": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Local Apple Cider<SEP>Niman Ranch Snack Pack"
+  },
+  "Karma Cashews<SEP>Quinn Peanut Butter Filled Pretzel Nuggets": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Karma Cashews<SEP>Quinn Peanut Butter Filled Pretzel Nuggets"
+  },
+  "Elemental Superfood Seedbar<SEP>Witzis Raw Granola": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Elemental Superfood Seedbar<SEP>Witzis Raw Granola"
+  },
+  "Love, Corn<SEP>Poshi Chili & Garlic Kalamata Olives": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Love, Corn<SEP>Poshi Chili & Garlic Kalamata Olives"
+  },
+  "Guardian Cold Brew Coffee<SEP>Wise Snacks Chicken Noodle Soup": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Guardian Cold Brew Coffee<SEP>Wise Snacks Chicken Noodle Soup"
+  },
+  "Brew Dr. Kombucha<SEP>Garden of Flavor Cold Pressed Juice": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Brew Dr. Kombucha<SEP>Garden of Flavor Cold Pressed Juice"
+  },
+  "Luna Bakery<SEP>Philomena Bake Shop": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Luna Bakery<SEP>Philomena Bake Shop"
+  },
+  "Cleveland Kraut<SEP>Fresh 'n Crisp Farms": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Cleveland Kraut<SEP>Fresh 'n Crisp Farms"
+  },
+  "Holistic Acres<SEP>Rittman Orchards": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Holistic Acres<SEP>Rittman Orchards"
+  },
+  "Drinks<SEP>Snacks": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Drinks<SEP>Snacks"
+  },
+  "Harvest Owl<SEP>Rittman Orchard Apple": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 2,
+    "update_time": 1768538942,
+    "_id": "Harvest Owl<SEP>Rittman Orchard Apple"
+  },
+  "Foods<SEP>Snacks": {
+    "chunk_ids": [
+      "chunk-b4d24bd2888d155419fb8a8c7bcdb064"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Foods<SEP>Snacks"
+  },
+  "BOOMCHICKAPOP Sea Salt Popcorn<SEP>Harvest Owl": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 2,
+    "update_time": 1768538942,
+    "_id": "BOOMCHICKAPOP Sea Salt Popcorn<SEP>Harvest Owl"
+  },
+  "Harvest Owl<SEP>Hippeas Vegan White Cheddar": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b"
+    ],
+    "count": 1,
+    "create_time": 1768538926,
+    "update_time": 1768538926,
+    "_id": "Harvest Owl<SEP>Hippeas Vegan White Cheddar"
+  },
+  "Harvest Owl<SEP>Oven Roasted Turkey Sandwich": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 2,
+    "update_time": 1768538943,
+    "_id": "Harvest Owl<SEP>Oven Roasted Turkey Sandwich"
+  },
+  "Harvest Owl<SEP>The Ultimate Veggie Sandwich": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b"
+    ],
+    "count": 1,
+    "create_time": 1768538927,
+    "update_time": 1768538927,
+    "_id": "Harvest Owl<SEP>The Ultimate Veggie Sandwich"
+  },
+  "Harvest Owl<SEP>Super Simple Keto Bowl": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b"
+    ],
+    "count": 1,
+    "create_time": 1768538927,
+    "update_time": 1768538927,
+    "_id": "Harvest Owl<SEP>Super Simple Keto Bowl"
+  },
+  "Breakfast Tacos<SEP>Harvest Owl": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 2,
+    "update_time": 1768538943,
+    "_id": "Breakfast Tacos<SEP>Harvest Owl"
+  },
+  "Harvest Owl<SEP>Luna Bakery Dark Chocolate Sea Salt Cookie": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b"
+    ],
+    "count": 1,
+    "create_time": 1768538928,
+    "update_time": 1768538928,
+    "_id": "Harvest Owl<SEP>Luna Bakery Dark Chocolate Sea Salt Cookie"
+  },
+  "Harvest Owl<SEP>Super Simple Bowl with Brown Rice": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 2,
+    "update_time": 1768538944,
+    "_id": "Harvest Owl<SEP>Super Simple Bowl with Brown Rice"
+  },
+  "Grilled Steak Honey Mustard Salad<SEP>Harvest Owl": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b"
+    ],
+    "count": 1,
+    "create_time": 1768538928,
+    "update_time": 1768538928,
+    "_id": "Grilled Steak Honey Mustard Salad<SEP>Harvest Owl"
+  },
+  "Harvest Owl<SEP>Red Grape & Walnut Chicken Salad": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b"
+    ],
+    "count": 1,
+    "create_time": 1768538928,
+    "update_time": 1768538928,
+    "_id": "Harvest Owl<SEP>Red Grape & Walnut Chicken Salad"
+  },
+  "Harvest Owl<SEP>The Doctor's Everyday Salad": {
+    "chunk_ids": [
+      "chunk-6c8857d5952cbdb8d26f26220d96bf8b",
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 2,
+    "update_time": 1768538943,
+    "_id": "Harvest Owl<SEP>The Doctor's Everyday Salad"
+  },
+  "Harvest Owl<SEP>Siete Grain Free Tortilla Chips (Lime)": {
+    "chunk_ids": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 1,
+    "create_time": 1768538942,
+    "update_time": 1768538942,
+    "_id": "Harvest Owl<SEP>Siete Grain Free Tortilla Chips (Lime)"
+  },
+  "GF<SEP>Mountain Valley Spring Water": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538943,
+    "update_time": 1768538943,
+    "_id": "GF<SEP>Mountain Valley Spring Water"
+  },
+  "GF<SEP>Olipop": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538943,
+    "update_time": 1768538943,
+    "_id": "GF<SEP>Olipop"
+  },
+  "GF<SEP>Local Apple Cider": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538943,
+    "update_time": 1768538943,
+    "_id": "GF<SEP>Local Apple Cider"
+  },
+  "Harvest Owl<SEP>Niman Ranch Snack Pack": {
+    "chunk_ids": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 1,
+    "create_time": 1768538943,
+    "update_time": 1768538943,
+    "_id": "Harvest Owl<SEP>Niman Ranch Snack Pack"
+  },
+  "GF<SEP>Niman Ranch Snack Pack": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "GF<SEP>Niman Ranch Snack Pack"
+  },
+  "Crunchy Pretzel Shells<SEP>Harvest Owl": {
+    "chunk_ids": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "Crunchy Pretzel Shells<SEP>Harvest Owl"
+  },
+  "GF<SEP>Think Jerky": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "GF<SEP>Think Jerky"
+  },
+  "Harvest Owl<SEP>Slow Braised Brisket Bowl": {
+    "chunk_ids": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "Harvest Owl<SEP>Slow Braised Brisket Bowl"
+  },
+  "GF<SEP>Karma Cashews": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "GF<SEP>Karma Cashews"
+  },
+  "GF<SEP>Quinn Peanut Butter Filled Pretzel Nuggets": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "GF<SEP>Quinn Peanut Butter Filled Pretzel Nuggets"
+  },
+  "Greek Chicken Salad<SEP>Harvest Owl": {
+    "chunk_ids": [
+      "chunk-237a227de72e3aa30e392046b0d7ef97"
+    ],
+    "count": 1,
+    "create_time": 1768538944,
+    "update_time": 1768538944,
+    "_id": "Greek Chicken Salad<SEP>Harvest Owl"
+  },
+  "Foods Alive Sprouted Crisps<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538945,
+    "update_time": 1768538945,
+    "_id": "Foods Alive Sprouted Crisps<SEP>GF"
+  },
+  "Crunchy Roasted Edamame Beans<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538945,
+    "update_time": 1768538945,
+    "_id": "Crunchy Roasted Edamame Beans<SEP>GF"
+  },
+  "GF<SEP>Housemade Cashew Peanut Butter & Apple Slices": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538945,
+    "update_time": 1768538945,
+    "_id": "GF<SEP>Housemade Cashew Peanut Butter & Apple Slices"
+  },
+  "GF<SEP>Witzis Raw Granola": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538945,
+    "update_time": 1768538945,
+    "_id": "GF<SEP>Witzis Raw Granola"
+  },
+  "Elemental Superfood Seedbar<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538945,
+    "update_time": 1768538945,
+    "_id": "Elemental Superfood Seedbar<SEP>GF"
+  },
+  "GF<SEP>Love, Corn": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538946,
+    "update_time": 1768538946,
+    "_id": "GF<SEP>Love, Corn"
+  },
+  "GF<SEP>Pasture-raised Hard Boiled Egg": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538946,
+    "update_time": 1768538946,
+    "_id": "GF<SEP>Pasture-raised Hard Boiled Egg"
+  },
+  "GF<SEP>Poshi Chili & Garlic Kalamata Olives": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538946,
+    "update_time": 1768538946,
+    "_id": "GF<SEP>Poshi Chili & Garlic Kalamata Olives"
+  },
+  "GF<SEP>Wise Snacks Butternut Squash Soup": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538946,
+    "update_time": 1768538946,
+    "_id": "GF<SEP>Wise Snacks Butternut Squash Soup"
+  },
+  "GF<SEP>Guardian Cold Brew Coffee": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538947,
+    "update_time": 1768538947,
+    "_id": "GF<SEP>Guardian Cold Brew Coffee"
+  },
+  "GF<SEP>Hoplark Sparkling HopTea": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538947,
+    "update_time": 1768538947,
+    "_id": "GF<SEP>Hoplark Sparkling HopTea"
+  },
+  "GF<SEP>Garden of Flavor Cold Pressed Juice": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538947,
+    "update_time": 1768538947,
+    "_id": "GF<SEP>Garden of Flavor Cold Pressed Juice"
+  },
+  "Brew Dr. Kombucha<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538947,
+    "update_time": 1768538947,
+    "_id": "Brew Dr. Kombucha<SEP>GF"
+  },
+  "Chicken and Turkey<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538948,
+    "update_time": 1768538948,
+    "_id": "Chicken and Turkey<SEP>GF"
+  },
+  "Beef<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538948,
+    "update_time": 1768538948,
+    "_id": "Beef<SEP>GF"
+  },
+  "GF<SEP>Salmon": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538948,
+    "update_time": 1768538948,
+    "_id": "GF<SEP>Salmon"
+  },
+  "Cooking Oils<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538949,
+    "update_time": 1768538949,
+    "_id": "Cooking Oils<SEP>GF"
+  },
+  "Eggs<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538949,
+    "update_time": 1768538949,
+    "_id": "Eggs<SEP>GF"
+  },
+  "GF<SEP>Tofu": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538949,
+    "update_time": 1768538949,
+    "_id": "GF<SEP>Tofu"
+  },
+  "Bacon<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538949,
+    "update_time": 1768538949,
+    "_id": "Bacon<SEP>GF"
+  },
+  "GF<SEP>Kale": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538949,
+    "update_time": 1768538949,
+    "_id": "GF<SEP>Kale"
+  },
+  "Apples<SEP>GF": {
+    "chunk_ids": [
+      "chunk-919790de0c041024bfcfd7beb80bcfe2"
+    ],
+    "count": 1,
+    "create_time": 1768538950,
+    "update_time": 1768538950,
+    "_id": "Apples<SEP>GF"
   }
 }

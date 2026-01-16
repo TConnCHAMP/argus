@@ -3350,3 +3350,385 @@ def generate_reference_list_from_chunks(
         reference_list.append({"reference_id": str(i + 1), "file_path": file_path})
 
     return reference_list, updated_chunks
+
+
+# Date extraction utilities
+def extract_dates_from_filename(filename: str) -> List[str]:
+    """
+    Extract dates from filename using multiple pattern matching strategies.
+
+    Returns list of ISO format dates (YYYY-MM-DD).
+
+    Patterns supported:
+    - YYYY-MM-DD (ISO format)
+    - YYYY-MM-DDTHH:MM:SSZ (ISO timestamp)
+    - YYYY at start or end
+    - MM-DD at start
+    """
+    dates = []
+    current_year = datetime.now().year
+
+    # Pattern 1: Full ISO date or timestamp (2025-12-19 or 2025-12-19T12:13:19Z)
+    iso_pattern = r'(\d{4})-(\d{2})-(\d{2})'
+    for match in re.finditer(iso_pattern, filename):
+        year, month, day = match.groups()
+        try:
+            date_obj = datetime(int(year), int(month), int(day))
+            dates.append(date_obj.strftime('%Y-%m-%d'))
+        except ValueError:
+            continue
+
+    # Pattern 2: Year prefix or suffix (2026, 2025)
+    year_pattern = r'\b(20\d{2})\b'
+    for match in re.finditer(year_pattern, filename):
+        year = match.group(1)
+        # If we found a year but no full date, use Jan 1 as placeholder
+        if not dates:
+            dates.append(f"{year}-01-01")
+
+    # Pattern 3: MM-DD at start (e.g., "12-19 Interview")
+    # Assume current or previous year
+    mmdd_pattern = r'^(\d{1,2})-(\d{1,2})\s'
+    match = re.match(mmdd_pattern, filename)
+    if match:
+        month, day = match.groups()
+        try:
+            # Try current year first
+            date_obj = datetime(current_year, int(month), int(day))
+            dates.append(date_obj.strftime('%Y-%m-%d'))
+        except ValueError:
+            pass
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_dates = []
+    for date in dates:
+        if date not in seen:
+            seen.add(date)
+            unique_dates.append(date)
+
+    return unique_dates
+
+
+def extract_dates_from_content(content: str, max_dates: int = 20) -> List[str]:
+    """
+    Extract dates from text content using multiple strategies.
+
+    Returns list of ISO format dates (YYYY-MM-DD).
+
+    Patterns supported:
+    - ISO dates (YYYY-MM-DD)
+    - Natural language dates (January 1st, Feb 16th, etc.)
+    - MM/DD/YYYY, MM-DD-YYYY formats
+    """
+    dates = []
+    current_year = datetime.now().year
+
+    # Pattern 1: ISO dates (2025-12-19)
+    iso_pattern = r'\b(\d{4})-(\d{2})-(\d{2})\b'
+    for match in re.finditer(iso_pattern, content):
+        year, month, day = match.groups()
+        try:
+            date_obj = datetime(int(year), int(month), int(day))
+            dates.append(date_obj.strftime('%Y-%m-%d'))
+        except ValueError:
+            continue
+
+    # Pattern 2: MM/DD/YYYY or MM-DD-YYYY
+    slash_pattern = r'\b(\d{1,2})[/-](\d{1,2})[/-](\d{4})\b'
+    for match in re.finditer(slash_pattern, content):
+        month, day, year = match.groups()
+        try:
+            date_obj = datetime(int(year), int(month), int(day))
+            dates.append(date_obj.strftime('%Y-%m-%d'))
+        except ValueError:
+            continue
+
+    # Pattern 3: Natural language dates (January 1st, Feb 16th, March 3rd)
+    month_names = {
+        'january': 1, 'jan': 1,
+        'february': 2, 'feb': 2,
+        'march': 3, 'mar': 3,
+        'april': 4, 'apr': 4,
+        'may': 5,
+        'june': 6, 'jun': 6,
+        'july': 7, 'jul': 7,
+        'august': 8, 'aug': 8,
+        'september': 9, 'sep': 9, 'sept': 9,
+        'october': 10, 'oct': 10,
+        'november': 11, 'nov': 11,
+        'december': 12, 'dec': 12
+    }
+
+    # Match "Month DDth" or "Month DD," or "Month DD "
+    natural_pattern = r'\b(january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|sept|october|oct|november|nov|december|dec)\s+(\d{1,2})(?:st|nd|rd|th)?\b'
+    for match in re.finditer(natural_pattern, content, re.IGNORECASE):
+        month_str, day = match.groups()
+        month = month_names[month_str.lower()]
+        try:
+            # Try to find year in context (within 20 chars before/after)
+            start = max(0, match.start() - 20)
+            end = min(len(content), match.end() + 20)
+            context = content[start:end]
+            year_match = re.search(r'\b(20\d{2})\b', context)
+            year = int(year_match.group(1)) if year_match else current_year
+
+            date_obj = datetime(year, month, int(day))
+            dates.append(date_obj.strftime('%Y-%m-%d'))
+        except ValueError:
+            continue
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_dates = []
+    for date in dates:
+        if date not in seen:
+            seen.add(date)
+            unique_dates.append(date)
+            if len(unique_dates) >= max_dates:
+                break
+
+    return unique_dates
+
+
+def extract_all_dates(filename: str, content: str, max_content_dates: int = 20, fallback_date: Optional[str] = None) -> dict:
+    """
+    Extract dates from both filename and content.
+
+    Args:
+        filename: File name to extract dates from
+        content: Text content to extract dates from
+        max_content_dates: Maximum number of dates to extract from content
+        fallback_date: Fallback date (ISO format YYYY-MM-DD) to use if no dates found
+
+    Returns:
+        {
+            "relevant_dates": ["2026-01-01", "2026-01-19", ...],
+            "primary_date": "2026-01-01"  # Most relevant date (or fallback_date if no dates found)
+        }
+    """
+    filename_dates = extract_dates_from_filename(filename)
+    content_dates = extract_dates_from_content(content, max_content_dates)
+
+    # Combine dates (filename dates first as they're usually most relevant)
+    all_dates = filename_dates + content_dates
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_dates = []
+    for date in all_dates:
+        if date not in seen:
+            seen.add(date)
+            unique_dates.append(date)
+
+    # Primary date is the first filename date, or earliest content date, or fallback
+    primary_date = None
+    if filename_dates:
+        primary_date = filename_dates[0]
+    elif content_dates:
+        # Use earliest date from content
+        primary_date = sorted(content_dates)[0]
+    elif fallback_date:
+        # Use fallback date if no dates were extracted
+        primary_date = fallback_date
+        unique_dates.append(fallback_date)
+
+    return {
+        "relevant_dates": unique_dates,
+        "primary_date": primary_date
+    }
+
+
+def date_in_range(date_str: Optional[str], start_date: Optional[str], end_date: Optional[str]) -> bool:
+    """
+    Check if a date falls within a range (inclusive).
+
+    Args:
+        date_str: ISO date string (YYYY-MM-DD)
+        start_date: ISO date string for range start (inclusive)
+        end_date: ISO date string for range end (inclusive)
+
+    Returns:
+        True if date is in range, False otherwise
+    """
+    if not date_str:
+        return False
+
+    if not start_date and not end_date:
+        return True
+
+    try:
+        date = datetime.fromisoformat(date_str)
+
+        if start_date:
+            start = datetime.fromisoformat(start_date)
+            if date < start:
+                return False
+
+        if end_date:
+            end = datetime.fromisoformat(end_date)
+            if date > end:
+                return False
+
+        return True
+    except (ValueError, TypeError):
+        return False
+
+
+def chunk_matches_date_range(chunk: dict, start_date: Optional[str], end_date: Optional[str]) -> bool:
+    """
+    Check if a chunk's dates match a date range.
+
+    A chunk matches if:
+    - Any relevant_date is in range
+    - Or primary_date is in range
+    - Or if no dates specified, matches all
+
+    Args:
+        chunk: Chunk dictionary with optional 'relevant_dates' and 'primary_date'
+        start_date: ISO date string for range start
+        end_date: ISO date string for range end
+
+    Returns:
+        True if chunk matches date range
+    """
+    if not start_date and not end_date:
+        return True
+
+    # Check primary_date first
+    primary_date = chunk.get('primary_date')
+    if primary_date and date_in_range(primary_date, start_date, end_date):
+        return True
+
+    # Check any relevant_dates
+    relevant_dates = chunk.get('relevant_dates', [])
+    for date in relevant_dates:
+        if date_in_range(date, start_date, end_date):
+            return True
+
+    # If chunk has no date metadata and date filtering is requested, exclude it
+    # This ensures only chunks with dates are returned for date-filtered queries
+    return False
+
+
+def parse_natural_language_date(text: str, reference_date: Optional[datetime] = None) -> tuple[Optional[str], Optional[str]]:
+    """
+    Parse natural language date expressions from text and return ISO date range.
+
+    Supports expressions like:
+    - "last week", "this week", "next week"
+    - "last month", "this month", "next month"
+    - "yesterday", "today", "tomorrow"
+    - "last 7 days", "last 30 days"
+    - "past week", "past month"
+
+    Args:
+        text: The text containing potential date expressions (typically a query)
+        reference_date: The reference date to use (defaults to today)
+
+    Returns:
+        Tuple of (start_date, end_date) in ISO format (YYYY-MM-DD), or (None, None) if no date expression found
+    """
+    from datetime import timedelta
+
+    if reference_date is None:
+        reference_date = datetime.now()
+
+    text_lower = text.lower()
+
+    # Helper to format date as ISO string
+    def to_iso(dt: datetime) -> str:
+        return dt.strftime('%Y-%m-%d')
+
+    # Today/Yesterday/Tomorrow
+    if 'yesterday' in text_lower:
+        date = reference_date - timedelta(days=1)
+        return to_iso(date), to_iso(date)
+
+    if 'today' in text_lower or 'this day' in text_lower:
+        return to_iso(reference_date), to_iso(reference_date)
+
+    if 'tomorrow' in text_lower:
+        date = reference_date + timedelta(days=1)
+        return to_iso(date), to_iso(date)
+
+    # This week (Monday to Sunday)
+    if 'this week' in text_lower or 'current week' in text_lower:
+        # Get Monday of current week (weekday() returns 0=Monday, 6=Sunday)
+        start = reference_date - timedelta(days=reference_date.weekday())
+        end = start + timedelta(days=6)
+        return to_iso(start), to_iso(end)
+
+    # Last week
+    if 'last week' in text_lower or 'previous week' in text_lower or 'past week' in text_lower:
+        # Get Monday of last week
+        current_monday = reference_date - timedelta(days=reference_date.weekday())
+        start = current_monday - timedelta(days=7)
+        end = start + timedelta(days=6)
+        return to_iso(start), to_iso(end)
+
+    # Next week
+    if 'next week' in text_lower or 'coming week' in text_lower:
+        # Get Monday of next week
+        current_monday = reference_date - timedelta(days=reference_date.weekday())
+        start = current_monday + timedelta(days=7)
+        end = start + timedelta(days=6)
+        return to_iso(start), to_iso(end)
+
+    # This month
+    if 'this month' in text_lower or 'current month' in text_lower:
+        # First day of current month
+        start = reference_date.replace(day=1)
+        # Last day of current month
+        if reference_date.month == 12:
+            next_month = reference_date.replace(year=reference_date.year + 1, month=1, day=1)
+        else:
+            next_month = reference_date.replace(month=reference_date.month + 1, day=1)
+        end = next_month - timedelta(days=1)
+        return to_iso(start), to_iso(end)
+
+    # Last month
+    if 'last month' in text_lower or 'previous month' in text_lower or 'past month' in text_lower:
+        # First day of last month
+        if reference_date.month == 1:
+            start = reference_date.replace(year=reference_date.year - 1, month=12, day=1)
+        else:
+            start = reference_date.replace(month=reference_date.month - 1, day=1)
+        # Last day of last month
+        end = reference_date.replace(day=1) - timedelta(days=1)
+        return to_iso(start), to_iso(end)
+
+    # Next month
+    if 'next month' in text_lower or 'coming month' in text_lower:
+        # First day of next month
+        if reference_date.month == 12:
+            start = reference_date.replace(year=reference_date.year + 1, month=1, day=1)
+        else:
+            start = reference_date.replace(month=reference_date.month + 1, day=1)
+        # Last day of next month
+        if start.month == 12:
+            next_next_month = start.replace(year=start.year + 1, month=1, day=1)
+        else:
+            next_next_month = start.replace(month=start.month + 1, day=1)
+        end = next_next_month - timedelta(days=1)
+        return to_iso(start), to_iso(end)
+
+    # Last N days (e.g., "last 7 days", "past 30 days")
+    import re
+    last_n_days_match = re.search(r'(?:last|past)\s+(\d+)\s+days?', text_lower)
+    if last_n_days_match:
+        n = int(last_n_days_match.group(1))
+        end = reference_date
+        start = reference_date - timedelta(days=n - 1)  # -1 because we include today
+        return to_iso(start), to_iso(end)
+
+    # Next N days
+    next_n_days_match = re.search(r'next\s+(\d+)\s+days?', text_lower)
+    if next_n_days_match:
+        n = int(next_n_days_match.group(1))
+        start = reference_date + timedelta(days=1)  # Start from tomorrow
+        end = reference_date + timedelta(days=n)
+        return to_iso(start), to_iso(end)
+
+    # No date expression found
+    return None, None

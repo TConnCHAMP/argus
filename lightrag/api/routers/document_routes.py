@@ -2852,6 +2852,176 @@ def create_document_routes(
             logger.error(traceback.format_exc())
             raise HTTPException(status_code=500, detail=error_msg)
 
+    class ReindexDocumentsRequest(BaseModel):
+        """Request model for reindexing documents."""
+
+        doc_ids: List[str] = Field(
+            description="List of document IDs to reindex",
+            min_length=1,
+        )
+
+    class ReindexDocumentsResponse(BaseModel):
+        """Response model for document reindexing operation."""
+
+        status: Literal["reindexing_started", "busy"] = Field(
+            description="Status of the reindex operation"
+        )
+        message: str = Field(description="Message describing the operation result")
+        track_id: Optional[str] = Field(
+            default=None, description="Tracking ID for monitoring reindexing progress"
+        )
+
+    @router.post(
+        "/reindex_documents",
+        response_model=ReindexDocumentsResponse,
+        dependencies=[Depends(combined_auth)],
+        summary="Re-index selected documents to update their metadata and embeddings",
+    )
+    async def reindex_documents(
+        reindex_request: ReindexDocumentsRequest,
+        background_tasks: BackgroundTasks,
+    ) -> ReindexDocumentsResponse:
+        """
+        Re-index documents to extract updated metadata (like dates) and regenerate embeddings.
+
+        This endpoint is useful when:
+        - You've updated the date extraction logic and want to reprocess documents
+        - You want to regenerate embeddings with a different model
+        - You need to update chunk metadata without re-uploading files
+
+        The process:
+        1. Retrieves full document content from storage
+        2. Re-enqueues documents with their original file paths
+        3. Processes documents in the background using the current extraction logic
+
+        Args:
+            reindex_request (ReindexDocumentsRequest): The request containing document IDs to reindex
+            background_tasks: FastAPI BackgroundTasks for async processing
+
+        Returns:
+            ReindexDocumentsResponse: The result of the reindexing operation.
+                - status="reindexing_started": Documents are being reindexed in the background
+                - status="busy": The pipeline is busy with another operation
+
+        Raises:
+            HTTPException:
+              - 400: If no documents found or invalid document IDs
+              - 500: If an unexpected internal error occurs
+        """
+        doc_ids = reindex_request.doc_ids
+
+        try:
+            from lightrag.kg.shared_storage import (
+                get_namespace_data,
+                get_namespace_lock,
+            )
+
+            pipeline_status = await get_namespace_data(
+                "pipeline_status", workspace=rag.workspace
+            )
+            pipeline_status_lock = get_namespace_lock(
+                "pipeline_status", workspace=rag.workspace
+            )
+
+            # Check if pipeline is busy
+            async with pipeline_status_lock:
+                if pipeline_status.get("busy", False):
+                    return ReindexDocumentsResponse(
+                        status="busy",
+                        message="Pipeline is busy with another operation. Please wait until it completes.",
+                    )
+
+            # Get full document content from storage
+            full_docs = await rag.full_docs.get_by_ids(doc_ids)
+
+            # Filter out None values and prepare for reindexing
+            docs_to_reindex = []
+            file_paths = []
+
+            for doc_id, doc_data in zip(doc_ids, full_docs):
+                if doc_data is None:
+                    logger.warning(f"Document {doc_id} not found in storage, skipping")
+                    continue
+
+                docs_to_reindex.append(doc_data.get("content", ""))
+                file_paths.append(doc_data.get("file_path", "unknown_source"))
+
+            if not docs_to_reindex:
+                raise HTTPException(
+                    status_code=400,
+                    detail="No valid documents found for the provided IDs"
+                )
+
+            # Generate new track ID for reindexing
+            track_id = generate_track_id("reindex")
+
+            # Create background task for reindexing
+            async def background_reindex():
+                try:
+                    # Set pipeline status to busy
+                    async with pipeline_status_lock:
+                        pipeline_status["busy"] = True
+                        pipeline_status["job_name"] = f"reindexing {len(docs_to_reindex)} documents"
+                        pipeline_status["docs"] = len(docs_to_reindex)
+                        start_msg = f"Starting reindex of {len(docs_to_reindex)} documents"
+                        pipeline_status["latest_message"] = start_msg
+                        if "history_messages" not in pipeline_status:
+                            pipeline_status["history_messages"] = []
+                        pipeline_status["history_messages"].append(start_msg)
+
+                    logger.info(f"Starting reindex of {len(docs_to_reindex)} documents with track_id: {track_id}")
+
+                    # Enqueue documents
+                    await rag.apipeline_enqueue_documents(
+                        input=docs_to_reindex,
+                        file_paths=file_paths,
+                        track_id=track_id
+                    )
+
+                    # Process the queue
+                    await rag.apipeline_process_enqueue_documents()
+
+                    logger.info(f"Reindexing completed for track_id: {track_id}")
+
+                    # Update pipeline status on success
+                    async with pipeline_status_lock:
+                        completion_msg = f"Reindexing completed: {len(docs_to_reindex)} documents processed"
+                        pipeline_status["latest_message"] = completion_msg
+                        pipeline_status["history_messages"].append(completion_msg)
+
+                except Exception as e:
+                    logger.error(f"Error during reindexing (track_id: {track_id}): {str(e)}")
+                    logger.error(traceback.format_exc())
+
+                    # Update pipeline status on error
+                    async with pipeline_status_lock:
+                        error_msg = f"Reindexing failed: {str(e)}"
+                        pipeline_status["latest_message"] = error_msg
+                        if "history_messages" in pipeline_status:
+                            pipeline_status["history_messages"].append(error_msg)
+
+                finally:
+                    # Reset busy status
+                    async with pipeline_status_lock:
+                        pipeline_status["busy"] = False
+
+            # Add background task
+            background_tasks.add_task(background_reindex)
+
+            return ReindexDocumentsResponse(
+                status="reindexing_started",
+                message=f"Reindexing of {len(docs_to_reindex)} documents has been initiated in the background",
+                track_id=track_id
+            )
+
+        except HTTPException:
+            raise
+        except Exception as e:
+            error_msg = f"Error initiating document reindexing for {reindex_request.doc_ids}: {str(e)}"
+            logger.error(error_msg)
+            logger.error(traceback.format_exc())
+            raise HTTPException(status_code=500, detail=error_msg)
+
     @router.post(
         "/clear_cache",
         response_model=ClearCacheResponse,

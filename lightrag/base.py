@@ -162,6 +162,14 @@ class QueryParam:
     Default is True to enable reranking when rerank model is available.
     """
 
+    start_date: str | None = None
+    """Start date for filtering results (ISO format YYYY-MM-DD).
+    Only chunks with relevant_dates in range will be included."""
+
+    end_date: str | None = None
+    """End date for filtering results (ISO format YYYY-MM-DD).
+    Only chunks with relevant_dates in range will be included."""
+
     include_references: bool = False
     """If True, includes reference list in the response for supported endpoints.
     This parameter controls whether the API response includes a references field
