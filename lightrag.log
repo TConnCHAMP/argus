@@ -3224,3 +3224,723 @@
 2026-01-14 22:47:18,512 - lightrag - INFO - Final context: 57 entities, 40 relations, 17 chunks
 2026-01-14 22:47:18,512 - lightrag - INFO - Final chunks S+F/O: E5/1 E9/2 E7/3 E2/4 E4/5 E3/6 E4/7 E1/8 E5/9 E2/10 E1/11 E1/12 E4/13 E6/14 E4/15 E2/16 E3/17
 2026-01-14 22:47:19,914 - uvicorn.access - INFO - 127.0.0.1:64566 - "POST /query/stream HTTP/1.1" 200
+2026-01-15 19:47:58,905 - lightrag - INFO - Frontend build is up-to-date
+2026-01-15 19:47:58,905 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 19:47:59,061 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 19:47:59,061 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 19:47:59,061 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 19:47:59,061 - lightrag - INFO - Reranking is disabled
+2026-01-15 19:47:59,267 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 19:47:59,344 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 19:47:59,358 - uvicorn.error - INFO - Started server process [84579]
+2026-01-15 19:47:59,359 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 19:47:59,360 - lightrag - INFO - [] Process 84579 KV load full_docs with 11 records
+2026-01-15 19:47:59,361 - lightrag - INFO - [] Process 84579 KV load text_chunks with 113 records
+2026-01-15 19:47:59,362 - lightrag - INFO - [] Process 84579 KV load full_entities with 11 records
+2026-01-15 19:47:59,362 - lightrag - INFO - [] Process 84579 KV load full_relations with 10 records
+2026-01-15 19:47:59,363 - lightrag - INFO - [] Process 84579 KV load entity_chunks with 737 records
+2026-01-15 19:47:59,364 - lightrag - INFO - [] Process 84579 KV load relation_chunks with 694 records
+2026-01-15 19:47:59,372 - lightrag - INFO - [] Process 84579 KV load llm_response_cache with 291 records
+2026-01-15 19:47:59,373 - lightrag - INFO - [] Process 84579 doc status load doc_status with 11 records
+2026-01-15 19:47:59,373 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 19:47:59,373 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 19:49:24,297 - uvicorn.access - INFO - 127.0.0.1:53692 - "GET / HTTP/1.1" 307
+2026-01-15 19:49:24,301 - uvicorn.access - INFO - 127.0.0.1:53692 - "GET /webui HTTP/1.1" 307
+2026-01-15 19:49:24,396 - uvicorn.access - INFO - 127.0.0.1:53692 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 200
+2026-01-15 19:49:24,396 - uvicorn.access - INFO - 127.0.0.1:53693 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 200
+2026-01-15 19:49:24,611 - uvicorn.access - INFO - 127.0.0.1:53692 - "GET /auth-status HTTP/1.1" 200
+2026-01-15 19:49:24,612 - uvicorn.access - INFO - 127.0.0.1:53693 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-01-15 19:49:24,750 - uvicorn.access - INFO - 127.0.0.1:53693 - "GET /docs HTTP/1.1" 200
+2026-01-15 19:49:24,773 - lightrag - INFO - [] Subgraph query successful | Node count: 737 | Edge count: 694
+2026-01-15 19:49:24,794 - uvicorn.access - INFO - 127.0.0.1:53693 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 19:49:24,796 - uvicorn.access - INFO - 127.0.0.1:53697 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-01-15 19:49:24,798 - uvicorn.access - INFO - 127.0.0.1:53698 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
+2026-01-15 19:49:24,798 - uvicorn.access - INFO - 127.0.0.1:53699 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
+2026-01-15 19:49:24,943 - uvicorn.access - INFO - 127.0.0.1:53699 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 19:49:38,209 - uvicorn.access - INFO - 127.0.0.1:53700 - "GET /graph/label/search?q=tyler&limit=50 HTTP/1.1" 200
+2026-01-15 19:49:39,755 - lightrag - INFO - [] Graph truncated: found 415 nodes within max_depth 3
+2026-01-15 19:49:39,769 - lightrag - INFO - [] Subgraph query successful | Node count: 415 | Edge count: 540
+2026-01-15 19:49:39,794 - uvicorn.access - INFO - 127.0.0.1:53700 - "GET /graphs?label=Tyler%20Conn&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 19:49:57,724 - lightrag - ERROR - Error detecting duplicates for 'CHAMP TITLES, INC.': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:49:57,726 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:49:57,726 - uvicorn.access - INFO - 127.0.0.1:53701 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:50:02,631 - lightrag - ERROR - Error detecting duplicates for 'CHAMP TITLES, INC.': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:50:02,632 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:50:02,632 - uvicorn.access - INFO - 127.0.0.1:53702 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:50:07,040 - lightrag - ERROR - Error detecting duplicates for 'Company': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:50:07,040 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:50:07,041 - uvicorn.access - INFO - 127.0.0.1:53704 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:50:16,722 - lightrag - ERROR - Error detecting duplicates for 'Sick Days Policy': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:50:16,725 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:50:16,726 - uvicorn.access - INFO - 127.0.0.1:53706 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:50:29,741 - lightrag - INFO - [] Graph truncated: found 248 nodes within max_depth 2
+2026-01-15 19:50:29,749 - lightrag - INFO - [] Subgraph query successful | Node count: 248 | Edge count: 329
+2026-01-15 19:50:29,766 - uvicorn.access - INFO - 127.0.0.1:53722 - "GET /graphs?label=Sick%20Days%20Policy&max_depth=2&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 19:50:41,707 - lightrag - INFO - [] Graph truncated: found 439 nodes within max_depth 3
+2026-01-15 19:50:41,718 - lightrag - INFO - [] Subgraph query successful | Node count: 439 | Edge count: 561
+2026-01-15 19:50:41,744 - uvicorn.access - INFO - 127.0.0.1:53723 - "GET /graphs?label=Employees&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 19:50:56,835 - lightrag - ERROR - Error detecting duplicates for 'Employee Handbook': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:50:56,838 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:50:56,839 - uvicorn.access - INFO - 127.0.0.1:53724 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:52:20,479 - uvicorn.access - INFO - 127.0.0.1:53805 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 304
+2026-01-15 19:52:20,484 - uvicorn.access - INFO - 127.0.0.1:53805 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 304
+2026-01-15 19:52:20,669 - uvicorn.access - INFO - 127.0.0.1:53806 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-15 19:52:20,763 - uvicorn.access - INFO - 127.0.0.1:53806 - "GET /docs HTTP/1.1" 200
+2026-01-15 19:52:20,769 - lightrag - INFO - [] Graph truncated: found 439 nodes within max_depth 3
+2026-01-15 19:52:20,782 - lightrag - INFO - [] Subgraph query successful | Node count: 439 | Edge count: 561
+2026-01-15 19:52:20,798 - uvicorn.access - INFO - 127.0.0.1:53806 - "GET /graphs?label=Employees&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 19:52:20,866 - uvicorn.access - INFO - 127.0.0.1:53806 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 19:52:23,473 - lightrag - ERROR - Error detecting duplicates for 'Employees': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:52:23,474 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:52:23,475 - uvicorn.access - INFO - 127.0.0.1:53819 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:57:00,305 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 19:57:00,450 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 19:57:00,450 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 19:57:00,450 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 19:57:00,450 - lightrag - INFO - Reranking is disabled
+2026-01-15 19:57:00,634 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 19:57:00,705 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 19:57:00,718 - uvicorn.error - INFO - Started server process [85840]
+2026-01-15 19:57:00,718 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 19:57:00,720 - lightrag - INFO - [] Process 85840 KV load full_docs with 11 records
+2026-01-15 19:57:00,721 - lightrag - INFO - [] Process 85840 KV load text_chunks with 113 records
+2026-01-15 19:57:00,721 - lightrag - INFO - [] Process 85840 KV load full_entities with 11 records
+2026-01-15 19:57:00,722 - lightrag - INFO - [] Process 85840 KV load full_relations with 10 records
+2026-01-15 19:57:00,723 - lightrag - INFO - [] Process 85840 KV load entity_chunks with 737 records
+2026-01-15 19:57:00,724 - lightrag - INFO - [] Process 85840 KV load relation_chunks with 694 records
+2026-01-15 19:57:00,733 - lightrag - INFO - [] Process 85840 KV load llm_response_cache with 291 records
+2026-01-15 19:57:00,733 - lightrag - INFO - [] Process 85840 doc status load doc_status with 11 records
+2026-01-15 19:57:00,734 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 19:57:00,734 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 19:57:04,048 - uvicorn.access - INFO - 127.0.0.1:53985 - "GET / HTTP/1.1" 307
+2026-01-15 19:57:04,055 - uvicorn.access - INFO - 127.0.0.1:53985 - "GET /webui HTTP/1.1" 307
+2026-01-15 19:57:04,075 - uvicorn.access - INFO - 127.0.0.1:53986 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 304
+2026-01-15 19:57:04,076 - uvicorn.access - INFO - 127.0.0.1:53985 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 304
+2026-01-15 19:57:04,325 - uvicorn.access - INFO - 127.0.0.1:53986 - "GET /auth-status HTTP/1.1" 200
+2026-01-15 19:57:04,326 - uvicorn.access - INFO - 127.0.0.1:53989 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-01-15 19:57:04,418 - uvicorn.access - INFO - 127.0.0.1:53989 - "GET /docs HTTP/1.1" 200
+2026-01-15 19:57:04,425 - lightrag - INFO - [] Graph truncated: found 439 nodes within max_depth 3
+2026-01-15 19:57:04,437 - lightrag - INFO - [] Subgraph query successful | Node count: 439 | Edge count: 561
+2026-01-15 19:57:04,456 - uvicorn.access - INFO - 127.0.0.1:53989 - "GET /graphs?label=Employees&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 19:57:04,515 - uvicorn.access - INFO - 127.0.0.1:53989 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 19:57:09,169 - lightrag - ERROR - Error detecting duplicates for 'Employees': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:57:09,173 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:57:09,173 - uvicorn.access - INFO - 127.0.0.1:53989 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 19:57:14,870 - lightrag - ERROR - Error detecting duplicates for 'Employees': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 19:57:14,871 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity = await rag.aquery_entity(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 19:57:14,871 - uvicorn.access - INFO - 127.0.0.1:53990 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 20:05:29,004 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:05:29,144 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:05:29,144 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:05:29,144 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:05:29,144 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:05:29,332 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:05:29,408 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:05:29,421 - uvicorn.error - INFO - Started server process [86647]
+2026-01-15 20:05:29,421 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:05:29,422 - lightrag - INFO - [] Process 86647 KV load full_docs with 11 records
+2026-01-15 20:05:29,424 - lightrag - INFO - [] Process 86647 KV load text_chunks with 113 records
+2026-01-15 20:05:29,424 - lightrag - INFO - [] Process 86647 KV load full_entities with 11 records
+2026-01-15 20:05:29,424 - lightrag - INFO - [] Process 86647 KV load full_relations with 10 records
+2026-01-15 20:05:29,425 - lightrag - INFO - [] Process 86647 KV load entity_chunks with 737 records
+2026-01-15 20:05:29,426 - lightrag - INFO - [] Process 86647 KV load relation_chunks with 694 records
+2026-01-15 20:05:29,435 - lightrag - INFO - [] Process 86647 KV load llm_response_cache with 291 records
+2026-01-15 20:05:29,435 - lightrag - INFO - [] Process 86647 doc status load doc_status with 11 records
+2026-01-15 20:05:29,436 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:05:29,436 - uvicorn.error - ERROR - [Errno 48] error while attempting to bind on address ('0.0.0.0', 9621): [errno 48] address already in use
+2026-01-15 20:05:29,436 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-15 20:05:29,437 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-15 20:05:29,437 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-15 20:05:59,467 - uvicorn.access - INFO - 127.0.0.1:54163 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 200
+2026-01-15 20:05:59,467 - uvicorn.access - INFO - 127.0.0.1:54165 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 200
+2026-01-15 20:05:59,685 - uvicorn.access - INFO - 127.0.0.1:54165 - "GET /auth-status HTTP/1.1" 200
+2026-01-15 20:05:59,802 - uvicorn.access - INFO - 127.0.0.1:54165 - "GET /docs HTTP/1.1" 200
+2026-01-15 20:05:59,808 - lightrag - INFO - [] Graph truncated: found 439 nodes within max_depth 3
+2026-01-15 20:05:59,817 - lightrag - INFO - [] Subgraph query successful | Node count: 439 | Edge count: 561
+2026-01-15 20:05:59,834 - uvicorn.access - INFO - 127.0.0.1:54163 - "GET /graphs?label=Employees&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 20:05:59,835 - uvicorn.access - INFO - 127.0.0.1:54165 - "GET /webui/assets/index-DXYtLM_l.js HTTP/1.1" 200
+2026-01-15 20:05:59,839 - uvicorn.access - INFO - 127.0.0.1:54165 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 20:05:59,947 - uvicorn.access - INFO - 127.0.0.1:54165 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200
+2026-01-15 20:05:59,947 - uvicorn.access - INFO - 127.0.0.1:54163 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200
+2026-01-15 20:06:09,491 - lightrag - ERROR - Error detecting duplicates for 'CHAMP TITLES, INC.': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 20:06:09,493 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity_info = await rag.get_entity_info(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 20:06:09,493 - uvicorn.access - INFO - 127.0.0.1:54170 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 20:06:22,117 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:06:22,252 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:06:22,252 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:06:22,252 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:06:22,252 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:06:22,435 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:06:22,509 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:06:22,522 - uvicorn.error - INFO - Started server process [86791]
+2026-01-15 20:06:22,522 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:06:22,523 - lightrag - INFO - [] Process 86791 KV load full_docs with 11 records
+2026-01-15 20:06:22,525 - lightrag - INFO - [] Process 86791 KV load text_chunks with 113 records
+2026-01-15 20:06:22,525 - lightrag - INFO - [] Process 86791 KV load full_entities with 11 records
+2026-01-15 20:06:22,526 - lightrag - INFO - [] Process 86791 KV load full_relations with 10 records
+2026-01-15 20:06:22,527 - lightrag - INFO - [] Process 86791 KV load entity_chunks with 737 records
+2026-01-15 20:06:22,528 - lightrag - INFO - [] Process 86791 KV load relation_chunks with 694 records
+2026-01-15 20:06:22,536 - lightrag - INFO - [] Process 86791 KV load llm_response_cache with 291 records
+2026-01-15 20:06:22,537 - lightrag - INFO - [] Process 86791 doc status load doc_status with 11 records
+2026-01-15 20:06:22,538 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:06:22,538 - uvicorn.error - ERROR - [Errno 48] error while attempting to bind on address ('0.0.0.0', 9621): [errno 48] address already in use
+2026-01-15 20:06:22,538 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-15 20:06:22,538 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-15 20:06:22,538 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-15 20:06:33,324 - lightrag - ERROR - Error detecting duplicates for 'CHAMP TITLES, INC.': 'LightRAG' object has no attribute 'aquery_entity'
+2026-01-15 20:06:33,325 - lightrag - ERROR - Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/lightrag/api/routers/graph_routes.py", line 784, in detect_duplicate_entities
+    entity_info = await rag.get_entity_info(request.entity_name)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'LightRAG' object has no attribute 'aquery_entity'. Did you mean: 'acreate_entity'?
+
+2026-01-15 20:06:33,325 - uvicorn.access - INFO - 127.0.0.1:54202 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 20:13:45,092 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:13:45,247 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:13:45,247 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:13:45,247 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:13:45,247 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:13:45,440 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:13:45,515 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:13:45,528 - uvicorn.error - INFO - Started server process [87734]
+2026-01-15 20:13:45,528 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:13:45,529 - lightrag - INFO - [] Process 87734 KV load full_docs with 11 records
+2026-01-15 20:13:45,531 - lightrag - INFO - [] Process 87734 KV load text_chunks with 113 records
+2026-01-15 20:13:45,531 - lightrag - INFO - [] Process 87734 KV load full_entities with 11 records
+2026-01-15 20:13:45,532 - lightrag - INFO - [] Process 87734 KV load full_relations with 10 records
+2026-01-15 20:13:45,532 - lightrag - INFO - [] Process 87734 KV load entity_chunks with 737 records
+2026-01-15 20:13:45,533 - lightrag - INFO - [] Process 87734 KV load relation_chunks with 694 records
+2026-01-15 20:13:45,542 - lightrag - INFO - [] Process 87734 KV load llm_response_cache with 291 records
+2026-01-15 20:13:45,542 - lightrag - INFO - [] Process 87734 doc status load doc_status with 11 records
+2026-01-15 20:13:45,543 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:13:45,543 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 20:14:10,126 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-15 20:14:11,374 - uvicorn.access - INFO - 127.0.0.1:55096 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:14:18,523 - uvicorn.access - INFO - 127.0.0.1:55136 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:14:26,073 - uvicorn.access - INFO - 127.0.0.1:55178 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 304
+2026-01-15 20:14:26,078 - uvicorn.access - INFO - 127.0.0.1:55178 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 304
+2026-01-15 20:14:26,313 - uvicorn.access - INFO - 127.0.0.1:55180 - "GET /auth-status HTTP/1.1" 200
+2026-01-15 20:14:26,460 - uvicorn.access - INFO - 127.0.0.1:55180 - "GET /docs HTTP/1.1" 200
+2026-01-15 20:14:26,469 - lightrag - INFO - [] Graph truncated: found 439 nodes within max_depth 3
+2026-01-15 20:14:26,489 - lightrag - INFO - [] Subgraph query successful | Node count: 439 | Edge count: 561
+2026-01-15 20:14:26,505 - uvicorn.access - INFO - 127.0.0.1:55180 - "GET /graphs?label=Employees&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 20:14:26,506 - uvicorn.access - INFO - 127.0.0.1:55178 - "GET /webui/assets/index-DXYtLM_l.js HTTP/1.1" 304
+2026-01-15 20:14:26,580 - uvicorn.access - INFO - 127.0.0.1:55178 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 20:14:26,609 - uvicorn.access - INFO - 127.0.0.1:55180 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 304
+2026-01-15 20:14:26,610 - uvicorn.access - INFO - 127.0.0.1:55178 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 304
+2026-01-15 20:14:44,491 - uvicorn.access - INFO - 127.0.0.1:55205 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:14:52,094 - uvicorn.access - INFO - 127.0.0.1:55208 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:15:00,429 - uvicorn.access - INFO - 127.0.0.1:55208 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:15:10,165 - lightrag - INFO - [] Graph truncated: found 440 nodes within max_depth 3
+2026-01-15 20:15:10,175 - lightrag - INFO - [] Subgraph query successful | Node count: 440 | Edge count: 559
+2026-01-15 20:15:10,196 - uvicorn.access - INFO - 127.0.0.1:55212 - "GET /graphs?label=Insperity&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 20:15:14,241 - uvicorn.access - INFO - 127.0.0.1:55212 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:17:19,367 - uvicorn.access - INFO - 127.0.0.1:55286 - "GET /graph/label/search?q=Insperity&limit=10 HTTP/1.1" 200
+2026-01-15 20:17:20,607 - uvicorn.access - INFO - 127.0.0.1:55299 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:18:23,827 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:18:23,976 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:18:23,976 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:18:23,976 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:18:23,976 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:18:24,176 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:18:24,251 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:18:24,265 - uvicorn.error - INFO - Started server process [88196]
+2026-01-15 20:18:24,265 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:18:24,266 - lightrag - INFO - [] Process 88196 KV load full_docs with 11 records
+2026-01-15 20:18:24,267 - lightrag - INFO - [] Process 88196 KV load text_chunks with 113 records
+2026-01-15 20:18:24,267 - lightrag - INFO - [] Process 88196 KV load full_entities with 11 records
+2026-01-15 20:18:24,268 - lightrag - INFO - [] Process 88196 KV load full_relations with 10 records
+2026-01-15 20:18:24,269 - lightrag - INFO - [] Process 88196 KV load entity_chunks with 737 records
+2026-01-15 20:18:24,270 - lightrag - INFO - [] Process 88196 KV load relation_chunks with 694 records
+2026-01-15 20:18:24,280 - lightrag - INFO - [] Process 88196 KV load llm_response_cache with 291 records
+2026-01-15 20:18:24,280 - lightrag - INFO - [] Process 88196 doc status load doc_status with 11 records
+2026-01-15 20:18:24,281 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:18:24,281 - uvicorn.error - ERROR - [Errno 48] error while attempting to bind on address ('0.0.0.0', 9621): [errno 48] address already in use
+2026-01-15 20:18:24,281 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-15 20:18:24,281 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-15 20:18:24,281 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-15 20:18:40,469 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:18:40,561 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:18:40,562 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:18:40,562 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:18:40,562 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:18:40,719 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:18:40,786 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:18:40,793 - uvicorn.error - INFO - Started server process [88272]
+2026-01-15 20:18:40,794 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:18:40,794 - lightrag - INFO - [] Process 88272 KV load full_docs with 11 records
+2026-01-15 20:18:40,796 - lightrag - INFO - [] Process 88272 KV load text_chunks with 113 records
+2026-01-15 20:18:40,796 - lightrag - INFO - [] Process 88272 KV load full_entities with 11 records
+2026-01-15 20:18:40,797 - lightrag - INFO - [] Process 88272 KV load full_relations with 10 records
+2026-01-15 20:18:40,797 - lightrag - INFO - [] Process 88272 KV load entity_chunks with 737 records
+2026-01-15 20:18:40,798 - lightrag - INFO - [] Process 88272 KV load relation_chunks with 694 records
+2026-01-15 20:18:40,806 - lightrag - INFO - [] Process 88272 KV load llm_response_cache with 291 records
+2026-01-15 20:18:40,806 - lightrag - INFO - [] Process 88272 doc status load doc_status with 11 records
+2026-01-15 20:18:40,807 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:18:40,807 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 20:18:50,821 - lightrag - ERROR - Validation error detecting duplicates for 'Insperity': Entity 'Insperity' not found in vector database
+2026-01-15 20:18:50,821 - uvicorn.access - INFO - 127.0.0.1:55604 - "POST /graph/entities/detect-duplicates HTTP/1.1" 400
+2026-01-15 20:20:27,496 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:20:27,637 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:20:27,637 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:20:27,637 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:20:27,637 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:20:27,825 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:20:27,898 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:20:27,911 - uvicorn.error - INFO - Started server process [88417]
+2026-01-15 20:20:27,911 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:20:27,912 - lightrag - INFO - [] Process 88417 KV load full_docs with 11 records
+2026-01-15 20:20:27,914 - lightrag - INFO - [] Process 88417 KV load text_chunks with 113 records
+2026-01-15 20:20:27,914 - lightrag - INFO - [] Process 88417 KV load full_entities with 11 records
+2026-01-15 20:20:27,915 - lightrag - INFO - [] Process 88417 KV load full_relations with 10 records
+2026-01-15 20:20:27,915 - lightrag - INFO - [] Process 88417 KV load entity_chunks with 737 records
+2026-01-15 20:20:27,916 - lightrag - INFO - [] Process 88417 KV load relation_chunks with 694 records
+2026-01-15 20:20:27,925 - lightrag - INFO - [] Process 88417 KV load llm_response_cache with 291 records
+2026-01-15 20:20:27,925 - lightrag - INFO - [] Process 88417 doc status load doc_status with 11 records
+2026-01-15 20:20:27,926 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:20:27,926 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 20:20:37,797 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-15 20:20:38,754 - uvicorn.access - INFO - 127.0.0.1:55785 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:20:45,315 - uvicorn.access - INFO - 127.0.0.1:55815 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:20:45,391 - uvicorn.access - INFO - 127.0.0.1:55829 - "GET /graph/label/search?q=Insperity%20Health&limit=10 HTTP/1.1" 200
+2026-01-15 20:20:50,932 - lightrag - INFO - [] Graph truncated: max_nodes limit 20 reached
+2026-01-15 20:20:50,932 - lightrag - INFO - [] Subgraph query successful | Node count: 20 | Edge count: 36
+2026-01-15 20:20:50,933 - uvicorn.access - INFO - 127.0.0.1:55871 - "GET /graphs?label=Insperity&max_depth=1&max_nodes=20 HTTP/1.1" 200
+2026-01-15 20:21:19,066 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:21:19,207 - lightrag - DEBUG - Langfuse environment variables not configured, using standard OpenAI client
+2026-01-15 20:21:19,208 - lightrag - DEBUG - Extracted from openai provider: max_token_size=8192, embedding_dim=1536
+2026-01-15 20:21:19,208 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:21:19,208 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:21:19,208 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:21:19,208 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:21:19,300 - lightrag - DEBUG - Captured embedding max_token_size: 8192
+2026-01-15 20:21:19,300 - lightrag - DEBUG - LightRAG init with param:
+  working_dir = /Users/tylerconn/Documents/projects/lightRAG/rag_storage,
+  kv_storage = JsonKVStorage,
+  vector_storage = NanoVectorDBStorage,
+  graph_storage = NetworkXStorage,
+  doc_status_storage = JsonDocStatusStorage,
+  workspace = ,
+  log_level = None,
+  log_file_path = None,
+  top_k = 40,
+  chunk_top_k = 20,
+  max_entity_tokens = 6000,
+  max_relation_tokens = 8000,
+  max_total_tokens = 30000,
+  cosine_threshold = 0.2,
+  related_chunk_number = 5,
+  kg_chunk_pick_method = VECTOR,
+  entity_extract_max_gleaning = 1,
+  force_llm_summary_on_merge = 8,
+  chunk_token_size = 1200,
+  chunk_overlap_token_size = 100,
+  tokenizer = <lightrag.utils.TiktokenTokenizer object at 0x10bc64f50>,
+  tiktoken_model_name = gpt-4o-mini,
+  chunking_func = <function chunking_by_token_size at 0x10a2794e0>,
+  embedding_func = EmbeddingFunc(embedding_dim=1536, func=<function create_app.<locals>.create_optimized_embedding_function.<locals>.optimized_embedding_function at 0x10aeff060>, max_token_size=8192, send_dimensions=False, model_name='text-embedding-3-small'),
+  embedding_token_limit = 8192,
+  embedding_batch_num = 10,
+  embedding_func_max_async = 8,
+  embedding_cache_config = {'enabled': False, 'similarity_threshold': 0.95, 'use_llm_check': False},
+  default_embedding_timeout = 30,
+  llm_model_func = <function create_app.<locals>.create_optimized_openai_llm_func.<locals>.optimized_openai_alike_model_complete at 0x10bc76140>,
+  llm_model_name = gpt-4o-mini,
+  summary_max_tokens = 1200,
+  summary_context_size = 12000,
+  summary_length_recommended = 600,
+  llm_model_max_async = 4,
+  llm_model_kwargs = {},
+  default_llm_timeout = 180,
+  rerank_model_func = None,
+  min_rerank_score = 0.0,
+  vector_db_storage_cls_kwargs = {'cosine_better_than_threshold': 0.2},
+  enable_llm_cache = True,
+  enable_llm_cache_for_entity_extract = True,
+  max_parallel_insert = 2,
+  max_graph_nodes = 1000,
+  max_source_ids_per_entity = 300,
+  max_source_ids_per_relation = 300,
+  source_ids_limit_method = FIFO,
+  max_file_paths = 100,
+  file_path_more_placeholder = truncated,
+  addon_params = {'language': 'English', 'entity_types': ['Person', 'Creature', 'Organization', 'Location', 'Event', 'Concept', 'Method', 'Content', 'Data', 'Artifact', 'NaturalObject']},
+  auto_manage_storages_states = False,
+  cosine_better_than_threshold = 0.2,
+  ollama_server_infos = <lightrag.base.OllamaServerInfos object at 0x10bc651d0>,
+  _storages_status = StoragesStatus.NOT_CREATED
+
+2026-01-15 20:21:19,395 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:21:19,470 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:21:19,482 - uvicorn.error - INFO - Started server process [88613]
+2026-01-15 20:21:19,482 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:21:19,483 - lightrag - INFO - [] Process 88613 KV load full_docs with 11 records
+2026-01-15 20:21:19,485 - lightrag - INFO - [] Process 88613 KV load text_chunks with 113 records
+2026-01-15 20:21:19,485 - lightrag - INFO - [] Process 88613 KV load full_entities with 11 records
+2026-01-15 20:21:19,486 - lightrag - INFO - [] Process 88613 KV load full_relations with 10 records
+2026-01-15 20:21:19,487 - lightrag - INFO - [] Process 88613 KV load entity_chunks with 737 records
+2026-01-15 20:21:19,488 - lightrag - INFO - [] Process 88613 KV load relation_chunks with 694 records
+2026-01-15 20:21:19,497 - lightrag - INFO - [] Process 88613 KV load llm_response_cache with 291 records
+2026-01-15 20:21:19,497 - lightrag - INFO - [] Process 88613 doc status load doc_status with 11 records
+2026-01-15 20:21:19,497 - lightrag - DEBUG - All storage types initialized
+2026-01-15 20:21:19,498 - lightrag - DEBUG - Full entities/relations data already exists, no migration needed
+2026-01-15 20:21:19,498 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:21:19,498 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 20:21:32,265 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Vector DB returned 15 results for 'Insperity'
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Sample result: {'__id__': 'ent-f337c0a61bec49ef97d51b5447076880', '__created_at__': 1768447323, 'entity_name': 'Insperity', 'content': "Insperity\nInsperity is a company specializing in a broad spectrum of employee benefits and human resource services. It provides comprehensive employee benefits packages designed to enhance workforce satisfaction and well-being. Key offerings include the Employee Assistance Program (EAP), caregiver support, Health Care Flexible Spending Account Plans, and Adoption Assistance Programs. Insperity also supplies various insurance products such as Health Savings Accounts (HSAs) and disability insurance, along with health insurance options including high deductible health plans (HDHP), dental and vision plans, ensuring essential coverage for employees and their dependents nationwide.\n\nIn addition to its benefits offerings, Insperity collaborates closely with Champ Titles, Inc. to manage administrative tasks like payroll and employee information management. It plays a pivotal role in creating a respectful and dignified work environment by implementing and enforcing workplace policies against harassment and discrimination. Insperity's commitment extends to supporting employees in reporting harassment and addressing compliance issues, ensuring that investigations and disciplinary actions adhere to established policies.\n\nAs a human resource service provider, Insperity offers resources for employees regarding accommodations, workplace reporting procedures, and management of leave requests. It is referred to in various employee policies related to leave, harassment, and at-will employment. Additionally, Insperity assists with payroll services, advising employees on personal information updates and handling sick time payments. Throughout its operations, Insperity emphasizes dignity and respect in the workplace, alongside its partnership with Champ Titles, Inc., to uphold a harassment-free environment through comprehensive training, support, and resources.", 'source_id': 'chunk-0de91d199485fd6f10d230bc2925df57<SEP>chunk-078bafbe1d7c5822abb1060712e93d60<SEP>chunk-cc0a91280ce148040521acc037ad3a4d<SEP>chunk-3780084be53b045d52e036f4980e5762<SEP>chunk-b32ba6ff6d7bccc3aa0f78d3e7a7be6a<SEP>chunk-d84c986e26200f86e1a672aa01e92050<SEP>chunk-3938d0012b10d87cedc4971b4e3f4dd2<SEP>chunk-8c72a071d58957ed16ddf33d1782f177<SEP>chunk-a18a018ea63263a65246bd4beb196541<SEP>chunk-193e0b5d60f4a15390b65d81d3aa9b03<SEP>chunk-1f2412485a7ad85f870d04538fd79009<SEP>chunk-00ce9af4372211a438b173430b8d138b<SEP>chunk-92eb660122097d867447c27ffe766527<SEP>chunk-7f83efce647a34bf89a720dd97b651a0<SEP>chunk-2ac382de31d6768a58041b92c0a65721<SEP>chunk-52732767c52bf6087683389405034c5e<SEP>chunk-4dd132cd43d36fe8635d4874b626e468<SEP>chunk-91804308711e655de4bfb45f5ec3cc83<SEP>chunk-3eec85ebf6e7c5666f9e8425ddb233e4<SEP>chunk-912918e089aa9692f4cd02f9ee38e318<SEP>chunk-38a5d56b2874186cef9eeacc63f84c23<SEP>chunk-c041fc97e2b536e2b6a405c13efb7224<SEP>chunk-009478b38c0b6c52ca70be6eb0cb52b0<SEP>chunk-bdd8a528efb53e97f38d569761730101<SEP>chunk-90cd73babdb4ba295cdf4035ad30fd49<SEP>chunk-6221515fb078572b4a20e35a419d85ca<SEP>chunk-aeae9c7626845133f67a1f48cfa6935a<SEP>chunk-8971980922630e041a987f12f6cb8b0a<SEP>chunk-d421fc21ff7502c646ade1c575ad95c2<SEP>chunk-72075aac7aa69aaef2767f737d63b014<SEP>chunk-b2e167d48632d6812960476458695585<SEP>chunk-6951764c45b952aabed8556330638a02<SEP>chunk-fa9389aa44dd781160d6a7cfb6282103', 'file_path': '2026 Independence Classic Choice .pdf<SEP>welcome email.pdf<SEP>handbook.pdf', '__metrics__': 0.99999964, 'id': 'ent-f337c0a61bec49ef97d51b5447076880', 'distance': 0.99999964, 'created_at': 1768447323}
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity, distance=0.9999996423721313
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Skipping self-match: Insperity
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Employee Assistance Program, distance=0.8330451250076294
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.1669548749923706 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Employee Assistance Program: similarity 0.1669548749923706 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Contact Center, distance=0.8118667602539062
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.18813323974609375 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Contact Center: similarity 0.18813323974609375 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Premier, distance=0.8047446608543396
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.1952553391456604 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Premier: similarity 0.1952553391456604 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Perks at Work, distance=0.8020132780075073
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.19798672199249268 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Perks at Work: similarity 0.19798672199249268 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Training and Development, distance=0.789621889591217
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.21037811040878296 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Training and Development: similarity 0.21037811040878296 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Employee Portal, distance=0.7874727249145508
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.21252727508544922 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Employee Portal: similarity 0.21252727508544922 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Group Health Plan, distance=0.7852150201797485
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.21478497982025146 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Group Health Plan: similarity 0.21478497982025146 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Benefits for All Employees, distance=0.7523423433303833
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.2476576566696167 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Benefits for All Employees: similarity 0.2476576566696167 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Anti-Harassment Hotline, distance=0.7502058744430542
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.2497941255569458 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Anti-Harassment Hotline: similarity 0.2497941255569458 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Benefits Package, distance=0.7364261746406555
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.2635738253593445 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Benefits Package: similarity 0.2635738253593445 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=EAP, distance=0.7296087741851807
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.27039122581481934 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out EAP: similarity 0.27039122581481934 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity HSA Employer Contributions, distance=0.7279841899871826
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.2720158100128174 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity HSA Employer Contributions: similarity 0.2720158100128174 < threshold 0.5
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Processing result: entity_name=Insperity Caregiver Support Program, distance=0.722811222076416
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Calculated similarity: 0.277188777923584 (threshold: 0.5)
+2026-01-15 20:21:33,347 - lightrag - DEBUG - Filtered out Insperity Caregiver Support Program: similarity 0.277188777923584 < threshold 0.5
+2026-01-15 20:21:33,348 - lightrag - DEBUG - Processing result: entity_name=Insperity Health Savings Account Program, distance=0.7192360162734985
+2026-01-15 20:21:33,348 - lightrag - DEBUG - Calculated similarity: 0.28076398372650146 (threshold: 0.5)
+2026-01-15 20:21:33,348 - lightrag - DEBUG - Filtered out Insperity Health Savings Account Program: similarity 0.28076398372650146 < threshold 0.5
+2026-01-15 20:21:33,348 - uvicorn.access - INFO - 127.0.0.1:55988 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:22:07,331 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:22:07,499 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:22:07,499 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:22:07,499 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:22:07,499 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:22:07,688 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:22:07,761 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:22:07,774 - uvicorn.error - INFO - Started server process [88728]
+2026-01-15 20:22:07,774 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:22:07,775 - lightrag - INFO - [] Process 88728 KV load full_docs with 11 records
+2026-01-15 20:22:07,777 - lightrag - INFO - [] Process 88728 KV load text_chunks with 113 records
+2026-01-15 20:22:07,777 - lightrag - INFO - [] Process 88728 KV load full_entities with 11 records
+2026-01-15 20:22:07,778 - lightrag - INFO - [] Process 88728 KV load full_relations with 10 records
+2026-01-15 20:22:07,778 - lightrag - INFO - [] Process 88728 KV load entity_chunks with 737 records
+2026-01-15 20:22:07,779 - lightrag - INFO - [] Process 88728 KV load relation_chunks with 694 records
+2026-01-15 20:22:07,788 - lightrag - INFO - [] Process 88728 KV load llm_response_cache with 291 records
+2026-01-15 20:22:07,788 - lightrag - INFO - [] Process 88728 doc status load doc_status with 11 records
+2026-01-15 20:22:07,789 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:22:07,789 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 20:22:16,759 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-15 20:22:17,198 - uvicorn.access - INFO - 127.0.0.1:56118 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 20:22:17,198 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 327, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.float32' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 377, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 232, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 288, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+        value,
+    ...<4 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+    )
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 288, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+        value,
+    ...<4 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+    )
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 302, in jsonable_encoder
+    jsonable_encoder(
+    ~~~~~~~~~~~~~~~~^
+        item,
+        ^^^^^
+    ...<7 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 288, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+        value,
+    ...<4 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+    )
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 335, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [TypeError("'numpy.float32' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2026-01-15 20:22:24,999 - uvicorn.access - INFO - 127.0.0.1:56141 - "POST /graph/entities/detect-duplicates HTTP/1.1" 500
+2026-01-15 20:22:24,999 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 327, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.float32' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 332, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 101, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 377, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 232, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 288, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+        value,
+    ...<4 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+    )
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 288, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+        value,
+    ...<4 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+    )
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 302, in jsonable_encoder
+    jsonable_encoder(
+    ~~~~~~~~~~~~~~~~^
+        item,
+        ^^^^^
+    ...<7 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 288, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+        value,
+    ...<4 lines>...
+        sqlalchemy_safe=sqlalchemy_safe,
+    )
+  File "/Users/tylerconn/Documents/projects/lightRAG/.venv/lib/python3.14/site-packages/fastapi/encoders.py", line 335, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [TypeError("'numpy.float32' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2026-01-15 20:23:15,758 - lightrag - INFO - OpenAI LLM Options: {}
+2026-01-15 20:23:15,899 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-01-15 20:23:15,899 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-01-15 20:23:15,899 - lightrag - INFO - Embedding max_token_size: 8192 (from env variable)
+2026-01-15 20:23:15,899 - lightrag - INFO - Reranking is disabled
+2026-01-15 20:23:16,087 - lightrag - INFO - [] Loaded graph from /Users/tylerconn/Documents/projects/lightRAG/rag_storage/graph_chunk_entity_relation.graphml with 737 nodes, 694 edges
+2026-01-15 20:23:16,157 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-15 20:23:16,170 - uvicorn.error - INFO - Started server process [88881]
+2026-01-15 20:23:16,170 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-15 20:23:16,171 - lightrag - INFO - [] Process 88881 KV load full_docs with 11 records
+2026-01-15 20:23:16,172 - lightrag - INFO - [] Process 88881 KV load text_chunks with 113 records
+2026-01-15 20:23:16,173 - lightrag - INFO - [] Process 88881 KV load full_entities with 11 records
+2026-01-15 20:23:16,173 - lightrag - INFO - [] Process 88881 KV load full_relations with 10 records
+2026-01-15 20:23:16,174 - lightrag - INFO - [] Process 88881 KV load entity_chunks with 737 records
+2026-01-15 20:23:16,175 - lightrag - INFO - [] Process 88881 KV load relation_chunks with 694 records
+2026-01-15 20:23:16,184 - lightrag - INFO - [] Process 88881 KV load llm_response_cache with 291 records
+2026-01-15 20:23:16,184 - lightrag - INFO - [] Process 88881 doc status load doc_status with 11 records
+2026-01-15 20:23:16,185 - uvicorn.error - INFO - Application startup complete.
+2026-01-15 20:23:16,185 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-15 20:23:25,035 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-15 20:23:26,485 - uvicorn.access - INFO - 127.0.0.1:56277 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:23:34,431 - uvicorn.access - INFO - 127.0.0.1:56306 - "GET /graph/label/search?q=Health%20Group&limit=10 HTTP/1.1" 200
+2026-01-15 20:23:35,698 - uvicorn.access - INFO - 127.0.0.1:56319 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:24:13,116 - uvicorn.access - INFO - 127.0.0.1:56423 - "GET /webui/assets/index-A5Gph4ol.js HTTP/1.1" 304
+2026-01-15 20:24:13,116 - uvicorn.access - INFO - 127.0.0.1:56428 - "GET /webui/assets/index-BLqmPX3T.css HTTP/1.1" 304
+2026-01-15 20:24:13,438 - uvicorn.access - INFO - 127.0.0.1:56428 - "GET /docs HTTP/1.1" 200
+2026-01-15 20:24:13,447 - lightrag - INFO - [] Graph truncated: found 440 nodes within max_depth 3
+2026-01-15 20:24:13,460 - lightrag - INFO - [] Subgraph query successful | Node count: 440 | Edge count: 559
+2026-01-15 20:24:13,479 - uvicorn.access - INFO - 127.0.0.1:56423 - "GET /graphs?label=Insperity&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 20:24:13,480 - uvicorn.access - INFO - 127.0.0.1:56428 - "GET /webui/assets/index-DXYtLM_l.js HTTP/1.1" 304
+2026-01-15 20:24:13,482 - uvicorn.access - INFO - 127.0.0.1:56430 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-01-15 20:24:13,588 - uvicorn.access - INFO - 127.0.0.1:56430 - "GET /openapi.json HTTP/1.1" 200
+2026-01-15 20:24:13,589 - uvicorn.access - INFO - 127.0.0.1:56428 - "GET /webui/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 304
+2026-01-15 20:24:13,590 - uvicorn.access - INFO - 127.0.0.1:56423 - "GET /webui/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 304
+2026-01-15 20:24:17,237 - uvicorn.access - INFO - 127.0.0.1:56423 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:24:40,226 - uvicorn.access - INFO - 127.0.0.1:56451 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:25:13,863 - uvicorn.access - INFO - 127.0.0.1:56469 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:25:25,930 - uvicorn.access - INFO - 127.0.0.1:56472 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:25:32,792 - uvicorn.access - INFO - 127.0.0.1:56472 - "GET /graph/label/search?q=champ&limit=50 HTTP/1.1" 200
+2026-01-15 20:25:37,410 - lightrag - INFO - [] Graph truncated: found 376 nodes within max_depth 3
+2026-01-15 20:25:37,427 - lightrag - INFO - [] Subgraph query successful | Node count: 376 | Edge count: 491
+2026-01-15 20:25:37,442 - uvicorn.access - INFO - 127.0.0.1:56472 - "GET /graphs?label=Champ%20Titles%20Policies&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-01-15 20:25:48,559 - uvicorn.access - INFO - 127.0.0.1:56476 - "POST /graph/entities/detect-duplicates HTTP/1.1" 200
+2026-01-15 20:26:08,988 - uvicorn.access - INFO - 127.0.0.1:56488 - "GET /graph/label/search?q=hyland&limit=50 HTTP/1.1" 200
+2026-01-15 20:26:09,770 - lightrag - INFO - [] Graph truncated: found 209 nodes within max_depth 3
+2026-01-15 20:26:09,777 - lightrag - INFO - [] Subgraph query successful | Node count: 209 | Edge count: 292
+2026-01-15 20:26:09,790 - uvicorn.access - INFO - 127.0.0.1:56488 - "GET /graphs?label=Hyland&max_depth=3&max_nodes=1000 HTTP/1.1" 200

@@ -86,6 +86,27 @@ class RelationCreateRequest(BaseModel):
     )
 
 
+class DetectDuplicateEntitiesRequest(BaseModel):
+    entity_name: str = Field(
+        ...,
+        description="Name of the entity to find potential duplicates for",
+        min_length=1,
+        examples=["Elon Musk"],
+    )
+    similarity_threshold: float = Field(
+        default=0.75,
+        description="Cosine similarity threshold for duplicate detection (0-1). Higher = stricter matching.",
+        ge=0.0,
+        le=1.0,
+    )
+    top_k: int = Field(
+        default=5,
+        description="Maximum number of duplicate candidates to return",
+        ge=1,
+        le=50,
+    )
+
+
 def create_graph_routes(rag, api_key: Optional[str] = None):
     combined_auth = get_combined_auth_dependency(api_key)
 
@@ -683,6 +704,153 @@ def create_graph_routes(rag, api_key: Optional[str] = None):
             logger.error(traceback.format_exc())
             raise HTTPException(
                 status_code=500, detail=f"Error merging entities: {str(e)}"
+            )
+
+    @router.post("/graph/entities/detect-duplicates", dependencies=[Depends(combined_auth)])
+    async def detect_duplicate_entities(request: DetectDuplicateEntitiesRequest):
+        """
+        Detect potential duplicate entities using vector similarity (HITL)
+
+        This endpoint uses vector embeddings to find entities similar to the specified entity.
+        It leverages the semantic similarity of entity descriptions to identify potential duplicates
+        that could be merged. This is useful for cleaning up knowledge graphs and consolidating
+        entities discovered during document processing.
+
+        What the Detection Does:
+            1. Retrieves the specified entity from the knowledge graph
+            2. Uses the entity's vector embedding (from description)
+            3. Searches for similar entities in the entity vector database
+            4. Filters results by similarity threshold
+            5. Excludes the query entity itself from results
+            6. Returns candidates ranked by similarity for human review
+
+        Use Cases:
+            - Discovering spelling variations (e.g., "Elon Musk", "Elon Msk", "Ellon Musk")
+            - Finding entities that should be consolidated (e.g., "AI", "Artificial Intelligence")
+            - Identifying similar named entities that might be the same (e.g., "Microsoft", "Microsoft Corp")
+            - Cleaning up knowledge graphs after bulk document processing
+
+        Request Body:
+            entity_name (str): Name of the entity to find potential duplicates for
+            similarity_threshold (float): Cosine similarity threshold (0-1, default 0.75)
+                                        - Higher values: stricter, fewer false positives
+                                        - Lower values: more permissive, may include false positives
+            top_k (int): Maximum number of candidates to return (default 5, max 50)
+
+        Response Schema:
+            {
+                "status": "success",
+                "message": "Found 3 potential duplicate entities for 'Elon Musk'",
+                "data": {
+                    "entity": {
+                        "entity_name": "Elon Musk",
+                        "description": "...",
+                        "entity_type": "PERSON"
+                    },
+                    "duplicates": [
+                        {
+                            "entity_name": "Elon Msk",
+                            "description": "...",
+                            "entity_type": "PERSON",
+                            "similarity": 0.92
+                        },
+                        ...
+                    ],
+                    "total_found": 3
+                }
+            }
+
+        HTTP Status Codes:
+            200: Duplicates detected successfully (may return empty list if none found)
+            400: Invalid request (e.g., entity doesn't exist, invalid threshold)
+            500: Internal server error
+
+        Example Request:
+            POST /graph/entities/detect-duplicates
+            {
+                "entity_name": "Elon Musk",
+                "similarity_threshold": 0.75,
+                "top_k": 10
+            }
+
+        Note:
+            - The entity must already exist in the knowledge graph
+            - Results are sorted by similarity (highest first)
+            - The query entity itself is excluded from results
+            - This is for discovery only; no changes are made to the graph
+        """
+        try:
+            # Check if entity exists
+            entity_exists = await rag.chunk_entity_relation_graph.has_node(request.entity_name)
+            if not entity_exists:
+                raise ValueError(f"Entity '{request.entity_name}' does not exist")
+
+            # Get entity data from graph
+            node_data = await rag.chunk_entity_relation_graph.get_node(request.entity_name)
+            if not node_data:
+                raise ValueError(f"Entity '{request.entity_name}' does not exist")
+
+            entity = {
+                "entity_name": request.entity_name,
+                "description": node_data.get("description", ""),
+                "entity_type": node_data.get("entity_type", ""),
+            }
+
+            # Query vector database using the entity name and description
+            # This matches how entities are stored: "entity_name\ndescription"
+            query_text = f"{request.entity_name}\n{node_data.get('description', '')}"
+
+            similar_entities = await rag.entities_vdb.query(
+                query=query_text,
+                top_k=request.top_k + 10,  # Get more results to account for filtering
+            )
+
+            # Filter results: exclude the query entity and apply threshold
+            duplicates = []
+            for result in similar_entities:
+                entity_name = result.get("entity_name")
+
+                # Skip the query entity itself
+                if entity_name and entity_name.lower() == request.entity_name.lower():
+                    continue
+
+                # Get similarity score
+                # Note: The vector DB returns "distance" but it's actually cosine similarity (1.0 = identical)
+                similarity = float(result.get("distance", 0))  # Convert to Python float for JSON serialization
+                if similarity < request.similarity_threshold:
+                    continue
+
+                # Get full entity data for better context
+                dup_node_data = await rag.chunk_entity_relation_graph.get_node(entity_name)
+                if dup_node_data:
+                    duplicates.append({
+                        "entity_name": entity_name,
+                        "description": dup_node_data.get("description", ""),
+                        "entity_type": dup_node_data.get("entity_type", ""),
+                        "similarity": round(similarity, 3),
+                    })
+
+                # Stop if we have enough results
+                if len(duplicates) >= request.top_k:
+                    break
+
+            return {
+                "status": "success",
+                "message": f"Found {len(duplicates)} potential duplicate entities for '{request.entity_name}'",
+                "data": {
+                    "entity": entity,
+                    "duplicates": duplicates,
+                    "total_found": len(duplicates),
+                },
+            }
+        except ValueError as ve:
+            logger.error(f"Validation error detecting duplicates for '{request.entity_name}': {str(ve)}")
+            raise HTTPException(status_code=400, detail=str(ve))
+        except Exception as e:
+            logger.error(f"Error detecting duplicates for '{request.entity_name}': {str(e)}")
+            logger.error(traceback.format_exc())
+            raise HTTPException(
+                status_code=500, detail=f"Error detecting duplicates: {str(e)}"
             )
 
     return router

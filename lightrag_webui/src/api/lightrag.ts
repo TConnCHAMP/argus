@@ -159,6 +159,23 @@ export type EntityUpdateResponse = {
   }
 }
 
+export type DuplicateEntity = {
+  entity_name: string
+  description: string
+  entity_type: string
+  similarity: number
+}
+
+export type DetectDuplicatesResponse = {
+  status: string
+  message: string
+  data: {
+    entity: Record<string, any>
+    duplicates: DuplicateEntity[]
+    total_found: number
+  }
+}
+
 export type DocActionResponse = {
   status: 'success' | 'partial_success' | 'failure' | 'duplicated'
   message: string
@@ -1017,6 +1034,26 @@ export const checkEntityNameExists = async (entityName: string): Promise<boolean
     console.error('Error checking entity name:', error)
     return false
   }
+}
+
+/**
+ * Detect potential duplicate entities using vector similarity (HITL)
+ * @param entityName The name of the entity to find duplicates for
+ * @param similarityThreshold Cosine similarity threshold (0-1, default 0.75)
+ * @param topK Maximum number of candidates to return (default 5)
+ * @returns Promise with detected duplicate entities
+ */
+export const detectDuplicateEntities = async (
+  entityName: string,
+  similarityThreshold: number = 0.75,
+  topK: number = 5
+): Promise<DetectDuplicatesResponse> => {
+  const response = await axiosInstance.post('/graph/entities/detect-duplicates', {
+    entity_name: entityName,
+    similarity_threshold: similarityThreshold,
+    top_k: topK
+  })
+  return response.data
 }
 
 /**

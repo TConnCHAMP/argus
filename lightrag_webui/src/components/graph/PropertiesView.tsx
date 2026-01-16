@@ -4,8 +4,10 @@ import Text from '@/components/ui/Text'
 import Button from '@/components/ui/Button'
 import useLightragGraph from '@/hooks/useLightragGraph'
 import { useTranslation } from 'react-i18next'
-import { GitBranchPlus, Scissors } from 'lucide-react'
+import { GitBranchPlus, Scissors, Search } from 'lucide-react'
 import EditablePropertyRow from './EditablePropertyRow'
+import DuplicateDetectionDialog from './DuplicateDetectionDialog'
+import { detectDuplicateEntities, updateEntity, DuplicateEntity } from '@/api/lightrag'
 
 /**
  * Component that view properties of elements in graph.
@@ -266,6 +268,9 @@ const PropertyRow = ({
 
 const NodePropertiesView = ({ node }: { node: NodeType }) => {
   const { t } = useTranslation()
+  const [duplicateDialogOpen, setDuplicateDialogOpen] = useState(false)
+  const [duplicates, setDuplicates] = useState<DuplicateEntity[]>([])
+  const [isScanning, setIsScanning] = useState(false)
 
   const handleExpandNode = () => {
     useGraphStore.getState().triggerNodeExpand(node.id)
@@ -275,11 +280,49 @@ const NodePropertiesView = ({ node }: { node: NodeType }) => {
     useGraphStore.getState().triggerNodePrune(node.id)
   }
 
+  const handleDetectDuplicates = async () => {
+    setIsScanning(true)
+    try {
+      const response = await detectDuplicateEntities(node.properties.entity_id || String(node.id))
+      setDuplicates(response.data.duplicates)
+      setDuplicateDialogOpen(true)
+    } catch (error) {
+      console.error('Error detecting duplicates:', error)
+    } finally {
+      setIsScanning(false)
+    }
+  }
+
+  const handleMergeDuplicate = async (sourceEntity: string, targetEntity: string) => {
+    try {
+      await updateEntity(sourceEntity, { entity_name: targetEntity }, true, true)
+      setDuplicateDialogOpen(false)
+      setDuplicates([])
+    } catch (error) {
+      console.error('Error merging entities:', error)
+    }
+  }
+
   return (
     <div className="flex flex-col gap-2">
       <div className="flex justify-between items-center">
         <h3 className="text-md pl-1 font-bold tracking-wide text-blue-700">{t('graphPanel.propertiesView.node.title')}</h3>
-        <div className="flex gap-3">
+        <div className="flex gap-2">
+          <Button
+            size="icon"
+            variant="ghost"
+            className="h-7 w-7 border border-gray-400 hover:bg-gray-200 dark:border-gray-600 dark:hover:bg-gray-700"
+            onClick={handleDetectDuplicates}
+            disabled={isScanning}
+            tooltip={t('graphPanel.duplicateDetection.scanHint')}
+            title="Scan for Duplicates"
+          >
+            {isScanning ? (
+              <div className="animate-spin h-4 w-4 border-2 border-current border-t-transparent rounded-full" />
+            ) : (
+              <Search className="h-4 w-4 text-gray-700 dark:text-gray-300" />
+            )}
+          </Button>
           <Button
             size="icon"
             variant="ghost"
@@ -300,6 +343,15 @@ const NodePropertiesView = ({ node }: { node: NodeType }) => {
           </Button>
         </div>
       </div>
+      <DuplicateDetectionDialog
+        open={duplicateDialogOpen}
+        entityName={node.properties.entity_id || String(node.id)}
+        duplicates={duplicates}
+        isLoading={isScanning}
+        onOpenChange={setDuplicateDialogOpen}
+        onMerge={handleMergeDuplicate}
+        onKeep={() => setDuplicateDialogOpen(false)}
+      />
       <div className="bg-primary/5 max-h-96 overflow-auto rounded p-1">
         <PropertyRow name={t('graphPanel.propertiesView.node.id')} value={String(node.id)} />
         <PropertyRow

@@ -37,7 +37,9 @@
     "cancel": "Cancel",
     "save": "Save",
     "saving": "Saving...",
-    "saveFailed": "Save failed"
+    "saveFailed": "Save failed",
+    "close": "Close",
+    "merging": "Merging..."
   },
   "documentPanel": {
     "clearDocuments": {
@@ -324,6 +326,21 @@
         "keepCurrentStart": "Refresh and keep current start node",
         "useMergedStart": "Refresh and use merged node",
         "refreshing": "Refreshing graph..."
+      },
+      "duplicateDetection": {
+        "title": "Potential Duplicate Entities",
+        "description": "Found similar entities to \"{{entityName}}\". Review and decide whether to merge.",
+        "noDuplicates": "No potential duplicates found",
+        "noDuplicatesHint": "This entity appears to be unique in the knowledge graph",
+        "foundCount": "Found {{count}} potential duplicate(s)",
+        "similar": "similar",
+        "noDescription": "No description available",
+        "autoMerge": "Auto Merge",
+        "keepSeparate": "Keep Separate",
+        "reviewLater": "Review Later",
+        "scanForDuplicates": "Scan for Duplicates",
+        "scanning": "Scanning...",
+        "scanHint": "Use vector similarity to find potential duplicate entities"
       },
       "node": {
         "title": "Node",
