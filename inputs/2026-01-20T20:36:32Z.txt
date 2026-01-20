@@ -1,0 +1,313 @@
+Transcript from2026-01-20T20:36:32Z
+Speaker 1 00:00:02
+Oh, is it comfortable? It's extremely. Oh, what in the world was that thing? I think it's a printer. Oh yeah. That's the impression it gives to sit on that. Give me close-ups of this thing right over here. It looks harder to sit on than it actually is.
+Speaker 1 00:00:31
+Aren't we waiting for Tyler? Oh wait, sorry. I wasn't sure if like I'm also joining. I did not include him. Also because if he doesn't know this then no, I guess let's see if he's computer. 
+Speaker 2 00:00:50
+There. Yeah, I put together a little glossary lookup tool and just kind of put in a couple pages just to like start like that's marvelous. Figuring out. 
+Speaker 1 00:01:00
+What they all mean.
+Speaker 1 00:01:30
+Each one of the TVs in this building like connects slightly differently. They're all different models.
+Speaker 2 00:01:38
+I need this TV in my living room though. Jeez.
+Speaker 1 00:01:46
+And whose office is this? This is LT's office, so it's not what I want. Uh, LT is our...
+Speaker 1 00:01:59
+Um, he leads our government affairs and uh sales team. So he is,
+Speaker 3 00:02:08
+I don't know if he's in New Jersey right now or if he's somewhere else. Um, so this is not a deck I can share with you guys because it is uh locked out because it has a lot of uh proprietary information. But I will, I use this to go through kind of the overview of Champ, what we're working on, what we're trying to accomplish. Yeah. Um, I'm not going to go through every single slide because this is this deck is over 100 slides long. Um, but this is what our team uses kind of to go out into the marketplace. This is how we position ourselves both from a company and a product portfolio standpoint. Um Our. 
+Speaker 3 00:02:52
+Really big advantage is our people and our processes and the way we structure our programs for each state. So we talk a lot about that. The way that we operate go to market is very aligned to when the state wins, we win. Our biggest competitor is Fast Enterprises. There's a couple other players in the space, but they're definitely the biggest one from a, System modernization standpoint, and they're the type of company that comes in builds these. We on the other hand come in and we're a partner. So we structure some of our revenue sharing models of off transactions. The more transactions the state gets, the more money the state gets, then we get a small piece of it. We are we also tailor our solutions to the state's needs. So whether they want just a piece of what we're building or the whole. 
+Speaker 3 00:03:50
+And kaboodle, like we'll work with the states to get them what they need. So that's, you know, really big and ingrained into our processes. We also go beyond just building the product for them. We are very integrated in their change management and training perspective. We have a whole activation team that's led by Chris Keller. She is with the team in New Jersey right now, but you'll get to know her because she's loud and boisterous, And fun, and you'll hear her when she's in the office. All very good things. I love Chris. But she runs kind of our activation team and is really big in the change management. We build learning modules for the states to learn how to use our systems. We go in from day one talking about the change management piece and we'll help dealers onboard, lenders onboard. So it is very much we only win if they win, which is a big competitive advantage for us.
+Speaker 3 00:04:49
+I just talked about we do not just the product but the process and policy. We all we do work with states to get policy and bills passed. So we work with legislators to get mandates to do electronic submission or digital submission of titles and vehicles. So we do a lot of work on that side too. I'm going to skip through some of this. We do have A really big focus on security. So we just hired Brenton, who is our director, I think is his title of security, but he's coming in to help us get Gumm ramp certified. You know, you'll hear a lot from him. We'll be getting picture IDs as part of that compliance. But really especially as we move into the credentialing side of things, we have. 
+Speaker 3 00:05:49
+Our system has people's PII, you know, a lot of sensitive information. So it's really important that we keep a high level of security. So we have a big program for that. We currently do have seven states that we work with. West Virginia was our original one. We do the most with them. They're very much our pilot state, so we tend to R and D, A lot with them. I think Louisiana will turn into kind of our second R and D state. When we contracted with them, we contracted the full basically program. So right now we're doing credentialing for them. As soon as we launch that in September, we are moving on to vehicle services. So they will have our full suite of everything eventually. They're super awesome to work with there so far love us not got one yet. 
+Speaker 3 00:06:46
+But they very much said, if this continues to go as successful as we think it will, the governor has basically said, I will go on a roadshow and tell every single state to go to champ. So they're going to be a very good voice for us. We have differing levels of partnerships with New Jersey. So as I mentioned, the teams down in New Jersey right now kicking off. Um, second phase. So right now in New Jersey, we just do the electronic lien side of things. Uh, we are now kicking off the agency portal side of things. So actually working with the DMV um to process title transfers. And I know I'm going to say a lot of things that may not make sense to you guys. Uh, don't worry that you won't you don't need to know all of this uh after today. 
+Speaker 3 00:07:36
+But hopefully as you start to hear these words, these terms, these concepts, it'll sink in. We work with Kentucky, Kansas. So Kansas we're actually kicking off another phase pretty soon. We work with Illinois. Rhode Island is going live in a couple of weeks and then Louisiana we're working with so, Pretty awesome. We also have a lot of contracts in other states that we're working on. So every state is very different, naturally because things can't be easy. There's a couple of major differences you'll start to hear and learn. So actually Tyler, we were talking about the concept of centralized versus decentralized. So a state that is centralized has one body who kind of. 
+Speaker 3 00:08:30
+Governs all of the motor vehicles, single point of contact, single department that does it for the entire state versus decentralized. Each county may operate independently. Now there's still a level of statewide programming and data and all of that, but Kentucky is an example of a decentralized state. So we have to work independently with each one of the title or the county clerks. For processes, for training. They have there's a couple of different tools they may use that a different county doesn't. You can imagine that that brings a level of complexity there. Um, all of our other states actually I don't know about Kansas. All of our other states are centralized uh the the big one Texas uh which we're trying. 
+Speaker 3 00:09:22
+Four and twenty twenty seven is decentralized. Over four hundred counties. So Kentucky has one hundred and twenty, so that that's a lot of of different moving pieces and parts to work with.
+Speaker 2 00:09:35
+Have you worked withum Colorado? No. Okay, I'm interested if they're decentralized or not. I don't know when we worked with them at least at some level it was it was very much county by county. 
+Speaker 3 00:09:47
+Yeah they might be decentralizedum so, Beyond that, you have either non-federated or federated. So non-federated is everything goes through the state agency. Non-federated is the state agency can outsource to privately owned companies. Oftentimes you hear them called public tag agents. You could they could also in New Jersey they have what's called NJ Car and that's actually run by the dealer association and they will do a piece of the work on behalf of the state um so with New Jersey NJ Car they actually review all title applications prior to it getting to the state will approve and reject on their behalf um in Louisiana they have public tag agents so those are privately owned companies that. 
+Speaker 3 00:10:41
+Will renew your license or reinstate you or do certain things on behalf of the state. So West Virginia, however, is not federated, so they are all state-owned agencies. So another difference that you can see obviously adds a little bit complexity to the training aspect of onboarding, not just the state agencies but to these privately owned companies as well. Um, Another concept that you'll hear that's different is a one-step versus a two-step title and registration. So in a one step, it's a single agency that owns both the titling and registration for your vehicles. Ohio is an example of a two step. So you have the uh different place that you go for your titling than you do for your registration and plates. Um so yet another kind of difference that you'll see state to state um and. 
+Speaker 3 00:11:38
+You know, could lead to a different implementation of our products. Thus far, all of our states are one step states. Another difference you'll see is what's called a title holding state versus a non-title holding state. And that is when you have a lien on your vehicle. There are seven states in which even if you have a lien on your vehicle The owner of the vehicle holds the title. So New York is an example in which you have a loan on your car, you still own the physical title versus in Ohio and most other states, uh, the bank actually owns your title. So there's some different intricacies there. Um, I don't expect you guys to memorize this again. This is a lot. Um, some slides like this one I'll um send you just because it has no PII in it um so you can have access to it. Um but just note that. 
+Speaker 3 00:12:35
+Each state is different and you'll start to hear these terms a lot and it does make a difference in how we go to market. And feel free to stop me at any point.
+Speaker 2 00:12:45
+Can I ask a question about the federated and unfederated? Yeah. Why does the state want to be federated? Like why do they want to offload that to a third party?
+Speaker 3 00:12:54
+Cost, resources, speed. Okay. Um some of those agencies can be open seven days a week versus the state, Because they're privately. Yeah, yeah, yeah. Sure, there's other reasons, but I don't know all of them. Uh, we're not going to talk about that, but there's a lot of oh actually I will highlight um a lot of our complexity not only comes from each state doing different things um but from the concept of a service provider so a service for provider being um. 
+Speaker 3 00:13:32
+A company that a dealer or a lender will work with as kind of their portal to us. So if you think about a dealer, right, a dealer probably has tools and software that they use to manage their inventory. Usually it's called a DMS, a dealer management system. So for us to ask them to implement yet another tool in their system is asking a lot. So we'll integrate with, Those DMS platforms. So, Dealertrack, V2, like there's a bunch of them will actually work with those service providers to do a headless integration for things like the electronic submission of titles. So we're not working with dealers. We're working with the service providers that they use so as not to complicate their world.
+Speaker 3 00:14:28
+So there's a level of complexity there working with the those dealer uh service providers. We also do have our own portal then for those smaller dealers who don't work with a service providerum so that they're not left out. 
+Speaker 1 00:14:44
+Of the process, the electronic submission process.
+Speaker 2 00:14:48
+Can I ask is is Cox Automotive are they a are you familiar?
+Speaker 3 00:14:54
+I am I don't believe they're a service provider right now.
+Speaker 2 00:14:58
+They are a service provider. We just don't work with them. We don't integrate with them right now. Okay, that was. Yeah. What you were describing sounded familiar. Yeah. With them.
+Speaker 3 00:15:06
+We might and I just don't know about it. I definitely don't work uh too much with the service providers, so I could be wrong there, but they're not one that I'm familiar with us working with and integrating with. Um, I talked a little bit about this, butum, this really just goes through how we willum.
+Speaker 3 00:15:26
+Kind of tailor our solutions to what the state needs. So really talking just about build versus buy. That's more of a sales tool.
+Speaker 1 00:15:42
+Oh, this is just kind of talking through some of the service providers we use as well as our competitors in the space. I'm Not going to bore you with that.
+Speaker 3 00:15:57
+Actually, I like this view better. It's the same as the one I just saw. So this is kind of our and you'll you'll hear a little bit about this on Thursday in our town hall, but this is really the portfolio of products that we're working towards. And this is how we kind of take our products to market. And these are the kind of the buckets in which we speak to them. So we have the core agency suite and that's really all of the tools for the state agency to use. So we have what we call, What we will be calling the Clerk 360, which is the portal that the DMV clerk would use to do all of this work from titling and registration management. So essentially being able to approve or reject title applications coming in, to renewing your registration, editing a title or editing your registration, whatever that might be, managing that title.
+Speaker 3 00:16:54
+That same web application, they can use to manage the credentials. So that's what we're building in Louisiana right now. Motor carrier management or MCAS is a feature that we have yet to build, but something that is a state agency really managing the fleets. Entity licensing so, To become a dealer in a state, you need to be licensed to actually sell vehicles. So if you sell more than five vehicles a year, you have to be licensed with the state. So the state obviously needs a way to manage those licenses and issue those licenses, revoke them if need be. And beyond that there could be driving schools that need to be licensed. There could be any kind of entity that needs to be licensed with the state agency when it comes to. 
+Speaker 3 00:17:48
+Motor vehicles. We have a small light version of this product built so far for West Virginia, but it's specific to dealer licensing. What we want to do is kind of bring that more broadly so that they can manage other things, other particulars. And then we want to get in the mobile ID space. Once we launch credentialing for Louisiana, we'll get into being able to host a mobile ID. Right now we can't do that yet.
+Speaker 1 00:18:14
+What's mobile ID?
+Speaker 3 00:18:15
+Uh, the ability to have your uh driver's license on your phone instead of having to carry it. Ohio apparently has it. I haven't actually used it.
+Speaker 2 00:18:24
+I've used it quite a bit. Have you? Yeah, I bought beer with it and they were like, this is weird, are you sure? And I was like,
+Speaker 3 00:18:29
+Do I look like I'm twenty one? They're. 
+Speaker 2 00:18:39
+Like, come on now.
+Speaker 3 00:18:45
+Then there's a bucket of our electronic agency suite. So that's really when it comes to our customers outside of the state agency. So whether that's dealers, so we have the dealer electronic titling. You'll hear that as ETRS, Electronic Title and Registration System. Again, all of these acronyms you'll become familiar with. But that's really how dealers can electronically send a title application to the state agency. And then there's the electronic lien management. So again, similar ELTS, that is same but on a lender. So a lender can electronically issue a lien on a title or manage a lien on a title with the state agency.
+Speaker 3 00:19:38
+Along with so those really are the system to API systems, um that we integrate with the, um service providers. We then are working on a dealer portal and a lender portal. So right now we have a state specific dealer and lender portal for West Virginia. Um in twenty twenty six we'll be building a global portal so that any state Any dealer that works with any of our states would be able to use one single portal for any of those. That's beginning to become more and more of a thing as people are buying vehicles online, and you have Carvana, but Carvana would never use our system. Like they would use a service provider. But the more that that becomes a thing, the more that you'll see dealers working with a lot of different. 
+Speaker 3 00:20:33
+So that's something that we'll be focusing on in 2026, is building that portal but globally. Same thing with lenders. We have a lender portal that's singular state for those smaller banks to manage their liens. We're going to be building that for global so that the bank can use it for multiple CHAMP states. And then we have the citizen portal, as my DMV Go So, Hannah, you will get to learn a lot about that. But really the application that any citizen can use to interact with the state. Right now we're building it specifically to support digital titles in West Virginia. However, the idea being it would be the application that someone can use to schedule an appointment with their DMV for credentialing. You can schedule an appointment, upload your documents ahead of time, fill out different information so that when you go to the DMV. 
+Speaker 3 00:21:30
+It's a shorter experience, right? Because all your stuff is right there. We have a lot of, you know, we want to be able to build in online renewals for those things. So we want to continue to expand it so that really your experience with the DMV is much better than it is today. But for now,
+Speaker 1 00:21:51
+We're launching with it as a way to launch digital titles, right? Because you have to have a way, To show your. 
+Speaker 3 00:21:59
+Title if we're going to no longer print a piece of paper. Um, these two things, so the uh CMV Fleet E Gateway and the CMV Fleet Portal, um, are future products. That is not something we have today. Um, but if if you're familiar at all with uh fleet vehicles, um, there is an essence of managing those. There's a whole like tax reporting, Piece when it comes to how many miles you've driven in a specific state, you have to pay taxes on that. So there's a whole thing with between MCAS and these fleet things that there's an opportunity to help make better, but definitely long term roadmap stuff from the digital agency suite. We're building out the digital titles now, which is a huge competitive advantage for us. We're really excited to be able to build that alongside that.
+Speaker 3 00:22:57
+Not only do we have the DMV or the MyDMV.gov, which is that citizen portal for citizens to use the digital titles, but we have what we're calling Title Vault, which is a way that the dealers manage their digital titles. Again, instead of having giant stacks of paper or a ton of filing cabinets because they have to actually have the title, they would have it all in a digital vault. Um, we are trying to build. Okay, these kind of all go together. Global ELT, which is our global management of all lenders. Global ERT is our global management of all dealers. And then what we're trying to do now is build a global entity registry, which actually bringing all of those into one single um management system database. Um Tyler, you probably will be working a lot with that. Sure. Um. 
+Speaker 3 00:23:54
+So that we kind of have one singular view of all of this, really building out, you know, a unified data model for all of this so that we can be able to do these global portals and so on and so forth. And then the global customer registry is the same concept. We have a lot of different value add things that we're building as well. So Kate is one of them. That's our AI platform for auto decisioning. Right now, the way we're building it is to assist the DMV in approving and rejecting title applications so that we can read the titles, the data. We go out to a tool called NIMVITAS, which is a national motor vehicle. 
+Speaker 1 00:24:46
+Information system something has all of the data on cars.
+Speaker 3 00:24:54
+I even forget some of the acronyms. And then we may pull from a tool called Vintelligents. So we're taking all of this information about a title and ensuring that, yes, this is a valid title transfer. So we're wanting to make that process a lot easier and do that decisioning on behalf of the state agencies so that they can scale with less. There's definitely a lot of other applications for CAE and auto decisioning beyond that, but that's our focus for right now from a feature perspective. There's other things that we're building, the state gateway interchange. So we're actually building that as part of Louisiana. But when it comes to credentialing, we have AMVA, the American Association Motor Vehicle. 
+Speaker 3 00:25:51
+American Automotive Vehicle Association, essentially a federal level organization that helps ensure that you don't like get arrested for like five DWIs in New York and then move to Ohio and you can get a credential in Ohio. It's going to stop you or making sure that commercial vehicles, so if you have a commercial driver's license, that you are in good standing. And you're not trying to like cheat the system or drive when you're blind or you know lots of different things that if states didn't have a single point to communicate uh you would end up with a lot of issues and people getting credentials for driving when they really shouldn't um so naturally there's a need to integrate with them both pushing information and pulling information. 
+Speaker 3 00:26:47
+There's also checks on, they have a call, it's called Solve Social Security Online Verification. So you put in your name, your social security and it verifies that yes you are who you are. It verifies passports. So they have a lot of different things that we can use to verify person to make sure they are who they are and that they are in good standing to get a credential. You can imagine how complicated that is. So we're building a tool that states can purchase just that from us so that they don't have to go and code all of these integrations and go through. It is a year long process and it takes a lot of work to pass all of the testing with NPHV. So it is a really in depth.
+Speaker 3 00:27:42
+Tyler, you're good to see it tomorrow when we go through. I was just going to say, it sounds familiar. I recognize the acronym. I was like, oh boy. Yeah, I was going to say you're going to get some defense. You won't actually have to do the work on that, but I think it's a really good opportunity for you to see like a lot of of that.
+Speaker 2 00:27:57
+And that would go more towards the states that have want they have the engineering teams that can actually implement this right because yeah hypothetically an API layer that they can just plug into. 
+Speaker 3 00:28:10
+Yeah like we had I think it was, I don't remember which state actually came to us and said, we don't want you to build a system of record. Like, but can you just build this plug in of it? Because we don't want to deal with it. Sure. Yeah. Which is kind of cool. We have a concept of the state plugin that's really just the idea that all of our products should be built with 80 like ideal world, right? 80% of the code is in our core application. Those states specific rules live in that state plugin You'll hear a lot about that in the town hall and what we're trying to get to. 
+Speaker 3 00:28:40
+We have a unified agency data model, again trying to build a data model that's scalable for all of our applications. We want to start building out a dashboard and analytics tool, but that does not exist yet. And then we actually do have an e-signature tool, but we don't actually use it yet, but we do want to start integrating into it. And then these business agency connectors, none of them exist today, but all... Opportunities for us to either build or buy within our platform that will start to move us into a single pane of glass for the clerk. Again, a clerk has to go to so many different screens, so many different tools just to do one task for a customer. So the more that we can take and put it into our single system, whether that's integrating or building it ourselves, the better then.
+Speaker 3 00:29:38
+Experiences. I know I rattled off a lot. Questions on any of that? Obviously you will all have to know all of this. Tyler, you probably will live in this world, Which Is all a lot of things that cross all of our platforms. But then Jeremy will really get to focus in on your own piece of this. But this is why we need a giant product team. Is this slide. 
+Speaker 1 00:30:09
+Something you can share with us?
+Speaker 3 00:30:10
+Uh yes. Yeah. Yeah. And then I'll go through in the town hall, um, this high level like long term vision, but then like in 2026 what are we trying to accomplish? Obviously we're not going to build all of this so you'll get to hear that along with the rest of the team on Thursday. This is just a whole nother view of what we just talked about uh so I'm not going to go through that. 
+Speaker 3 00:30:38
+This just talks about how like we can whatever the state needs at that time we can build all of this is plug and play. Each module, each product is built in a way that it can work regardless of if we're the system of record or not and regardless of what other tools they have. So every time we build something, we build it agnostic to our other applications so that we can give them just a small piece of it to go.
+Speaker 1 00:31:07
+Uh, cloud native. I mean, this is just mostly from a sales tools perspective.
+Speaker 3 00:31:13
+Um, and then we also go out to marketum with uh different ways to implement with the states. Soum and you can see each of these uh we have a state that does each one of these. Um so we can essentially connect, To existing databases and systems of record, we can augment with additional databases and data sources. We can migrate as, and then these two are really so these two are we are not the system of record for them but we build on top of it. These two are we are the system of record. We can do an incremental migration to their system of record. That's what we've done in West Virginia and New Jersey.
+Speaker 3 00:32:05
+Or we can do a big bang migration, which is what we're scarily planning on doing in Louisiana. Dear Lord, help us all. So really just again speaking to the fact that we will be flexible based on a state's needs because if we pigeonhole ourselves into one, we would never get another contract. We would limit ourselves for sure.
+Speaker 2 00:32:33
+Are Are we storing anything in? Is our storage of that information in the cloud or on- prem? Cloud. Okay. And states are okay with that?
+Speaker 1 00:32:45
+Yes. Yeah. Um,
+Speaker 3 00:32:50
+If you're curious about how we set all of that up, I am not the person to ask. Okay, yeah, I'm interested in learning more. Uh yeahum I know we only have a couple of minutes left because I unfortunately have uh, Heart stopped to go get my kids. Um, but we can always follow up. This just speaks to our tech stack. Um, so uh when you're interested in this one, I probably can send you. Um, these are all the different tools that we use as far as you know. Camel, rabbit. I'm sure this probably makes more sense to you than me. Um, but yeah, I can send you that one.
+Speaker 3 00:33:30
+Uh this just goes through our topology uh I won't get into that today I won't get into this today either but this just talks about how we're uh approaching digital titles again this is kind of like that 201 type content that you you'll get when it makes sense. 
+Speaker 2 00:33:50
+Is there especially overnight or or the rest of this week is there. 
+Speaker 2 00:33:59
+Like, I don't want to say classes. Is there reading material on on some of these more titling specific concepts that Yes. Okay.
+Speaker 3 00:34:06
+Um, I will say Confluence has a lot of information on it. Not always organized in the best way, but uh we are in the middle of trying to transition all of our product specific Confluence spaces to beum consistent in our organization uh but there's a lot out thereum, Pick a topic and you could probably go deep for weeks on it.
+Speaker 1 00:34:30
+Um, but yeah,
+Speaker 3 00:34:34
+That's that's where I would start is just kind of going through all of that information. Yeah.
+Speaker 1 00:34:37
+Once we have access Oh,
+Speaker 2 00:34:40
+I'm in Confluence. Did you not get into Confluence?
+Speaker 1 00:34:42
+Uh, I do have access, but I don't have access to the content because of AWS. Are you not on the correct spaces or? Oh no, it's just the credentials like we didn't get accessed. 
+Speaker 2 00:34:56
+I haven't been able to get into AWS, but I'm in Confluence and I've been reading.
+Speaker 1 00:35:01
+Oh, you have been reading?
+Speaker 2 00:35:02
+Yeah, I have access to pages in Confluence.
+Speaker 1 00:35:05
+Oh, I don't have access to pages within Confluence. Oh, yeah. But anyway, that's a side.
+Speaker 3 00:35:10
+We'll get that figured out. You should have access to whatever you need. Um, it might just be you didn't get like added to the right groups or whatever. Um, but yeah, that's where I would start. Um, I would say like... You'll both get the deep dive with Tyler on the digital services side. Obviously, for you, that's really important. Tyler, that's more of an FYI. You probably won't get too much into the digital services space unless you start getting interested in the gate piece. For you, a lot of your learning will probably be associated with vehicle titling and credentialing.
+Speaker 3 00:35:53
+Because a lot of the applications you're going to start supporting are kind of like the cross-functional applications. So the more you know about our systems and our architecture, the better. I would say if you haven't already reached out to Kevin and he can give you like architecture, like links to our architecture documentation. That's probably a lot of good learning for you too. Perfect. Um, once you get kind of like the business side understanding, like digging into there and understanding like how we approach all of that will be big for you. Great. Okay. Um, I feel like most of that was mostly what I wanted to cover today.
+Speaker 1 00:36:35
+We're just going. 
+Speaker 3 00:36:36
+Throughum Yeah, and then there is a confidence document out there, That has links to all of our QA environments with the login credentials. So another good opportunity is just to start clicking around those. Again, you can't screw anything up because it's a QA environment. So, yeah, another really good way to learn.
+Speaker 2 00:37:02
+It's a perfect way to use a QA environment.
+Speaker 3 00:37:04
+Yeah. Especially new people, see what they can break. Exactly, yeah. I'm sure you can find something. Um, But then, yeah, we'll start doing deep dives into different things that that makes sense to you guys. But I wanted to give you kind of the long term vision of what we're trying to accomplish. Right? We're really trying to be that one place that a state agency needs to do everything motor vehicle related. Um uh and then digital titles is really a big thing that we're trying to um be the first to market on right there is no digital title out there we would be the first to bring it to market uh which is absolutely huge um. 
+Speaker 3 00:37:41
+And then we're working with AMBA to do cross-state, right? In state, you know, West Virginians where we're first doing it West Virginia to West Virginia is easy. But if you're a West Virginia citizen with a digital title and you want to sell it to a Kentucky citizen, there has to be a way to interact with that. So um, you know there's a lot of work going into how do how do you handle tokens and all that fun stuff. But um, You know, those those are the the more comprehensive our platform becomes, the easier it is that we can go to states and contracts. But at the end of the day, it's all about increasing the number of there's 51 jurisdictions out there that we can contract with. Then the more we have, the better. But obviously that comes with a need to scale. Is. 
+Speaker 2 00:38:34
+Puerto Rico or are The 51 st. 
+Speaker 3 00:38:36
+Technically what uh Washington D C?
+Speaker 2 00:38:38
+Yeah okay. 
+Speaker 3 00:38:40
+Yes That is The 51 st. 
+Speaker 3 00:38:43
+I don't know if we really care about working with them, but.
+Speaker 2 00:38:48
+You Got to say fifty one, right?
+Speaker 3 00:38:49
+Yeah, exactly. And certainly it doesn't stop us from ever going beyond the United States. It's just there's enough to tackle for us right now before we have to get into things like currency and time zones. Yeah, I'm sure that's going to be a challenge. Yeah, so I will take a couple of, Screenshots of some of these that I think will be helpful and that I can share with you. And then, yeah, if you have questions or want to see anything else, let me know. But otherwise, yeah, and you'll get to hear a lot on Thursday at the Town Hall, which is really good timing for all of you guys to be able to hear from Shane on the vision as well as the rest of us on kind of what happened last quarter and where we're going in 2026.
+Speaker 1 00:39:38
+Are those typically recorded? Yes. Okay. I was just wondering if we can access previous town halls as well. I. 
+Speaker 3 00:39:47
+Believe they're all on SharePoint somewhere. I can see if I can locate those. Okay, that would be helpful, yeah. Yeah,
+Speaker 1 00:39:54
+I don't think we recorded the last one now that I say that but i'll look for you thank you of course yeah. 
+Speaker 1 00:40:08
+Any other questions? I think this was really helpful. Thank you. Especially before Thursday.
+Speaker 3 00:40:15
+Yeah, yeah. I wanted to give you guys a little bit of a crash course as much as I can. But yeah, bookmark that page with all the acronyms because you'll hear a lot of them. There's new acronyms that happen every day despite my protest with Bo saying, please stop adding acronyms. But I'm at least getting him to label it and use the acronym in a lot of his documentation. Oh,
+Speaker 2 00:40:43
+That's good idea. Yeah.
+Speaker 3 00:40:44
+Yeah, yeah.
+Speaker 2 00:40:45
+I'm just going to start making them up too and see him like people.
+Speaker 3 00:40:47
+Oh yeah, why not? Soum yeah but anytime reach out with questions if you have any of them but obviously all of all of the product leads to are great resources andum my last, Uh thing I leave with you is be patient with yourself. It is very easy to get frustrated and want to learn everything right away and know everything, but uh it takes all of us a long time to get on board. And uh so be patient with what you know what you can take on in a single day, but also know that every single one of us have gone through this and there is not a single person in this building that if you ask a question they're going to make you feel. 
+Speaker 3 00:41:32
+Bad for asking a question. Everybody is very helpful, very open to responding and helping you through that. So, uh, that is one reason why I love working here becauseum if you don't have a great team what's the point of coming? So I will leave you guys with that. As I mentioned, I'll send this to you guysum probably later today or tomorrow and thenum okay thank you thank you thanks guys A. 
+Speaker 2 00:41:58
+Lot of good stuff to marinate on here Yes. 
+Summary: 
+Date & Time: 2026-01-20 20:36:32
+Location: [Insert Location]
+Attendees: [Speaker 1], [Speaker 3], [Tyler]
+## 1. Overview of Champ's Business and Market Position
+### Conclusion
+Champ positions itself as a partner to state agencies, contrasting with competitors like Fast Enterprises. Their business model is often based on a revenue-sharing model tied to transaction volume, aligning their success with the state's success. A key advantage is their people, processes, and the ability to tailor solutions to specific state needs, including helping to pass new policies and legislation for digital services.
+### Discussion Points
+1. [Speaker 3]: Champ’s core competitive advantage is partnering with states rather than acting solely as a vendor.
+   - Revenue sharing from transactions means “when the state wins, we win.”
+   - Fast Enterprises typically builds systems and exits; Champ stays engaged.
+   - Champ tailors solutions—offering modules or the full suite based on state needs.
+2. [Speaker 3]: Champ integrates deeply with state change management and training.
+   - The activation team, led by Chris Keller, is pivotal.
+   - They build learning modules and onboard users (dealers, lenders) from day one.
+3. [Speaker 3]: Champ engages on policy and legislative efforts.
+   - They collaborate with legislators to mandate electronic/digital title submissions.
+## 2. Security and State Partnerships
+### Conclusion
+Champ prioritizes security due to handling sensitive PII and is pursuing Gumm ramp certification. The company has contracts with seven states, with West Virginia as the original pilot and Louisiana expected to become a second R&D state and a major advocate if the current project succeeds.
+### Plan
+- [ ] Obtain Gumm ramp certification. -- *Brenton* [Insert Key Date]
+### Discussion Points
+1. [Speaker 3]: Security is a major focus with credentialing and PII.
+   - Brenton, Director of Security, was hired to lead efforts.
+   - Achieving Gumm ramp certification is a key goal.
+   - Employees will receive picture IDs as part of compliance.
+2. [Speaker 3]: Champ partners with seven states at varying depths.
+   - West Virginia: original pilot; frequent R&D.
+   - Louisiana: contracted for full program (credentialing then vehicle services); expected to be an R&D hub.
+   - Louisiana’s governor will promote Champ to other states upon success.
+   - Other partners: New Jersey (phase 2 agency portal kickoff), Kentucky, Kansas (new phase starting), Illinois, Rhode Island (going live in a couple of weeks).
+## 3. State-by-State Differences in Motor Vehicle Operations
+### Conclusion
+Operational differences across states add implementation complexity. Key variations include centralized vs. decentralized governance, federated vs. non-federated service models, one-step vs. two-step titling/registration, and title-holding vs. non-title-holding lien rules.
+### Discussion Points
+1. [Speaker 3]: Centralized vs. decentralized governance affects engagement.
+   - Centralized: single governing body.
+   - Decentralized: e.g., Kentucky (120 counties), Texas (400+ counties) require county-by-county work; Colorado may be decentralized.
+2. [Speaker 3]: Federated vs. non-federated service models.
+   - Non-federated (e.g., West Virginia): services performed by state agencies.
+   - Federated: private companies (Public Tag Agents) deliver services for efficiency; examples include NJ Car (New Jersey) and public tag agents (Louisiana).
+3. [Speaker 3]: One-step vs. two-step titling and registration.
+   - One-step: single agency manages both (all current Champ states).
+   - Two-step (e.g., Ohio): separate agencies for titling and registration.
+4. [Speaker 3]: Title-holding vs. non-title-holding lien rules.
+   - Title-holding (e.g., New York, one of seven): vehicle owner holds title even with lien.
+   - Non-title-holding (e.g., Ohio): lienholder (bank) holds title.
+## 4. Champ Product Portfolio Overview
+### Conclusion
+Champ’s portfolio comprises the Core Agency Suite (for state clerks), Electronic Agency Suite (for external partners like dealers and lenders), and Digital Agency Suite (for citizens and digital assets). The vision is a comprehensive, modular, plug-and-play “single pane of glass” for all motor-vehicle activities.
+### Discussion Points
+1. [Speaker 3]: Core Agency Suite (for state agency personnel).
+   - Clerk 360 (titling, registration, credential management), Motor Carrier Management (MCAS, future), Entity Licensing (dealers, driving schools), Mobile ID (future).
+2. [Speaker 3]: Electronic Agency Suite (for dealers and lenders).
+   - ETRS (Electronic Title & Registration System), ELTS (Electronic Lien & Title System).
+   - Headless integrations with DMS providers (e.g., Dealertrack) to avoid new tools.
+   - Portals for smaller dealers/lenders without providers.
+3. [Speaker 3]: Global portals plan (dealers and lenders) by 2026.
+   - Single portal usage across multiple Champ states.
+4. [Speaker 3]: Citizen Portal (MyDMVGo) to enhance DMV experiences.
+   - Initial launch in West Virginia supporting digital titles.
+   - Future: appointments, document upload, online renewals.
+5. [Speaker 3]: Digital Agency Suite: digital-first products.
+   - Digital Titles: major competitive edge; first-to-market goal.
+   - Title Vault: digital vault for dealer title management.
+   - Global Entity Registry: unify dealer, lender, and customer data in one system/database.
+6. [Speaker 3]: Value-add services and platforms.
+   - “Kate”: AI for auto-decisioning; helps DMVs approve/reject title applications via integrations (NMVTIS, Vintelligence).
+   - State Gateway Interchange: manages integrations with federal-level orgs (AMVA) for credential verification (e.g., DWI checks, SSN verification).
+   - Architecture principle: “state plugin” model—80% core, 20% state-specific rules.
+## 5. Implementation Strategy and Technical Stack
+### Conclusion
+Champ adapts implementations to state needs: connect to/augment existing systems or migrate incrementally or via “big bang” to become the system of record. The technology stack is cloud-native.
+### Discussion Points
+1. [Speaker 3]: Flexible implementation models.
+   - Connect/augment without being system of record.
+   - Incremental migration (e.g., West Virginia, New Jersey) or full “big bang” (planned for Louisiana) to become system of record.
+2. [Tyler]: Cloud-based storage and infrastructure.
+   - States are comfortable with cloud.
+## 6. Onboarding and Learning Resources
+### Conclusion
+New team members should be patient with the steep learning curve. Key resources: Confluence (extensive but being reorganized), QA environments for hands-on learning, and deep-dive sessions. The culture is supportive—ask questions freely.
+### Plan
+- [ ] Ensure new hires have access to correct Confluence content and groups. -- *[Insert Executor Name]* [Insert Key Date]
+- [ ] Send screenshots of shareable, non-proprietary presentation slides to new hires. -- *Speaker 3* [later today or tomorrow]
+- [ ] Locate and share prior Town Hall recordings, if available. -- *Speaker 1* [Insert Key Date]
+### Discussion Points
+1. [Speaker 3]: Confluence is the main information repository (being reorganized).
+   - Contains deep content across topics.
+   - Includes a page with links and login credentials for all QA environments.
+2. [Speaker 1]: Some new hires lack access due to technical/permissions issues.
+   - Tyler has partial access; Speaker 1 does not—needs resolution.
+3. [Speaker 3]: Start by exploring QA environments (safe to experiment).
+   - Deep dives will be scheduled: Tyler on cross-functional apps (titling, credentialing, architecture), Jeremy on his area.
+4. [Speaker 3]: Supportive culture—ask questions; onboarding takes time.
+> **AI Suggestions**
+> AI has identified the following issues that were not concluded in the meeting or lack clear action items; please pay attention:
+> 1. **Access to Learning Resources:** A new team member ([Speaker 1]) reported being unable to access necessary content on Confluence due to a credential or permissions issue. This is a critical blocker for onboarding. A specific person should be assigned to resolve this access problem immediately to ensure the new hire can begin learning.
+> 2. **Clarification on Global Portal Strategy:** The plan to build global dealer and lender portals by 2026 was mentioned as a significant future initiative. However, there was no discussion on the specific project leads, key milestones, or potential risks for this large-scale project. A follow-up session should be scheduled to detail the strategy and roadmap for these global portals.
+> 3. **Unclear Plan for "Kate" AI Platform Expansion:** The initial focus for the "Kate" AI platform is auto-decisioning for title applications. The meeting noted "a lot of other applications for Kate" exist but did not specify what they are or how they would be prioritized. The product team should define and prioritize the future use cases for the AI platform to guide its long-term development.
+> 4. **Status of Future Products:** Several future products were mentioned without a clear timeline or owner, including Motor Carrier Management (MCAS), the CMV Fleet E-Gateway/Portal, and various business agency connectors. To ensure these items on the long-term roadmap are not lost, they should be formally documented with a high-level owner and a tentative target timeframe (e.g., Post-2026, H2 2027) in the product portfolio backlog.
