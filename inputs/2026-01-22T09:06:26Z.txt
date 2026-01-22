@@ -1,0 +1,396 @@
+Transcript from2026-01-22T09:06:26Z
+Speaker 1 00:00:05
+there are coats though or chairs at home so angry my god my drive i'm a little late i don't put kids where i sit in the center wiped out hard i'm screwed i almost stayed down and down you know i.
+Speaker 2 00:00:36
+was thinking about my car i watched someone turn on the center street and really wipe out in the.
+Speaker 1 00:00:39
+sidewalk and i'm walking the street now it's pretty much about a year ago i actually did fall. i opened my car i went to step out and i just, There was definitely a person laughing at me, like, on the corner. I looked up, and they're just, like, thanks for the concern. I think it's obviously kind of impressive to look like that.
+Speaker 1 00:01:11
+I know. It's great.
+Speaker 3 00:01:12
+How, like, this life is different.
+Speaker 1 00:01:18
+I remember having to, like, parking meters and parking meters, like, slide down the hill. And you could just, like, let go, grab the next one, let go, just hang down. How did that happen to you? Where I almost fell, there was that, like, one little hole. If that wasn't there, I couldn't do it.
+Speaker 1 00:01:52
+I think that will do the most. Respect your elders.
+Speaker 3 00:02:11
+Nick said to turn around in a couple of minutes so he should be here.
+Speaker 1 00:02:24
+About as far as I went. Step number one. Plug in. Is there going to be a plug-up? There's a plug-in there. Yeah, I was going to say that. Firing on also.
+Speaker 4 00:02:40
+I don't know the door option. Have you seen that? Are we in a whiteboard or anything? Like a big door that's like right over there? Yeah, what are we doing? That should be our like entry door. Yeah. I was just wondering. This might be at the bar. Yeah.
+Speaker 1 00:02:57
+This is the second handle. The cart handle is the most important.
+Speaker 4 00:03:08
+Yeah, the cart.
+Speaker 1 00:03:09
+I heard the cart's better than the slide. I think that's from actually doing it.
+Speaker 4 00:03:23
+Did anyone watch that Nights of the Seven Kingdoms? On HBO? Was that the new Game of Thrones? Yeah, the spin-off.
+Speaker 1 00:03:33
+I just canceled HBO. Now I'm like, the pit's back and that's on. It was like a little bit more humorous.
+Speaker 4 00:03:39
+than I was expecting, but it was like short.
+Speaker 1 00:03:41
+Like not like 45 minutes. Is it a movie. 
+Speaker 4 00:03:44
+No, it's a show. I wouldn't start your HBO backup just for that.
+Speaker 1 00:03:52
+Take it too late. I'm going to be mooching off my little sister. And I got the like, it looks like you're traveling. That's commonly the good look.
+Speaker 5 00:04:10
+and you need like 17 different services if you want to get out my sister-in-law i've been doing.
+Speaker 1 00:04:14
+like all my logins too since this is the first year i'm like all right look like you keep stealing my stuff and now that i have to log in all the time like i'm gonna figure this out look how i'm gonna be like my kids can't figure out how to reset the password so it was a good run, a parent and i was like when they finally made you pay more i was like you know what all the things that you paid for growing up i got you like a mom and dad seven dollars a month.
+Speaker 1 00:04:48
+yeah even regular yeah. yeah i know welcome to the cave i had to walk my dog slower today.
+Speaker 3 00:05:15
+I think you should see it right in the middle. Are you sure. 
+Speaker 1 00:05:23
+I'm not doing anything else.
+Speaker 3 00:05:29
+I just need to fire the ticket. Well, I figured we'd kind of go through it the same way we did the upgrade. I'm assuming you guys have a lot of time to give questions. A lot of time. Two whole days. So I guess we'll just go with the first ticket.
+Speaker 3 00:06:01
+Who wants to fire out first. 
+Speaker 2 00:06:05
+Yeah, we can go over there. I think from the back end perspective, there's only one major thing that we're like, this is going to be... tricky in the book, the edit flow, because there's a ticket outline. I think the original, design was that when you edit a credential that's in the cart, you go back to the original issue flow. You can't save it, and any changes that are made throughout any of the three steps, if you click cancel, are supposed to be discarded as it goes back to cart. And that seems really tricky to do, because currently, every time you pass a step, it saves a credential.
+Speaker 2 00:06:37
+on the regular issue flow, so we have to have really big changes there. I think Jimmy was talking about different ways we could rework that to be a bit more intuitive and easier.
+Speaker 6 00:06:46
+on the logic. It would be great if when they click edit, it's already in the cart. It would be great if it gets removed from the cart, and then they have to go through the whole flow, each step, that would make it easier from a technical perspective. It's the same when they're editing it. Basically, they just went back. I think that makes sense.
+Speaker 1 00:07:21
+Making sure that we kind of, so if they hit edit, bring them back to the flow in the cart if they hit cancel.
+Speaker 6 00:07:37
+It would just, that part I don't like.
+Speaker 1 00:07:44
+It's not a deal breaker, I just want to make sure that the user knows, that has the feedback coming, so that they don't edit and then hit cancel thinking that his cards are changing. It's like a mobile when you hit edit, it's like hey this is going to remove this from the cart. Edit, restart.
+Speaker 1 00:08:15
+we can do it. I just want to pour a hand over something on the cancel. It could be like.
+Speaker 6 00:08:36
+cancel is always just like cancels that. Actually, I don't want this after the whole thing to.
+Speaker 1 00:08:57
+flow or something. Yeah. So yeah, I think. regardless of whether they've gone slow. Yeah, that's how to be sure. Also telling them how forward it is.
+Speaker 1 00:09:33
+Yeah, to make it a lot easier. So you can access the cart. 
+Speaker 6 00:09:55
+you can access the cart from the view screen. Basically anywhere you're going to a customer you click. And then if you click a cart with no customer selected, you'll go to the cart and it'll say no customer selected.
+Speaker 1 00:10:17
+It'll just basically be the shell.
+Speaker 6 00:10:22
+Right. Is there a way for the analyst to see what customer they have selected? Top or something? Like name at the top.
+Speaker 1 00:10:33
+Yeah, at the top. Like that similar bar that we have across everything that has like their name.
+Speaker 6 00:10:42
+It's like whenever they're working with a customer that, okay, so they can, so in the cart, there's check boxes for each transaction, right? And if they don't want, or if the customer said, I don't want this now, they can uncheck it and leave it in the cart, come back a few days later and it'll still be in their cart.
+Speaker 6 00:11:17
+I'm guessing we'll need some sort of validation, a card, because if they leave it in there for a few days, the expiration date might need to change. Maybe there's some requirements around verification. I don't think this has to be for UAT in this ticket, but just think about what are the rules around leaving things? What will we need to validate. 
+Speaker 1 00:11:47
+A big use case that will come to mind for those plans, the only thing you can pay off is written statements. But there may be a time where you have a bunch of violations that you want to put on a plan.
+Speaker 1 00:12:17
+there isn't well we have to handle uh your situation that is definitely check boxes it's not like the being able to say but yes we do have to think about like if they use something, we'll have to do that regardless of boxes or to get to the car to walk away and make it just.
+Speaker 6 00:12:53
+something like we just run it when they load the cart and then the red message under whichever one.
+Speaker 1 00:12:59
+they need to go back to and split uh yeah there should be the left. Yeah, I was curious to talk about this when you guys bought solutions for this.
+Speaker 1 00:13:31
+So, yes, we do need to split payments in the majority use case. We do have to indicate the amount we're putting in each of those, unfortunately. That's a financial business requirement. We obviously have to make sure that the amounts add up to the total amount. I think there are different ways that we, the way I've done it,
+Speaker 1 00:14:01
+one is what you enter it for the first one and it automatically comes for you. The one is you put in whatever you want. I'm curious if you guys have this to the maximum. Not necessarily. So we just keep splitting it if we have to? Yeah. Again, I don't foresee many people ever doing more than two, but there is...
+Speaker 6 00:14:25
+We don't have to check the numbers if they split between two credit cards. 
+Speaker 1 00:14:37
+do we? No. They only care about the amount. So again, I would be very surprised if there's three, but there's some business requirements. I think that we'll end up...
+Speaker 1 00:15:25
+We'll probably just have it at a half, like enter it and have it at a half. You can probably check out on the front end. You guys can probably double check those. An error state on the bottom that's like, you know, totals is not equal.
+Speaker 5 00:15:41
+Yeah, I think that's written in.
+Speaker 1 00:15:47
+I mean, as a person, you're probably showing off, like, if you're splitting between cache and card, you know how much cache you have, right? Right, yeah. So it's like, I'm going to type in this much. I like to make sure, you know, they're jamming, tapping, or typing. Iteration three, you can imagine all like, auto, add rest, or whatever. You can make that better, but I feel like it's pretty tight. Front and back, it shouldn't be too complicated.
+Speaker 2 00:16:13
+I guess I have another question, but it kind of moves into the print part. So, like, we're currently, we have, like, when they're creating a credential, we have, like, a pending state, basically, in CICS. And what we're thinking is that, you know, this Verify Me to Me button here, like, when they click that, that's when it actually creates the credential in IDLS because we need those, that information for the next page. I was wondering, like, when they get to the next page and they hit Print Credentials, that it's supposed to send it to IDEMIA, is there any reason to keep around the crunch application at that point, or it doesn't even delete at that point?
+Speaker 2 00:16:46
+Well, I mean, I guess if it fails, we'd probably want to keep it. But other than that, like, if everything, if it's printed, like, it's not, like, you know, transferred, we're going to keep the transfer? Yeah, no, I think we would just basically credential it, and they'd just have it.
+Speaker 1 00:17:06
+Yeah. Upload it after you've got that. Yeah, As you credential information, yes, no, I don't if there's an issue with print they can print from the view customer screen. Yeah, Haven't built this flow yet But in those three dots where that is in that will be what's called photo retake.
+Speaker 1 00:17:41
+Which is actually clicking that button just sends information off to it So that's when if they get to that point and something does fail they do You would do that off the credential Okay.
+Speaker 1 00:18:15
+Cancel and I don't know if we need those. Yeah, we're doing verifying to pay down there. I think that's yeah No, we shouldn't be there supposed to add a comment. This is like where people are looking. That'd be nice to track. Yeah here. Yeah.
+Speaker 3 00:18:50
+Action or right.
+Speaker 1 00:19:08
+I'm thinking of you can find more. Or is the idea that like all flows, like you single pass, end up in car? You see what I'm asking? Yeah. Yet, when we get the field.
+Speaker 1 00:19:40
+So there, I do. So we don't want to solve the problem now. Correct. But there is going to be a concept that we want to eventually think of is, you know, if you've gone through your credential and your registration, having some sort of like, hey, by the way, like. Buy more. Yeah, exactly.
+Speaker 2 00:20:03
+We did that, we wrote that into the beginning of the flow for this stuff, like if you have a, if you're doing an upgrade, and it's like, oh, you're actually about to expire, do you want to add renewal too? So we have that beginning.
+Speaker 1 00:20:21
+Yeah, once we get the vehicles, there will be some level of trying to, I'm looking at this and I wasn't sure if I'm going to appear, is there something else that you have to do? On the override, do we have to audit something separately? And this is like, we also not knowing what our general user activity audit situation is.
+Speaker 1 00:21:03
+Do you need to know that Susie Clerk A is the one that did the override? Is there a separate track we need, or do we have a system that should be logged somewhere. 
+Speaker 2 00:21:17
+I think we talked about this earlier. I think we thought there was going to be an active e-log. I think they online probably will add it during that. We'll have the endpoint, obviously, for CART to actually add the override, so it should be easy to also add it.
+Speaker 6 00:21:30
+Because there's also an override reason. Right.
+Speaker 1 00:21:40
+And we're for, not for UAT, but for MVP, do we have a concept of, like for this customer, what's my transaction history? Yeah, there's an active. So maybe that would be an old company, and eventually we're going to serve those. Yeah, we're going to need to do that for activity. I think we could do it. I've already had to argue things on the bubble of both wanting other things.
+Speaker 1 00:22:11
+What is defined in phase one and defined in phase one? That's to be played. Is there a permissions thing with override or anything? I'm not sure. Not right now. I'm not requesting any permissions.
+Speaker 6 00:22:31
+How will the override show up? So there's issue fee, processing fee, and somewhere I'm guessing we're having the override. Is the override going to replace the line? It would go underneath. Yeah, there was.
+Speaker 1 00:22:54
+We override a specific transaction and then you probably want some. I think most of the overrides are going to be 100% off.
+Speaker 3 00:23:18
+You have an exception for some report. We screwed up. Some of you guys got us for free.
+Speaker 1 00:23:23
+I thought you were going to win. I remember saying two, right? That probably makes... It would probably be great.
+Speaker 1 00:23:57
+Like, what do you overwrite it to? Yeah, because the overwrite is setting, you're not subtracting the amount. So this was originally $60, $55, to write it to zero, I would just write in what I want it to, and then overwrite. I want to overwrite the actual amount, not like, hey, take $10 off. If you're only taking $10 off, then the overwrite should be $55.
+Speaker 1 00:24:41
+Or, I guess it could be for update or print. Before you get to cart, is there like a, like do you have like a summary? Yeah. Would you, is that like what you want to show? What was the question, the summary of what you inputted data was?
+Speaker 1 00:25:15
+Yeah. Or like, if I'm on this page, you want me to like double check, is there a way to read from you the data you have? Do you have anything else from the front end. 
+Speaker 6 00:25:40
+Not bad with that. What I'm saying for the front end is, on the print screen, it says the only required action is to press that SOS button or something. We can do that, right? We've done that in... We've done that in VITAS, right, with the view evidence, like we have to make sure they click on.
+Speaker 1 00:25:59
+Yeah, yeah, so I was just looking at checkout, or did we want to talk about the print page. 
+Speaker 3 00:26:06
+Yeah, if you guys are good with checkout.
+Speaker 1 00:26:12
+At least it wasn't there yet. There was a line about if they opt in the voter registration, they have to complete the voter registration. Currently we're doing that sort of at least, like you have to open the nomination, or you move it.
+Speaker 2 00:26:37
+Yeah, just because they won't have their driver's license ID yet. So we'll have to have it taken to update in step two to remove that. 364 epic rolling. So we've already built it. Yes. We just have to move it somewhere else.
+Speaker 1 00:27:03
+The print model, it says use the VTOS one. I don't know if it was similar to the VTOS one, but, like the VTOS one. I don't remember the VTOS one. I have the change location model or something I kind of did before we started. Okay. It would just be this, but it's safe. Yeah. As long as it does. Yeah. As long as it doesn't work. Okay. Yeah. As long as they can select the printer.
+Speaker 1 00:28:21
+So it would be selectable, but there's only one option. It's pre-selected. It's selected, but you can't select it, but it's not. You can click it and open it.
+Speaker 6 00:29:06
+We're listing all of the document type things checked out, it's like document type, or it's like renewal of credentials, upgrade and downgrade, do we want to do, yeah, like upgrade to CDL.
+Speaker 3 00:29:29
+or something instead of upgrade up, yeah, well, yeah, I guess, right, yeah, CLP to CDL, upgrade.
+Speaker 1 00:29:43
+up, yeah, we're having to do that. So then you don't have to put it up to when you don't need to use it. That would be great. Thank you. What was the translation? We do not need that.
+Speaker 2 00:30:07
+I've got another question, Tony. If you can go to the Figma to the right. There, yeah. So we were thinking at this stage they would already have the credential created in IDLS. I'm curious what the cancel button is used for here. If they can even cancel this below what the state would go to. So they will get out of this page. This is like, you know, they've already paid for it. Everything is done except for printing.
+Speaker 2 00:30:37
+Yeah, I can't imagine.
+Speaker 1 00:30:41
+Should they even be allowed to leave this page. 
+Speaker 3 00:30:47
+Not allowed to. Yeah, well, I mean, they can do a lot of things. I guess what would happen is they've already paid what would happen, browser-wise.
+Speaker 1 00:30:58
+If they click away, it just says... Yeah, they can just send them like that. Yeah, you actually have a browser, so it can do that. Like, if they click on the home page or the navigation or something, that's not...
+Speaker 5 00:31:13
+The alert, the actual browser alert. The old school, like, you're about to close your tab, you know. Warning, warning. What would happen if they already paid for it, but they didn't. 
+Speaker 1 00:31:26
+They would just go to the... Okay, that's true, yeah.
+Speaker 5 00:31:30
+All right.
+Speaker 1 00:31:31
+There's nothing. If they exited from this, it's not like they can't.
+Speaker 2 00:31:36
+Sorry, we're not printing it. We might need, like, something on the photo retake then to make sure that they have the uploaded, signed application documents. Because that wouldn't necessarily be a given if they...
+Speaker 6 00:31:47
+So I was going to say, I kept saying the website and the documents. They could do that from the view page, I'm assuming.
+Speaker 1 00:31:53
+Okay, so here's the website. Like, you can't check stupid, right? Like, if they're going to do things, like, we can't handle them. So there's a level of the analyst, make sure that I don't want to add a bunch of pages. I just want it to send. So there's going to be a documents tab. They can always go in and add a new document.
+Speaker 1 00:32:25
+So if they, for some reason, closed their browser, then they would just go in and they can go in and add a document. Be wary of too many. Recoverability versus. ensuring that these things happen in this order like assume that it's not to some degree and make sure that they're not completely locked out and put this stuff give them a way to set themselves.
+Speaker 6 00:33:02
+that's the thing when you build them and deploy it's like they work they do things in the application you don't even expect yeah next thing you know you have a thousand duplicate wonders.
+Speaker 1 00:33:35
+i don't have any printing. off like actually what's the what's the time yeah the next day we have to talk to them about what they have set up or have to set up because they can always so that i advertise it say.
+Speaker 1 00:34:22
+probably which is where we're trying to do like the end but it has to be in the.
+Speaker 6 00:34:33
+mbt like initial release um how much time like.
+Speaker 1 00:34:44
+When would you want to start to be able to. 
+Speaker 6 00:34:50
+It depends on when we're, if we're doing it for UAT phase two or if it's just April-ish. It's never too early to start this. Yeah. Because there'll be some work on their side, too, that they'll need to set up.
+Speaker 1 00:35:10
+I would say let's plan. We'll be down there if you want to go in so that you can tell us definitely. Yeah. I think we need to keep the GoCast MVP, you know, like, because it's not.
+Speaker 1 00:35:42
+It's not going to stop them. It's not a blocker.
+Speaker 5 00:35:43
+They'll still carry way too much.
+Speaker 1 00:35:45
+Yeah.
+Speaker 5 00:35:45
+It's just not a great way to...
+Speaker 1 00:35:46
+So, I'm... Anything else. 
+Speaker 6 00:36:06
+I have this friend. I mean, it's not needed for phase one. Right.
+Speaker 1 00:36:22
+Do we consider this an integration? Yeah. Yes. And this is something I need to talk to Isaac about. But...
+Speaker 3 00:36:31
+Because I think he's... Yeah, so if it's as simple as making sure we know what our payload is to send that, I think it wouldn't be... Okay, yeah, yeah, they've already done the work. Yeah, I know. He's definitely started the work. I'm pretty sure he's...
+Speaker 1 00:36:52
+Yes? Yeah, I think at the end of the day, the more they can test the UAT phase, the easier the subsequent UAT phases are going to be. So if they can't test all the way to seating, even if it doesn't print... So they do have a test print workstation, right, Damia, that they can actually print test cards. If you don't get all the way to that point, it's a day, but it would be nice to check the payload.
+Speaker 1 00:37:28
+Like, okay, if this would have printed, it would have printed the correct... What can we get as far as we can after I realize I didn't add the line that we have to send them to after.
+Speaker 6 00:38:02
+Yeah, we got tickets to track that either assigned to carry.
+Speaker 6 00:38:49
+It's going to be pretty bare bones, right? Yes, very simple.
+Speaker 1 00:39:06
+Exact matches and fuzzy? Eventually, probably fuzzy. And multiple search parameters, all that stuff. So they're just going to have to keep track of the searches and basics.
+Speaker 1 00:39:38
+Do we talk about searching for new issuances where there is no customer record yet? Yeah, so if they save, that's part of the search function.
+Speaker 5 00:39:50
+That's part of the save button, which we have in the flows that have any function to it yet. That'll be part of the search, too.
+Speaker 1 00:39:58
+Did we decide what's creating the customers, though. 
+Speaker 3 00:40:02
+It's after we click verify and continue checkout page, right? Yeah, after they've paid.
+Speaker 6 00:40:10
+Yeah. After they've paid and they go to...
+Speaker 1 00:40:12
+After they've paid and they're playing the customer. Because I remember we talked about that.
+Speaker 6 00:40:21
+Yeah, we're trying to avoid that.
+Speaker 1 00:40:23
+So, yeah, we will need a way to search.
+Speaker 6 00:40:28
+Yeah, we'll be able to. Yeah. Yeah, I'm linking their SSN to, like, the session that they have for issuance to be able to search for that. Probably there will need to be, like, it tells them what, if this is, like, a real customer or you're going to the view page or you're doing a screen.
+Speaker 1 00:40:49
+Yeah, so it's clear. I don't know how, but yeah, we do that now, and the only way they can... Sometimes there's nothing, so it kind of depends on where it was created.
+Speaker 1 00:41:32
+Yeah, you just don't want to do that to the only way that they can know. Do we expect NBL, I would say, the other ones that just go straight to complete, create, just to meet?
+Speaker 1 00:42:06
+I don't even know.
+Speaker 6 00:42:08
+Obviously, they're not paying for anything. They're not printing it. No, right. They don't need a wet sign or anything.
+Speaker 2 00:42:15
+Done internally with these records. Will the button say something different than, like, at the heart? Yeah.
+Speaker 3 00:42:24
+I think we have to update those ticket kits for that.
+Speaker 6 00:42:31
+I think so. How are you guys doing? Yeah, we're just going to unlock. You guys are not actually creating that right now? Yeah.
+Speaker 3 00:42:50
+So do you need, do you need a ticket. 
+Speaker 6 00:42:56
+Yeah, yeah, I would maybe throw it in that generic epic. Okay. I'm sure Babi will catch it eventually. I don't want to. She's already caught it.
+Speaker 5 00:43:22
+Sure. For now. Feeling the confidence. The epic part three, sorry, which epic are you talking about? Where are Babi's designs? Where she lives? Oh, everywhere, always. Well, right. You said the generic epic. Is that issue part three? Is she talking about it. 
+Speaker 3 00:43:41
+a rolling updates changes to previous tickets epic it's got 164 is the number got it that's cool so it's any random view or issuance yeah that's what we mentioned media updates that, i've got it at a medium priority but tag the individual stories in there that need to be okay cool that's high priority anything else anybody else have concerns.
+Speaker 5 00:44:20
+i do have a quick question about sources of truth here so uh i'm looking at it i need less confluence there's a thing uh then we have the jira ethics which have a story which has been appropriate back end i'm looking at all those epics from the list that you have is there anything that i missed that i should know about that should be in my homework daily bread, resources of truth. I don't think so. Great little main ones. Okay, cool. Great.
+Speaker 3 00:44:52
+Okay, thanks everybody. Great. I gave you your picture. Question for you. Question for me. What role are you guys? Front end. Back end or back end? They're front end. You guys are the front end. No, you guys are the back end. Yeah, I was like, the questions were like, intermediate. I was like, all right, I can. Yeah, I don't know. Robert. I don't know if, uh, Brian.
+Speaker 1 00:45:25
+I don't know.
+Speaker 4 00:45:34
+Good stuff. Question. Did you. What level did you create? what level did you create like was that uh epic and then
+Summary: 
+> Date & Time: 2026-01-22 09:06:26
+> Location: [Insert Location]
+> Attendees: [Speaker 1] [Speaker 2] [Speaker 3] [Speaker 5] [Speaker 6] Tyler
+## 1. Cart Edit Flow and Cancel Behavior
+### Conclusion
+Editing an item already in the cart should remove it from the cart and take the user back through the full issuance flow. Users must be clearly warned that editing will remove the item from the cart, and canceling during the edit flow should cancel the edit and not change the cart unless the item was already removed; clear user feedback is required to avoid confusion.
+### Plan
+- [ ] Implement behavior where clicking Edit removes the item from the cart and restarts the issuance flow, with a warning to the user — Speaker 6 Speaker 2 Speaker 1
+- [ ] Add clear cancel behavior and messaging to ensure users understand whether changes are applied or discarded — Speaker 1 Speaker 6
+- [ ] Display selected customer context prominently (e.g., name at top bar) across cart and related screens — Speaker 6 Speaker 1
+- [ ] Validate items left in cart over multiple days (e.g., expirations, verification requirements) upon cart load and show inline warnings — Speaker 6 Speaker 1
+### Discussion Points
+1. [Speaker 2]: The current issuance flow saves at each step, making discard-on-cancel during edit tricky; rework is needed to avoid unintended saves.
+   - “When you edit a credential that's in the cart… if you click cancel, changes are discarded… currently every time you pass a step, it saves a credential.”
+2. [Speaker 6]: Removing the item from cart upon edit and re-running the full flow simplifies logic and is preferable.
+3. [Speaker 1]: Users must receive clear feedback (warning) that editing removes from cart; cancel should not silently affect cart.
+   - “Like mobile when you hit edit: ‘this is going to remove this from the cart. Edit, restart.’”
+4. [Speaker 6]: Cart access and customer selection shell behavior should be consistent; cart should show “no customer selected” if none.
+5. [Speaker 6]: Need validation for items left in cart for days (expiration/verification); not necessarily required for UAT but rules should be defined.
+## 2. Split Payments and Amount Validation
+### Conclusion
+Split payments must allow allocation across multiple payment methods (commonly two), capturing explicit amounts per split to ensure totals equal the full amount. Front end should enforce numeric checks and error states when totals don’t match; back end only needs amounts, not card-specific split validations.
+### Plan
+- [ ] Implement split payment entry with automatic remainder calculation option and error state when totals ≠ total amount — Speaker 1 Speaker 5
+- [ ] Support flexible number of splits (commonly two, but allow more as needed per business requirements) — Speaker 1 Speaker 6
+### Discussion Points
+1. [Speaker 1]: Split payments are required; amounts per item must add to the total; common case is two splits.
+   - “We do have to indicate the amount… make sure the amounts add up to the total amount… I don’t foresee many… more than two.”
+2. [Speaker 6]: No need to check numbers per credit card beyond amount; business cares about total amounts only.
+3. [Speaker 5]: Error state and validation are already contemplated (“written in”).
+4. [Speaker 1]: Front end can provide auto-fill remainder and manual entry; future iterations can improve UX (e.g., auto remainder).
+## 3. Printing Flow, Photo Retake, and Cancel on Print Page
+### Conclusion
+Credentials are created in IDLS when “Verify Me to Me” is clicked; if printing fails, records should be retained for recovery. The print page should discourage leaving after payment using browser alerts; photo retake should ensure required documents (e.g., signed application) are present, with recovery via Documents tab on the view page.
+### Plan
+- [ ] Create credentials in IDLS at “Verify Me to Me”; retain application if print fails; enable reprint from view customer screen — Speaker 2 Speaker 1
+- [ ] Add browser-level leave warnings on the print page (after payment) to reduce premature navigation away — Speaker 3 Speaker 5
+- [ ] Ensure photo retake flow checks presence of uploaded, signed application documents; allow adding documents via Documents tab if missing — Speaker 2 Speaker 6 Speaker 1
+- [ ] Implement printer selection modal similar to VTOS, pre-selected when only one printer is available — Speaker 1
+### Discussion Points
+1. [Speaker 2]: After “Verify Me to Me,” credentials must exist in IDLS before printing; if printed, the pending application in CICS can be deleted unless printing fails.
+2. [Speaker 1]: If print fails, reprint from view customer screen; photo retake triggers necessary data sends.
+3. [Speaker 3]: Users should not be allowed to easily leave the print page post-payment; use browser warnings.
+4. [Speaker 5]: Browser alerts (classic “about to close your tab”) are acceptable.
+5. [Speaker 2]: Photo retake may need to enforce uploaded signed application documents; not guaranteed otherwise.
+6. [Speaker 1]: Favor recoverability; avoid over-constraining sequence—provide ways to fix missing documents later via Documents tab.
+## 4. Overrides: Tracking, Permissions, and Reporting
+### Conclusion
+Overrides should set explicit amounts (e.g., set to 0 for 100% off) and appear underneath the fee lines. Override actions must be logged with reason and actor; permissions are not required for MVP/UAT but activity tracking is needed, with future inclusion in transaction history and reporting.
+### Plan
+- [ ] Implement override logging with reason and actor; add CART endpoint support and activity log integration — Speaker 2 Speaker 6
+- [ ] Display overrides under fee lines (issue fee, processing fee), reflecting explicit new amounts — Speaker 6 Speaker 1
+- [ ] Plan for transaction history and activity auditing for customers in MVP (not necessarily UAT) — Speaker 1 Speaker 2
+### Discussion Points
+1. [Speaker 6]: Overrides should include a reason and be logged.
+2. [Speaker 2]: Activity log and endpoint will support adding override events.
+3. [Speaker 1]: Override sets the new amount, not a delta; e.g., $60 → overwrite $0 for full waiver; $55 for partial.
+4. [Speaker 6]: Override appears under the respective fee lines.
+5. [Speaker 1]: Permissions for overrides not required for MVP/UAT; transaction activity history needed eventually.
+## 5. Checkout Page Content (Voter Registration, Printer Modal, Document Types)
+### Conclusion
+Voter registration opt-in must be completed but its placement moves from step 2 due to dependency on license issuance; printer selection modal should mirror VTOS and allow selection (even if single option); document/type labeling should be explicit (e.g., CLP to CDL).
+### Plan
+- [ ] Move voter registration completion from step 2 to appropriate post-issuance point; update flow tickets accordingly — Speaker 2 Speaker 1
+- [ ] Implement VTOS-like printer modal with selectable/pre-selected printer — Speaker 1
+- [ ] Standardize document type labels (e.g., “CLP to CDL upgrade”) in checkout/print summaries — Speaker 6 Speaker 3
+### Discussion Points
+1. [Speaker 2]: Voter registration cannot be in step 2; needs updating due to ID dependency.
+2. [Speaker 1]: Printer modal should be similar to VTOS; allow selecting printers; single option pre-selected.
+3. [Speaker 6]: Document types should be explicit (renewal, upgrade/downgrade, e.g., CLP to CDL).
+4. [Speaker 3]: Agrees on explicit upgrade labeling.
+## 6. Integration with IDEMIA (Printing Workstation) and UAT Scope
+### Conclusion
+Integration is considered part of MVP but not a blocker; begin early coordination with IDEMIA to enable test printing payload validation during UAT. Even if physical print isn’t available, payload correctness should be verifiable to streamline subsequent UAT phases.
+### Plan
+- [ ] Coordinate with IDEMIA on payload specification and test print workstation setup; begin as early as possible (April-ish mentioned for UAT phase 2) — Speaker 6 Speaker 1
+- [ ] Track integration tasks in tickets, potentially assigned to Carrie; confirm Isaac’s ongoing work and payload details — Speaker 6 Speaker 1 Speaker 3
+### Discussion Points
+1. [Speaker 1]: Earlier testing improves later UAT phases; aim to validate payload even without full print.
+2. [Speaker 6]: Timing depends on UAT phase 2 or “April-ish”; start early; work needed on IDEMIA’s side too.
+3. [Speaker 3]: Isaac has started work; payload understanding is key.
+4. [Speaker 6]: Tickets exist and may be assigned to Carrie; integration expected to be bare-bones initially.
+## 7. Search, Customer Creation Timing, and New Issuances Without Records
+### Conclusion
+Search must support new issuances where no customer record exists yet; customer creation occurs after payment. Link SSN with issuance session for search; clearly direct users to either view page or screening based on whether a real customer record exists.
+### Plan
+- [ ] Implement search that can locate issuance sessions (without customer records) and differentiate outcomes (view vs. screening) — Speaker 6 Speaker 1
+- [ ] Create customers after payment and connect issuance to customer record — Speaker 3 Speaker 6
+- [ ] Define button/label behavior for internal records that do not require payment/printing (e.g., NBL-like flows) and update tickets accordingly — Speaker 2 Speaker 3 Speaker 6
+### Discussion Points
+1. [Speaker 6]: Link SSN to issuance session to enable search before customer creation.
+2. [Speaker 3]: Customer is created after verify/continue on checkout (after payment).
+3. [Speaker 2]: Buttons may need different labels for internal records that skip cart; update tickets.
+4. [Speaker 1]: Clarify flows where some items go straight to completion, no payment/printing.
+## 8. Source of Truth and Ticket/Epic Organization
+### Conclusion
+Primary sources of truth are IDLS Confluence and Jira epics/stories; rolling updates should be tracked under “rolling updates changes to previous tickets” epic (ID 164). Tag individual stories with high priority as needed.
+### Plan
+- [ ] Use Confluence and Jira epics as the main references; track updates in epic 164 and adjust priorities/tags accordingly — Speaker 5 Speaker 3
+- [ ] Add new tickets for front-end/back-end needs (e.g., internal issuance button label changes) under the generic rolling updates epic — Speaker 6 Speaker 3 Speaker 2
+### Discussion Points
+1. [Speaker 5]: Confirmed sources of truth and asked if anything is missing.
+2. [Speaker 3]: Rolling updates epic 164 should capture ongoing changes; tag items with appropriate priority.
+> AI Suggestions
+> AI has identified the following issues that were not concluded in the meeting or lack clear action items; please pay attention:
+> 1. Cart edit flow cancel semantics and user messaging are not fully specified: precisely define when the item is removed, how cancel behaves at each step, and the exact warning copy and UI placement to prevent user confusion and data loss.
+> 2. Validation rules for items left in cart over multiple days remain undefined: document concrete rules (expiration handling, verification re-checks), the timing of validations (on cart load vs. checkout), and the exact error/warning display behavior.
+> 3. Photo retake document requirements are unclear: specify mandatory documents (e.g., signed application), enforcement logic, and fallback recovery steps, including where and how analysts upload missing documents without blocking critical flows.
+> 4. IDEMIA integration timelines and responsibilities need confirmation: align on “April-ish” UAT phase plans, confirm who owns payload specification and test workstation coordination (e.g., Isaac vs. Carrie), and set target dates to ensure test printing payload validation occurs during UAT.
+> 5. Internal issuance flow variations and button/label behavior: define differences for records that bypass cart/payment/printing (e.g., NBL-like flows), update UI labels, and create specific tickets to implement and test these variants to avoid analyst confusion.
