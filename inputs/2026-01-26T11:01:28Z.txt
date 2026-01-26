@@ -1,0 +1,208 @@
+Transcript from2026-01-26T11:01:28Z
+Speaker 1 00:00:00
+So I didn't write down any date notes.
+Speaker 2 00:00:02
+Don't look at it.
+Speaker 1 00:00:07
+Yeah, just going to try to make sure we got tickets queued up and then do that one after that.
+Speaker 2 00:00:14
+That's it. All right, thank you, Jay.
+Speaker 3 00:00:18
+And Lin? I demoed 5.36 earlier, moved it to Code Rebued, and then starting work on 5.55. That's it.
+Speaker 2 00:00:33
+All right, thank you, Lin.
+Speaker 3 00:00:35
+Shreya. 
+Speaker 4 00:00:35
+Yeah, so this was assigned to me today, cart card. I will start looking into it and work on that today. That's it for me.
+Speaker 2 00:00:47
+All right, thank you, Shreya. Adi. 
+Speaker 3 00:00:53
+hey good morning um i've been working on updating verification endpoints and then once i'm done with that i'll continue writing um the function for 509 that's it all right olivia so we were.
+Speaker 2 00:01:11
+talking about the cart epic and i picked up one of the tickets yeah 524 i started it on friday and i'm going to continue it today and have any more discussions that we might need to have about the.
+Speaker 5 00:01:25
+cart right thank you olivia uh neil yeah i got cdo3 done uh ideal 52 there i'll have it ready for review in a minute i'm just waiting for isaac's pr to merge and then i'll be moving over to cdo4 uh got it started just gonna have it working with the combined uh wrap template that's.
+Speaker 6 00:01:53
+And that's, is that the combined clients? Are we, are we trying to get in the combined consumer. 
+Speaker 5 00:02:00
+I don't know if we're going to be able to get that in before. I was going to just try to get the CDO4 done and then maybe after that.
+Speaker 6 00:02:10
+Yeah. Okay. All right. Thanks, Neil. Andrew.
+Speaker 7 00:02:16
+Good morning. Catching up after being out Friday and part of a Thursday. The, you might need to refresh the delete pointer for PDPS is ready for tests. Now that that merged just a little while ago. And then there's other two that are in code with you. Those PRs have been updated so that are ready for another round of reviews. And then I'll continue today with that bottom story.
+Speaker 7 00:02:48
+That's in the function for driver status.
+Speaker 2 00:02:55
+All right, sounds good.
+Speaker 6 00:02:57
+Thanks, Andrew. Isaac.
+Speaker 1 00:03:03
+Hey, I'm doing some code review right now, wrapping up one issue on that def file PR. I'll merge that just to clear everyone else up. And then I am working on some Tyler tech cleanup to do what we can to get something up in that environment that they can test against.
+Speaker 2 00:03:30
+All right, cool. Thank you, Isaac. Let's see.
+Speaker 6 00:03:38
+Jared.
+Speaker 8 00:03:40
+Hey, good morning. Wrapped up changes on 493. That is out for review. That was Friday. So today, I started working on 542. I dummy as. daily queue reset and that's what i'll be focusing on all right thank you jared um martin.
+Speaker 9 00:04:08
+yeah friday i finished up refinement for all the card tickets and took over 510. um there were some discussions about changing the data structure in cics so i'm making some changes there but hopefully have it ready for you shortly and get it merged in either later today or, tomorrow morning to unblock the rest of those card tickets that's about it yeah.
+Speaker 10 00:04:27
+that's good thank you martin uh jimmy hey good morning um started working on the endpoint to fetch the cart i'm talking with jake and win about the contract between the front end and the back end so we'll get that hammered out and then i got a meeting with ian later to discuss fees and then, Meeting with Kevin about those CICS schema updates.
+Speaker 10 00:05:03
+Thank you, Jimmy.
+Speaker 11 00:05:04
+Chris. Morning, guys. So Friday I worked on IDLS 510 and then handed it off to Jimmy. And then today working through IDLS 537. So hopefully you're going to be able to test and write up the PR for it later today.
+Speaker 2 00:05:24
+That's good. Thank you, Chris.
+Speaker 6 00:05:29
+Ryan.
+Speaker 12 00:05:31
+Morning, guys. I was working on 464 last week. We made some progress but went in the wrong direction a little bit. So I'm going to be fixing that up today and then moving back down my list.
+Speaker 6 00:05:43
+Thank you, Ryan. Gian.
+Speaker 13 00:05:47
+Good morning, everyone. So this morning I was continuing going through. More comments that were left on the Datamax ICD, as well as using some validation that Isaac created to make sure that our payloads are made properly. And I'm also finishing up reviewing 5.25 right now.
+Speaker 2 00:06:11
+All right. Thank you, Gio.
+Speaker 6 00:06:13
+For my updates, I'm going to be putting together a canvas in the IDOS channel for AMBA certification, detailing what we need in this last week or two that we've got before we officially start. Then I'll be making tickets for that and working on some of that myself. And that'll be what I'm focused on today. Also, I did get an email back from AMBA about our new FQDNs. So I'm going to continue testing with them to make sure we have full connectivity. And that's it for me.
+Speaker 6 00:06:45
+Let's go to Scott.
+Speaker 14 00:06:49
+Morning. Working on the AMBA certification test. There's quite a few, and they'll need to be refined a little bit further for us to be able to move forward. Waiting on the endpoint for verification steps with Adi, and then waiting for the connectivity for the specs endpoints to function with AMBA's test environment.
+Speaker 2 00:07:14
+All right. Thank you, Scott.
+Speaker 6 00:07:15
+Pavitha.
+Speaker 4 00:07:16
+Hey, team. Good morning. So I mostly closed all the stories for the Vue flow, excluding a few bugs, and then also tested and closed IDLS 472, 473, and 505, which is like updates for the phone number and head color field and also for restrictions. Yeah, that's it from my end.
+Speaker 6 00:07:44
+Thanks, Pavitha. Dan from QA.
+Speaker 15 00:07:48
+yeah morning everyone um hope everyone's staying uh warm and and uh you know uh safe as well with the weather um so had a great sync this morning with tony and the qa team um just got me aligned on card and checkout epic uh gonna be start writing cards test cards for that really soon, um also just uh kind of just keep an eye on things as far as uh we have 19 business days until february 23rd we have that holiday coming up in february so just be mindful of that and everyone's doing great i think we're on pace patrick and i are very confident we'll be ready for that date so.
+Speaker 2 00:08:18
+good work everybody all right thank you dan um tony morning uh friday we had integration sync.
+Speaker 12 00:08:29
+uh idemia stink currently working on a bunch of tickets for amba integrations that's in, idls 533 epic and uh doing a bit of bug triaging as well oh and uh jimmy, Can you include Dan Pastor in that phase meeting with Ian unless you think it doesn't make sense, depending on what you specifically want to talk to Ian about. 
+Speaker 10 00:08:59
+Yeah, I think it's going to be pretty technical, but I can invite product people, too. I don't really know exactly what he wants to go over. OK, so I can have people be optional invitees. OK, appreciate it.
+Speaker 2 00:09:16
+All right. Thank you, Tony.
+Speaker 16 00:09:18
+Nick. Hey, morning, everybody. Wrapping up the requirements for the search and save tickets and then going to be doing a couple stray tickets from conversations that came up talking about card. I think one needs to go in that 364 rolling epic. Um, and possibly one more, but I have to confirm that, but yeah, that's about it for now. Um, yeah.
+Speaker 16 00:09:49
+Any questions about Carter or anything obviously reach out. Thanks.
+Speaker 6 00:09:54
+All right. Thank you, Nick. Uh, Dan from product.
+Speaker 17 00:09:60
+Good morning. Um, I am continuing to work on phase from the product side. I'm kind of getting my thoughts together, getting stuff into a digestible format, hoping to have something for my team to work through, uh, uh, either by the end of this week or early next week. Tony S also asked me to take a look at 44. Um, so I'm giving that a once over. Um, yeah, that's what I've got going on.
+Speaker 2 00:10:26
+All right. Cool. Thank you, Dan. Uh, Tyler. 
+Speaker 18 00:10:30
+welcome to the big stand-up. Hey, good morning, everyone. Can you hear me? Okay. Yep. Cool. Yeah, I just I started lurking around. I'll probably float in and out of these. I think there's a couple of stand ups at different times. So I'm just looking to absorb as much as possible. So I'm sorry, Jen.
+Speaker 19 00:10:56
+Good morning. I'm in the process of recreating the five training modules that were already completed due to some WCAG conformance discrepancies and other factors in our current LMS, which is Absorb. They have a content creation tool in there. And so I'm transferring what I've created into that platform.
+Speaker 6 00:11:19
+Thank you, Jen. Melissa, welcome to IDLS.
+Speaker 20 00:11:24
+Thanks. So I'm taking over for Emily now that she's gone. I met with Abby this morning to try to come up to speed on where everything is design wise. And then I'm also working, I know I need to work on, we're going to move the card button to be more in line with the customer since the header is really global and it's not to, the card is not for the user who is logged in.
+Speaker 20 00:11:54
+So I got to make those updates to put a new button in. And I think that's it that I'm focused on for right now. So if you need any design stuff, send it my way. Thanks.
+Speaker 2 00:12:10
+All right. Thanks, Melissa. And Robert.
+Speaker 21 00:12:15
+All right. Just adds up, Louisiana's out today due to weather. I think they have some ice storms or whatever down there, so they will be unavailable tomorrow. I've been off-site, so I'll be mostly unavailable. I know Friday we talked a little bit about Idemia. Isaac, Jimmy, did you guys get a chance to sync on that item. 
+Speaker 1 00:12:36
+Did me and who get a chance to sync. 
+Speaker 21 00:12:39
+I think you and Jimmy were going to try to connect, yeah.
+Speaker 1 00:12:41
+Yes. Okay, perfect. Cool. Cool. Yeah, I wrote up a ticket. Jimmy's team will work on it.
+Speaker 21 00:12:47
+Sounds good. Yeah, I know that was something we're trying to fit in for UAT. Just looking at the UAT items in a second, kind of what Dan Shaw was saying, it seems like we're in a pretty good, pretty good position for the 223 day. I saw a customer review and issuance are pretty much done, just bugs. And then we just have issuance part two, cartt checkout search, the changes, additions, I guess, bucket that the product team has been contributing to. And I know we were trying to pull in that IDemia component as well, too. So I'm going to kind of shift to how we can kind of more easily track that a bit.
+Speaker 21 00:13:20
+And then also to going towards phase two, because that's going to closely follow, right, as we get into UAT phase one. It's good. Good stuff. And then closely monitoring kind of data as well. I know there's a little bit of a shift in the approach. They're going to look at kind of how are we populating UADAM versus kind of looking at it just from a file standpoint. So it's kind of the first week focusing there. And then obviously we're trying to get ready for AMBA. As you mentioned, Kyle, if there's anything I can do to help there, let me know.
+Speaker 21 00:13:51
+And then from an integration standpoint, trying to get some more kind of movement and traction on that workstream. So lots of different things going on across all the different workstreams. Because another thing I'm working on, and I'll share as soon as I have it, is kind of a better timeline view for everyone. Katie from change management side of change shared their dates as well, too. So I want to give everyone kind of visibility into any of the key client-facing dates. So we're kind of all understanding there and can ask questions if there's any dependencies or anything. So that's it for my side.
+Speaker 6 00:14:22
+All right. Sounds good. Thank you, Robert. Is there anyone else who I either missed or would like to give any other update this morning. 
+Speaker 15 00:14:32
+I have one more thing if I could add.
+Speaker 2 00:14:34
+Sure.
+Speaker 15 00:14:35
+Yeah. So this is my last meeting of the day. So I'm going to finish at home. But if there's any critical meetings or anything like that, I can come down to the office. So other than that, I'm going to study and get ready for a cart checkup.
+Speaker 2 00:14:49
+I imagine the office is pretty lightly attended today.
+Speaker 12 00:14:52
+Yeah. You can probably count them on one hand. Fair. Okay. I'll see you tomorrow.
+Speaker 6 00:15:02
+Very cool. Anything else? All right. Thanks, everybody. Have a great rest of your day. I will see you tomorrow.
+Speaker 21 00:15:11
+Thank you.
+Summary: 
+> Date: 2026-01-26 11:01:28
+> Location: [Insert Location]
+> Participants: [Speaker 1] [Speaker 2] [Speaker 3] [Speaker 4] [Speaker 5] [Speaker 6] [Speaker 7] [Speaker 8] [Speaker 9] [Speaker 10] [Speaker 11] [Speaker 12] [Speaker 13] [Speaker 14] [Speaker 15] [Speaker 16] [Speaker 17] [Tyler] [Speaker 19] [Speaker 20] [Speaker 21]
+## Meeting Notes
+### Team Member Updates
+- **Jay ([Speaker 1])**: Will ensure tickets are queued up.
+- **Lin ([Speaker 3])**: Demoed 5.36 and moved it to Code Review; starting work on 5.55.
+- **Shreya ([Speaker 4])**: Will start working on the "cart card" ticket assigned today.
+- **Adi ([Speaker 3])**: Updating verification endpoints; will then continue writing a function for 509.
+- **Olivia ([Speaker 2])**: Continuing work on ticket 524 for the cart epic, started Friday.
+- **Neil ([Speaker 5])**: CDO3 is done; IDL 52 will be ready for review after a PR merge; moving to CDO4.
+- **Andrew ([Speaker 7])**: Delete pointer for PDPS is ready for tests; two other PRs ready for another review round; will continue with driver status function story.
+- **Isaac ([Speaker 1])**: Doing code review; will merge a def file PR to unblock others; also working on Tyler tech cleanup.
+- **Jared ([Speaker 8])**: Wrapped up changes on 493 (out for review); started on 542 (daily queue reset).
+- **Martin ([Speaker 9])**: Finished refinement for card tickets; took over 510; making CICS data structure changes, aiming to merge today or tomorrow.
+- **Jimmy ([Speaker 10])**: Started on endpoint to fetch the cart; discussing the contract with Jake and Win; meetings scheduled with Ian about fees and Kevin about CICS schema updates.
+- **Chris ([Speaker 11])**: Handed off IDLS 510 to Jimmy on Friday; working on IDLS 537 today and expects a PR.
+- **Ryan ([Speaker 12])**: Working on fixing progress on 464 from last week.
+- **Gian ([Speaker 13])**: Reviewing comments on the Datamax ICD; using validation to check payloads; finishing review of 5.25.
+- **Scott ([Speaker 14])**: Working on AMBA certification tests; awaiting endpoint for verification steps from Adi and connectivity for specs endpoints.
+- **Pavitha ([Speaker 4])**: Closed most stories for the Vue flow except a few bugs; tested and closed IDLS 472, 473, and 505.
+- **Nick ([Speaker 16])**: Wrapping up requirements for search and save tickets; working on a couple of stray cart tickets.
+- **Jen ([Speaker 19])**: Recreating five completed training modules in Absorb LMS due to WCAG conformance issues.
+- **Melissa ([Speaker 20])**: Taking over for Emily; will move the card button to align more with the customer profile.
+- **Robert ([Speaker 21])**: Louisiana team is out due to weather; will be mostly unavailable tomorrow; confirmed Isaac and Jimmy synced on the Idemia item; will track UAT items and create a better timeline view for the team.
+### QA Updates
+- **Dan from QA ([Speaker 15])**:
+  - Aligned with Tony and the QA team on the cart and checkout epic.
+  - Will start writing test cards for the cart soon.
+  - Noted there are 19 business days until February 23rd, considering the upcoming holiday.
+- **Tony ([Speaker 12])**:
+  - Working on tickets for AMBA integrations within the IDLS 533 epic.
+  - Doing bug triaging.
+  - Asked Jimmy to include Dan Pastor in the fees meeting with Ian.
+### Product Updates
+- **Dan from Product ([Speaker 17])**:
+  - Continuing to work on the product side of "phase".
+  - Aims to have something digestible for the team by end of this week or early next week.
+  - Reviewing ticket 44 at Tony S's request.
+### Project & Integration Updates
+- **Kyle ([Speaker 6])**:
+  - Will create a canvas in the IDOS channel for AMBA certification.
+  - Will create and work on related tickets.
+  - Received an email from AMBA about new FQDNs; will continue testing connectivity.
+- **Robert ([Speaker 21])**:
+  - UAT for customer review and issuance is nearly done, with just bugs remaining.
+  - Focus will shift to tracking items for the 2/23 date, including cart, checkout, search, and the Idemia component.
+  - Will also monitor the data workstream and the integration workstream.
+## Next Arrangements
+- [ ] **Jay**: Queue up tickets.
+- [ ] **Isaac**: Merge the def file PR to unblock the team.
+- [ ] **Martin**: Merge changes for ticket 510 to unblock other card tickets.
+- [ ] **Shreya**: Start work on the "cart card" ticket.
+- [ ] **Jimmy**: Include Dan Pastor in the fees meeting with Ian; continue cart endpoint work and contract discussions with Jake and Win.
+- [ ] **Kyle**: Create a canvas for AMBA certification and related tickets; continue testing AMBA FQDN connectivity.
+- [ ] **Dan (QA)**: Begin writing test cards for the cart and checkout epic.
+- [ ] **Robert**: Track UAT items and create/share a better team timeline view for 2/23 scope.
+- [ ] **Melissa**: Update UI to move the card button to align with the customer profile.
+## AI Suggestions
+> **AI Suggestions**
+> AI has identified the following issues that were not concluded in the meeting or lack clear action items; please pay attention:
+> 1. Neil mentioned a "combined consumer" but was unsure if it could be integrated before CDO4 is completed. The priority and timeline for this integration are not defined.
+> 2. Scott is waiting on an endpoint from Adi and connectivity for AMBA's test environment. The timeline for these dependencies to be resolved is unclear.
+> 3. Robert mentioned a shift in the data approach to focus on populating UADAM. The specific impact of this shift on the team's work was not detailed.
