@@ -1,0 +1,191 @@
+Transcript from2026-01-26T09:18:21Z
+Speaker 1 00:00:02
+Right. Perfect. Well, we're ready to kick off our next in the line of our product showcases. So last week we covered ETRS and Clearinghouse, and we're continuing with comms and ELT today. So handing it over to Christine to kick us off.
+Speaker 2 00:00:24
+Yeah. So what we want to do is just do a very quick recap of what was said last week before we go into the products and before we actually get into the Q&A. And like we said last time, we did schedule an hour, but we might not need a whole thing. You might not have tons of questions. So we will see how far we go. So let's do a quick recap. Last week, like Blaise said, we talked about ETRS and Clearinghouse, and that explains how we get data and transactions into the CHAMP ecosystem.
+Speaker 2 00:00:57
+And today, in session two, we're going to talk about ELTS and comms, which is going to explain how this data flows to the lenders, but also how we internally manage the data that is in our system. So just a little recap. Last week, we saw this picture Tyler described to us and explained how when Charles is buying a car, it's very tedious, it's a very long process, there's a lot of steps that the title and registration has to go through before Charles actually get his title in his hand.
+Speaker 2 00:01:32
+And what we are doing here at CHAMP and what our product is all about is to streamline this process and move away from a paper-based process. into a more digital process. And also, we want to do this in a secure way because the papers lost, whatever. And as Tyler explained last time, the title holds the ownership so if it gets lost, it's lost, you probably have to order a new one but it's still, then you're going to have duplicates out there. So we want to limit that issue by moving to more digital space. So let's talk about now how we internally are managing all the data. And we're going to talk about comms, and I just want to say I've been the product owner for comms for two weeks.
+Speaker 2 00:02:16
+I have another expert here that's going to be answering all your questions. So what comms is, it's a client operations management systems that will be used by our client ops team here internally. Okay. So what this system is going to do is facilitate processes between different products and to be able to streamline the processes we do have. So, why comms is important as as we grow and you can see this pictures, we're going to have data from all over the US, and in the future hopefully internationally, but right now we don't have a system that can manage data and that where we can easy.
+Speaker 2 00:03:00
+We need better easy way manipulate the data if needed, like update number whatever it might be. So that's what we want to accomplish with comms. So, since I finished off last week by talking about clearing house, I want to start about explaining comms and clearing house and then once blaze has talked about ELTS, he's going to talk about comms and how comms are going to help facilitate the processes in ELTS. So what comms is for clearing house, it's a compliance review. And some of you might think, well, we are kind of not really doing compliance review today not really.
+Speaker 2 00:03:39
+But something I did. Tell you about clearing house last week is that as 10, That is actually, originally the thought was to use S10 as a compliance review tool. So when you do compliance review, I just want to tell that to compliance review is that you want to make sure that the data is accurate. So we're taking in data, both from the submitted application, we get all that information from the applicant, from the customer, but then we're also validating that data from like.
+Speaker 2 00:04:12
+an Invitas or documentation that they're sending in. And currently, or what S10 was used for, was this. So imagine if you're working in the client ops team and you have to sit and click in on every piece of evidence and you need to go back and forth between the different tabs and everything. It's very tedious. So what we want to do is streamline this process and that's where comms come in. And instead of having the previous interface, this is going to be the new compliance review interface that they're going to work on.
+Speaker 2 00:04:43
+So as you can see, it's very easy to see here right away, is all the information accurate? Like you can see right away here that a year is the wrong year. So something is obviously up. Why is it the wrong year? And this, for example, is coming, the discrepancy here is coming back from NVIDIA. Before, you had to sit and go back and forth, and it was very tedious and long process. It was very inefficient. And as our volumes and all our transactions increase, so does our processes need to be.
+Speaker 2 00:05:18
+So it's the same as here. the evidence screen previously you had to click back and forth and now you can just ECC web was submitted and what is the discrepancies what is not on this document that they're claiming to be for example the title well obviously on this one nothing is the same because it's not a title so our system can very fast and very easy find those discrepancies so, something so now you have seen a very overflow of what comms will do but it's still very hard.
+Speaker 2 00:05:52
+to understand how the data flows because you heard about clearinghouse last week you have heard about s10 and it took me even me a long time to understand where does s10 come in like what is clearinghouse so i kind of want to explain the workflow outcomes so you can ECC, where the data flows where it's coming in from and where it's going, So the customer is submitting their application. This is sent into S10. And S10 is going to be our database where we store all this information.
+Speaker 2 00:06:23
+This is going to get sent into Cade, which you're going to hear more about next week. Cade is doing its analysis on all the data, goes back into S10 and into calls. And this is the interface that you just saw. This is where all the data is displayed. And our client ops team, and hopefully in the future, Cade can make an automatic recommendation. And that gets sent into Vitas and DMV. And when they do their rejection or exception, it gets back into S10 and then forwarding in back to the user.
+Speaker 2 00:06:58
+So that's kind of like the data flow, how the data is going to flow between the different products. And I myself am a very visual person. I need a flow to kind of understand it all. Otherwise. It's going to get very messy, very fast. But I'm going to actually going to hand it over now to blade. Oh, no, the future. I almost forgot about the future about that. Yeah, I know. Yeah. So, like I said, currently, comms have been built for clearing house and the LTS, but we also want to build it out for DTMS.
+Speaker 2 00:07:33
+And we also want to use comms as a training tool for Cade, because Cade can't really do anything unless we teach it what to do. So we want Cade to analyze all the data that's coming in and be able to help DMV do recommendations. But you're going to hear more about these products next week. So I'm not really going to talk about those. And now I'm going to hand it over to Blase.
+Speaker 1 00:07:59
+All right. So yeah, we're going to talk about LTS and then talk about how comms. Kind of ties in the LTS. So just abbreviation, it's our electronic lien and title system. Just a little background here. So first, what is a lien? A lien is just an indication on a title, meaning that a lender gave money to someone to purchase the asset which the title is associated with.
+Speaker 1 00:08:32
+So in this case, it's like a bank gave money to someone to buy a car. So the state titling agency puts a lien on that title, meaning the lender, or more accurately, the lien holder, has the right to take possession of that title and the vehicle. if the owner stops paying off that loan. So, yeah, we looked at this slide already today. And this is like on the ERT, the whole dealer side. It's a paper-based process. It's very slow, cumbersome,
+Speaker 1 00:09:04
+chronic data inaccuracies, fraud, you name it. And that's absolutely the same case on the lender side of things, getting the title with the lean-out to, well, whoever needs it. Now, in most states, it's the same case. When a title has a lien on it, the state will actually mail that title with the lien to the lien holder. They'll hold on to that title until the owner has paid off the loan, and then they'll return that title to the state so they can get rid of the old one and issue a clean title with no lien, and then finally mail it to the owner.
+Speaker 1 00:09:45
+Some states do it the other way around, where they'll mail it to the owner with the lien. They still don't have a clean title. They can't just sell the vehicle to someone until that loan's been paid off. And they get that clear title. So again, the paper-based process, it's very cumbersome. And typically, it's just a lien is filed at the time that the title is issued. And then the owner pays off their loan, lender releases. But there's all sorts of other workflows involved, too.
+Speaker 1 00:10:16
+So the paper-based process and offline processes, this can get pretty complicated and very time-consuming. And that's where we come in with ELT. In short, champs the middleman between the state and the banks, a.k.a. the lenders. So this diagram sort of explains that. We have the state on the left, us in the middle. And then up top, there's like a little image of a bank. What that's meant to show is just like those are small lenders.
+Speaker 1 00:10:50
+And because Champ has an interface, a website for these small lenders to go to, to access their electronic record of the title with the lien. And big banks typically go through vendors or third party service providers. They've been doing this for some time. Where, say, the state will mail all these paper titles to the vendors and their data entry team will enter the title and lien data up into their website.
+Speaker 1 00:11:27
+So that way their banks can go on and manage their liens that way. But again, we are now the intermediary between the state and the small banks. but also these large service providers as well. And there's really not that many of them. And when we interface with one of these service providers, that's a single interface, same as we'd kind of do with a bank, except now we have access to thousands of different lenders. So that kind of allows us to facilitate E-Lean transactions.
+Speaker 1 00:11:57
+much more quickly by working with these service providers. And this diagram, I sold it to Tyler, he showed this last week, for kind of where we're trying to get ERT one day. What this is showing here is, say the picture on the left, if a new state like Utah tries to build out an ELT program, and let's say the government builds it out themselves, then, you know, Utah, they're one of our 50 states.
+Speaker 1 00:12:28
+I know Shane likes to talk about the 10th Amendment that provides the state the ability to create their own laws, to regulate these things however they see fit. So they have their laws, and then processes based off these laws. And it's going to make it very difficult for them to integrate with any single lender or service provider with their large network of lenders. So what we do really well at CHAMP is we are good at integrating with the different states and accounting for all these different possibilities. But then also, we built.
+Speaker 1 00:13:02
+this thing called the global ELT gateway. Sometimes you'll hear it referred to as the global API. What that means is that we did these integrations with the vendors a single time. And then when we move into a new state, we can just, as soon as we integrate with the state themselves, we can just start sending these vendors liens for this state. We don't have to do a whole separate integration, for each vendor, for each state. And this allows us to ramp up very quickly.
+Speaker 1 00:13:35
+And that's actually what we've seen this year. Slide. So here's some picture of just kind of our E-Lean volume this year. Just some context. Even in states where we have ELT, so West Virginia, New Jersey, Illinois, liens can still be filed as paper, meaning like there's a title with a lien and state prints the title. They still mail it to the lien holder, but we're trying to get them to do all electronic. There's a number of challenges. Let's stay on the slide for a second. And on the left there, you see like a few different lines. The blue line up top, like if you look at January of 2024, that's West Virginia.
+Speaker 1 00:14:18
+We've been in ELT there the longest, and we've continued to increase our lien volume there this year because more, a higher and higher percentage of these liens are being filed electronically. Instead of paper titles being printed. You also see the month of January, we had six E-Leans in New Jersey. Not a fast start, it was a start. So we had some challenges ramping up there, but nonetheless, we've made significant progress. And we're kind of seeing that hockey stick,
+Speaker 1 00:14:50
+that Green Lines, New Jersey, they now drive by far the most of our lane volume. And we're still nowhere near fully electronic in that state. That number is just going to keep going up as we continue to onboard with these service providers, and move them all over to electronic. And then finally, around the middle of this year, we saw Illinois launch. The number's still not as much as West Virginia or New Jersey, but that's okay.
+Speaker 1 00:15:21
+We still see the trajectories, it's going up. There's always a little bit of a slow period to start, but we're foreseeing that hockey stick moment in Illinois as well. So I talked a lot about that, you know, the state integrations and the global API. There's not really anything to show for that because it's all just endless APIs. We do have some user interfaces, though. One of them, this is the portal that we make available for our small volume lenders.
+Speaker 1 00:15:55
+This is just a quick screenshot of the landing page. And what this does, it just allows them to facilitate basically all their workflows. We're working on improving that. There's more to come on that. And then this other tool, just a quick screenshot from this, this is an interface that we provide for states, so this is like a New Jersey screenshot, to help them facilitate some of their, I guess, less common workflows for managing lanes, in this case, all E-lanes.
+Speaker 1 00:16:35
+And again, we got some improvements coming down the pipe for this. And that kind of brings us to the future. We're currently doing like a major overhaul for ELT, and that's going to be live here pretty soon. So we're building out some more workflows that lenders and their associated service providers want, and we can actually charge for one of these. So we're really looking forward to that. And just generally speaking, we're improving the existing workflows,
+Speaker 1 00:17:10
+both in terms of like business capabilities, but then also just from a technical perspective. And then another major thing that we're doing to improve ELT is we are standardizing the data that we send to the lenders. So just a little background on that. When someone buys a vehicle, it's typically the dealer, and you might have all these different dealers in the state, and they can enter data however they want.
+Speaker 1 00:17:40
+There's all sorts of inconsistencies, or maybe these title applications begin at the state level, like if someone walks in, say, hey, I just bought a used vehicle. And again, the state can enter all sorts of ways, and this kind of creates challenges when we just pass that data along to the lender. So in short, we're just trying to make a more consistent standard user experience for our lenders. This is going to be a big win once we roll that out, and that's going to be live here pretty soon.
+Speaker 1 00:18:11
+And then lastly, we're trying to get ELT in some more states. So I think that's right around the corner, and we'll have more news on that soon. And then that kind of brings us to the comms piece of ELT. In short, it's like the stuff in comms helps facilitate ELT. And if we want to break it down, we have this thing called the Global Lender Registry, which is exactly what it sounds like. It's our internal list of all lenders that do business in the states where we have ELT.
+Speaker 1 00:18:49
+So it's like their national lender information, and then their state-specific information, and then whichever service providers they're associated with in these different states, if any. And so we have functionality in comms that lets people easily manage this information, as opposed to the product support team having to manually update all of this. Um, we also have this concept in ELT called lender code.
+Speaker 1 00:19:21
+It's just an ID that we create that we give to the lenders, their service providers, the states, and ultimately the dealers, uh, just so that way everyone can easily identify who this lender is and where this lien ultimately, needs to be sent, um, and we have this workflow in comms, uh, basically to, help states identify the exact vendor before they finally issue the title.
+Speaker 1 00:19:53
+There's like more details we could go into for that, but that's the gist. And this diagram on the right-hand side just kind of shows that workflow. We've got like GLRs, that green circle in the middle. We've got dealers on the left, the state on the right, and then comms is beneath, that should have been a two-way arrow there, that's a mistake. The comms just kind of interacts with the actual state themselves. So the other things then that are coming to comms soon are just tools to help.
+Speaker 1 00:20:27
+manage that data standardization process. And then if we ever get like weird unknown data from a state, we can review it, kind of like the compliance QAQ. or the lender code QAQ, and just determine exactly what that data should be. Again, this way the lender has a consistent user experience. So that's everything for comms and ELT, and we're opening the floor to questions.
+Speaker 2 00:21:03
+So is the idea if you're rolling out ELT in a state that the Global Lender Registry goes along with that? Like, are you trying to roll them out hand-in-hand, or are they rolled out hand-in-hand. 
+Speaker 1 00:21:13
+yeah so we go to a state oh yeah sorry uh so the question was when we the uh when we implement elt for a new state does that does glr expansion for that state go hand in hand with the implementation and the answer is yes so we'll expand this new state we'll integrate with the state and then we will also ask the state for their list of all known lenders then we'll try to figure out things like service provider associations but that's kind of down the road um yeah absolutely they're.
+Speaker 3 00:21:48
+tied together any comments have a go live date for elts can you repeat that this comms have a go live date to support elts.
+Speaker 1 00:22:04
+Yeah, that's a good question. So what's live in ELT, and correct me if I'm, or sorry, what's live incomes for ELT is the global lender registry management, so like managing all the lender date. And that's just the lender details for now. We're working on like the service provider associations. I don't know what the go live date is for that. Jake, do you know?
+Speaker 1 00:22:34
+Yeah, and then also lender lookup, like the lender code QAQ is also live. Jake, do you know the go live date for the service provider association and management. 
+Speaker 3 00:22:45
+We don't have a date yet, but it should be very soon. It's the thing we're working on right now. So that should be the next release. And that would include the ability to add to the system. Awesome, thanks.
+Speaker 1 00:23:02
+And then, and then the, the whole like standardization stuff we talked about. We don't have a set date. We're thinking like Q1 of next year.
+Speaker 2 00:23:15
+There are no questions on the chat. So I don't know if anybody else.
+Speaker 1 00:23:18
+Yeah, we got one over there.
+Speaker 3 00:23:21
+Could you name a few of the, you mentioned that there were a few primary service providers for ELTs just so that our ears recognize it.
+Speaker 1 00:23:29
+Yeah. So the, the four that we associate with are dealer track, PDP, DDI, and secure title. I don't know, maybe Libby, would you know if there's going to be any more coming down the pipe. 
+Speaker 2 00:23:50
+No, I mean, those are the four predominant ones, the biggest providers. Occasionally there could be like a one-off, a smaller service provider. But, yeah, I'm not aware of any of them, like, you know, coming down the pipe.
+Speaker 1 00:24:04
+Okay, gotcha. Okay.
+Speaker 2 00:24:07
+But there are smaller ones that we haven't dealt with before.
+Speaker 1 00:24:11
+Yeah. Anything else? Well, if you want to check. All righty. Three seconds, last minute.
+Speaker 2 00:24:28
+No more? All right. Thank you. Thank you, everybody. Thank you, everyone online.
+Summary: 
+Date Time: 2026-01-26 09:18:21
+Location: [Insert Location]: [Insert Location]
+Instructor: [Insert Name]: Christine, Blase
+## Summary
+This lecture is the second session in a product showcase series focused on CHAMP's Client Operations Management System (comms) and Electronic Lien and Title system (ELTS). It begins with a recap of last week’s discussion on ETRS and Clearinghouse, which handle data intake. CHAMP’s products aim to digitize and secure the traditionally paper-based, cumbersome vehicle title and registration process. The lecture details how comms serves as an internal tool to manage and streamline data processes across different products, starting with its compliance review application for Clearinghouse. It then explains the ELT system, which digitizes management of vehicle liens between state titling agencies and lenders. The presentation highlights the Global ELT Gateway that enables rapid expansion into new states and concludes with how comms supports ELT operations through features like the Global Lender Registry.
+## Knowledge Points
+### 1. Introduction and Recap
+* **Recap of Previous Session (ETRS & Clearinghouse)**
+   - Last week’s session covered ETRS (Electronic Titling and Registration System) and Clearinghouse, explaining how data and transactions enter the CHAMP ecosystem.
+   - The current session focuses on ELTS and comms, explaining how data flows to lenders and is managed internally.
+* **Goal of CHAMP Products**
+   - The primary objective is to streamline the long, tedious, paper-based process of vehicle titling and registration.
+   - The goal is to move from paper-based to more digital and secure workflows.
+   - Digitization helps prevent issues like lost titles and fraudulent duplicates, since the paper title represents ownership.
+### 2. Client Operations Management System (comms)
+* **Definition and Purpose**
+   - Comms stands for Client Operations Management Systems.
+   - It is an internal tool used by the client operations team to facilitate and streamline processes between different CHAMP products.
+   - It is essential for managing the growing volume of data across the US, and potentially internationally, by providing easier ways to manipulate data when needed.
+* **Comms for Clearinghouse: Compliance Review**
+   - For Clearinghouse, comms functions as a compliance review tool, originally envisioned for a system called S10.
+   - Compliance review ensures data accuracy by comparing submitted application data with validation sources like Invitas and other documentation.
+   - The old S10 interface was tedious, requiring client ops to click back and forth between tabs and evidence.
+   - Comms provides a streamlined interface that immediately surfaces discrepancies (e.g., a mismatched vehicle year) and highlights missing information in documents claiming to be titles.
+* **Data Workflow Involving Comms**
+   - 1. A customer submits an application, which is sent to S10, the database storing this information.
+   - 2. The data is sent to Cade for analysis.
+   - 3. The analyzed data returns to S10 and then into comms, which displays it for the client ops team.
+   - 4. The client ops team (and in the future, Cade) makes a recommendation.
+   - 5. This recommendation is sent to Vitas and the DMV.
+   - 6. Any rejection or exception from Vitas/DMV is sent back to S10 and then forwarded to the end-user.
+* **Future of Comms**
+   - Currently, comms is built for Clearinghouse and ELTS.
+   - Plans include expanding its use for DTMS.
+   - Comms will be used as a training tool for Cade, helping it learn to analyze incoming data and assist the DMV with recommendations.
+### 3. Electronic Lien and Title System (ELTS)
+* **Core Concepts**
+   - **Lien:** A lien indicates that a lender (lienholder) provided funds for the vehicle purchase, granting the lender the right to take possession of the title and vehicle if the owner defaults.
+   - **Paper-Based Process:** The traditional process is slow, prone to inaccuracies and fraud. A state mails the paper title with the lien to the lienholder, who holds it until payoff, then returns it to the state to issue a clean title to the owner.
+   - **CHAMP’s Role in ELT:** CHAMP serves as the middleman between state agencies and lenders, digitizing these workflows.
+* **The Global ELT Gateway**
+   - Also called the global API, it is a key component of CHAMP’s strategy.
+   - CHAMP integrates with states to account for their unique laws and processes.
+   - CHAMP integrates once with vendors and large service providers through the Global ELT Gateway.
+   - When CHAMP expands to a new state, it can immediately send lien data to these vendors for that state without building new vendor integrations per state, enabling rapid scaling.
+* **ELTS Volume and Growth**
+   - Even in states with ELT programs (West Virginia, New Jersey, Illinois), liens can still be filed on paper.
+   - **West Virginia:** As of January 2024, has the highest E-Lien volume due to its long-running program and increasing electronic filings.
+   - **New Jersey:** Started with only six E-Liens in January but has seen “hockey stick” growth and now drives the most lien volume. The state is still not fully electronic, so further growth is expected.
+   - **Illinois:** Launched around mid-year; volume is lower but trending upward with similar “hockey stick” growth anticipated.
+* **ELTS User Interfaces**
+   - **Small-Volume Lender Portal:** A website for smaller lenders to access electronic title records and manage lien workflows.
+   - **State Interface:** A tool for state agencies (e.g., New Jersey) to manage less common e-lien workflows.
+* **Future of ELTS**
+   - A major overhaul is underway and will be live soon.
+   - **New Workflows:** Building new functionalities for lenders and service providers, some of which will be chargeable.
+   - **Data Standardization:** A large effort to standardize the data sent to lenders, addressing inconsistencies from dealer or state employee entries to create a consistent user experience. This is expected to be a big win and will be live soon.
+   - **State Expansion:** Plans to launch ELT in more states soon.
+### 4. Integration of Comms and ELTS
+* **Global Lender Registry (GLR)**
+   - Comms includes the GLR, an internal list of all lenders doing business in states where CHAMP has an ELT program.
+   - It contains national and state-specific lender information and their associations with service providers.
+   - Comms enables easy management of this information, replacing previous manual updates by product support.
+   - The GLR is rolled out in tandem with ELT implementation in a new state.
+* **Lender Code Management**
+   - CHAMP creates a unique “lender code” ID for lenders, service providers, states, and dealers to identify the lender and route the lien correctly.
+   - Comms includes a workflow (lender code QAQ) to help states identify the correct vendor before issuing a title.
+* **Future Comms Support for ELTS**
+   - Tools will be added to comms to manage the data standardization process.
+   - A review process in comms will handle unknown or unusual state data, ensuring lenders receive consistent data.
+   - GLR management and lender code lookup are currently live in comms.
+   - The service provider association management feature is the next planned release.
+   - Data standardization tools are targeted for Q1 of the next year (Q1 2027).
+* **Key Service Providers**
+   - The four primary service providers CHAMP associates with are DealerTrack, PDP, DDI, and Secure Title.
+## Questions
+- [Insert Question/Confusion]
+## Assignments
+- [ ] Prepare for the launch of the major ELT system overhaul.
+- [ ] Continue onboarding service providers in New Jersey to move them to electronic lien processing.
+- [ ] Finalize and release the service provider association management feature in comms for ELTS.
+- [ ] Plan for ELT expansion into new states.
+- [ ] Work toward the Q1 2027 target for releasing data standardization tools in comms for ELTS.
