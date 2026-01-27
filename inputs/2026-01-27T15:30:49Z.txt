@@ -1,0 +1,267 @@
+Transcript from2026-01-27T15:30:49Z
+Speaker 1 00:00:05
+It's a party. Should I close the door? Sure. I think it's maybe a person. So many folks are, you know, not dealing with it. It's not there, which makes perfect sense. I'm sorry. I think this is going to happen. It's so cool. This for you guys. I was just like, hey, you're new. I'm doing her hook stuff. Do you guys want to come? Yeah, that's great.
+Speaker 2 00:00:29
+All right.
+Speaker 3 00:00:30
+Well, I don't know. Melissa, I just talked to her. I think she's doing something with her son for a second, and then she'll join also today.
+Speaker 1 00:00:41
+Okay, that's fine. I can just go ahead and get started. Maria, you're here more to tell me when I get things wrong. Okay. Right? Don't you know it all? Everything. No, I thought if I get something wrong, feel free to shout at me. But just so you know, in the room here, we've got Hannah, Tyler, C, and Monique. I guess you're ready to do that now.
+Speaker 4 00:01:11
+It's all right.
+Speaker 1 00:01:12
+New Tyler. Good morning. We have Christina and Christina. One C, one's with a K. Okay. We're used to it, right, Christina? All right. Yes. Yes, we are. We are. So, in Kentucky, what I want to focus on is the different types. Before I show you guys, like, the interface and that kind of thing, I want to show you the different types of transactions that a dealer can submit to us. The only way they can submit to us is through V2.
+Speaker 1 00:01:43
+Um, so they go to V2, they have some kind of interface with V2 that is, you know, using our API that sends us the data that they fill in. Then we submit it to Canvas, which is the system of record. There's not a whiteboard in here. All right. Anyway, we'll see. We'll see if I get, you know, I'm on my whiteboard. Um, Canvas is a system of records in Kentucky. It is one of the ways that Kentucky is very different than West Virginia.
+Speaker 1 00:02:15
+However, most of our states, in fact, I think in every other state that we're in, we are not the system of record. So we are doing something like this where we are passing data around. So as we get data into eTRS, we, as we get it into them, into VTAS, which is the actual, what we call very confusingly, KYELT, nothing to do with ELT.
+Speaker 2 00:02:38
+Okay. What's it stand for. 
+Speaker 1 00:02:42
+I don't know, but it's just called K-Y-E-L-T. So K-Y-E-L-T, this is where everything will come into. The clerks then review it. They then also have to do some main canvas, which I'll explain in a few minutes as to when they have to do what. What I want to focus on is the different things that they can do. Because when you're ever working with Kentucky, if you're ever working with them, you'll hear transfer. You'll hear dealer assignment. You'll hear transfer with assignment. And you'll hear duplicate title.
+Speaker 1 00:03:12
+If you don't understand the difference between transfer versus dealer assignment versus transfer with assignment, it can get pretty confusing. So I just found this page pretty recently. It would have been really useful so I didn't get wrapped up on any of this. So there's two different types of transfer. One is where it is a new vehicle. Then that is the assumption here.
+Speaker 1 00:03:45
+So this is pretty important here, actually. Dealers don't have to assign a brand new vehicle to themselves before they sell the vehicle. If they are selling a used vehicle, so for example, somebody trades in a vehicle from another state or something or whatever, the same state, then they do have to transfer it to themselves first, get that title in their own name, and then sell it on.
+Speaker 4 00:04:11
+But new cars don't matter.
+Speaker 1 00:04:12
+The new cars don't, which is why we're making the assumption that if it's outside of Kentucky and they're transferring it, in other words, they're selling it to a customer. that we're assuming it's an MSO, because otherwise you can't just transfer to a customer. So Hannah, you're our dealer. Tyler, you are being sold a car. It's a new car. Hannah can just sell it to you right off the bat, but she doesn't need to have the title and her name.
+Speaker 1 00:04:42
+Versus, and you can do that too if it's Kentucky, but the dealer will have to assign the vehicle to themselves prior to selling. So there's that kind of thing. There's also assigning a trade-in vehicle. So I trade in my vehicle to Hannah. Hannah then sells it to Tyler. There's, it looks like there's a slight difference.
+Speaker 1 00:05:14
+in cases between Kentucky and not. There's also, Monique is a dealer too. And you decide, you know what, Monique, here's a car. So that is dealer assignment.
+Speaker 2 00:05:33
+Transfer with assignments is, here's my trade-in car.
+Speaker 1 00:05:40
+You're now going to go ahead and sell it to a customer. And I'm trying to figure out this. So yeah, there's three different parties there versus just assigning it to the dealer. Sorry, dealer assignment is just assigning it to the dealer. So that's, here's my car, it's now in your name. Versus transfer with assignment is, here's the car, and you go on and sell it.
+Speaker 3 00:06:07
+Yeah, Maria, please. I was going to say, I can give a little bit of, like, background to understand this, because I, this was, when they put, when this was put together, it's confusing. So, Kentucky has this concept where, you know, the back of the title, where you can, like, write in, like, basically transfer it, like, assigning it to someone, like, giving the card to somebody else, and you just fill in the back. Well, in Kentucky, when dealers do that, they don't have to let the DMV know, so essentially, like, as many spaces as there are on the back.
+Speaker 3 00:06:42
+And those are two examples this year, like, they can go from dealer to dealer to dealer, and the DMV doesn't know about it. So, that's why, when it's coming, like, a transfer with assignment, like, the DMV won't necessarily know that a dealer has a car. Yes. So they put the transfer from owner A to owner B to the dealer on the title,
+Speaker 3 00:07:12
+and then that dealer turns around and immediately sells the car to a different person. All of that comes into one transfer application. And if there's three dealers in the middle, it'll be three separate assignments.
+Speaker 1 00:07:27
+Okay. What about when the dealer reassigns a vehicle to dealer B? Is that only in the situation where they run out of room. 
+Speaker 3 00:07:35
+No, they can do that. So what the DMV wants them to do is, like, report it and do a proper transfer, and then it's called a dealer title. I think, and I may be confusing it with my search engine at this point, but I know that if a dealer were to, like, send a transfer of the vehicle to the DMV, they would have to then pay for something called a dealer title because the dealer owns the car as opposed to a transfer. so uh dealer assignment is that i kentucky might be different and again i might be.
+Speaker 3 00:08:10
+mixing these up because first it's been it's been a minute but yeah i don't i think that this is them because they get um there's a fee associated a tax associated with the.
+Speaker 2 00:08:22
+dealer assignment so the DMV wants its money yeah they want to be told that this is happening.
+Speaker 1 00:08:34
+So each of these, yeah, thank you. No, that's very helpful, Maria. See, I knew I invited you to tell me when I missed things, so you've got more context. So much appreciated. Each of these has a page with a little bit more, a lot more detail around it. So, for example, you can see here, and this includes the payload as well, which is really helpful. It's a first-time registration. It's a transfer of assignment. Here's what it looks like. And then also what gets walked through in here.
+Speaker 1 00:09:04
+is the actual screenshots of what this would look like. Now, one thing that is changing right now is that so the way it was originally built, okay, the clerk opens the transfers queue, let's say, besides attending themselves, they review a transfer, let's say they approve it, it goes into a different queue. The queue is called CAVIS action required. So here's what that, here we go, CAVIS action required is the first one.
+Speaker 2 00:09:35
+So it goes into here, and then the user has to come in and, oh, my gosh, really. 
+Speaker 4 00:09:45
+Live demo time, right? They have to open CAVIS on, like, another, I don't know if they have another screen up.
+Speaker 2 00:09:54
+I haven't watched them yet, but open it up, copy and paste each piece of data over here into CAVIS. Sorry, I'm going to jump in here one more time. Yeah, please.
+Speaker 3 00:10:09
+Apologies. So in transfers, any transfers from the transfer queue, the CAVIS action requires basically that she actually pops up at the end of the transfer after the approval. So if you go through like a regular transfer in the transfer queue. Transfer manual, yeah. Right. Oh, I know. I need to log out. You have to log out. Yeah, I know. They get the, it's called a CAVIS screen at the end of the transfer. Transfer, I, we, the idea was that that step would go away after integration.
+Speaker 3 00:10:43
+Right, so that's what I was going to, yeah, talk about integration.
+Speaker 2 00:10:46
+I'm not sure if it did or not, but yeah, if you approve a transfer, you get this.
+Speaker 3 00:10:58
+So then they can go and enter it into Kavis manually with the copy and paste, like Jackie said. And then when it's done, they can hit complete. This is the same page I was just on.
+Speaker 1 00:11:12
+It's just the assigned version.
+Speaker 3 00:11:15
+Right. So this came from a transfer. There's stuff in the Kavis action queue that Kavis action required that could come from a different county.
+Speaker 1 00:11:25
+Right. But when I assigned this to me, you'll see it looks just like the one I was just looking at. Right. Okay. Yeah. That's the whole flow I should have out there.
+Speaker 2 00:11:35
+So thank you. All right. So this is where they then copy and paste to Kavis, right? Yes.
+Speaker 1 00:11:46
+They also need to then, because when there's a transfer, there's a new title number that comes along with it. They have to paste the new title number down here. And if you try and click complete without doing that, it will yell at you and say, no, you have to do that. So it's a very manual process. The way it works now is a bit different. We are working through integrated. I don't know if any of these are integrated. I'm trying to find the integrated thing yet. I don't have a way to put integrated together.
+Speaker 1 00:12:18
+But the way it works for integrated is instead of the KVS action required queue, it's the KVS in progress queue. But the data, the difference there is when they open up KVS and they find that thing, it might already be auto-assigned to them, I'm not sure. The data is already in KVS. So they don't have to copy and paste anymore.
+Speaker 4 00:12:43
+And that's what the plan is.
+Speaker 1 00:12:46
+We have released most of it. We are doing testing tomorrow with VATU on duplicates and integrated transfers because integrated transfers cause so many problems that we had to shut it down.
+Speaker 4 00:12:57
+And you're saying VATU, like V-A-T-U, not version 2.
+Speaker 1 00:13:01
+That's why we don't say version 2 anymore. We say Gen 2 around here.
+Speaker 4 00:13:03
+Okay.
+Speaker 1 00:13:04
+That's very confusing.
+Speaker 4 00:13:05
+Yeah, because there is a VTAS. I guess a Gen 2.
+Speaker 1 00:13:10
+It's Gen 2.
+Speaker 4 00:13:11
+Yeah, okay. Gen 2. And VATU, when you say VATU, it's the competitor.
+Speaker 1 00:13:16
+Yeah, which is also a partner.
+Speaker 4 00:13:19
+Yeah, that's weird.
+Speaker 1 00:13:21
+Well, they keep buying up everybody else. Yeah. So, yeah, that's the new focus when one of the other changes, too, is that so you saw the first entry, the new title number in KELT confirmation. My understanding is when the transfer is completed in CAVIS for an integrated item that CAVIS tells us, hey, it's done, and they don't have to do much on this side. So it's been a little challenging because I can't really test a lot of these things.
+Speaker 1 00:13:54
+Anyway, I can't test a lot of these things. I might try a different, I could probably try a different item. Christina, do you have a question? I do have a question. So what are the clerks doing if it's integrated? So they're still going through CAVIS and I saw this screenshot somewhere. There's a video as well. They're going through CAVIS and they're double checking everything. There is still at least one field that they have to fill in, which is the, if there's.
+Speaker 1 00:14:25
+a lien, there's like a lien issue date, which is usually the date that they are doing it. We were pre-filling it with the lien date we had, which was incorrect. It was a whole thing. So there's still one or two fields they might have to touch in CAVIS, but it's mostly just review.
+Speaker 2 00:14:46
+Kentucky has a lot of redundant stuff.
+Speaker 3 00:14:51
+As context for the double-checking, one transfer with evidence gets checked over by two other people other than the one that actually did the transfer.
+Speaker 1 00:15:02
+Yeah, they do a lot of checking. And that's one of the reasons they want reports from us is because right now they've got these reports that they are using. They print out every morning and cross them out to double-check everything. There's a lot of double-checking going on.
+Speaker 4 00:15:14
+That sounds like a DMV there, if I ever heard.
+Speaker 1 00:15:18
+We're like, sure, we'll make you a nice report.
+Speaker 2 00:15:21
+So that is high-level Kentucky. I think some of the important things to understand there.
+Speaker 1 00:15:37
+One thing I did here is I just copy and pasted everything into this document because I was trying to figure out what was different between the different kinds of examples.
+Speaker 2 00:15:45
+And I had not seen any payloads until I found these pages.
+Speaker 1 00:15:48
+So I was like, okay, what is actually going on in the payloads? One challenge is there's no, as far as I can tell, like there's no documentation around the integration that we just did that was done post-launch. And it used to be prior to very recently that any state work, any new state work was done without product involvement. So it was developer, it was Ian, he was the head of that team, working on it. And I'm sure they did a great job, but I got nothing.
+Speaker 1 00:16:18
+The only thing I got is some swagers.
+Speaker 4 00:16:21
+I love a nice swagger.
+Speaker 1 00:16:23
+Yeah, swagger. So here's, you know, KENTUCKY endpoints. Okay, that can't be the right one because it's only got two. Here we go. Here's the, I think this is the right one. Oh my gosh. Really. 
+Speaker 4 00:16:39
+Can I ask, so you're going with VITAS Gen 1. This is VITAS Gen 1. Yeah. Is the plan to roll out, like when, when is the upgrade plan to Gen 2? That is an excellent question. We are going to.
+Speaker 1 00:16:56
+be adding ELTS, so LANES, to Kentucky this year. And tentatively, we may update Kentucky at that time to Gen 2. Out of the box, like we're doing that complimentary. Yes. Because Gen 1 VITAS, as far as I can tell, front end and back end, literally kind of combined, seems to combine them. In the future though, Gen 2 is just back end. So front end would be 360 portal, whatever you want to call it. Right. But portal. So that's,
+Speaker 1 00:17:27
+a possibility. It is not our highest. item this year however it's we need to have some additional discussion on whether or not it is worth the effort of not including gen 2 at this time than having to do it later, so same for west virginia this is west virginia and this is also gen 1 now gen 1 it has even more items in it and more features which gen 2 right now was only built for elts it doesn't even have titles it's got doesn't actually it was only back in so it's built very differently um so you.
+Speaker 1 00:18:03
+can see some of the things maybe are similar in terms of the west virginia and kentucky in terms of like how you approve things it looks very similar so because oh these are old and i can't like approve anything anymore but there's no way to hit this thing um but there's. do anyway there's um there's a lot of similarities between the two but there's there's also a lot of.
+Speaker 1 00:18:44
+differences because here we are at the system of record so there is no other like place that they are going into and having to re-enter all of this unless maria tell me i'm really wrong but as far as i understand it this is it this is the system of record that's correct um basically i believe.
+Speaker 3 00:19:01
+they still have mainframe but they're working on MERGING yes the way that's working is did you.
+Speaker 4 00:19:09
+say MERGING what was the word you used mainframe yeah and they're getting rid of it right they're.
+Speaker 3 00:19:18
+still um in the phasing out process. It would give you an option, so if somebody walks in with an old title, it would give me the option to merge the mainframe.
+Speaker 4 00:19:36
+Merging.
+Speaker 3 00:19:37
+Merge.
+Speaker 4 00:19:38
+All right, all right.
+Speaker 3 00:19:39
+If you're doing murder instead of merge, you're all confused. Or no, sorry, migrate.
+Speaker 4 00:19:44
+I was all for it. I'm here for it.
+Speaker 1 00:19:46
+So this is what she's talking about, where you click create and you migrate. So you enter the mainframe title number and they migrate.
+Speaker 3 00:19:56
+They still use mainframe, not use, but they still reference it if one of the old titles come up.
+Speaker 1 00:20:07
+They're also still using it for pipe stem purposes because they're not happy with what we did. it's the alias thing yeah i know we have this ability to alias um titles and we don't have the ability for others to search on those titles and they're saying gang members can figure out if the police are in their area if they use it so anyway um it's a separate thing we'll have to potentially improve in the future so they're still using me they told us they're still using mainframe for that but it's got other things as well it's got dealership licensing um a very.
+Speaker 1 00:20:42
+like preliminary version of it and that sort of thing so it's pretty different from um in some ways but obviously at the same basis the same bones um what else did i want to dive into i think those were the biggest things was just making sure you guys understood kind of these different titles the fact that cavus um you know is being used in kentucky.
+Speaker 1 00:21:13
+So from an API perspective, that means we do a lot where it's like, here's the API with the V2, and here's the API with KVAS. And the two are different. We don't always use the same terms and things like that. So that has caused some variation in integration. Particularly, there's some things like, we send something over as null, we send a, if it's title only, we send a, we were sending over the registration as null to KVAS. And it turned out, once we got integration going, and it turned out, oh, no, you have to not send it at all, registration at all, in order for them to know it's title only.
+Speaker 1 00:21:53
+Okay, but of course, we're getting null from V2. So then we have to ignore the null that we're getting from V2. So it's that kind of thing that there's a lot of, but. We didn't know that going into it. So we've just kind of been stumbling across issues. So, that is, that is about it. I mean, I think it's worth understanding just how these, oh my gosh, I did the wrong cue again. These, these all look, like I said, pretty similar. What we saw in West Virginia is they were clicking expand all, like every time, and they were going through each and every one of these items.
+Speaker 1 00:22:25
+On the right here would actually be the evidence. So, like your title, it'd be a scanned in version of the title. And each and every one of these would, they would like, not each and every one, they have some that they are more, consider more important than others. They check against this. They also go to NIMBIDIS, which is third party. This is not the right site, but they have a NIMBIDIS site where they go to and they search up the number and also compare that. So, there's sort of a three-way comparison.
+Speaker 4 00:22:57
+Are those fields managed? Are those annually indexed? Or are those pulled from Cade. 
+Speaker 1 00:23:03
+Cade. 
+Speaker 4 00:23:04
+The AI.
+Speaker 1 00:23:07
+Oh, so in West Virginia, West Virginia is the only place we have Kate right now. Got it.
+Speaker 2 00:23:14
+But in West Virginia, we currently are doing a two-way comparison.
+Speaker 1 00:23:20
+between the stuff on the left and Invitas. We are working on doing a three-way comparison. Sorry, that's my understanding. Three-way comparison of the stuff on the left, the stuff on the right, and Invitas.
+Speaker 3 00:23:31
+Got it. OCR is going to scan the evidence.
+Speaker 1 00:23:37
+Yes, and actually make sure they match. Because right now, what we found is, we were comparing the stuff on the left to Invitas, and we gave them what's called a Kate cover page, and we'd say, like, yeah, you're good. And they'd ignore it, because it turned out they were mostly comparing the evidence to Invitas. You're not helping us. So that was a fun finding. Those are most of the answers I wanted to cover. The only other thing for...
+Speaker 1 00:24:07
+Oh, that's relevant for, and Maria mentioned it a little bit, depending on the situation, they might get a record where something has, for example, been sold in their county, because everyone's been county in Kentucky, but a different county, the bank, for example, was in a different county. And so they might need to reroute the lien release to a different county, the county that the bank was in, because whoever releases it gets the money.
+Speaker 1 00:24:37
+Yeah. And so there's a lot of rerouting going on between them that happens. So.
+Speaker 2 00:24:47
+we are still working on it, but yeah, that's really all I had. I just didn't want to take it. Any other questions? Maria, anything else I missed? I don't think so. There's something also about like a lien.
+Speaker 3 00:25:06
+The owner, the buyer being in one county, and the dealer being in another, and, like, which county gets the lien thing, but...
+Speaker 1 00:25:16
+The title, yeah, I think that one is, I think it can be either, but this is where, honestly, the guy would go to robo, be like, robo, in Kentucky, if the dealer is in one county, and the buyer lives in another county. Which county does the title get processed in? Let's see what I can find.
+Speaker 4 00:25:42
+You treat your robo way nicer than I do.
+Speaker 1 00:25:47
+I am not particularly ready to do that.
+Speaker 4 00:25:49
+Yeah, I know.
+Speaker 1 00:25:50
+When the AI...
+Speaker 4 00:25:51
+Just robot. Yeah.
+Speaker 1 00:25:53
+The buyer's country of residence, not the dealer's country. Okay, not going to cross country. Timeline titles must be processed in the resident country in that source. Let's see. Hmm. That's certainly a couple of places anyway. It indicates that we don't have a lot of strong sense for that. Yeah. Is it receiving country as far from the dealer? New owner's country of residence. So that's what it seems to be. Good call. Definitely still ramping up on this one myself.
+Speaker 1 00:26:34
+Um, who's ramped up on the ELTS stuff that we're starting on, but that's still further out. All right. Oh, Christina. I have a question. Um, how do I make money in Kentucky? We make money off of the transfers and duplicates and all of those. So there's fees associated with each of them. I don't know those fees. But for example, on Monday at the leadership meeting,
+Speaker 1 00:27:04
+we had a discussion about a new type that we were going to add. Oh, yeah, that's what I was going to do. I was going to show you guys what's coming up.
+Speaker 2 00:27:14
+So we're going to be adding the ability for 10 views of existing play.
+Speaker 1 00:27:23
+to be able to move a license play from one vehicle to another vehicle. That is something that we eventually decided not to add any charge to because we think it will make our everything more sticky. It was eventually a decision, but one of the things I heard is that any charge that we make, so there's a charge for the state, there's a charge that we have, and then we, too, basically takes whatever charge we have and does it again. So we were talking about, for example, like $5 for this, and we're like, well, $5 for us, $10, then it's V2, and then we just took something like $3 to $13.
+Speaker 1 00:27:58
+How are dealers going to react to that? Well, one of the reasons we decided not to charge for this, we will eventually have our dealer portal in which we will be doing it, and we won't have the extra charge of V2. We have one more reason to call for it, which is us. So that's – but, yeah, we make money through the transfers. There's a cost associated with them. I'm trying to see. Let's see. I don't know if there's a good page for it. Yeah, there is.
+Speaker 4 00:28:26
+Well, I'm going to run, too. I'm going to steal that question.
+Summary: 
+> [Date Time]: 2026-01-27 15:30:49
+> [Location]: [Location]
+> [Instructor]: Jackie
+## Summary
+This lecture provides training on the Kentucky vehicle titling system (KYELT/VTAS) and its integration with the state’s system of record, CAVIS. The instructor explains workflow differences between Kentucky and other states (like West Virginia), emphasizing that VTAS is not the system of record in Kentucky. Key topics include distinguishing transaction types (Transfer, Dealer Assignment, Transfer with Assignment), the evolution from manual data entry to integrated workflows, and the role of legacy systems like the Mainframe. Future plans cover ELT implementation, Gen 2 upgrades, and AI verification (Cade), along with the revenue model based on transaction fees.
+## Knowledge Points
+### 1. System Architecture and Workflow
+* **Kentucky System Components**
+   - **V2 (VATU)**: External dealer-facing interface submitting transaction data via API; entry point for data.
+   - **VTAS (KYELT)**: Internal “Gen 1” system that receives V2 data. Despite the KYELT name, it handles more than Electronic Lien and Title.
+   - **CAVIS**: Official System of Record for Kentucky. Unlike some states (e.g., WV) where the company’s software is the system of record, Kentucky requires data to be finalized in CAVIS.
+* **Legacy Mainframe Usage**
+   - **Migration**: The state still uses an old Mainframe. When processing older titles, clerks may need to migrate data from the Mainframe to create a record in CAVIS.
+   - **“Pipe Stem” Search**: The Mainframe is used for specific searches (“pipe stem”) because the new system allows title aliasing, which the state worries could be exploited (e.g., gang members tracking police vehicles).
+* **Integration and Data Entry**
+   - **Manual Process**: Previously, clerks reviewed a transfer in VTAS, then items moved to “CAVIS Action Required.” Clerks opened CAVIS separately, copied/pasted every field, and entered the new title number back into VTAS to complete.
+   - **Integrated Process**: Now items move to “CAVIS In Progress.” Data is pre-populated in CAVIS, reducing manual copy-paste. Clerks still verify data and may manually enter fields like “Lien Issue Date.”
+### 2. Transaction Types and Definitions
+* **Transfers (New vs. Used)**
+   - **New Vehicles**: Dealers selling brand-new vehicles can transfer directly to the customer using an MSO; no need to title in the dealer’s name first.
+   - **Used Vehicles**: Dealers generally must assign the vehicle to themselves (title in dealer’s name) before selling to the final customer.
+* **Dealer Assignment**
+   - Assigns a vehicle from an owner to a dealer; the dealer takes ownership (title in their name). Fees and taxes apply, and the DMV requires reporting to collect revenue.
+* **Transfer with Assignment**
+   - **Context**: Historically, dealers could sign the back of a title to transfer from Dealer A → Dealer B → Dealer C without notifying the DMV, causing missed fees.
+   - **Process**: Captures the full chain: Owner A transfers to the Dealer, then the Dealer immediately sells to Owner B (Buyer). All steps are submitted in one application. If multiple dealers are involved, multiple assignments are recorded so the DMV can track and collect taxes.
+### 3. Verification, Future Plans, and Business Model
+* **Verification Processes**
+   - **Manual Review**: Kentucky clerks heavily double-check data against scanned evidence (title image) and NMVTIS.
+   - **Cade (AI) Integration**: Currently used in West Virginia for 2-way comparison. Goal in Kentucky is 3-way comparison: System Data vs. OCR from Scanned Evidence vs. NMVTIS.
+* **Future Roadmaps (Gen 1 vs. Gen 2)**
+   - **Gen 1**: Current KYELT/VTAS combining front-end and back-end functions.
+   - **Gen 2**: New headless back-end requiring a separate portal (e.g., 360 portal).
+   - **Plans**: ELT (Electronic Lien and Title)/Lanes will be added later this year; discussion ongoing about upgrading Kentucky to Gen 2 at the same time.
+* **Jurisdiction and Revenue**
+   - **County Logic**: Title work is processed in the buyer’s county of residence, not the dealer’s. If a bank (lienholder) is in a different county, lien releases may need rerouting so that county receives release fees.
+   - **Monetization**: Revenue via transaction fees (transfers, duplicates). Partner “V2” adds a surcharge on top of the company and state fees.
+   - **Sticky Features**: Planned free feature to allow license plate transfers between vehicles to increase dealer reliance (“stickiness”) and bypass V2 surcharges. 🙂
+## Questions
+- [Insert Question/Confusion]
+## Assignments
+- [ ] Conduct testing with VATU on duplicates and integrated transfers (scheduled for “tomorrow”).
+- [ ] Decide whether to upgrade Kentucky to Gen 2 when implementing ELT/Lanes later this year.
