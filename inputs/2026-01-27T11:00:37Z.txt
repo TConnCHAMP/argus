@@ -1,0 +1,113 @@
+Transcript from2026-01-27T11:00:37Z
+Speaker 1 00:00:06
+hello everyone hi all right share my screen and uh we can go ahead and get started okay uh first.
+Speaker 2 00:00:34
+up this morning is uh evgan hi uh we're working with lts ticket no blockers all right dimitro.
+Speaker 3 00:00:52
+Good morning everyone. I just fixed some comments to my previous PR, Avitas 1762 and continue working with 1772. Thank you.
+Speaker 1 00:01:08
+Thank you. Mikhailo. Yeah, hi Tim. Actually, I'm finished working with.
+Speaker 4 00:01:21
+17 something. I don't remember the ticket about security vulnerabilities. 1763. Yeah, this one. Looks like it's working, but to make sure we need to merge security library to check Dependa bot. I'm tested it with automation test. Looks like it's okay. And also updated the versions for related services and need some PR reviews on my existing tickets.
+Speaker 4 00:01:51
+It's actually ready for new work, but I want to wait to merge 1763 and check if I'm not missing something. All right. Thank you. Mariana.
+Speaker 5 00:02:08
+Hello. Today I reviewed PRs and also my ticket SDNJ-155 have approval, so it just needs code owner approves. Both PR have approvals. And yes, I'm ready for new work. That's all.
+Speaker 1 00:02:28
+all right thank you uh dakota everyone working through the pendo ticket um meeting with aaron later to talk about some implementation details and should be done with tech for five minutes for that all right thank you okay uh for my update yesterday i pretty much spent the entire day.
+Speaker 1 00:02:59
+working on uh sdri 203 is there an sdri kanban board by the way do we have yeah or no um sorry.
+Speaker 6 00:03:12
+i always look at the state the state has the kanban board that includes sdri i can send that link to you uh but that's like what i use at stand up the state stand up you.
+Speaker 1 00:03:28
+Yeah, sure. Can I get that link. 
+Speaker 6 00:03:31
+Yeah, just put it in the chat.
+Speaker 1 00:03:33
+Zoom chat. 
+Speaker 6 00:03:35
+Yeah, put it in the Zoom chat.
+Speaker 1 00:03:47
+State delivery development. Okay.
+Speaker 6 00:03:49
+Yeah, it just includes everything.
+Speaker 1 00:03:52
+Okay. Yeah, so I continued working on this. This ended up being a more complex solution than we originally thought. Title reactivation actually impacts a lot of things, especially the way we have it designed as part of the lean ad workflow, which is technically the title create workflow for Rhode Island. So, yeah, today I have a clear work for.
+Speaker 1 00:04:27
+VITAS and UADM, but I need to make sure everything is good on ELTS following a title reactivation process. That's it for me. Okay. Do we have any updates from QA team this morning? Let's start with Dylan.
+Speaker 7 00:04:50
+I don't really have any major updates. I just worked on some documentation for some improvements to our code base in our repo yesterday, as well as I was running into some issues with getting a local environment booted up with ephemeral. I think there's something wrong with how my system is pulling down the MySQL service or the container, because it kind of just keeps restarting. I don't have the time to look at it right now, but I'll reach out into the channel probably in an hour or two to see if I can get some assistance with that, because I checked with Bavitha, and Bavitha also did not know why it was happening, so kind of confused.
+Speaker 7 00:05:28
+Other than that, I don't have any blockers, and I'm trying to work on some of the tests from STWV24.11, so that's it.
+Speaker 1 00:05:36
+All right, thank you. Ivan. 
+Speaker 2 00:05:38
+Hi, Tim. Today, I was mainly focused on fixing flaky ephemeral tests for ETRS, and it looks like I finally stabilized them. Additionally, I updated the global API tests based on the changes related to our last ELTS 2.3.1.1 release. That's all from my side. That's it. Thank you.
+Speaker 1 00:06:10
+Thank you. Christina? Thank you.
+Speaker 8 00:06:13
+Hello, I updated the LTS environment with 2.5 release and started looking at these tickets. Also, I'm gonna focus on manual testing these flows because Volodymyr, who was supposed to automate GLR part, these tickets to connect it to add new lender vendor in comms GLR, he will be helping with comms 4.5 release this week. So yeah, we'll try to cover this manually.
+Speaker 1 00:06:48
+That's it for me. Thank you. All right. Thank you. Any updates from product team this morning. 
+Speaker 6 00:06:57
+Christina? I'm working New Jersey discovery. So pretty early, kind of teasing through some of requirements.
+Speaker 1 00:07:11
+All right. Thank you, Jackie. Nothing for me today. All right. So before we head off, I see we have one new person on stand up this morning. Tyler, welcome to the team. Do you want to give a brief intro? Yeah. Hey, good morning.
+Speaker 9 00:07:30
+My name is Tyler Kahn. I'm a product architect here. I am sitting in, listening in, just trying to absorb as much as possible here. So if there's other, I know, I think, Christina, you mentioned Discovery. If there's other calls or chats or any type of decisions you guys are looking for as it relates to some of the states, please feel free to include me. Happy to sit in and listen as much as possible. So thanks. All right. Thank you.
+Speaker 1 00:07:59
+OK, I think that covers everyone's update. So unless we have demos, thank you guys for joining. And have a good rest of your Tuesday. See you guys later. Bye-bye.
+Summary: 
+> Meeting Information:
+> Date: 2026-01-27 11:00:37
+> Location: [Insert Location]
+> Participants: [Speaker 1] [Speaker 2] [Speaker 3] [Speaker 4] [Speaker 5] [Speaker 6] [Speaker 7] [Speaker 8] [Tyler]
+## Meeting Notes
+### Development Team Updates
+- **Evgan:** Working on an LTS ticket; no blockers.
+- **Dimitro:** Addressed PR comments for Avitas 1762; continuing work on 1772.
+- **Mikhailo:**
+    - Completed ticket 1763 focused on security vulnerabilities.
+    - Needs to merge the security library to validate the fix with Dependabot.
+    - Updated versions for related services; PRs need review.
+    - Waiting to merge 1763 before starting new work.
+- **Mariana:**
+    - Reviewed PRs.
+    - Ticket SDNJ-155 is approved and now requires code owner sign-off.
+    - Available for new work.
+- **Dakota:** Working on a Pendo ticket; meeting with Aaron to align on implementation details.
+- **Speaker 1:**
+    - Worked on SDRI 203, which was more complex than anticipated.
+    - The solution affects title reactivation within the lean ad workflow.
+    - Clear path for VITAS and UADM; needs to verify the process for ELTS.
+### QA Team Updates
+- **Dylan:**
+    - Worked on documentation for codebase improvements.
+    - Experiencing issues with the local ephemeral environment, specifically the MySQL container.
+    - Will seek assistance in the channel.
+    - Working on tests from STWV24.11; no blockers otherwise.
+- **Ivan:**
+    - Fixed and stabilized flaky ephemeral tests for ETRS.
+    - Updated global API tests based on changes from the ELTS 2.3.1.1 release.
+- **Christina (QA):**
+    - Updated the LTS environment with the 2.5 release.
+    - Will manually test flows for adding a new lender vendor in comms GLR.
+    - Volodymyr is assisting with the comms 4.5 release, hence manual testing coverage.
+### Product Team Updates & New Member Introduction
+- **Christina (Product):** Conducting early-stage discovery for New Jersey.
+- **Jackie:** No updates.
+- **New Member Introduction:**
+    - Tyler Kahn, Product Architect, introduced himself.
+    - Joining to observe and learn.
+    - Requested inclusion in calls related to state-specific decisions and discovery.
+## Next Arrangements
+- [ ] Mikhailo to merge the security library for ticket 1763 and verify the fix with Dependabot; PRs to be reviewed.
+- [ ] Dakota to meet with Aaron on Pendo implementation details.
+- [ ] Speaker 1 to verify the title reactivation process on ELTS; confirm alignment with lean ad workflow impacts.
+- [ ] Dylan to request assistance in the channel for local MySQL container issues; track resolution to avoid becoming a blocker.
+- [ ] Christina (QA) to manually test GLR flows for adding a new lender vendor.
+- [ ] Include Tyler Kahn in relevant calls and chats regarding state-specific decisions and discovery.
+## AI Suggestions
+> **AI Suggestions**
+> AI has identified the following issues that were not concluded in the meeting or lack clear action items; please pay attention:
+> 1. Dylan reported a technical issue with his local environment's MySQL container that is preventing him from working locally. While he plans to seek help, this could become a blocker if not resolved promptly.
