@@ -1,0 +1,71 @@
+Transcript from2026-01-27T14:03:51Z
+Speaker 1 00:00:05
+Like you're nothing or another. Oh man. Piracy is like a huge comeback. Really. People are fed up with the streaming service. It's more expensive than having a cable. Hi Carrie, can you hear us? Can we hear you? No. Now.
+Speaker 2 00:00:34
+Can you say something? Yep.
+Speaker 1 00:00:36
+Awesome. We're good. Got a room full of folks here. We just got out of a meeting. Abby presented her clothes.
+Speaker 2 00:00:55
+an intro to violations for us so i recorded it for those that i forgot to invite sorry i realized that i probably should have made that invite bigger but it is recorded and i will post it.
+Speaker 1 00:01:14
+who wants to kick it off anything yeah i guess we can go first we have like there's two different things one's a ticket that i think carrie is assigned to her and is working on for the upgrade flow that we also need it for cart i think let me it is 506. are there any questions i was at prison um and then i have one that's assigned to me 516 that i had a question in.
+Speaker 1 00:01:49
+slack for i think i think kevin and carry on about the documents basically we have, Three fields in our documents, UI, which is document number, document type, and then document location, that we need to store somewhere. We don't have a document URL because we're storing them in S3. So basically the question was whether we could put these on the reference document table or whether we wanted to store them somewhere else. Document type applies to four out of our five different evidences, like permit designation, credential types,
+Speaker 1 00:02:22
+like stuff like that all need a document type. Document number is only required by the credential evidences, and only for some of those. So like passport needs a document number, so that's a less used field. So yeah, we have a question. I saw it while I was in the meeting. Did I adjust it yet? Okay. basically just those two are high priority for us because we need them both to finish up uh update and duplicate as well as to medium for the card flow as we are mapping the credential application.
+Speaker 1 00:02:53
+to the credentials and uadm so as long as they're on the radar so documents and hold documents for both customer and credit i believe so yeah i don't know for i think once they go to ud, uadm we're just putting them on the customer and they're all kind of lumped together but there's different types of documents throughout the credential flow that we have a little extra information that we need like for duplicate when we map the customer and credential back to a new one we need to recover those jimmy you're good cut anything from the other side.
+Speaker 2 00:03:44
+Gary, how about you? All right. Short and sweet. Thank you. Love it. All right. Have a great day.
+Summary: 
+> Date & Time: 2026-01-27 14:03:51
+> Location: [Insert Location]
+> Attendees: Speaker 1, Kelly McCourt, Carrie, Jimmy, Gary
+
+## 1. Introduction to Violations Presentation
+### Conclusion
+The presentation introducing violations was recorded because some invitations were missed. The recording will be made available to the team.
+### Plan
+- [ ] Post the recording of the "intro to violations" presentation — *Kelly McCourt*
+### Discussion Points
+1. [Kelly McCourt]: Recorded the session and will post it for those who were not invited.
+   - Realized the invite list should have been larger.
+   - Abby presented her "intro to violations."
+
+## 2. Ticket 506: Upgrade Flow and Cart
+### Conclusion
+Carrie is working on Ticket 506, which addresses the upgrade flow and serves as a dependency for the cart functionality.
+### Plan
+- [ ] Continue work on Ticket 506 for the upgrade flow — *Carrie*
+### Discussion Points
+1. [Speaker 1]: Ticket 506 is assigned to Carrie and is currently in progress.
+   - This work is needed for the upgrade flow.
+   - It is also needed for the cart.
+
+## 3. Ticket 516: Document Data Storage
+### Conclusion
+The team needs to determine where to store specific document fields (Document Number, Document Type, Document Location) within the database (potentially the reference document table). This is a high-priority blocker for the "update and duplicate" and "cart flow" features.
+### Plan
+- [ ] Decide whether to store document fields on the reference document table or elsewhere — *Kevin*, *Carrie*
+### Discussion Points
+1. [Speaker 1]: Raised a question about where to store three UI fields: Document Number, Document Type, and Document Location.
+   - Noted that a document URL is not used because files are stored in S3.
+   - Asked if these should be put on the reference document table or stored elsewhere.
+   - "Document Type" applies to 4 out of 5 evidences (e.g., permit designation, credential types).
+   - "Document Number" is only required by credential evidences (e.g., passport).
+2. [Speaker 1]: Emphasized that this ticket is high priority.
+   - Needed to finish "update and duplicate."
+   - Needed for the "cart flow" to map credential applications to credentials and UADM.
+
+## Next Arrangements
+- Post and share the recording of the "intro to violations" presentation. ✅
+- Continue progress on Ticket 506 (upgrade flow and cart dependency). 🚧
+- Decide on the storage location for Document Number, Document Type, and Document Location (reference document table or elsewhere) to unblock "update and duplicate" and "cart flow." 🔧
+- Set clear timelines for Tickets 506 and 516, given their high priority. ⏱️
+- Confirm whether "hold documents" for customer and credit are fully mapped to the UADM flow, addressing the noted uncertainty. ❓
+
+> **AI Suggestions**
+> AI has identified the following issues that were not concluded in the meeting or lack clear action items; please pay attention:
+> 1. The technical decision regarding Ticket 516 (where to store Document Number, Type, and Location) remains unresolved and requires a response to the question posed in Slack.
+> 2. Specific timelines for the completion of Ticket 506 and 516 were not established, despite them being marked as high priority.
+> 3. Clarification is needed on whether the "hold documents" for customer and credit are fully mapped to the UADM flow, as Speaker 1 expressed some uncertainty ("I believe so yeah i don't know").
