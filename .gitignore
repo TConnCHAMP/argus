@@ -1,10 +1,45 @@
-# Environment and secrets
+# =============================================================================
+# ENVIRONMENT AND SECRETS - CRITICAL: Never commit secrets!
+# =============================================================================
 .env
+.env.*
+!.env.example
+!.env.*.example
 .env.local
 .env.*.local
+*.local.env
+secrets/
+secrets.*
+*.secret
+*.secrets
+**/credentials*
+!**/credentials*.example
+config.ini
+!config.ini.example
 
-# Python
+# API Keys and tokens (extra safety)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.keystore
+
+# =============================================================================
+# CLAUDE CODE / AI TOOLS - Local settings
+# =============================================================================
+.claude/
+.cursor/
+.aider*
+.copilot/
+
+# =============================================================================
+# PYTHON
+# =============================================================================
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 *.so
@@ -13,42 +48,114 @@ __pycache__/
 venv/
 ENV/
 env/
+.env/
 *.egg-info/
 dist/
 build/
 eggs/
 *.egg
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+.mypy_cache/
+.ruff_cache/
+.pytype/
+*.pyo
+*.pyd
 
-# Local data storage (contains personal documents)
+# =============================================================================
+# LOCAL DATA STORAGE - Contains personal/sensitive documents
+# =============================================================================
 rag_storage/
 inputs/
+data/
+uploads/
+*.db
+*.sqlite
+*.sqlite3
 
-# Logs
+# =============================================================================
+# LOGS AND DEBUGGING
+# =============================================================================
 *.log
+logs/
+*.log.*
 lightrag.log
 
-# IDE
+# =============================================================================
+# IDE AND EDITORS
+# =============================================================================
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+*.code-workspace
 
-# OS
+# =============================================================================
+# OS FILES
+# =============================================================================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Node/Bun (webui)
+# =============================================================================
+# NODE/BUN (webui)
+# =============================================================================
 node_modules/
 .bun/
+.npm/
+.yarn/
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
 
-# Test and coverage
+# =============================================================================
+# TEST AND COVERAGE
+# =============================================================================
 .coverage
+.coverage.*
 htmlcov/
 .pytest_cache/
 .tox/
+.nox/
+coverage.xml
+*.cover
+nosetests.xml
 
-# Build artifacts
+# =============================================================================
+# BUILD ARTIFACTS
+# =============================================================================
 *.pyc
 *.pyo
 *.pyd
+*.manifest
+*.spec
+
+# =============================================================================
+# DOCKER
+# =============================================================================
+.docker/
+
+# =============================================================================
+# TEMPORARY FILES
+# =============================================================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
